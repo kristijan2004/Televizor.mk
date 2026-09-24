@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { useNavigate } from "react-router-dom";
 
 const Banner = styled.section`
   width: 100%;
@@ -94,34 +93,6 @@ const Description = styled.p`
   line-height: 1.6;
 `;
 
-const Button = styled.button`
-  border: none;
-
-  padding: 12px 20px;
-
-  border-radius: 9px;
-
-  background: white;
-
-  color: #242582;
-
-  cursor: pointer;
-
-  font-size: 14px;
-
-  font-weight: 700;
-
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-
-  &:hover {
-    transform: translateY(-2px);
-
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  }
-`;
-
 const TvWrapper = styled.div`
   position: absolute;
 
@@ -154,8 +125,6 @@ const TvImage = styled.img`
 `;
 
 const BannerComponent = () => {
-  const navigate = useNavigate();
-
   return (
     <Banner>
       <BannerInner>
