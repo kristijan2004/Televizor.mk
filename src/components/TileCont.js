@@ -1,3 +1,4 @@
+
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
@@ -202,6 +203,16 @@ const GamingDot = styled.span`
   font-size: 13px;
 `;
 
+const Price = styled.div`
+  margin-top: 16px;
+
+  font-size: 22px;
+
+  font-weight: 800;
+
+  color: #242582;
+`;
+
 const Bottom = styled.div`
   margin-top: auto;
 
@@ -246,72 +257,94 @@ const TileCont = () => {
 
   const navigate = useNavigate();
 
+  const getLowestPrice = (stores) => {
+    if (!stores) return null;
+
+    const prices = Object.values(stores)
+      .filter((store) => store?.inStock && typeof store.price === "number")
+      .map((store) => store.price);
+
+    if (prices.length === 0) return null;
+
+    return Math.min(...prices);
+  };
+
   return (
     <Cont>
       <TilesCont>
-        {list.map((tv) => (
-          <Tile
-            key={tv.id}
-            onClick={() =>
-              navigate(
-                `/tv/${tv.brand.toLowerCase()}/${tv.model.toLowerCase()}`,
-              )
-            }
-          >
-            <ImageCont>
-              <TvImage
-                src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=500&q=80"
-                alt={tv.model}
-              />
-            </ImageCont>
+        {list.map((tv) => {
+          const lowestPrice = getLowestPrice(tv.stores);
 
-            <Brand>{tv.brand}</Brand>
+          return (
+            <Tile
+              key={tv.id}
+              onClick={() =>
+                navigate(
+                  `/tv/${tv.brand.toLowerCase()}/${tv.model.toLowerCase()}`,
+                )
+              }
+            >
+              <ImageCont>
+                <TvImage
+                  src={tv.image}
+                  alt={`${tv.brand} ${tv.model}`}
+                />
+              </ImageCont>
 
-            <Title>{tv.model}</Title>
+              <Brand>{tv.brand}</Brand>
 
-            <Technology>{tv.technology}</Technology>
+              <Title>{tv.model}</Title>
 
-            <Specifications>
-              <Spec>{tv.size}"</Spec>
-              <Spec>{tv.resolution}</Spec>
-              <Spec>{tv.refreshRate} Hz</Spec>
-            </Specifications>
+              <Technology>{tv.technology}</Technology>
 
-            <GamingInfo>
-              {tv.vrr && (
-                <GamingItem>
-                  <GamingDot>✓</GamingDot>
-                  VRR
-                </GamingItem>
+              <Specifications>
+                <Spec>{tv.size}"</Spec>
+                <Spec>{tv.resolution}</Spec>
+                <Spec>{tv.refreshRate} Hz</Spec>
+              </Specifications>
+
+              <GamingInfo>
+                {tv.vrr && (
+                  <GamingItem>
+                    <GamingDot>✓</GamingDot>
+                    VRR
+                  </GamingItem>
+                )}
+
+                {tv.allm && (
+                  <GamingItem>
+                    <GamingDot>✓</GamingDot>
+                    ALLM
+                  </GamingItem>
+                )}
+              </GamingInfo>
+
+              {lowestPrice !== null && (
+                <Price>
+                  {lowestPrice.toLocaleString("mk-MK")} ден.
+                </Price>
               )}
 
-              {tv.allm && (
-                <GamingItem>
-                  <GamingDot>✓</GamingDot>
-                  ALLM
-                </GamingItem>
-              )}
-            </GamingInfo>
+              <Bottom>
+                <CompareButton
+                  onClick={(e) => {
+                    e.stopPropagation();
 
-            <Bottom>
-              <CompareButton
-                onClick={(e) => {
-                  e.stopPropagation();
-
-                  if (compareList.some((item) => item.id === tv.id)) {
-                    removeFromCompare(tv.id);
-                  } else {
-                    addToCompare(tv);
-                  }
-                }}
-              >
-                {compareList.some((item) => item.id === tv.id)
-                  ? "✓ Додадено"
-                  : "+ Спореди"}
-              </CompareButton>
-            </Bottom>
-          </Tile>
-        ))}
+                    if (compareList.some((item) => item.id === tv.id)) {
+                      removeFromCompare(tv.id);
+                    } else {
+                      addToCompare(tv);
+                    }
+                  }}
+                >
+                  {compareList.some((item) => item.id === tv.id)
+                    ? "✓ Додадено"
+                    : "+ Спореди"}
+                </CompareButton>
+              </Bottom>
+            </Tile>
+          );
+        })}
       </TilesCont>
     </Cont>
   );

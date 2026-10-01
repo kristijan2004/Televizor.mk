@@ -1,5 +1,5 @@
 import React, { createContext, useState } from "react";
-import tvs from "../Data/tvs.js";
+import tvs from "../data/masterTvs.json";
 
 export const Context = createContext();
 

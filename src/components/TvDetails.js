@@ -350,9 +350,9 @@ const TvDetails = () => {
           <Top>
             <ImageCont>
               <TvImage
-                src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=700&q=80"
-                alt={tv.model}
-              />
+  src={tv.image}
+  alt={`${tv.brand} ${tv.model}`}
+/>
             </ImageCont>
 
             <Info>

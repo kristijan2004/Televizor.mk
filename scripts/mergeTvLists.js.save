@@ -1,0 +1,290 @@
+import fs from "fs";
+import path from "path";
+
+const DATA_DIR = "./src/data";
+
+const files = [
+  {
+    store: "Anhoch",
+    candidates: ["anhochTvs.json", "anhoch-models.json"]
+  },
+  {
+    store: "Setec",
+    candidates: ["setec-tvs.json", "setecTvs.json", "setec-models.json"]
+  },
+  {
+    store: "Neptun",
+    candidates: ["neptun-tvs.json", "neptunTvs.json", "neptun-models.json"]
+  },
+  {
+    store: "DDStore",
+    candidates: ["ddstore-models.json", "ddstoreTvs.json"]
+  }
+];
+
+function findFile(candidates) {
+  for (const file of candidates) {
+    const full = path.join(DATA_DIR, file);
+    if (fs.existsSync(full)) return full;
+  }
+
+  return null;
+}
+
+function clean(value) {
+  return String(value || "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function normalizeBrand(brand) {
+  let b = clean(brand).toUpperCase();
+
+  const map = {
+    "PHILIPS": "PHILIPS",
+    "SAMSUNG": "SAMSUNG",
+    "SONY": "SONY",
+    "LG": "LG",
+    "HISENSE": "HISENSE",
+    "TCL": "TCL",
+    "VIVAX": "VIVAX",
+    "XIAOMI": "XIAOMI",
+    "AIWA": "AIWA",
+    "HAIER": "HAIER",
+    "TESLA": "TESLA",
+    "METZ": "METZ",
+    "BAUTECH": "BAUTECH",
+    "ST": "ST",
+    "TELEFUNKEN": "TELEFUNKEN"
+  };
+
+  return map[b] || b;
+}
+
+function normalizeModel(model) {
+  return clean(model)
+    .toUpperCase()
+    .replace(/[“”″]/g, '"')
+    .replace(/\s+/g, "");
+}
+
+function extractProduct(product) {
+  let brand = clean(product.brand);
+  let model = clean(product.model);
+
+  // DDStore raw products
+  if ((!brand || !model) && product.name) {
+    const name = clean(product.name);
+
+    // PHILIPS 55PUS7409/12
+    let match = name.match(/^PHILIPS\s+([A-Z0-9]+(?:\/\d+)?)/i);
+    if (match) {
+      brand = "PHILIPS";
+      model = match[1];
+    }
+
+    // BAUTECH 32BHR45
+    match = name.match(/^BAUTECH\s+([A-Z0-9-]+)/i);
+    if (match) {
+      brand = "BAUTECH";
+      model = match[1];
+    }
+
+    // ST-65DQ8000
+    match = name.match(/^(ST-[A-Z0-9-]+)/i);
+    if (match) {
+      brand = "ST";
+      model = match[1];
+    }
+
+    // Haier H65Q80FUX
+    match = name.match(/^HAIER\s+([A-Z0-9]+)/i);
+    if (match) {
+      brand = "HAIER";
+      model = match[1];
+    }
+
+    // Tesla TV Q40E665GFS
+    match = name.match(/^TESLA\s+TV\s+([A-Z0-9]+)/i);
+    if (match) {
+      brand = "TESLA";
+      model = match[1];
+    }
+
+    // Aiwa 50N21
+    match = name.match(/^TV\s+AIWA\s+\d{2}"\s+([A-Z0-9]+)/i);
+    if (match) {
+      brand = "AIWA";
+      model = match[1];
+    }
+
+    // Vivax TV-32LE117T2S2
+    match = name.match(/^TV\s+VIVAX\s+\d{2}"\s+(TV-[A-Z0-9-]+)/i);
+    if (match) {
+      brand = "VIVAX";
+      model = match[1];
+    }
+
+    // Xiaomi ELA codes
+    match = name.match(/\b(ELA\d+[A-Z]+)\b/i);
+    if (match) {
+      brand = "XIAOMI";
+      model = match[1];
+    }
+
+    // Metz 50MQF7500Z
+    match = name.match(/\b(\d{2}MQF[A-Z0-9]+)\b/i);
+    if (match) {
+      brand = "METZ";
+      model = match[1];
+    }
+
+    // Generic: brand + model code
+    if (!brand) {
+      match = name.match(/^(?:TV\s+)?([A-Za-z]+)\s+/i);
+
+      if (match) {
+        brand = match[1];
+
+        const rest = name.slice(match[0].length);
+        const code = rest.match(
+          /\b([A-Z]{0,4}\d{2,}[A-Z0-9/-]*)\b/i
+        );
+
+        if (code) {
+          model = code[1];
+        }
+      }
+    }
+  }
+
+  if (!brand || !model) return null;
+
+  return {
+    brand: normalizeBrand(brand),
+    model: clean(model),
+    key:
+      normalizeBrand(brand) +
+      "|" +
+      normalizeModel(model)
+  };
+}
+
+const all = [];
+const missingFiles = [];
+
+for (const source of files) {
+  const file = findFile(source.candidates);
+
+  if (!file) {
+    missingFiles.push({
+      store: source.store,
+      candidates: source.candidates
+    });
+    continue;
+  }
+
+  const data = JSON.parse(fs.readFileSync(file, "utf8"));
+
+  let parsed = 0;
+
+  for (const product of data) {
+    const tv = extractProduct(product);
+
+    if (!tv) continue;
+
+    all.push({
+      store: source.store,
+      brand: tv.brand,
+      model: tv.model,
+      key: tv.key
+    });
+
+    parsed++;
+  }
+
+  console.log(
+    `${source.store}: ${data.length} products -> ${parsed} models`
+  );
+}
+
+if (missingFiles.length) {
+  console.log("\nMISSING FILES:");
+
+  for (const item of missingFiles) {
+    console.log(
+      `- ${item.store}: ${item.candidates.join(", ")}`
+    );
+  }
+}
+
+// Group by normalized model
+const grouped = new Map();
+
+for (const tv of all) {
+  if (!grouped.has(tv.key)) {
+    grouped.set(tv.key, {
+      brand: tv.brand,
+      model: tv.model,
+      stores: []
+    });
+  }
+
+  const entry = grouped.get(tv.key);
+
+  if (!entry.stores.includes(tv.store)) {
+    entry.stores.push(tv.store);
+  }
+}
+
+const master = Array.from(grouped.values())
+  .sort((a, b) => {
+    const brandCompare = a.brand.localeCompare(b.brand);
+    if (brandCompare !== 0) return brandCompare;
+
+    return a.model.localeCompare(b.model);
+  });
+
+const duplicates = master
+  .filter(tv => tv.stores.length > 1)
+  .sort((a, b) => {
+    if (b.stores.length !== a.stores.length) {
+      return b.stores.length - a.stores.length;
+    }
+
+    return `${a.brand} ${a.model}`.localeCompare(
+      `${b.brand} ${b.model}`
+    );
+  });
+
+console.log("\n==============================");
+console.log("RESULT");
+console.log("==============================");
+
+console.log(`Products read: ${all.length}`);
+console.log(`Unique models: ${master.length}`);
+console.log(`Duplicates: ${duplicates.length}`);
+
+console.log("\n==============================");
+console.log("DUPLICATES");
+console.log("==============================");
+
+for (const tv of duplicates) {
+  console.log(
+    `${tv.brand} ${tv.model}  ->  ${tv.stores.join(", ")}`
+  );
+}
+
+fs.writeFileSync(
+  path.join(DATA_DIR, "master-tvs.json"),
+  JSON.stringify(master, null, 2)
+);
+
+fs.writeFileSync(
+  path.join(DATA_DIR, "tv-duplicates.json"),
+  JSON.stringify(duplicates, null, 2)
+);
+
+console.log("\nЗачувано:");
+console.log("- src/data/master-tvs.json");
+console.log("- src/data/tv-duplicates.json");

@@ -1,0 +1,1387 @@
+[
+  {
+    "brand": "ST",
+    "model": "ST-32DH4300",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/59659_0-01JVA79HTD9TBS6MJR3V0G8XBB.webp"
+  },
+  {
+    "brand": "BAUTECH",
+    "model": "BAUTECH 32BHR45",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/61445_BAUTECH 32BHR45-01K18N9KEH3HZEMQERRFS51N2C.jpg"
+  },
+  {
+    "brand": "BAUTECH",
+    "model": "BAUTECH 32BHR55",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/61446_BAUTECH 32BHR55-01K18N0QKVWHDQS67501BTWV9Y.jpg"
+  },
+  {
+    "brand": "ST",
+    "model": "ST-32DH5900",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/61371_ST-32DH5900-01K21YYCKW3X6RTWTB55KG14R6.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 32A4Q",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79338_Hisense%2032A4Q-01KR0S3JKMDAGN4676MHZ3BYDC.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 32PHS5500",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92263_PHILIPS%2032PHS5500-01KH638WSE3NFPK9VMY426QFJN.jpg"
+  },
+  {
+    "brand": "ST",
+    "model": "ST-43DH7900",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/61069_ST-43DH7900-01KVANHEZH7PF6MQ7XBGMZ6K8H.jpg"
+  },
+  {
+    "brand": "ST",
+    "model": "ST-43DH7800",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/59466_ST-43DH7800-01KVANJMTQSHAGAMT7GB3FSR20.jpg"
+  },
+  {
+    "brand": "Telefunken",
+    "model": "TELEFUNKEN 40RCN24",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79354_TELEFUNKEN 40RCN24-01JZW830ZX900G3W06B72Y864W.webp"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 32S41K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79436_TCL 32S41K-01K0BT30KD67YKNABT1DTFEZTJ.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 32PHS6050",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92379_PHILIPS%2032PHS6050-01KW9NYHMR8QE0RKY0KFB4E8M4.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 32A4S",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92378_Hisense%2032A4S-01KW9P0Z4MRR58J7TB0XET115B.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 32S5L",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92357_TCL%2032S5L-01KWEM86NKD8MR4PZHF9DW9TNQ.jpg"
+  },
+  {
+    "brand": "ST",
+    "model": "ST-43DH8000",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/61373_ST-43DH8000-01K21YPNJM6BF9888NZ22JW42E.jpg"
+  },
+  {
+    "brand": "BAUTECH",
+    "model": "BAUTECH 43BFH80",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/61444_BAUTECH 43BFH80-01K2HBGH8N9XWBPYVPXWPT01K9.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 32PHS6000",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79590_PHILIPS 32PHS6000-01K58NWD54NKRZQGB4PKY94001.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 43S51K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92254_TCL 43S51K-01KFNM48RW8ZYJ1QT6DCRD0TED.jpg"
+  },
+  {
+    "brand": "Telefunken",
+    "model": "TELEFUNKEN 43UA9005",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/76248_0-01JVYD510P9AKRETWXPWA9TAW3.webp"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 40PFS6000",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79312_PHILIPS 40PFS6000-01JYP6DMPA2BS2JVESE9S0WJ5N.jpg"
+  },
+  {
+    "brand": "ST",
+    "model": "ST-43DX8000",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/61372_ST-43DX8000-01K21YSNX0H7KWHQRX8TEGK7KD.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 40S51K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79437_TCL 40S51K-01K0BT6DEBDREB9HMVV1F1Z03E.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 40A4S",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92289_Hisense%2040A4S-01KQEP64ZDPGS7T4K7GNX5RKGK.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 40S5L",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92358_TCL%2040S5L-01KWEKMPQG22X2Y2R1182H0HMA.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 40PFS6050",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92293_PHILIPS%2040PFS6050-01KQVKEMJY1F9WC47GNNZTNY5J.jpg"
+  },
+  {
+    "brand": "ST",
+    "model": "ST-50DX7800",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/59965_0-01JVYCT38DAF4XKH5PA1ARKHM2.webp"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 43PUS7009",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/58713_0-01JVA77EGB2XS88FC5G3EHXT9E.webp"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 43PUS8079",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/78189_0-01JVYD73SZKBXBTWR64Y88KZ4S.webp"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG UE43U8072FUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63210_SAMSUNG UE43U8072FUXXH-01JZA5T85MDH34DZZBKP2M74TM.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 43PUS7000",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63449_PHILIPS 43PUS7000-01K4ADCZK44RKKPRPR5XV8X5FF.webp"
+  },
+  {
+    "brand": "Haier",
+    "model": "Haier H43K85FUX",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63798_Haier H43K85FUX-01K7RFB8BPP6F8P9TVEFFGB93P.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 43A6S",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92290_Hisense%2043A6S-01KQENJ88NT2TACPTEY79HRXHC.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 43S5L",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92359_TCL%2043S5L-01KWEKQTAP5XRGD1S1XMF0BFE6.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 43P61K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79601_TCL 43P61K-01K4W9PYYN2TVNQN147HAXB5YJ.webp"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 43E7Q",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92259_Hisense%2043E7Q-01KQYWFHZQYWSF9W12MNTH9E0B.jpg"
+  },
+  {
+    "brand": "Haier",
+    "model": "Haier H43K85GUX",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92374_Haier%20H43K85GUX-01KV556TJKDKA3DK7PRS29ZC6M.jpg"
+  },
+  {
+    "brand": "Telefunken",
+    "model": "TELEFUNKEN 55UAK9005BX",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/57804_0-01JVA760GXJJKD6HZY708YPFVQ.webp"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 55P655",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/78397_0-01JVA7V38X79MD482QBXCKPTPF.webp"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 55A6Q",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79341_Hisense%2055A6Q-01KKBQ9HBRR4TW2857D5M95PSR.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 50A6Q",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79481_Hisense%2050A6Q-01KKBQB1ZJ1W3F4KFTQWTWQ39P.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 50PUS7000",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63450_PHILIPS 50PUS7000-01K452DKYY3QXKFF4B2CCRJ2WV.webp"
+  },
+  {
+    "brand": "ST",
+    "model": "ST-55DX7900",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/61070_0-01JVA7BRBR38031NDN0MDJK1H6.webp"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 43PUS8010",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92193_PHILIPS 43PUS8010-01K94FDQ8NAED41D0BHHAKZJDQ.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 43PUS7810",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92257_PHILIPS 43PUS7810-01KFWWPGNNGA1GFQSQXZD0V8BM.png"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 50PUS7409",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/58807_0-01JVA77PWWTP93QTBF9J7GMZGS.webp"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 50PUS7609",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/61257_0-01JVYCP7RMTTBAKA6ZYTZZW9KB.webp"
+  },
+  {
+    "brand": "Telefunken",
+    "model": "TELEFUNKEN 55QUAK9140BX",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/57805_0-01JVYCPCM1RN1P0AKDCTBKK18K.webp"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 55V6C",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79267_TCL 55V6C-01JY6QETPZ72SXD9N0VZR784G3.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 50P61K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79603_TCL 50P61K-01K56NY9AZG1D2RKAFR1EVZY0W.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG UE43U8092FUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63364_SAMSUNG UE43U8092FUXXH-01K1J969ZTBV3D9ZHF7Z829EXE.jpg"
+  },
+  {
+    "brand": "Haier",
+    "model": "Haier H43Q80FUX",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63727_Haier H43Q80FUX-01K6YQTWGFK7NAFVFE6CYB6Z24.jpg"
+  },
+  {
+    "brand": "Haier",
+    "model": "Haier H50K85FUX",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63799_Haier H50K85FUX-01K7RF5ZPMRYRQ7BW5YJQGFNZH.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 43PUS8400",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92213_PHILIPS 43PUS8400-01KBM9D93X5M2TXKM0G4ZHXG5N.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 50PUS7810",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92267_PHILIPS%2050PUS7810-01KHR2VTHJK9K0NDXSD9HECCR0.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 43PUS8450",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92392-01KZ8EQCYAFN7Q4JNQPF0D93H5.png"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 55PUS7609",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/59955_0-01JVA7AEJFW21Q1KYBW6MF7T7M.webp"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE43Q7FAAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63065_0-01JXCYWF6TE1Y9R9VGBKP3P1HX.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 50A7Q",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79343_Hisense%2050A7Q-01KR0S8KKQWE4CASJ7X0D7FQ01.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 50E7Q",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79346_Hisense%2050E7Q-01KQYWMHDB7B6NXFJHZ7SSVYJK.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 43P71K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79270_TCL 43P71K-01JY6PT025KNARPFN3DS4ER9SE.jpg"
+  },
+  {
+    "brand": "Haier",
+    "model": "Haier H55K85FUX",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63800_Haier H55K85FUX-01K7RFGN3JSR4N4YQNFRKN6H6T.jpg"
+  },
+  {
+    "brand": "Haier",
+    "model": "Haier H43S80GUX",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92371_Haier%20H43S80GUX-01KTXF8XTW30C4TJMH27WA0531.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 43T69C",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92360_TCL%2043T69C-01KWEME4SWV5MHGB7JYFNGCZ3A.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 43E7S",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92399_Hisense%2043E7S-01KYSEPZMZ4P3EVG0118JC5WE5.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 50PUS8010",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63141_PHILIPS 50PUS8010-01JYP6M8S82J6V7GA7VTC7KT1Q.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE32LS03CBUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/55774_0-01JVA73V2F4WDDAA8RB6F2V2CZ.webp"
+  },
+  {
+    "brand": "ST",
+    "model": "ST-65DX7800",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/59334_0-01JVA78YJNNWBXSJ0SGPD1JYJ5.webp"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 55E7Q",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79480_Hisense%2055E7Q-01KQYWH5AQGWSMBBKSZ4R228W1.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 55PUS7000",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63142_PHILIPS 55PUS7000-01KEH17MXFBG0Z4YBP569GXE3P.png"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG UE50U8092FUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63349_SAMSUNG UE50U8092FUXXH-01K10SXKEE7HCW3T4TEWNGEYMW.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 50A6S",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92291_Hisense%2050A6S-01KQENMCSMBR381Y9G538X95QB.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 55P61K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79266_TCL 55P61K-01JY6QHGT18DG7WBXTVRJH1CA4.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 55A6S",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92352_Hisense%2055A6S-01KS7DQ5JK52W1DH0BN8TGJYWX.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE50Q7FAAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63066_0-01JXCSYHNX0Y6100BWQZM8AEA4.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG UE55U8092FUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63062_SAMSUNG UE55U8092FUXXH-01KCGKEDA9MSF22E2H33504D00.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 55PUS7810",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63446_PHILIPS 55PUS7810-01K452CAC9ZAESE9HNB4PH9M5C.webp"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 55PUS8400",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92273_PHILIPS%2055PUS8400-01KJPWTY72H7MTPM0C2G25TB1M.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 55PUS8450",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92355_PHILIPS%2055PUS8450-01KT19QY77K8EWXHD2QCXF4THA.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 50T69C",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92361_TCL%2050T69C-01KWXZPPKX4PZ0A6R491XWT3AP.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 50PUS8560",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92393_PHILIPS%2050PUS8560-01KYH99M2BSH1FCMZS088KGGXT.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 55E7S",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92342_Hisense%2055E7S-01KS7BHCXMCX36XKZJWQ9843QX.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 55A7Q",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79344_Hisense%2055A7Q-01KR0S9WJ5BFCXNM02A64A9114.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 55PUS8200",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92214_PHILIPS 55PUS8200-01KCNS49GDJ37XM8GSES3T6J9W.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 50E7S",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92341_Hisense%2050E7S-01KS7BFWYKH3VSVS7XK6F20SX0.jpg"
+  },
+  {
+    "brand": "Haier",
+    "model": "Haier H55S80GUX",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92372_Haier%20H55S80GUX-01KTXF6VGB2WKZG06TVC44Q58P.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 55P71K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79272_TCL 55P71K-01K3GMTVD96SHRFJZNAW7V3PDR.jpg"
+  },
+  {
+    "brand": "ST",
+    "model": "ST-65DQ8000",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63231_ST-65DQ8000-01K21Z1F0CME6YP05HNEWK6CAW.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE55Q7FAAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/62858_SAMSUNG QE55Q7FAAUXXH-01K5XDMZVW7BJ2GKVM864B9FHG.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 55PUS8010",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63448_PHILIPS 55PUS8010-01K4526ST3QS63DPV0QFJFCG0S.webp"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE50Q7F2AUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92255_SAMSUNG QE50Q7F2AUXXH-01KFN65B4YHR7ETF1JBEAMG0EX.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 55T69C",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92362_TCL%2055T69C-01KWEMBQDCJ79P65PS9P1JHFHF.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 55PML8709",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/59561_PHILIPS 55PML8709-01K94XVC124R5Q7YP0M7932GF5.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 65A6Q",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79342_Hisense%2065A6Q-01KKBQCC642GS9MPJ633P3YWET.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 55E7Q PRO",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79347_Hisense%2055E7Q%20PRO-01KKBPRXP420498X7704F1G5GE.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 55PUS8560",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92415-01M0FD8JTRK8PKNB8WQTKRKXQQ.png"
+  },
+  {
+    "brand": "Haier",
+    "model": "Haier H55Q80FUX",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63728_Haier H55Q80FUX-01K6YQY6GDZG11W9N4PQHFXS4C.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE55Q7F2AUXХH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92217_SAMSUNG QE55Q7F2AUXÐ¥H-01KCV4FQ83VXH65Y8CNZ7FTN00.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 65PUS7409",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/58810_0-01JVYCKPFN5E1XR416XHF7VVN6.webp"
+  },
+  {
+    "brand": "SONY",
+    "model": "SONY KD65X75WLPAEP",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/77300_0-01JVA7QKXT5RDPXZ46YKW70WER.webp"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE50Q8FAAUXХH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63352_SAMSUNG QE50Q8FAAUXÐ¥H-01K17YVS1EC2R648EW9GF88DEX.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 65P61K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79268_TCL 65P61K-01JY6QBHF217BXAFN9EK6R9EC4.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG UE65DU7192UXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/61553_0-01JVYD8Y04P3B0BHKAEGNN9NHF.webp"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 65E7Q",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79638_Hisense%2065E7Q-01KQYWE6G04H10H49432ST7JTB.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 65PUS7000",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63551_PHILIPS 65PUS7000-01K5GRWGC9XK3Y7XJ6VDF6X9XB.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG UE55M70HAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92309_SAMSUNG%20UE55M70HAUXXH-01KQY4Z276VYZPK4BG4Q392TYV.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG UE43M70HAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92377_SAMSUNG%20UE43M70HAUXXH-01KVW8SH6E33CNGWB93WZ1940S.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE55QN70FAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/62859_0-01JWDZEA83EAYEV8PQ3HNVDA21.webp"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 65A7Q",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79345_Hisense%2065A7Q-01KR0SBD707DWGCY1RMDPB5JTR.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 55U7Q",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79351_Hisense%2055U7Q-01KR0RPWSY4PC70YA8KP4FCV72.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 55P81K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79279_TCL 55P81K-01JY6NADY0DBHK14CMNGPPYKPY.jpg"
+  },
+  {
+    "brand": "Haier",
+    "model": "Haier H65K85FUX",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63801_Haier H65K85FUX-01K7RFHZRHVNRJFTHGAQVR07M7.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 55E7S PRO",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92343_Hisense%2055E7S%20PRO-01KS7BDSNPN2S6DX0JJADC56RB.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG HG55Q60AAEUXEH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/56935_0-01JVW66RFYZ6R7YH93V86EFR04.webp"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE55Q8FAAUXХH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63087_SAMSUNG QE55Q8FAAUXÐ¥H-01K3JWKXZMP951BJH59EFBV08A.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG UE65U8092FUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63063_0-01JXCYZ4FPG3FZ7G6MKGHXRJ2C.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 55C61K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79275_TCL 55C61K-01K3GMY3QP9J2JKYXF49HPTBK8.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 65PUS8010",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63550_PHILIPS 65PUS8010-01K5GS06AM15TTE516BMRBHE3Z.jpg"
+  },
+  {
+    "brand": "Haier",
+    "model": "Haier H65Q80FUX",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63729_Haier H65Q80FUX-01K6YR16QC89X235R5GJYPSM95.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 65PUS8200",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92220_PHILIPS 65PUS8200-01KD2J8ZPJ2A9VVQ4AF7ED1Z0S.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG UE55M80HAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92310_SAMSUNG%20UE55M80HAUXXH-01KR3CE2RK24VMQ51ZVBN23YGK.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 75A6Q",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79595_Hisense%2075A6Q-01KKBQE0ZKEDHWTHRPA2G8F8DH.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG UE50M70HAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92308_SAMSUNG%20UE50M70HAUXXH-01KQY5HKWGZ6HHCRR6SFV2FAF3.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 65E7S",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92344_Hisense%2065E7S-01KS7BJTTYV8FMHQVP70AHBX0Z.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 65PML8709",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/59417_PHILIPS 65PML8709-01K94XW4E97HV0D23W1BE56P6W.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 65E7Q PRO",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79348_Hisense%2065E7Q%20PRO-01KKBPTVJV18Y73162GZYJBVF1.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 75V6C",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79414_TCL 75V6C-01K0BRJ675RGNHXJ6S01WD5QYD.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 65PUS7810",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63447_PHILIPS 65PUS7810-01K452D11S2TJQPAH85YYZ8BHJ.webp"
+  },
+  {
+    "brand": "Haier",
+    "model": "Haier H65S80GUX",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92373_Haier%20H65S80GUX-01KTXFC43C4SSM3E85EDEGX4NS.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 65PUS8400",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92394-01KZ8ETQ9ACP9Y07YZSJ02XPTA.png"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 55A300W",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79036_0-01JWDZFQYEJCCBFTVCTPX3EGWE.webp"
+  },
+  {
+    "brand": "ST",
+    "model": "ST-75DX7900",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/61071_0-01JVA7BRT7BMJEAEPP4BPAG6MY.webp"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 55MLED820",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63549_PHILIPS 55MLED820-01K5GS6P58JYVBVYQX8Z5MNZSS.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE65Q7F2AUXХH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92268_SAMSUNG%20QE65Q7F2AUX%C3%90%C2%A5H-01KJF9H4Z4YVQRVNFX4RXW6QM3.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 65T69C",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92363_TCL%2065T69C-01KWEKV75ZHYD3WS1GWTVFFWE9.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE65Q7FAAUXХH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63085_SAMSUNG QE65Q7FAAUXÐ¥H-01KCGJYGHCSVKVS99FCX028JA2.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 65P71K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79273_TCL 65P71K-01JY6NWDA43A9E9MQDBYQCEP5E.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 65A6S",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92353_Hisense%2065A6S-01KS7C95HB49Q1GSPEDCZC0PT7.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 65PUS8510",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/PHILIPS%2065PUS8510_92421-01M1KC40NME6851YG6B1F787AY.png"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 65PUS8560",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92390_PHILIPS%2065PUS8560-01KYH971J3QW29PP9ZHHXJCZ3W.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG SP-LSP3BLAXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/53498_0-01JVW62QEF10H5EJCCMRV82Z51.webp"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 75PUS7000",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92194_PHILIPS 75PUS7000-01K94FZ9YAFQN7KQXRE7PD14XJ.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 65P81K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79280_TCL 65P81K-01JY6N85B5NEM1Y6CKNN47C16Q.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 55U8Q",
+    "image": null
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE55QN80FAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/62861_SAMSUNG QE55QN80FAUXXH-01K2PQPEX071B8TXS190TVW1T0.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 75P61K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92281_TCL%2075P61K-01KMMR1XYH5AHVBB2TM2HDS5S2.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE65Q8FAAUXХH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63088_SAMSUNG QE65Q8FAAUXÐ¥H-01K3JWSN5GSAP3ARDMX0MDZ604.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG UE65M70HAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92356_SAMSUNG%20UE65M70HAUXXH-01KT19F642QC7YQ6JSWA723MW4.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 75PUS7009",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/58808_0-01JVYCKP315JGFW3J9D56FTJEX.webp"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 55U7SE",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92349_Hisense%2055U7SE-01KS7CP6GK5KR0WJ9S10PWS4SJ.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 65U7Q",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79640_Hisense%2065U7Q-01KR0RT3M1GVYJKMFT0TY18WFZ.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG UE75DU7172UXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/59573_0-01JVYCMZ69V15EJ7D4H3VPV87J.webp"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE65QN70FAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/62860_0-01JXCT6JP0D4JPRTV6BTYZH9HN.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE55LS03FAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63160_SAMSUNG QE55LS03FAUXXH-01JZ098KM99GWDS8V5BN5Z9G47.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG SP-LFF3CLAXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/56845_0-01JVA74H24NDXQ1QNCAFXDPFBS.webp"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG UE75U8092FUXХH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63064_SAMSUNG UE75U8092FUXÐ¥H-01K3JWCQTWRW4WMJGY15Q70NSX.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 65C61K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79276_TCL 65C61K-01JY65E2MRV6QK616WYS277WT4.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 75PUS8510",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92274_PHILIPS%2075PUS8510-01KJPWQFGWVDAEPF9P969QESN7.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG UE65M80HAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92311_SAMSUNG%20UE65M80HAUXXH-01KR3CG81M3MAQ4MEYW245NZK7.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 75PUS7810",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92354_PHILIPS%2075PUS7810-01KT19N4029EGDN0HVG1707Q07.jpg"
+  },
+  {
+    "brand": "SONY",
+    "model": "SONY K55S35B.CEI",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79319_SONY K55S35B.CEI-01K6WWH5VD66W1114RT3D4PDFB.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 65E7S PRO",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92345_Hisense%2065E7S%20PRO-01KS7BMAEKBRFD1JC2QT549J09.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 65Q7S PRO",
+    "image": null
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 75E7Q PRO",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79350_Hisense%2075E7Q%20PRO-01KKBPX43X0TFC4FPRZK64JAHD.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 65U7Q PRO",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79600_Hisense%2065U7Q%20PRO-01KQYW7CYWGYEHQVXH6JWV10HP.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 55C71K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79441_TCL 55C71K-01K0BTETKHCFKAQS30QEHHVZVT.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE65QN80FAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/62862_0-01JWDZEEJ94Z9EYMCY47SKMS8G.webp"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 75P71K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79274_TCL 75P71K-01JZ2NVCCDN4PGWCRD3X27PDXB.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 75P81K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79281_TCL 75P81K-01JY6MZCFP2P5KHBC5PEQ6GTZ1.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 75MLED820",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92196_PHILIPS 75MLED820-01KA1F6P44GNG0X5XJ9EBANN0S.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE55QN70HAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92288_SAMSUNG%20QE55QN70HAUXXH-01KQENBJRA3P9YXAVW4B7H8242.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 75E7S",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92400_Hisense%2075E7S-01KYSF0BWFGCM7ANZXCTTPQA25.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 75PML8709",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/59558_PHILIPS 75PML8709-01K94XX8NSWN5T39084VZ5F01P.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 65U7SE",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92350_Hisense%2065U7SE-01KS7DJY62WDF7M7NJ7DK5FCRF.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE55S85FAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/62863_0-01JWDZEEVEF6QW125DKRZZFFY8.webp"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE75Q7FAAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63086_SAMSUNG QE75Q7FAAUXXH-01JXWGMVMD9TQ30HVF0FGESYS1.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 55OLED770",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63444_PHILIPS 55OLED770-01K452B24XSES5DQ7AT83T6SA3.webp"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE50LS03FAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92258_SAMSUNG QE50LS03FAUXXH-01KG1WM9MHEJ7E5WT2TDRC189V.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 75C61K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79277_TCL 75C61K-01JY65FRDW4YB0XGPFRRH5TSW9.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 85A6Q",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79596_Hisense%2085A6Q-01KKBQF8CB6RGDTN7TP76MMP5J.jpg"
+  },
+  {
+    "brand": "SONY",
+    "model": "SONY K65S35B.CEI",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79319_SONY K55S35B.CEI-01JYP880F89R1HH1EMKY21K9VA.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG UE75M70HAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92320_SAMSUNG%20UE75M70HAUXXH-01KRDHPW0VMNEFGZ2K9CQQ8QQE.jpg"
+  },
+  {
+    "brand": "SONY",
+    "model": "SONY K55S25M2PB.CEI",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92383_SONY%20K55S25M2PB.CEI-01KWXY18Y1ZMXMWMSSGP31E4CM.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE55S90FAEXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63091_SAMSUNG QE55S90FAEXXH-01JXWGH1E1YPTG8C3TGFZBEX5W.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE65QN70HAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92375_SAMSUNG%20QE65QN70HAUXXH-01KVFN035W6HD8A71NKC8R7ZR7.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 55OLED718",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/56926_0-01JVA74RDBY93WPD79BDERWAKA.webp"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE75QN70FAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63452_SAMSUNG QE75QN70FAUXXH-01K773E5YH0SQYWPNG5Y0HP7K4.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 75E7S PRO",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92347_Hisense%2075E7S%20PRO-01KS7CBANZ1T8EXV0QATT8AHZM.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 65U7SE PRO",
+    "image": null
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE50LS03BGUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/57255_0-01JWR75C8NQSF170SJGA3A8NPT.webp"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 75U7Q",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79352_Hisense%2075U7Q-01KR0RS2C1WYSHGB3JG7MKZ9WM.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE85Q60DAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/58211_0-01JVYCJTMMAM2CTW07YE57V8FM.webp"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 85P745",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/78185_0-01JVYD70H5GGDHSV24EEG93VB9.webp"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE65LS03FAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63161_SAMSUNG QE65LS03FAUXXH(1)-01JZ04A3T4DEYCPHQNAVJP5AA5.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 65U8Q",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79639_Hisense%2065U8Q-01KR0RZ32FKZGEMH8BYAXCZ2H9.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 85E7Q",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92292_Hisense%2085E7Q-01KQYWBPSFS29287PHB0DQY2Q8.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG UE75M80HAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92312_SAMSUNG%20UE75M80HAUXXH-01KR3CJ63VJDTVFFG6C7ZC765B.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE43LS03HEUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92381_SAMSUNG%20QE43LS03HEUXXH-01KWENK0G1FRT9146JPP3RJQWP.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 65C79L",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92364_TCL%2065C79L-01KWXZW6JWASSTHHNE57K3Z51G.jpg"
+  },
+  {
+    "brand": "SONY",
+    "model": "SONY K65S25M2PB.CEI",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92384_SONY%20K65S25M2PB.CEI-01KWXY57V6XV3W0A7KR6296EBT.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 75U7SE",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92398_Hisense%2075U7SE-01KYSEVZ92XH6AF5FHJZXWFEF4.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 85PUS8510",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63140_PHILIPS%2085PUS8510-01KTK3A9BTM8M9C7X95TCZFN9Z.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE65LS03FWUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92198_SAMSUNG QE65LS03FWUXXH-01KABH0GP2JBC9GT702XZ2RPQY.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 85P81K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79446_TCL 85P81K-01K0BVBC7339V539W41FT8050Q.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 85P71K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92282_TCL%2085P71K-01KMMRCM9G5DBS7RCEGT7EATWX.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 85E7S",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92346_Hisense%2085E7S-01KS7B8YTE5RMWKFAF5NMQACQH.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE65S85FAEXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63158_SAMSUNG QE65S85FAUXXH-01JZ02YM4GBC6PG7PPHST8H0FY.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE55S95FATXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63545_SAMSUNG QE55S95FATXXH-01K5B7CZTGS861P7TJ3VZDTV3K.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE85Q7FAAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63710_SAMSUNG QE85Q7FAAUXXH-01K8WSD8EDD07H0W4X9PS4J5QW.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG UE85U8072FUXХH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63084_SAMSUNG UE85U8072FUXÐ¥H-01JXWD49Z9H7F5WQGGCPDJWJW7.jpg"
+  },
+  {
+    "brand": "SONY",
+    "model": "SONY K75S35B.CEI",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79321_SONY K75S35B.CEI-01JYP8YHDJRKWH8K75H4PBZM9A.jpg"
+  },
+  {
+    "brand": "SONY",
+    "model": "SONY K55XR55B.CEI",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79322_SONY K55XR55B.CEI-01JZ01SX27W81V1J1DEQRSJVJP.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG UE85U8092FUXХH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63207_SAMSUNG UE85U8092FUXÐ¥H-01JZ877K1EXM5JGD10ZJMCD3Y8.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 75C71K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79443_TCL 75C71K-01K0BTM1V0SAAWSV0XT1FQWFBP.jpg"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 65OLED770",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63445_PHILIPS 65OLED770-01K42DN6NGDBN0E6GN6GGHBTYV.webp"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 85C69B",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/78405_0-01JVA7V4TB19X0Q3HQBKVTTE8Z.webp"
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 85PUS9010",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92195_PHILIPS 85PUS9010-01KA1C5CPXSEHK2PWF622RD9JZ.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE75QN70HAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92337_SAMSUNG%20QE75QN70HAUXXH-01KRN7NPR2BEGMSDZXNA9VW2ND.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 65UR8S",
+    "image": null
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 65OLED718",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/57342_0-01JVYCKQ74YZ3E1VJXPRFJW2KE.webp"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 85E7S PRO",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92380_Hisense%2085E7S%20PRO-01KWEMKN6KT6Y2JZCP0C6W8KCF.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 75C79L",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92365_TCL%2075C79L-01KWXZZEA4QMKJNK34BYA6VS93.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE65QN80HAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92340_SAMSUNG%20QE65QN80HAUXXH-01KS7B063PYWY4EWYJ45RNGZ5D.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 85U7Q",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79353_Hisense%2085U7Q-01KR0RH72BVNQ1RX86ETWVMSJW.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE65S90FAEXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63544_SAMSUNG QE65S90FAEXXH-01K8N9P1H2NE3BZ04AY8JTVA15.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 85C6K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79438_TCL 85C6K-01K0BT8ZS3RWCJZCY57HKTA9NF.jpg"
+  },
+  {
+    "brand": "SONY",
+    "model": "SONY K75S25M2PB.CEI",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92385_SONY%20K75S25M2PB.CEI-01KWXXYFVD30ET9RVT5SSF5F9J.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG UE85M70HAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92338_SAMSUNG%20UE85M70HAUXXH-01KS28DZ1VFQ47436B11KAYP1X.jpg"
+  },
+  {
+    "brand": "SONY",
+    "model": "SONY K65XR55B.CEI",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79323_SONY K65XR55B.CEI-01K6WWJX751MDNKZE3XDAGFGRK.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE55LS03HWUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92316_SAMSUNG%20QE55LS03HWUXXH-01KR3CZV162C6872JGTE6D9G38.jpg"
+  },
+  {
+    "brand": "SONY",
+    "model": "SONY K55XR80PAEP",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79502_SONY K55XR80PAEP-01K1JDDGNAFTBFCKWS8SHH31AN.jpg"
+  },
+  {
+    "brand": "SONY",
+    "model": "SONY K55XR8AB.CEI",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92208_SONY K55XR8AB.CEI-01KBCFEMKE442Z5HJ5FXE030YP.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG MRE55R85HAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92307_SAMSUNG%20MRE55R85HAUXXH-01KQSNWQTZ2V4HWV148F6XAVMX.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE55S90HAEXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92294_SAMSUNG%20QE65S90HAEXXH-01KQSNB0AF1PSWJVNQSGQ8VF2C.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE55S85HEUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92335_SAMSUNG%20QE55S85HEUXXH-01KRN7SBZ5QYN234NRKMX4H5CX.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 98P81K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79269_TCL 98P81K-01JY6Q348ENREV19NXD5JZ1HS3.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 65UR9S",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92401_Hisense%2065UR9S-01KYSEDWYV1CYCDHZ1JC611271.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 98C6K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79278_TCL 98C6K-01KCGKRYGPJPE7E0XPW8BF615K.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 85C71K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79444_TCL 85C71K-01K0BTRN9AW8E4TAMY735H3Y7R.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG MRE65R85HAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92306_SAMSUNG%20MRE65R85HAUXXH-01KQSNVXQVRRW8EB79HCK4EAVB.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG UE85M80HAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92313_SAMSUNG%20UE85M80HAUXXH-01KR3CKK0KPEYY6G30FM74EJSD.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE65LS03HAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92315_SAMSUNG%20QE65LS03HAUXXH-01KR3CT8RR3R3EGQVJK4D1BZF6.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE65S90HAEXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92321_SAMSUNG%20QE65S90HAEXXH-01KRG94Z3NCFRRDDD9Z5VB3CQY.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 85C79L",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92366_TCL%2085C79L-01KWY01D35Z3Z0R4EVK1ENP070.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 75UR8S",
+    "image": null
+  },
+  {
+    "brand": "Philips",
+    "model": "PHILIPS 65OLED820",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92389_PHILIPS%2065OLED820-01KYH91DD1XAV328W197EFB7SG.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 100E7Q PRO",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79599_Hisense%20100E7Q%20PRO-01KQYVMX97VA8WT515V54EMMF1.jpg"
+  },
+  {
+    "brand": "SONY",
+    "model": "SONY K65XR8APB.CEI",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92221_SONY K65XR8APB.CEI-01KD7ZKYNRY9C08KQTY4WARAB4.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE77S85FAEXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63089_SAMSUNG QE77S85FAEXXH-01JXWG9S2107K343AP5QHJDKAX.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE65S95FATXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63453_SAMSUNG QE65S95DATXXH-01K4ADE5KFGETGB48YDZ315CZN.webp"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 98C69B",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/78427_0-01JWDYCBE2YQCRQJK496GNJP07.webp"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE65S85HEUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92336_SAMSUNG%20QE65S85HEUXXH-01KRN7HSC7R0J07XZ0ZRYHVGQS.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE75QN80HAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92376_SAMSUNG%20QE75QN80HAUXXH-01KVFN2MV2XMH18SY3F8W9C7DT.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE65LS03HWUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92314_SAMSUNG%20QE65LS03HWUXXH-01KR3CQ0J6HS0VHF27001Z7F3T.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE55S95HATXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92300_SAMSUNG%20QE55S95FATXXH-01KQSNKWWNMBGHY655PFK7XVBZ.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG OE55S95HFTXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92297_SAMSUNG%20QE55S95FATXXH-01KQSNF8RR2FZMY3XEC7TPHNPN.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG UE98DU9072UXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/59028_SAMSUNG UE98DU9072UXXH-01K773PNYBEFRMRMY1BXGAMMG2.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 100E7S PRO",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92348_Hisense%20100E7S%20PRO-01KS7AXH9JJR5Q7QN232YZQ2GK.jpg"
+  },
+  {
+    "brand": "Hisense",
+    "model": "Hisense 75UR9S",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92402_Hisense%2075UR9S-01KYSEJW1G0K1W5QWEB8WHG37Y.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG UE98U9072HUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20UE98U9072HUXXH_92419-01M1BKEH8KPF6M2S9R29Q2DW2Q.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 98C71K",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79445_TCL%2098C71K-01KMMPZ3CDGZ9K15KV9MQFV24C.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 98C79L",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92367_TCL%2098C79L-01KWXZSKDMBNRY21CYKGAAJCWB.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG MRE75R85HAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92305_SAMSUNG%20MRE75R85HAUXXH-01KQSNTT59EP6ZJW2FH354R1RD.jpg"
+  },
+  {
+    "brand": "SONY",
+    "model": "SONY K77XR80PAEP",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/78863_0-01JVA7X43WQYP73EC0XP9N3ZWF.webp"
+  },
+  {
+    "brand": "SONY",
+    "model": "SONY K77XR8AB.CEI",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92222_SONY K77XR8AB.CEI-01KD7ZTX0PYMH9PP65ZD4ZB9ZM.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE77S90HATXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92295_SAMSUNG%20QE77S90HATXXH-01KQSND6PBHV41H90G0ZEKFEJP.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG MRE65R95HATXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92303_SAMSUNG%20MRE65R95HATXXH-01KQSNRK8RTKCV485P8RHXTFH6.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE65S95HFTXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92322_SAMSUNG%20QE65S95HFTXXH-01KRG99TZY7BF3V0HHYZWEXV3V.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE65S99HATXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92299_SAMSUNG%20QE65S99HATXXH-01KQSNK01KW6EMKJPY5WDEMT88.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE65QN800CTXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/55467_0-01JVA73HE4DFVB5N8QNQVC3RRB.webp"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG MRE85R85HAUXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92304_SAMSUNG%20MRE85R85HAUXXH-01KQSNSPEWZKCK5X37EVMZPS2S.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE77S95HFTXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92296_SAMSUNG%20QE65S95HFTXXH-01KQSNE3FS65QX3ZBHFHDG7G8T.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE77S99HATXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92298_SAMSUNG%20QE77S99HATXXH-01KQSNHQPJ7P2AT6RZFQSNF7RY.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG MRE75R95HATXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92302_SAMSUNG%20MRE75R95HATXXH-01KQSNQF4BHW6G91WCVAE237NT.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE75QN800CTXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/55466_0-01JVA73H125XMJYYFAY3EMWQXT.webp"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG MRE85R95HATXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92301_SAMSUNG%20MRE85R95HATXXH-01KQSNP67CG886MYPSVYJ97J0J.jpg"
+  },
+  {
+    "brand": "TCL",
+    "model": "TCL 115X955",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/78586_TCL%20115X955-01KQSH0A3JW7HFC0NPNNW1MW9V.jpg"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE75QN900CTXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/55463_0-01JWR74H6WTPQ0RQSJ55CZXBJS.webp"
+  },
+  {
+    "brand": "Samsung",
+    "model": "SAMSUNG QE85QN800CTXXH",
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/55465_0-01JVYCH4NCZ3HPYC9PV524TN8J.webp"
+  }
+]
