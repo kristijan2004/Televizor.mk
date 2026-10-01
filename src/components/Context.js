@@ -23,7 +23,9 @@ export const ContextProvider = ({ children }) => {
       .toLowerCase()
       .includes(searchTerm.toLowerCase());
 
-    const matchesBrand = brandFilter === "" || tv.brand === brandFilter;
+    const matchesBrand =
+  brandFilter === "" ||
+  tv.brand?.toLowerCase() === brandFilter.toLowerCase();
 
     const matchesSize = sizeFilter === "" || tv.size === sizeFilter;
 

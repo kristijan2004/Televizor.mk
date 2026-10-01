@@ -67,7 +67,7 @@ const ImageCont = styled.div`
   position: relative;
 
   width: 100%;
-  height: 205px;
+  height: 220px;
 
   display: flex;
   align-items: center;
@@ -83,10 +83,12 @@ const ImageCont = styled.div`
 `;
 
 const TvImage = styled.img`
-  width: 94%;
-  height: 180px;
+  width: 100%;
+  height: 200px;
 
   object-fit: contain;
+
+  display: block;
 
   transition: transform 0.25s ease;
 
@@ -212,6 +214,13 @@ const Price = styled.div`
 
   color: #242582;
 `;
+const Stores = styled.div`
+  margin-top: 7px;
+  color: #777;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.4;
+`;
 
 const Bottom = styled.div`
   margin-top: auto;
@@ -274,7 +283,9 @@ const TileCont = () => {
       <TilesCont>
         {list.map((tv) => {
           const lowestPrice = getLowestPrice(tv.stores);
-
+const availableStores = Object.entries(tv.stores || {})
+    .filter(([_, store]) => store?.inStock)
+    .map(([storeName]) => storeName);
           return (
             <Tile
               key={tv.id}
@@ -303,7 +314,7 @@ const TileCont = () => {
                 <Spec>{tv.refreshRate} Hz</Spec>
               </Specifications>
 
-              <GamingInfo>
+              {/* <GamingInfo>
                 {tv.vrr && (
                   <GamingItem>
                     <GamingDot>✓</GamingDot>
@@ -317,13 +328,21 @@ const TileCont = () => {
                     ALLM
                   </GamingItem>
                 )}
-              </GamingInfo>
+              </GamingInfo> */}
 
-              {lowestPrice !== null && (
-                <Price>
-                  {lowestPrice.toLocaleString("mk-MK")} ден.
-                </Price>
-              )}
+             {lowestPrice !== null && (
+  <Price>
+    {lowestPrice.toLocaleString("mk-MK")} ден.
+  </Price>
+)}
+
+{availableStores.length > 0 && (
+  <Stores>
+    Достапно во: {availableStores.join(" · ")}
+  </Stores>
+)}
+
+
 
               <Bottom>
                 <CompareButton

@@ -201,12 +201,12 @@ const SubNavigation = () => {
   } = useContext(Context);
 
   const handleBrand = (brand) => {
-    if (brandFilter === brand) {
-      setBrandFilter("");
-    } else {
-      setBrandFilter(brand);
-    }
-  };
+  if (brandFilter.toLowerCase() === brand.toLowerCase()) {
+    setBrandFilter("");
+  } else {
+    setBrandFilter(brand);
+  }
+};
 
   const handleSize = (size) => {
     if (sizeFilter === size) {

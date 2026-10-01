@@ -9,7 +9,15 @@ function extractBrandModel(name) {
     .replace(/^TV\s+/i, "")
     .replace(/\s+/g, " ")
     .trim();
+  // Anhoch sometimes puts marketing text before the actual brand.
+  // Example: "8K QLED Neo Smart TV SAMSUNG QE65QN900 ATXXH, 65..."
+  const knownBrandMatch = text.match(
+    /\b(SAMSUNG|LG|SONY|TCL|HISENSE|PHILIPS|XIAOMI|VIVAX|TESLA|BEKO|HAIER|JVC|THOMSON|TELEFUNKEN|METZ|AIWA|NEO|FUEGO|BAUTECH)\b/i
+  );
 
+  if (knownBrandMatch && knownBrandMatch.index > 0) {
+    text = text.slice(knownBrandMatch.index).trim();
+  }
   // Poseben slucaj: TV 55" NEO 55UHD15F25...
   const sizeFirst = text.match(
     /^\d{2}"\s+([A-Za-z]+)\s+(.+?)(?:\s+\d{2}"|\s+QLED|\s+LED|\s+FULL HD|\s+FHD|\s+UHD|\s+4K|\s+Smart|$)/i

@@ -128,7 +128,26 @@ async function downloadImage(imageUrl, filename) {
     return null;
   }
 }
+function extractNeptunModel(title, brand) {
+  if (!title) return "";
 
+  const text = title.replace(/\s+/g, " ").trim();
+
+  if (!brand) return text;
+
+  // Remove everything before the brand.
+  const brandRegex = new RegExp(`\\b${brand}\\b`, "i");
+  const brandMatch = text.match(brandRegex);
+
+  if (!brandMatch) return text;
+
+  let rest = text.slice(brandMatch.index + brandMatch[0].length).trim();
+
+  // Remove everything starting from the screen size.
+  rest = rest.replace(/\s*,?\s*\d{2}"[\s\S]*$/i, "").trim();
+
+  return rest.replace(/,\s*$/, "").trim();
+}
 async function parseProducts(data) {
   const products = data?.Batch?.Items || [];
 
@@ -150,7 +169,10 @@ async function parseProducts(data) {
       id: product.Id,
 
       brand: product.Manufacturer?.Name || "",
-      model: product.Title || "",
+      model: extractNeptunModel(
+  product.Title,
+  product.Manufacturer?.Name || ""
+),
       name: product.Title || "",
 
       price:

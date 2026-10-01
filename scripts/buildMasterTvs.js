@@ -381,7 +381,17 @@ function findCanonicalMatch(brand, model) {
   const brandNorm = normalizeBrand(brand);
 
   let text = normalizeText(model);
+  /*
+   * Match Samsung-style model codes hidden inside longer product titles.
+   * Example:
+   * 8K QLED Neo Smart TV SAMSUNG QE65QN900 ATXXH
+   * -> qe65qn900atxxh
+   */
+  const modelCodeMatch = text.match(
+    /(?:qe|qn|qned|oled|ue|un|kq|kd|xr)[a-z0-9]{5,}/i
+  );
 
+  const modelCode = modelCodeMatch?.[0] || "";
   /*
    * Remove the brand if it is repeated.
    */
@@ -400,7 +410,12 @@ function findCanonicalMatch(brand, model) {
     const candidateModel = normalizeText(candidate.model);
 
     if (!candidateModel) continue;
-
+    if (
+      modelCode &&
+      candidateModel.includes(modelCode)
+    ) {
+      return candidate;
+    }
     /*
      * Exact normalized match.
      */

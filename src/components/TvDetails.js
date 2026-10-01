@@ -72,7 +72,7 @@ const Top = styled.div`
 
 const ImageCont = styled.div`
   width: 100%;
-  height: 370px;
+  height: 400px;
 
   display: flex;
   align-items: center;
@@ -86,10 +86,12 @@ const ImageCont = styled.div`
 `;
 
 const TvImage = styled.img`
-  width: 95%;
-  height: 320px;
+  width: 100%;
+  height: 360px;
 
   object-fit: contain;
+
+  display: block;
 `;
 
 const Info = styled.div`
@@ -276,7 +278,65 @@ const Description = styled.p`
 
   line-height: 1.7;
 `;
+const StoresList = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+`;
 
+const StoreRow = styled.div`
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  align-items: center;
+  gap: 15px;
+
+  padding: 15px 18px;
+
+  background-color: #f7f7f9;
+  border: 1px solid #e7e7ea;
+  border-radius: 10px;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+  }
+`;
+
+const StoreName = styled.span`
+  color: #333;
+  font-size: 15px;
+  font-weight: 800;
+`;
+
+const StorePrice = styled.span`
+  color: #242582;
+  font-size: 15px;
+  font-weight: 800;
+`;
+
+const StoreStatus = styled.span`
+  color: #2f7d32;
+  font-size: 13px;
+  font-weight: 700;
+`;
+
+const StoreButton = styled.a`
+  padding: 8px 12px;
+
+  border-radius: 8px;
+
+  background-color: #242582;
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  &:hover {
+    background-color: #1c1d68;
+  }
+`;
 const Empty = styled.div`
   background-color: white;
 
@@ -376,10 +436,61 @@ const TvDetails = () => {
             </Info>
           </Top>
 
-          <Divider />
+         <Section>
+  <SectionTitle>Каде го има?</SectionTitle>
 
-          <Section>
-            <SectionTitle>Основни спецификации</SectionTitle>
+  <StoresList>
+    {Object.entries(tv.stores || {}).map(([storeName, store]) => {
+      if (!store) return null;
+
+      const price = store.price;
+      const available = store.inStock;
+
+      const storeUrl =
+  storeName === "Anhoch" && store.url
+    ? `https://www.anhoch.com/products/${store.url}`
+    : storeName === "Setec" && store.handle
+      ? `https://setec.mk/products/${store.handle}`
+      : storeName === "Neptun" && store.url
+  ? `https://www.neptun.mk/categories/${store.url.replace("https://www.neptun.mk/", "")}`
+        : storeName === "DDStore" && store.url
+          ? store.url
+          : null;
+
+      return (
+        <StoreRow key={storeName}>
+          <StoreName>{storeName}</StoreName>
+
+          <StorePrice>
+            {typeof price === "number"
+              ? `${price.toLocaleString("mk-MK")} ден.`
+              : "—"}
+          </StorePrice>
+
+          <StoreStatus>
+            {available ? "Достапно" : "Нема на залиха"}
+          </StoreStatus>
+
+          {storeUrl && (
+            <StoreButton
+              href={storeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+            >
+              Отвори
+            </StoreButton>
+          )}
+        </StoreRow>
+      );
+    })}
+  </StoresList>
+</Section>
+
+<Divider />
+
+<Section>
+  <SectionTitle>Основни спецификации</SectionTitle>
 
             <Specifications>
               <Spec>
