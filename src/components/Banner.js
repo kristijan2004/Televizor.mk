@@ -1,5 +1,7 @@
+
 import React from "react";
 import styled from "styled-components";
+import { useLanguage } from "../LanguageContext";
 
 const Banner = styled.section`
   width: 100%;
@@ -125,28 +127,27 @@ const TvImage = styled.img`
 `;
 
 const BannerComponent = () => {
+  const { t } = useLanguage();
+
   return (
     <Banner>
       <BannerInner>
         <Content>
-          <SmallTitle>Телевизор.mk</SmallTitle>
+          <SmallTitle>{t.logoTitle}</SmallTitle>
 
           <Title>
-            Пронајди го телевизорот
+            {t.bannerTitleLine1}
             <br />
-            што е совршен за тебе
+            {t.bannerTitleLine2}
           </Title>
 
-          <Description>
-            Разгледај модели, спореди спецификации и пронајди телевизор според
-            твоите потреби.
-          </Description>
+          <Description>{t.bannerDescription}</Description>
         </Content>
 
         <TvWrapper>
           <TvImage
             src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=900&q=90"
-            alt="Телевизор"
+            alt={t.tvAlt}
           />
         </TvWrapper>
       </BannerInner>

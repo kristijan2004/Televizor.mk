@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTv } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
+import { useLanguage } from "../LanguageContext";
 
 const NavMain = styled.header`
   width: 100%;
@@ -25,6 +26,7 @@ const NavInner = styled.div`
 
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   box-sizing: border-box;
 `;
@@ -99,8 +101,52 @@ const LogoSubtitle = styled.span`
   letter-spacing: 1.3px;
 `;
 
+const LanguageSwitcher = styled.div`
+  display: flex;
+  align-items: center;
+
+  gap: 4px;
+
+  padding: 4px;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 10px;
+`;
+
+const LanguageButton = styled.button`
+  min-width: 38px;
+
+  padding: 7px 8px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: ${({ active }) =>
+    active ? "rgba(255, 255, 255, 0.18)" : "transparent"};
+
+  color: ${({ active }) =>
+    active ? "#ffffff" : "rgba(255, 255, 255, 0.6)"};
+
+  font-size: 12px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.14);
+    color: white;
+  }
+`;
+
 const Navigation = () => {
   const navigate = useNavigate();
+
+  const { language, setLanguage, t } = useLanguage();
 
   return (
     <NavMain>
@@ -111,11 +157,40 @@ const Navigation = () => {
           </LogoIcon>
 
           <LogoText>
-            <LogoTitle>Телевизор.mk</LogoTitle>
+            <LogoTitle>{t.logoTitle}</LogoTitle>
 
-            <LogoSubtitle>СПОРЕДБА НА ТЕЛЕВИЗОРИ</LogoSubtitle>
+            <LogoSubtitle>{t.logoSubtitle}</LogoSubtitle>
           </LogoText>
         </Logo>
+
+        <LanguageSwitcher aria-label="Language selection">
+          <LanguageButton
+            type="button"
+            active={language === "EN"}
+            onClick={() => setLanguage("EN")}
+            aria-label="English"
+          >
+            EN
+          </LanguageButton>
+
+          <LanguageButton
+            type="button"
+            active={language === "MK"}
+            onClick={() => setLanguage("MK")}
+            aria-label="Македонски"
+          >
+            MK
+          </LanguageButton>
+
+          <LanguageButton
+            type="button"
+            active={language === "SQ"}
+            onClick={() => setLanguage("SQ")}
+            aria-label="Shqip"
+          >
+            SQ
+          </LanguageButton>
+        </LanguageSwitcher>
       </NavInner>
     </NavMain>
   );

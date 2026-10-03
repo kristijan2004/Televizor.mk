@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import Navigation from "./Navigation";
 import { Context } from "./Context";
+import { useLanguage } from "../LanguageContext";
 
 const Page = styled.div`
   min-height: 100vh;
@@ -184,6 +185,8 @@ const ValueCell = styled.td`
 
 const Compare = () => {
   const { compareList, removeFromCompare } = useContext(Context);
+  const { t, language } = useLanguage();
+
   const navigate = useNavigate();
 
   const image =
@@ -191,11 +194,11 @@ const Compare = () => {
 
   const formatValue = (value) => {
     if (value === null || value === undefined || value === "") {
-      return "Нема податок";
+      return t.noData;
     }
 
     if (typeof value === "boolean") {
-      return value ? "✓ Да" : "— Не";
+      return value ? `✓ ${t.yes}` : `— ${t.no}`;
     }
 
     return value;
@@ -207,16 +210,12 @@ const Compare = () => {
         <Navigation />
 
         <Container>
-          <BackButton onClick={() => navigate("/")}>
-            ← Назад кон телевизори
-          </BackButton>
+          <BackButton onClick={() => navigate("/")}>← {t.backToTvs}</BackButton>
 
           <Empty>
-            <EmptyTitle>Нема избрани телевизори</EmptyTitle>
+            <EmptyTitle>{t.noSelectedTvs}</EmptyTitle>
 
-            <EmptyText>
-              Додадете телевизори во споредбата за да ги споредите.
-            </EmptyText>
+            <EmptyText>{t.addTvsToCompare}</EmptyText>
           </Empty>
         </Container>
       </Page>
@@ -225,37 +224,37 @@ const Compare = () => {
 
   const rows = [
     {
-      category: "Основни спецификации",
+      category: t.basicSpecifications,
       specs: [
-        ["Големина", (tv) => `${tv.size}"`],
-        ["Резолуција", (tv) => tv.resolution],
-        ["Технологија", (tv) => tv.technology],
-        ["Освежување", (tv) => `${tv.refreshRate} Hz`],
-        ["Година", (tv) => tv.year],
+        [t.size, (tv) => `${tv.size}"`],
+        [t.resolution, (tv) => tv.resolution],
+        [t.technology, (tv) => tv.technology],
+        [t.refreshRate, (tv) => `${tv.refreshRate} Hz`],
+        [t.year, (tv) => tv.year],
       ],
     },
 
     {
-      category: "Паметни функции и конекции",
+      category: t.smartFunctions,
       specs: [
-        ["Оперативен систем", (tv) => tv.os],
+        [t.operatingSystem, (tv) => tv.os],
         ["HDMI", (tv) => tv.hdmi],
         ["USB", (tv) => tv.usb],
       ],
     },
 
     {
-      category: "Слика",
+      category: t.picture,
       specs: [
-        ["Процесор на слика", (tv) => tv.pictureProcessor],
-        ["HDR формати", (tv) => tv.hdrFormats],
-        ["Обработка на слика", (tv) => tv.brightness],
+        [t.pictureProcessor, (tv) => tv.pictureProcessor],
+        [t.hdrFormats, (tv) => tv.hdrFormats],
+        [t.brightness, (tv) => tv.brightness],
         ["Dolby Vision", (tv) => tv.dolbyVision],
       ],
     },
 
     {
-      category: "Gaming",
+      category: t.gaming,
       specs: [
         ["VRR", (tv) => tv.vrr],
         ["ALLM", (tv) => tv.allm],
@@ -265,10 +264,10 @@ const Compare = () => {
     },
 
     {
-      category: "Звук",
+      category: t.sound,
       specs: [
-        ["Аудио моќност", (tv) => tv.audioPower],
-        ["Аудио систем", (tv) => tv.audioChannels],
+        [t.audioPower, (tv) => tv.audioPower],
+        [t.audioSystem, (tv) => tv.audioChannels],
         ["Dolby Atmos", (tv) => tv.dolbyAtmos],
       ],
     },
@@ -279,17 +278,15 @@ const Compare = () => {
       <Navigation />
 
       <Container>
-        <BackButton onClick={() => navigate("/")}>
-          ← Назад кон телевизори
-        </BackButton>
+        <BackButton onClick={() => navigate("/")}>← {t.backToTvs}</BackButton>
 
-        <Title>Споредба на телевизори</Title>
+        <Title>{t.tvComparison}</Title>
 
         <TableWrapper>
           <Table>
             <thead>
               <HeaderRow>
-                <HeaderCell>Спецификација</HeaderCell>
+                <HeaderCell>{t.specification}</HeaderCell>
 
                 {compareList.map((tv) => (
                   <HeaderCell key={tv.id}>
@@ -302,7 +299,7 @@ const Compare = () => {
                     <Technology>{tv.technology}</Technology>
 
                     <RemoveButton onClick={() => removeFromCompare(tv.id)}>
-                      × Отстрани
+                      × {t.remove}
                     </RemoveButton>
                   </HeaderCell>
                 ))}

@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import { Context } from "./Context";
+import { useLanguage } from "../LanguageContext";
 
 const SubNav = styled.div`
   width: 100%;
@@ -200,13 +201,15 @@ const SubNavigation = () => {
     setRefreshRateFilter,
   } = useContext(Context);
 
+  const { t } = useLanguage();
+
   const handleBrand = (brand) => {
-  if (brandFilter.toLowerCase() === brand.toLowerCase()) {
-    setBrandFilter("");
-  } else {
-    setBrandFilter(brand);
-  }
-};
+    if (brandFilter.toLowerCase() === brand.toLowerCase()) {
+      setBrandFilter("");
+    } else {
+      setBrandFilter(brand);
+    }
+  };
 
   const handleSize = (size) => {
     if (sizeFilter === size) {
@@ -215,6 +218,7 @@ const SubNavigation = () => {
       setSizeFilter(size);
     }
   };
+
   const hasFilters =
     searchTerm ||
     brandFilter ||
@@ -240,7 +244,7 @@ const SubNavigation = () => {
 
           <SearchInput
             type="text"
-            placeholder="Пребарај телевизор..."
+            placeholder={t.searchPlaceholder}
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
@@ -248,7 +252,7 @@ const SubNavigation = () => {
 
         <Divider />
 
-        <FilterLabel>Бренд</FilterLabel>
+        <FilterLabel>{t.brand}</FilterLabel>
 
         <FilterButton
           active={brandFilter === "Samsung"}
@@ -294,7 +298,7 @@ const SubNavigation = () => {
 
         <Divider />
 
-        <FilterLabel>Големина</FilterLabel>
+        <FilterLabel>{t.size}</FilterLabel>
 
         <FilterButton active={sizeFilter === 43} onClick={() => handleSize(43)}>
           43"
@@ -311,8 +315,9 @@ const SubNavigation = () => {
         <FilterButton active={sizeFilter === 85} onClick={() => handleSize(85)}>
           85"
         </FilterButton>
+
         {hasFilters && (
-          <ClearButton onClick={clearFilters}>Исчисти филтри</ClearButton>
+          <ClearButton onClick={clearFilters}>{t.clearFilters}</ClearButton>
         )}
       </SubNavInner>
     </SubNav>

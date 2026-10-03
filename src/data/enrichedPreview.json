@@ -1,0 +1,194 @@
+[
+  {
+    "id": "lg-55c51la",
+    "brand": "LG",
+    "model": "55C51LA",
+    "size": 55,
+    "technology": "OLED",
+    "resolution": "4K",
+    "refreshRate": 120,
+    "year": 2025,
+    "os": "webOS 25",
+    "hdr": true,
+    "dolbyVision": true,
+    "hdmi": 4,
+    "usb": 3,
+    "vrr": true,
+    "allm": true,
+    "pictureProcessor": "α9 AI Processor 4K Gen8",
+    "hdrFormats": [
+      "Dolby Vision",
+      "HDR10",
+      "HLG"
+    ],
+    "brightness": null,
+    "audioPower": 40,
+    "audioChannels": "2.2",
+    "dolbyAtmos": true,
+    "freeSync": true,
+    "gSync": true,
+    "image": "/images/tvs/neptun/lg-55-c51-la-55-4k-oled-120hz-288111.jpg",
+    "stores": {
+      "Neptun": {
+        "price": 49995,
+        "regularPrice": 83999,
+        "inStock": true,
+        "image": "/images/tvs/neptun/lg-55-c51-la-55-4k-oled-120hz-288111.jpg",
+        "url": "https://www.neptun.mk/84113713-LG-55-C51-LA"
+      }
+    }
+  },
+  {
+    "id": "lg-55qned70a6a",
+    "brand": "LG",
+    "model": "55QNED70A6A",
+    "size": 55,
+    "technology": "QNED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2025,
+    "os": "webOS 25",
+    "hdr": true,
+    "dolbyVision": false,
+    "hdmi": 3,
+    "usb": 1,
+    "vrr": true,
+    "allm": true,
+    "pictureProcessor": "α7 AI Processor 4K Gen8",
+    "hdrFormats": [
+      "HDR10",
+      "HLG"
+    ],
+    "brightness": null,
+    "audioPower": 20,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "/images/tvs/neptun/lg-55-qned-70a6a-55-4k-qned-smart-291409.jpg",
+    "stores": {
+      "Neptun": {
+        "price": 22995,
+        "regularPrice": 36999,
+        "inStock": true,
+        "image": "/images/tvs/neptun/lg-55-qned-70a6a-55-4k-qned-smart-291409.jpg",
+        "url": "https://www.neptun.mk/84116521-LG-55-QNED-70A6A"
+      }
+    }
+  },
+  {
+    "id": "lg-55qned80a3a",
+    "brand": "LG",
+    "model": "55QNED80A3A",
+    "size": 55,
+    "technology": "QNED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2025,
+    "os": "webOS 25",
+    "hdr": true,
+    "dolbyVision": false,
+    "hdmi": 3,
+    "usb": 2,
+    "vrr": true,
+    "allm": true,
+    "pictureProcessor": "α7 AI Processor 4K Gen8",
+    "hdrFormats": [
+      "HDR10",
+      "HLG"
+    ],
+    "brightness": null,
+    "audioPower": 20,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "/images/tvs/neptun/lg-55-qned-80a3a-55-4k-qned-smart-288105.jpg",
+    "stores": {
+      "Neptun": {
+        "price": 42999,
+        "regularPrice": 43999,
+        "inStock": true,
+        "image": "/images/tvs/neptun/lg-55-qned-80a3a-55-4k-qned-smart-288105.jpg",
+        "url": "https://www.neptun.mk/84113707-LG-55-QNED-80A3A"
+      }
+    }
+  },
+  {
+    "id": "tcl-55c6k",
+    "brand": "TCL",
+    "model": "55C6K",
+    "size": 55,
+    "technology": "QD-Mini LED",
+    "resolution": "4K",
+    "refreshRate": 144,
+    "year": 2025,
+    "os": "Google TV",
+    "hdr": true,
+    "dolbyVision": true,
+    "hdmi": 4,
+    "usb": 2,
+    "vrr": true,
+    "allm": true,
+    "pictureProcessor": "AiPQ Pro",
+    "hdrFormats": [
+      "Dolby Vision IQ",
+      "HDR10+",
+      "HDR10",
+      "HLG"
+    ],
+    "brightness": "1000 nits",
+    "audioPower": 45,
+    "audioChannels": "2.1",
+    "dolbyAtmos": true,
+    "freeSync": true,
+    "gSync": false,
+    "image": "/images/tvs/neptun/tcl-55-c6k-55-qd-miniled-4k-144hz-295781.jpg",
+    "stores": {
+      "Neptun": {
+        "price": 25995,
+        "regularPrice": 34999,
+        "inStock": true,
+        "image": "/images/tvs/neptun/tcl-55-c6k-55-qd-miniled-4k-144hz-295781.jpg",
+        "url": "https://www.neptun.mk/84119775-TCL-55-C6K-144Hz"
+      }
+    }
+  },
+  {
+    "id": "tcl-55p655",
+    "brand": "TCL",
+    "model": "55P655",
+    "size": 55,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2024,
+    "os": "Google TV",
+    "hdr": true,
+    "dolbyVision": false,
+    "hdmi": 3,
+    "usb": 1,
+    "vrr": null,
+    "allm": true,
+    "pictureProcessor": "AiPQ",
+    "hdrFormats": [
+      "HDR10"
+    ],
+    "brightness": null,
+    "audioPower": 20,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": null,
+    "gSync": null,
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/78397_0-01JVA7V38X79MD482QBXCKPTPF.webp",
+    "stores": {
+      "Setec": {
+        "price": 16995,
+        "regularPrice": 37999,
+        "inStock": false,
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/78397_0-01JVA7V38X79MD482QBXCKPTPF.webp",
+        "handle": "tcl-55p655-1"
+      }
+    }
+  }
+]

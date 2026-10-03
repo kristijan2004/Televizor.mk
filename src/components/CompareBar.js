@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { Context } from "./Context";
+import { useLanguage } from "../LanguageContext";
 
 const Bar = styled.div`
   position: fixed;
@@ -140,6 +141,8 @@ const CompareButton = styled.button`
 
 const CompareBar = () => {
   const { compareList, removeFromCompare } = useContext(Context);
+  const { t } = useLanguage();
+
   const navigate = useNavigate();
 
   if (compareList.length === 0) {
@@ -156,7 +159,11 @@ const CompareBar = () => {
             <Model>
               {tv.model}
 
-              <Remove onClick={() => removeFromCompare(tv.id)} title="Отстрани">
+              <Remove
+                onClick={() => removeFromCompare(tv.id)}
+                title={t.remove}
+                aria-label={t.remove}
+              >
                 ×
               </Remove>
             </Model>
@@ -165,7 +172,7 @@ const CompareBar = () => {
       </Selected>
 
       <CompareButton onClick={() => navigate("/compare")}>
-        Спореди ({compareList.length})
+        {t.compare} ({compareList.length})
       </CompareButton>
     </Bar>
   );

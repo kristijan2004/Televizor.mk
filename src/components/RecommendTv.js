@@ -1,15 +1,17 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
+
 import tvs from "../data/masterTvs.json";
+import Navigation from "./Navigation";
+import { useLanguage } from "../LanguageContext";
 
 function getLowestPrice(stores) {
   if (!stores) return null;
 
   const prices = Object.values(stores)
     .filter(
-      (store) =>
-        store?.inStock === true &&
-        typeof store.price === "number"
+      (store) => store?.inStock === true && typeof store.price === "number",
     )
     .map((store) => store.price);
 
@@ -31,17 +33,19 @@ function getRecommendedSizes(distance) {
     case "До 2 метри":
       return [43, 50, 55];
 
-    case "2–2.5 метри":
-      return [50, 55, 65];
+      ```
+case "2–2.5 метри":
+  return [50, 55, 65];
 
-    case "2.5–3 метри":
-      return [55, 65, 75];
+case "2.5–3 метри":
+  return [55, 65, 75];
 
-    case "Над 3 метри":
-      return [65, 75, 85, 98];
+case "Над 3 метри":
+  return [65, 75, 85, 98];
 
-    default:
-      return [55, 65];
+default:
+  return [55, 65];
+```;
   }
 }
 
@@ -53,7 +57,7 @@ function getSizeScore(size, distance) {
   }
 
   const closest = Math.min(
-    ...recommended.map((value) => Math.abs(value - size))
+    ...recommended.map((value) => Math.abs(value - size)),
   );
 
   if (closest <= 5) return 14;
@@ -155,25 +159,29 @@ function getUsageScore(tv, usage) {
     else if (refreshRate >= 100) score += 11;
     else if (refreshRate >= 60) score += 5;
 
-    if (tv.pictureProcessor && tv.pictureProcessor !== "—") {
-      score += 5;
-    }
+    ```
+if (tv.pictureProcessor && tv.pictureProcessor !== "—") {
+  score += 5;
+}
 
-    if (tv.size >= 65) {
-      score += 4;
-    }
+if (tv.size >= 65) {
+  score += 4;
+}
+```;
   }
 
   if (usage === "Филмови и серии") {
     score += getPictureScore(tv) * 0.7;
 
-    if (tv.dolbyVision === true) {
-      score += 5;
-    }
+    ```
+if (tv.dolbyVision === true) {
+  score += 5;
+}
 
-    if (tv.dolbyAtmos === true) {
-      score += 3;
-    }
+if (tv.dolbyAtmos === true) {
+  score += 3;
+}
+```;
   }
 
   if (usage === "ТВ канали") {
@@ -181,13 +189,15 @@ function getUsageScore(tv, usage) {
       score += 5;
     }
 
-    if (refreshRate >= 100) {
-      score += 5;
-    }
+    ```
+if (refreshRate >= 100) {
+  score += 5;
+}
 
-    if (tv.pictureProcessor && tv.pictureProcessor !== "—") {
-      score += 3;
-    }
+if (tv.pictureProcessor && tv.pictureProcessor !== "—") {
+  score += 3;
+}
+```;
   }
 
   if (usage === "Сè по малку") {
@@ -217,62 +227,455 @@ function getPriorityScore(tv, priority, price, minBudget, maxBudget) {
     const range = maxBudget - minBudget || 1;
     const position = Math.max(0, maxBudget - price);
 
-    score += (position / range) * 20;
-    score += getPictureScore(tv) * 0.5;
-    score += getGamingScore(tv, "Повремено играм") * 0.3;
+    ```
+score += (position / range) * 20;
+score += getPictureScore(tv) * 0.5;
+score += getGamingScore(tv, "Повремено играм") * 0.3;
+```;
   }
 
   return score;
 }
 
-function getReasons(tv, answers) {
+function getReasons(tv, answers, t) {
   const reasons = [];
 
   const recommendedSizes = getRecommendedSizes(answers.distance);
 
   if (recommendedSizes.includes(tv.size)) {
-    reasons.push(`Големината од ${tv.size}" одговара на растојанието`);
+    reasons.push(t.sizeMatchesDistance.replace("{size}", `${tv.size}"`));
   }
 
-  if (
-    answers.usage === "Спорт" &&
-    Number(tv.refreshRate) >= 120
-  ) {
-    reasons.push(`${tv.refreshRate}Hz е одлично за спорт`);
+  if (answers.usage === "Спорт" && Number(tv.refreshRate) >= 120) {
+    reasons.push(t.refreshRateGreatForSports.replace("{rate}", tv.refreshRate));
   }
 
   if (
     answers.gaming !== "Не ми е важен" &&
     (tv.vrr === true || tv.allm === true)
   ) {
-    reasons.push("Има функции корисни за gaming");
+    reasons.push(t.gamingFeatures);
   }
 
   if (answers.priority === "Најдобра слика") {
-    if (
-      tv.technology &&
-      tv.technology !== "LED"
-    ) {
-      reasons.push(`${tv.technology} технологија`);
+    if (tv.technology && tv.technology !== "LED") {
+      reasons.push(t.technologyReason.replace("{technology}", tv.technology));
     }
 
-    if (tv.dolbyVision === true) {
-      reasons.push("Dolby Vision");
-    }
+    ```
+if (tv.dolbyVision === true) {
+  reasons.push("Dolby Vision");
+}
 
-    if (tv.hdr === true) {
-      reasons.push("HDR");
-    }
+if (tv.hdr === true) {
+  reasons.push("HDR");
+}
+```;
   }
 
   if (reasons.length === 0) {
-    reasons.push("Добро се вклопува во твоите барања");
+    reasons.push(t.goodFit);
   }
 
   return reasons.slice(0, 3);
 }
 
+/* =========================
+STYLES
+========================= */
+
+const Page = styled.div`
+  min-height: 100vh;
+  background: #f7f7f9;
+`;
+
+const Container = styled.main`
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 45px 20px 70px;
+  box-sizing: border-box;
+`;
+
+const Intro = styled.div`
+  text-align: center;
+  margin-bottom: 30px;
+`;
+
+const MainTitle = styled.h1`
+  margin: 0;
+  color: #242582;
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+
+  @media (max-width: 600px) {
+    font-size: 28px;
+  }
+`;
+
+const IntroText = styled.p`
+  max-width: 650px;
+  margin: 12px auto 0;
+  color: #777;
+  font-size: 15px;
+  line-height: 1.6;
+`;
+
+const WizardCard = styled.div`
+  background: white;
+  border: 1px solid #e5e5e8;
+  border-radius: 18px;
+  padding: 32px;
+  box-shadow: 0 8px 30px rgba(36, 37, 130, 0.06);
+
+  @media (max-width: 600px) {
+    padding: 22px 18px;
+    border-radius: 14px;
+  }
+`;
+
+const ProgressArea = styled.div`
+  margin-bottom: 30px;
+`;
+
+const ProgressTop = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 9px;
+`;
+
+const ProgressLabel = styled.span`
+  color: #777;
+  font-size: 12px;
+  font-weight: 700;
+`;
+
+const ProgressTrack = styled.div`
+  width: 100%;
+  height: 7px;
+  background: #eeeef3;
+  border-radius: 10px;
+  overflow: hidden;
+`;
+
+const ProgressBar = styled.div`
+  width: ${({ progress }) => `${progress}%`};
+  height: 100%;
+  background: #242582;
+  border-radius: inherit;
+  transition: width 0.3s ease;
+`;
+
+const QuestionTitle = styled.h2`
+  margin: 0 0 22px;
+  color: #242582;
+  font-size: 24px;
+  font-weight: 800;
+
+  @media (max-width: 600px) {
+    font-size: 21px;
+  }
+`;
+
+const BudgetGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+`;
+
+const BudgetField = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const Label = styled.label`
+  margin-bottom: 7px;
+  color: #555;
+  font-size: 13px;
+  font-weight: 700;
+`;
+
+const InputWrapper = styled.div`
+  position: relative;
+`;
+
+const BudgetInput = styled.input`
+  width: 100%;
+  padding: 13px 50px 13px 14px;
+  box-sizing: border-box;
+  border: 1px solid #dcdce2;
+  border-radius: 10px;
+  outline: none;
+  color: #333;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.2s;
+
+  &:focus {
+    border-color: #242582;
+    box-shadow: 0 0 0 3px rgba(36, 37, 130, 0.08);
+  }
+
+  &::placeholder {
+    color: #aaa;
+  }
+`;
+
+const Currency = styled.span`
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 12px;
+  font-weight: 700;
+`;
+
+const Options = styled.div`
+  display: grid;
+  gap: 11px;
+`;
+
+const OptionButton = styled.button`
+  width: 100%;
+  padding: 16px 18px;
+  border: 1px solid ${({ selected }) => (selected ? "#242582" : "#dedee3")};
+  border-radius: 11px;
+  background: ${({ selected }) => (selected ? "#f0efff" : "#fff")};
+  color: ${({ selected }) => (selected ? "#242582" : "#444")};
+  font-size: 14px;
+  font-weight: ${({ selected }) => (selected ? "800" : "600")};
+  text-align: left;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    border-color: #242582;
+    background: #f8f7ff;
+  }
+`;
+
+const NavigationButtons = styled.div`
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 30px;
+`;
+
+const Button = styled.button`
+  padding: 12px 22px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+`;
+
+const BackButton = styled(Button)`
+  border: 1px solid #dddde2;
+  background: white;
+  color: #666;
+
+  &:hover:not(:disabled) {
+    border-color: #bbb;
+    color: #333;
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: default;
+  }
+`;
+
+const ContinueButton = styled(Button)`
+  border: none;
+  background: #242582;
+  color: white;
+
+  &:hover:not(:disabled) {
+    background: #1d1e70;
+    transform: translateY(-1px);
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    cursor: default;
+  }
+`;
+
+const ResultsHeader = styled.div`
+  margin-bottom: 25px;
+`;
+
+const ResultsTitle = styled.h2`
+  margin: 0;
+  color: #242582;
+  font-size: 25px;
+  font-weight: 800;
+`;
+
+const ResultsText = styled.p`
+  margin: 8px 0 0;
+  color: #777;
+  font-size: 14px;
+`;
+
+const EmptyResults = styled.div`
+  padding: 25px;
+  border: 1px solid #e3e3e7;
+  border-radius: 12px;
+  background: #fafafa;
+`;
+
+const EmptyTitle = styled.h3`
+  margin: 0 0 7px;
+  color: #242582;
+  font-size: 18px;
+`;
+
+const EmptyText = styled.p`
+  margin: 0;
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+`;
+
+const ResultsList = styled.div`
+  display: grid;
+  gap: 16px;
+`;
+
+const ResultCard = styled.article`
+  padding: 20px;
+  border: 1px solid #e2e2e6;
+  border-radius: 14px;
+  background: white;
+  transition: 0.2s;
+
+  &:hover {
+    border-color: #cfcfe0;
+    box-shadow: 0 6px 22px rgba(36, 37, 130, 0.06);
+  }
+`;
+
+const ResultContent = styled.div`
+  display: flex;
+  gap: 22px;
+
+  @media (max-width: 650px) {
+    flex-direction: column;
+  }
+`;
+
+const TvImage = styled.img`
+  width: 180px;
+  height: 130px;
+  object-fit: contain;
+  flex-shrink: 0;
+
+  @media (max-width: 650px) {
+    width: 100%;
+    height: 160px;
+  }
+`;
+
+const ResultInfo = styled.div`
+  flex: 1;
+  min-width: 0;
+`;
+
+const TvName = styled.h3`
+  margin: 0;
+  color: #242582;
+  font-size: 19px;
+  font-weight: 800;
+`;
+
+const Specs = styled.p`
+  margin: 8px 0 14px;
+  color: #777;
+  font-size: 13px;
+  line-height: 1.5;
+`;
+
+const Price = styled.div`
+  margin-bottom: 8px;
+  color: #242582;
+  font-size: 23px;
+  font-weight: 800;
+`;
+
+const Stores = styled.p`
+  margin: 0 0 13px;
+  color: #777;
+  font-size: 12px;
+`;
+
+const Reasons = styled.ul`
+  margin: 0 0 17px;
+  padding-left: 20px;
+  color: #444;
+  font-size: 13px;
+  line-height: 1.6;
+
+  li::marker {
+    color: #242582;
+  }
+`;
+
+const Score = styled.p`
+  margin: 0 0 13px;
+  color: #777;
+  font-size: 12px;
+
+  strong {
+    color: #242582;
+    font-size: 14px;
+  }
+`;
+
+const DetailsLink = styled(Link)`
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background: #242582;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.2s;
+
+  &:hover {
+    background: #1d1e70;
+  }
+`;
+
+const RestartButton = styled.button`
+  margin-top: 25px;
+  padding: 11px 18px;
+  border: 1px solid #dddde2;
+  border-radius: 9px;
+  background: white;
+  color: #666;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #bbb;
+    color: #333;
+  }
+`;
+
 function RecommendTv() {
+  const { t } = useLanguage();
+
   const [step, setStep] = useState(0);
 
   const [answers, setAnswers] = useState({
@@ -281,51 +684,96 @@ function RecommendTv() {
     distance: "",
     usage: "",
     gaming: "",
-    priority: ""
+    priority: "",
   });
 
   const [results, setResults] = useState([]);
 
   const steps = [
     {
-      title: "Колку далеку седиш од телевизорот?",
+      title: t.distanceQuestion,
       key: "distance",
       options: [
-        "До 2 метри",
-        "2–2.5 метри",
-        "2.5–3 метри",
-        "Над 3 метри"
-      ]
+        {
+          value: "До 2 метри",
+          label: t.distanceUpTo2,
+        },
+        {
+          value: "2–2.5 метри",
+          label: t.distance2To25,
+        },
+        {
+          value: "2.5–3 метри",
+          label: t.distance25To3,
+        },
+        {
+          value: "Над 3 метри",
+          label: t.distanceOver3,
+        },
+      ],
     },
     {
-      title: "Што гледаш најмногу?",
+      title: t.usageQuestion,
       key: "usage",
       options: [
-        "Филмови и серии",
-        "Спорт",
-        "ТВ канали",
-        "Сè по малку"
-      ]
+        {
+          value: "Филмови и серии",
+          label: t.moviesAndSeries,
+        },
+        {
+          value: "Спорт",
+          label: t.sports,
+        },
+        {
+          value: "ТВ канали",
+          label: t.tvChannels,
+        },
+        {
+          value: "Сè по малку",
+          label: t.aBitOfEverything,
+        },
+      ],
     },
     {
-      title: "Колку ти е важен gaming?",
+      title: t.gamingQuestion,
       key: "gaming",
       options: [
-        "Не ми е важен",
-        "Повремено играм",
-        "Gaming ми е многу важен"
-      ]
+        {
+          value: "Не ми е важен",
+          label: t.gamingNotImportant,
+        },
+        {
+          value: "Повремено играм",
+          label: t.gamingSometimes,
+        },
+        {
+          value: "Gaming ми е многу важен",
+          label: t.gamingVeryImportant,
+        },
+      ],
     },
     {
-      title: "Што ти е најважно при изборот?",
+      title: t.priorityQuestion,
       key: "priority",
       options: [
-        "Најдобра слика",
-        "Најдобар gaming",
-        "Најголем екран",
-        "Најдобар однос цена/квалитет"
-      ]
-    }
+        {
+          value: "Најдобра слика",
+          label: t.bestPicture,
+        },
+        {
+          value: "Најдобар gaming",
+          label: t.bestGaming,
+        },
+        {
+          value: "Најголем екран",
+          label: t.largestScreen,
+        },
+        {
+          value: "Најдобар однос цена/квалитет",
+          label: t.bestValue,
+        },
+      ],
+    },
   ];
 
   const currentStep = steps[step - 1];
@@ -333,7 +781,7 @@ function RecommendTv() {
   const updateAnswer = (key, value) => {
     setAnswers((prev) => ({
       ...prev,
-      [key]: value
+      [key]: value,
     }));
   };
 
@@ -341,46 +789,59 @@ function RecommendTv() {
     const minBudget = Number(answers.minBudget);
     const maxBudget = Number(answers.maxBudget);
 
-    const candidates = tvs
-      .map((tv) => {
-        const price = getLowestPrice(tv.stores);
+    ```
+const candidates = tvs
+  .map((tv) => {
+    const price = getLowestPrice(tv.stores);
 
-        if (price === null) return null;
+    if (price === null) return null;
 
-        if (price < minBudget || price > maxBudget) {
-          return null;
-        }
+    if (price < minBudget || price > maxBudget) {
+      return null;
+    }
 
-        let score = 0;
+    let score = 0;
 
-        score += getSizeScore(tv.size, answers.distance);
+    score += getSizeScore(
+      tv.size,
+      answers.distance
+    );
 
-        score += getUsageScore(tv, answers.usage);
+    score += getUsageScore(
+      tv,
+      answers.usage
+    );
 
-        score += getGamingScore(tv, answers.gaming);
+    score += getGamingScore(
+      tv,
+      answers.gaming
+    );
 
-        score += getPriorityScore(
-          tv,
-          answers.priority,
-          price,
-          minBudget,
-          maxBudget
-        );
+    score += getPriorityScore(
+      tv,
+      answers.priority,
+      price,
+      minBudget,
+      maxBudget
+    );
 
-        return {
-          ...tv,
-          lowestPrice: price,
-          availableStores: getAvailableStores(tv.stores),
-          score: Math.round(score),
-          reasons: getReasons(tv, answers)
-        };
-      })
-      .filter(Boolean);
+    return {
+      ...tv,
+      lowestPrice: price,
+      availableStores: getAvailableStores(
+        tv.stores
+      ),
+      score: Math.round(score),
+      reasons: getReasons(tv, answers, t)
+    };
+  })
+  .filter(Boolean);
 
-    candidates.sort((a, b) => b.score - a.score);
+candidates.sort((a, b) => b.score - a.score);
 
-    setResults(candidates.slice(0, 5));
-    setStep(steps.length + 1);
+setResults(candidates.slice(0, 5));
+setStep(steps.length + 1);
+```;
   };
 
   const next = () => {
@@ -410,304 +871,205 @@ function RecommendTv() {
       distance: "",
       usage: "",
       gaming: "",
-      priority: ""
+      priority: "",
     });
 
-    setResults([]);
-    setStep(0);
+    ```
+setResults([]);
+setStep(0);
+```;
   };
 
+  const progress =
+    step === 0 ? 20 : Math.min(((step + 1) / (steps.length + 1)) * 100, 100);
+
   return (
-    <div
-      style={{
-        maxWidth: "900px",
-        margin: "40px auto",
-        padding: "20px"
-      }}
-    >
-      <h1>Помош да одберам ТВ</h1>
+    <Page>
+      {" "}
+      <Navigation />
+      ```
+      <Container>
+        {step <= steps.length && (
+          <Intro>
+            <MainTitle>{t.recommend}</MainTitle>
 
-      {step <= steps.length && (
-        <p>
-          Одговори на неколку прашања и ќе ти предложиме
-          телевизори според твоите потреби.
-        </p>
-      )}
-
-      {/* БУЏЕТ */}
-      {step === 0 && (
-        <div>
-          <h2>Кој е твојот буџет?</h2>
-
-          <div
-            style={{
-              display: "flex",
-              gap: "15px",
-              marginTop: "20px",
-              flexWrap: "wrap"
-            }}
-          >
-            <div>
-              <label>Од</label>
-
-              <input
-                type="number"
-                placeholder="5000"
-                value={answers.minBudget}
-                onChange={(e) =>
-                  updateAnswer("minBudget", e.target.value)
-                }
-                style={{
-                  display: "block",
-                  padding: "10px",
-                  marginTop: "5px",
-                  width: "150px"
-                }}
-              />
-
-              <small>ден.</small>
-            </div>
-
-            <div>
-              <label>До</label>
-
-              <input
-                type="number"
-                placeholder="50000"
-                value={answers.maxBudget}
-                onChange={(e) =>
-                  updateAnswer("maxBudget", e.target.value)
-                }
-                style={{
-                  display: "block",
-                  padding: "10px",
-                  marginTop: "5px",
-                  width: "150px"
-                }}
-              />
-
-              <small>ден.</small>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {/* ПРАШАЊА */}
-      {step > 0 &&
-        step <= steps.length &&
-        currentStep && (
-          <div>
-            <h2>{currentStep.title}</h2>
-
-            <div
-              style={{
-                display: "grid",
-                gap: "10px",
-                marginTop: "20px"
-              }}
-            >
-              {currentStep.options.map((option) => (
-                <button
-                  key={option}
-                  onClick={() =>
-                    updateAnswer(currentStep.key, option)
-                  }
-                  style={{
-                    padding: "15px",
-                    textAlign: "left",
-                    cursor: "pointer",
-                    border:
-                      answers[currentStep.key] === option
-                        ? "2px solid #242582"
-                        : "1px solid #ccc",
-                    borderRadius: "8px",
-                    background:
-                      answers[currentStep.key] === option
-                        ? "#f0efff"
-                        : "white"
-                  }}
-                >
-                  {option}
-                </button>
-              ))}
-            </div>
-          </div>
+            <IntroText>{t.recommendDescription}</IntroText>
+          </Intro>
         )}
 
-      {/* РЕЗУЛТАТИ */}
-      {step === steps.length + 1 && (
-        <div>
-          <h2>Телевизори што одговараат на твоите барања</h2>
+        <WizardCard>
+          {step <= steps.length && (
+            <>
+              <ProgressArea>
+                <ProgressTop>
+                  <ProgressLabel>
+                    {step === 0 ? "1" : step + 1} / {steps.length + 1}
+                  </ProgressLabel>
 
-          <p>
-            Најдовме {results.length} модели во твојот буџет.
-          </p>
+                  <ProgressLabel>{Math.round(progress)}%</ProgressLabel>
+                </ProgressTop>
 
-          {results.length === 0 && (
-            <div
-              style={{
-                padding: "20px",
-                border: "1px solid #ddd",
-                borderRadius: "10px"
-              }}
-            >
-              <h3>Нема доволно резултати</h3>
+                <ProgressTrack>
+                  <ProgressBar progress={progress} />
+                </ProgressTrack>
+              </ProgressArea>
 
-              <p>
-                Пробај со поширок буџет или со поголем опсег
-                на растојание.
-              </p>
-            </div>
+              {step === 0 && (
+                <div>
+                  <QuestionTitle>{t.budgetQuestion}</QuestionTitle>
+
+                  <BudgetGrid>
+                    <BudgetField>
+                      <Label>{t.from}</Label>
+
+                      <InputWrapper>
+                        <BudgetInput
+                          type="number"
+                          min="0"
+                          placeholder="5000"
+                          value={answers.minBudget}
+                          onChange={(e) =>
+                            updateAnswer("minBudget", e.target.value)
+                          }
+                        />
+
+                        <Currency>{t.denars}</Currency>
+                      </InputWrapper>
+                    </BudgetField>
+
+                    <BudgetField>
+                      <Label>{t.to}</Label>
+
+                      <InputWrapper>
+                        <BudgetInput
+                          type="number"
+                          min="0"
+                          placeholder="50000"
+                          value={answers.maxBudget}
+                          onChange={(e) =>
+                            updateAnswer("maxBudget", e.target.value)
+                          }
+                        />
+
+                        <Currency>{t.denars}</Currency>
+                      </InputWrapper>
+                    </BudgetField>
+                  </BudgetGrid>
+                </div>
+              )}
+
+              {step > 0 && step <= steps.length && currentStep && (
+                <div>
+                  <QuestionTitle>{currentStep.title}</QuestionTitle>
+
+                  <Options>
+                    {currentStep.options.map((option) => (
+                      <OptionButton
+                        key={option.value}
+                        selected={answers[currentStep.key] === option.value}
+                        onClick={() =>
+                          updateAnswer(currentStep.key, option.value)
+                        }
+                      >
+                        {option.label}
+                      </OptionButton>
+                    ))}
+                  </Options>
+                </div>
+              )}
+
+              <NavigationButtons>
+                <BackButton onClick={back} disabled={step === 0}>
+                  ← {t.back}
+                </BackButton>
+
+                <ContinueButton onClick={next} disabled={!canContinue}>
+                  {step === steps.length ? t.findTv : t.continue}
+                  {" →"}
+                </ContinueButton>
+              </NavigationButtons>
+            </>
           )}
 
-          <div
-            style={{
-              display: "grid",
-              gap: "20px",
-              marginTop: "25px"
-            }}
-          >
-            {results.map((tv) => (
-              <div
-                key={tv.id}
-                style={{
-                  border: "1px solid #ddd",
-                  borderRadius: "12px",
-                  padding: "20px",
-                  background: "#fff"
-                }}
-              >
-                <div
-                  style={{
-                    display: "flex",
-                    gap: "20px",
-                    flexWrap: "wrap"
-                  }}
-                >
-                  {tv.image && (
-                    <img
-                      src={tv.image}
-                      alt={`${tv.brand} ${tv.model}`}
-                      style={{
-                        width: "180px",
-                        height: "130px",
-                        objectFit: "contain"
-                      }}
-                    />
-                  )}
+          {step === steps.length + 1 && (
+            <>
+              <ResultsHeader>
+                <ResultsTitle>{t.recommendedTvs}</ResultsTitle>
 
-                  <div style={{ flex: 1 }}>
-                    <h3 style={{ marginTop: 0 }}>
-                      {tv.brand} {tv.model}
-                    </h3>
+                <ResultsText>
+                  {t.foundModels.replace("{count}", results.length)}
+                </ResultsText>
+              </ResultsHeader>
 
-                    <p>
-                      {tv.size}" · {tv.technology} ·{" "}
-                      {tv.resolution} · {tv.refreshRate}Hz
-                    </p>
+              {results.length === 0 && (
+                <EmptyResults>
+                  <EmptyTitle>{t.noEnoughResults}</EmptyTitle>
 
-                    <h2>
-                      {tv.lowestPrice.toLocaleString("mk-MK")} ден.
-                    </h2>
+                  <EmptyText>{t.tryWiderBudget}</EmptyText>
+                </EmptyResults>
+              )}
 
-                    <p>
-                      Достапно во:{" "}
-                      {tv.availableStores.join(" · ")}
-                    </p>
+              {results.length > 0 && (
+                <ResultsList>
+                  {results.map((tv) => (
+                    <ResultCard key={tv.id}>
+                      <ResultContent>
+                        {tv.image && (
+                          <TvImage
+                            src={tv.image}
+                            alt={`${tv.brand} ${tv.model}`}
+                          />
+                        )}
 
-                    <ul>
-                      {tv.reasons.map((reason) => (
-                        <li key={reason}>{reason}</li>
-                      ))}
-                    </ul>
+                        <ResultInfo>
+                          <TvName>
+                            {tv.brand} {tv.model}
+                          </TvName>
 
-                    <p>
-                      Резултат: <strong>{tv.score}</strong>
-                    </p>
+                          <Specs>
+                            {tv.size}" · {tv.technology} · {tv.resolution} ·{" "}
+                            {tv.refreshRate}Hz
+                          </Specs>
 
-                    <Link
-                      to={`/tv/${encodeURIComponent(
-                        tv.brand
-                      )}/${encodeURIComponent(tv.model)}`}
-                      style={{
-                        display: "inline-block",
-                        marginTop: "10px",
-                        padding: "10px 16px",
-                        background: "#242582",
-                        color: "white",
-                        textDecoration: "none",
-                        borderRadius: "6px"
-                      }}
-                    >
-                      Види детали
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+                          <Price>
+                            {tv.lowestPrice.toLocaleString("mk-MK")}{" "}
+                            {t.denarsShort}
+                          </Price>
 
-          <button
-            onClick={restart}
-            style={{
-              marginTop: "30px",
-              padding: "12px 20px",
-              cursor: "pointer"
-            }}
-          >
-            Пробај повторно
-          </button>
-        </div>
-      )}
+                          <Stores>
+                            {t.availableAt} {tv.availableStores.join(" · ")}
+                          </Stores>
 
-      {/* КОПЧИЊА */}
-      {step <= steps.length && (
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            marginTop: "30px"
-          }}
-        >
-          <button
-            onClick={back}
-            disabled={step === 0}
-            style={{
-              padding: "12px 20px",
-              cursor: step === 0 ? "default" : "pointer"
-            }}
-          >
-            Назад
-          </button>
+                          <Reasons>
+                            {tv.reasons.map((reason) => (
+                              <li key={reason}>{reason}</li>
+                            ))}
+                          </Reasons>
 
-          <button
-            onClick={next}
-            disabled={!canContinue}
-            style={{
-              padding: "12px 20px",
-              cursor: canContinue ? "pointer" : "default"
-            }}
-          >
-            {step === steps.length
-              ? "Најди ми ТВ"
-              : "Продолжи"}
-          </button>
-        </div>
-      )}
+                          <Score>
+                            {t.score}: <strong>{tv.score}</strong>
+                          </Score>
 
-      {/* ПРОГРЕС */}
-      {step <= steps.length && (
-        <p
-          style={{
-            marginTop: "20px",
-            textAlign: "center",
-            color: "#666"
-          }}
-        >
-          {step + 1} / {steps.length + 1}
-        </p>
-      )}
-    </div>
+                          <DetailsLink
+                            to={`/tv/${encodeURIComponent(
+                              tv.brand,
+                            )}/${encodeURIComponent(tv.model)}`}
+                          >
+                            {t.viewDetails} →
+                          </DetailsLink>
+                        </ResultInfo>
+                      </ResultContent>
+                    </ResultCard>
+                  ))}
+                </ResultsList>
+              )}
+
+              <RestartButton onClick={restart}>↻ {t.tryAgain}</RestartButton>
+            </>
+          )}
+        </WizardCard>
+      </Container>
+    </Page>
   );
 }
 

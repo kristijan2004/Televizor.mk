@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { Context } from "./Context";
+import { useLanguage } from "../LanguageContext";
 
 const Cont = styled.div`
   width: 100%;
@@ -51,6 +52,8 @@ const QuickCategories = () => {
     setRefreshRateFilter,
   } = useContext(Context);
 
+  const { t } = useLanguage();
+
   const handleTechnology = (technology) => {
     setRefreshRateFilter("");
 
@@ -73,7 +76,7 @@ const QuickCategories = () => {
 
   return (
     <Cont>
-      <Label>Популарни категории</Label>
+      <Label>{t.popularCategories}</Label>
 
       <Categories>
         <Category

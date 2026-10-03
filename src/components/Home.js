@@ -1,3 +1,4 @@
+
 import React, { useContext } from "react";
 import styled from "styled-components";
 
@@ -8,6 +9,7 @@ import TileCont from "./TileCont";
 import QuickCategories from "./QuickCategories";
 import CompareBar from "./CompareBar";
 import { Context } from "./Context";
+import { useLanguage } from "../LanguageContext";
 
 const HomeCont = styled.div`
   min-height: 100vh;
@@ -184,8 +186,16 @@ const MoreButton = styled.button`
 `;
 
 const Home = () => {
-  const { list, setItemsPerPage, itemsPerPage, sortBy, setSortBy, hasMore } =
-    useContext(Context);
+  const {
+    list,
+    setItemsPerPage,
+    itemsPerPage,
+    sortBy,
+    setSortBy,
+    hasMore,
+  } = useContext(Context);
+
+  const { t } = useLanguage();
 
   return (
     <HomeCont>
@@ -198,29 +208,31 @@ const Home = () => {
       <ContentHeader>
         <TitleCont>
           <TitleRow>
-            <Title>Телевизори</Title>
+            <Title>{t.televisions}</Title>
 
             <Count>{list.length}</Count>
           </TitleRow>
 
-          <Subtitle>Пронајди го моделот што најмногу ти одговара</Subtitle>
+          <Subtitle>{t.homeSubtitle}</Subtitle>
         </TitleCont>
 
         <SortBox>
-          <SortLabel>Сортирај:</SortLabel>
+          <SortLabel>{t.sort}</SortLabel>
 
           <SortSelect
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value)}
           >
-            <option value="newest">Најнови</option>
-            <option value="oldest">Најстари</option>
-            <option value="size-small">Најмали</option>
-            <option value="size-large">Најголеми</option>
+            <option value="newest">{t.newest}</option>
+            <option value="oldest">{t.oldest}</option>
+            <option value="size-small">{t.smallest}</option>
+            <option value="size-large">{t.largest}</option>
           </SortSelect>
         </SortBox>
       </ContentHeader>
+
       <QuickCategories />
+
       <TileCont />
 
       {hasMore && (
@@ -230,7 +242,7 @@ const Home = () => {
               setItemsPerPage(itemsPerPage + 6);
             }}
           >
-            Прикажи повеќе
+            {t.showMore}
           </MoreButton>
         </MoreCont>
       )}

@@ -1,8 +1,8 @@
-
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { Context } from "./Context";
+import { useLanguage } from "../LanguageContext";
 
 const Cont = styled.div`
   width: 100%;
@@ -214,6 +214,7 @@ const Price = styled.div`
 
   color: #242582;
 `;
+
 const Stores = styled.div`
   margin-top: 7px;
   color: #777;
@@ -264,6 +265,8 @@ const TileCont = () => {
   const { list, compareList, addToCompare, removeFromCompare } =
     useContext(Context);
 
+  const { t } = useLanguage();
+
   const navigate = useNavigate();
 
   const getLowestPrice = (stores) => {
@@ -283,13 +286,15 @@ const TileCont = () => {
       <TilesCont>
         {list.map((tv) => {
           const lowestPrice = getLowestPrice(tv.stores);
-const availableStores = Object.entries(tv.stores || {})
-  .filter(([_, store]) => store?.inStock === true)
-  .map(([storeName]) => storeName);
 
-const checkStockStores = Object.entries(tv.stores || {})
-  .filter(([_, store]) => store?.inStock === null && store?.price)
-  .map(([storeName]) => storeName);
+          const availableStores = Object.entries(tv.stores || {})
+            .filter(([_, store]) => store?.inStock === true)
+            .map(([storeName]) => storeName);
+
+          const checkStockStores = Object.entries(tv.stores || {})
+            .filter(([_, store]) => store?.inStock === null && store?.price)
+            .map(([storeName]) => storeName);
+
           return (
             <Tile
               key={tv.id}
@@ -300,10 +305,7 @@ const checkStockStores = Object.entries(tv.stores || {})
               }
             >
               <ImageCont>
-                <TvImage
-                  src={tv.image}
-                  alt={`${tv.brand} ${tv.model}`}
-                />
+                <TvImage src={tv.image} alt={`${tv.brand} ${tv.model}`} />
               </ImageCont>
 
               <Brand>{tv.brand}</Brand>
@@ -334,24 +336,21 @@ const checkStockStores = Object.entries(tv.stores || {})
                 )}
               </GamingInfo> */}
 
-             {lowestPrice !== null && (
-  <Price>
-    {lowestPrice.toLocaleString("mk-MK")} ден.
-  </Price>
-)}
-{availableStores.length > 0 && (
-  <Stores>
-    Достапно во: {availableStores.join(" · ")}
-  </Stores>
-)}
+              {lowestPrice !== null && (
+                <Price>{lowestPrice.toLocaleString("mk-MK")} ден.</Price>
+              )}
 
-{checkStockStores.length > 0 && (
-  <Stores>
-    Провери залиха: {checkStockStores.join(" · ")}
-  </Stores>
-)}
+              {availableStores.length > 0 && (
+                <Stores>
+                  {t.availableAt} {availableStores.join(" · ")}
+                </Stores>
+              )}
 
-
+              {checkStockStores.length > 0 && (
+                <Stores>
+                  {t.checkStock} {checkStockStores.join(" · ")}
+                </Stores>
+              )}
 
               <Bottom>
                 <CompareButton
@@ -366,8 +365,8 @@ const checkStockStores = Object.entries(tv.stores || {})
                   }}
                 >
                   {compareList.some((item) => item.id === tv.id)
-                    ? "✓ Додадено"
-                    : "+ Спореди"}
+                    ? t.added
+                    : t.compare}
                 </CompareButton>
               </Bottom>
             </Tile>
