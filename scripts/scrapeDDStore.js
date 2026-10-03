@@ -106,12 +106,11 @@ function getProductsFromHtml(raw) {
       text.includes("Последно парче")
     ) {
       inStock = true;
-    } else if (
-      text.includes("Прашај за залиха") ||
-      text.includes("Нема залиха")
-    ) {
-      inStock = false;
-    }
+    } else if (text.includes("Прашај за залиха")) {
+  inStock = null;
+} else if (text.includes("Нема залиха")) {
+  inStock = false;
+}
 
     products.push({
       name,
@@ -147,10 +146,15 @@ async function scrape() {
         "utf8"
       );
 
-      command = command.replace(
-        /televisions\.html\?utm_source=chatgpt\.com&p=2/g,
-        `televisions.html?utm_source=chatgpt.com&p=${page}`
-      );
+     const pageUrl =
+  page === 1
+    ? "https://ddstore.mk/mk/monitorstvandprojectors/televisionsandequipment/televisions.html?utm_source=chatgpt.com"
+    : `https://ddstore.mk/mk/monitorstvandprojectors/televisionsandequipment/televisions.html?p=${page}&utm_source=chatgpt.com`;
+
+command = command.replace(
+  /https:\/\/ddstore\.mk\/mk\/monitorstvandprojectors\/televisionsandequipment\/televisions\.html\?utm_source=chatgpt\.com/,
+  pageUrl
+);
 
       const raw = execSync(command, {
         encoding: "utf8",

@@ -284,8 +284,12 @@ const TileCont = () => {
         {list.map((tv) => {
           const lowestPrice = getLowestPrice(tv.stores);
 const availableStores = Object.entries(tv.stores || {})
-    .filter(([_, store]) => store?.inStock)
-    .map(([storeName]) => storeName);
+  .filter(([_, store]) => store?.inStock === true)
+  .map(([storeName]) => storeName);
+
+const checkStockStores = Object.entries(tv.stores || {})
+  .filter(([_, store]) => store?.inStock === null && store?.price)
+  .map(([storeName]) => storeName);
           return (
             <Tile
               key={tv.id}
@@ -335,10 +339,15 @@ const availableStores = Object.entries(tv.stores || {})
     {lowestPrice.toLocaleString("mk-MK")} ден.
   </Price>
 )}
-
 {availableStores.length > 0 && (
   <Stores>
     Достапно во: {availableStores.join(" · ")}
+  </Stores>
+)}
+
+{checkStockStores.length > 0 && (
+  <Stores>
+    Провери залиха: {checkStockStores.join(" · ")}
   </Stores>
 )}
 

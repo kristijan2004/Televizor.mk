@@ -467,9 +467,13 @@ const TvDetails = () => {
               : "—"}
           </StorePrice>
 
-          <StoreStatus>
-            {available ? "Достапно" : "Нема на залиха"}
-          </StoreStatus>
+         <StoreStatus>
+  {available === true
+    ? "Достапно"
+    : available === null
+      ? "Провери залиха"
+      : "Нема на залиха"}
+</StoreStatus>
 
           {storeUrl && (
             <StoreButton

@@ -68,7 +68,7 @@
         "url": "tv-aiwa-50-50n21-dled-4k-smart-tizen-os-hdmix3usboptwifidvbcs2dts-8494"
       },
       "DDStore": {
-        "price": 15985,
+        "price": 15980,
         "regularPrice": null,
         "inStock": true,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1038590_80_w.png?___store=mk",
@@ -145,7 +145,7 @@
         "url": "tv-aiwa-55-55n27-qled-4k-smart-tizen-os-hdmix3usboptwifidvbcs2dts-8496"
       },
       "DDStore": {
-        "price": 18981,
+        "price": 18980,
         "regularPrice": null,
         "inStock": true,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1038592_36_w.png?___store=mk",
@@ -222,9 +222,9 @@
         "handle": "bautech-32bhr45"
       },
       "DDStore": {
-        "price": 6999,
+        "price": 6368,
         "regularPrice": null,
-        "inStock": false,
+        "inStock": null,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1024871_95_w.jpg?___store=mk",
         "url": "https://ddstore.mk/mk/bautech-32bhr45-32-82cm-hd-ready-led-tv.html"
       }
@@ -299,7 +299,7 @@
         "handle": "bautech-43bfh80"
       },
       "DDStore": {
-        "price": 11999,
+        "price": 10919,
         "regularPrice": null,
         "inStock": true,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1026011_88_w.jpg?___store=mk",
@@ -1243,9 +1243,9 @@
         "handle": "haier-h43k85fux"
       },
       "DDStore": {
-        "price": 14999,
+        "price": 14849,
         "regularPrice": null,
-        "inStock": false,
+        "inStock": null,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1032290_10_w.jpg?___store=mk",
         "url": "https://ddstore.mk/mk/haier-h43k85fux-43-109cm-google-smart-ultrahd-led-tv-frameless-4k-3840x2160-high-dynamic-contrast-dvb-t2-dvb-c-dolby-atmos.html"
       }
@@ -1285,7 +1285,7 @@
         "handle": "haier-h43k85gux"
       },
       "DDStore": {
-        "price": 15998,
+        "price": 14999,
         "regularPrice": null,
         "inStock": true,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1041630_32_w.png?___store=mk",
@@ -1327,9 +1327,9 @@
         "handle": "haier-h43q80fux"
       },
       "DDStore": {
-        "price": 17999,
+        "price": 17459,
         "regularPrice": null,
-        "inStock": false,
+        "inStock": null,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1031756_34_w.jpg?___store=mk",
         "url": "https://ddstore.mk/mk/haier-h43q80fux-43-109cm-google-smart-ultrahd-qled-tv-frameless-4k-3840x2160-high-dynamic-contrast-gaming-120hz-dvb-t2-dvb-c.html"
       }
@@ -1369,9 +1369,9 @@
         "handle": "haier-h43s80gux"
       },
       "DDStore": {
-        "price": 18999,
+        "price": 18239,
         "regularPrice": null,
-        "inStock": false,
+        "inStock": null,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1041023_16_w.png?___store=mk",
         "url": "https://ddstore.mk/mk/haier-h43s80gux-43-109cm-google-smart-ultrahd-qled-tv-frameless-4k-3840x2160-high-dynamic-contrast-gaming-120hz-dvb-t2-dvb-c.html"
       }
@@ -1446,9 +1446,9 @@
         "handle": "haier-h55k85fux"
       },
       "DDStore": {
-        "price": 18999,
+        "price": 18809,
         "regularPrice": null,
-        "inStock": false,
+        "inStock": null,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1032292_59_w.jpg?___store=mk",
         "url": "https://ddstore.mk/mk/haier-h55k85fux-55-138cm-google-smart-ultrahd-led-tv-frameless-4k-3840x2160-high-dynamic-contrast-dvb-t2-dvb-c-dolby-atmos.html"
       }
@@ -1488,9 +1488,9 @@
         "handle": "haier-h55q80fux"
       },
       "DDStore": {
-        "price": 24999,
+        "price": 24749,
         "regularPrice": null,
-        "inStock": false,
+        "inStock": null,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1031757_58_w.jpg?___store=mk",
         "url": "https://ddstore.mk/mk/haier-h55q80fux-55-138cm-google-smart-ultrahd-qled-tv-frameless-4k-3840x2160-high-dynamic-contrast-gaming-120hz-dvb-t2-dvb-c.html"
       }
@@ -1530,7 +1530,7 @@
         "handle": "haier-h55s80gux"
       },
       "DDStore": {
-        "price": 22999,
+        "price": 20999,
         "regularPrice": null,
         "inStock": true,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1041025_7_w.png?___store=mk",
@@ -1614,9 +1614,9 @@
         "handle": "haier-h65q80fux"
       },
       "DDStore": {
-        "price": 29999,
+        "price": 29699,
         "regularPrice": null,
-        "inStock": false,
+        "inStock": null,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1031758_41_w.jpg?___store=mk",
         "url": "https://ddstore.mk/mk/haier-h65q80fux-65-165cm-google-smart-ultrahd-qled-tv-frameless-4k-3840x2160-high-dynamic-contrast-gaming-120hz-dvb-t2-dvb-c.html"
       }
@@ -1656,7 +1656,7 @@
         "handle": "haier-h65s80gux"
       },
       "DDStore": {
-        "price": 31999,
+        "price": 30719,
         "regularPrice": null,
         "inStock": true,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1041024_14_w.png?___store=mk",
@@ -4681,6 +4681,41 @@
     }
   },
   {
+    "id": "lg-50-qned87-b3a",
+    "brand": "LG",
+    "model": "50 QNED87 B3A",
+    "size": 50,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "/images/tvs/neptun/lg-50-qned87-b3a-50-4k-qned-miniled-300837.jpg",
+    "stores": {
+      "Neptun": {
+        "price": 39999,
+        "regularPrice": 48999,
+        "inStock": true,
+        "image": "/images/tvs/neptun/lg-50-qned87-b3a-50-4k-qned-miniled-300837.jpg",
+        "url": "https://www.neptun.mk/84123606-LG-50-QNED87-B3A"
+      }
+    }
+  },
+  {
     "id": "lg-50qned70b3c",
     "brand": "LG",
     "model": "50QNED70B3C",
@@ -4705,7 +4740,15 @@
     "freeSync": false,
     "gSync": false,
     "image": "/images/tvs/neptun/lg-50-qned-70b3c-299557.jpg",
-    "stores": {}
+    "stores": {
+      "Neptun": {
+        "price": 25999,
+        "regularPrice": 29999,
+        "inStock": true,
+        "image": "/images/tvs/neptun/lg-50-qned-70b3c-299557.jpg",
+        "url": "https://www.neptun.mk/84122691-LG-50-QNED-70B3C"
+      }
+    }
   },
   {
     "id": "lg-50ua75003la",
@@ -4918,6 +4961,76 @@
     }
   },
   {
+    "id": "lg-55-qned71-b3b",
+    "brand": "LG",
+    "model": "55 QNED71 B3B",
+    "size": 55,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "/images/tvs/neptun/lg-55-qned71-b3b-55-4k-qned-miniled-300839.jpg",
+    "stores": {
+      "Neptun": {
+        "price": 29999,
+        "regularPrice": 36999,
+        "inStock": true,
+        "image": "/images/tvs/neptun/lg-55-qned71-b3b-55-4k-qned-miniled-300839.jpg",
+        "url": "https://www.neptun.mk/84123608-LG-55-QNED71-B3B"
+      }
+    }
+  },
+  {
+    "id": "lg-55-qned7e-b3c",
+    "brand": "LG",
+    "model": "55 QNED7E B3C",
+    "size": 55,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "/images/tvs/neptun/lg-55-qned7e-b3c-55-4k-qned-miniled-298048.jpg",
+    "stores": {
+      "Neptun": {
+        "price": 28999,
+        "regularPrice": 34999,
+        "inStock": true,
+        "image": "/images/tvs/neptun/lg-55-qned7e-b3c-55-4k-qned-miniled-298048.jpg",
+        "url": "https://www.neptun.mk/84121543-LG-55-QNED7E-B3C"
+      }
+    }
+  },
+  {
     "id": "lg-55b62la",
     "brand": "LG",
     "model": "55B62LA",
@@ -5117,7 +5230,15 @@
     "freeSync": false,
     "gSync": false,
     "image": "/images/tvs/neptun/lg-55-qned-70b3c-300040.jpg",
-    "stores": {}
+    "stores": {
+      "Neptun": {
+        "price": 32999,
+        "regularPrice": 38999,
+        "inStock": true,
+        "image": "/images/tvs/neptun/lg-55-qned-70b3c-300040.jpg",
+        "url": "https://www.neptun.mk/84123062-LG-55-QNED-70B3C"
+      }
+    }
   },
   {
     "id": "lg-55qned80a3a",
@@ -5216,11 +5337,11 @@
     "image": "/images/tvs/neptun/lg-55-qned-83b3a-299558.jpg",
     "stores": {
       "Neptun": {
-        "price": 44999,
-        "regularPrice": 52999,
+        "price": 41000,
+        "regularPrice": 44999,
         "inStock": true,
-        "image": "/images/tvs/neptun/lg-65-qned-83b3a-299045.jpg",
-        "url": "https://www.neptun.mk/84122306-LG-65-QNED-83B3A"
+        "image": "/images/tvs/neptun/lg-55-qned-83b3a-299558.jpg",
+        "url": "https://www.neptun.mk/84122692-LG-55-QNED-83B3A"
       }
     }
   },
@@ -5251,11 +5372,11 @@
     "image": "/images/tvs/neptun/lg-55-qned-87b3a-299559.jpg",
     "stores": {
       "Neptun": {
-        "price": 66999,
-        "regularPrice": 81999,
+        "price": 45999,
+        "regularPrice": 52999,
         "inStock": true,
-        "image": "/images/tvs/neptun/lg-75-qned-87b3a-299047.jpg",
-        "url": "https://www.neptun.mk/84122308-LG-75-QNED-87B3A"
+        "image": "/images/tvs/neptun/lg-55-qned-87b3a-299559.jpg",
+        "url": "https://www.neptun.mk/84122693-LG-55-QNED-87B3A"
       }
     }
   },
@@ -5540,6 +5661,41 @@
     }
   },
   {
+    "id": "lg-65-qned8m-b6c",
+    "brand": "LG",
+    "model": "65 QNED8M B6C",
+    "size": 65,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "/images/tvs/neptun/lg-65-qned8m-b6c-300843.jpg",
+    "stores": {
+      "Neptun": {
+        "price": 56999,
+        "regularPrice": 56999,
+        "inStock": true,
+        "image": "/images/tvs/neptun/lg-65-qned8m-b6c-300843.jpg",
+        "url": "https://www.neptun.mk/84123612-LG-65-QNED8M-B6C"
+      }
+    }
+  },
+  {
     "id": "lg-65b62la",
     "brand": "LG",
     "model": "65B62LA",
@@ -5739,7 +5895,15 @@
     "freeSync": false,
     "gSync": false,
     "image": "/images/tvs/neptun/lg-65-qned-70b3c-300042.jpg",
-    "stores": {}
+    "stores": {
+      "Neptun": {
+        "price": 41999,
+        "regularPrice": 47999,
+        "inStock": true,
+        "image": "/images/tvs/neptun/lg-65-qned-70b3c-300042.jpg",
+        "url": "https://www.neptun.mk/84123064-LG-65-QNED-70B3C"
+      }
+    }
   },
   {
     "id": "lg-65qned80a3a",
@@ -5766,7 +5930,15 @@
     "freeSync": false,
     "gSync": false,
     "image": "/images/tvs/neptun/lg-65-qned-80a3a-65-4k-qned-smart-288129.jpg",
-    "stores": {}
+    "stores": {
+      "Neptun": {
+        "price": 54999,
+        "regularPrice": 54999,
+        "inStock": true,
+        "image": "/images/tvs/neptun/lg-65-qned-80a3a-65-4k-qned-smart-288129.jpg",
+        "url": "https://www.neptun.mk/84113730-LG-65-QNED-80A3A"
+      }
+    }
   },
   {
     "id": "lg-65qned83b3a",
@@ -5793,7 +5965,15 @@
     "freeSync": false,
     "gSync": false,
     "image": "/images/tvs/neptun/lg-65-qned-83b3a-299045.jpg",
-    "stores": {}
+    "stores": {
+      "Neptun": {
+        "price": 44999,
+        "regularPrice": 52999,
+        "inStock": true,
+        "image": "/images/tvs/neptun/lg-65-qned-83b3a-299045.jpg",
+        "url": "https://www.neptun.mk/84122306-LG-65-QNED-83B3A"
+      }
+    }
   },
   {
     "id": "lg-65qned92a6a",
@@ -5897,6 +6077,41 @@
         "inStock": true,
         "image": "/images/tvs/neptun/lg-75-nu800-b3la-299961.jpg",
         "url": "https://www.neptun.mk/84122985-LG-75-NU800-B3LA"
+      }
+    }
+  },
+  {
+    "id": "lg-75-qned70-b3a",
+    "brand": "LG",
+    "model": "75 QNED70 B3A",
+    "size": 75,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "/images/tvs/neptun/lg-75-qned70-b3a-75-4k-qned-miniled-298051.jpg",
+    "stores": {
+      "Neptun": {
+        "price": 59999,
+        "regularPrice": 64999,
+        "inStock": true,
+        "image": "/images/tvs/neptun/lg-75-qned70-b3a-75-4k-qned-miniled-298051.jpg",
+        "url": "https://www.neptun.mk/84121546-LG-75-QNED70-B3A"
       }
     }
   },
@@ -6030,7 +6245,15 @@
     "freeSync": false,
     "gSync": false,
     "image": "/images/tvs/neptun/lg-75-qned-87b3a-299047.jpg",
-    "stores": {}
+    "stores": {
+      "Neptun": {
+        "price": 66999,
+        "regularPrice": 81999,
+        "inStock": true,
+        "image": "/images/tvs/neptun/lg-75-qned-87b3a-299047.jpg",
+        "url": "https://www.neptun.mk/84122308-LG-75-QNED-87B3A"
+      }
+    }
   },
   {
     "id": "lg-75qned8mb6a",
@@ -6348,6 +6571,41 @@
     }
   },
   {
+    "id": "lg-85-qned70-b3a",
+    "brand": "LG",
+    "model": "85 QNED70 B3A",
+    "size": 85,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "/images/tvs/neptun/lg-85-qned70-b3a-85-4k-qned-miniled-298052.jpg",
+    "stores": {
+      "Neptun": {
+        "price": 76999,
+        "regularPrice": 89999,
+        "inStock": true,
+        "image": "/images/tvs/neptun/lg-85-qned70-b3a-85-4k-qned-miniled-298052.jpg",
+        "url": "https://www.neptun.mk/84121547-LG-85-QNED70-B3A"
+      }
+    }
+  },
+  {
     "id": "lg-86-mrgb-87b3b",
     "brand": "LG",
     "model": "86 MRGB 87B3B",
@@ -6379,6 +6637,41 @@
         "inStock": true,
         "image": "/images/tvs/neptun/lg-86-mrgb-87b3b-299566.jpg",
         "url": "https://www.neptun.mk/84122700-LG-86-MRGB-87B3B"
+      }
+    }
+  },
+  {
+    "id": "lg-86-qned87-b3a",
+    "brand": "LG",
+    "model": "86 QNED87 B3A",
+    "size": 86,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "/images/tvs/neptun/lg-86-qned87-b3a-300847.jpg",
+    "stores": {
+      "Neptun": {
+        "price": 149999,
+        "regularPrice": 159999,
+        "inStock": true,
+        "image": "/images/tvs/neptun/lg-86-qned87-b3a-300847.jpg",
+        "url": "https://www.neptun.mk/84123616-LG-86-QNED87-B3A"
       }
     }
   },
@@ -6496,15 +6789,7 @@
     "freeSync": false,
     "gSync": false,
     "image": "/images/tvs/neptun/lg-55-qned7e-b3c-55-4k-qned-miniled-298048.jpg",
-    "stores": {
-      "Neptun": {
-        "price": 28999,
-        "regularPrice": 34999,
-        "inStock": true,
-        "image": "/images/tvs/neptun/lg-55-qned7e-b3c-55-4k-qned-miniled-298048.jpg",
-        "url": "https://www.neptun.mk/84121543-LG-55-QNED7E-B3C"
-      }
-    }
+    "stores": {}
   },
   {
     "id": "lg-lg-75-qned70-b3a-75-4k-qned-miniled",
@@ -6531,15 +6816,7 @@
     "freeSync": false,
     "gSync": false,
     "image": "/images/tvs/neptun/lg-75-qned70-b3a-75-4k-qned-miniled-298051.jpg",
-    "stores": {
-      "Neptun": {
-        "price": 76999,
-        "regularPrice": 89999,
-        "inStock": true,
-        "image": "/images/tvs/neptun/lg-85-qned70-b3a-85-4k-qned-miniled-298052.jpg",
-        "url": "https://www.neptun.mk/84121547-LG-85-QNED70-B3A"
-      }
-    }
+    "stores": {}
   },
   {
     "id": "lg-lg-85-qned70-b3a-85-4k-qned-miniled",
@@ -7331,7 +7608,7 @@
       "DDStore": {
         "price": 14400,
         "regularPrice": null,
-        "inStock": false,
+        "inStock": null,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1008912_97_w.png?___store=mk",
         "url": "https://ddstore.mk/mk/tv-philips-43pfs6808-12-43-ultra-slim-full-hd-led-smart-tv.html"
       }
@@ -7364,11 +7641,11 @@
     "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1036566_46_w.jpg?___store=mk",
     "stores": {
       "DDStore": {
-        "price": 18999,
+        "price": 13999,
         "regularPrice": null,
         "inStock": true,
-        "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1036567_48_w.jpg?___store=mk",
-        "url": "https://ddstore.mk/mk/display-philips-55punt7620-10-uhd-led-google.html"
+        "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1036566_46_w.jpg?___store=mk",
+        "url": "https://ddstore.mk/mk/display-philips-43punt7620-10-uhd-led-google.html"
       }
     }
   },
@@ -7849,7 +8126,7 @@
       "DDStore": {
         "price": 16999,
         "regularPrice": null,
-        "inStock": false,
+        "inStock": null,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1026372_1_w.jpg?___store=mk",
         "url": "https://ddstore.mk/mk/tv-philips-50pus7000-12-4k-uhd-led-smart-tv.html"
       }
@@ -7926,7 +8203,7 @@
       "DDStore": {
         "price": 19999,
         "regularPrice": null,
-        "inStock": false,
+        "inStock": null,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1011722_54_w.jpg?___store=mk",
         "url": "https://ddstore.mk/mk/tv-philips-50pus7409-12-4k-uhd-led-google-tv.html"
       }
@@ -8290,6 +8567,41 @@
     }
   },
   {
+    "id": "philips-55oled811-12",
+    "brand": "PHILIPS",
+    "model": "55OLED811/12",
+    "size": 0,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1046087_6ab935686c5af.jpg?___store=mk",
+    "stores": {
+      "DDStore": {
+        "price": 65999,
+        "regularPrice": null,
+        "inStock": true,
+        "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1046087_6ab935686c5af.jpg?___store=mk",
+        "url": "https://ddstore.mk/mk/tv-philips-55-55oled811-12-oled-4k-uhd-titan-os.html"
+      }
+    }
+  },
+  {
     "id": "philips-55pml8709",
     "brand": "PHILIPS",
     "model": "55PML8709",
@@ -8349,7 +8661,15 @@
     "freeSync": false,
     "gSync": false,
     "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1036567_48_w.jpg?___store=mk",
-    "stores": {}
+    "stores": {
+      "DDStore": {
+        "price": 18999,
+        "regularPrice": null,
+        "inStock": true,
+        "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1036567_48_w.jpg?___store=mk",
+        "url": "https://ddstore.mk/mk/display-philips-55punt7620-10-uhd-led-google.html"
+      }
+    }
   },
   {
     "id": "philips-55pus7000",
@@ -8989,6 +9309,41 @@
     }
   },
   {
+    "id": "philips-55pus9010-12",
+    "brand": "PHILIPS",
+    "model": "55PUS9010/12",
+    "size": 0,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1046085_6ab935f31ea7f.jpg?___store=mk",
+    "stores": {
+      "DDStore": {
+        "price": 35999,
+        "regularPrice": null,
+        "inStock": true,
+        "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1046085_6ab935f31ea7f.jpg?___store=mk",
+        "url": "https://ddstore.mk/mk/tv-philips-55-55pus9010-12-qled-4k-uhd-titan-os.html"
+      }
+    }
+  },
+  {
     "id": "philips-65mled820-12",
     "brand": "PHILIPS",
     "model": "65MLED820/12",
@@ -9020,6 +9375,41 @@
         "inStock": true,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1036562_15_w.jpg?___store=mk",
         "url": "https://ddstore.mk/mk/tv-philips-65mled820-12-4k-qd-miniled-smart-tv.html"
+      }
+    }
+  },
+  {
+    "id": "philips-65mled920-12",
+    "brand": "PHILIPS",
+    "model": "65MLED920/12",
+    "size": 0,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1046086_6ab935bde050e.jpg?___store=mk",
+    "stores": {
+      "DDStore": {
+        "price": 49999,
+        "regularPrice": null,
+        "inStock": true,
+        "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1046086_6ab935bde050e.jpg?___store=mk",
+        "url": "https://ddstore.mk/mk/tv-philips-65-65mled920-12-qd-mini-led-4k-uhd-titan-os.html"
       }
     }
   },
@@ -9717,7 +10107,7 @@
       "DDStore": {
         "price": 82999,
         "regularPrice": null,
-        "inStock": false,
+        "inStock": null,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1036558_73_w.jpg?___store=mk",
         "url": "https://ddstore.mk/mk/tv-philips-75mled950-12-4k-120-hz-qd-miniled-smart-ambilight-tv.html"
       }
@@ -9963,7 +10353,7 @@
         "price": 52999,
         "regularPrice": null,
         "inStock": true,
-        "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1045887_6aaf9ca6980a5_1.jpg?___store=mk",
+        "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1045887_6aaf9ca6980a5.jpg?___store=mk",
         "url": "https://ddstore.mk/mk/tv-philips-75-75pus8510-12-qled-4k-uhd-titan-os.html"
       }
     }
@@ -10074,9 +10464,9 @@
     }
   },
   {
-    "id": "samsung-qe65qn900-atxxh",
+    "id": "samsung-8k-qled-neo-smart-tv-samsung-qe65qn900-atxxh-65-165-1cm-4900hz-hdr-3000-wifi",
     "brand": "SAMSUNG",
-    "model": "QE65QN900 ATXXH",
+    "model": "8K QLED Neo Smart TV SAMSUNG QE65QN900 ATXXH, 65\"(165.1cm), 4900Hz, HDR 3000, Wifi",
     "size": 65,
     "technology": "LED",
     "resolution": "4K",
@@ -10098,15 +10488,7 @@
     "freeSync": false,
     "gSync": false,
     "image": "/images/tvs/neptun/8k-qled-neo-smart-tv-samsung-qe65qn900-atxxh-65-165-1cm-4900hz-hdr-3000-wifi-251767.jpg",
-    "stores": {
-      "Neptun": {
-        "price": 99995,
-        "regularPrice": 289999,
-        "inStock": true,
-        "image": "/images/tvs/neptun/8k-qled-neo-smart-tv-samsung-qe65qn900-atxxh-65-165-1cm-4900hz-hdr-3000-wifi-251767.jpg",
-        "url": "https://www.neptun.mk/SAMSUNG-QE-65-QN900-ATXXH"
-      }
-    }
+    "stores": {}
   },
   {
     "id": "samsung-hg55q60aaeuxeh",
@@ -12009,6 +12391,41 @@
         "inStock": true,
         "image": "/images/tvs/neptun/samsung-qe-65-qn80h-auxxh-65-4k-neo-qled-144hz-297805.jpg",
         "url": "https://www.neptun.mk/84121315-SAMSUNG-QE-65-QN80H-AUXXH"
+      }
+    }
+  },
+  {
+    "id": "samsung-qe65qn900-atxxh",
+    "brand": "SAMSUNG",
+    "model": "QE65QN900 ATXXH",
+    "size": 65,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "/images/tvs/neptun/8k-qled-neo-smart-tv-samsung-qe65qn900-atxxh-65-165-1cm-4900hz-hdr-3000-wifi-251767.jpg",
+    "stores": {
+      "Neptun": {
+        "price": 99995,
+        "regularPrice": 289999,
+        "inStock": true,
+        "image": "/images/tvs/neptun/8k-qled-neo-smart-tv-samsung-qe65qn900-atxxh-65-165-1cm-4900hz-hdr-3000-wifi-251767.jpg",
+        "url": "https://www.neptun.mk/SAMSUNG-QE-65-QN900-ATXXH"
       }
     }
   },
@@ -14691,11 +15108,11 @@
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79322_SONY K55XR55B.CEI-01JZ01SX27W81V1J1DEQRSJVJP.jpg",
     "stores": {
       "Setec": {
-        "price": 84599,
-        "regularPrice": 109999,
+        "price": 69999,
+        "regularPrice": 94999,
         "inStock": true,
-        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79323_SONY K65XR55B.CEI-01K6WWJX751MDNKZE3XDAGFGRK.jpg",
-        "handle": "sony-k65xr55bcei"
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79322_SONY K55XR55B.CEI-01JZ01SX27W81V1J1DEQRSJVJP.jpg",
+        "handle": "sony-k55xr55bcei"
       }
     }
   },
@@ -14726,11 +15143,11 @@
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79502_SONY K55XR80PAEP-01K1JDDGNAFTBFCKWS8SHH31AN.jpg",
     "stores": {
       "Setec": {
-        "price": 149995,
-        "regularPrice": 229999,
+        "price": 89995,
+        "regularPrice": 122999,
         "inStock": true,
-        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/78863_0-01JVA7X43WQYP73EC0XP9N3ZWF.webp",
-        "handle": "sony-k77xr80paep-1"
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79502_SONY K55XR80PAEP-01K1JDDGNAFTBFCKWS8SHH31AN.jpg",
+        "handle": "sony-k55xr80paep"
       }
     }
   },
@@ -14761,11 +15178,11 @@
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92208_SONY K55XR8AB.CEI-01KBCFEMKE442Z5HJ5FXE030YP.jpg",
     "stores": {
       "Setec": {
-        "price": 158399,
-        "regularPrice": 179990,
+        "price": 89995,
+        "regularPrice": 99999,
         "inStock": true,
-        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92222_SONY K77XR8AB.CEI-01KD7ZTX0PYMH9PP65ZD4ZB9ZM.jpg",
-        "handle": "sony-k77xr8abcei"
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92208_SONY K55XR8AB.CEI-01KBCFEMKE442Z5HJ5FXE030YP.jpg",
+        "handle": "sony-k55xr8abcei"
       }
     }
   },
@@ -14899,7 +15316,15 @@
     "freeSync": false,
     "gSync": false,
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79323_SONY K65XR55B.CEI-01K6WWJX751MDNKZE3XDAGFGRK.jpg",
-    "stores": {}
+    "stores": {
+      "Setec": {
+        "price": 84599,
+        "regularPrice": 109999,
+        "inStock": true,
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79323_SONY K65XR55B.CEI-01K6WWJX751MDNKZE3XDAGFGRK.jpg",
+        "handle": "sony-k65xr55bcei"
+      }
+    }
   },
   {
     "id": "sony-k65xr8apb-cei",
@@ -15066,7 +15491,15 @@
     "freeSync": false,
     "gSync": false,
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/78863_0-01JVA7X43WQYP73EC0XP9N3ZWF.webp",
-    "stores": {}
+    "stores": {
+      "Setec": {
+        "price": 149995,
+        "regularPrice": 229999,
+        "inStock": true,
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/78863_0-01JVA7X43WQYP73EC0XP9N3ZWF.webp",
+        "handle": "sony-k77xr80paep-1"
+      }
+    }
   },
   {
     "id": "sony-k77xr8ab-cei",
@@ -15093,7 +15526,15 @@
     "freeSync": false,
     "gSync": false,
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92222_SONY K77XR8AB.CEI-01KD7ZTX0PYMH9PP65ZD4ZB9ZM.jpg",
-    "stores": {}
+    "stores": {
+      "Setec": {
+        "price": 158399,
+        "regularPrice": 179990,
+        "inStock": true,
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92222_SONY K77XR8AB.CEI-01KD7ZTX0PYMH9PP65ZD4ZB9ZM.jpg",
+        "handle": "sony-k77xr8abcei"
+      }
+    }
   },
   {
     "id": "sony-kd-43x75wlpaep",
@@ -15521,7 +15962,7 @@
         "handle": "st-32dh4300"
       },
       "DDStore": {
-        "price": 5999,
+        "price": 5639,
         "regularPrice": null,
         "inStock": true,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1027431_74_w.jpg?___store=mk",
@@ -15563,7 +16004,7 @@
         "handle": "st-32dh5900"
       },
       "DDStore": {
-        "price": 7499,
+        "price": 6699,
         "regularPrice": null,
         "inStock": true,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1027427_90_w.jpg?___store=mk",
@@ -15675,7 +16116,7 @@
         "handle": "st-43dh8000"
       },
       "DDStore": {
-        "price": 9999,
+        "price": 9499,
         "regularPrice": null,
         "inStock": true,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1027428_22_w.jpg?___store=mk",
@@ -15717,7 +16158,7 @@
         "handle": "st-43dx8000"
       },
       "DDStore": {
-        "price": 11999,
+        "price": 11830,
         "regularPrice": null,
         "inStock": true,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1027422_50_w.jpg?___store=mk",
@@ -15759,7 +16200,7 @@
         "handle": "st-50dx7800"
       },
       "DDStore": {
-        "price": 14499,
+        "price": 13629,
         "regularPrice": null,
         "inStock": true,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1027433_39_w.jpg?___store=mk",
@@ -15801,7 +16242,7 @@
         "handle": "st-55dx7900-1"
       },
       "DDStore": {
-        "price": 16999,
+        "price": 16319,
         "regularPrice": null,
         "inStock": true,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1027425_81_w.jpg?___store=mk",
@@ -15843,7 +16284,7 @@
         "handle": "st-65dq8000"
       },
       "DDStore": {
-        "price": 23499,
+        "price": 22559,
         "regularPrice": null,
         "inStock": true,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1027435_64_w.jpg?___store=mk",
@@ -15920,9 +16361,9 @@
         "handle": "st-75dx7900-1"
       },
       "DDStore": {
-        "price": 32999,
+        "price": 32009,
         "regularPrice": null,
-        "inStock": false,
+        "inStock": null,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1027429_73_w.jpg?___store=mk",
         "url": "https://ddstore.mk/mk/st-75dx7900-75-189cm-android-smart-ultrahd-led-tv.html"
       }
@@ -18540,6 +18981,41 @@
     }
   },
   {
+    "id": "tesla-43e635bfs",
+    "brand": "TESLA",
+    "model": "43E635BFS",
+    "size": 43,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1000544_33_w.jpg?___store=mk",
+    "stores": {
+      "DDStore": {
+        "price": 14313,
+        "regularPrice": null,
+        "inStock": null,
+        "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1000544_33_w.jpg?___store=mk",
+        "url": "https://ddstore.mk/mk/tesla-tv-43e635bfs-43-android-11.html"
+      }
+    }
+  },
+  {
     "id": "tesla-55e655bus",
     "brand": "TESLA",
     "model": "55E655BUS",
@@ -18788,7 +19264,7 @@
     "id": "tv-a-43u-2026-ela6018gl",
     "brand": "TV",
     "model": "A 43U 2026 (ELA6018GL)",
-    "size": 43,
+    "size": 0,
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
@@ -18811,7 +19287,7 @@
     "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1043551-TVZ02991_v.jpg?___store=mk",
     "stores": {
       "DDStore": {
-        "price": 15418,
+        "price": 15384,
         "regularPrice": null,
         "inStock": true,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1043551-TVZ02991_v.jpg?___store=mk",
@@ -18846,7 +19322,7 @@
     "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1041621_79_w.png?___store=mk",
     "stores": {
       "DDStore": {
-        "price": 10133,
+        "price": 10109,
         "regularPrice": null,
         "inStock": true,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1041621_79_w.png?___store=mk",
@@ -18881,7 +19357,7 @@
     "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1043552-TVZ02990_v.jpg?___store=mk",
     "stores": {
       "DDStore": {
-        "price": 31370,
+        "price": 31300,
         "regularPrice": null,
         "inStock": true,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1043552-TVZ02990_v.jpg?___store=mk",
@@ -18916,7 +19392,7 @@
     "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1041622_70_w.png?___store=mk",
     "stores": {
       "DDStore": {
-        "price": 40721,
+        "price": 40629,
         "regularPrice": null,
         "inStock": true,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1041622_70_w.png?___store=mk",
@@ -18951,7 +19427,7 @@
     "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1041623_59_w.png?___store=mk",
     "stores": {
       "DDStore": {
-        "price": 49383,
+        "price": 49272,
         "regularPrice": null,
         "inStock": true,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1041623_59_w.png?___store=mk",
@@ -19320,7 +19796,7 @@
     "image": "https://www.anhoch.com/storage/media/tvz02840.jpg",
     "stores": {
       "DDStore": {
-        "price": 24513,
+        "price": 24458,
         "regularPrice": null,
         "inStock": true,
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1043751_6a821b74e787b.jpg?___store=mk",

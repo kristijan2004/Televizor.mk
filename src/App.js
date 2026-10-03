@@ -4,6 +4,7 @@ import AddTv from "./components/addTv";
 import Compare from "./components/Compare";
 import TvDetails from "./components/TvDetails";
 import { ContextProvider } from "./components/Context";
+import RecommendTv from "./components/RecommendTv";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="addTv" element={<AddTv />} />
         <Route path="compare" element={<Compare />} />
         <Route path="/tv/:brand/:model" element={<TvDetails />} />
+        <Route path="recommend" element={<RecommendTv />} />
       </Routes>
     </ContextProvider>
   );
