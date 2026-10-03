@@ -1,0 +1,426 @@
+[
+  {
+    "brand": "AIWA",
+    "model": "50N21",
+    "stores": [
+      "Anhoch",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "AIWA",
+    "model": "55N27",
+    "stores": [
+      "Anhoch",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "BAUTECH",
+    "model": "32BHR45",
+    "stores": [
+      "Setec",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "BAUTECH",
+    "model": "43BFH80",
+    "stores": [
+      "Setec",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "HAIER",
+    "model": "H43K85FUX",
+    "stores": [
+      "Setec",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "HAIER",
+    "model": "H43K85GUX",
+    "stores": [
+      "Setec",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "HAIER",
+    "model": "H43Q80FUX",
+    "stores": [
+      "Setec",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "HAIER",
+    "model": "H43S80GUX",
+    "stores": [
+      "Setec",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "HAIER",
+    "model": "H55K85FUX",
+    "stores": [
+      "Setec",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "HAIER",
+    "model": "H55Q80FUX",
+    "stores": [
+      "Setec",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "HAIER",
+    "model": "H55S80GUX",
+    "stores": [
+      "Setec",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "HAIER",
+    "model": "H65K85FUX",
+    "stores": [
+      "Setec",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "HAIER",
+    "model": "H65Q80FUX",
+    "stores": [
+      "Setec",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "HAIER",
+    "model": "H65S80GUX",
+    "stores": [
+      "Setec",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "HISENSE",
+    "model": "50E7S",
+    "stores": [
+      "Setec",
+      "Neptun"
+    ]
+  },
+  {
+    "brand": "HISENSE",
+    "model": "55E7S",
+    "stores": [
+      "Setec",
+      "Neptun"
+    ]
+  },
+  {
+    "brand": "HISENSE",
+    "model": "55U7SE",
+    "stores": [
+      "Setec",
+      "Neptun"
+    ]
+  },
+  {
+    "brand": "HISENSE",
+    "model": "65E7S",
+    "stores": [
+      "Setec",
+      "Neptun"
+    ]
+  },
+  {
+    "brand": "HISENSE",
+    "model": "65UR8S",
+    "stores": [
+      "Setec",
+      "Neptun"
+    ]
+  },
+  {
+    "brand": "HISENSE",
+    "model": "75E7S",
+    "stores": [
+      "Setec",
+      "Neptun"
+    ]
+  },
+  {
+    "brand": "HISENSE",
+    "model": "75E7S PRO",
+    "stores": [
+      "Setec",
+      "Neptun"
+    ]
+  },
+  {
+    "brand": "PHILIPS",
+    "model": "32PHS5500/12",
+    "stores": [
+      "Anhoch",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "PHILIPS",
+    "model": "43PUS7000/12",
+    "stores": [
+      "Anhoch",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "PHILIPS",
+    "model": "43PUS8010/12",
+    "stores": [
+      "Anhoch",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "PHILIPS",
+    "model": "43PUS8400/12",
+    "stores": [
+      "Anhoch",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "PHILIPS",
+    "model": "50PUS7000/12",
+    "stores": [
+      "Anhoch",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "PHILIPS",
+    "model": "50PUS7409/12",
+    "stores": [
+      "Anhoch",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "PHILIPS",
+    "model": "50PUS8010/12",
+    "stores": [
+      "Anhoch",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "PHILIPS",
+    "model": "55PUS7609",
+    "stores": [
+      "Anhoch",
+      "Setec"
+    ]
+  },
+  {
+    "brand": "SAMSUNG",
+    "model": "MRE65R85HAUXXH",
+    "stores": [
+      "Setec",
+      "Neptun"
+    ]
+  },
+  {
+    "brand": "SAMSUNG",
+    "model": "QE77S90HATXXH",
+    "stores": [
+      "Setec",
+      "Neptun"
+    ]
+  },
+  {
+    "brand": "SAMSUNG",
+    "model": "UE43U8072FUXXH",
+    "stores": [
+      "Anhoch",
+      "Setec"
+    ]
+  },
+  {
+    "brand": "SAMSUNG",
+    "model": "UE65M70HAUXXH",
+    "stores": [
+      "Setec",
+      "Neptun"
+    ]
+  },
+  {
+    "brand": "SAMSUNG",
+    "model": "UE75M80HAUXXH",
+    "stores": [
+      "Setec",
+      "Neptun"
+    ]
+  },
+  {
+    "brand": "SAMSUNG",
+    "model": "UE85M70HAUXXH",
+    "stores": [
+      "Setec",
+      "Neptun"
+    ]
+  },
+  {
+    "brand": "SAMSUNG",
+    "model": "UE98U9072HUXXH",
+    "stores": [
+      "Setec",
+      "Neptun"
+    ]
+  },
+  {
+    "brand": "ST",
+    "model": "ST-32DH4300",
+    "stores": [
+      "Setec",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "ST",
+    "model": "ST-32DH5900",
+    "stores": [
+      "Setec",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "ST",
+    "model": "ST-43DH8000",
+    "stores": [
+      "Setec",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "ST",
+    "model": "ST-43DX8000",
+    "stores": [
+      "Setec",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "ST",
+    "model": "ST-50DX7800",
+    "stores": [
+      "Setec",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "ST",
+    "model": "ST-55DX7900",
+    "stores": [
+      "Setec",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "ST",
+    "model": "ST-65DQ8000",
+    "stores": [
+      "Setec",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "ST",
+    "model": "ST-75DX7900",
+    "stores": [
+      "Setec",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "TCL",
+    "model": "43S5L",
+    "stores": [
+      "Setec",
+      "Neptun"
+    ]
+  },
+  {
+    "brand": "TCL",
+    "model": "55T69C",
+    "stores": [
+      "Setec",
+      "Neptun"
+    ]
+  },
+  {
+    "brand": "TCL",
+    "model": "65T69C",
+    "stores": [
+      "Setec",
+      "Neptun"
+    ]
+  },
+  {
+    "brand": "XIAOMI",
+    "model": "ELA5918GL",
+    "stores": [
+      "Anhoch",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "XIAOMI",
+    "model": "ELA5950GL",
+    "stores": [
+      "Anhoch",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "XIAOMI",
+    "model": "ELA6018GL",
+    "stores": [
+      "Anhoch",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "XIAOMI",
+    "model": "ELA6452GL",
+    "stores": [
+      "Anhoch",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "XIAOMI",
+    "model": "ELA6470GL",
+    "stores": [
+      "Anhoch",
+      "DDStore"
+    ]
+  },
+  {
+    "brand": "XIAOMI",
+    "model": "ELA6488GL",
+    "stores": [
+      "Anhoch",
+      "DDStore"
+    ]
+  }
+]
