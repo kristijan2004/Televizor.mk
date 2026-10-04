@@ -1,7 +1,8 @@
 const fs = require("fs");
 const path = require("path");
 
-const dataDir = path.join(__dirname, "../src/data");
+// Note: the folder is "Data" with a capital D (Linux is case-sensitive).
+const dataDir = path.join(__dirname, "../src/Data");
 
 function readJson(file) {
   const filePath = path.join(dataDir, file);
@@ -40,14 +41,33 @@ if (fs.existsSync(masterPath)) {
  * both become:
  * 43qned71b3b
  */
+/*
+ * Some retailer model numbers contain Cyrillic letters that look Latin,
+ * e.g. Setec's "QE55Q8FAAUXХH" with a Cyrillic "Х". They are converted to
+ * Latin so they match "QE55Q8FAAUXXH" from other stores.
+ */
+const CYRILLIC_LOOKALIKES = {
+  А: "A", В: "B", Е: "E", К: "K", М: "M", Н: "H", О: "O",
+  Р: "P", С: "C", Т: "T", Х: "X", У: "Y",
+  а: "a", в: "b", е: "e", к: "k", м: "m", н: "h", о: "o",
+  р: "p", с: "c", т: "t", х: "x", у: "y"
+};
+
+function toLatin(value) {
+  return String(value || "").replace(
+    /[АВЕКМНОРСТХУавекмнорстху]/g,
+    char => CYRILLIC_LOOKALIKES[char]
+  );
+}
+
 function normalizeText(value) {
-  return String(value || "")
+  return toLatin(value)
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "");
 }
 
 function normalizeBrand(value) {
-  return String(value || "")
+  return toLatin(value)
     .trim()
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "");
@@ -76,6 +96,21 @@ function cleanUrl(value) {
   }
 
   return text;
+}
+
+/*
+ * Neptun and Anhoch block their images when they are shown on another
+ * website, so direct links to them never load in the browser. Store images
+ * that the scrapers downloaded (/images/tvs/...) and DDStore/Setec links work.
+ */
+function usableImage(value) {
+  const url = cleanUrl(value);
+
+  if (url && /^https?:\/\/(www\.)?(neptun\.mk|anhoch\.com)\//i.test(url)) {
+    return null;
+  }
+
+  return url;
 }
 
 /*
@@ -108,7 +143,9 @@ function extractSize(tv) {
   /\bK(\d{2,3})[A-Z]/i,
   /\bST-(\d{2,3})[A-Z]/i,
   /\bQ(\d{2,3})[A-Z]/i,
-  /\bTV(\d{2,3})[A-Z]/i
+  /\bTV(\d{2,3})[A-Z]/i,
+  // Philips: 55OLED811, 55PUS9010, 65MLED920, 43PFS6000
+  /\b(\d{2,3})(?:OLED|MLED|PUS|PFS|PHS|PML)\d/i
 ];
 
   for (const pattern of patterns) {
@@ -195,7 +232,9 @@ function getSpecs(old) {
     audioChannels: old.audioChannels ?? "2.0",
     dolbyAtmos: old.dolbyAtmos ?? false,
     freeSync: old.freeSync ?? false,
-    gSync: old.gSync ?? false
+    gSync: old.gSync ?? false,
+    // Where verified specs came from (e.g. "icecat"). Missing = placeholders.
+    ...(old.specsSource ? { specsSource: old.specsSource } : {})
   };
 }
 
@@ -249,6 +288,37 @@ function parseDDStore(tv) {
   if (match) {
     return {
       brand: "TESLA",
+      model: match[1]
+    };
+  }
+
+  /*
+   * Xiaomi without the brand in the name
+   * TV S Mini LED 65" 2026 (ELA6470GL)
+   * (ELA... is Xiaomi's product code)
+   */
+  match = name.match(
+    /^TV\s.*\((ELA[A-Za-z0-9-]+)\)\s*$/i
+  );
+
+  if (match) {
+    return {
+      brand: "XIAOMI",
+      model: match[1]
+    };
+  }
+
+  /*
+   * Metz sold under "CE"
+   * CE TV LED SMART 50" METZ TV, QLED UHD, ..., 50MQF7500Z
+   */
+  match = name.match(
+    /METZ.*\b(\d{2}M[A-Z0-9]{4,})\b/i
+  );
+
+  if (match) {
+    return {
+      brand: "METZ",
       model: match[1]
     };
   }
@@ -319,14 +389,76 @@ const normalizedDDStore = ddstore
   .filter(Boolean);
 
 /*
+ * Anhoch sometimes stores only the product line as the model,
+ * e.g. "Imago" for "TV Vivax Imago LED TV40LE115T2S2".
+ * When the model has no digits, take the model number from the name.
+ */
+/*
+ * Anhoch also uses series names without the screen size, e.g.
+ * "TV Sony 55" Bravia 6 A65 Oled Google" → model "Bravia 6 A65" for both
+ * the 55" and the 65" TV. Those are matched by size + series code to a
+ * model in master-tvs.json ("K55A65PB.CEI"), so each size stays separate.
+ */
+function findBySizeAndSeries(tv) {
+  const size = String(tv.name || "").match(/\b(\d{2,3})\s*["”]/)?.[1];
+  const series = String(tv.model || "").trim().split(/\s+/).pop();
+
+  // The series code must contain letters and digits ("A65", "XR70").
+  if (!size || !/[a-z]/i.test(series) || !/\d/.test(series)) return null;
+
+  const wanted = normalizeText(size + series);
+  const brand = normalizeBrand(tv.brand);
+
+  const candidates = combinedModels.filter(
+    model =>
+      normalizeBrand(model.brand) === brand &&
+      normalizeText(model.model).includes(wanted)
+  );
+
+  // Only use an unambiguous match.
+  return candidates.length === 1 ? candidates[0].model : null;
+}
+
+const normalizedAnhoch = anhoch.map(tv => {
+  if (!tv.model || !tv.name) return tv;
+
+  // Model without a screen size: "Bravia 6 A65" (but not "UE43DU7172")
+  if (!/^\D*\d{2,3}/.test(tv.model)) {
+    const model = findBySizeAndSeries(tv);
+    if (model) return { ...tv, model };
+  }
+
+  if (/\d/.test(tv.model)) return tv;
+
+  const match = String(tv.name).match(/\b([A-Z]{0,3}-?\d{2}[A-Z0-9-]{4,})\b/i);
+
+  return match ? { ...tv, model: match[1] } : tv;
+});
+
+/*
+ * Store TV categories sometimes include projectors, e.g. Setec lists the
+ * Samsung Freestyle (SP-LFF3CLAXXH) and The Premiere (SP-LSP3BLAXXH).
+ * They are not TVs, so they are skipped.
+ */
+function isProjector(tv) {
+  const text = `${tv.model || ""} ${tv.name || ""}`;
+
+  return (
+    // Setec writes the model as "SAMSUNG SP-LSP3BLAXXH"
+    (/samsung/i.test(tv.brand || "") && /(^|\s)SP-?L[A-Z0-9]/i.test(String(tv.model || "").trim())) ||
+    /projector|проектор/i.test(text)
+  );
+}
+
+/*
  * Store definitions.
  */
 const sources = [
-  ["Anhoch", anhoch],
+  ["Anhoch", normalizedAnhoch],
   ["Setec", setec],
   ["Neptun", neptun],
   ["DDStore", normalizedDDStore]
-];
+].map(([store, list]) => [store, list.filter(tv => !isProjector(tv))]);
 
 /*
  * Existing master map.
@@ -350,7 +482,7 @@ for (const tv of oldMaster) {
 const canonical = [];
 
 for (const tv of combinedModels) {
-  if (!tv.brand || !tv.model) continue;
+  if (!tv.brand || !tv.model || isProjector(tv)) continue;
 
   canonical.push({
     brand: String(tv.brand).trim(),
@@ -562,7 +694,7 @@ for (const combined of canonical) {
     /*
      * Preserve manually selected image.
      */
-  image: cleanUrl(old?.image) || null,
+  image: usableImage(old?.image) || null,
 
     stores: {}
   });
@@ -607,7 +739,7 @@ for (const [store, list] of sources) {
          */
         ...getSpecs(old),
 
-         image: cleanUrl(old?.image) || null,
+         image: usableImage(old?.image) || null,
 
         stores: {}
       };
@@ -634,8 +766,8 @@ for (const [store, list] of sources) {
      * If there is no manually selected master image,
      * use the first available store image.
      */
-    if (!item.image && tv.image) {
-  item.image = cleanUrl(tv.image);
+    if (!item.image && usableImage(tv.image)) {
+  item.image = usableImage(tv.image);
 }
   }
 }
@@ -700,5 +832,5 @@ console.log(
 console.log("");
 
 console.log(
-  "Saved to: src/data/masterTvs.json"
+  `Saved to: ${masterPath}`
 );

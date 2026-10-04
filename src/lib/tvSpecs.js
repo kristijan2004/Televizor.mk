@@ -76,21 +76,21 @@ function isColumnUsable(rows, field) {
   return biggest / filled < DOMINANCE_LIMIT;
 }
 
-const usableColumn = {};
+/*
+  TVs with `specsSource` (e.g. "icecat") have verified specs and are always
+  trusted. The other TVs still hold the build script's placeholder defaults,
+  so their spec fields are not trusted — except `size`, which the build
+  script parses from the product name. A handful of hand-entered rows is
+  enough variety to fool the column check, so it is only used for size.
+*/
+const placeholderRows = masterTvs.filter((tv) => !tv.specsSource);
 
-for (const field of [
-  "size",
-  "technology",
-  "resolution",
-  "refreshRate",
-  "os",
-  "hdmi",
-  "vrr",
-  "allm",
-  "hdr",
-  "dolbyVision",
-]) {
-  usableColumn[field] = isColumnUsable(masterTvs, field);
+const usableColumn = {
+  size: isColumnUsable(placeholderRows, "size"),
+};
+
+function trusts(master, field) {
+  return Boolean(master.specsSource) || Boolean(usableColumn[field]);
 }
 
 /* ------------------------------------------------------------------ *
@@ -211,7 +211,7 @@ export const TECHNOLOGY_TRAITS = {
  * ------------------------------------------------------------------ */
 
 function resolveSize(master, records, text) {
-  if (usableColumn.size && master.size > 0) {
+  if (trusts(master, "size") && master.size > 0) {
     return { value: master.size, source: "master" };
   }
 
@@ -236,7 +236,7 @@ function resolveSize(master, records, text) {
 }
 
 function resolveTechnology(master, records, text) {
-  if (usableColumn.technology && master.technology) {
+  if (trusts(master, "technology") && master.technology) {
     const normalised = matchPattern(TECHNOLOGY_PATTERNS, master.technology);
 
     if (normalised) {
@@ -268,7 +268,7 @@ function resolveTechnology(master, records, text) {
 }
 
 function resolveResolution(master, records, text) {
-  if (usableColumn.resolution && master.resolution) {
+  if (trusts(master, "resolution") && master.resolution) {
     const normalised = matchPattern(RESOLUTION_PATTERNS, master.resolution);
 
     if (normalised) {
@@ -299,7 +299,7 @@ function resolveResolution(master, records, text) {
 }
 
 function resolveRefreshRate(master, records, text) {
-  if (usableColumn.refreshRate && master.refreshRate > 0) {
+  if (trusts(master, "refreshRate") && master.refreshRate > 0) {
     return { value: master.refreshRate, source: "master" };
   }
 
@@ -319,7 +319,7 @@ function resolveRefreshRate(master, records, text) {
 }
 
 function resolveOs(master, records) {
-  if (usableColumn.os && master.os) {
+  if (trusts(master, "os") && master.os) {
     return { value: master.os, source: "master" };
   }
 
@@ -341,7 +341,7 @@ function resolveOs(master, records) {
 */
 function resolveGaming(master, records, text, refreshRate) {
   const flag = (field) => {
-    if (usableColumn[field] && master[field] === true) {
+    if (trusts(master, field) && master[field] === true) {
       return true;
     }
 

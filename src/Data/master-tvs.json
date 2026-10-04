@@ -245,14 +245,6 @@
   },
   {
     "brand": "FUEGO",
-    "model": "75ELU720GTV",
-    "stores": [
-      "Neptun"
-    ],
-    "image": "https://www.neptun.mk/2024/07/11/75GTV.JPG"
-  },
-  {
-    "brand": "FUEGO",
     "model": "85ELU720GTV",
     "stores": [
       "Neptun"
@@ -551,14 +543,6 @@
       "Neptun"
     ],
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92349_Hisense%2055U7SE-01KS7CP6GK5KR0WJ9S10PWS4SJ.jpg"
-  },
-  {
-    "brand": "HISENSE",
-    "model": "55U8Q",
-    "stores": [
-      "Setec"
-    ],
-    "image": null
   },
   {
     "brand": "HISENSE",
@@ -1344,48 +1328,8 @@
     "image": "https://www.neptun.mk/2026/08/24/image-Photoroom-2026-08-23T224001.987_8d755858-309d-4ebb-8b11-30d9c0af3ac2.png"
   },
   {
-    "brand": "LG",
-    "model": "OLED 83 G51 LW",
-    "stores": [
-      "Neptun"
-    ],
-    "image": "https://www.neptun.mk/2025/08/21/image-Photoroom857_3275e826-9956-48e2-93a4-0ea3f4575e24.png"
-  },
-  {
-    "brand": "LG",
-    "model": "Телевизор LG 43 NU800 B3LC, 43\", 4K NanoCell",
-    "stores": [
-      "Neptun"
-    ],
-    "image": "https://www.neptun.mk/2026/06/04/image-Photoroom-2026-06-03T125252.858_17512f5e-1e8a-47b1-b2fb-3069febd1331.png"
-  },
-  {
-    "brand": "LG",
-    "model": "Телевизор LG 55 QNED7E B3C, 55\", 4K QNED MiniLED",
-    "stores": [
-      "Neptun"
-    ],
-    "image": "https://www.neptun.mk/2026/06/09/image-Photoroom-2026-06-09T015452.088_c663c699-e103-4924-b970-52e6b952ec76.png"
-  },
-  {
-    "brand": "LG",
-    "model": "Телевизор LG 75 QNED70 B3A, 75\", 4K QNED MiniLED",
-    "stores": [
-      "Neptun"
-    ],
-    "image": "https://www.neptun.mk/2026/06/09/image-Photoroom-2026-06-09T023451.712_24566deb-7c61-4b4e-8eee-0348c77e6f5c.png"
-  },
-  {
-    "brand": "LG",
-    "model": "Телевизор LG 85 QNED70 B3A, 85\", 4K QNED MiniLED",
-    "stores": [
-      "Neptun"
-    ],
-    "image": "https://www.neptun.mk/2026/06/09/image-Photoroom-2026-06-09T023451.712_a42f1065-84de-4de6-be14-5f29d69d547f.png"
-  },
-  {
     "brand": "METZ",
-    "model": "120Hz",
+    "model": "50MQF7500Z",
     "stores": [
       "DDStore"
     ],
@@ -1457,15 +1401,6 @@
   },
   {
     "brand": "PHILIPS",
-    "model": "32PHS5500/12",
-    "stores": [
-      "Anhoch",
-      "DDStore"
-    ],
-    "image": "https://www.anhoch.com/storage/media/32phs5500.jpg"
-  },
-  {
-    "brand": "PHILIPS",
     "model": "32PHS5505",
     "stores": [
       "Anhoch"
@@ -1487,14 +1422,6 @@
       "Setec"
     ],
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92379_PHILIPS%2032PHS6050-01KW9NYHMR8QE0RKY0KFB4E8M4.jpg"
-  },
-  {
-    "brand": "PHILIPS",
-    "model": "32PHS6050/12",
-    "stores": [
-      "DDStore"
-    ],
-    "image": null
   },
   {
     "brand": "PHILIPS",
@@ -1522,14 +1449,6 @@
   },
   {
     "brand": "PHILIPS",
-    "model": "40PFS6000/12",
-    "stores": [
-      "Anhoch"
-    ],
-    "image": "https://www.anhoch.com/storage/media/40pfs6000.jpg"
-  },
-  {
-    "brand": "PHILIPS",
     "model": "40PFS6009",
     "stores": [
       "Anhoch"
@@ -1543,14 +1462,6 @@
       "Setec"
     ],
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92293_PHILIPS%2040PFS6050-01KQVKEMJY1F9WC47GNNZTNY5J.jpg"
-  },
-  {
-    "brand": "PHILIPS",
-    "model": "40PFS6050/12",
-    "stores": [
-      "DDStore"
-    ],
-    "image": null
   },
   {
     "brand": "PHILIPS",
@@ -1575,15 +1486,6 @@
       "Setec"
     ],
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63449_PHILIPS 43PUS7000-01K4ADCZK44RKKPRPR5XV8X5FF.webp"
-  },
-  {
-    "brand": "PHILIPS",
-    "model": "43PUS7000/12",
-    "stores": [
-      "Anhoch",
-      "DDStore"
-    ],
-    "image": "https://www.anhoch.com/storage/media/16072025095155pus7000.jpg"
   },
   {
     "brand": "PHILIPS",
@@ -1619,15 +1521,6 @@
   },
   {
     "brand": "PHILIPS",
-    "model": "43PUS8010/12",
-    "stores": [
-      "Anhoch",
-      "DDStore"
-    ],
-    "image": "https://www.anhoch.com/storage/media/0109202514044255pus801012.jpg"
-  },
-  {
-    "brand": "PHILIPS",
     "model": "43PUS8079",
     "stores": [
       "Setec"
@@ -1641,15 +1534,6 @@
       "Setec"
     ],
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92213_PHILIPS 43PUS8400-01KBM9D93X5M2TXKM0G4ZHXG5N.jpg"
-  },
-  {
-    "brand": "PHILIPS",
-    "model": "43PUS8400/12",
-    "stores": [
-      "Anhoch",
-      "DDStore"
-    ],
-    "image": "https://www.anhoch.com/storage/media/pus8400nova.jpg"
   },
   {
     "brand": "PHILIPS",
@@ -1669,29 +1553,11 @@
   },
   {
     "brand": "PHILIPS",
-    "model": "50PUS7000/12",
-    "stores": [
-      "Anhoch",
-      "DDStore"
-    ],
-    "image": "https://www.anhoch.com/storage/media/16072025095132pus7000.jpg"
-  },
-  {
-    "brand": "PHILIPS",
     "model": "50PUS7409",
     "stores": [
       "Setec"
     ],
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/58807_0-01JVA77PWWTP93QTBF9J7GMZGS.webp"
-  },
-  {
-    "brand": "PHILIPS",
-    "model": "50PUS7409/12",
-    "stores": [
-      "Anhoch",
-      "DDStore"
-    ],
-    "image": "https://www.anhoch.com/storage/media/50pus740912.jpg"
   },
   {
     "brand": "PHILIPS",
@@ -1711,28 +1577,11 @@
   },
   {
     "brand": "PHILIPS",
-    "model": "50PUS7810/12",
-    "stores": [
-      "DDStore"
-    ],
-    "image": null
-  },
-  {
-    "brand": "PHILIPS",
     "model": "50PUS8010",
     "stores": [
       "Setec"
     ],
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63141_PHILIPS 50PUS8010-01JYP6M8S82J6V7GA7VTC7KT1Q.jpg"
-  },
-  {
-    "brand": "PHILIPS",
-    "model": "50PUS8010/12",
-    "stores": [
-      "Anhoch",
-      "DDStore"
-    ],
-    "image": "https://www.anhoch.com/storage/media/50pus8010.jpg"
   },
   {
     "brand": "PHILIPS",
@@ -1800,14 +1649,6 @@
   },
   {
     "brand": "PHILIPS",
-    "model": "55PUS7000/12",
-    "stores": [
-      "DDStore"
-    ],
-    "image": null
-  },
-  {
-    "brand": "PHILIPS",
     "model": "55PUS7009/12",
     "stores": [
       "Anhoch"
@@ -1841,14 +1682,6 @@
   },
   {
     "brand": "PHILIPS",
-    "model": "55PUS7810/12",
-    "stores": [
-      "DDStore"
-    ],
-    "image": null
-  },
-  {
-    "brand": "PHILIPS",
     "model": "55PUS8009",
     "stores": [
       "Anhoch"
@@ -1862,14 +1695,6 @@
       "Setec"
     ],
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63448_PHILIPS 55PUS8010-01K4526ST3QS63DPV0QFJFCG0S.webp"
-  },
-  {
-    "brand": "PHILIPS",
-    "model": "55PUS8010/12",
-    "stores": [
-      "Anhoch"
-    ],
-    "image": "https://www.anhoch.com/storage/media/55pus801012.jpg"
   },
   {
     "brand": "PHILIPS",
@@ -1905,27 +1730,11 @@
   },
   {
     "brand": "PHILIPS",
-    "model": "55PUS8400/12",
-    "stores": [
-      "DDStore"
-    ],
-    "image": null
-  },
-  {
-    "brand": "PHILIPS",
     "model": "55PUS8450",
     "stores": [
       "Setec"
     ],
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92355_PHILIPS%2055PUS8450-01KT19QY77K8EWXHD2QCXF4THA.jpg"
-  },
-  {
-    "brand": "PHILIPS",
-    "model": "55PUS8450/12",
-    "stores": [
-      "Anhoch"
-    ],
-    "image": "https://www.anhoch.com/storage/media/8450.jpg"
   },
   {
     "brand": "PHILIPS",
@@ -1993,14 +1802,6 @@
   },
   {
     "brand": "PHILIPS",
-    "model": "65PUS7000/12",
-    "stores": [
-      "DDStore"
-    ],
-    "image": null
-  },
-  {
-    "brand": "PHILIPS",
     "model": "65PUS7409",
     "stores": [
       "Setec"
@@ -2025,27 +1826,11 @@
   },
   {
     "brand": "PHILIPS",
-    "model": "65PUS7810/12",
-    "stores": [
-      "DDStore"
-    ],
-    "image": null
-  },
-  {
-    "brand": "PHILIPS",
     "model": "65PUS8010",
     "stores": [
       "Setec"
     ],
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63550_PHILIPS 65PUS8010-01K5GS06AM15TTE516BMRBHE3Z.jpg"
-  },
-  {
-    "brand": "PHILIPS",
-    "model": "65PUS8010/12",
-    "stores": [
-      "Anhoch"
-    ],
-    "image": "https://www.anhoch.com/storage/media/65pus8010.jpg"
   },
   {
     "brand": "PHILIPS",
@@ -2062,14 +1847,6 @@
       "Setec"
     ],
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92394-01KZ8ETQ9ACP9Y07YZSJ02XPTA.png"
-  },
-  {
-    "brand": "PHILIPS",
-    "model": "65PUS8400/12",
-    "stores": [
-      "DDStore"
-    ],
-    "image": null
   },
   {
     "brand": "PHILIPS",
@@ -2137,14 +1914,6 @@
   },
   {
     "brand": "PHILIPS",
-    "model": "75PUS7810/12",
-    "stores": [
-      "DDStore"
-    ],
-    "image": null
-  },
-  {
-    "brand": "PHILIPS",
     "model": "75PUS8510",
     "stores": [
       "Setec"
@@ -2153,27 +1922,11 @@
   },
   {
     "brand": "PHILIPS",
-    "model": "75PUS8510/12",
-    "stores": [
-      "DDStore"
-    ],
-    "image": null
-  },
-  {
-    "brand": "PHILIPS",
     "model": "85PUS8510",
     "stores": [
       "Setec"
     ],
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63140_PHILIPS%2085PUS8510-01KTK3A9BTM8M9C7X95TCZFN9Z.jpg"
-  },
-  {
-    "brand": "PHILIPS",
-    "model": "85PUS8510/12",
-    "stores": [
-      "DDStore"
-    ],
-    "image": null
   },
   {
     "brand": "PHILIPS",
@@ -2268,14 +2021,6 @@
   },
   {
     "brand": "SAMSUNG",
-    "model": "QE-55Q7F2AUXXH",
-    "stores": [
-      "Anhoch"
-    ],
-    "image": "https://www.anhoch.com/storage/media/14112025100723q7f2auxxh.jpg"
-  },
-  {
-    "brand": "SAMSUNG",
     "model": "QE32LS03CBUXXH",
     "stores": [
       "Setec"
@@ -2333,7 +2078,7 @@
   },
   {
     "brand": "SAMSUNG",
-    "model": "QE50Q8FAAUXХH",
+    "model": "QE50Q8FAAUXXH",
     "stores": [
       "Setec"
     ],
@@ -2366,7 +2111,7 @@
   },
   {
     "brand": "SAMSUNG",
-    "model": "QE55Q7F2AUXХH",
+    "model": "QE55Q7F2AUXXH",
     "stores": [
       "Setec"
     ],
@@ -2383,7 +2128,7 @@
   },
   {
     "brand": "SAMSUNG",
-    "model": "QE55Q8FAAUXХH",
+    "model": "QE55Q8FAAUXXH",
     "stores": [
       "Setec",
       "Neptun"
@@ -2525,7 +2270,7 @@
   },
   {
     "brand": "SAMSUNG",
-    "model": "QE65Q7F2AUXХH",
+    "model": "QE65Q7F2AUXXH",
     "stores": [
       "Setec"
     ],
@@ -2533,7 +2278,7 @@
   },
   {
     "brand": "SAMSUNG",
-    "model": "QE65Q7FAAUXХH",
+    "model": "QE65Q7FAAUXXH",
     "stores": [
       "Setec",
       "Neptun"
@@ -2550,7 +2295,7 @@
   },
   {
     "brand": "SAMSUNG",
-    "model": "QE65Q8FAAUXХH",
+    "model": "QE65Q8FAAUXXH",
     "stores": [
       "Setec"
     ],
@@ -2762,22 +2507,6 @@
       "Setec"
     ],
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/55465_0-01JVYCH4NCZ3HPYC9PV524TN8J.webp"
-  },
-  {
-    "brand": "SAMSUNG",
-    "model": "SP-LFF3CLAXXH",
-    "stores": [
-      "Setec"
-    ],
-    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/56845_0-01JVA74H24NDXQ1QNCAFXDPFBS.webp"
-  },
-  {
-    "brand": "SAMSUNG",
-    "model": "SP-LSP3BLAXXH",
-    "stores": [
-      "Setec"
-    ],
-    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/53498_0-01JVW62QEF10H5EJCCMRV82Z51.webp"
   },
   {
     "brand": "SAMSUNG",
@@ -3026,14 +2755,6 @@
   },
   {
     "brand": "SAMSUNG",
-    "model": "UE65U8072FUXXH",
-    "stores": [
-      "Neptun"
-    ],
-    "image": "https://www.neptun.mk/2025/05/20/image-Photoroom262_62eef67c-72eb-45cb-9af7-11f9da1cfb3e.png"
-  },
-  {
-    "brand": "SAMSUNG",
     "model": "UE65U8072HUXXH",
     "stores": [
       "Neptun"
@@ -3084,7 +2805,7 @@
   },
   {
     "brand": "SAMSUNG",
-    "model": "UE75U8092FUXХH",
+    "model": "UE75U8092FUXXH",
     "stores": [
       "Setec"
     ],
@@ -3110,7 +2831,7 @@
   },
   {
     "brand": "SAMSUNG",
-    "model": "UE85U8072FUXХH",
+    "model": "UE85U8072FUXXH",
     "stores": [
       "Setec",
       "Neptun"
@@ -3127,7 +2848,7 @@
   },
   {
     "brand": "SAMSUNG",
-    "model": "UE85U8092FUXХH",
+    "model": "UE85U8092FUXXH",
     "stores": [
       "Setec"
     ],
@@ -3165,14 +2886,6 @@
       "Anhoch"
     ],
     "image": "https://www.anhoch.com/storage/media/s35b_686d193814e39_650xr.jpg"
-  },
-  {
-    "brand": "SONY",
-    "model": "K55S35B.CEI",
-    "stores": [
-      "Setec"
-    ],
-    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79319_SONY K55S35B.CEI-01K6WWH5VD66W1114RT3D4PDFB.jpg"
   },
   {
     "brand": "SONY",
@@ -3216,14 +2929,6 @@
   },
   {
     "brand": "SONY",
-    "model": "K65S35B.CEI",
-    "stores": [
-      "Setec"
-    ],
-    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79319_SONY K55S35B.CEI-01JYP880F89R1HH1EMKY21K9VA.jpg"
-  },
-  {
-    "brand": "SONY",
     "model": "K65XR55B.CEI",
     "stores": [
       "Setec"
@@ -3253,14 +2958,6 @@
       "Anhoch"
     ],
     "image": "https://www.anhoch.com/storage/media/tv_50728662ea253.jpg"
-  },
-  {
-    "brand": "SONY",
-    "model": "K75S35B.CEI",
-    "stores": [
-      "Setec"
-    ],
-    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79321_SONY K75S35B.CEI-01JYP8YHDJRKWH8K75H4PBZM9A.jpg"
   },
   {
     "brand": "SONY",
@@ -3373,6 +3070,24 @@
       "Anhoch"
     ],
     "image": "https://www.anhoch.com/storage/media/sony-x90l_4.jpg"
+  },
+  {
+    "brand": "SONY",
+    "model": "K55A65PB.CEI",
+    "stores": [
+      "Anhoch",
+      "Setec"
+    ],
+    "image": null
+  },
+  {
+    "brand": "SONY",
+    "model": "K65A65PB.CEI",
+    "stores": [
+      "Anhoch",
+      "Setec"
+    ],
+    "image": null
   },
   {
     "brand": "ST",
@@ -4163,19 +3878,11 @@
   },
   {
     "brand": "VIVAX",
-    "model": "TV40LE115T2S2",
+    "model": "TV-40LE115T2S2",
     "stores": [
       "Anhoch"
     ],
     "image": "https://www.anhoch.com/storage/media/vivax-imago-led-tv-40le115t2s2-reg24959(1).jpg"
-  },
-  {
-    "brand": "XIAOMI",
-    "model": "55E7S",
-    "stores": [
-      "DDStore"
-    ],
-    "image": null
   },
   {
     "brand": "XIAOMI",

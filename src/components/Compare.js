@@ -198,6 +198,10 @@ const Compare = () => {
       return value ? "✓ Да" : "— Не";
     }
 
+    if (Array.isArray(value)) {
+      return value.length ? value.join(", ") : "—";
+    }
+
     return value;
   };
 
@@ -249,7 +253,7 @@ const Compare = () => {
       specs: [
         ["Процесор на слика", (tv) => tv.pictureProcessor],
         ["HDR формати", (tv) => tv.hdrFormats],
-        ["Обработка на слика", (tv) => tv.brightness],
+        ["Осветленост", (tv) => tv.brightness],
         ["Dolby Vision", (tv) => tv.dolbyVision],
       ],
     },

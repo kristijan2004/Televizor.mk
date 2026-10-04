@@ -560,11 +560,13 @@ const TvDetails = () => {
                   <InfoTooltip text="HDR (High Dynamic Range) овозможува поголем опсег помеѓу најтемните и најсветлите делови на сликата, со подобар контраст и повеќе детали." />
                 </SpecLabel>
 
-                <SpecValue>{tv.hdrFormats}</SpecValue>
+                <SpecValue>
+                  {tv.hdrFormats?.length ? tv.hdrFormats.join(", ") : "—"}
+                </SpecValue>
               </Spec>
 
               <Spec>
-                <SpecLabel>Обработка на слика</SpecLabel>
+                <SpecLabel>Осветленост</SpecLabel>
                 <SpecValue>{tv.brightness}</SpecValue>
               </Spec>
 
