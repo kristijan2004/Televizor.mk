@@ -378,38 +378,6 @@ const Navigation = () => {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [menuOpen]);
 
-  const scrollToTvSection = () => {
-    const section = document.getElementById(TV_SECTION_ID);
-
-    if (!section) {
-      return;
-    }
-
-    const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    ).matches;
-
-    section.scrollIntoView({
-      behavior: prefersReducedMotion ? "auto" : "smooth",
-      block: "start",
-    });
-  };
-
-  /*
-    Одбери ТВ points at the TV listing that already exists on the home page.
-    Already there -> just scroll. Elsewhere -> let the link navigate and tell
-    Home to scroll once it has rendered.
-  */
-  const handleChooseTvClick = (e) => {
-    setMenuOpen(false);
-
-    if (location.pathname === "/") {
-      e.preventDefault();
-
-      scrollToTvSection();
-    }
-  };
-
   // Same three items in both layouts; only the <li> wrapper differs.
   const renderItems = (Item) => (
     <>
@@ -426,12 +394,7 @@ const Navigation = () => {
       </Item>
 
       <Item>
-        <PillLink
-          to="/"
-          end
-          state={{ scrollTo: TV_SECTION_ID }}
-          onClick={handleChooseTvClick}
-        >
+        <PillLink to="/odberi-tv" onClick={() => setMenuOpen(false)}>
           Одбери ТВ
         </PillLink>
       </Item>
