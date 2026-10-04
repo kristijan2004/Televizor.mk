@@ -2,6 +2,7 @@ import React, { useEffect, useMemo } from "react";
 import styled from "styled-components";
 import { Link, useParams } from "react-router-dom";
 
+import ArticleImage from "./ArticleImage";
 import Navigation from "./Navigation";
 import news from "../Data/news";
 import {
@@ -101,16 +102,29 @@ const Author = styled.span`
   font-weight: 700;
 `;
 
-const HeroImage = styled.img`
+const HeroImage = styled(ArticleImage)`
   width: 100%;
 
-  max-height: 440px;
+  /*
+    Shares the reading measure with the headline and the body text, and keeps
+    its own proportions: cropping to a fixed banner shape used to blow small
+    pictures up and cut the top and bottom off them.
+  */
+  max-width: 68ch;
+
+  height: auto;
+
+  /* A portrait picture is boxed rather than left to run down the page. */
+  max-height: 520px;
+
+  object-fit: contain;
+  object-position: center;
 
   margin-top: 26px;
 
-  object-fit: cover;
-
   display: block;
+
+  background-color: #f0f0f4;
 
   border: 1px solid #e6e6e6;
   border-radius: 16px;
@@ -135,6 +149,134 @@ const Paragraph = styled.p`
 
   line-height: 1.75;
 `;
+
+const Subheading = styled.h2`
+  margin: 32px 0 14px;
+
+  color: #1b1b2f;
+
+  font-size: ${(props) => (props.$level > 2 ? "18px" : "22px")};
+
+  line-height: 1.35;
+`;
+
+const Quote = styled.blockquote`
+  margin: 0 0 20px;
+  padding: 2px 0 2px 18px;
+
+  border-left: 3px solid #242582;
+
+  color: #333;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+`;
+
+const BodyList = styled.ul`
+  margin: 0 0 20px;
+  padding-left: 22px;
+
+  color: #444;
+
+  font-size: 16px;
+
+  line-height: 1.75;
+
+  li {
+    margin-bottom: 8px;
+  }
+`;
+
+const Divider = styled.hr`
+  margin: 28px 0;
+
+  border: none;
+  border-top: 1px solid #e6e6e6;
+`;
+
+const InlineCode = styled.code`
+  padding: 1px 5px;
+
+  background-color: #f0f0f4;
+  border-radius: 4px;
+
+  font-size: 0.92em;
+`;
+
+const InlineLink = styled.a`
+  color: #242582;
+
+  text-decoration: underline;
+`;
+
+/*
+  Inline runs come out of the markdown build step already parsed, so rendering
+  is a straight mapping — no markdown parsing happens in the browser.
+*/
+const renderInline = (content) =>
+  content.map((run, index) => {
+    let node = run.text;
+
+    if (run.code) {
+      node = <InlineCode key={index}>{node}</InlineCode>;
+    }
+
+    if (run.bold) {
+      node = <strong key={index}>{node}</strong>;
+    }
+
+    if (run.italic) {
+      node = <em key={index}>{node}</em>;
+    }
+
+    if (run.href) {
+      const external = /^https?:\/\//.test(run.href);
+
+      return (
+        <InlineLink
+          key={index}
+          href={run.href}
+          {...(external
+            ? { target: "_blank", rel: "noopener noreferrer" }
+            : {})}
+        >
+          {node}
+        </InlineLink>
+      );
+    }
+
+    return <React.Fragment key={index}>{node}</React.Fragment>;
+  });
+
+const renderBlock = (block, index) => {
+  switch (block.type) {
+    case "heading":
+      return (
+        <Subheading key={index} as={`h${block.level}`} $level={block.level}>
+          {renderInline(block.content)}
+        </Subheading>
+      );
+
+    case "quote":
+      return <Quote key={index}>{renderInline(block.content)}</Quote>;
+
+    case "list":
+      return (
+        <BodyList key={index} as={block.ordered ? "ol" : "ul"}>
+          {block.items.map((item, itemIndex) => (
+            <li key={itemIndex}>{renderInline(item)}</li>
+          ))}
+        </BodyList>
+      );
+
+    case "divider":
+      return <Divider key={index} />;
+
+    default:
+      return <Paragraph key={index}>{renderInline(block.content)}</Paragraph>;
+  }
+};
 
 /* ---------- Related ---------- */
 
@@ -211,7 +353,7 @@ const RelatedLink = styled(Link)`
   }
 `;
 
-const RelatedImage = styled.img`
+const RelatedImage = styled(ArticleImage)`
   width: 100%;
   height: 150px;
 
@@ -389,12 +531,18 @@ const NewsArticle = () => {
           <span>{formatReadTime(post.readTime)}</span>
         </Meta>
 
-        <HeroImage src={post.image} alt="" />
+        <HeroImage
+          src={post.image}
+          candidates={post.imageCandidates}
+          alt=""
+        />
 
         <Body>
-          {post.body.map((paragraph, index) => (
-            <Paragraph key={index}>{paragraph}</Paragraph>
-          ))}
+          {post.blocks
+            ? post.blocks.map(renderBlock)
+            : post.body.map((paragraph, index) => (
+                <Paragraph key={index}>{paragraph}</Paragraph>
+              ))}
         </Body>
       </Article>
 
@@ -406,7 +554,11 @@ const NewsArticle = () => {
             {related.map((item) => (
               <RelatedCard key={item.id}>
                 <RelatedLink to={`/novosti/${item.slug}`}>
-                  <RelatedImage src={item.image} alt="" />
+                  <RelatedImage
+                    src={item.image}
+                    candidates={item.imageCandidates}
+                    alt=""
+                  />
 
                   <RelatedBody>
                     <CategoryBadge $category={item.category}>

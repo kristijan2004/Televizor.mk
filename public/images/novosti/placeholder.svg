@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-label="Телевизор.mk">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2b2b5f"/>
+      <stop offset="1" stop-color="#242582"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#bg)"/>
+
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.45" stroke-width="6">
+    <rect x="276" y="158" width="248" height="150" rx="10"/>
+    <path d="M365 324h70M400 308v16"/>
+  </g>
+
+  <text x="400" y="384" fill="#ffffff" fill-opacity="0.55"
+        font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22"
+        text-anchor="middle" letter-spacing="2">ТЕЛЕВИЗОР.MK</text>
+</svg>

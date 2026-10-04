@@ -2,6 +2,7 @@ import React, { useMemo, useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+import ArticleImage from "./ArticleImage";
 import Navigation from "./Navigation";
 import news, { CATEGORIES } from "../Data/news";
 import {
@@ -96,7 +97,7 @@ const FeaturedCard = styled(Link)`
   }
 `;
 
-const FeaturedImage = styled.img`
+const FeaturedImage = styled(ArticleImage)`
   width: 100%;
   height: 100%;
 
@@ -301,7 +302,7 @@ const CardLink = styled(Link)`
   }
 `;
 
-const CardImage = styled.img`
+const CardImage = styled(ArticleImage)`
   width: 100%;
   height: 180px;
 
@@ -438,7 +439,11 @@ const Novosti = () => {
       {featured && (
         <FeaturedSection>
           <FeaturedCard to={`/novosti/${featured.slug}`}>
-            <FeaturedImage src={featured.image} alt="" />
+            <FeaturedImage
+              src={featured.image}
+              candidates={featured.imageCandidates}
+              alt=""
+            />
 
             <FeaturedBody>
               <FeaturedLabel>Издвоено</FeaturedLabel>
@@ -497,7 +502,11 @@ const Novosti = () => {
             {visible.map((post) => (
               <Card key={post.id}>
                 <CardLink to={`/novosti/${post.slug}`}>
-                  <CardImage src={post.image} alt="" />
+                  <CardImage
+                    src={post.image}
+                    candidates={post.imageCandidates}
+                    alt=""
+                  />
 
                   <CardBody>
                     <CategoryBadge $category={post.category}>
