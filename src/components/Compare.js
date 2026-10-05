@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 import Navigation from "./Navigation";
 import { Context } from "./Context";
+import { isUnknown, UNKNOWN } from "../lib/specValue";
 
 const Page = styled.div`
   min-height: 100vh;
@@ -189,20 +190,20 @@ const Compare = () => {
   const image =
     "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=500&q=80";
 
-  const formatValue = (value) => {
-    if (value === null || value === undefined || value === "") {
-      return "Нема податок";
-    }
-
+  const formatValue = (value, unit) => {
     if (typeof value === "boolean") {
       return value ? "✓ Да" : "— Не";
     }
 
-    if (Array.isArray(value)) {
-      return value.length ? value.join(", ") : "—";
+    if (isUnknown(value)) {
+      return UNKNOWN;
     }
 
-    return value;
+    if (Array.isArray(value)) {
+      return value.join(", ");
+    }
+
+    return unit ? `${value} ${unit}` : value;
   };
 
   if (compareList.length === 0) {
@@ -231,10 +232,10 @@ const Compare = () => {
     {
       category: "Основни спецификации",
       specs: [
-        ["Големина", (tv) => `${tv.size}"`],
+        ["Големина", (tv) => (tv.size ? `${tv.size}"` : null)],
         ["Резолуција", (tv) => tv.resolution],
         ["Технологија", (tv) => tv.technology],
-        ["Освежување", (tv) => `${tv.refreshRate} Hz`],
+        ["Освежување", (tv) => tv.refreshRate, "Hz"],
         ["Година", (tv) => tv.year],
       ],
     },
@@ -271,7 +272,7 @@ const Compare = () => {
     {
       category: "Звук",
       specs: [
-        ["Аудио моќност", (tv) => tv.audioPower],
+        ["Аудио моќност", (tv) => tv.audioPower, "W"],
         ["Аудио систем", (tv) => tv.audioChannels],
         ["Dolby Atmos", (tv) => tv.dolbyAtmos],
       ],
@@ -322,13 +323,13 @@ const Compare = () => {
                     </CategoryCell>
                   </CategoryRow>
 
-                  {section.specs.map(([label, getValue]) => (
+                  {section.specs.map(([label, getValue, unit]) => (
                     <SpecRow key={label}>
                       <LabelCell>{label}</LabelCell>
 
                       {compareList.map((tv) => (
                         <ValueCell key={tv.id}>
-                          {formatValue(getValue(tv))}
+                          {formatValue(getValue(tv), unit)}
                         </ValueCell>
                       ))}
                     </SpecRow>

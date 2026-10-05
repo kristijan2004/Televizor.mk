@@ -415,7 +415,7 @@
     "brand": "BEKO",
     "model": "55BCQ8000",
     "size": 55,
-    "technology": "LED",
+    "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
     "year": 2024,
@@ -438,7 +438,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "neptun",
+    "specsSource": "neptun+eprel",
     "image": "/images/tvs/neptun/beko-55-bcq-8000-298662.jpg",
     "stores": {
       "Neptun": {
@@ -495,7 +495,7 @@
     "brand": "BEKO",
     "model": "65BCQ8000",
     "size": 65,
-    "technology": "LED",
+    "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
     "year": 2024,
@@ -518,7 +518,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "neptun",
+    "specsSource": "neptun+eprel",
     "image": "/images/tvs/neptun/beko-65-bcq-8000-299115.jpg",
     "stores": {
       "Neptun": {
@@ -1244,9 +1244,9 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Google TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 4,
     "usb": 2,
@@ -1260,7 +1260,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63798_Haier H43K85FUX-01K7RFB8BPP6F8P9TVEFFGB93P.jpg",
     "stores": {
       "Setec": {
@@ -1289,7 +1289,7 @@
     "refreshRate": 60,
     "year": 2026,
     "os": "Google TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 4,
     "usb": 2,
@@ -1303,7 +1303,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92374_Haier%20H43K85GUX-01KV556TJKDKA3DK7PRS29ZC6M.jpg",
     "stores": {
       "Setec": {
@@ -1330,9 +1330,9 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 4,
     "usb": 2,
@@ -1346,7 +1346,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63727_Haier H43Q80FUX-01K6YQTWGFK7NAFVFE6CYB6Z24.jpg",
     "stores": {
       "Setec": {
@@ -1375,7 +1375,7 @@
     "refreshRate": 60,
     "year": 2026,
     "os": "Google TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 4,
     "usb": 2,
@@ -1389,7 +1389,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92371_Haier%20H43S80GUX-01KTXF8XTW30C4TJMH27WA0531.jpg",
     "stores": {
       "Setec": {
@@ -1416,9 +1416,9 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 4,
     "usb": 2,
@@ -1432,7 +1432,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63799_Haier H50K85FUX-01K7RF5ZPMRYRQ7BW5YJQGFNZH.jpg",
     "stores": {
       "Setec": {
@@ -1452,9 +1452,9 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Google TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 4,
     "usb": 2,
@@ -1468,7 +1468,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63800_Haier H55K85FUX-01K7RFGN3JSR4N4YQNFRKN6H6T.jpg",
     "stores": {
       "Setec": {
@@ -1495,9 +1495,9 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 4,
     "usb": 2,
@@ -1511,7 +1511,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63728_Haier H55Q80FUX-01K6YQY6GDZG11W9N4PQHFXS4C.jpg",
     "stores": {
       "Setec": {
@@ -1540,7 +1540,7 @@
     "refreshRate": 60,
     "year": 2026,
     "os": "Google TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 4,
     "usb": 2,
@@ -1554,7 +1554,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92372_Haier%20H55S80GUX-01KTXF6VGB2WKZG06TVC44Q58P.jpg",
     "stores": {
       "Setec": {
@@ -1581,9 +1581,9 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 4,
     "usb": 2,
@@ -1597,7 +1597,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63801_Haier H65K85FUX-01K7RFHZRHVNRJFTHGAQVR07M7.jpg",
     "stores": {
       "Setec": {
@@ -1624,9 +1624,9 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 4,
     "usb": 2,
@@ -1640,7 +1640,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63729_Haier H65Q80FUX-01K6YR16QC89X235R5GJYPSM95.jpg",
     "stores": {
       "Setec": {
@@ -1669,7 +1669,7 @@
     "refreshRate": 60,
     "year": 2026,
     "os": "Google TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 4,
     "usb": 2,
@@ -1683,7 +1683,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92373_Haier%20H65S80GUX-01KTXFC43C4SSM3E85EDEGX4NS.jpg",
     "stores": {
       "Setec": {
@@ -1710,7 +1710,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 144,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -1731,7 +1731,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79599_Hisense%20100E7Q%20PRO-01KQYVMX97VA8WT515V54EMMF1.jpg",
     "stores": {
       "Setec": {
@@ -1751,7 +1751,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 144,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -1772,7 +1772,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/neptun/hisense-100-e7s-pro-100-4k-qled-144hz-297957.jpg",
     "stores": {
       "Setec": {
@@ -1835,7 +1835,7 @@
     "technology": "LED",
     "resolution": "HD Ready",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": false,
@@ -1853,7 +1853,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79338_Hisense%2032A4Q-01KR0S3JKMDAGN4676MHZ3BYDC.jpg",
     "stores": {
       "Setec": {
@@ -1873,7 +1873,7 @@
     "technology": "LED",
     "resolution": "HD Ready",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "HomeOS",
     "hdr": true,
     "dolbyVision": false,
@@ -1892,7 +1892,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/neptun/hisense-32-a4s-32-hd-dled-smart-297952.jpg",
     "stores": {
       "Setec": {
@@ -1919,7 +1919,7 @@
     "technology": "LED",
     "resolution": "FHD",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "HomeOS",
     "hdr": true,
     "dolbyVision": false,
@@ -1938,7 +1938,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/neptun/hisense-40-a4s-40-fhd-dled-smart-297455.jpg",
     "stores": {
       "Setec": {
@@ -1965,7 +1965,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -1986,7 +1986,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/neptun/hisense-43-a6s-43-4k-dled-smart-297456.jpg",
     "stores": {
       "Setec": {
@@ -2013,7 +2013,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -2034,7 +2034,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92259_Hisense%2043E7Q-01KQYWFHZQYWSF9W12MNTH9E0B.jpg",
     "stores": {
       "Setec": {
@@ -2054,7 +2054,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -2075,7 +2075,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92399_Hisense%2043E7S-01KYSEPZMZ4P3EVG0118JC5WE5.jpg",
     "stores": {
       "Setec": {
@@ -2095,7 +2095,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -2116,7 +2116,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79481_Hisense%2050A6Q-01KKBQB1ZJ1W3F4KFTQWTWQ39P.jpg",
     "stores": {
       "Setec": {
@@ -2136,7 +2136,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -2157,7 +2157,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/neptun/hisense-50-a6s-50-4k-dled-smart-297457.jpg",
     "stores": {
       "Setec": {
@@ -2184,7 +2184,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -2205,7 +2205,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79343_Hisense%2050A7Q-01KR0S8KKQWE4CASJ7X0D7FQ01.jpg",
     "stores": {
       "Setec": {
@@ -2225,7 +2225,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -2246,7 +2246,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79346_Hisense%2050E7Q-01KQYWMHDB7B6NXFJHZ7SSVYJK.jpg",
     "stores": {
       "Setec": {
@@ -2266,7 +2266,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -2287,7 +2287,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/neptun/hisense-50-e7s-299437.jpg",
     "stores": {
       "Setec": {
@@ -2314,7 +2314,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -2335,7 +2335,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79341_Hisense%2055A6Q-01KKBQ9HBRR4TW2857D5M95PSR.jpg",
     "stores": {
       "Setec": {
@@ -2355,7 +2355,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -2376,7 +2376,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/neptun/hisense-55-a6s-55-4k-dled-smart-297953.jpg",
     "stores": {
       "Setec": {
@@ -2403,7 +2403,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -2424,7 +2424,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79344_Hisense%2055A7Q-01KR0S9WJ5BFCXNM02A64A9114.jpg",
     "stores": {
       "Setec": {
@@ -2444,7 +2444,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -2465,7 +2465,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79480_Hisense%2055E7Q-01KQYWH5AQGWSMBBKSZ4R228W1.jpg",
     "stores": {
       "Setec": {
@@ -2485,7 +2485,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2024,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -2506,7 +2506,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79347_Hisense%2055E7Q%20PRO-01KKBPRXP420498X7704F1G5GE.jpg",
     "stores": {
       "Setec": {
@@ -2526,7 +2526,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -2547,7 +2547,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/neptun/hisense-55-e7s-299438.jpg",
     "stores": {
       "Setec": {
@@ -2574,7 +2574,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 144,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -2595,7 +2595,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/neptun/hisense-55-e7s-pro-55-4k-qled-144hz-297954.jpg",
     "stores": {
       "Setec": {
@@ -2622,7 +2622,7 @@
     "technology": "Mini LED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -2643,7 +2643,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79351_Hisense%2055U7Q-01KR0RPWSY4PC70YA8KP4FCV72.jpg",
     "stores": {
       "Setec": {
@@ -2663,7 +2663,7 @@
     "technology": "Mini LED",
     "resolution": "4K",
     "refreshRate": 144,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -2684,7 +2684,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/neptun/hisense-55-u7se-299439.jpg",
     "stores": {
       "Setec": {
@@ -2711,7 +2711,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -2732,7 +2732,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/neptun/hisense-65-q7s-300930.jpg",
     "stores": {
       "Neptun": {
@@ -2752,7 +2752,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -2773,7 +2773,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79342_Hisense%2065A6Q-01KKBQCC642GS9MPJ633P3YWET.jpg",
     "stores": {
       "Setec": {
@@ -2793,7 +2793,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -2814,7 +2814,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/neptun/hisense-65-a6s-55-4k-dled-smart-297955.jpg",
     "stores": {
       "Setec": {
@@ -2841,7 +2841,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -2862,7 +2862,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79345_Hisense%2065A7Q-01KR0SBD707DWGCY1RMDPB5JTR.jpg",
     "stores": {
       "Setec": {
@@ -2882,7 +2882,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -2903,7 +2903,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79638_Hisense%2065E7Q-01KQYWE6G04H10H49432ST7JTB.jpg",
     "stores": {
       "Setec": {
@@ -2923,7 +2923,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2024,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -2944,7 +2944,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79348_Hisense%2065E7Q%20PRO-01KKBPTVJV18Y73162GZYJBVF1.jpg",
     "stores": {
       "Setec": {
@@ -2964,7 +2964,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -2985,7 +2985,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/neptun/hisense-65-e7s-299440.jpg",
     "stores": {
       "Setec": {
@@ -3012,7 +3012,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 144,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -3033,7 +3033,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/neptun/hisense-65-e7s-pro-65-4k-qled-144hz-297956.jpg",
     "stores": {
       "Setec": {
@@ -3060,7 +3060,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -3081,7 +3081,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/Hisense%2065Q7S%20PRO_92423-01M3PQWWY7XESAKTTPRMPX5QQB.jpg",
     "stores": {
       "Setec": {
@@ -3101,7 +3101,7 @@
     "technology": "Mini LED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -3122,7 +3122,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79640_Hisense%2065U7Q-01KR0RT3M1GVYJKMFT0TY18WFZ.jpg",
     "stores": {
       "Setec": {
@@ -3142,7 +3142,7 @@
     "technology": "Mini LED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -3163,7 +3163,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79600_Hisense%2065U7Q%20PRO-01KQYW7CYWGYEHQVXH6JWV10HP.jpg",
     "stores": {
       "Setec": {
@@ -3402,7 +3402,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -3423,7 +3423,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79595_Hisense%2075A6Q-01KKBQE0ZKEDHWTHRPA2G8F8DH.jpg",
     "stores": {
       "Setec": {
@@ -3443,7 +3443,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2024,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -3464,7 +3464,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79350_Hisense%2075E7Q%20PRO-01KKBPX43X0TFC4FPRZK64JAHD.jpg",
     "stores": {
       "Setec": {
@@ -3484,7 +3484,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -3505,7 +3505,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/neptun/hisense-75-e7s-299442.jpg",
     "stores": {
       "Setec": {
@@ -3532,7 +3532,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 144,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -3553,7 +3553,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/neptun/hisense-75-e7s-pro-298704.jpg",
     "stores": {
       "Setec": {
@@ -3580,7 +3580,7 @@
     "technology": "Mini LED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -3601,7 +3601,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79352_Hisense%2075U7Q-01KR0RS2C1WYSHGB3JG7MKZ9WM.jpg",
     "stores": {
       "Setec": {
@@ -3743,7 +3743,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -3764,7 +3764,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79596_Hisense%2085A6Q-01KKBQF8CB6RGDTN7TP76MMP5J.jpg",
     "stores": {
       "Setec": {
@@ -3784,7 +3784,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -3805,7 +3805,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92292_Hisense%2085E7Q-01KQYWBPSFS29287PHB0DQY2Q8.jpg",
     "stores": {
       "Setec": {
@@ -3825,7 +3825,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -3846,7 +3846,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92346_Hisense%2085E7S-01KS7B8YTE5RMWKFAF5NMQACQH.jpg",
     "stores": {
       "Setec": {
@@ -3907,7 +3907,7 @@
     "technology": "Mini LED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2025,
     "os": "VIDAA",
     "hdr": true,
     "dolbyVision": true,
@@ -3928,7 +3928,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79353_Hisense%2085U7Q-01KR0RH72BVNQ1RX86ETWVMSJW.jpg",
     "stores": {
       "Setec": {
@@ -3989,7 +3989,7 @@
     "technology": "LED",
     "resolution": "HD Ready",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2023,
     "os": "Smart TV",
     "hdr": true,
     "dolbyVision": false,
@@ -4008,7 +4008,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "anhoch",
+    "specsSource": "anhoch+eprel",
     "image": "/images/tvs/anhoch/tv-jvc-32-32vh5300-32-smart-led-2136.jpg",
     "stores": {
       "Anhoch": {
@@ -4028,7 +4028,7 @@
     "technology": "LED",
     "resolution": "HD Ready",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2023,
     "os": "Android TV",
     "hdr": true,
     "dolbyVision": false,
@@ -4047,7 +4047,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/anhoch/tv-jvc-lt32vah3300-32-hd-smart-7842.jpg",
     "stores": {
       "Anhoch": {
@@ -4065,9 +4065,9 @@
     "model": "LT-32VH4300",
     "size": 32,
     "technology": "LED",
-    "resolution": "4K",
+    "resolution": "HD Ready",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2023,
     "os": "Smart TV",
     "hdr": false,
     "dolbyVision": false,
@@ -4083,7 +4083,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "anhoch",
+    "specsSource": "anhoch+eprel",
     "image": "/images/tvs/anhoch/tv-jvc-lt32vh4300-32-hd-ready-led-2424.jpg",
     "stores": {
       "Anhoch": {
@@ -4103,7 +4103,7 @@
     "technology": "LED",
     "resolution": "FHD",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2023,
     "os": "Android TV",
     "hdr": true,
     "dolbyVision": false,
@@ -4122,7 +4122,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/anhoch/tv-jvc-lt40vaf3300-40-full-hd-android-led-tv-7200.jpg",
     "stores": {
       "Anhoch": {
@@ -4140,9 +4140,9 @@
     "model": "LT-40VF4101",
     "size": 40,
     "technology": "LED",
-    "resolution": "4K",
+    "resolution": "FHD",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2022,
     "os": "Smart TV",
     "hdr": false,
     "dolbyVision": false,
@@ -4158,7 +4158,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "anhoch",
+    "specsSource": "anhoch+eprel",
     "image": "/images/tvs/anhoch/tv-jvc-lt40vf4101-40-full-hd-led-2425.jpg",
     "stores": {
       "Anhoch": {
@@ -4178,7 +4178,7 @@
     "technology": "LED",
     "resolution": "FHD",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Smart TV",
     "hdr": false,
     "dolbyVision": false,
@@ -4194,7 +4194,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "anhoch",
+    "specsSource": "anhoch+eprel",
     "image": "/images/tvs/anhoch/tv-jvc-lt43vf4400-43-full-hd-led-tv-5709.jpg",
     "stores": {
       "Anhoch": {
@@ -4211,10 +4211,10 @@
     "brand": "JVC",
     "model": "LT-50VAQ3300",
     "size": 50,
-    "technology": "LED",
+    "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2023,
     "os": "Smart TV",
     "hdr": true,
     "dolbyVision": true,
@@ -4233,7 +4233,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "anhoch",
+    "specsSource": "anhoch+eprel",
     "image": "/images/tvs/anhoch/tv-jvc-50-lt50vaq3300-4k-android-qled-tv-7199.jpg",
     "stores": {
       "Anhoch": {
@@ -4250,10 +4250,10 @@
     "brand": "JVC",
     "model": "LT-55VAQ3300",
     "size": 55,
-    "technology": "LED",
+    "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2023,
     "os": "Smart TV",
     "hdr": true,
     "dolbyVision": true,
@@ -4274,7 +4274,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "anhoch",
+    "specsSource": "anhoch+eprel",
     "image": "/images/tvs/anhoch/tv-jvc-lt55vaq3300-4k-android-qled-5769.jpg",
     "stores": {
       "Anhoch": {
@@ -4294,7 +4294,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2023,
     "os": "Android TV",
     "hdr": true,
     "dolbyVision": true,
@@ -4315,7 +4315,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/anhoch/jvc-lt65va3300-4k-ultra-hd-led-tv-6271.jpg",
     "stores": {
       "Anhoch": {
@@ -4332,10 +4332,10 @@
     "brand": "JVC",
     "model": "LT-70VAQ7200",
     "size": 70,
-    "technology": "LED",
+    "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2022,
     "os": "Smart TV",
     "hdr": true,
     "dolbyVision": false,
@@ -4354,7 +4354,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "anhoch",
+    "specsSource": "anhoch+eprel",
     "image": "/images/tvs/anhoch/tv-jvc-lt70vaq7200-70-4k-android-qled-5768.jpg",
     "stores": {
       "Anhoch": {
@@ -4374,7 +4374,7 @@
     "technology": "LED",
     "resolution": "HD Ready",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2019,
     "os": "Smart TV",
     "hdr": false,
     "dolbyVision": false,
@@ -4390,7 +4390,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "anhoch",
+    "specsSource": "anhoch+eprel",
     "image": "/images/tvs/anhoch/tv-jvc-lt32vh3905-32-led-hdmix3usbx2dvbtt2c-tuner-7402.jpg",
     "stores": {
       "Anhoch": {
@@ -4410,7 +4410,7 @@
     "technology": "LED",
     "resolution": "HD Ready",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2020,
     "os": "Smart TV",
     "hdr": true,
     "dolbyVision": false,
@@ -4430,7 +4430,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "anhoch",
+    "specsSource": "anhoch+eprel",
     "image": "/images/tvs/anhoch/tv-jvc-lt32vh5000-32-smart-led-hdmix3usbx2dvbtt2c-tuner-9446.jpg",
     "stores": {
       "Anhoch": {
@@ -4450,7 +4450,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2020,
     "os": "Android TV",
     "hdr": true,
     "dolbyVision": true,
@@ -4470,7 +4470,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "anhoch",
+    "specsSource": "anhoch+eprel",
     "image": "/images/tvs/anhoch/tv-jvc-lt43va8000-43-4k-android-led-wifihdmix4usbx2dvbtt2c-tuner-9406.jpg",
     "stores": {
       "Anhoch": {
@@ -4490,7 +4490,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2023,
     "os": "Smart TV",
     "hdr": true,
     "dolbyVision": true,
@@ -4511,7 +4511,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "anhoch",
+    "specsSource": "anhoch+eprel",
     "image": "/images/tvs/anhoch/tv-jvc-50-lt50va3300-4k-android-2139.jpg",
     "stores": {
       "Anhoch": {
@@ -4528,10 +4528,10 @@
     "brand": "JVC",
     "model": "LT50VAQ7200",
     "size": 50,
-    "technology": "LED",
+    "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2022,
     "os": "Smart TV",
     "hdr": true,
     "dolbyVision": true,
@@ -4551,7 +4551,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "anhoch",
+    "specsSource": "anhoch+eprel",
     "image": "/images/tvs/anhoch/tv-jvc-50-lt50vaq7200-android-qled-1696.jpg",
     "stores": {
       "Anhoch": {
@@ -4568,10 +4568,10 @@
     "brand": "JVC",
     "model": "LT50VAQ8100",
     "size": 50,
-    "technology": "LED",
+    "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2021,
     "os": "Smart TV",
     "hdr": true,
     "dolbyVision": true,
@@ -4590,7 +4590,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "anhoch",
+    "specsSource": "anhoch+eprel",
     "image": "/images/tvs/anhoch/tv-jvc-lt50vaq8100-50-4k-android-qled-wifihdmix3usbx2dvbtt2c-tuner-9951.jpg",
     "stores": {
       "Anhoch": {
@@ -4610,7 +4610,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2023,
     "os": "Smart TV",
     "hdr": true,
     "dolbyVision": true,
@@ -4631,7 +4631,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "anhoch",
+    "specsSource": "anhoch+eprel",
     "image": "/images/tvs/anhoch/tv-jvc-55-lt55va3300-4k-android-1888.jpg",
     "stores": {
       "Anhoch": {
@@ -4648,10 +4648,10 @@
     "brand": "JVC",
     "model": "LT55VAQ3200",
     "size": 55,
-    "technology": "LED",
+    "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2022,
     "os": "Smart TV",
     "hdr": true,
     "dolbyVision": true,
@@ -4672,7 +4672,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "anhoch",
+    "specsSource": "anhoch+eprel",
     "image": "/images/tvs/anhoch/tv-jvc-55-lt55vaq3200-4k-android-qled-1887.jpg",
     "stores": {
       "Anhoch": {
@@ -4772,7 +4772,7 @@
     "technology": "LED",
     "resolution": "FHD",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2022,
     "os": "webOS",
     "hdr": true,
     "dolbyVision": false,
@@ -4791,7 +4791,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/neptun/lg-32-lq-63006-la-263609.jpg",
     "stores": {
       "Neptun": {
@@ -6780,7 +6780,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "webOS",
     "hdr": true,
     "dolbyVision": false,
@@ -6799,7 +6799,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "neptun",
+    "specsSource": "neptun+eprel",
     "image": "/images/tvs/neptun/lg-75-nano-82a6b-298668.jpg",
     "stores": {
       "Neptun": {
@@ -6935,7 +6935,7 @@
     "brand": "LG",
     "model": "77 B6 ELC",
     "size": 77,
-    "technology": "LED",
+    "technology": "OLED",
     "resolution": "4K",
     "refreshRate": 120,
     "year": 2026,
@@ -6958,7 +6958,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": true,
-    "specsSource": "neptun",
+    "specsSource": "neptun+eprel",
     "image": "/images/tvs/neptun/lg-77-b6-elc-77-4k-oled-120hz-300846.jpg",
     "stores": {
       "Neptun": {
@@ -7095,7 +7095,7 @@
     "brand": "LG",
     "model": "83 G61 LW",
     "size": 83,
-    "technology": "LED",
+    "technology": "OLED",
     "resolution": "4K",
     "refreshRate": 120,
     "year": 2026,
@@ -7118,7 +7118,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": true,
-    "specsSource": "neptun",
+    "specsSource": "neptun+eprel",
     "image": "/images/tvs/neptun/lg-83-g61-lw-299052.jpg",
     "stores": {
       "Neptun": {
@@ -7413,7 +7413,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -7434,7 +7434,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "ddstore",
+    "specsSource": "ddstore+eprel",
     "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1037864-product_19463_0.png?___store=mk",
     "stores": {
       "DDStore": {
@@ -7676,15 +7676,15 @@
     "technology": "LED",
     "resolution": "FHD",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": true,
     "hdmi": 3,
-    "usb": 1,
+    "usb": 2,
     "vrr": false,
     "allm": false,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Plus HD",
     "hdrFormats": [
       "HDR10",
       "HLG",
@@ -7696,7 +7696,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "/images/tvs/neptun/philips-32-pfs-6900-ambilight-32-fhd-smart-288279.jpg",
     "stores": {
       "Neptun": {
@@ -7716,15 +7716,15 @@
     "technology": "LED",
     "resolution": "HD Ready",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Non-Smart",
-    "hdr": true,
+    "hdr": false,
     "dolbyVision": false,
     "hdmi": 2,
     "usb": 1,
     "vrr": false,
     "allm": false,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Plus HD",
     "hdrFormats": [
       "HDR10",
       "HLG"
@@ -7735,7 +7735,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92263_PHILIPS%2032PHS5500-01KH638WSE3NFPK9VMY426QFJN.jpg",
     "stores": {
       "Anhoch": {
@@ -7769,7 +7769,7 @@
     "technology": "LED",
     "resolution": "HD Ready",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2021,
     "os": "Non-Smart",
     "hdr": false,
     "dolbyVision": false,
@@ -7785,7 +7785,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/anhoch/tv-philips-32phs5505-32-hd-led-hdmix2usbx1dvbtcss2-black-9615.jpg",
     "stores": {
       "Anhoch": {
@@ -7805,7 +7805,7 @@
     "technology": "LED",
     "resolution": "HD Ready",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -7824,7 +7824,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79590_PHILIPS 32PHS6000-01K58NWD54NKRZQGB4PKY94001.jpg",
     "stores": {
       "Setec": {
@@ -7844,7 +7844,7 @@
     "technology": "LED",
     "resolution": "HD Ready",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -7852,7 +7852,7 @@
     "usb": 2,
     "vrr": false,
     "allm": false,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Plus HD",
     "hdrFormats": [
       "HDR10",
       "HLG"
@@ -7863,7 +7863,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92379_PHILIPS%2032PHS6050-01KW9NYHMR8QE0RKY0KFB4E8M4.jpg",
     "stores": {
       "Setec": {
@@ -7890,7 +7890,7 @@
     "technology": "LED",
     "resolution": "HD Ready",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2021,
     "os": "SAPHI",
     "hdr": true,
     "dolbyVision": false,
@@ -7909,7 +7909,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/anhoch/tv-philips-32phs6605-32-hd-led-smart-hdmix3usbx2dvbtt2t2hdcss2-8409.jpg",
     "stores": {
       "Anhoch": {
@@ -7929,7 +7929,7 @@
     "technology": "LED",
     "resolution": "HD Ready",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2022,
     "os": "Smart TV",
     "hdr": true,
     "dolbyVision": false,
@@ -7949,7 +7949,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/anhoch/tv-philips-32phs680812-32-hd-smart-led-1835.jpg",
     "stores": {
       "Anhoch": {
@@ -7969,7 +7969,7 @@
     "technology": "LED",
     "resolution": "FHD",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -7988,7 +7988,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79312_PHILIPS 40PFS6000-01JYP6DMPA2BS2JVESE9S0WJ5N.jpg",
     "stores": {
       "Anhoch": {
@@ -8015,12 +8015,12 @@
     "technology": "LED",
     "resolution": "FHD",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 3,
-    "usb": 1,
+    "usb": 2,
     "vrr": false,
     "allm": false,
     "pictureProcessor": "—",
@@ -8034,7 +8034,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "/images/tvs/anhoch/tv-philips-40-40pfs6009-full-hd-smart-tv-7718.jpg",
     "stores": {
       "Anhoch": {
@@ -8062,7 +8062,7 @@
     "usb": 2,
     "vrr": false,
     "allm": false,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Plus HD",
     "hdrFormats": [
       "HDR10",
       "HLG"
@@ -8073,7 +8073,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92293_PHILIPS%2040PFS6050-01KQVKEMJY1F9WC47GNNZTNY5J.jpg",
     "stores": {
       "Setec": {
@@ -8100,7 +8100,7 @@
     "technology": "LED",
     "resolution": "FHD",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2022,
     "os": "Smart TV",
     "hdr": true,
     "dolbyVision": false,
@@ -8119,7 +8119,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1008912_97_w.png?___store=mk",
     "stores": {
       "DDStore": {
@@ -8139,9 +8139,9 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 3,
     "usb": 0,
@@ -8155,7 +8155,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "ddstore",
+    "specsSource": "ddstore+eprel",
     "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1036566_46_w.jpg?___store=mk",
     "stores": {
       "DDStore": {
@@ -8175,7 +8175,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -8183,7 +8183,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -8195,7 +8195,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63449_PHILIPS 43PUS7000-01K4ADCZK44RKKPRPR5XV8X5FF.webp",
     "stores": {
       "Anhoch": {
@@ -8229,7 +8229,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -8249,7 +8249,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/58713_0-01JVA77EGB2XS88FC5G3EHXT9E.webp",
     "stores": {
       "Setec": {
@@ -8269,7 +8269,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -8277,7 +8277,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -8289,7 +8289,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92257_PHILIPS 43PUS7810-01KFWWPGNNGA1GFQSQXZD0V8BM.png",
     "stores": {
       "Setec": {
@@ -8309,7 +8309,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -8329,7 +8329,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/anhoch/tv-philips-43-43pus8009-4k-ultra-hd-ambilight-led-smart-7717.jpg",
     "stores": {
       "Anhoch": {
@@ -8354,10 +8354,10 @@
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 3,
-    "usb": 0,
+    "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -8369,7 +8369,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92193_PHILIPS 43PUS8010-01K94FDQ8NAED41D0BHHAKZJDQ.jpg",
     "stores": {
       "Anhoch": {
@@ -8403,7 +8403,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2023,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -8423,7 +8423,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/78189_0-01JVYD73SZKBXBTWR64Y88KZ4S.webp",
     "stores": {
       "Setec": {
@@ -8443,15 +8443,15 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 3,
     "usb": 2,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
+    "vrr": true,
+    "allm": true,
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -8463,7 +8463,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92213_PHILIPS 43PUS8400-01KBM9D93X5M2TXKM0G4ZHXG5N.jpg",
     "stores": {
       "Anhoch": {
@@ -8497,7 +8497,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -8505,7 +8505,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -8517,7 +8517,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92392-01KZ8EQCYAFN7Q4JNQPF0D93H5.png",
     "stores": {
       "Setec": {
@@ -8537,7 +8537,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -8545,7 +8545,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -8557,7 +8557,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63450_PHILIPS 50PUS7000-01K452DKYY3QXKFF4B2CCRJ2WV.webp",
     "stores": {
       "Anhoch": {
@@ -8591,15 +8591,15 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
     "hdmi": 3,
     "usb": 2,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
+    "vrr": true,
+    "allm": true,
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -8609,10 +8609,10 @@
     "brightness": "—",
     "audioPower": 10,
     "audioChannels": "2.0",
-    "dolbyAtmos": false,
+    "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/58807_0-01JVA77PWWTP93QTBF9J7GMZGS.webp",
     "stores": {
       "Anhoch": {
@@ -8646,7 +8646,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -8666,7 +8666,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/61257_0-01JVYCP7RMTTBAKA6ZYTZZW9KB.webp",
     "stores": {
       "Setec": {
@@ -8686,7 +8686,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -8694,7 +8694,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -8706,7 +8706,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92267_PHILIPS%2050PUS7810-01KHR2VTHJK9K0NDXSD9HECCR0.jpg",
     "stores": {
       "Setec": {
@@ -8738,10 +8738,10 @@
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 3,
-    "usb": 0,
+    "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -8753,7 +8753,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63141_PHILIPS 50PUS8010-01JYP6M8S82J6V7GA7VTC7KT1Q.jpg",
     "stores": {
       "Anhoch": {
@@ -8787,7 +8787,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2023,
     "os": "Smart TV",
     "hdr": true,
     "dolbyVision": true,
@@ -8795,7 +8795,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -8808,7 +8808,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "/images/tvs/anhoch/tv-philips-50pus811812-50-4k-ambilight-smart-tv-1597.jpg",
     "stores": {
       "Anhoch": {
@@ -8828,7 +8828,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -8836,7 +8836,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -8845,10 +8845,10 @@
     "brightness": "—",
     "audioPower": 20,
     "audioChannels": "2.0",
-    "dolbyAtmos": false,
+    "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92393_PHILIPS%2050PUS8560-01KYH99M2BSH1FCMZS088KGGXT.jpg",
     "stores": {
       "Setec": {
@@ -8868,7 +8868,7 @@
     "technology": "Mini LED",
     "resolution": "4K",
     "refreshRate": 144,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -8876,7 +8876,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "P5 Perfect Picture Engine",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -8888,7 +8888,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63549_PHILIPS 55MLED820-01K5GS6P58JYVBVYQX8Z5MNZSS.jpg",
     "stores": {
       "Setec": {
@@ -8908,7 +8908,7 @@
     "technology": "OLED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2023,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -8916,7 +8916,7 @@
     "usb": 3,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "P5 AI Perfect Picture Engine",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -8929,7 +8929,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": true,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/56926_0-01JVA74RDBY93WPD79BDERWAKA.webp",
     "stores": {
       "Setec": {
@@ -8949,7 +8949,7 @@
     "technology": "OLED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": true,
@@ -8970,7 +8970,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": true,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63444_PHILIPS 55OLED770-01K452B24XSES5DQ7AT83T6SA3.webp",
     "stores": {
       "Setec": {
@@ -8998,7 +8998,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "P5 AI Perfect Picture Engine",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -9007,11 +9007,11 @@
     ],
     "brightness": "—",
     "audioPower": 70,
-    "audioChannels": "2.2",
+    "audioChannels": "4.0",
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": true,
-    "specsSource": "icecat",
+    "specsSource": "icecat+philips",
     "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1046087_6ab935686c5af.jpg?___store=mk",
     "stores": {
       "DDStore": {
@@ -9031,9 +9031,9 @@
     "technology": "Mini LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Google TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 3,
     "usb": 2,
@@ -9047,7 +9047,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/59561_PHILIPS 55PML8709-01K94XVC124R5Q7YP0M7932GF5.jpg",
     "stores": {
       "Setec": {
@@ -9067,9 +9067,9 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 0,
     "usb": 0,
@@ -9083,7 +9083,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "ddstore",
+    "specsSource": "ddstore+eprel",
     "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1036567_48_w.jpg?___store=mk",
     "stores": {
       "DDStore": {
@@ -9103,7 +9103,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -9111,7 +9111,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -9123,7 +9123,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63142_PHILIPS 55PUS7000-01KEH17MXFBG0Z4YBP569GXE3P.png",
     "stores": {
       "Setec": {
@@ -9150,7 +9150,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -9170,7 +9170,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/anhoch/tv-philips-55pus700912-4k-ultra-hd-smart-tv-5773.jpg",
     "stores": {
       "Anhoch": {
@@ -9190,14 +9190,14 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2023,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
     "hdmi": 3,
     "usb": 2,
-    "vrr": false,
-    "allm": false,
+    "vrr": true,
+    "allm": true,
     "pictureProcessor": "—",
     "hdrFormats": [
       "HDR10",
@@ -9208,10 +9208,10 @@
     "brightness": "—",
     "audioPower": 10,
     "audioChannels": "2.0",
-    "dolbyAtmos": false,
+    "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "/images/tvs/anhoch/tv-philips-55pus740912-4k-google-tv-5775.jpg",
     "stores": {
       "Anhoch": {
@@ -9231,7 +9231,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -9251,7 +9251,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/anhoch/tv-philips-55-55pus7609-4k-ultra-hd-led-smart-7298.jpg",
     "stores": {
       "Anhoch": {
@@ -9278,7 +9278,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -9286,7 +9286,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -9298,7 +9298,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63446_PHILIPS 55PUS7810-01K452CAC9ZAESE9HNB4PH9M5C.webp",
     "stores": {
       "Setec": {
@@ -9325,7 +9325,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -9345,7 +9345,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/anhoch/tv-philips-55pus8009-55-4k-ambilight-smart-ultra-hd-led-tv-3436.jpg",
     "stores": {
       "Anhoch": {
@@ -9370,10 +9370,10 @@
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 3,
-    "usb": 0,
+    "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -9385,7 +9385,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63448_PHILIPS 55PUS8010-01K4526ST3QS63DPV0QFJFCG0S.webp",
     "stores": {
       "Anhoch": {
@@ -9412,25 +9412,27 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2023,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 3,
     "usb": 2,
-    "vrr": false,
-    "allm": false,
+    "vrr": true,
+    "allm": true,
     "pictureProcessor": "—",
     "hdrFormats": [
-      "HDR10"
+      "HDR10",
+      "HDR10+",
+      "HLG"
     ],
     "brightness": "350 cd/m²",
-    "audioPower": 10,
+    "audioPower": 20,
     "audioChannels": "2.0",
-    "dolbyAtmos": false,
+    "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "/images/tvs/anhoch/tv-philips-55pus807912-4k-ambilight-smart-tv-5776.jpg",
     "stores": {
       "Anhoch": {
@@ -9450,7 +9452,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -9469,7 +9471,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92214_PHILIPS 55PUS8200-01KCNS49GDJ37XM8GSES3T6J9W.jpg",
     "stores": {
       "Setec": {
@@ -9489,7 +9491,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -9509,7 +9511,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/anhoch/tv-philips-55pus8209-55-4k-smart-ultra-hd-ambilight-qled-tv-7169.jpg",
     "stores": {
       "Anhoch": {
@@ -9529,18 +9531,19 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 3,
     "usb": 2,
-    "vrr": false,
+    "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
-      "HLG"
+      "HLG",
+      "HDR10+"
     ],
     "brightness": "—",
     "audioPower": 20,
@@ -9548,7 +9551,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92273_PHILIPS%2055PUS8400-01KJPWTY72H7MTPM0C2G25TB1M.jpg",
     "stores": {
       "Setec": {
@@ -9575,15 +9578,15 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 3,
-    "usb": 0,
+    "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -9595,7 +9598,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92355_PHILIPS%2055PUS8450-01KT19QY77K8EWXHD2QCXF4THA.jpg",
     "stores": {
       "Anhoch": {
@@ -9622,7 +9625,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -9630,7 +9633,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -9639,10 +9642,10 @@
     "brightness": "—",
     "audioPower": 20,
     "audioChannels": "2.0",
-    "dolbyAtmos": false,
+    "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92415-01M0FD8JTRK8PKNB8WQTKRKXQQ.png",
     "stores": {
       "Setec": {
@@ -9662,7 +9665,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -9670,19 +9673,20 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "P5 Perfect Picture Engine",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
-      "HLG"
+      "HLG",
+      "Dolby Vision"
     ],
     "brightness": "—",
     "audioPower": 40,
-    "audioChannels": "2.0",
+    "audioChannels": "4.0",
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1046085_6ab935f31ea7f.jpg?___store=mk",
     "stores": {
       "DDStore": {
@@ -9702,7 +9706,7 @@
     "technology": "Mini LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": true,
@@ -9710,7 +9714,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "P5 Perfect Picture Engine",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -9723,7 +9727,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1036562_15_w.jpg?___store=mk",
     "stores": {
       "DDStore": {
@@ -9743,7 +9747,7 @@
     "technology": "Mini LED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": true,
@@ -9751,7 +9755,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "P5 Perfect Picture Engine",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -9760,11 +9764,11 @@
     ],
     "brightness": "—",
     "audioPower": 40,
-    "audioChannels": "2.0",
+    "audioChannels": "4.0",
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1046086_6ab935bde050e.jpg?___store=mk",
     "stores": {
       "DDStore": {
@@ -9784,7 +9788,7 @@
     "technology": "OLED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2023,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -9792,7 +9796,7 @@
     "usb": 3,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "P5 AI Perfect Picture Engine",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -9805,7 +9809,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": true,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/57342_0-01JVYCKQ74YZ3E1VJXPRFJW2KE.webp",
     "stores": {
       "Setec": {
@@ -9825,7 +9829,7 @@
     "technology": "OLED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": true,
@@ -9846,7 +9850,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": true,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63445_PHILIPS 65OLED770-01K42DN6NGDBN0E6GN6GGHBTYV.webp",
     "stores": {
       "Setec": {
@@ -9866,7 +9870,7 @@
     "technology": "OLED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -9874,7 +9878,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "P5 AI Perfect Picture Engine",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -9887,7 +9891,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": true,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92389_PHILIPS%2065OLED820-01KYH91DD1XAV328W197EFB7SG.jpg",
     "stores": {
       "Setec": {
@@ -9907,7 +9911,7 @@
     "technology": "Mini LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": false,
@@ -9925,7 +9929,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/59417_PHILIPS 65PML8709-01K94XW4E97HV0D23W1BE56P6W.jpg",
     "stores": {
       "Setec": {
@@ -9950,13 +9954,14 @@
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 3,
-    "usb": 0,
-    "vrr": false,
+    "usb": 2,
+    "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
-      "HDR10+"
+      "HDR10+",
+      "HLG"
     ],
     "brightness": "—",
     "audioPower": 20,
@@ -9964,7 +9969,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+philips",
     "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1043807_90_w.png?___store=mk",
     "stores": {
       "DDStore": {
@@ -9984,7 +9989,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -9992,7 +9997,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -10004,7 +10009,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63551_PHILIPS 65PUS7000-01K5GRWGC9XK3Y7XJ6VDF6X9XB.jpg",
     "stores": {
       "Setec": {
@@ -10031,14 +10036,14 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
     "hdmi": 3,
     "usb": 2,
-    "vrr": false,
-    "allm": false,
+    "vrr": true,
+    "allm": true,
     "pictureProcessor": "—",
     "hdrFormats": [
       "HDR10",
@@ -10052,7 +10057,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/58810_0-01JVYCKPFN5E1XR416XHF7VVN6.webp",
     "stores": {
       "Setec": {
@@ -10072,7 +10077,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -10092,7 +10097,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/anhoch/tv-philips-65-65pus7609-4k-ultra-hd-led-smart-7300.jpg",
     "stores": {
       "Anhoch": {
@@ -10112,7 +10117,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -10120,7 +10125,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -10132,7 +10137,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63447_PHILIPS 65PUS7810-01K452D11S2TJQPAH85YYZ8BHJ.webp",
     "stores": {
       "Setec": {
@@ -10164,10 +10169,10 @@
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 3,
-    "usb": 0,
+    "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -10179,7 +10184,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63550_PHILIPS 65PUS8010-01K5GS06AM15TTE516BMRBHE3Z.jpg",
     "stores": {
       "Anhoch": {
@@ -10206,18 +10211,19 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 3,
     "usb": 2,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
+    "vrr": true,
+    "allm": true,
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
-      "HDR10+"
+      "HDR10+",
+      "HLG"
     ],
     "brightness": "—",
     "audioPower": 20,
@@ -10225,7 +10231,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92220_PHILIPS 65PUS8200-01KD2J8ZPJ2A9VVQ4AF7ED1Z0S.jpg",
     "stores": {
       "Setec": {
@@ -10245,7 +10251,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -10253,7 +10259,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -10265,7 +10271,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92394-01KZ8ETQ9ACP9Y07YZSJ02XPTA.png",
     "stores": {
       "Setec": {
@@ -10292,7 +10298,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -10300,7 +10306,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -10312,7 +10318,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/PHILIPS%2065PUS8510_92421-01M1KC40NME6851YG6B1F787AY.png",
     "stores": {
       "Setec": {
@@ -10332,7 +10338,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -10340,7 +10346,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -10349,10 +10355,10 @@
     "brightness": "—",
     "audioPower": 20,
     "audioChannels": "2.0",
-    "dolbyAtmos": false,
+    "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92390_PHILIPS%2065PUS8560-01KYH971J3QW29PP9ZHHXJCZ3W.jpg",
     "stores": {
       "Setec": {
@@ -10372,19 +10378,20 @@
     "technology": "Mini LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": true,
     "hdmi": 3,
     "usb": 2,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
+    "vrr": true,
+    "allm": true,
+    "pictureProcessor": "P5 Perfect Picture Engine",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
-      "Dolby Vision"
+      "Dolby Vision",
+      "HLG"
     ],
     "brightness": "—",
     "audioPower": 20,
@@ -10392,7 +10399,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92196_PHILIPS 75MLED820-01KA1F6P44GNG0X5XJ9EBANN0S.jpg",
     "stores": {
       "Setec": {
@@ -10412,26 +10419,28 @@
     "technology": "Mini LED",
     "resolution": "4K",
     "refreshRate": 144,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 4,
-    "usb": 1,
+    "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "P5 AI Perfect Picture Engine",
     "hdrFormats": [
       "HDR10",
-      "HLG"
+      "HLG",
+      "HDR10+",
+      "Dolby Vision"
     ],
     "brightness": "—",
     "audioPower": 60,
-    "audioChannels": "2.0",
+    "audioChannels": "4.0",
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1036558_73_w.jpg?___store=mk",
     "stores": {
       "DDStore": {
@@ -10451,7 +10460,7 @@
     "technology": "Mini LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": false,
@@ -10469,7 +10478,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/59558_PHILIPS 75PML8709-01K94XX8NSWN5T39084VZ5F01P.jpg",
     "stores": {
       "Setec": {
@@ -10489,7 +10498,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -10497,7 +10506,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -10509,7 +10518,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92194_PHILIPS 75PUS7000-01K94FZ9YAFQN7KQXRE7PD14XJ.jpg",
     "stores": {
       "Setec": {
@@ -10529,7 +10538,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -10549,7 +10558,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/58808_0-01JVYCKP315JGFW3J9D56FTJEX.webp",
     "stores": {
       "Setec": {
@@ -10569,7 +10578,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -10577,7 +10586,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Pixel Precise Ultra HD",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -10589,7 +10598,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92354_PHILIPS%2075PUS7810-01KT19N4029EGDN0HVG1707Q07.jpg",
     "stores": {
       "Setec": {
@@ -10616,7 +10625,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -10624,7 +10633,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "P5 Perfect Picture Engine",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -10636,7 +10645,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92274_PHILIPS%2075PUS8510-01KJPWQFGWVDAEPF9P969QESN7.jpg",
     "stores": {
       "Setec": {
@@ -10663,7 +10672,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -10683,7 +10692,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63140_PHILIPS%2085PUS8510-01KTK3A9BTM8M9C7X95TCZFN9Z.jpg",
     "stores": {
       "Setec": {
@@ -10710,7 +10719,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2025,
     "os": "Titan OS",
     "hdr": true,
     "dolbyVision": false,
@@ -10718,11 +10727,12 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "P5 Perfect Picture Engine",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
-      "HLG"
+      "HLG",
+      "Dolby Vision"
     ],
     "brightness": "—",
     "audioPower": 50,
@@ -10730,7 +10740,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+philips",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92195_PHILIPS 85PUS9010-01KA1C5CPXSEHK2PWF622RD9JZ.jpg",
     "stores": {
       "Setec": {
@@ -10797,7 +10807,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Micro RGB AI Engine",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -10808,7 +10818,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/neptun/samsung-mre-55-r85h-auxxh-55-4k-microrgb-144hz-298157.jpg",
     "stores": {
       "Setec": {
@@ -10843,7 +10853,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Micro RGB AI Engine",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -10854,7 +10864,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/neptun/samsung-mre-65-r85h-auxxh-298156.jpg",
     "stores": {
       "Setec": {
@@ -10889,7 +10899,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Micro RGB AI Engine Pro",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -10900,7 +10910,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/neptun/samsung-mre-65-r95h-atxxh-65-4k-microrgb-165hz-298026.jpg",
     "stores": {
       "Setec": {
@@ -10935,7 +10945,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Micro RGB AI Engine",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -10946,7 +10956,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92305_SAMSUNG%20MRE75R85HAUXXH-01KQSNTT59EP6ZJW2FH354R1RD.jpg",
     "stores": {
       "Setec": {
@@ -10974,7 +10984,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Micro RGB AI Engine Pro",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -10985,7 +10995,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92302_SAMSUNG%20MRE75R95HATXXH-01KQSNQF4BHW6G91WCVAE237NT.jpg",
     "stores": {
       "Setec": {
@@ -11013,7 +11023,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Micro RGB AI Engine",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -11024,7 +11034,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92304_SAMSUNG%20MRE85R85HAUXXH-01KQSNSPEWZKCK5X37EVMZPS2S.jpg",
     "stores": {
       "Setec": {
@@ -11052,7 +11062,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Micro RGB AI Engine Pro",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -11063,7 +11073,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92301_SAMSUNG%20MRE85R95HATXXH-01KQSNP67CG886MYPSVYJ97J0J.jpg",
     "stores": {
       "Setec": {
@@ -11169,7 +11179,7 @@
     "usb": 2,
     "vrr": false,
     "allm": false,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Hyper Real",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -11180,7 +11190,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/55774_0-01JVA73V2F4WDDAA8RB6F2V2CZ.webp",
     "stores": {
       "Setec": {
@@ -11207,8 +11217,8 @@
     "hdmi": 3,
     "usb": 2,
     "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
+    "allm": true,
+    "pictureProcessor": "NQ4 AI Gen2 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -11219,7 +11229,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92381_SAMSUNG%20QE43LS03HEUXXH-01KWENK0G1FRT9146JPP3RJQWP.jpg",
     "stores": {
       "Setec": {
@@ -11239,7 +11249,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Tizen",
     "hdr": true,
     "dolbyVision": false,
@@ -11247,7 +11257,7 @@
     "usb": 1,
     "vrr": false,
     "allm": true,
-    "pictureProcessor": "Q4 AI",
+    "pictureProcessor": "Q4 AI Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -11258,7 +11268,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+samsung",
     "image": "/images/tvs/neptun/samsung-qe-43-q7f-aauxxh-43-4k-qled-286982.jpg",
     "stores": {
       "Setec": {
@@ -11290,10 +11300,10 @@
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 4,
-    "usb": 0,
+    "usb": 2,
     "vrr": false,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Quantum Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -11305,7 +11315,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/57255_0-01JWR75C8NQSF170SJGA3A8NPT.webp",
     "stores": {
       "Setec": {
@@ -11330,10 +11340,10 @@
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 4,
-    "usb": 3,
+    "usb": 2,
     "vrr": false,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "NQ4 AI Gen2 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -11344,7 +11354,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92258_SAMSUNG QE50LS03FAUXXH-01KG1WM9MHEJ7E5WT2TDRC189V.jpg",
     "stores": {
       "Setec": {
@@ -11364,15 +11374,15 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Tizen",
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 3,
     "usb": 1,
     "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
+    "allm": true,
+    "pictureProcessor": "Q4 AI Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -11383,7 +11393,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92255_SAMSUNG QE50Q7F2AUXXH-01KFN65B4YHR7ETF1JBEAMG0EX.jpg",
     "stores": {
       "Setec": {
@@ -11411,7 +11421,7 @@
     "usb": 1,
     "vrr": false,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Q4 AI Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -11422,7 +11432,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63066_0-01JXCSYHNX0Y6100BWQZM8AEA4.jpg",
     "stores": {
       "Setec": {
@@ -11450,7 +11460,7 @@
     "usb": 2,
     "vrr": false,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Q4 AI Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -11461,7 +11471,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63352_SAMSUNG QE50Q8FAAUXÐ¥H-01K17YVS1EC2R648EW9GF88DEX.jpg",
     "stores": {
       "Setec": {
@@ -11486,10 +11496,10 @@
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 4,
-    "usb": 3,
+    "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "NQ4 AI Gen2",
+    "pictureProcessor": "NQ4 AI Gen2 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -11500,7 +11510,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/neptun/samsung-frame-qe-55-ls03f-auxxh-55-4k-qled-144hz-291908.jpg",
     "stores": {
       "Setec": {
@@ -11532,10 +11542,10 @@
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 5,
-    "usb": 3,
+    "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "NQ4 AI Gen3",
+    "pictureProcessor": "NQ4 AI Gen3 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -11544,9 +11554,9 @@
     "audioPower": 40,
     "audioChannels": "2.0.2",
     "dolbyAtmos": true,
-    "freeSync": false,
+    "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92316_SAMSUNG%20QE55LS03HWUXXH-01KR3CZV162C6872JGTE6D9G38.jpg",
     "stores": {
       "Setec": {
@@ -11574,7 +11584,7 @@
     "usb": 2,
     "vrr": false,
     "allm": false,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Quantum Processor Lite 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -11586,7 +11596,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/anhoch/tv-samsung-qe55q60aauxxh-55-qled-4k-smart-hdmix3usbx2optwifidvbcs2dts-9549.jpg",
     "stores": {
       "Anhoch": {
@@ -11614,7 +11624,7 @@
     "usb": 1,
     "vrr": false,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Q4 AI Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -11625,7 +11635,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92217_SAMSUNG QE55Q7F2AUXÐ¥H-01KCV4FQ83VXH65Y8CNZ7FTN00.jpg",
     "stores": {
       "Anhoch": {
@@ -11660,7 +11670,7 @@
     "usb": 1,
     "vrr": false,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Q4 AI Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -11671,7 +11681,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/neptun/samsung-qe-55-q7f-aauxxh-55-4k-qled-286938.jpg",
     "stores": {
       "Setec": {
@@ -11706,7 +11716,7 @@
     "usb": 2,
     "vrr": false,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Q4 AI Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -11717,7 +11727,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63087_SAMSUNG QE55Q8FAAUXÐ¥H-01K3JWKXZMP951BJH59EFBV08A.jpg",
     "stores": {
       "Setec": {
@@ -11744,7 +11754,7 @@
     "technology": "Neo QLED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2025,
     "os": "Tizen",
     "hdr": true,
     "dolbyVision": false,
@@ -11752,7 +11762,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "NQ4 AI Gen2 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -11763,7 +11773,7 @@
     "dolbyAtmos": false,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/62859_0-01JWDZEA83EAYEV8PQ3HNVDA21.webp",
     "stores": {
       "Setec": {
@@ -11790,7 +11800,7 @@
     "hdmi": 3,
     "usb": 2,
     "vrr": false,
-    "allm": false,
+    "allm": true,
     "pictureProcessor": "NQ4 AI Gen2",
     "hdrFormats": [
       "HDR10",
@@ -11802,7 +11812,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/neptun/samsung-qe-55-qn70h-auxxh-55-4k-neo-qled-297963.jpg",
     "stores": {
       "Setec": {
@@ -11837,7 +11847,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "NQ4 AI Gen2 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -11845,10 +11855,10 @@
     "brightness": "—",
     "audioPower": 30,
     "audioChannels": "4.0",
-    "dolbyAtmos": false,
+    "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/62861_SAMSUNG QE55QN80FAUXXH-01K2PQPEX071B8TXS190TVW1T0.jpg",
     "stores": {
       "Setec": {
@@ -11875,8 +11885,8 @@
     "hdmi": 4,
     "usb": 2,
     "vrr": true,
-    "allm": false,
-    "pictureProcessor": "NQ4 AI Gen2",
+    "allm": true,
+    "pictureProcessor": "NQ4 AI Gen2 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -11887,7 +11897,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/neptun/samsung-qe-55-qn80h-auxxh-298159.jpg",
     "stores": {
       "Neptun": {
@@ -11915,7 +11925,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "NQ4 AI Gen2",
+    "pictureProcessor": "NQ4 AI Gen2 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -11926,7 +11936,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/neptun/samsung-qe-55-qn85f-auxxh-55-4k-mini-led-100hz-291085.jpg",
     "stores": {
       "Neptun": {
@@ -11946,7 +11956,7 @@
     "technology": "Neo QLED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2025,
     "os": "Tizen",
     "hdr": true,
     "dolbyVision": false,
@@ -11954,7 +11964,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "NQ4 AI Gen3 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -11965,7 +11975,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+samsung",
     "image": "/images/tvs/neptun/samsung-qe-55-qn90f-atxxh-55-4k-mini-led-120hz-287912.jpg",
     "stores": {
       "Neptun": {
@@ -11993,7 +12003,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "NQ4 AI Gen2 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -12001,10 +12011,10 @@
     "brightness": "—",
     "audioPower": 20,
     "audioChannels": "2.0",
-    "dolbyAtmos": false,
+    "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/62863_0-01JWDZEEVEF6QW125DKRZZFFY8.webp",
     "stores": {
       "Setec": {
@@ -12071,7 +12081,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "NQ4 AI Gen3",
+    "pictureProcessor": "NQ4 AI Gen3 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -12079,11 +12089,11 @@
     ],
     "brightness": "—",
     "audioPower": 60,
-    "audioChannels": "2.1.2",
+    "audioChannels": "2.1",
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63091_SAMSUNG QE55S90FAEXXH-01JXWGH1E1YPTG8C3TGFZBEX5W.jpg",
     "stores": {
       "Setec": {
@@ -12109,11 +12119,12 @@
     "dolbyVision": false,
     "hdmi": 4,
     "usb": 2,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "NQ4 AI Gen3",
+    "vrr": true,
+    "allm": true,
+    "pictureProcessor": "NQ4 AI Gen3 Processor",
     "hdrFormats": [
-      "HDR10"
+      "HDR10",
+      "HDR10+"
     ],
     "brightness": "—",
     "audioPower": 40,
@@ -12121,7 +12132,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": true,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/neptun/samsung-qe-55-s90h-aexxh-55-4k-oled-165hz-297962.jpg",
     "stores": {
       "Setec": {
@@ -12148,15 +12159,15 @@
     "technology": "OLED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2025,
     "os": "Tizen",
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 4,
-    "usb": 4,
+    "usb": 3,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "NQ4 AI Gen3 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -12167,7 +12178,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+samsung",
     "image": "/images/tvs/neptun/samsung-qe-55-s95f-atxxh-55-4k-oled-100hz-288874.jpg",
     "stores": {
       "Setec": {
@@ -12238,10 +12249,10 @@
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 4,
-    "usb": 3,
+    "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "NQ4 AI Gen2",
+    "pictureProcessor": "NQ4 AI Gen2 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -12252,7 +12263,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/neptun/samsung-frame-qe-65-ls03f-auxxh-4k-qled-144hz-286877.jpg",
     "stores": {
       "Setec": {
@@ -12284,10 +12295,10 @@
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 5,
-    "usb": 4,
+    "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "NQ4 AI Gen3 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -12298,7 +12309,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92198_SAMSUNG QE65LS03FWUXXH-01KABH0GP2JBC9GT702XZ2RPQY.jpg",
     "stores": {
       "Setec": {
@@ -12324,9 +12335,9 @@
     "dolbyVision": false,
     "hdmi": 4,
     "usb": 2,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "NQ4 AI Gen2",
+    "vrr": true,
+    "allm": true,
+    "pictureProcessor": "NQ4 AI Gen2 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -12335,9 +12346,9 @@
     "audioPower": 40,
     "audioChannels": "2.0.2",
     "dolbyAtmos": true,
-    "freeSync": false,
+    "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92315_SAMSUNG%20QE65LS03HAUXXH-01KR3CT8RR3R3EGQVJK4D1BZF6.jpg",
     "stores": {
       "Setec": {
@@ -12362,10 +12373,10 @@
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 5,
-    "usb": 3,
+    "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "NQ4 AI Gen3",
+    "pictureProcessor": "NQ4 AI Gen3 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -12374,9 +12385,9 @@
     "audioPower": 40,
     "audioChannels": "2.0.2",
     "dolbyAtmos": true,
-    "freeSync": false,
+    "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92314_SAMSUNG%20QE65LS03HWUXXH-01KR3CQ0J6HS0VHF27001Z7F3T.jpg",
     "stores": {
       "Setec": {
@@ -12404,7 +12415,7 @@
     "usb": 1,
     "vrr": false,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Q4 AI Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -12415,7 +12426,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92268_SAMSUNG%20QE65Q7F2AUX%C3%90%C2%A5H-01KJF9H4Z4YVQRVNFX4RXW6QM3.jpg",
     "stores": {
       "Setec": {
@@ -12443,7 +12454,7 @@
     "usb": 1,
     "vrr": false,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Q4 AI Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -12454,7 +12465,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63085_SAMSUNG QE65Q7FAAUXÐ¥H-01KCGJYGHCSVKVS99FCX028JA2.jpg",
     "stores": {
       "Setec": {
@@ -12489,7 +12500,7 @@
     "usb": 2,
     "vrr": false,
     "allm": false,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Quantum Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -12497,11 +12508,11 @@
     ],
     "brightness": "—",
     "audioPower": 60,
-    "audioChannels": "2.0",
+    "audioChannels": "2.2.2",
     "dolbyAtmos": false,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/anhoch/tv-samsung-65qe65q80aatxxh-qled-4k-smart-hdmix3usbx2optwifidvbcs2dts-0542.jpg",
     "stores": {
       "Anhoch": {
@@ -12529,7 +12540,7 @@
     "usb": 2,
     "vrr": false,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Q4 AI Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -12540,7 +12551,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63088_SAMSUNG QE65Q8FAAUXÐ¥H-01K3JWSN5GSAP3ARDMX0MDZ604.jpg",
     "stores": {
       "Setec": {
@@ -12568,7 +12579,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "NQ4 AI Gen2 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -12579,7 +12590,7 @@
     "dolbyAtmos": false,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/62860_0-01JXCT6JP0D4JPRTV6BTYZH9HN.jpg",
     "stores": {
       "Setec": {
@@ -12606,7 +12617,7 @@
     "hdmi": 3,
     "usb": 2,
     "vrr": false,
-    "allm": false,
+    "allm": true,
     "pictureProcessor": "NQ4 AI Gen2",
     "hdrFormats": [
       "HDR10",
@@ -12618,7 +12629,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/neptun/samsung-qe-65-qn70h-auxxh-65-4k-neo-qled-297804.jpg",
     "stores": {
       "Setec": {
@@ -12650,10 +12661,10 @@
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 4,
-    "usb": 4,
+    "usb": 3,
     "vrr": false,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Neural Quantum Processor 8K",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -12665,7 +12676,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/55467_0-01JVA73HE4DFVB5N8QNQVC3RRB.webp",
     "stores": {
       "Setec": {
@@ -12693,7 +12704,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "NQ4 AI Gen2 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -12701,10 +12712,10 @@
     "brightness": "—",
     "audioPower": 30,
     "audioChannels": "4.0",
-    "dolbyAtmos": false,
+    "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/62862_0-01JWDZEEJ94Z9EYMCY47SKMS8G.webp",
     "stores": {
       "Setec": {
@@ -12731,8 +12742,8 @@
     "hdmi": 4,
     "usb": 2,
     "vrr": true,
-    "allm": false,
-    "pictureProcessor": "NQ4 AI Gen2",
+    "allm": true,
+    "pictureProcessor": "NQ4 AI Gen2 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -12743,7 +12754,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/neptun/samsung-qe-65-qn80h-auxxh-65-4k-neo-qled-144hz-297805.jpg",
     "stores": {
       "Setec": {
@@ -12770,26 +12781,26 @@
     "technology": "Neo QLED",
     "resolution": "8K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2021,
     "os": "Tizen",
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 4,
     "usb": 3,
     "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
+    "allm": true,
+    "pictureProcessor": "Processor Neo Quantum 8K",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
     ],
     "brightness": "—",
     "audioPower": 80,
-    "audioChannels": "2.0",
+    "audioChannels": "6.2.2",
     "dolbyAtmos": false,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+samsung",
     "image": "/images/tvs/neptun/8k-qled-neo-smart-tv-samsung-qe65qn900-atxxh-65-165-1cm-4900hz-hdr-3000-wifi-251767.jpg",
     "stores": {
       "Neptun": {
@@ -12817,7 +12828,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "NQ4 AI Gen2",
+    "pictureProcessor": "NQ4 AI Gen2 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -12828,7 +12839,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63158_SAMSUNG QE65S85FAUXXH-01JZ02YM4GBC6PG7PPHST8H0FY.jpg",
     "stores": {
       "Setec": {
@@ -12932,11 +12943,12 @@
     "dolbyVision": false,
     "hdmi": 4,
     "usb": 2,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "NQ4 AI Gen3",
+    "vrr": true,
+    "allm": true,
+    "pictureProcessor": "NQ4 AI Gen3 Processor",
     "hdrFormats": [
-      "HDR10"
+      "HDR10",
+      "HDR10+"
     ],
     "brightness": "—",
     "audioPower": 40,
@@ -12944,7 +12956,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": true,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/neptun/samsung-qe-65-s90h-aexxh-65-4k-oled-165hz-298024.jpg",
     "stores": {
       "Setec": {
@@ -12976,7 +12988,7 @@
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 4,
-    "usb": 5,
+    "usb": 3,
     "vrr": true,
     "allm": true,
     "pictureProcessor": "NQ4 AI Gen3 Processor",
@@ -12990,7 +13002,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/neptun/samsung-qe-65-s95f-atxxh-65-4k-oled-100hz-288625.jpg",
     "stores": {
       "Setec": {
@@ -13022,10 +13034,10 @@
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 4,
-    "usb": 4,
+    "usb": 3,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "NQ4 AI Gen3",
+    "pictureProcessor": "NQ4 AI Gen3 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -13036,7 +13048,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": true,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92322_SAMSUNG%20QE65S95HFTXXH-01KRG99TZY7BF3V0HHYZWEXV3V.jpg",
     "stores": {
       "Setec": {
@@ -13064,7 +13076,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "NQ4 AI Gen3",
+    "pictureProcessor": "NQ4 AI Gen3 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -13075,7 +13087,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": true,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92299_SAMSUNG%20QE65S99HATXXH-01KQSNK01KW6EMKJPY5WDEMT88.jpg",
     "stores": {
       "Setec": {
@@ -13095,7 +13107,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Tizen",
     "hdr": true,
     "dolbyVision": false,
@@ -13103,7 +13115,7 @@
     "usb": 1,
     "vrr": false,
     "allm": true,
-    "pictureProcessor": "Q4 AI",
+    "pictureProcessor": "Q4 AI Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -13114,7 +13126,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+samsung",
     "image": "/images/tvs/neptun/samsung-qe-75-q7f-aauxxh-75-4k-qled-286811.jpg",
     "stores": {
       "Setec": {
@@ -13149,7 +13161,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "NQ4 AI Gen2 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -13160,7 +13172,7 @@
     "dolbyAtmos": false,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63452_SAMSUNG QE75QN70FAUXXH-01K773E5YH0SQYWPNG5Y0HP7K4.jpg",
     "stores": {
       "Setec": {
@@ -13187,7 +13199,7 @@
     "hdmi": 3,
     "usb": 2,
     "vrr": false,
-    "allm": false,
+    "allm": true,
     "pictureProcessor": "NQ4 AI Gen2",
     "hdrFormats": [
       "HDR10",
@@ -13199,7 +13211,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/neptun/samsung-qe-75-qn70h-auxxh-75-4k-neo-qled-297806.jpg",
     "stores": {
       "Setec": {
@@ -13233,8 +13245,8 @@
     "hdmi": 4,
     "usb": 3,
     "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
+    "allm": true,
+    "pictureProcessor": "Neural Quantum Processor 8K",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -13242,11 +13254,11 @@
     ],
     "brightness": "—",
     "audioPower": 70,
-    "audioChannels": "2.0",
+    "audioChannels": "4.2.2",
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/55466_0-01JVA73H125XMJYYFAY3EMWQXT.webp",
     "stores": {
       "Setec": {
@@ -13273,8 +13285,8 @@
     "hdmi": 4,
     "usb": 2,
     "vrr": true,
-    "allm": false,
-    "pictureProcessor": "NQ4 AI Gen2",
+    "allm": true,
+    "pictureProcessor": "NQ4 AI Gen2 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -13285,7 +13297,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92376_SAMSUNG%20QE75QN80HAUXXH-01KVFN2MV2XMH18SY3F8W9C7DT.jpg",
     "stores": {
       "Setec": {
@@ -13313,7 +13325,7 @@
     "usb": 3,
     "vrr": false,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Neural Quantum Processor 8K",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -13325,7 +13337,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/55463_0-01JWR74H6WTPQ0RQSJ55CZXBJS.webp",
     "stores": {
       "Setec": {
@@ -13353,7 +13365,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "NQ4 AI Gen2",
+    "pictureProcessor": "NQ4 AI Gen2 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -13364,7 +13376,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63089_SAMSUNG QE77S85FAEXXH-01JXWG9S2107K343AP5QHJDKAX.jpg",
     "stores": {
       "Setec": {
@@ -13390,11 +13402,12 @@
     "dolbyVision": false,
     "hdmi": 4,
     "usb": 2,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "NQ4 AI Gen3",
+    "vrr": true,
+    "allm": true,
+    "pictureProcessor": "NQ4 AI Gen3 Processor",
     "hdrFormats": [
-      "HDR10"
+      "HDR10",
+      "HDR10+"
     ],
     "brightness": "—",
     "audioPower": 40,
@@ -13402,7 +13415,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": true,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/neptun/samsung-qe-77-s90h-atxxh-298167.jpg",
     "stores": {
       "Setec": {
@@ -13437,7 +13450,7 @@
     "usb": 3,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "NQ4 AI Gen3",
+    "pictureProcessor": "NQ4 AI Gen3 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -13448,7 +13461,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": true,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92296_SAMSUNG%20QE65S95HFTXXH-01KQSNE3FS65QX3ZBHFHDG7G8T.jpg",
     "stores": {
       "Setec": {
@@ -13476,7 +13489,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "NQ4 AI Gen3",
+    "pictureProcessor": "NQ4 AI Gen3 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -13487,7 +13500,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": true,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92298_SAMSUNG%20QE77S99HATXXH-01KQSNHQPJ7P2AT6RZFQSNF7RY.jpg",
     "stores": {
       "Setec": {
@@ -13514,8 +13527,8 @@
     "hdmi": 3,
     "usb": 2,
     "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
+    "allm": true,
+    "pictureProcessor": "Quantum Processor Lite 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -13526,7 +13539,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/58211_0-01JVYCJTMMAM2CTW07YE57V8FM.webp",
     "stores": {
       "Setec": {
@@ -13546,7 +13559,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Tizen",
     "hdr": true,
     "dolbyVision": false,
@@ -13554,7 +13567,7 @@
     "usb": 1,
     "vrr": false,
     "allm": true,
-    "pictureProcessor": "Q4 AI",
+    "pictureProcessor": "Q4 AI Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -13565,7 +13578,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63710_SAMSUNG QE85Q7FAAUXXH-01K8WSD8EDD07H0W4X9PS4J5QW.jpg",
     "stores": {
       "Setec": {
@@ -13593,7 +13606,7 @@
     "usb": 3,
     "vrr": false,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Neural Quantum Processor 8K",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -13605,7 +13618,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/55465_0-01JVYCH4NCZ3HPYC9PV524TN8J.webp",
     "stores": {
       "Setec": {
@@ -13625,7 +13638,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Tizen",
     "hdr": true,
     "dolbyVision": false,
@@ -13633,7 +13646,7 @@
     "usb": 1,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -13645,7 +13658,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+samsung",
     "image": "/images/tvs/neptun/samsung-ue-75-u8072f-uxxh-75-4k-smart-287237.jpg",
     "stores": {
       "Neptun": {
@@ -13672,8 +13685,8 @@
     "hdmi": 3,
     "usb": 1,
     "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
+    "allm": true,
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -13685,7 +13698,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/anhoch/tv-samsung-ue43cu7092uxxh-crystal-4k-smart-led-5833.jpg",
     "stores": {
       "Anhoch": {
@@ -13712,8 +13725,8 @@
     "hdmi": 3,
     "usb": 1,
     "vrr": true,
-    "allm": false,
-    "pictureProcessor": "—",
+    "allm": true,
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -13724,7 +13737,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/anhoch/tv-samsung-ue43du7172uxxh-crystal-4k-smart-led-tv-5834.jpg",
     "stores": {
       "Anhoch": {
@@ -13751,8 +13764,8 @@
     "hdmi": 3,
     "usb": 1,
     "vrr": true,
-    "allm": false,
-    "pictureProcessor": "—",
+    "allm": true,
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -13763,7 +13776,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/anhoch/tv-samsung-ue50du7172uxxh-crystal-4k-smart-led-5835.jpg",
     "stores": {
       "Anhoch": {
@@ -13791,9 +13804,10 @@
     "usb": 1,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
-      "HDR10"
+      "HDR10",
+      "HDR10+"
     ],
     "brightness": "—",
     "audioPower": 20,
@@ -13801,7 +13815,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/anhoch/tv-samsung-50-ue50u8072fuxxh-crystal-4k-smart-led-tv-8225.jpg",
     "stores": {
       "Anhoch": {
@@ -13828,8 +13842,8 @@
     "hdmi": 3,
     "usb": 1,
     "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
+    "allm": true,
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -13841,7 +13855,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/anhoch/tv-samsung-ue55cu7092uxxh-crystal-4k-smart-led-7168.jpg",
     "stores": {
       "Anhoch": {
@@ -13868,8 +13882,8 @@
     "hdmi": 3,
     "usb": 2,
     "vrr": true,
-    "allm": false,
-    "pictureProcessor": "—",
+    "allm": true,
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -13880,7 +13894,7 @@
     "dolbyAtmos": false,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/anhoch/tv-samsung-ue65du8072uxxh-crystal-4k-smart-led-5772.jpg",
     "stores": {
       "Anhoch": {
@@ -13907,8 +13921,8 @@
     "hdmi": 3,
     "usb": 1,
     "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
+    "allm": true,
+    "pictureProcessor": "Кристален Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -13920,7 +13934,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/anhoch/tv-samsung-43-ue43au7172-crystal-4k-led-smart-hdmi-x3usbx1dvb-s2t2-9109.jpg",
     "stores": {
       "Anhoch": {
@@ -13947,8 +13961,8 @@
     "hdmi": 3,
     "usb": 1,
     "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
+    "allm": true,
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -13960,7 +13974,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/anhoch/tv-samsung-samsung-ue43cu7172-43-crystal-4k-smart-led-tv-1784.jpg",
     "stores": {
       "Anhoch": {
@@ -13987,8 +14001,8 @@
     "hdmi": 3,
     "usb": 2,
     "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
+    "allm": true,
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -13999,7 +14013,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/anhoch/tv-samsung-ue43cu8072-crystal-4k-smart-led-1693.jpg",
     "stores": {
       "Anhoch": {
@@ -14058,7 +14072,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Tizen",
     "hdr": true,
     "dolbyVision": false,
@@ -14066,7 +14080,7 @@
     "usb": 1,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -14078,7 +14092,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+samsung",
     "image": "/images/tvs/anhoch/tv-samsung-43-ue43u8072fuxxh-crystal-4k-smart-led-tv-8224.jpg",
     "stores": {
       "Anhoch": {
@@ -14112,8 +14126,8 @@
     "hdmi": 3,
     "usb": 1,
     "vrr": true,
-    "allm": false,
-    "pictureProcessor": "—",
+    "allm": true,
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -14124,7 +14138,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/neptun/samsung-ue-43-u8072h-uxxh-298370.jpg",
     "stores": {
       "Neptun": {
@@ -14152,9 +14166,10 @@
     "usb": 1,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
-      "HDR10"
+      "HDR10",
+      "HDR10+"
     ],
     "brightness": "—",
     "audioPower": 20,
@@ -14162,7 +14177,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63364_SAMSUNG UE43U8092FUXXH-01K1J969ZTBV3D9ZHF7Z829EXE.jpg",
     "stores": {
       "Setec": {
@@ -14183,14 +14198,14 @@
     "resolution": "4K",
     "refreshRate": 60,
     "year": 2026,
-    "os": "Smart TV",
+    "os": "Tizen",
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 3,
     "usb": 2,
     "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
+    "allm": true,
+    "pictureProcessor": "Кристален Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -14201,7 +14216,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "anhoch",
+    "specsSource": "anhoch+samsung",
     "image": "/images/tvs/anhoch/tv-samsung-50-ue50au8072ux-crystal-4k-led-smart-hdmi-x3usbx2dvb-s2t2-9203.jpg",
     "stores": {
       "Anhoch": {
@@ -14228,8 +14243,8 @@
     "hdmi": 3,
     "usb": 1,
     "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
+    "allm": true,
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -14241,7 +14256,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/anhoch/tv-samsung-ue50cu7092-50-crystal-4k-smart-led-tv-2426.jpg",
     "stores": {
       "Anhoch": {
@@ -14268,8 +14283,8 @@
     "hdmi": 3,
     "usb": 1,
     "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
+    "allm": true,
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -14281,7 +14296,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/anhoch/tv-samsung-50-ue50cu7172-crystal-4k-smart-led-hdmix3dvbt2dvbcdvbs2-2362.jpg",
     "stores": {
       "Anhoch": {
@@ -14309,7 +14324,7 @@
     "usb": 2,
     "vrr": false,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -14321,7 +14336,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/anhoch/tv-samsung-ue50cu8072-crystal-4k-smart-led-1598.jpg",
     "stores": {
       "Anhoch": {
@@ -14348,8 +14363,8 @@
     "hdmi": 3,
     "usb": 2,
     "vrr": true,
-    "allm": false,
-    "pictureProcessor": "—",
+    "allm": true,
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -14360,7 +14375,7 @@
     "dolbyAtmos": false,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/anhoch/tv-samsung-ue50du8072uxxh-crystal-4k-smart-led-tv-6920.jpg",
     "stores": {
       "Anhoch": {
@@ -14426,8 +14441,8 @@
     "hdmi": 3,
     "usb": 1,
     "vrr": true,
-    "allm": false,
-    "pictureProcessor": "—",
+    "allm": true,
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -14438,7 +14453,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/neptun/samsung-ue-50-u8072h-uxxh-298182.jpg",
     "stores": {
       "Neptun": {
@@ -14466,9 +14481,10 @@
     "usb": 1,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
-      "HDR10"
+      "HDR10",
+      "HDR10+"
     ],
     "brightness": "—",
     "audioPower": 20,
@@ -14476,7 +14492,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63349_SAMSUNG UE50U8092FUXXH-01K10SXKEE7HCW3T4TEWNGEYMW.jpg",
     "stores": {
       "Setec": {
@@ -14504,7 +14520,7 @@
     "usb": 2,
     "vrr": false,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -14516,7 +14532,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/anhoch/tv-samsung-ue55cu8072-crystal-4k-smart-led-1599.jpg",
     "stores": {
       "Anhoch": {
@@ -14543,8 +14559,8 @@
     "hdmi": 3,
     "usb": 2,
     "vrr": true,
-    "allm": false,
-    "pictureProcessor": "—",
+    "allm": true,
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -14555,7 +14571,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/anhoch/tv-samsung-55-ue55du8072uxxh-crystal-4k-smart-led-7299.jpg",
     "stores": {
       "Anhoch": {
@@ -14629,7 +14645,7 @@
     "usb": 1,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "NQ4 AI Gen2",
+    "pictureProcessor": "NQ4 AI Gen2 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -14640,7 +14656,7 @@
     "dolbyAtmos": false,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/neptun/samsung-ue-55-m80h-auxxh-55-4k-miniled-144hz-297728.jpg",
     "stores": {
       "Setec": {
@@ -14672,12 +14688,13 @@
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 3,
-    "usb": 0,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
+    "usb": 1,
+    "vrr": true,
+    "allm": true,
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
-      "HDR10"
+      "HDR10",
+      "HDR10+"
     ],
     "brightness": "—",
     "audioPower": 20,
@@ -14685,7 +14702,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/neptun/samsung-ue-55-u8072h-uxxh-298181.jpg",
     "stores": {
       "Neptun": {
@@ -14713,9 +14730,10 @@
     "usb": 1,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
-      "HDR10"
+      "HDR10",
+      "HDR10+"
     ],
     "brightness": "—",
     "audioPower": 20,
@@ -14723,7 +14741,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63062_SAMSUNG UE55U8092FUXXH-01KCGKEDA9MSF22E2H33504D00.jpg",
     "stores": {
       "Setec": {
@@ -14751,7 +14769,7 @@
     "usb": 1,
     "vrr": false,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Crystal Processor4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -14762,7 +14780,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/61553_0-01JVYD8Y04P3B0BHKAEGNN9NHF.webp",
     "stores": {
       "Setec": {
@@ -14836,7 +14854,7 @@
     "usb": 1,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "NQ4 AI Gen2",
+    "pictureProcessor": "NQ4 AI Gen2 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -14847,7 +14865,7 @@
     "dolbyAtmos": false,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/neptun/samsung-ue-65-m80h-auxxh-65-4k-miniled-144hz-297727.jpg",
     "stores": {
       "Setec": {
@@ -14881,8 +14899,8 @@
     "hdmi": 3,
     "usb": 1,
     "vrr": true,
-    "allm": false,
-    "pictureProcessor": "—",
+    "allm": true,
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -14893,7 +14911,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/neptun/samsung-ue-65-u8072h-uxxh-298180.jpg",
     "stores": {
       "Neptun": {
@@ -14921,9 +14939,10 @@
     "usb": 1,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
-      "HDR10"
+      "HDR10",
+      "HDR10+"
     ],
     "brightness": "—",
     "audioPower": 20,
@@ -14931,7 +14950,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63063_0-01JXCYZ4FPG3FZ7G6MKGHXRJ2C.jpg",
     "stores": {
       "Setec": {
@@ -14958,8 +14977,8 @@
     "hdmi": 3,
     "usb": 1,
     "vrr": true,
-    "allm": false,
-    "pictureProcessor": "—",
+    "allm": true,
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -14970,7 +14989,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/59573_0-01JVYCMZ69V15EJ7D4H3VPV87J.webp",
     "stores": {
       "Setec": {
@@ -15044,7 +15063,7 @@
     "usb": 1,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "NQ4 AI Gen2",
+    "pictureProcessor": "NQ4 AI Gen2 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -15055,7 +15074,7 @@
     "dolbyAtmos": false,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/neptun/samsung-ue-75-m80h-auxxh-298175.jpg",
     "stores": {
       "Setec": {
@@ -15089,8 +15108,8 @@
     "hdmi": 3,
     "usb": 1,
     "vrr": true,
-    "allm": false,
-    "pictureProcessor": "—",
+    "allm": true,
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -15101,7 +15120,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/neptun/samsung-ue-75-u8072h-uxxh-298179.jpg",
     "stores": {
       "Neptun": {
@@ -15129,7 +15148,7 @@
     "usb": 1,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -15140,7 +15159,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63064_SAMSUNG UE75U8092FUXÐ¥H-01K3JWCQTWRW4WMJGY15Q70NSX.jpg",
     "stores": {
       "Setec": {
@@ -15214,7 +15233,7 @@
     "usb": 1,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "NQ4 AI Gen2",
+    "pictureProcessor": "NQ4 AI Gen2 Processor",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -15225,7 +15244,7 @@
     "dolbyAtmos": false,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "/images/tvs/neptun/samsung-ue-85-m80h-auxxh-85-4k-mini-led-144hz-297921.jpg",
     "stores": {
       "Setec": {
@@ -15252,7 +15271,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Tizen",
     "hdr": true,
     "dolbyVision": false,
@@ -15260,7 +15279,7 @@
     "usb": 1,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+",
@@ -15272,7 +15291,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63084_SAMSUNG UE85U8072FUXÐ¥H-01JXWD49Z9H7F5WQGGCPDJWJW7.jpg",
     "stores": {
       "Setec": {
@@ -15307,7 +15326,7 @@
     "usb": 1,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -15318,7 +15337,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "neptun",
+    "specsSource": "neptun+samsung",
     "image": "/images/tvs/neptun/samsung-ue-85-u8072h-uxxh-85-4k-smart-297803.jpg",
     "stores": {
       "Neptun": {
@@ -15346,9 +15365,10 @@
     "usb": 1,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
-      "HDR10"
+      "HDR10",
+      "HDR10+"
     ],
     "brightness": "—",
     "audioPower": 20,
@@ -15356,7 +15376,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63207_SAMSUNG UE85U8092FUXÐ¥H-01JZ877K1EXM5JGD10ZJMCD3Y8.jpg",
     "stores": {
       "Setec": {
@@ -15376,15 +15396,15 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2024,
     "os": "Tizen",
     "hdr": true,
     "dolbyVision": false,
     "hdmi": 3,
     "usb": 2,
     "vrr": true,
-    "allm": false,
-    "pictureProcessor": "—",
+    "allm": true,
+    "pictureProcessor": "Crystal Processor 4K",
     "hdrFormats": [
       "HDR10",
       "HDR10+"
@@ -15395,7 +15415,7 @@
     "dolbyAtmos": false,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/59028_SAMSUNG UE98DU9072UXXH-01K773PNYBEFRMRMY1BXGAMMG2.jpg",
     "stores": {
       "Setec": {
@@ -15537,7 +15557,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -15556,7 +15576,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "anhoch+setec",
+    "specsSource": "anhoch+setec+eprel",
     "image": "/images/tvs/anhoch/tv-sony-55-k55s35b-4k-smart-led-tv-7313.jpg",
     "stores": {
       "Anhoch": {
@@ -15583,7 +15603,7 @@
     "technology": "Mini LED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -15602,7 +15622,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79322_SONY K55XR55B.CEI-01JZ01SX27W81V1J1DEQRSJVJP.jpg",
     "stores": {
       "Setec": {
@@ -15622,7 +15642,7 @@
     "technology": "OLED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2024,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -15641,7 +15661,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79502_SONY K55XR80PAEP-01K1JDDGNAFTBFCKWS8SHH31AN.jpg",
     "stores": {
       "Setec": {
@@ -15661,7 +15681,7 @@
     "technology": "OLED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -15680,7 +15700,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92208_SONY K55XR8AB.CEI-01KBCFEMKE442Z5HJ5FXE030YP.jpg",
     "stores": {
       "Setec": {
@@ -15776,7 +15796,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -15796,7 +15816,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "anhoch+setec",
+    "specsSource": "anhoch+setec+eprel",
     "image": "/images/tvs/anhoch/tv-sony-65-k65s35b-4k-smart-led-tv-7314.jpg",
     "stores": {
       "Anhoch": {
@@ -15823,7 +15843,7 @@
     "technology": "Mini LED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -15842,7 +15862,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79323_SONY K65XR55B.CEI-01K6WWJX751MDNKZE3XDAGFGRK.jpg",
     "stores": {
       "Setec": {
@@ -15862,7 +15882,7 @@
     "technology": "OLED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -15881,7 +15901,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92221_SONY K65XR8APB.CEI-01KD7ZKYNRY9C08KQTY4WARAB4.jpg",
     "stores": {
       "Setec": {
@@ -15937,7 +15957,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -15957,7 +15977,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "anhoch+setec",
+    "specsSource": "anhoch+setec+eprel",
     "image": "/images/tvs/anhoch/tv-sony-75-k75s35b-4k-smart-led-tv-7928.jpg",
     "stores": {
       "Anhoch": {
@@ -15984,7 +16004,7 @@
     "technology": "OLED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2024,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -16003,7 +16023,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/78863_0-01JVA7X43WQYP73EC0XP9N3ZWF.webp",
     "stores": {
       "Setec": {
@@ -16023,7 +16043,7 @@
     "technology": "OLED",
     "resolution": "4K",
     "refreshRate": 120,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -16042,7 +16062,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92222_SONY K77XR8AB.CEI-01KD7ZTX0PYMH9PP65ZD4ZB9ZM.jpg",
     "stores": {
       "Setec": {
@@ -16977,9 +16997,9 @@
     "model": "32S41K",
     "size": 32,
     "technology": "QLED",
-    "resolution": "4K",
+    "resolution": "HD Ready",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Android TV",
     "hdr": true,
     "dolbyVision": false,
@@ -16997,7 +17017,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79436_TCL 32S41K-01K0BT30KD67YKNABT1DTFEZTJ.jpg",
     "stores": {
       "Setec": {
@@ -17054,9 +17074,9 @@
     "model": "40S51K",
     "size": 40,
     "technology": "QLED",
-    "resolution": "4K",
+    "resolution": "FHD",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Android TV",
     "hdr": true,
     "dolbyVision": false,
@@ -17074,7 +17094,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79437_TCL 40S51K-01K0BT6DEBDREB9HMVV1F1Z03E.jpg",
     "stores": {
       "Setec": {
@@ -17211,9 +17231,9 @@
     "model": "43S51K",
     "size": 43,
     "technology": "QLED",
-    "resolution": "4K",
+    "resolution": "FHD",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Android TV",
     "hdr": true,
     "dolbyVision": false,
@@ -17231,7 +17251,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92254_TCL 43S51K-01KFNM48RW8ZYJ1QT6DCRD0TED.jpg",
     "stores": {
       "Setec": {
@@ -17538,7 +17558,7 @@
     "technology": "Mini LED",
     "resolution": "4K",
     "refreshRate": 144,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -17559,7 +17579,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79275_TCL 55C61K-01K3GMY3QP9J2JKYXF49HPTBK8.jpg",
     "stores": {
       "Setec": {
@@ -17661,7 +17681,7 @@
     "technology": "Mini LED",
     "resolution": "4K",
     "refreshRate": 144,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -17682,7 +17702,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79441_TCL 55C71K-01K0BTETKHCFKAQS30QEHHVZVT.jpg",
     "stores": {
       "Setec": {
@@ -17861,7 +17881,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -17882,7 +17902,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/neptun/tcl-55-p79k-55-4k-qled-smart-290625.jpg",
     "stores": {
       "Neptun": {
@@ -17902,7 +17922,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -17921,7 +17941,7 @@
     "dolbyAtmos": false,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79279_TCL 55P81K-01JY6NADY0DBHK14CMNGPPYKPY.jpg",
     "stores": {
       "Setec": {
@@ -18275,7 +18295,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Android TV",
     "hdr": true,
     "dolbyVision": false,
@@ -18293,7 +18313,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79268_TCL 65P61K-01JY6QBHF217BXAFN9EK6R9EC4.jpg",
     "stores": {
       "Setec": {
@@ -18354,7 +18374,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -18375,7 +18395,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/neptun/tcl-65-p79k-65-4k-qled-smart-290626.jpg",
     "stores": {
       "Neptun": {
@@ -18436,7 +18456,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -18455,7 +18475,7 @@
     "dolbyAtmos": false,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79280_TCL 65P81K-01JY6N85B5NEM1Y6CKNN47C16Q.jpg",
     "stores": {
       "Setec": {
@@ -18605,7 +18625,7 @@
     "technology": "Mini LED",
     "resolution": "4K",
     "refreshRate": 144,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -18626,7 +18646,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79277_TCL 75C61K-01JY65FRDW4YB0XGPFRRH5TSW9.jpg",
     "stores": {
       "Setec": {
@@ -18728,7 +18748,7 @@
     "technology": "Mini LED",
     "resolution": "4K",
     "refreshRate": 144,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -18749,7 +18769,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79443_TCL 75C71K-01K0BTM1V0SAAWSV0XT1FQWFBP.jpg",
     "stores": {
       "Setec": {
@@ -18932,7 +18952,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -18953,7 +18973,7 @@
     "dolbyAtmos": true,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/neptun/tcl-75-p79k-75-4k-qled-smart-293190.jpg",
     "stores": {
       "Neptun": {
@@ -19218,7 +19238,7 @@
     "technology": "Mini LED",
     "resolution": "4K",
     "refreshRate": 144,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -19239,7 +19259,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79444_TCL 85C71K-01K0BTRN9AW8E4TAMY735H3Y7R.jpg",
     "stores": {
       "Setec": {
@@ -19340,7 +19360,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -19361,7 +19381,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92282_TCL%2085P71K-01KMMRCM9G5DBS7RCEGT7EATWX.jpg",
     "stores": {
       "Setec": {
@@ -19422,7 +19442,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -19443,7 +19463,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "icecat",
+    "specsSource": "icecat+eprel",
     "image": "/images/tvs/neptun/tcl-85-p79k-85-4k-qled-smart-297934.jpg",
     "stores": {
       "Neptun": {
@@ -19463,7 +19483,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -19482,7 +19502,7 @@
     "dolbyAtmos": false,
     "freeSync": true,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79446_TCL 85P81K-01K0BVBC7339V539W41FT8050Q.jpg",
     "stores": {
       "Setec": {
@@ -19584,7 +19604,7 @@
     "technology": "Mini LED",
     "resolution": "4K",
     "refreshRate": 144,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -19605,7 +19625,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79445_TCL%2098C71K-01KMMPZ3CDGZ9K15KV9MQFV24C.jpg",
     "stores": {
       "Setec": {
@@ -19663,10 +19683,10 @@
     "brand": "TCL",
     "model": "98P81K",
     "size": 98,
-    "technology": "LED",
+    "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
     "hdr": true,
     "dolbyVision": true,
@@ -19686,7 +19706,7 @@
     "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79269_TCL 98P81K-01JY6Q348ENREV19NXD5JZ1HS3.jpg",
     "stores": {
       "Setec": {
@@ -19706,9 +19726,9 @@
     "technology": "LED",
     "resolution": "FHD",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Smart TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 2,
     "usb": 1,
@@ -19722,7 +19742,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79354_TELEFUNKEN 40RCN24-01JZW830ZX900G3W06B72Y864W.webp",
     "stores": {
       "Setec": {
@@ -19742,9 +19762,9 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2022,
     "os": "Android TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 4,
     "usb": 2,
@@ -19758,7 +19778,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/76248_0-01JVYD510P9AKRETWXPWA9TAW3.webp",
     "stores": {
       "Setec": {
@@ -19778,7 +19798,7 @@
     "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Android TV",
     "hdr": true,
     "dolbyVision": true,
@@ -19797,7 +19817,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "setec",
+    "specsSource": "setec+eprel",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/57805_0-01JVYCPCM1RN1P0AKDCTBKK18K.webp",
     "stores": {
       "Setec": {
@@ -19817,9 +19837,9 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Smart TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 0,
     "usb": 0,
@@ -19842,7 +19862,8 @@
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/57804_0-01JVA760GXJJKD6HZY708YPFVQ.webp",
         "handle": "telefunken-55uak9005bx"
       }
-    }
+    },
+    "specsSource": "eprel"
   },
   {
     "id": "tesla-32e655bhs",
@@ -19854,7 +19875,7 @@
     "refreshRate": 60,
     "year": 2026,
     "os": "Smart TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 0,
     "usb": 0,
@@ -19868,7 +19889,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "ddstore",
+    "specsSource": "ddstore+eprel",
     "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1040946_34_w.png?___store=mk",
     "stores": {
       "DDStore": {
@@ -19890,7 +19911,7 @@
     "refreshRate": 60,
     "year": 2026,
     "os": "Smart TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 0,
     "usb": 0,
@@ -19904,7 +19925,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "ddstore",
+    "specsSource": "ddstore+eprel",
     "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1040947_49_w.png?___store=mk",
     "stores": {
       "DDStore": {
@@ -19922,9 +19943,9 @@
     "model": "43E635BFS",
     "size": 43,
     "technology": "LED",
-    "resolution": "4K",
+    "resolution": "FHD",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2022,
     "os": "Smart TV",
     "hdr": false,
     "dolbyVision": false,
@@ -19949,7 +19970,8 @@
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1000544_33_w.jpg?___store=mk",
         "url": "https://ddstore.mk/mk/tesla-tv-43e635bfs-43-android-11.html"
       }
-    }
+    },
+    "specsSource": "eprel"
   },
   {
     "id": "tesla-55e655bus",
@@ -19959,9 +19981,9 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Google TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 0,
     "usb": 0,
@@ -19975,7 +19997,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "ddstore",
+    "specsSource": "ddstore+eprel",
     "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1040948_19_w.png?___store=mk",
     "stores": {
       "DDStore": {
@@ -19997,7 +20019,7 @@
     "refreshRate": 60,
     "year": 2026,
     "os": "Google TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 0,
     "usb": 0,
@@ -20011,7 +20033,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "ddstore",
+    "specsSource": "ddstore+eprel",
     "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1038586_37_w.png?___store=mk",
     "stores": {
       "DDStore": {
@@ -20033,7 +20055,7 @@
     "refreshRate": 60,
     "year": 2026,
     "os": "Google TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 0,
     "usb": 0,
@@ -20047,7 +20069,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "ddstore",
+    "specsSource": "ddstore+eprel",
     "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1040949_51_w.png?___store=mk",
     "stores": {
       "DDStore": {
@@ -20067,7 +20089,7 @@
     "technology": "QLED",
     "resolution": "FHD",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Google TV",
     "hdr": false,
     "dolbyVision": false,
@@ -20083,7 +20105,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "anhoch",
+    "specsSource": "anhoch+eprel",
     "image": "/images/tvs/anhoch/tv-thomson-40qg4s14-40-qled-fhd-google-tv-frameless-7948.jpg",
     "stores": {
       "Anhoch": {
@@ -20103,9 +20125,9 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Google TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 0,
     "usb": 0,
@@ -20119,7 +20141,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "anhoch",
+    "specsSource": "anhoch+eprel",
     "image": "/images/tvs/anhoch/tv-thomson-43ug5c14-43-uhd-google-tv-frameless-7946.jpg",
     "stores": {
       "Anhoch": {
@@ -20139,9 +20161,9 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Google TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 0,
     "usb": 0,
@@ -20155,7 +20177,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "anhoch",
+    "specsSource": "anhoch+eprel",
     "image": "/images/tvs/anhoch/tv-thomson-55ug4s14-55-uhd-google-tv-frameless-7947.jpg",
     "stores": {
       "Anhoch": {
@@ -20175,9 +20197,9 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Google TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 0,
     "usb": 0,
@@ -20191,7 +20213,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "anhoch",
+    "specsSource": "anhoch+eprel",
     "image": "/images/tvs/anhoch/tv-thomson-65ug5c14-65-uhd-google-tv-frameless-7949.jpg",
     "stores": {
       "Anhoch": {
@@ -20211,9 +20233,9 @@
     "technology": "LED",
     "resolution": "HD Ready",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Smart TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
     "hdmi": 2,
     "usb": 2,
@@ -20227,7 +20249,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "anhoch",
+    "specsSource": "anhoch+eprel",
     "image": "/images/tvs/anhoch/tv-vivax-imago-32le21k-32-led-smart-7908.jpg",
     "stores": {
       "Anhoch": {
@@ -20245,9 +20267,9 @@
     "model": "40LE110WO",
     "size": 40,
     "technology": "LED",
-    "resolution": "4K",
+    "resolution": "FHD",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2025,
     "os": "Smart TV",
     "hdr": false,
     "dolbyVision": false,
@@ -20272,7 +20294,8 @@
         "image": "/images/tvs/anhoch/tv-vivax-imago-40le110wo-40-led-smart-tv-7909.jpg",
         "url": "tv-vivax-imago-40le110wo-40-led-smart-tv-7909"
       }
-    }
+    },
+    "specsSource": "eprel"
   },
   {
     "id": "vivax-58uhd10k",
@@ -20282,7 +20305,7 @@
     "technology": "LED",
     "resolution": "4K",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2022,
     "os": "Smart TV",
     "hdr": true,
     "dolbyVision": false,
@@ -20300,7 +20323,7 @@
     "dolbyAtmos": false,
     "freeSync": false,
     "gSync": false,
-    "specsSource": "anhoch",
+    "specsSource": "anhoch+eprel",
     "image": "/images/tvs/anhoch/tv-vivax-58-58uhd10k-4k-led-5650.jpg",
     "stores": {
       "Anhoch": {
@@ -20318,9 +20341,9 @@
     "model": "TV-32LE115T2S2",
     "size": 32,
     "technology": "LED",
-    "resolution": "4K",
+    "resolution": "HD Ready",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2023,
     "os": "Smart TV",
     "hdr": false,
     "dolbyVision": false,
@@ -20345,7 +20368,8 @@
         "image": "/images/tvs/anhoch/tv-vivax-led-tv32le115t2s2-32-hd-ready-2302.jpg",
         "url": "tv-vivax-led-tv32le115t2s2-32-hd-ready-2302"
       }
-    }
+    },
+    "specsSource": "eprel"
   },
   {
     "id": "vivax-tv-32le117t2s2",
@@ -20355,7 +20379,7 @@
     "technology": "LED",
     "resolution": "HD Ready",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Non-Smart",
     "hdr": false,
     "dolbyVision": false,
@@ -20380,7 +20404,8 @@
         "image": "https://ddstore.mk/media/catalog/product/cache/9bb9d677791f8666003e194c8a94aeff/1/0/1026236_97_w.jpg?___store=mk",
         "url": "https://ddstore.mk/mk/vivax-imago-led-tv-32le117t2s2-reg.html"
       }
-    }
+    },
+    "specsSource": "eprel"
   },
   {
     "id": "vivax-tv40le115t2s2",
@@ -20388,9 +20413,9 @@
     "model": "TV-40LE115T2S2",
     "size": 40,
     "technology": "LED",
-    "resolution": "4K",
+    "resolution": "FHD",
     "refreshRate": 60,
-    "year": 2026,
+    "year": 2024,
     "os": "Smart TV",
     "hdr": false,
     "dolbyVision": false,
@@ -20415,7 +20440,8 @@
         "image": "/images/tvs/anhoch/tv-vivax-imago-led-tv40le115t2s2-6922.jpg",
         "url": "tv-vivax-imago-led-tv40le115t2s2-6922"
       }
-    }
+    },
+    "specsSource": "eprel"
   },
   {
     "id": "xiaomi-a-pro",
@@ -20505,7 +20531,7 @@
     "resolution": "4K",
     "refreshRate": 60,
     "year": 2026,
-    "os": "Smart TV",
+    "os": "Google TV",
     "hdr": false,
     "dolbyVision": false,
     "hdmi": 0,

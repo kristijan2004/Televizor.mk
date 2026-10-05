@@ -5,6 +5,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import Navigation from "./Navigation";
 import { Context } from "./Context";
 import InfoTooltip from "./InfoToolTip";
+import { formatSpec } from "../lib/specValue";
 
 const Page = styled.div`
   min-height: 100vh;
@@ -499,22 +500,22 @@ const TvDetails = () => {
             <Specifications>
               <Spec>
                 <SpecLabel>Големина</SpecLabel>
-                <SpecValue>{tv.size}"</SpecValue>
+                <SpecValue>{tv.size ? `${tv.size}"` : formatSpec(null)}</SpecValue>
               </Spec>
 
               <Spec>
                 <SpecLabel>Резолуција</SpecLabel>
-                <SpecValue>{tv.resolution}</SpecValue>
+                <SpecValue>{formatSpec(tv.resolution)}</SpecValue>
               </Spec>
 
               <Spec>
                 <SpecLabel>Технологија</SpecLabel>
-                <SpecValue>{tv.technology}</SpecValue>
+                <SpecValue>{formatSpec(tv.technology)}</SpecValue>
               </Spec>
 
               <Spec>
                 <SpecLabel>Освежување</SpecLabel>
-                <SpecValue>{tv.refreshRate} Hz</SpecValue>
+                <SpecValue>{formatSpec(tv.refreshRate, "Hz")}</SpecValue>
               </Spec>
             </Specifications>
           </Section>
@@ -525,22 +526,22 @@ const TvDetails = () => {
             <Specifications>
               <Spec>
                 <SpecLabel>Година</SpecLabel>
-                <SpecValue>{tv.year}</SpecValue>
+                <SpecValue>{formatSpec(tv.year)}</SpecValue>
               </Spec>
 
               <Spec>
                 <SpecLabel>Оперативен систем</SpecLabel>
-                <SpecValue>{tv.os}</SpecValue>
+                <SpecValue>{formatSpec(tv.os)}</SpecValue>
               </Spec>
 
               <Spec>
                 <SpecLabel>HDMI</SpecLabel>
-                <SpecValue>{tv.hdmi}</SpecValue>
+                <SpecValue>{formatSpec(tv.hdmi)}</SpecValue>
               </Spec>
 
               <Spec>
                 <SpecLabel>USB</SpecLabel>
-                <SpecValue>{tv.usb}</SpecValue>
+                <SpecValue>{formatSpec(tv.usb)}</SpecValue>
               </Spec>
             </Specifications>
           </Section>
@@ -551,7 +552,7 @@ const TvDetails = () => {
             <Specifications>
               <Spec>
                 <SpecLabel>Процесор на слика</SpecLabel>
-                <SpecValue>{tv.pictureProcessor}</SpecValue>
+                <SpecValue>{formatSpec(tv.pictureProcessor)}</SpecValue>
               </Spec>
 
               <Spec>
@@ -560,14 +561,12 @@ const TvDetails = () => {
                   <InfoTooltip text="HDR (High Dynamic Range) овозможува поголем опсег помеѓу најтемните и најсветлите делови на сликата, со подобар контраст и повеќе детали." />
                 </SpecLabel>
 
-                <SpecValue>
-                  {tv.hdrFormats?.length ? tv.hdrFormats.join(", ") : "—"}
-                </SpecValue>
+                <SpecValue>{formatSpec(tv.hdrFormats)}</SpecValue>
               </Spec>
 
               <Spec>
                 <SpecLabel>Осветленост</SpecLabel>
-                <SpecValue>{tv.brightness}</SpecValue>
+                <SpecValue>{formatSpec(tv.brightness)}</SpecValue>
               </Spec>
 
               <Spec>
@@ -631,12 +630,12 @@ const TvDetails = () => {
             <Specifications>
               <Spec>
                 <SpecLabel>Аудио моќност</SpecLabel>
-                <SpecValue>{tv.audioPower}</SpecValue>
+                <SpecValue>{formatSpec(tv.audioPower, "W")}</SpecValue>
               </Spec>
 
               <Spec>
                 <SpecLabel>Аудио систем</SpecLabel>
-                <SpecValue>{tv.audioChannels}</SpecValue>
+                <SpecValue>{formatSpec(tv.audioChannels)}</SpecValue>
               </Spec>
 
               <Spec>
