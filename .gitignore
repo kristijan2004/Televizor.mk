@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Автоматски резервни копии од скриптите за спецификации.
+# Секоја е ~550 KB копија од целата база, па не одат во git.
+src/Data/*.before-*.json
+
+# Извештаи генерирани од скриптите (checkNewTvs, eprel, samsung, philips...)
+/reports
