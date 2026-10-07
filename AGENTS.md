@@ -70,7 +70,11 @@ Important scripts include:
 
 The main application data is currently generated into:
 
-`src/data/masterTvs.json`
+`src/Data/masterTvs.json`
+
+Note the capital **D**. Linux is case-sensitive and `src/data/` (lowercase) also
+exists — that one is only scratch output from the scraping scripts and the
+application never reads it.
 
 The application Context currently uses the master TV data.
 
@@ -290,16 +294,21 @@ A previous issue occurred because `InfoToolTip` and `InfoTooltip` capitalization
 Important application pieces include:
 
 * `src/App.js`
-* `src/Context.js`
-* `src/components/Navigation`
-* `src/components/SubNavigation`
-* `src/components/TileCont`
-* `src/components/CompareBar`
-* `src/components/Compare`
-* `src/components/TvDetails`
-* `src/components/InfoToolTip`
-* `src/pages/Home`
-* `src/data/masterTvs.json`
+* `src/components/Context.js`
+* `src/components/Navigation.js`
+* `src/components/SubNavigation.js`
+* `src/components/TileCont.js`
+* `src/components/CompareBar.js`
+* `src/components/Compare.js`
+* `src/components/TvDetails.js`
+* `src/components/InfoToolTip.js`
+* `src/components/Home.js`
+* `src/components/OdberiTv.js`
+* `src/lib/tvSpecs.js` — resolves/normalises specs, builds the catalogue
+* `src/lib/recommend.js` — scores TVs for the „Одбери ТВ" quiz
+* `src/Data/masterTvs.json`
+
+There is no `src/pages/` directory; every component lives in `src/components/`.
 
 These names are based on the current project state. Always inspect the filesystem before assuming a file still exists at the exact path.
 

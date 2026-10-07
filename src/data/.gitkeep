@@ -1,0 +1,11 @@
+Оваа папка мора да постои: скриптите за скрапирање запишуваат тука.
+
+  scripts/scrapeDDStore.js      -> src/data/ddstoreTvs.json
+  scripts/scrapeSetec.js        -> src/data/setecTvs.json
+  scripts/parseDDStoreModels.js -> src/data/ddstore-models.json
+  scripts/mergeTvLists.js       -> src/data/master-tvs.json
+
+Node не создава папка што не постои, па без неа скриптите паѓаат.
+
+Внимание: ова НЕ е папката од која апликацијата чита. Таа е src/Data/
+(со голема D) — види src/lib/tvSpecs.js.
