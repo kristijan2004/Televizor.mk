@@ -5,7 +5,7 @@ import PlaceholderPage from "./PlaceholderPage";
 const Edu = () => {
   return (
     <PlaceholderPage
-      eyebrow="Телевизор.mk"
+      eyebrow="Display.mk"
       title="Еду"
       text="Содржината е во подготовка и наскоро ќе биде достапна."
     />

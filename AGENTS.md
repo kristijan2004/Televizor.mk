@@ -2,7 +2,7 @@
 
 ## Project
 
-This is Display.mk (planned public domain: televizor.mk), a Macedonian TV comparison website.
+This is Display.mk (public domain: display.mk, registered 2026-10-06), a Macedonian TV comparison website.
 
 The goal is to build a useful website where users in North Macedonia can:
 

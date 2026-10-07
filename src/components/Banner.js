@@ -129,7 +129,7 @@ const BannerComponent = () => {
     <Banner>
       <BannerInner>
         <Content>
-          <SmallTitle>Телевизор.mk</SmallTitle>
+          <SmallTitle>Display.mk</SmallTitle>
 
           <Title>
             Пронајди го телевизорот

@@ -19,9 +19,11 @@ export const ContextProvider = ({ children }) => {
   const [itemsPerPage, setItemsPerPage] = useState(6);
 
   let filteredList = list.filter((tv) => {
-    const matchesSearch = tv.model
-      .toLowerCase()
-      .includes(searchTerm.toLowerCase());
+    const query = searchTerm.trim().toLowerCase();
+
+    const matchesSearch =
+      query === "" ||
+      `${tv.brand ?? ""} ${tv.model ?? ""}`.toLowerCase().includes(query);
 
     const matchesBrand =
   brandFilter === "" ||

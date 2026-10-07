@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
@@ -26,34 +26,53 @@ const SubNav = styled.div`
 const SubNavInner = styled.div`
   width: 100%;
   max-width: 1200px;
-  min-height: 64px;
   margin: 0 auto;
-  padding: 10px 20px;
+  padding: 9px 20px;
   display: flex;
-  align-items: center;
-  gap: 6px;
+
+  /* Два намерни реда наместо еден што се прелива:
+     ред 1 = пребарување + големина, ред 2 = брендови по цела ширина. */
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+
   box-sizing: border-box;
 
   overflow-x: hidden;
   overflow-y: hidden;
-
-  @media (max-width: 1100px) {
-    overflow-x: auto;
-    overflow-y: hidden;
-  }
 
   &::-webkit-scrollbar {
     display: none;
   }
 `;
 
+const Row = styled.div`
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  min-width: 0;
+`;
+
+const BrandRow = styled(Row)`
+  /* Брендовите добиваат цела ширина, затоа 8-те главни + копчето
+     за ширење удобно седат на еден ред. */
+  flex-wrap: wrap;
+
+  row-gap: 7px;
+`;
+
 const SearchBox = styled.div`
   position: relative;
 
-  width: 230px;
-  min-width: 230px;
+  width: 300px;
+  min-width: 180px;
 
-  margin-right: 8px;
+  flex-shrink: 1;
+
+  margin-right: 2px;
 `;
 
 const SearchIcon = styled.div`
@@ -118,6 +137,22 @@ const Divider = styled.div`
   flex-shrink: 0;
 `;
 
+const FilterGroup = styled.div`
+  display: flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  /* Групата не се сече на половина: етикетата и нејзините копчиња
+     секогаш остануваат заедно на истиот ред. */
+  flex-wrap: ${(props) => (props.$wrap ? "wrap" : "nowrap")};
+
+  row-gap: 8px;
+
+  flex-shrink: 0;
+`;
+
 const FilterLabel = styled.span`
   color: #999;
 
@@ -167,8 +202,42 @@ const FilterButton = styled.button`
   }
 `;
 
+const MoreButton = styled.button`
+  height: 36px;
+
+  padding: 0 13px;
+
+  border: 1px dashed #c9c9d4;
+
+  border-radius: 8px;
+
+  background: white;
+
+  color: #242582;
+
+  cursor: pointer;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  transition: 0.2s;
+
+  &:hover {
+    border-color: #242582;
+
+    background: #f6f6fb;
+  }
+`;
+
 const ClearButton = styled.button`
   height: 36px;
+
+  /* Го полни празното место десно наместо да виси до филтрите. */
+  margin-left: auto;
+
   padding: 0 13px;
   border: none;
   border-radius: 8px;
@@ -186,6 +255,38 @@ const ClearButton = styled.button`
   }
 `;
 
+// Сите брендови што постојат во masterTvs.json, подредени по број на телевизори.
+// ВАЖНО: ако скриптите за скрапирање најдат нов бренд, додај го тука рачно —
+// инаку нема да се појави во филтрите (проверка: scripts/listBrands.js).
+const PRIMARY_BRANDS = [
+  "Samsung",
+  "Philips",
+  "LG",
+  "TCL",
+  "Hisense",
+  "Sony",
+  "JVC",
+  "Fuego",
+];
+
+const MORE_BRANDS = [
+  "Xiaomi",
+  "Haier",
+  "ST",
+  "Beko",
+  "Neo",
+  "Tesla",
+  "Vivax",
+  "Aiwa",
+  "Favorit",
+  "Telefunken",
+  "Thomson",
+  "Bautech",
+  "Metz",
+];
+
+const SIZES = [43, 55, 65, 85];
+
 const SubNavigation = () => {
   const {
     searchTerm,
@@ -199,6 +300,11 @@ const SubNavigation = () => {
     refreshRateFilter,
     setRefreshRateFilter,
   } = useContext(Context);
+
+  const [showAllBrands, setShowAllBrands] = useState(false);
+
+  const isBrandActive = (brand) =>
+    brandFilter.toLowerCase() === brand.toLowerCase();
 
   const handleBrand = (brand) => {
   if (brandFilter.toLowerCase() === brand.toLowerCase()) {
@@ -233,87 +339,75 @@ const SubNavigation = () => {
   return (
     <SubNav>
       <SubNavInner>
-        <SearchBox>
-          <SearchIcon>
-            <FontAwesomeIcon icon={faMagnifyingGlass} />
-          </SearchIcon>
+        <Row>
+          <SearchBox>
+            <SearchIcon>
+              <FontAwesomeIcon icon={faMagnifyingGlass} />
+            </SearchIcon>
 
-          <SearchInput
-            type="text"
-            placeholder="Пребарај телевизор..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
-        </SearchBox>
+            <SearchInput
+              type="text"
+              placeholder="Пребарај бренд или модел..."
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+          </SearchBox>
 
-        <Divider />
+          <FilterGroup>
+            <Divider />
 
-        <FilterLabel>Бренд</FilterLabel>
+            <FilterLabel>Големина</FilterLabel>
 
-        <FilterButton
-          active={brandFilter === "Samsung"}
-          onClick={() => handleBrand("Samsung")}
-        >
-          Samsung
-        </FilterButton>
+            {SIZES.map((size) => (
+              <FilterButton
+                key={size}
+                active={sizeFilter === size}
+                onClick={() => handleSize(size)}
+              >
+                {size}"
+              </FilterButton>
+            ))}
+          </FilterGroup>
 
-        <FilterButton
-          active={brandFilter === "LG"}
-          onClick={() => handleBrand("LG")}
-        >
-          LG
-        </FilterButton>
+          {hasFilters && (
+            <ClearButton onClick={clearFilters}>Исчисти филтри</ClearButton>
+          )}
+        </Row>
 
-        <FilterButton
-          active={brandFilter === "Sony"}
-          onClick={() => handleBrand("Sony")}
-        >
-          Sony
-        </FilterButton>
+        <BrandRow>
+          <FilterLabel>Бренд</FilterLabel>
 
-        <FilterButton
-          active={brandFilter === "TCL"}
-          onClick={() => handleBrand("TCL")}
-        >
-          TCL
-        </FilterButton>
+          {PRIMARY_BRANDS.map((brand) => (
+            <FilterButton
+              key={brand}
+              active={isBrandActive(brand)}
+              onClick={() => handleBrand(brand)}
+            >
+              {brand}
+            </FilterButton>
+          ))}
 
-        <FilterButton
-          active={brandFilter === "Hisense"}
-          onClick={() => handleBrand("Hisense")}
-        >
-          Hisense
-        </FilterButton>
+          {showAllBrands &&
+            MORE_BRANDS.map((brand) => (
+              <FilterButton
+                key={brand}
+                active={isBrandActive(brand)}
+                onClick={() => handleBrand(brand)}
+              >
+                {brand}
+              </FilterButton>
+            ))}
 
-        <FilterButton
-          active={brandFilter === "Philips"}
-          onClick={() => handleBrand("Philips")}
-        >
-          Philips
-        </FilterButton>
-
-        <Divider />
-
-        <FilterLabel>Големина</FilterLabel>
-
-        <FilterButton active={sizeFilter === 43} onClick={() => handleSize(43)}>
-          43"
-        </FilterButton>
-
-        <FilterButton active={sizeFilter === 55} onClick={() => handleSize(55)}>
-          55"
-        </FilterButton>
-
-        <FilterButton active={sizeFilter === 65} onClick={() => handleSize(65)}>
-          65"
-        </FilterButton>
-
-        <FilterButton active={sizeFilter === 85} onClick={() => handleSize(85)}>
-          85"
-        </FilterButton>
-        {hasFilters && (
-          <ClearButton onClick={clearFilters}>Исчисти филтри</ClearButton>
-        )}
+          <MoreButton
+            type="button"
+            aria-expanded={showAllBrands}
+            onClick={() => setShowAllBrands(!showAllBrands)}
+          >
+            {showAllBrands
+              ? "− Помалку"
+              : `+ Сите брендови (${MORE_BRANDS.length})`}
+          </MoreButton>
+        </BrandRow>
       </SubNavInner>
     </SubNav>
   );

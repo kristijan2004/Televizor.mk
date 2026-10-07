@@ -410,7 +410,7 @@ const Navigation = () => {
           </LogoIcon>
 
           <LogoText>
-            <LogoTitle>Телевизор.mk</LogoTitle>
+            <LogoTitle>Display.mk</LogoTitle>
 
             <LogoSubtitle>СПОРЕДБА НА ТЕЛЕВИЗОРИ</LogoSubtitle>
           </LogoText>
