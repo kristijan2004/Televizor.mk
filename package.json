@@ -31,7 +31,9 @@
     "prebuild": "node scripts/buildNews.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "api": "node server/index.js",
+    "api:import": "node server/import.js"
   },
   "eslintConfig": {
     "extends": [
@@ -53,5 +55,6 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
-  }
+  },
+  "proxy": "http://localhost:3001"
 }
