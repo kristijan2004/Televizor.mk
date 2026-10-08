@@ -28,3 +28,10 @@ src/Data/*.before-*.json
 
 # Извештаи генерирани од скриптите (checkNewTvs, eprel, samsung, philips...)
 /reports
+
+# API серверот: зависности и базата се генерираат, не се чуваат во git.
+# display.db се прави од src/Data/masterTvs.json со `node server/import.js`.
+server/node_modules
+server/display.db
+server/display.db-wal
+server/display.db-shm
