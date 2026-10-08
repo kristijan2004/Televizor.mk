@@ -85,7 +85,25 @@ app.get("/api/filters", async () => {
 
   const { total } = db.prepare("SELECT COUNT(*) AS total FROM tvs").get();
 
-  return { total, brands, sizes, technologies };
+  // Банерот покажува „N модели · N бренд · N трговци".
+  const storeNames = new Set();
+  for (const row of db.prepare("SELECT stores FROM tvs").all()) {
+    try {
+      for (const name of Object.keys(JSON.parse(row.stores || "{}"))) {
+        storeNames.add(name);
+      }
+    } catch {
+      /* редот нема валиден JSON — се прескокнува */
+    }
+  }
+
+  return {
+    total,
+    brands,
+    sizes,
+    technologies,
+    stores: [...storeNames].sort(),
+  };
 });
 
 app.get("/api/tvs", async (request) => {

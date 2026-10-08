@@ -185,8 +185,7 @@ const MoreButton = styled.button`
 `;
 
 const Home = () => {
-  const { list, setItemsPerPage, itemsPerPage, sortBy, setSortBy, hasMore } =
-    useContext(Context);
+  const { total, loadMore, sortBy, setSortBy, hasMore } = useContext(Context);
 
   const location = useLocation();
 
@@ -222,7 +221,7 @@ const Home = () => {
           <TitleRow>
             <Title>Телевизори</Title>
 
-            <Count>{list.length}</Count>
+            <Count>{total}</Count>
           </TitleRow>
 
           <Subtitle>Пронајди го моделот што најмногу ти одговара</Subtitle>
@@ -248,9 +247,7 @@ const Home = () => {
       {hasMore && (
         <MoreCont>
           <MoreButton
-            onClick={() => {
-              setItemsPerPage(itemsPerPage + 6);
-            }}
+            onClick={loadMore}
           >
             Прикажи повеќе
           </MoreButton>

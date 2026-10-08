@@ -1,4 +1,4 @@
-import React, { useContext, useMemo } from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import { Context } from "./Context";
 
@@ -142,30 +142,9 @@ const Tv = styled.img`
 `;
 
 const BannerComponent = () => {
-  const { allTvs } = useContext(Context);
-
-  const stats = useMemo(() => {
-    const tvs = allTvs || [];
-
-    const brands = new Set();
-    const stores = new Set();
-
-    for (const tv of tvs) {
-      if (tv.brand) {
-        brands.add(tv.brand);
-      }
-
-      for (const store of Object.keys(tv.stores || {})) {
-        stores.add(store);
-      }
-    }
-
-    return {
-      models: tvs.length,
-      brands: brands.size,
-      stores: stores.size,
-    };
-  }, [allTvs]);
+  // Бројките доаѓаат од /api/filters — нема потреба целата база да биде тука
+  // само за да се избројат брендовите.
+  const { stats } = useContext(Context);
 
   return (
     <Band>

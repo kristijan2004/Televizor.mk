@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import styled from "styled-components";
 import { useNavigate, useParams } from "react-router-dom";
 
@@ -352,19 +352,58 @@ const Empty = styled.div`
   text-align: center;
 `;
 
+const API = process.env.REACT_APP_API_URL || "/api";
+
 const TvDetails = () => {
   const { brand, model } = useParams();
 
-  const { allTvs, compareList, addToCompare, removeFromCompare } =
-    useContext(Context);
+  const { compareList, addToCompare, removeFromCompare } = useContext(Context);
 
   const navigate = useNavigate();
 
-  const tv = allTvs.find(
-    (item) =>
-      item.brand.toLowerCase() === brand.toLowerCase() &&
-      item.model.toLowerCase() === model.toLowerCase(),
-  );
+  /*
+    Порано овој телевизор се бараше во целата листа во меморија. Сега се зема
+    поединечно од API-то, па страницата не зависи од тоа дали целата база е
+    вчитана.
+  */
+  const [tv, setTv] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    let cancelled = false;
+    setLoading(true);
+
+    fetch(`${API}/tvs/${encodeURIComponent(brand)}/${encodeURIComponent(model)}`)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data) => {
+        if (cancelled) return;
+        setTv(data && !data.error ? data : null);
+        setLoading(false);
+      })
+      .catch(() => {
+        if (cancelled) return;
+        setTv(null);
+        setLoading(false);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [brand, model]);
+
+  if (loading) {
+    return (
+      <Page>
+        <Navigation />
+
+        <Container>
+          <Empty>
+            <Description>Се вчитува...</Description>
+          </Empty>
+        </Container>
+      </Page>
+    );
+  }
 
   if (!tv) {
     return (

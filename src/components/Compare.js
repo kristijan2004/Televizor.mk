@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
@@ -183,8 +183,47 @@ const ValueCell = styled.td`
   text-align: center;
 `;
 
+const API = process.env.REACT_APP_API_URL || "/api";
+
 const Compare = () => {
-  const { compareList, removeFromCompare } = useContext(Context);
+  const { compareList: selected, removeFromCompare } = useContext(Context);
+
+  /*
+    Плочките носат само неколку полиња (тоа е поентата — да не се симнува сè),
+    а оваа страница прикажува целосни спецификации. Затоа избраните се
+    довчитуваат по id. Додека трае тоа, се користи она што веќе го има, за
+    табелата да не трепка.
+  */
+  const [full, setFull] = useState([]);
+
+  const ids = selected.map((tv) => tv.id).join(",");
+
+  useEffect(() => {
+    if (!ids) {
+      setFull([]);
+      return undefined;
+    }
+
+    let cancelled = false;
+
+    fetch(`${API}/tvs/by-id?ids=${encodeURIComponent(ids)}`)
+      .then((r) => (r.ok ? r.json() : { items: [] }))
+      .then((d) => {
+        if (!cancelled) setFull(d.items || []);
+      })
+      .catch(() => {
+        if (!cancelled) setFull([]);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [ids]);
+
+  // Редоследот го диктира изборот на корисникот, не серверот.
+  const compareList = selected.map(
+    (tv) => full.find((item) => item.id === tv.id) || tv
+  );
   const navigate = useNavigate();
 
   const image =
