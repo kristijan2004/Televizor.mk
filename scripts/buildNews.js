@@ -426,6 +426,19 @@ function buildArticle(fileName, availableImages) {
     throw new Error(`${fileName}: date must be written as YYYY-MM-DD`);
   }
 
+  /*
+    Optional publish hour. Without it an article goes live at the start of its
+    `date`; with it, at that exact hour on that day. The app does the actual
+    gating — see src/Data/news.js.
+  */
+  const publishAt = data.publishAt || "";
+
+  if (publishAt && !/^\d{4}-\d{2}-\d{2}([ T]\d{2}:\d{2})?$/.test(publishAt)) {
+    throw new Error(
+      `${fileName}: publishAt must be written as YYYY-MM-DD or YYYY-MM-DD HH:MM`
+    );
+  }
+
   const readTime = data.readTime
     ? Number(data.readTime)
     : Math.max(1, Math.round(countWords(blocks) / WORDS_PER_MINUTE));
@@ -447,6 +460,8 @@ function buildArticle(fileName, availableImages) {
     category: requireField(data, "category", fileName),
     author: data.author || "Редакција",
     date,
+    // Empty unless the article asked for a specific hour.
+    publishAt,
     readTime,
     image: picture.image,
     // Fallbacks the browser walks through if `image` 404s — this is what lets a

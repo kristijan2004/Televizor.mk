@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T18:41:50.538Z",
+  "generatedAt": "2026-10-08T12:56:33.162Z",
   "categories": [
     "Новости",
     "Совети",
@@ -14,6 +14,7 @@
       "category": "Совети",
       "author": "Редакција на Телевизор.мк",
       "date": "2026-10-06",
+      "publishAt": "",
       "readTime": 4,
       "image": "/images/novosti/iskluci-gi-ovie-postavki-na-noviot-televizor.jpg",
       "imageCandidates": [
@@ -311,6 +312,7 @@
       "category": "Новости",
       "author": "Редакција на Телевизор.мк",
       "date": "2026-10-06",
+      "publishAt": "",
       "readTime": 4,
       "image": "/images/novosti/rgb-led-televizori-protiv-oled.jpg",
       "imageCandidates": [
@@ -717,6 +719,7 @@
       "category": "Совети",
       "author": "Редакција на Телевизор.мк",
       "date": "2026-10-06",
+      "publishAt": "",
       "readTime": 3,
       "image": "/images/novosti/televizorot-znae-sto-gledas-acr.jpg",
       "imageCandidates": [
@@ -1070,6 +1073,7 @@
       "category": "Новости",
       "author": "Редакција на Телевизор.мк",
       "date": "2026-10-06",
+      "publishAt": "",
       "readTime": 3,
       "image": "/images/novosti/test-100-televizori-3-godini-oled-izgoruvanje.jpg",
       "imageCandidates": [
@@ -1366,6 +1370,7 @@
       "category": "Совети",
       "author": "Редакција на Телевизор.мк",
       "date": "2026-10-06",
+      "publishAt": "",
       "readTime": 4,
       "image": "/images/novosti/trikovi-vo-specifikaciite-na-televizorite.jpg",
       "imageCandidates": [
@@ -1685,6 +1690,7 @@
       "category": "Совети",
       "author": "Редакција на Телевизор.мк",
       "date": "2026-10-06",
+      "publishAt": "",
       "readTime": 3,
       "image": "/images/novosti/zosto-noviot-televizor-zvuci-polosho.jpg",
       "imageCandidates": [
@@ -1952,6 +1958,7 @@
       "category": "Понуди",
       "author": "Редакција на Телевизор.мк",
       "date": "2026-10-02",
+      "publishAt": "",
       "readTime": 4,
       "image": "/images/novosti/koga-da-kupis.jpg",
       "imageCandidates": [
@@ -2252,6 +2259,7 @@
       "category": "Совети",
       "author": "Редакција на Телевизор.мк",
       "date": "2026-10-01",
+      "publishAt": "",
       "readTime": 4,
       "image": "/images/novosti/golemina-televizor.jpg.jpg",
       "imageCandidates": [
@@ -2497,6 +2505,7 @@
       "category": "Совети",
       "author": "Редакција на Телевизор.мк",
       "date": "2026-09-30",
+      "publishAt": "",
       "readTime": 6,
       "image": "/images/novosti/oled-vs-miniled.jpg",
       "imageCandidates": [
@@ -2740,6 +2749,7 @@
       "category": "Новости",
       "author": "Редакција на Телевизор.мк",
       "date": "2026-09-26",
+      "publishAt": "",
       "readTime": 5,
       "image": "/images/novosti/samsung-2026.jpg",
       "imageCandidates": [
@@ -3183,6 +3193,7 @@
       "category": "Новости",
       "author": "Редакција на Телевизор.мк",
       "date": "2026-09-19",
+      "publishAt": "",
       "readTime": 4,
       "image": "/images/novosti/oled-se.jpg",
       "imageCandidates": [
@@ -3465,6 +3476,7 @@
       "category": "Новости",
       "author": "Редакција на Телевизор.мк",
       "date": "2026-09-12",
+      "publishAt": "",
       "readTime": 4,
       "image": "/images/novosti/lg-w6.jpg",
       "imageCandidates": [
