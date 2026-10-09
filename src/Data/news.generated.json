@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T20:31:50.363Z",
+  "generatedAt": "2026-10-09T08:58:02.213Z",
   "categories": [
     "Новости",
     "Совети",
@@ -16,21 +16,21 @@
       "date": "2026-10-06",
       "publishAt": "",
       "readTime": 4,
-      "image": "/images/novosti/iskluci-gi-ovie-postavki-na-noviot-televizor.jpg",
+      "image": "/images/novosti/iskluci-gi-ovie-postavki-na-noviot-televizor.jpg.jpg",
       "imageCandidates": [
+        "/images/novosti/iskluci-gi-ovie-postavki-na-noviot-televizor.jpg.jpg",
         "/images/novosti/iskluci-gi-ovie-postavki-na-noviot-televizor.jpg",
         "/images/novosti/iskluci-gi-ovie-postavki-na-noviot-televizor.jpeg",
         "/images/novosti/iskluci-gi-ovie-postavki-na-noviot-televizor.png",
         "/images/novosti/iskluci-gi-ovie-postavki-na-noviot-televizor.webp",
         "/images/novosti/iskluci-gi-ovie-postavki-na-noviot-televizor.avif",
         "/images/novosti/iskluci-gi-ovie-postavki-na-noviot-televizor.svg",
-        "/images/novosti/iskluci-gi-ovie-postavki-na-noviot-televizor.jpg.jpg",
         "/images/novosti/iskluci-gi-ovie-postavki-na-noviot-televizor.jpeg.jpeg",
         "/images/novosti/iskluci-gi-ovie-postavki-na-noviot-televizor.png.png",
         "/images/novosti/iskluci-gi-ovie-postavki-na-noviot-televizor.webp.webp",
         "/images/novosti/placeholder.svg"
       ],
-      "hasImage": false,
+      "hasImage": true,
       "featured": false,
       "blocks": [
         {
@@ -1372,21 +1372,21 @@
       "date": "2026-10-06",
       "publishAt": "",
       "readTime": 4,
-      "image": "/images/novosti/trikovi-vo-specifikaciite-na-televizorite.jpg",
+      "image": "/images/novosti/trikovi-vo-specifikaciite-na-televizorite.jpg.jpg",
       "imageCandidates": [
+        "/images/novosti/trikovi-vo-specifikaciite-na-televizorite.jpg.jpg",
         "/images/novosti/trikovi-vo-specifikaciite-na-televizorite.jpg",
         "/images/novosti/trikovi-vo-specifikaciite-na-televizorite.jpeg",
         "/images/novosti/trikovi-vo-specifikaciite-na-televizorite.png",
         "/images/novosti/trikovi-vo-specifikaciite-na-televizorite.webp",
         "/images/novosti/trikovi-vo-specifikaciite-na-televizorite.avif",
         "/images/novosti/trikovi-vo-specifikaciite-na-televizorite.svg",
-        "/images/novosti/trikovi-vo-specifikaciite-na-televizorite.jpg.jpg",
         "/images/novosti/trikovi-vo-specifikaciite-na-televizorite.jpeg.jpeg",
         "/images/novosti/trikovi-vo-specifikaciite-na-televizorite.png.png",
         "/images/novosti/trikovi-vo-specifikaciite-na-televizorite.webp.webp",
         "/images/novosti/placeholder.svg"
       ],
-      "hasImage": false,
+      "hasImage": true,
       "featured": false,
       "blocks": [
         {

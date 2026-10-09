@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+// Постави на true за повторно да се прикажуваат категориите.
+// Set to true to show category badges again.
+export const SHOW_CATEGORY_BADGE = false;
+
 /*
   Muted label colours per category. Deliberately low-saturation so the badges
   read as labels rather than as buttons sitting next to the filter pills.
@@ -21,7 +25,7 @@ export const getCategoryColor = (category) =>
   11px/700, soft tinted fill. Rendered as a <span>, never a control.
 */
 export const CategoryBadge = styled.span`
-  display: inline-flex;
+  display: ${SHOW_CATEGORY_BADGE ? "inline-flex" : "none"};
   align-items: center;
 
   align-self: flex-start;

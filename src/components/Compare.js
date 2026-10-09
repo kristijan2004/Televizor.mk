@@ -110,6 +110,7 @@ const Brand = styled.div`
 
 const Model = styled.div`
   margin-top: 4px;
+  font-family: 'Manrope', 'Open Sans', sans-serif;
   color: #242582;
   font-size: 18px;
   font-weight: 800;

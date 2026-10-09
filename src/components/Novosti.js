@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import ArticleImage from "./ArticleImage";
 import Navigation from "./Navigation";
-import news, { CATEGORIES } from "../Data/news";
+import news from "../Data/news";
 import {
   CategoryBadge,
   formatMkDate,
@@ -39,15 +39,17 @@ const Title = styled.h1`
 
   color: #242582;
 
-  font-size: 28px;
+  font-size: clamp(30px, 4vw, 44px);
 
   font-weight: 800;
 
-  line-height: 1.2;
+  line-height: 1.1;
+
+  letter-spacing: -0.8px;
 `;
 
 const Subtitle = styled.p`
-  margin: 6px 0 0;
+  margin: 10px 0 0;
 
   color: #888;
 
@@ -165,81 +167,10 @@ const FeaturedExcerpt = styled.p`
   line-height: 1.6;
 `;
 
-/* ---------- Filters ---------- */
-
-const FilterSection = styled(Section)`
-  padding-top: 34px;
-`;
-
-const FilterRow = styled.div`
-  display: flex;
-  align-items: center;
-
-  flex-wrap: wrap;
-
-  gap: 10px;
-`;
-
-const FilterLabel = styled.span`
-  color: #999;
-
-  font-size: 11px;
-
-  font-weight: 700;
-
-  text-transform: uppercase;
-
-  letter-spacing: 0.6px;
-
-  margin-right: 2px;
-
-  white-space: nowrap;
-`;
-
-/* Values copied from SubNavigation's FilterButton so the two rows match. */
-const FilterButton = styled.button`
-  height: 36px;
-
-  padding: 0 13px;
-
-  border-radius: 8px;
-
-  border: 1px solid ${(props) => (props.$active ? "#242582" : "#dedee5")};
-
-  background: ${(props) => (props.$active ? "#242582" : "white")};
-
-  color: ${(props) => (props.$active ? "white" : "#555")};
-
-  cursor: pointer;
-
-  font-size: 12px;
-
-  font-weight: 700;
-
-  white-space: nowrap;
-
-  transition:
-    background 0.2s ease,
-    color 0.2s ease,
-    border-color 0.2s ease;
-
-  &:hover {
-    border-color: #242582;
-
-    color: ${(props) => (props.$active ? "white" : "#242582")};
-  }
-
-  &:focus-visible {
-    outline: 2px solid #242582;
-
-    outline-offset: 2px;
-  }
-`;
-
 /* ---------- Grid ---------- */
 
 const GridSection = styled(Section)`
-  padding-top: 24px;
+  padding-top: 34px;
   padding-bottom: 60px;
 `;
 
@@ -367,6 +298,57 @@ const MetaDot = styled.span`
   color: #ccc;
 `;
 
+/* ---------- Show more ---------- */
+
+const ShowMoreRow = styled.div`
+  display: flex;
+  justify-content: center;
+
+  padding-top: 24px;
+`;
+
+const ShowMoreButton = styled.button`
+  height: 44px;
+
+  padding: 0 28px;
+
+  border-radius: 8px;
+
+  border: 1px solid #242582;
+
+  background: white;
+
+  color: #242582;
+
+  cursor: pointer;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+
+  &:hover {
+    background: #242582;
+
+    color: white;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #242582;
+
+    outline-offset: 2px;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+`;
+
 /* ---------- Empty state ---------- */
 
 const EmptyState = styled.div`
@@ -383,6 +365,8 @@ const EmptyState = styled.div`
 const EmptyTitle = styled.p`
   margin: 0;
 
+  font-family: 'Manrope', 'Open Sans', sans-serif;
+
   color: #242582;
 
   font-size: 16px;
@@ -398,10 +382,10 @@ const EmptyText = styled.p`
   font-size: 14px;
 `;
 
-const ALL = "Сите";
+const PAGE_SIZE = 6;
 
 const Novosti = () => {
-  const [activeCategory, setActiveCategory] = useState(ALL);
+  const [shownCount, setShownCount] = useState(PAGE_SIZE);
 
   const sorted = useMemo(() => sortByNewest(news), []);
 
@@ -416,13 +400,7 @@ const Novosti = () => {
     [sorted, featured]
   );
 
-  const visible = useMemo(
-    () =>
-      activeCategory === ALL
-        ? rest
-        : rest.filter((post) => post.category === activeCategory),
-    [rest, activeCategory]
-  );
+  const visible = useMemo(() => rest.slice(0, shownCount), [rest, shownCount]);
 
   return (
     <PageCont>
@@ -470,65 +448,60 @@ const Novosti = () => {
         </FeaturedSection>
       )}
 
-      <FilterSection>
-        <FilterRow role="group" aria-label="Филтрирај по категорија">
-          <FilterLabel>Категорија</FilterLabel>
-
-          {[ALL, ...CATEGORIES].map((category) => (
-            <FilterButton
-              key={category}
-              type="button"
-              $active={activeCategory === category}
-              aria-pressed={activeCategory === category}
-              onClick={() => setActiveCategory(category)}
-            >
-              {category}
-            </FilterButton>
-          ))}
-        </FilterRow>
-      </FilterSection>
-
       <GridSection>
-        {visible.length === 0 ? (
+        {rest.length === 0 ? (
           <EmptyState>
-            <EmptyTitle>Нема статии во оваа категорија</EmptyTitle>
+            <EmptyTitle>Сè уште нема други статии</EmptyTitle>
 
-            <EmptyText>
-              Обидете се со друга категорија или изберете „Сите“.
-            </EmptyText>
+            <EmptyText>Наскоро ќе објавиме нови статии.</EmptyText>
           </EmptyState>
         ) : (
-          <Grid>
-            {visible.map((post) => (
-              <Card key={post.id}>
-                <CardLink to={`/novosti/${post.slug}`}>
-                  <CardImage
-                    src={post.image}
-                    candidates={post.imageCandidates}
-                    alt=""
-                  />
+          <>
+            <Grid>
+              {visible.map((post) => (
+                <Card key={post.id}>
+                  <CardLink to={`/novosti/${post.slug}`}>
+                    <CardImage
+                      src={post.image}
+                      candidates={post.imageCandidates}
+                      alt=""
+                    />
 
-                  <CardBody>
-                    <CategoryBadge $category={post.category}>
-                      {post.category}
-                    </CategoryBadge>
+                    <CardBody>
+                      <CategoryBadge $category={post.category}>
+                        {post.category}
+                      </CategoryBadge>
 
-                    <CardTitle>{post.title}</CardTitle>
+                      <CardTitle>{post.title}</CardTitle>
 
-                    <CardExcerpt>{post.excerpt}</CardExcerpt>
+                      <CardExcerpt>{post.excerpt}</CardExcerpt>
 
-                    <CardMeta>
-                      <time dateTime={post.date}>{formatMkDate(post.date)}</time>
+                      <CardMeta>
+                        <time dateTime={post.date}>
+                          {formatMkDate(post.date)}
+                        </time>
 
-                      <MetaDot aria-hidden="true">•</MetaDot>
+                        <MetaDot aria-hidden="true">•</MetaDot>
 
-                      <span>{formatReadTime(post.readTime)}</span>
-                    </CardMeta>
-                  </CardBody>
-                </CardLink>
-              </Card>
-            ))}
-          </Grid>
+                        <span>{formatReadTime(post.readTime)}</span>
+                      </CardMeta>
+                    </CardBody>
+                  </CardLink>
+                </Card>
+              ))}
+            </Grid>
+
+            {rest.length > visible.length && (
+              <ShowMoreRow>
+                <ShowMoreButton
+                  type="button"
+                  onClick={() => setShownCount((count) => count + PAGE_SIZE)}
+                >
+                  Прикажи повеќе
+                </ShowMoreButton>
+              </ShowMoreRow>
+            )}
+          </>
         )}
       </GridSection>
     </PageCont>

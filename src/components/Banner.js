@@ -55,6 +55,8 @@ const Inner = styled.div`
 const Title = styled.p`
   margin: 0;
 
+  font-family: 'Manrope', 'Open Sans', sans-serif;
+
   max-width: 560px;
 
   color: #ffffff;
