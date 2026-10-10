@@ -8,6 +8,7 @@
 
 import Fastify from "fastify";
 import cors from "@fastify/cors";
+import rateLimit from "@fastify/rate-limit";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -108,9 +109,50 @@ const SORTS = {
   "size-large": "size DESC, brand ASC",
 };
 
-const app = Fastify({ logger: { level: process.env.LOG_LEVEL || "warn" } });
+const app = Fastify({
+  logger: { level: process.env.LOG_LEVEL || "warn" },
 
-app.register(cors, { origin: true });
+  // nginx е пред нас, па без ова секој посетител би изгледал како 127.0.0.1
+  // и ограничувањето би важело за сите заедно.
+  trustProxy: true,
+});
+
+/*
+  ВАЖНО: `await`. Без него приклучоците се редат, а рутите се додаваат пред
+  тие да се вчитаат — куките не се закачуваат и ограничувањето молчи
+  (проверено: 340 барања поминаа со таван од 300).
+*/
+await app.register(cors, { origin: true });
+
+/*
+  Ограничување по IP.
+
+  Да бидеме искрени: ова не спречува копирање. Со 530 телевизори и таван од
+  48 по барање, целата база се зема со 12 барања за помалку од секунда.
+  Што прави: го прави масовното земање бавно и видливо, наместо бесплатно и
+  незабележливо. Вистинската заштита е свежината на податоците.
+
+  Бројките се така што нормално прелистување никогаш не ги допира: едно
+  отворање на страницата прави 3 барања, а „Прикажи повеќе" по едно.
+*/
+const clientIp = (request) =>
+  // Cloudflare ја става вистинската адреса тука; X-Real-IP е од nginx.
+  request.headers["cf-connecting-ip"] ||
+  request.headers["x-real-ip"] ||
+  request.ip;
+
+await app.register(rateLimit, {
+  global: true,
+  max: 300,
+  timeWindow: "1 minute",
+  keyGenerator: clientIp,
+  addHeadersOnExceeding: { "x-ratelimit-remaining": true },
+  errorResponseBuilder: (request, context) => ({
+    statusCode: 429,
+    error: "Too Many Requests",
+    message: `Премногу барања. Пробај повторно за ${context.after}.`,
+  }),
+});
 
 app.get("/api/health", async () => {
   const { n } = db.prepare("SELECT COUNT(*) AS n FROM tvs").get();
@@ -155,7 +197,18 @@ app.get("/api/filters", async () => {
   };
 });
 
-app.get("/api/tvs", async (request) => {
+app.get(
+  "/api/tvs",
+  {
+    /*
+      Построго од глобалното: ова е единствената патека низ која се вади
+      каталогот. 60 во минута е далеку над нормално листање (12 по
+      страница, па тоа се 5 страници во секунда), а масовното земање го
+      растегнува од секунда на минути и остава трага.
+    */
+    config: { rateLimit: { max: 60, timeWindow: "1 minute", keyGenerator: clientIp } },
+  },
+  async (request) => {
   const q = request.query || {};
 
   const where = [];
@@ -204,14 +257,15 @@ app.get("/api/tvs", async (request) => {
     )
     .all(...params, limit, offset);
 
-  return {
-    items: rows.map(hydrate),
-    total,
-    page,
-    limit,
-    hasMore: offset + rows.length < total,
-  };
-});
+    return {
+      items: rows.map(hydrate),
+      total,
+      page,
+      limit,
+      hasMore: offset + rows.length < total,
+    };
+  }
+);
 
 // За споредба: до 3 телевизори во едно барање.
 app.get("/api/tvs/by-id", async (request, reply) => {
@@ -250,7 +304,13 @@ app.get("/api/quiz-options", async () => ({
   catalogueSize: quizCatalogue.length,
 }));
 
-app.post("/api/recommend", async (request, reply) => {
+app.post(
+  "/api/recommend",
+  {
+    // Секое барање оценува 530 телевизори, па е поскапо од останатите.
+    config: { rateLimit: { max: 20, timeWindow: "1 minute", keyGenerator: clientIp } },
+  },
+  async (request, reply) => {
   const answers = request.body || {};
 
   if (typeof answers !== "object" || Array.isArray(answers)) {
@@ -288,10 +348,11 @@ app.post("/api/recommend", async (request, reply) => {
     })),
     blocked: result.blocked,
     relax: result.relax,
-    consideredCount: result.consideredCount,
-    brandNote: result.brandNote ?? null,
-  };
-});
+      consideredCount: result.consideredCount,
+      brandNote: result.brandNote ?? null,
+    };
+  }
+);
 
 app.listen({ port: PORT, host: HOST }).then(() => {
   console.log(`API на http://${HOST}:${PORT}`);
