@@ -136,6 +136,12 @@ function extractSize(tv) {
 
   // Common TV model formats
   const patterns = [
+  /*
+    TCL and similar write the size straight against the series letters —
+    50S5L, 55C79L, 65RM7L, 85C89L. The standalone \b\d{2,3}\b fallback below
+    never sees these, because there is no word boundary after the digits.
+  */
+  /\b(\d{2,3})(?:RM|QM|MQ|[CPSVXU])\d/i,
   /(\d{2,3})ELU/i,
   /\bH(\d{2,3})[A-Z]/i,
   /\bLT-(\d{2,3})[A-Z]/i,
@@ -792,6 +798,102 @@ master.sort((a, b) => {
 
   return a.model.localeCompare(b.model);
 });
+
+/*
+ * Чистење пред запишување.
+ *
+ * Автоматски најдените телевизори доаѓаат со името како што го пишува
+ * трговецот, па знае да биде „TCL TCL 50S5L" или моделот да го нема
+ * препознаено бројот на инчи. Двете се поправаат тука, по градењето,
+ * за да не се менува логиката на секој трговец поединечно.
+ */
+let fixedBrand = 0;
+let fixedSize = 0;
+
+for (const tv of master) {
+  if (tv.brand && tv.model) {
+    // „TCL TCL 50S5L" -> „TCL 50S5L"; „SAMSUNG Samsung QE55" -> „SAMSUNG QE55"
+    const stripped = tv.model.replace(
+      new RegExp(`^\\s*${tv.brand.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s+`, "i"),
+      ""
+    ).trim();
+
+    if (stripped && stripped !== tv.model) {
+      tv.model = stripped;
+      fixedBrand += 1;
+    }
+  }
+
+  if (!tv.size) {
+    const retry = extractSize({ model: tv.model, name: `${tv.brand} ${tv.model}` });
+    if (retry) {
+      tv.size = retry;
+      fixedSize += 1;
+    }
+  }
+}
+
+/*
+  Трговците знаат да го стават целото рекламно име како модел
+  („65 Q7S, 4K Ultra HD, 8ms"). Моделите немаат запирки, па сè по првата
+  запирка е маркетинг и се отсекува.
+*/
+let fixedName = 0;
+
+for (const tv of master) {
+  if (tv.model && tv.model.includes(",")) {
+    const short = tv.model.split(",")[0].trim();
+    if (short.length >= 3) {
+      tv.model = short;
+      fixedName += 1;
+    }
+  }
+}
+
+/*
+  Технологијата се погодува од името САМО кај телевизори без specsSource —
+  тие ја носат стандардната „LED" од defaultSpecs(), што е погрешно за
+  QNED/OLED/QLED моделите. Проверените не се допираат.
+*/
+let fixedTech = 0;
+
+/*
+  Без \b на крајот: моделите пишуваат QNED8M, QNED81, OLED55 — по буквите
+  веднаш доаѓа цифра, па \b никогаш не се совпаѓа. Редоследот е важен:
+  „Neo QLED" пред „QLED", инаку второто го фаќа првото.
+*/
+const TECH_FROM_NAME = [
+  [/NEO\s?QLED/i, "Neo QLED"],
+  [/MINI\s?LED|\bMLED/i, "Mini LED"],
+  [/NANO\s?CELL|\bNANO\d/i, "NanoCell"],
+  [/QNED/i, "QNED"],
+  [/OLED/i, "OLED"],
+  [/QLED/i, "QLED"],
+];
+
+for (const tv of master) {
+  if (tv.specsSource) continue;
+
+  const text = `${tv.brand} ${tv.model}`;
+
+  for (const [pattern, label] of TECH_FROM_NAME) {
+    if (pattern.test(text)) {
+      if (tv.technology !== label) {
+        tv.technology = label;
+        fixedTech += 1;
+      }
+      break;
+    }
+  }
+}
+
+if (fixedName || fixedTech) {
+  console.log(`Исчистени: ${fixedName} имиња од реклама, ${fixedTech} технологии од името`);
+}
+
+if (fixedBrand || fixedSize) {
+  console.log(`Исчистени: ${fixedBrand} модели со дуплиран бренд, ${fixedSize} најдени големини`);
+}
 
 /*
  * Save.
