@@ -32,6 +32,11 @@ const NavInner = styled.div`
   gap: 20px;
 
   box-sizing: border-box;
+
+  @media (max-width: 420px) {
+    padding: 0 12px;
+    gap: 8px;
+  }
 `;
 
 const Logo = styled.button`
@@ -53,6 +58,14 @@ const Logo = styled.button`
 const LogoIcon = styled.div`
   width: 44px;
   height: 44px;
+
+  flex-shrink: 0;
+
+  @media (max-width: 420px) {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
 
   display: flex;
   align-items: center;
@@ -90,6 +103,12 @@ const LogoTitle = styled.span`
   font-weight: 800;
 
   letter-spacing: 0.2px;
+
+  white-space: nowrap;
+
+  @media (max-width: 420px) {
+    font-size: 18px;
+  }
 `;
 
 const LogoSubtitle = styled.span`
@@ -102,6 +121,14 @@ const LogoSubtitle = styled.span`
   font-weight: 600;
 
   letter-spacing: 1.3px;
+
+  white-space: nowrap;
+
+  /* На мобилен „Одбери ТВ" го зазема местото и поднасловот се прелеваше
+     во два реда. Логото само по себе е доволно на тесен екран. */
+  @media (max-width: 760px) {
+    display: none;
+  }
 `;
 
 /* ---------- Navigation menu ---------- */
@@ -298,6 +325,40 @@ const MenuToggle = styled.button`
 `;
 
 /*
+  „Одбери ТВ" на мобилен стои покрај копчето за мени, не внатре во него.
+  Тоа е главната работа на сајтот — не смее да бара допир за да се најде.
+*/
+const MobileCta = styled(NavLink)`
+  display: none;
+
+  @media (max-width: 760px) {
+    display: inline-flex;
+    align-items: center;
+
+    margin-right: 8px;
+    padding: 8px 14px;
+
+    color: #ffffff;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    text-decoration: none;
+    white-space: nowrap;
+
+    background: rgba(255, 255, 255, 0.14);
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 999px;
+  }
+
+  @media (max-width: 360px) {
+    padding: 8px 11px;
+    font-size: 12px;
+  }
+`;
+
+/*
   The mobile panel sits in the header's normal flow rather than floating over
   the page, so opening it pushes the hero down instead of covering it.
 */
@@ -418,6 +479,10 @@ const Navigation = () => {
 
         <Nav aria-label="Главна навигација">
           <NavList>{renderItems(NavItem)}</NavList>
+
+          <MobileCta to="/odberi-tv" onClick={() => setMenuOpen(false)}>
+            Одбери ТВ
+          </MobileCta>
 
           <MenuToggle
             ref={toggleRef}

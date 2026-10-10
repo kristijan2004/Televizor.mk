@@ -46,6 +46,65 @@ const SubNavInner = styled.div`
   }
 `;
 
+/*
+  На мобилен филтрите заземаа 187px од 844px екран — банерот и лентата заедно
+  трошеа речиси половина екран пред првиот телевизор. Затоа на тесен екран
+  се собираат зад копчето „Филтри"; на широк екран се како што беа.
+*/
+const Collapsible = styled.div`
+  display: contents;
+
+  @media (max-width: 760px) {
+    display: ${(props) => (props.$open ? "flex" : "none")};
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+`;
+
+const FiltersToggle = styled.button`
+  display: none;
+
+  @media (max-width: 760px) {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+
+    height: 38px;
+    padding: 0 14px;
+
+    border: 1px solid ${(props) => (props.$active ? "#242582" : "#dedee5")};
+    border-radius: 9px;
+
+    background: ${(props) => (props.$active ? "#242582" : "white")};
+    color: ${(props) => (props.$active ? "white" : "#555")};
+
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+
+    cursor: pointer;
+  }
+`;
+
+const ActiveCount = styled.span`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+
+  border-radius: 999px;
+
+  background: ${(props) => (props.$onDark ? "rgba(255,255,255,0.25)" : "#eeeaf2")};
+  color: ${(props) => (props.$onDark ? "#ffffff" : "#242582")};
+
+  font-size: 11px;
+  font-weight: 700;
+`;
+
 const Row = styled.div`
   display: flex;
 
@@ -126,17 +185,6 @@ const SearchInput = styled.input`
   }
 `;
 
-const Divider = styled.div`
-  width: 1px;
-  height: 28px;
-
-  margin: 0 5px;
-
-  background: #e5e5e8;
-
-  flex-shrink: 0;
-`;
-
 const FilterGroup = styled.div`
   display: flex;
 
@@ -149,6 +197,11 @@ const FilterGroup = styled.div`
   flex-wrap: ${(props) => (props.$wrap ? "wrap" : "nowrap")};
 
   row-gap: 8px;
+
+  /* На тесен екран мора да се прелева во нов ред, не настрана. */
+  @media (max-width: 760px) {
+    flex-wrap: wrap;
+  }
 
   flex-shrink: 0;
 `;
@@ -302,6 +355,14 @@ const SubNavigation = () => {
   } = useContext(Context);
 
   const [showAllBrands, setShowAllBrands] = useState(false);
+  const [filtersOpen, setFiltersOpen] = useState(false);
+
+  const activeCount = [
+    brandFilter,
+    sizeFilter,
+    technologyFilter,
+    refreshRateFilter,
+  ].filter(Boolean).length;
 
   const isBrandActive = (brand) =>
     brandFilter.toLowerCase() === brand.toLowerCase();
@@ -353,9 +414,27 @@ const SubNavigation = () => {
             />
           </SearchBox>
 
-          <FilterGroup>
-            <Divider />
+          <FiltersToggle
+            type="button"
+            $active={filtersOpen || activeCount > 0}
+            aria-expanded={filtersOpen}
+            onClick={() => setFiltersOpen((open) => !open)}
+          >
+            Филтри
+            {activeCount > 0 && (
+              <ActiveCount $onDark={filtersOpen || activeCount > 0}>
+                {activeCount}
+              </ActiveCount>
+            )}
+          </FiltersToggle>
 
+          {hasFilters && (
+            <ClearButton onClick={clearFilters}>Исчисти филтри</ClearButton>
+          )}
+        </Row>
+
+        <Collapsible $open={filtersOpen}>
+          <FilterGroup>
             <FilterLabel>Големина</FilterLabel>
 
             {SIZES.map((size) => (
@@ -369,12 +448,7 @@ const SubNavigation = () => {
             ))}
           </FilterGroup>
 
-          {hasFilters && (
-            <ClearButton onClick={clearFilters}>Исчисти филтри</ClearButton>
-          )}
-        </Row>
-
-        <BrandRow>
+          <BrandRow>
           <FilterLabel>Бренд</FilterLabel>
 
           {PRIMARY_BRANDS.map((brand) => (
@@ -407,7 +481,8 @@ const SubNavigation = () => {
               ? "− Помалку"
               : `+ Сите брендови (${MORE_BRANDS.length})`}
           </MoreButton>
-        </BrandRow>
+          </BrandRow>
+        </Collapsible>
       </SubNavInner>
     </SubNav>
   );
