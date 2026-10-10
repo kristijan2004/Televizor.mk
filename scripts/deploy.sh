@@ -32,8 +32,10 @@ rsync -az --delete --info=stats1 \
 
 echo
 echo "→ Проверувам..."
-CODE=$(curl -sS -m 20 --resolve display.mk:80:"${SERVER#*@}" \
-  -o /dev/null -w "%{http_code}" http://display.mk/ || echo "000")
+# Преку Cloudflare, не директно на серверот: портите 80/443 се отворени само
+# за Cloudflare (види scripts/cf-firewall.sh), па директната проверка би
+# истекла иако сајтот работи.
+CODE=$(curl -sS -m 25 -o /dev/null -w "%{http_code}" https://display.mk/ || echo "000")
 
 if [ "$CODE" = "200" ]; then
   echo "✓ Готово — display.mk враќа HTTP 200"
