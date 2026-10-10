@@ -28,11 +28,12 @@
   recommendation from facts and stay silent about everything else.
 */
 
-import masterTvs from "../Data/masterTvs.json";
-import anhochTvs from "../Data/anhochTvs.json";
-import setecTvs from "../Data/setecTvs.json";
-import neptunTvs from "../Data/neptunTvs.json";
-import ddstoreTvs from "../Data/ddstoreTvs.json";
+/*
+  Нема `import masterTvs from ...` намерно. Додека го имаше, целата база
+  (514 телевизори) завршуваше во JS bundle-от на секој посетител — токму тоа
+  што се обидуваме да го тргнеме. Сега податоците се подаваат:
+  серверот ги чита од SQLite и ги предава на buildCatalogue().
+*/
 
 /* ------------------------------------------------------------------ *
  * Column trust
@@ -83,11 +84,9 @@ function isColumnUsable(rows, field) {
   script parses from the product name. A handful of hand-entered rows is
   enough variety to fool the column check, so it is only used for size.
 */
-const placeholderRows = masterTvs.filter((tv) => !tv.specsSource);
-
-const usableColumn = {
-  size: isColumnUsable(placeholderRows, "size"),
-};
+let usableColumn = {};
+let cachedSource = null;
+let cachedCatalogue = null;
 
 function trusts(master, field) {
   return Boolean(master.specsSource) || Boolean(usableColumn[field]);
@@ -97,10 +96,48 @@ function trusts(master, field) {
  * Joining master records to the retailer records
  * ------------------------------------------------------------------ */
 
-const anhochBySlug = new Map(anhochTvs.map((tv) => [tv.slug, tv]));
-const setecByHandle = new Map(setecTvs.map((tv) => [tv.handle, tv]));
-const neptunByUrl = new Map(neptunTvs.map((tv) => [tv.url, tv]));
-const ddstoreByUrl = new Map(ddstoreTvs.map((tv) => [tv.url, tv]));
+let anhochBySlug = new Map();
+let setecByHandle = new Map();
+let neptunByUrl = new Map();
+let ddstoreByUrl = new Map();
+
+/*
+  Мора да се повика еднаш пред buildCatalogue().
+
+  Порано сите овие се градеа при вчитување на модулот, од пет JSON датотеки
+  внесени директно — што значеше дека ~800 KB податоци одат во bundle-от на
+  секој посетител. Сега податоците ги подава тој што ги има: серверот ги чита
+  од диск, тестот исто.
+*/
+export function loadData({
+  masterTvs,
+  anhochTvs = [],
+  setecTvs = [],
+  neptunTvs = [],
+  ddstoreTvs = [],
+}) {
+  if (!Array.isArray(masterTvs)) {
+    throw new TypeError("loadData: masterTvs мора да биде низа");
+  }
+
+  // Телевизорите без specsSource сè уште ги носат почетните вредности на
+  // скриптата, па колоната се проверува само врз нив.
+  usableColumn = {
+    size: isColumnUsable(
+      masterTvs.filter((tv) => !tv.specsSource),
+      "size"
+    ),
+  };
+
+  anhochBySlug = new Map(anhochTvs.map((tv) => [tv.slug, tv]));
+  setecByHandle = new Map(setecTvs.map((tv) => [tv.handle, tv]));
+  neptunByUrl = new Map(neptunTvs.map((tv) => [tv.url, tv]));
+  ddstoreByUrl = new Map(ddstoreTvs.map((tv) => [tv.url, tv]));
+
+  // Влезот се смени — кешот од buildCatalogue повеќе не важи.
+  cachedSource = null;
+  cachedCatalogue = null;
+}
 
 function retailerRecordsFor(stores) {
   const records = [];
@@ -461,14 +498,22 @@ function buildEntry(master) {
   };
 }
 
-let catalogue = null;
-
-export function getCatalogue() {
-  if (!catalogue) {
-    catalogue = masterTvs.map(buildEntry);
+/*
+  `rows` се записите како во masterTvs.json (истиот облик што го враќа
+  SQLite преку API-то). Резултатот се кешира по идентитет на влезот, па
+  повеќе повици со истата низа не ја градат листата одново.
+*/
+export function buildCatalogue(rows) {
+  if (!Array.isArray(rows)) {
+    throw new TypeError("buildCatalogue: потребна е низа телевизори");
   }
 
-  return catalogue;
+  if (cachedSource !== rows) {
+    cachedSource = rows;
+    cachedCatalogue = rows.map(buildEntry);
+  }
+
+  return cachedCatalogue;
 }
 
 /* ------------------------------------------------------------------ *
@@ -479,10 +524,10 @@ export function getCatalogue() {
   Brands worth offering as a filter: enough models behind each one that picking
   it does not empty the results.
 */
-export function getBrandOptions(minimumModels = 5) {
+export function getBrandOptions(catalogue, minimumModels = 5) {
   const counts = new Map();
 
-  for (const tv of getCatalogue()) {
+  for (const tv of catalogue) {
     if (!tv.brand || tv.price === null) {
       continue;
     }
@@ -500,8 +545,8 @@ export function getBrandOptions(minimumModels = 5) {
   Budget brackets taken from the real price distribution rather than invented
   round numbers, so each bracket actually has stock behind it.
 */
-export function getBudgetOptions() {
-  const prices = getCatalogue()
+export function getBudgetOptions(catalogue) {
+  const prices = catalogue
     .map((tv) => tv.price)
     .filter((price) => price !== null)
     .sort((a, b) => a - b);

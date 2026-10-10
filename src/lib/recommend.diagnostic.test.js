@@ -6,11 +6,25 @@ import {
   recommend,
 } from "./recommend";
 
-import { getCatalogue, getBudgetOptions, getBrandOptions } from "./tvSpecs";
+import {
+  loadData,
+  buildCatalogue,
+  getBudgetOptions,
+  getBrandOptions,
+} from "./tvSpecs";
 
-const catalogue = getCatalogue();
-const budgets = getBudgetOptions();
-const brands = getBrandOptions();
+// Тестот смее да ги внесе JSON датотеките директно — тој не оди во bundle-от.
+import masterTvs from "../Data/masterTvs.json";
+import anhochTvs from "../Data/anhochTvs.json";
+import setecTvs from "../Data/setecTvs.json";
+import neptunTvs from "../Data/neptunTvs.json";
+import ddstoreTvs from "../Data/ddstoreTvs.json";
+
+loadData({ masterTvs, anhochTvs, setecTvs, neptunTvs, ddstoreTvs });
+
+const catalogue = buildCatalogue(masterTvs);
+const budgets = getBudgetOptions(catalogue);
+const brands = getBrandOptions(catalogue);
 
 test("catalogue builds and every entry has the shape recommend() expects", () => {
   expect(catalogue.length).toBeGreaterThan(0);

@@ -6,9 +6,12 @@
 //   node import.js
 //   node import.js --db /пат/до/display.db
 
-const fs = require("fs");
-const path = require("path");
-const { openDb, DB_FILE } = require("./db");
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import { openDb, DB_FILE } from "./db.js";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const MASTER = path.join(__dirname, "..", "src", "Data", "masterTvs.json");
 

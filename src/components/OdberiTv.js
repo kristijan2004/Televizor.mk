@@ -1,22 +1,23 @@
-import React, { useMemo, useRef, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 
 import Navigation from "./Navigation";
-import {
-  getBrandOptions,
-  getBudgetOptions,
-  getCatalogue,
-  formatPrice,
-  technologyLabel,
-} from "../lib/tvSpecs";
+import { formatPrice, technologyLabel } from "../lib/tvSpecs";
 import {
   DISTANCE_OPTIONS,
   LIGHT_OPTIONS,
   PRIORITY_OPTIONS,
   USE_OPTIONS,
-  recommend,
 } from "../lib/recommend";
+
+/*
+  Прашањата се тука (не зависат од податоци), но оценувањето е на серверот:
+  за да избере три телевизори мора да ги измери сите 514, а тоа значеше
+  целата база да замине кај посетителот. Сега се праќаат одговорите и се
+  враќаат само трите препораки.
+*/
+const API = process.env.REACT_APP_API_URL || "/api";
 
 /* ------------------------------------------------------------------ *
  * Shared bits
@@ -669,11 +670,7 @@ const SrOnly = styled.div`
 
 const BRAND_ANY = "site";
 
-function buildSteps() {
-  const budgetOptions = getBudgetOptions();
-
-  const brandOptions = getBrandOptions();
-
+function buildSteps(budgetOptions, brandOptions) {
   return [
     {
       key: "distance",
@@ -729,9 +726,31 @@ function buildSteps() {
  * ------------------------------------------------------------------ */
 
 const OdberiTv = () => {
-  const steps = useMemo(buildSteps, []);
+  const [quizOptions, setQuizOptions] = useState({ brands: [], budgets: [] });
 
-  const catalogue = useMemo(getCatalogue, []);
+  useEffect(() => {
+    let cancelled = false;
+
+    fetch(`${API}/quiz-options`)
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(r.status))))
+      .then((d) => {
+        if (!cancelled) {
+          setQuizOptions({ brands: d.brands || [], budgets: d.budgets || [] });
+        }
+      })
+      .catch(() => {
+        /* прашањата работат и без нив — само буџетот и брендовите ќе бидат празни */
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
+  const steps = useMemo(
+    () => buildSteps(quizOptions.budgets, quizOptions.brands),
+    [quizOptions]
+  );
 
   const [stepIndex, setStepIndex] = useState(0);
   const [answers, setAnswers] = useState({});
@@ -825,20 +844,46 @@ const OdberiTv = () => {
     return answer === option.id;
   };
 
-  const result = useMemo(() => {
+  const [result, setResult] = useState(null);
+  const [scoring, setScoring] = useState(false);
+
+  useEffect(() => {
     if (!done) {
-      return null;
+      setResult(null);
+      return undefined;
     }
 
-    return recommend(catalogue, {
-      distance: answers.distance,
-      light: answers.light,
-      use: answers.use,
-      budget: answers.budget,
-      priority: answers.priority,
-      brands: answers.brands || [],
-    });
-  }, [done, answers, catalogue]);
+    let cancelled = false;
+    setScoring(true);
+
+    fetch(`${API}/recommend`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        distance: answers.distance,
+        light: answers.light,
+        use: answers.use,
+        budget: answers.budget,
+        priority: answers.priority,
+        brands: answers.brands || [],
+      }),
+    })
+      .then((r) => (r.ok ? r.json() : Promise.reject(new Error(r.status))))
+      .then((d) => {
+        if (cancelled) return;
+        setResult(d);
+        setScoring(false);
+      })
+      .catch(() => {
+        if (cancelled) return;
+        setResult({ picks: [], blocked: "greska", relax: null });
+        setScoring(false);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [done, answers]);
 
   const restart = () => {
     setAnswers({});
@@ -847,6 +892,24 @@ const OdberiTv = () => {
   };
 
   /* ---------------- Results ---------------- */
+
+  /*
+    Оценувањето сега оди преку мрежа, па има краток момент без резултат.
+    Без ова, екранот би се вратил на прашањата за миг и би трепнал.
+  */
+  if (done && scoring) {
+    return (
+      <PageCont>
+        <Navigation />
+
+        <Shell>
+          <Question>Ги мериме телевизорите...</Question>
+
+          <Hint>Ги споредуваме сите модели со твоите одговори.</Hint>
+        </Shell>
+      </PageCont>
+    );
+  }
 
   if (done && result) {
     const labelFor = (key) => {

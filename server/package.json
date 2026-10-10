@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "description": "API за display.mk — ги служи телевизорите од SQLite (node:sqlite) наместо од JSON во bundle-от",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "import": "node import.js",

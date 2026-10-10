@@ -6,9 +6,32 @@
 //
 //   npm start            (PORT=3001 по дифолт)
 
-const Fastify = require("fastify");
-const cors = require("@fastify/cors");
-const { openDb } = require("./db");
+import Fastify from "fastify";
+import cors from "@fastify/cors";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+import { openDb } from "./db.js";
+
+/*
+  Квизот „Одбери ТВ" се пресметува ТУКА, не во прелистувачот.
+
+  Тој мора да ги оцени сите 514 телевизори за да избере три, па ако работеше
+  кај корисникот, целата база ќе мораше да замине кај него — токму тоа што го
+  тргнавме. Затоа серверот ги вчитува истите модули што ги користеше
+  апликацијата и враќа само готови препораки.
+*/
+import {
+  loadData,
+  buildCatalogue,
+  getBrandOptions,
+  getBudgetOptions,
+} from "../src/lib/tvSpecs.js";
+
+import { recommend } from "../src/lib/recommend.js";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const PORT = Number(process.env.PORT || 3001);
 const HOST = process.env.HOST || "127.0.0.1";
@@ -18,6 +41,32 @@ const MAX_LIMIT = 48;
 const DEFAULT_LIMIT = 12;
 
 const db = openDb();
+
+const DATA_DIR = process.env.DISPLAY_MK_DATA || path.join(__dirname, "..", "src", "Data");
+
+const readJson = (name) => {
+  const file = path.join(DATA_DIR, name);
+  if (!fs.existsSync(file)) {
+    console.warn(`  (нема ${name} — квизот ќе работи со помалку податоци)`);
+    return [];
+  }
+  return JSON.parse(fs.readFileSync(file, "utf8"));
+};
+
+const masterTvs = readJson("masterTvs.json");
+
+loadData({
+  masterTvs,
+  anhochTvs: readJson("anhochTvs.json"),
+  setecTvs: readJson("setecTvs.json"),
+  neptunTvs: readJson("neptunTvs.json"),
+  ddstoreTvs: readJson("ddstoreTvs.json"),
+});
+
+// Се гради еднаш при подигање, не по барање.
+const quizCatalogue = buildCatalogue(masterTvs);
+const quizBrands = getBrandOptions(quizCatalogue);
+const quizBudgets = getBudgetOptions(quizCatalogue);
 
 // Полиња за плочка — тоа што TileCont.js навистина чита.
 const LIST_FIELDS = [
@@ -191,6 +240,57 @@ app.get("/api/tvs/:brand/:model", async (request, reply) => {
   if (!row) return reply.code(404).send({ error: "Телевизорот не е пронајден" });
 
   return hydrate(row);
+});
+
+// Опциите за квизот: брендови со доволно модели, и буџетски опсези
+// извадени од вистинската распределба на цени.
+app.get("/api/quiz-options", async () => ({
+  brands: quizBrands,
+  budgets: quizBudgets,
+  catalogueSize: quizCatalogue.length,
+}));
+
+app.post("/api/recommend", async (request, reply) => {
+  const answers = request.body || {};
+
+  if (typeof answers !== "object" || Array.isArray(answers)) {
+    return reply.code(400).send({ error: "Неисправни одговори" });
+  }
+
+  // Само полињата што квизот ги поставува — ништо друго не се проследува.
+  const safe = {
+    distance: typeof answers.distance === "string" ? answers.distance : null,
+    light: typeof answers.light === "string" ? answers.light : null,
+    use: typeof answers.use === "string" ? answers.use : null,
+    priority: typeof answers.priority === "string" ? answers.priority : null,
+    budget:
+      answers.budget && typeof answers.budget === "object"
+        ? {
+            id: String(answers.budget.id ?? ""),
+            min: Number(answers.budget.min) || 0,
+            max: Number(answers.budget.max) || Number.MAX_SAFE_INTEGER,
+          }
+        : null,
+    brands: Array.isArray(answers.brands)
+      ? answers.brands.filter((b) => typeof b === "string").slice(0, 25)
+      : [],
+  };
+
+  const result = recommend(quizCatalogue, safe);
+
+  // Се враќаат само тројцата избрани, не целиот каталог.
+  return {
+    picks: result.picks.map((pick) => ({
+      kind: pick.kind,
+      reasons: pick.reasons,
+      warnings: pick.warnings,
+      tv: pick.tv,
+    })),
+    blocked: result.blocked,
+    relax: result.relax,
+    consideredCount: result.consideredCount,
+    brandNote: result.brandNote ?? null,
+  };
 });
 
 app.listen({ port: PORT, host: HOST }).then(() => {

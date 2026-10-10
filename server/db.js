@@ -3,13 +3,16 @@
 // Се користи вградениот node:sqlite наместо better-sqlite3: нема нативен
 // модул за компајлирање, па на серверот нема потреба од build алатки.
 
-const { DatabaseSync } = require("node:sqlite");
-const fs = require("fs");
-const path = require("path");
+import { DatabaseSync } from "node:sqlite";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const DB_FILE = process.env.DISPLAY_MK_DB || path.join(__dirname, "display.db");
 
-function openDb({ create = true } = {}) {
+export function openDb({ create = true } = {}) {
   const db = new DatabaseSync(DB_FILE);
 
   // WAL: читањата не се блокираат додека скриптите пишуваат во базата.
@@ -23,4 +26,4 @@ function openDb({ create = true } = {}) {
   return db;
 }
 
-module.exports = { openDb, DB_FILE };
+export { DB_FILE };

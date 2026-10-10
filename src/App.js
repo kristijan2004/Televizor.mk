@@ -4,7 +4,6 @@ import AddTv from "./components/addTv";
 import Compare from "./components/Compare";
 import TvDetails from "./components/TvDetails";
 import { ContextProvider } from "./components/Context";
-import RecommendTv from "./components/RecommendTv";
 import Novosti from "./components/Novosti";
 import NewsArticle from "./components/NewsArticle";
 import Edu from "./components/Edu";
@@ -18,7 +17,6 @@ function App() {
         <Route path="addTv" element={<AddTv />} />
         <Route path="compare" element={<Compare />} />
         <Route path="/tv/:brand/:model" element={<TvDetails />} />
-        <Route path="recommend" element={<RecommendTv />} />
         <Route path="novosti" element={<Novosti />} />
         <Route path="novosti/:slug" element={<NewsArticle />} />
         <Route path="edu" element={<Edu />} />
