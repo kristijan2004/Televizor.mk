@@ -8,6 +8,7 @@ import SubNavigation from "./SubNavigation";
 import TileCont from "./TileCont";
 import QuickCategories from "./QuickCategories";
 import CompareBar from "./CompareBar";
+import Footer from "./Footer";
 import { Context } from "./Context";
 
 const HomeCont = styled.div`
@@ -255,6 +256,8 @@ const Home = () => {
       )}
 
       <CompareBar />
+
+      <Footer />
     </HomeCont>
   );
 };
