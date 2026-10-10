@@ -296,6 +296,73 @@ app.get("/api/tvs/:brand/:model", async (request, reply) => {
   return hydrate(row);
 });
 
+/*
+  Sitemap — се гради од базата при секое барање, па никогаш не застарува.
+  Статична датотека би заостанувала секоја ноќ кога скраперите додаваат
+  телевизори.
+*/
+const xmlEscape = (value) =>
+  String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+
+const SITE = "https://display.mk";
+
+app.get("/sitemap.xml", async (request, reply) => {
+  const today = new Date().toISOString().slice(0, 10);
+
+  const urls = [
+    { loc: `${SITE}/`, priority: "1.0", freq: "daily" },
+    { loc: `${SITE}/odberi-tv`, priority: "0.9", freq: "monthly" },
+    { loc: `${SITE}/novosti`, priority: "0.8", freq: "weekly" },
+    { loc: `${SITE}/edu`, priority: "0.5", freq: "monthly" },
+    { loc: `${SITE}/uslovi`, priority: "0.3", freq: "yearly" },
+  ];
+
+  for (const row of db.prepare("SELECT brand, model FROM tvs ORDER BY brand, model").all()) {
+    urls.push({
+      loc: `${SITE}/tv/${encodeURIComponent(row.brand)}/${encodeURIComponent(row.model)}`,
+      priority: "0.7",
+      freq: "weekly",
+    });
+  }
+
+  // Статиите живеат во news.generated.json, не во базата.
+  try {
+    const news = JSON.parse(
+      fs.readFileSync(path.join(DATA_DIR, "news.generated.json"), "utf8")
+    );
+    for (const article of news.articles || []) {
+      if (!article.slug) continue;
+      urls.push({
+        loc: `${SITE}/novosti/${encodeURIComponent(article.slug)}`,
+        priority: "0.6",
+        freq: "monthly",
+      });
+    }
+  } catch {
+    /* нема статии — sitemap-от сепак важи */
+  }
+
+  const body =
+    `<?xml version="1.0" encoding="UTF-8"?>\n` +
+    `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+    urls
+      .map(
+        (u) =>
+          `  <url><loc>${xmlEscape(u.loc)}</loc><lastmod>${today}</lastmod>` +
+          `<changefreq>${u.freq}</changefreq><priority>${u.priority}</priority></url>`
+      )
+      .join("\n") +
+    `\n</urlset>\n`;
+
+  reply.header("Content-Type", "application/xml; charset=utf-8");
+  reply.header("Cache-Control", "public, max-age=3600");
+  return body;
+});
+
 // Опциите за квизот: брендови со доволно модели, и буџетски опсези
 // извадени од вистинската распределба на цени.
 app.get("/api/quiz-options", async () => ({

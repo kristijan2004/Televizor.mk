@@ -6,6 +6,7 @@ import Navigation from "./Navigation";
 import { Context } from "./Context";
 import InfoTooltip from "./InfoToolTip";
 import { formatSpec } from "../lib/specValue";
+import { usePageMeta } from "../lib/usePageMeta";
 
 const Page = styled.div`
   min-height: 100vh;
@@ -390,6 +391,27 @@ const TvDetails = () => {
       cancelled = true;
     };
   }, [brand, model]);
+
+  /*
+    Насловот и описот се градат од самиот телевизор. Со 530 вакви страници,
+    ова е најголемата разлика за пребарување — дотогаш сите имаа ист наслов.
+  */
+  usePageMeta(
+    tv
+      ? {
+          title: `${tv.brand} ${tv.model} — ${tv.size}" ${tv.technology || ""} | Display.mk`.replace(
+            /\s+/g,
+            " "
+          ),
+          description:
+            `${tv.brand} ${tv.model}: ${tv.size} инчи, ${tv.technology || "телевизор"}` +
+            `${tv.resolution ? ", " + tv.resolution : ""}` +
+            `${tv.refreshRate ? ", " + tv.refreshRate + "Hz" : ""}` +
+            `. Спецификации и каде е достапен во Македонија.`,
+          path: `/tv/${encodeURIComponent(brand)}/${encodeURIComponent(model)}`,
+        }
+      : { title: "Display.mk" }
+  );
 
   if (loading) {
     return (

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Navigation from "./Navigation";
+import { usePageMeta } from "../lib/usePageMeta";
 
 const PageCont = styled.div`
   min-height: 100vh;
@@ -68,8 +69,16 @@ const List = styled.ul`
   line-height: 1.65;
 `;
 
-const Uslovi = () => (
-  <PageCont>
+const Uslovi = () => {
+  usePageMeta({
+    title: "Услови за користење | Display.mk",
+    description:
+      "Услови за користење на Display.mk — точност на податоците и правила за автоматско преземање.",
+    path: "/uslovi",
+  });
+
+  return (
+    <PageCont>
     <Navigation />
 
     <Inner>
@@ -145,8 +154,9 @@ const Uslovi = () => (
           преку страницата за контакт.
         </Text>
       </Card>
-    </Inner>
-  </PageCont>
-);
+      </Inner>
+    </PageCont>
+  );
+};
 
 export default Uslovi;

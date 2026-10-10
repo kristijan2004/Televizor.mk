@@ -1,3 +1,8 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+
+# Нема смисла да се индексираат — API-то враќа JSON, не страници.
+Disallow: /api/
+
+Sitemap: https://display.mk/sitemap.xml

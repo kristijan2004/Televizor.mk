@@ -9,6 +9,7 @@ import TileCont from "./TileCont";
 import QuickCategories from "./QuickCategories";
 import CompareBar from "./CompareBar";
 import Footer from "./Footer";
+import { usePageMeta } from "../lib/usePageMeta";
 import { Context } from "./Context";
 
 const HomeCont = styled.div`
@@ -187,6 +188,13 @@ const MoreButton = styled.button`
 
 const Home = () => {
   const { total, loadMore, sortBy, setSortBy, hasMore } = useContext(Context);
+  usePageMeta({
+    title: "Display.mk",
+    description:
+      "Спореди телевизори достапни во Македонија — спецификации, големини и технологии на едно место.",
+    path: "/",
+  });
+
 
   const location = useLocation();
 

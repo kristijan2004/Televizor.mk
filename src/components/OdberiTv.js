@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 
 import Navigation from "./Navigation";
+import { usePageMeta } from "../lib/usePageMeta";
 import { formatPrice, technologyLabel } from "../lib/tvSpecs";
 import {
   DISTANCE_OPTIONS,
@@ -727,6 +728,14 @@ function buildSteps(budgetOptions, brandOptions) {
 
 const OdberiTv = () => {
   const [quizOptions, setQuizOptions] = useState({ brands: [], budgets: [] });
+
+  usePageMeta({
+    title: "Одбери ТВ — препорака за твојата соба | Display.mk",
+    description:
+      "Одговори на шест прашања и добиј три телевизори што одговараат на твојата соба, навики и буџет.",
+    path: "/odberi-tv",
+  });
+
 
   useEffect(() => {
     let cancelled = false;
