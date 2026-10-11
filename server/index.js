@@ -14,6 +14,8 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 
 import { openDb } from "./db.js";
+import { hydrateRow } from "./tvRows.js";
+import adminPlugin from "./admin.js";
 
 /*
   Квизот „Одбери ТВ" се пресметува ТУКА, не во прелистувачот.
@@ -75,32 +77,8 @@ const LIST_FIELDS = [
   "refreshRate", "vrr", "allm", "image", "stores",
 ];
 
-const JSON_FIELDS = ["hdrFormats", "stores"];
-const BOOL_FIELDS = [
-  "hdr", "dolbyVision", "vrr", "allm", "dolbyAtmos", "freeSync", "gSync",
-];
-
-// SQLite нема true/false ниту листи — се враќаат во обликот што го чека UI.
-function hydrate(row) {
-  if (!row) return null;
-  const out = { ...row };
-
-  for (const f of JSON_FIELDS) {
-    if (f in out) {
-      try {
-        out[f] = JSON.parse(out[f] ?? "null");
-      } catch {
-        out[f] = f === "stores" ? {} : [];
-      }
-    }
-  }
-
-  for (const f of BOOL_FIELDS) {
-    if (f in out) out[f] = out[f] === 1;
-  }
-
-  return out;
-}
+// Истата логика ја користат import.js и admin.js, тука само преименувана.
+const hydrate = hydrateRow;
 
 const SORTS = {
   newest: "year DESC, brand ASC, model ASC",
@@ -153,6 +131,12 @@ await app.register(rateLimit, {
     message: `Премногу барања. Пробај повторно за ${context.after}.`,
   }),
 });
+
+/*
+  Админ панелот е посебен плагин: сопствена автентикација, сопствени рути,
+  регистриран со префикс /api/admin. Не е во јавната навигација.
+*/
+await app.register(adminPlugin, { prefix: "/api/admin", db, dataDir: DATA_DIR });
 
 app.get("/api/health", async () => {
   const { n } = db.prepare("SELECT COUNT(*) AS n FROM tvs").get();
@@ -431,8 +415,25 @@ const STATIC_META = {
     title: "Display.mk",
     description: DEFAULT_META.description,
   },
+  /*
+    Не е интересна за пребарување (сопствена најава), но МОРА да стои тука
+    или ќе падне во истата замка — види коментарот под metaForPath().
+  */
+  "/admin": {
+    title: "Административен панел | Display.mk",
+    description: DEFAULT_META.description,
+    noindex: true,
+  },
 };
 
+/*
+  Непознат пат -> { found: true } со општ опис, НЕ 404.
+
+  Порано секој пат што не е во STATIC_META и не се совпаѓа со /tv/ или
+  /novosti/ паѓаше во 404 — а тоа ги погоди /compare и /addTv штом се
+  додадоа во App.js без да се додадат и тука. 404 треба да значи „овој
+  телевизор/статија навистина не постои", не „не знам за овој пат".
+*/
 function metaForPath(pathname) {
   if (STATIC_META[pathname]) return { ...STATIC_META[pathname], found: true };
 
@@ -476,7 +477,9 @@ function metaForPath(pathname) {
     return { ...DEFAULT_META, found: false };
   }
 
-  return { ...DEFAULT_META, found: false };
+  // Непознат пат, но постои во App.js (нов route некој ден) — 200, општ опис,
+  // наместо 404. Само /tv/ и /novosti/ смеат вистински да „не постојат".
+  return { ...DEFAULT_META, found: true };
 }
 
 app.get("/__html/*", async (request, reply) => {
@@ -514,6 +517,7 @@ app.get("/__html/*", async (request, reply) => {
         `<meta property="og:description" content="${escAttr(meta.description)}"/>` +
         `<meta property="og:url" content="${escAttr(url)}"/>` +
         `<meta name="twitter:card" content="summary"/>` +
+        (meta.noindex ? `<meta name="robots" content="noindex, nofollow"/>` : "") +
         `</head>`
     );
 

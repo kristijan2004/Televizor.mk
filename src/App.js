@@ -9,6 +9,7 @@ import NewsArticle from "./components/NewsArticle";
 import Edu from "./components/Edu";
 import OdberiTv from "./components/OdberiTv";
 import Uslovi from "./components/Uslovi";
+import Admin from "./components/Admin";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="edu" element={<Edu />} />
         <Route path="odberi-tv" element={<OdberiTv />} />
         <Route path="uslovi" element={<Uslovi />} />
+        <Route path="admin" element={<Admin />} />
       </Routes>
     </ContextProvider>
   );

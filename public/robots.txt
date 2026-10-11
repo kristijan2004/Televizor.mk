@@ -5,4 +5,7 @@ Allow: /
 # Нема смисла да се индексираат — API-то враќа JSON, не страници.
 Disallow: /api/
 
+# Административен панел — заштитен со најава, не треба во Google.
+Disallow: /admin
+
 Sitemap: https://display.mk/sitemap.xml

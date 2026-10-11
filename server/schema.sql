@@ -44,3 +44,43 @@ CREATE INDEX IF NOT EXISTS idx_tvs_size        ON tvs(size);
 CREATE INDEX IF NOT EXISTS idx_tvs_technology  ON tvs(technology);
 CREATE INDEX IF NOT EXISTS idx_tvs_year        ON tvs(year);
 CREATE INDEX IF NOT EXISTS idx_tvs_brand_model ON tvs(brand, model);
+
+-- Админ панел: еден администратор, сесии и историја на промени.
+--
+-- „Еден администратор" се спроведува надвор од базата — нема рута за
+-- регистрација, create-admin.js секогаш врши upsert на истото корисничко
+-- име. Табелата сепак дозволува повеќе редови, за да не треба промена на
+-- шемата ако некогаш затреба втор администратор.
+
+CREATE TABLE IF NOT EXISTS admin_users (
+  id            INTEGER PRIMARY KEY AUTOINCREMENT,
+  username      TEXT UNIQUE NOT NULL,
+  password_hash TEXT NOT NULL,
+  created_at    INTEGER NOT NULL,
+  updated_at    INTEGER NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS admin_sessions (
+  id          TEXT PRIMARY KEY,
+  user_id     INTEGER NOT NULL,
+  csrf_token  TEXT NOT NULL,
+  created_at  INTEGER NOT NULL,
+  expires_at  INTEGER NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS idx_admin_sessions_expires ON admin_sessions(expires_at);
+
+-- brand/model се чуваат директно (не само tv_id) за да историјата остане
+-- читлива дури и ако записот подоцна исчезне.
+CREATE TABLE IF NOT EXISTS admin_audit_log (
+  id          INTEGER PRIMARY KEY AUTOINCREMENT,
+  tv_id       TEXT NOT NULL,
+  brand       TEXT,
+  model       TEXT,
+  changed_by  TEXT NOT NULL,
+  changed_at  INTEGER NOT NULL,
+  diff        TEXT NOT NULL
+);
+
+CREATE INDEX IF NOT EXISTS idx_admin_audit_tv ON admin_audit_log(tv_id);
+CREATE INDEX IF NOT EXISTS idx_admin_audit_changed_at ON admin_audit_log(changed_at DESC);

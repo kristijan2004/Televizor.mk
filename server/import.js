@@ -10,44 +10,11 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { openDb, DB_FILE } from "./db.js";
+import { COLUMNS, toCell } from "./tvRows.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const MASTER = path.join(__dirname, "..", "src", "Data", "masterTvs.json");
-
-// Полиња што се чуваат како JSON текст (листи/објекти).
-const JSON_FIELDS = ["hdrFormats", "stores"];
-
-// Полиња што во JSON се true/false, а во SQLite се 1/0.
-const BOOL_FIELDS = [
-  "hdr", "dolbyVision", "vrr", "allm",
-  "dolbyAtmos", "freeSync", "gSync",
-];
-
-const COLUMNS = [
-  "id", "brand", "model", "size", "technology", "resolution", "refreshRate",
-  "year", "os", "hdr", "dolbyVision", "hdmi", "usb", "vrr", "allm",
-  "pictureProcessor", "hdrFormats", "brightness", "audioPower",
-  "audioChannels", "dolbyAtmos", "freeSync", "gSync", "image", "stores",
-  "specsSource",
-];
-
-function toCell(field, value) {
-  if (JSON_FIELDS.includes(field)) {
-    return JSON.stringify(value ?? (field === "stores" ? {} : []));
-  }
-
-  if (BOOL_FIELDS.includes(field)) {
-    return value === true ? 1 : 0;
-  }
-
-  if (value === undefined || value === null) return null;
-
-  // node:sqlite прима само null/number/string/bigint/Buffer.
-  if (typeof value === "object") return JSON.stringify(value);
-
-  return value;
-}
 
 function main() {
   if (!fs.existsSync(MASTER)) {
