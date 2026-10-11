@@ -5,7 +5,7 @@ date: "2026-09-30"
 category: "Совети"
 excerpt: "Нема победник во оваа расправа — има само погрешен избор за конкретна соба. Еве како да откриеш која технологија ти треба за пет минути."
 author: "Редакција на Телевизор.мк"
-image: "/images/novosti/oled-vs-miniled.jpg"
+image: "/images/edu/oled-vs-miniled.jpg"
 readTime: 6
 featured: false
 ---
