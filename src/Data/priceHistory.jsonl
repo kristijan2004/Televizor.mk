@@ -620,3 +620,129 @@
 {"at":"2026-10-07T20:26:44.951Z","type":"added","id":"xiaomi-s-mini-led-65","store":"Anhoch","brand":"XIAOMI","model":"S Mini LED 65","to":39980}
 {"at":"2026-10-07T20:26:44.951Z","type":"added","id":"xiaomi-s-mini-led-75","store":"Anhoch","brand":"XIAOMI","model":"S Mini LED 75","to":49980}
 {"at":"2026-10-07T20:26:44.951Z","type":"added","id":"xiaomi-tv-a","store":"Anhoch","brand":"XIAOMI","model":"TV A","to":22980}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-qe55ls03fauxxh","store":"Neptun","brand":"SAMSUNG","model":"QE55LS03FAUXXH","from":45995,"to":75995,"pct":65.22}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"philips-32phs6000","store":"Setec","brand":"PHILIPS","model":"32PHS6000","from":11999,"to":7995,"pct":-33.37}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"hisense-55e7s","store":"Neptun","brand":"HISENSE","model":"55E7S","from":20999,"to":25499,"pct":21.43}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"tcl-32s5l","store":"Setec","brand":"TCL","model":"32S5L","from":9999,"to":11999,"pct":20}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-mre65r85hauxxh","store":"Neptun","brand":"SAMSUNG","model":"MRE65R85HAUXXH","from":99999,"to":79999,"pct":-20}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-ue-75-u8072f-uxxh","store":"Neptun","brand":"SAMSUNG","model":"UE 75 U8072F UXXH","from":42999,"to":34995,"pct":-18.61}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-qe77s90hatxxh","store":"Neptun","brand":"SAMSUNG","model":"QE77S90HATXXH","from":169999,"to":139999,"pct":-17.65}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-qe65ls03fauxxh","store":"Neptun","brand":"SAMSUNG","model":"QE65LS03FAUXXH","from":59995,"to":69999,"pct":16.67}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"hisense-65e7s","store":"Neptun","brand":"HISENSE","model":"65E7S","from":30999,"to":35999,"pct":16.13}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"tcl-55t69c","store":"Neptun","brand":"TCL","model":"55T69C","from":19999,"to":22999,"pct":15}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-mre55r85hauxxh","store":"Neptun","brand":"SAMSUNG","model":"MRE55R85HAUXXH","from":69999,"to":59999,"pct":-14.29}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-qe65qn900-atxxh","store":"Neptun","brand":"SAMSUNG","model":"QE65QN900 ATXXH","from":99995,"to":85995,"pct":-14}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"hisense-55e7s-pro","store":"Neptun","brand":"HISENSE","model":"55E7S PRO","from":28999,"to":32999,"pct":13.79}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-qe55qn70hauxxh","store":"Setec","brand":"SAMSUNG","model":"QE55QN70HAUXXH","from":46999,"to":40999,"pct":-12.77}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-qe65qn80hauxxh","store":"Neptun","brand":"SAMSUNG","model":"QE65QN80HAUXXH","from":78999,"to":68999,"pct":-12.66}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-qe55s90haexxh","store":"Neptun","brand":"SAMSUNG","model":"QE55S90HAEXXH","from":94999,"to":82999,"pct":-12.63}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"lg-65qned70b3c","store":"Neptun","brand":"LG","model":"65QNED70B3C","from":41999,"to":36999,"pct":-11.91}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"tcl-55p89k","store":"Neptun","brand":"TCL","model":"55P89K","from":25999,"to":28999,"pct":11.54}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-ue85m70hauxxh","store":"Neptun","brand":"SAMSUNG","model":"UE85M70HAUXXH","from":82999,"to":73999,"pct":-10.84}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"lg-43-nu850-b3la","store":"Neptun","brand":"LG","model":"43 NU850 B3LA","from":20999,"to":22999,"pct":9.52}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"lg-85-qned70-b3a","store":"Neptun","brand":"LG","model":"85 QNED70 B3A","from":76999,"to":69999,"pct":-9.09}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-ue65m80hauxxh","store":"Neptun","brand":"SAMSUNG","model":"UE65M80HAUXXH","from":39999,"to":36499,"pct":-8.75}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-qe55q7faauxxh","store":"Neptun","brand":"SAMSUNG","model":"QE55Q7FAAUXXH","from":24995,"to":22995,"pct":-8}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-qe65q7faauxxh","store":"Neptun","brand":"SAMSUNG","model":"QE65Q7FAAUXXH","from":37995,"to":34995,"pct":-7.9}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-ue85m80hauxxh","store":"Neptun","brand":"SAMSUNG","model":"UE85M80HAUXXH","from":89999,"to":82999,"pct":-7.78}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"lg-65nano81a6a","store":"Neptun","brand":"LG","model":"65NANO81A6A","from":26999,"to":24995,"pct":-7.42}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-qe55qn70hauxxh","store":"Neptun","brand":"SAMSUNG","model":"QE55QN70HAUXXH","from":40999,"to":37999,"pct":-7.32}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"beko-65bcq8000","store":"Neptun","brand":"BEKO","model":"65BCQ8000","from":27999,"to":29999,"pct":7.14}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"lg-75-nu800-b3la","store":"Neptun","brand":"LG","model":"75 NU800 B3LA","from":44999,"to":41999,"pct":-6.67}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-qe75qn70hauxxh","store":"Neptun","brand":"SAMSUNG","model":"QE75QN70HAUXXH","from":74999,"to":69999,"pct":-6.67}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"lg-65-g61-lw","store":"Neptun","brand":"LG","model":"65 G61 LW","from":149999,"to":139999,"pct":-6.67}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-ue85u8072huxxh","store":"Neptun","brand":"SAMSUNG","model":"UE85U8072HUXXH","from":77999,"to":72999,"pct":-6.41}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"lg-55c51la","store":"Neptun","brand":"LG","model":"55C51LA","from":49995,"to":46995,"pct":-6}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-ue55u8072huxxh","store":"Neptun","brand":"SAMSUNG","model":"UE55U8072HUXXH","from":24999,"to":23499,"pct":-6}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-qe55qn80hauxxh","store":"Neptun","brand":"SAMSUNG","model":"QE55QN80HAUXXH","from":49999,"to":52999,"pct":6}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-ue85u8072fuxxh","store":"Neptun","brand":"SAMSUNG","model":"UE85U8072FUXXH","from":69995,"to":65995,"pct":-5.71}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"lg-55qned81b3a","store":"Neptun","brand":"LG","model":"55QNED81B3A","from":34999,"to":36999,"pct":5.71}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-ue75m80hauxxh","store":"Neptun","brand":"SAMSUNG","model":"UE75M80HAUXXH","from":59999,"to":56999,"pct":-5}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"lg-55qned83b3a","store":"Neptun","brand":"LG","model":"55QNED83B3A","from":41000,"to":38999,"pct":-4.88}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-qe55qn90fatxxh","store":"Neptun","brand":"SAMSUNG","model":"QE55QN90FATXXH","from":61995,"to":58995,"pct":-4.84}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"tcl-55p69k","store":"Neptun","brand":"TCL","model":"55P69K","from":20999,"to":21999,"pct":4.76}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"fuego-55ch844gtv","store":"Neptun","brand":"FUEGO","model":"55CH844GTV","from":21999,"to":20999,"pct":-4.55}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-ue50u8072huxxh","store":"Neptun","brand":"SAMSUNG","model":"UE50U8072HUXXH","from":21999,"to":20999,"pct":-4.55}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-ue98u9072huxxh","store":"Neptun","brand":"SAMSUNG","model":"UE98U9072HUXXH","from":132999,"to":126999,"pct":-4.51}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"tcl-75p79l","store":"Neptun","brand":"TCL","model":"75P79L","from":46999,"to":44999,"pct":-4.26}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-ue65u8072huxxh","store":"Neptun","brand":"SAMSUNG","model":"UE65U8072HUXXH","from":35499,"to":33999,"pct":-4.23}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"lg-55ua75003la","store":"Neptun","brand":"LG","model":"55UA75003LA","from":23999,"to":24999,"pct":4.17}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"hisense-40a4s","store":"Neptun","brand":"HISENSE","model":"40A4S","from":12999,"to":12499,"pct":-3.85}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-ue75m70hauxxh","store":"Neptun","brand":"SAMSUNG","model":"UE75M70HAUXXH","from":51999,"to":49999,"pct":-3.85}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"fuego-50elu720gtv","store":"Neptun","brand":"FUEGO","model":"50ELU720GTV","from":14499,"to":13999,"pct":-3.45}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-ue55m80hauxxh","store":"Neptun","brand":"SAMSUNG","model":"UE55M80HAUXXH","from":29999,"to":28999,"pct":-3.33}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-mre65r95hatxxh","store":"Neptun","brand":"SAMSUNG","model":"MRE65R95HATXXH","from":149999,"to":144999,"pct":-3.33}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"lg-55nano80a3b","store":"Neptun","brand":"LG","model":"55NANO80A3B","from":31999,"to":32999,"pct":3.13}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-ue75u8072huxxh","store":"Neptun","brand":"SAMSUNG","model":"UE75U8072HUXXH","from":48499,"to":46999,"pct":-3.09}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-ue65m70hauxxh","store":"Neptun","brand":"SAMSUNG","model":"UE65M70HAUXXH","from":36999,"to":35999,"pct":-2.7}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"lg-75nano80a3b","store":"Neptun","brand":"LG","model":"75NANO80A3B","from":62999,"to":64599,"pct":2.54}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"lg-65nano80a3b","store":"Neptun","brand":"LG","model":"65NANO80A3B","from":41999,"to":42999,"pct":2.38}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"lg-55qned80a3a","store":"Neptun","brand":"LG","model":"55QNED80A3A","from":42999,"to":43999,"pct":2.33}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"samsung-qe65qn70hauxxh","store":"Neptun","brand":"SAMSUNG","model":"QE65QN70HAUXXH","from":53999,"to":52999,"pct":-1.85}
+{"at":"2026-10-10T19:23:00.884Z","type":"price","id":"lg-75qned86a3a","store":"Neptun","brand":"LG","model":"75QNED86A3A","from":62995,"to":61995,"pct":-1.59}
+{"at":"2026-10-10T19:23:00.884Z","type":"stock","id":"hisense-50a6q","store":"Setec","brand":"HISENSE","model":"50A6Q","from":true,"to":false}
+{"at":"2026-10-10T19:23:00.884Z","type":"stock","id":"hisense-65u7q-pro","store":"Setec","brand":"HISENSE","model":"65U7Q PRO","from":true,"to":false}
+{"at":"2026-10-10T19:23:00.884Z","type":"stock","id":"philips-32phs6000","store":"Setec","brand":"PHILIPS","model":"32PHS6000","from":true,"to":false}
+{"at":"2026-10-10T19:23:00.884Z","type":"stock","id":"samsung-qe32ls03cbuxxh","store":"Setec","brand":"SAMSUNG","model":"QE32LS03CBUXXH","from":true,"to":false}
+{"at":"2026-10-10T19:23:00.884Z","type":"stock","id":"samsung-qe65qn70fauxxh","store":"Setec","brand":"SAMSUNG","model":"QE65QN70FAUXXH","from":true,"to":false}
+{"at":"2026-10-10T19:23:00.884Z","type":"stock","id":"samsung-qe75qn70fauxxh","store":"Setec","brand":"SAMSUNG","model":"QE75QN70FAUXXH","from":true,"to":false}
+{"at":"2026-10-10T19:23:00.884Z","type":"stock","id":"sony-k77xr8ab-cei","store":"Setec","brand":"SONY","model":"K77XR8AB.CEI","from":true,"to":false}
+{"at":"2026-10-10T19:23:00.884Z","type":"stock","id":"tcl-32s5l","store":"Setec","brand":"TCL","model":"32S5L","from":true,"to":false}
+{"at":"2026-10-10T19:23:00.884Z","type":"stock","id":"tcl-75v6c","store":"Setec","brand":"TCL","model":"75V6C","from":true,"to":false}
+{"at":"2026-10-10T19:23:00.884Z","type":"added","id":"beko-65-biq-8000","store":"Neptun","brand":"BEKO","model":"65 BIQ 8000","to":32999}
+{"at":"2026-10-10T19:23:00.884Z","type":"added","id":"hisense-65-q7s-4k-ultra-hd-8ms","store":"Neptun","brand":"HISENSE","model":"65 Q7S, 4K Ultra HD, 8ms","to":36999}
+{"at":"2026-10-10T19:23:00.884Z","type":"added","id":"lg-43-qned81-b3c","store":"Neptun","brand":"LG","model":"43 QNED81 B3C","to":28999}
+{"at":"2026-10-10T19:23:00.884Z","type":"added","id":"lg-50-nu800-b3lc-4k-ultra-hd","store":"Neptun","brand":"LG","model":"50 NU800 B3LC, 4K Ultra HD","to":21999}
+{"at":"2026-10-10T19:23:00.884Z","type":"added","id":"lg-55-nu850-b3la-4k-ultra-hd","store":"Neptun","brand":"LG","model":"55 NU850 B3LA, 4K Ultra HD","to":30999}
+{"at":"2026-10-10T19:23:00.884Z","type":"added","id":"lg-65-nu800-b3la","store":"Neptun","brand":"LG","model":"65 NU800 B3LA","to":31999}
+{"at":"2026-10-10T19:23:00.884Z","type":"added","id":"lg-65-qned-87b3a","store":"Neptun","brand":"LG","model":"65 QNED 87B3A","to":69999}
+{"at":"2026-10-10T19:23:00.884Z","type":"added","id":"lg-65-qned8m-b6c-4k-ultra-hd-120hz","store":"Neptun","brand":"LG","model":"65 QNED8M B6C, 4K Ultra HD, 120Hz","to":56999}
+{"at":"2026-10-10T19:23:00.884Z","type":"added","id":"lg-86-qned87-b3a-4k-ultra-hd","store":"Neptun","brand":"LG","model":"86 QNED87 B3A, 4K Ultra HD","to":149999}
+{"at":"2026-10-10T19:23:00.884Z","type":"added","id":"sony-k55a65pb-cei","store":"Setec","brand":"SONY","model":"K55A65PB.CEI","to":74999}
+{"at":"2026-10-10T19:23:00.884Z","type":"added","id":"sony-k65a65pb-cei","store":"Setec","brand":"SONY","model":"K65A65PB.CEI","to":88999}
+{"at":"2026-10-10T19:23:00.884Z","type":"added","id":"tcl-55c69k","store":"Setec","brand":"TCL","model":"55C69K","to":34999}
+{"at":"2026-10-10T19:23:00.884Z","type":"added","id":"tcl-65-c7l-144hz-b-o","store":"Neptun","brand":"TCL","model":"65 C7L 144Hz B&O","to":62999}
+{"at":"2026-10-10T19:23:00.884Z","type":"added","id":"tcl-tcl-50s5l","store":"Setec","brand":"TCL","model":"TCL 50S5L","to":20999}
+{"at":"2026-10-10T19:23:00.884Z","type":"added","id":"tcl-tcl-55c79l","store":"Setec","brand":"TCL","model":"TCL 55C79L","to":50999}
+{"at":"2026-10-10T19:23:00.884Z","type":"added","id":"tcl-tcl-55p6l","store":"Setec","brand":"TCL","model":"TCL 55P6L","to":25999}
+{"at":"2026-10-10T19:23:00.884Z","type":"added","id":"tcl-tcl-55p89l","store":"Setec","brand":"TCL","model":"TCL 55P89L","to":32999}
+{"at":"2026-10-10T19:23:00.884Z","type":"added","id":"tcl-tcl-65c89l","store":"Setec","brand":"TCL","model":"TCL 65C89L","to":82999}
+{"at":"2026-10-10T19:23:00.884Z","type":"added","id":"tcl-tcl-65rm7l","store":"Setec","brand":"TCL","model":"TCL 65RM7L","to":72999}
+{"at":"2026-10-10T19:23:00.884Z","type":"added","id":"tcl-tcl-75c89l","store":"Setec","brand":"TCL","model":"TCL 75C89L","to":103999}
+{"at":"2026-10-10T19:23:00.884Z","type":"added","id":"tcl-tcl-75rm7l","store":"Setec","brand":"TCL","model":"TCL 75RM7L","to":89999}
+{"at":"2026-10-10T19:23:00.884Z","type":"added","id":"tcl-tcl-85c89l","store":"Setec","brand":"TCL","model":"TCL 85C89L","to":129999}
+{"at":"2026-10-10T19:23:00.884Z","type":"added","id":"tcl-tcl-85rm7l","store":"Setec","brand":"TCL","model":"TCL 85RM7L","to":114999}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"hisense-100e7q-pro","store":"Setec","brand":"HISENSE","model":"100E7Q PRO","from":104995}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"hisense-50e7q","store":"Setec","brand":"HISENSE","model":"50E7Q","from":18995}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"hisense-65-q7s","store":"Neptun","brand":"HISENSE","model":"65 Q7S","from":36999}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"hisense-75a6q","store":"Setec","brand":"HISENSE","model":"75A6Q","from":30995}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"lg-100qned87b3","store":"Neptun","brand":"LG","model":"100QNED87B3","from":239999}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"lg-43nano81a3a","store":"Neptun","brand":"LG","model":"43NANO81A3A","from":15995}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"lg-50-nu800-b3lc","store":"Neptun","brand":"LG","model":"50 NU800 B3LC","from":21999}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"lg-55qned70a6a","store":"Neptun","brand":"LG","model":"55QNED70A6A","from":22995}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"lg-65-qned8m-b6c","store":"Neptun","brand":"LG","model":"65 QNED8M B6C","from":56999}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"lg-65qned70a6a","store":"Neptun","brand":"LG","model":"65QNED70A6A","from":29995}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"lg-65qned92a6a","store":"Neptun","brand":"LG","model":"65QNED92A6A","from":39995}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"lg-75nano82a6b","store":"Neptun","brand":"LG","model":"75NANO82A6B","from":39999}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"lg-86-qned87-b3a","store":"Neptun","brand":"LG","model":"86 QNED87 B3A","from":149999}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"philips-43pus8079","store":"Setec","brand":"PHILIPS","model":"43PUS8079","from":14995}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"philips-55pus7609","store":"Setec","brand":"PHILIPS","model":"55PUS7609","from":18995}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"philips-75pus7009","store":"Setec","brand":"PHILIPS","model":"75PUS7009","from":37995}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"samsung-qe43q7faauxxh","store":"Neptun","brand":"SAMSUNG","model":"QE43Q7FAAUXXH","from":20999}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"samsung-qe55q8faauxxh","store":"Neptun","brand":"SAMSUNG","model":"QE55Q8FAAUXXH","from":27995}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"samsung-qe75q7faauxxh","store":"Neptun","brand":"SAMSUNG","model":"QE75Q7FAAUXXH","from":54995}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"samsung-qe85q60dauxxh","store":"Setec","brand":"SAMSUNG","model":"QE85Q60DAUXXH","from":59995}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"tcl-115x955","store":"Setec","brand":"TCL","model":"115X955","from":399995}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"tcl-43s5k","store":"Neptun","brand":"TCL","model":"43S5K","from":14999}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"tcl-50p61k","store":"Setec","brand":"TCL","model":"50P61K","from":17995}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"tcl-55p655","store":"Setec","brand":"TCL","model":"55P655","from":16995}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"tcl-65p89k","store":"Neptun","brand":"TCL","model":"65P89K","from":34999}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"tcl-75c6k","store":"Neptun","brand":"TCL","model":"75C6K","from":46995}
+{"at":"2026-10-10T19:23:00.884Z","type":"removed","id":"telefunken-55uak9005bx","store":"Setec","brand":"TELEFUNKEN","model":"55UAK9005BX","from":16995}
+{"at":"2026-10-11T01:32:41.640Z","type":"price","id":"hisense-43a6s","store":"Neptun","brand":"HISENSE","model":"43A6S","from":13499,"to":17999,"pct":33.34}
+{"at":"2026-10-11T01:32:41.640Z","type":"price","id":"hisense-65a6s","store":"Neptun","brand":"HISENSE","model":"65A6S","from":27999,"to":33999,"pct":21.43}
+{"at":"2026-10-11T01:32:41.640Z","type":"price","id":"hisense-55a6s","store":"Neptun","brand":"HISENSE","model":"55A6S","from":19999,"to":23999,"pct":20}
+{"at":"2026-10-11T01:32:41.640Z","type":"price","id":"samsung-qe65s90haexxh","store":"Neptun","brand":"SAMSUNG","model":"QE65S90HAEXXH","from":92999,"to":78999,"pct":-15.05}
+{"at":"2026-10-11T01:32:41.640Z","type":"price","id":"tcl-65c69k","store":"Neptun","brand":"TCL","model":"65C69K","from":36999,"to":39999,"pct":8.11}
+{"at":"2026-10-11T01:32:41.640Z","type":"price","id":"samsung-ue55m70hauxxh","store":"Neptun","brand":"SAMSUNG","model":"UE55M70HAUXXH","from":28999,"to":27999,"pct":-3.45}
+{"at":"2026-10-11T01:32:41.640Z","type":"removed","id":"hisense-hisense-55e8q","store":"Setec","brand":"HISENSE","model":"55E8Q","from":34999}

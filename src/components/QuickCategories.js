@@ -28,10 +28,10 @@ const Categories = styled.div`
 const Category = styled.button`
   height: 40px;
   padding: 0 18px;
-  border: 1px solid ${(props) => (props.active ? "#242582" : "#dedee5")};
+  border: 1px solid ${(props) => (props.$active ? "#242582" : "#dedee5")};
   border-radius: 9px;
-  background: ${(props) => (props.active ? "#242582" : "white")};
-  color: ${(props) => (props.active ? "white" : "#555")};
+  background: ${(props) => (props.$active ? "#242582" : "white")};
+  color: ${(props) => (props.$active ? "white" : "#555")};
   cursor: pointer;
   font-size: 13px;
   font-weight: 700;
@@ -39,7 +39,7 @@ const Category = styled.button`
 
   &:hover {
     border-color: #242582;
-    color: ${(props) => (props.active ? "white" : "#242582")};
+    color: ${(props) => (props.$active ? "white" : "#242582")};
   }
 `;
 
@@ -77,28 +77,28 @@ const QuickCategories = () => {
 
       <Categories>
         <Category
-          active={technologyFilter === "OLED"}
+          $active={technologyFilter === "OLED"}
           onClick={() => handleTechnology("OLED")}
         >
           OLED
         </Category>
 
         <Category
-          active={technologyFilter === "Mini LED"}
+          $active={technologyFilter === "Mini LED"}
           onClick={() => handleTechnology("Mini LED")}
         >
           Mini LED
         </Category>
 
         <Category
-          active={technologyFilter === "QLED"}
+          $active={technologyFilter === "QLED"}
           onClick={() => handleTechnology("QLED")}
         >
           QLED
         </Category>
 
         <Category
-          active={refreshRateFilter === 120}
+          $active={refreshRateFilter === 120}
           onClick={handleRefreshRate}
         >
           120 Hz+

@@ -215,9 +215,25 @@ app.get(
   const params = [];
 
   if (q.search && String(q.search).trim()) {
-    // Исто како во UI: се бара и по бренд и по модел.
-    where.push("(LOWER(brand || ' ' || model) LIKE ?)");
-    params.push(`%${String(q.search).trim().toLowerCase()}%`);
+    /*
+      Секој збор посебно, сите мора да се најдат.
+
+      Порано се бараше целата низа како еден дел од „бренд модел", па
+      „samsung 55" враќаше 0: моделот е QE55Q80D, значи зборовите не стојат
+      еден до друг во тој редослед. Сега „samsung 55", „55 oled" и
+      „oled samsung" работат.
+    */
+    const words = String(q.search)
+      .trim()
+      .toLowerCase()
+      .split(/\s+/)
+      .filter(Boolean)
+      .slice(0, 6);
+
+    for (const word of words) {
+      where.push("LOWER(brand || ' ' || model || ' ' || COALESCE(technology,'') || ' ' || COALESCE(resolution,'')) LIKE ?");
+      params.push(`%${word}%`);
+    }
   }
 
   if (q.brand) {
@@ -361,6 +377,141 @@ app.get("/sitemap.xml", async (request, reply) => {
   reply.header("Content-Type", "application/xml; charset=utf-8");
   reply.header("Cache-Control", "public, max-age=3600");
   return body;
+});
+
+/*
+  Вистински <title>, опис и og: во HTML-от, по страница.
+
+  Зошто не „prerender" при градење: серверот додава телевизори секоја ноќ
+  без ново градење на фронтендот, па подготвените страници веднаш би
+  застареле. Овде главата се гради од живата база при секое барање.
+
+  Телото и натаму го исцртува React. Ова го решава тоа што Facebook, Viber
+  и слични НЕ извршуваат JavaScript — дотогаш секое споделување го
+  покажуваше истиот општ опис.
+*/
+const INDEX_HTML = process.env.DISPLAY_MK_INDEX || "/var/www/display.mk/index.html";
+
+const DEFAULT_META = {
+  title: "Display.mk",
+  description:
+    "Спореди телевизори достапни во Македонија — спецификации, големини и технологии на едно место.",
+};
+
+const STATIC_META = {
+  "/": DEFAULT_META,
+  "/odberi-tv": {
+    title: "Одбери ТВ — препорака за твојата соба | Display.mk",
+    description:
+      "Одговори на шест прашања и добиј три телевизори што одговараат на твојата соба, навики и буџет.",
+  },
+  "/novosti": {
+    title: "Новости за телевизори | Display.mk",
+    description: "Статии, совети и новости за телевизори на македонски.",
+  },
+  "/edu": {
+    title: "Еду — технологии кај телевизорите | Display.mk",
+    description: "Што значат OLED, QLED, Mini LED, HDR, VRR и ALLM, објаснето едноставно.",
+  },
+  "/uslovi": {
+    title: "Услови за користење | Display.mk",
+    description:
+      "Услови за користење на Display.mk — точност на податоците и правила за автоматско преземање.",
+  },
+};
+
+function metaForPath(pathname) {
+  if (STATIC_META[pathname]) return { ...STATIC_META[pathname], found: true };
+
+  const tv = pathname.match(/^\/tv\/([^/]+)\/([^/]+)\/?$/);
+  if (tv) {
+    const row = db
+      .prepare("SELECT * FROM tvs WHERE LOWER(brand) = ? AND LOWER(model) = ?")
+      .get(decodeURIComponent(tv[1]).toLowerCase(), decodeURIComponent(tv[2]).toLowerCase());
+
+    if (!row) return { ...DEFAULT_META, found: false };
+
+    const bits = [
+      `${row.size} инчи`,
+      row.technology,
+      row.resolution,
+      row.refreshRate ? `${row.refreshRate}Hz` : null,
+    ].filter(Boolean);
+
+    return {
+      title: `${row.brand} ${row.model} — ${row.size}" ${row.technology || ""} | Display.mk`.replace(/\s+/g, " "),
+      description: `${row.brand} ${row.model}: ${bits.join(", ")}. Спецификации и каде е достапен во Македонија.`,
+      found: true,
+    };
+  }
+
+  const article = pathname.match(/^\/novosti\/([^/]+)\/?$/);
+  if (article) {
+    try {
+      const news = JSON.parse(fs.readFileSync(path.join(DATA_DIR, "news.generated.json"), "utf8"));
+      const found = (news.articles || []).find((a) => a.slug === decodeURIComponent(article[1]));
+      if (found) {
+        return {
+          title: `${found.title} | Display.mk`,
+          description: (found.summary || found.excerpt || DEFAULT_META.description).slice(0, 180),
+          found: true,
+        };
+      }
+    } catch {
+      /* нема статии */
+    }
+    return { ...DEFAULT_META, found: false };
+  }
+
+  return { ...DEFAULT_META, found: false };
+}
+
+app.get("/__html/*", async (request, reply) => {
+  const pathname = "/" + (request.params["*"] || "").split("?")[0];
+  const meta = metaForPath(pathname);
+
+  let html;
+  try {
+    html = fs.readFileSync(INDEX_HTML, "utf8");
+  } catch {
+    return reply.code(500).send("index.html недостапен");
+  }
+
+  // Во атрибут мора и наводникот; во текстот на <title> не треба и само
+  // го прави изворот нечитлив („55&quot;" наместо 55").
+  const escAttr = (v) =>
+    String(v).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+  const escText = (v) =>
+    String(v).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+
+  const url = `${SITE}${pathname}`;
+
+  html = html
+    .replace(/<title>[^<]*<\/title>/, `<title>${escText(meta.title)}</title>`)
+    .replace(
+      /<meta name="description" content="[^"]*"\s*\/?>/,
+      `<meta name="description" content="${escAttr(meta.description)}"/>`
+    )
+    .replace(
+      "</head>",
+      `<link rel="canonical" href="${escAttr(url)}"/>` +
+        `<meta property="og:type" content="website"/>` +
+        `<meta property="og:site_name" content="Display.mk"/>` +
+        `<meta property="og:title" content="${escAttr(meta.title)}"/>` +
+        `<meta property="og:description" content="${escAttr(meta.description)}"/>` +
+        `<meta property="og:url" content="${escAttr(url)}"/>` +
+        `<meta name="twitter:card" content="summary"/>` +
+        `</head>`
+    );
+
+  reply.header("Content-Type", "text/html; charset=utf-8");
+  reply.header("Cache-Control", "no-cache, must-revalidate");
+
+  // Непостоечки телевизор или статија: 404, за да не се индексираат
+  // измислени адреси како вистински страници.
+  if (!meta.found) reply.code(404);
+
+  return html;
 });
 
 // Опциите за квизот: брендови со доволно модели, и буџетски опсези

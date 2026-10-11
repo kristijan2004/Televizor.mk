@@ -229,11 +229,11 @@ const FilterButton = styled.button`
 
   border-radius: 8px;
 
-  border: 1px solid ${(props) => (props.active ? "#242582" : "#dedee5")};
+  border: 1px solid ${(props) => (props.$active ? "#242582" : "#dedee5")};
 
-  background: ${(props) => (props.active ? "#242582" : "white")};
+  background: ${(props) => (props.$active ? "#242582" : "white")};
 
-  color: ${(props) => (props.active ? "white" : "#555")};
+  color: ${(props) => (props.$active ? "white" : "#555")};
 
   cursor: pointer;
 
@@ -251,7 +251,7 @@ const FilterButton = styled.button`
   &:hover {
     border-color: #242582;
 
-    color: ${(props) => (props.active ? "white" : "#242582")};
+    color: ${(props) => (props.$active ? "white" : "#242582")};
   }
 `;
 
@@ -416,7 +416,7 @@ const SubNavigation = () => {
 
           <FiltersToggle
             type="button"
-            $active={filtersOpen || activeCount > 0}
+            $$active={filtersOpen || activeCount > 0}
             aria-expanded={filtersOpen}
             onClick={() => setFiltersOpen((open) => !open)}
           >
@@ -440,7 +440,7 @@ const SubNavigation = () => {
             {SIZES.map((size) => (
               <FilterButton
                 key={size}
-                active={sizeFilter === size}
+                $active={sizeFilter === size}
                 onClick={() => handleSize(size)}
               >
                 {size}"
@@ -454,7 +454,7 @@ const SubNavigation = () => {
           {PRIMARY_BRANDS.map((brand) => (
             <FilterButton
               key={brand}
-              active={isBrandActive(brand)}
+              $active={isBrandActive(brand)}
               onClick={() => handleBrand(brand)}
             >
               {brand}
@@ -465,7 +465,7 @@ const SubNavigation = () => {
             MORE_BRANDS.map((brand) => (
               <FilterButton
                 key={brand}
-                active={isBrandActive(brand)}
+                $active={isBrandActive(brand)}
                 onClick={() => handleBrand(brand)}
               >
                 {brand}

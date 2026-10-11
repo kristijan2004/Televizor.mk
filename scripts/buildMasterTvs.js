@@ -141,7 +141,7 @@ function extractSize(tv) {
     50S5L, 55C79L, 65RM7L, 85C89L. The standalone \b\d{2,3}\b fallback below
     never sees these, because there is no word boundary after the digits.
   */
-  /\b(\d{2,3})(?:RM|QM|MQ|[CPSVXU])\d/i,
+  /\b(\d{2,3})(?:RM|QM|MQ|[ACEPSUVX])\d/i,
   /(\d{2,3})ELU/i,
   /\bH(\d{2,3})[A-Z]/i,
   /\bLT-(\d{2,3})[A-Z]/i,
