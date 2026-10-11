@@ -144,39 +144,69 @@ fi
 echo "  кандидат: $(node -e "console.log(require('$CANDIDATE').length)") телевизори"
 
 # ---------------------------------------------------------------
-# Проверка на квалитет.
+# Проверка на квалитет: „целосна информација или никаква".
 #
-# Телевизор без препознаена големина е полош од никаков телевизор: не го
-# фаќа ниту еден филтер за инчи, квизот го прескокнува, а во споредбата
-# стои празно. Таквите не одат на сајтот — остануваат во извештајот додека
-# парсирањето не ги научи.
+# Два услова мора да ги исполни секој НОВ телевизор (оние што веќе беа на
+# сајтот не се допираат, дури и ако моментално им недостасува слика):
+#   1. препознаена големина — инаку не го фаќа ниту еден филтер, квизот
+#      го прескокнува, во споредбата стои празно.
+#   2. слика — празна страница без слика и без потврдени спецификации
+#      изгледа расипано на жив сајт, не „нов модел на патот".
+#
+# Таквите не одат на сајтот — остануваат во извештајот додека следната
+# ноќ не донесе слика/големина, или додека некој рачно не ги довери.
 # ---------------------------------------------------------------
 echo
 echo "--- квалитет ---"
 node -e '
 const fs = require("fs");
 const file = process.argv[1];
-const tvs = JSON.parse(fs.readFileSync(file, "utf8"));
+const liveFile = process.argv[3];
 
-const bad = tvs.filter((t) => !t.size);
-const good = tvs.filter((t) => t.size);
+const tvs = JSON.parse(fs.readFileSync(file, "utf8"));
+const oldIds = new Set(
+  fs.existsSync(liveFile) ? JSON.parse(fs.readFileSync(liveFile, "utf8")).map((t) => t.id) : []
+);
+
+const reasons = (t) => {
+  const r = [];
+  if (!t.size) r.push("нема големина");
+  if (!oldIds.has(t.id) && !t.image) r.push("нов модел без слика");
+  return r;
+};
+
+const bad = [];
+const good = [];
+
+for (const t of tvs) {
+  const r = reasons(t);
+  if (r.length) bad.push({ tv: t, reasons: r });
+  else good.push(t);
+}
 
 if (bad.length) {
-  console.log("  одбиени (нема големина): " + bad.length);
-  for (const t of bad.slice(0, 15)) console.log("     " + t.brand + " " + t.model);
+  console.log("  одбиени: " + bad.length);
+  for (const { tv, reasons: r } of bad.slice(0, 15)) {
+    console.log("     " + tv.brand + " " + tv.model + "  (" + r.join(", ") + ")");
+  }
   if (bad.length > 15) console.log("     ... и уште " + (bad.length - 15));
+
   fs.writeFileSync(
     process.argv[2],
     "# Одбиени телевизори — " + new Date().toISOString().slice(0, 10) + "\n\n" +
-    "Нема препознаена големина, па не одат на сајтот.\n\n" +
-    bad.map((t) => "- " + t.brand + " " + t.model + " (" + Object.keys(t.stores || {}).join(", ") + ")").join("\n") + "\n"
+    "Не одат на сајтот додека причината не се поправи.\n\n" +
+    bad.map(({ tv, reasons: r }) =>
+      "- " + tv.brand + " " + tv.model +
+      " — " + r.join(", ") +
+      " (" + Object.keys(tv.stores || {}).join(", ") + ")"
+    ).join("\n") + "\n"
   );
 } else {
-  console.log("  сите имаат големина ✓");
+  console.log("  сите имаат големина и слика ✓");
 }
 
 fs.writeFileSync(file, JSON.stringify(good, null, 2));
-' "$CANDIDATE" "$REPORTS/odbieni-$(date +%F).md"
+' "$CANDIDATE" "$REPORTS/odbieni-$(date +%F).md" "$LIVE/masterTvs.json"
 
 # ---------------------------------------------------------------
 # Промени во цените — ова е единственото нешто што се запишува,
@@ -241,6 +271,22 @@ chown -R displaymk:displaymk "$ROOT" 2>/dev/null || true
 systemctl restart display-mk-api
 sleep 3
 echo "  API: $(systemctl is-active display-mk-api) — $(curl -sS -m 10 http://127.0.0.1:3001/api/health)"
+
+# ---------------------------------------------------------------
+# Слики: скрапирачите (Neptun) ги симнуваат во $ROOT/public/images/, не во
+# местото од каде nginx служи — тоа е /var/www/display.mk/, посебна копија
+# што ја полни ./scripts/deploy.sh само при рачно објавување на фронтендот.
+# Без ова, секоја нова слика симната ноќе е 404 на живиот сајт додека некој
+# рачно не објави фронтенд. rsync -a со исти имиња само ги додава новите.
+# ---------------------------------------------------------------
+echo
+echo "--- слики ---"
+if [ -d "$ROOT/public/images" ] && [ -d "/var/www/display.mk/images" ]; then
+  rsync -a "$ROOT/public/images/" "/var/www/display.mk/images/" 2>&1 | tail -3
+  echo "  синхронизирано"
+else
+  echo "  ⚠ нема една од папките, прескокнато"
+fi
 
 echo
 echo "=============================================="
