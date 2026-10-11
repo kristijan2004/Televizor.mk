@@ -283,6 +283,10 @@ echo
 echo "--- слики ---"
 if [ -d "$ROOT/public/images" ] && [ -d "/var/www/display.mk/images" ]; then
   rsync -a "$ROOT/public/images/" "/var/www/display.mk/images/" 2>&1 | tail -3
+  # Ноќното се пушта како root, па новите фајлови ќе бидат root-owned —
+  # ./scripts/deploy.sh се поврзува како kiko и не може да ги презапише
+  # туѓи фајлови. Без ова, следниот рачен deploy паѓа со „Permission denied".
+  chown -R kiko:kiko /var/www/display.mk/images/ 2>/dev/null || true
   echo "  синхронизирано"
 else
   echo "  ⚠ нема една од папките, прескокнато"

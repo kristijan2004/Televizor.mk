@@ -26,7 +26,13 @@ echo
 echo "→ Качувам на $SERVER:$REMOTE_DIR"
 # --delete removes files on the server that no longer exist in the build,
 # so old hashed bundles do not pile up forever.
+#
+# ИСКЛУЧОК: images/tvs/neptun/ не смее да биде во опсегот на --delete. Тие
+# слики ги симнува ноќното скрапирање ДИРЕКТНО на серверот (scrapeNeptun.js)
+# и НИКОГАШ не стигнуваат до овој локален repo — без ова исклучување, секој
+# рачен deploy ги бришеше сите слики додадени од последното симнување.
 rsync -az --delete --info=stats1 \
+  --exclude=images/tvs/neptun/ \
   -e "ssh -o BatchMode=yes -o ConnectTimeout=15" \
   build/ "$SERVER:$REMOTE_DIR/"
 
