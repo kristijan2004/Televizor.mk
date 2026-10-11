@@ -18071,22 +18071,22 @@
     "size": 65,
     "technology": "QLED",
     "resolution": "4K",
-    "refreshRate": 60,
+    "refreshRate": 144,
     "year": 2026,
-    "os": "Smart TV",
-    "hdr": false,
-    "dolbyVision": false,
+    "os": "Google TV",
+    "hdr": true,
+    "dolbyVision": true,
     "hdmi": 0,
     "usb": 0,
-    "vrr": false,
+    "vrr": true,
     "allm": false,
-    "pictureProcessor": "—",
+    "pictureProcessor": "TSR AiPQ Processor",
     "hdrFormats": [],
-    "brightness": "—",
+    "brightness": "3000 nits",
     "audioPower": 0,
     "audioChannels": "2.0",
     "dolbyAtmos": false,
-    "freeSync": false,
+    "freeSync": true,
     "gSync": false,
     "image": "/images/tvs/neptun/tcl-65-c7l-144hz-b-o-299141.jpg",
     "stores": {
@@ -18098,7 +18098,7 @@
         "url": "https://www.neptun.mk/84122359-TCL-65-C7L-144Hz-B-O"
       }
     },
-    "specsSource": "eprel"
+    "specsSource": "eprel+tcl"
   },
   {
     "id": "tcl-65a300",
