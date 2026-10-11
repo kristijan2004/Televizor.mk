@@ -1,10 +1,11 @@
 import React, { useEffect, useMemo } from "react";
 import styled from "styled-components";
-import { Link, useParams } from "react-router-dom";
+import { Link, Navigate, useParams } from "react-router-dom";
 
 import ArticleImage from "./ArticleImage";
 import Navigation from "./Navigation";
 import news from "../Data/news";
+import edu from "../Data/edu";
 import {
   CategoryBadge,
   formatMkDate,
@@ -466,10 +467,60 @@ const BackButton = styled(Link)`
   }
 `;
 
-const NewsArticle = () => {
+/*
+  Истата страница ги служи и Новости и Еду. Делот одлучува само три работи:
+  во која листа се бара статијата, каде води линкот „назад", и од каде се
+  земаат поврзаните статии — секој дел си останува кај себе.
+
+  One page serves both Новости and Еду. The section decides three things: which
+  list the slug is looked up in, where the back link goes, and which articles
+  the related strip may pull from — each section stays within itself.
+*/
+const SECTIONS = {
+  novosti: {
+    articles: news,
+    basePath: "/novosti",
+    backLabel: "Назад кон новости",
+  },
+  edu: {
+    articles: edu,
+    basePath: "/edu",
+    backLabel: "Назад кон Еду",
+  },
+};
+
+const NewsArticle = ({ section = "novosti" }) => {
   const { slug } = useParams();
 
-  const post = useMemo(() => news.find((item) => item.slug === slug), [slug]);
+  const { articles, basePath, backLabel } = SECTIONS[section] || SECTIONS.novosti;
+
+  const post = useMemo(
+    () => articles.find((item) => item.slug === slug),
+    [articles, slug]
+  );
+
+  /*
+    Статија преместена во друг дел: старата адреса води кај новата наместо да
+    покаже „не е пронајдена". Серверот го прави истото со 301 за посетители
+    што доаѓаат однадвор; ова го покрива движењето низ самата апликација.
+
+    An article that moved to the other section: the old address leads to the
+    new one instead of showing "not found". The server does the same with a 301
+    for visitors arriving from outside; this covers navigation inside the app.
+  */
+  const movedTo = useMemo(() => {
+    if (post) {
+      return null;
+    }
+
+    for (const [name, other] of Object.entries(SECTIONS)) {
+      if (name !== section && other.articles.some((item) => item.slug === slug)) {
+        return `${other.basePath}/${slug}`;
+      }
+    }
+
+    return null;
+  }, [post, section, slug]);
 
   // Moving between articles should start at the top, not mid-page.
   useEffect(() => {
@@ -482,11 +533,15 @@ const NewsArticle = () => {
     }
 
     return sortByNewest(
-      news.filter(
+      articles.filter(
         (item) => item.category === post.category && item.id !== post.id
       )
     ).slice(0, 3);
-  }, [post]);
+  }, [articles, post]);
+
+  if (movedTo) {
+    return <Navigate to={movedTo} replace />;
+  }
 
   if (!post) {
     return (
@@ -501,7 +556,7 @@ const NewsArticle = () => {
               Статијата што ја барате не постои или е отстранета.
             </NotFoundText>
 
-            <BackButton to="/novosti">Назад кон новости</BackButton>
+            <BackButton to={basePath}>{backLabel}</BackButton>
           </NotFoundCard>
         </NotFoundCont>
       </PageCont>
@@ -513,7 +568,7 @@ const NewsArticle = () => {
       <Navigation />
 
       <Article>
-        <BackLink to="/novosti">← Назад кон новости</BackLink>
+        <BackLink to={basePath}>← {backLabel}</BackLink>
 
         <CategoryBadge $category={post.category}>{post.category}</CategoryBadge>
 
@@ -553,7 +608,7 @@ const NewsArticle = () => {
           <RelatedGrid>
             {related.map((item) => (
               <RelatedCard key={item.id}>
-                <RelatedLink to={`/novosti/${item.slug}`}>
+                <RelatedLink to={`${basePath}/${item.slug}`}>
                   <RelatedImage
                     src={item.image}
                     candidates={item.imageCandidates}

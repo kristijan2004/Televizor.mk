@@ -20,8 +20,9 @@ function App() {
         <Route path="compare" element={<Compare />} />
         <Route path="/tv/:brand/:model" element={<TvDetails />} />
         <Route path="novosti" element={<Novosti />} />
-        <Route path="novosti/:slug" element={<NewsArticle />} />
+        <Route path="novosti/:slug" element={<NewsArticle section="novosti" />} />
         <Route path="edu" element={<Edu />} />
+        <Route path="edu/:slug" element={<NewsArticle section="edu" />} />
         <Route path="odberi-tv" element={<OdberiTv />} />
         <Route path="uslovi" element={<Uslovi />} />
         <Route path="admin" element={<Admin />} />

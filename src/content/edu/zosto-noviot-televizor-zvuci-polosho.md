@@ -5,7 +5,7 @@ date: "2026-10-06"
 category: "Совети"
 excerpt: "Сликата е неспоредливо подобра, а дијалогот одеднаш не се разбира и постојано го качуваш и спушташ звукот. Не ти се причинува. Еве зошто се случува и што навистина помага."
 author: "Редакција на Телевизор.мк"
-image: "/images/novosti/zosto-noviot-televizor-zvuci-polosho.jpg"
+image: "/images/edu/zosto-noviot-televizor-zvuci-polosho.jpg"
 readTime: 3
 featured: false
 ---

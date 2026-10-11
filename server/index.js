@@ -310,6 +310,34 @@ const xmlEscape = (value) =>
 
 const SITE = "https://display.mk";
 
+/*
+  Двата дела со статии. Истиот код ги служи — разлика е само во адресата и во
+  фајлот што го пишува `scripts/buildNews.js`.
+
+  The two article sections. The same code serves both; only the URL and the
+  file written by `scripts/buildNews.js` differ.
+*/
+const ARTICLE_SECTIONS = [
+  { name: "novosti", basePath: "/novosti", file: "news.generated.json" },
+  { name: "edu", basePath: "/edu", file: "edu.generated.json" },
+];
+
+/*
+  Се чита при секое барање намерно: `npm run build:news` го презапишува фајлот
+  без серверот да се рестартира, па кеш во меморија би служел стари наслови.
+*/
+const readArticles = (section) => {
+  try {
+    const data = JSON.parse(
+      fs.readFileSync(path.join(DATA_DIR, section.file), "utf8")
+    );
+    return data.articles || [];
+  } catch {
+    // Нема статии — останатото сепак работи.
+    return [];
+  }
+};
+
 app.get("/sitemap.xml", async (request, reply) => {
   const today = new Date().toISOString().slice(0, 10);
 
@@ -329,21 +357,16 @@ app.get("/sitemap.xml", async (request, reply) => {
     });
   }
 
-  // Статиите живеат во news.generated.json, не во базата.
-  try {
-    const news = JSON.parse(
-      fs.readFileSync(path.join(DATA_DIR, "news.generated.json"), "utf8")
-    );
-    for (const article of news.articles || []) {
+  // Статиите живеат во генерираните JSON фајлови, не во базата.
+  for (const section of ARTICLE_SECTIONS) {
+    for (const article of readArticles(section)) {
       if (!article.slug) continue;
       urls.push({
-        loc: `${SITE}/novosti/${encodeURIComponent(article.slug)}`,
+        loc: `${SITE}${section.basePath}/${encodeURIComponent(article.slug)}`,
         priority: "0.6",
         freq: "monthly",
       });
     }
-  } catch {
-    /* нема статии — sitemap-от сепак важи */
   }
 
   const body =
@@ -459,21 +482,24 @@ function metaForPath(pathname) {
     };
   }
 
-  const article = pathname.match(/^\/novosti\/([^/]+)\/?$/);
-  if (article) {
-    try {
-      const news = JSON.parse(fs.readFileSync(path.join(DATA_DIR, "news.generated.json"), "utf8"));
-      const found = (news.articles || []).find((a) => a.slug === decodeURIComponent(article[1]));
-      if (found) {
-        return {
-          title: `${found.title} | Display.mk`,
-          description: (found.summary || found.excerpt || DEFAULT_META.description).slice(0, 180),
-          found: true,
-        };
-      }
-    } catch {
-      /* нема статии */
+  for (const section of ARTICLE_SECTIONS) {
+    const article = pathname.match(
+      new RegExp(`^${section.basePath}/([^/]+)/?$`)
+    );
+    if (!article) continue;
+
+    const found = readArticles(section).find(
+      (a) => a.slug === decodeURIComponent(article[1])
+    );
+
+    if (found) {
+      return {
+        title: `${found.title} | Display.mk`,
+        description: (found.summary || found.excerpt || DEFAULT_META.description).slice(0, 180),
+        found: true,
+      };
     }
+
     return { ...DEFAULT_META, found: false };
   }
 
@@ -482,8 +508,50 @@ function metaForPath(pathname) {
   return { ...DEFAULT_META, found: true };
 }
 
+/*
+  Статија преместена во друг дел.
+
+  Петте текстови за технологии се преселија од /novosti/ во /edu/, а нивните
+  стари адреси се веќе споделени. Наместо 404, тие водат таму каде што
+  статијата сега живее — и правилото важи за секое идно преселување, зашто се
+  гледа каде слагот навистина е.
+
+  An article that moved to the other section. The five technology pieces moved
+  from /novosti/ to /edu/, and their old addresses are already out there. They
+  lead to where the article now lives rather than 404ing, and the rule holds
+  for any future move, because it looks up where the slug actually is.
+*/
+function movedTo(pathname) {
+  for (const section of ARTICLE_SECTIONS) {
+    const article = pathname.match(
+      new RegExp(`^${section.basePath}/([^/]+)/?$`)
+    );
+    if (!article) continue;
+
+    const slug = decodeURIComponent(article[1]);
+
+    // Still where it was: nothing to do.
+    if (readArticles(section).some((a) => a.slug === slug)) return null;
+
+    for (const other of ARTICLE_SECTIONS) {
+      if (other === section) continue;
+
+      if (readArticles(other).some((a) => a.slug === slug)) {
+        return `${other.basePath}/${encodeURIComponent(slug)}`;
+      }
+    }
+  }
+
+  return null;
+}
+
 app.get("/__html/*", async (request, reply) => {
   const pathname = "/" + (request.params["*"] || "").split("?")[0];
+
+  // Преместена статија: 301 кон новата адреса, пред било што друго.
+  const moved = movedTo(pathname);
+  if (moved) return reply.redirect(moved, 301);
+
   const meta = metaForPath(pathname);
 
   let html;

@@ -1,9 +1,11 @@
 /*
-  Чита статиите од `src/content/novosti/*.md` и ги претвора во
-  `src/Data/news.generated.json`, кој потоа го користи `src/Data/news.js`.
+  Чита статиите од `src/content/<дел>/*.md` и ги претвора во JSON што го
+  користи апликацијата. Деловите се два, Новости и Еду, и се градат со ист код
+  — разлика е само во папките и во излезниот фајл.
 
-  Reads the markdown articles in `src/content/novosti/*.md` and compiles them
-  into `src/Data/news.generated.json`, which `src/Data/news.js` imports.
+  Reads the markdown articles in `src/content/<section>/*.md` and compiles them
+  into the JSON the app imports. There are two sections, Новости and Еду, built
+  by the same code — only the folders and the output file differ.
 
   Run it with:  npm run build:news
   It also runs automatically before `npm start` and `npm run build`.
@@ -12,14 +14,36 @@
 const fs = require("fs");
 const path = require("path");
 
-const contentDir = path.join(__dirname, "../src/content/novosti");
-const outFile = path.join(__dirname, "../src/Data/news.generated.json");
+/*
+  Еден запис по дел од сајтот. За нов дел е доволно уште еден ред тука.
 
-// Where article images live, and the public URL they are served from.
-const imageDir = path.join(__dirname, "../public/images/novosti");
-const imageUrlBase = "/images/novosti";
+  One entry per section of the site. A new section needs nothing but another
+  entry here: content folder, where its pictures live, the public URL they are
+  served from, and the file the articles are written to.
+*/
+const SECTIONS = [
+  {
+    name: "novosti",
+    contentDir: path.join(__dirname, "../src/content/novosti"),
+    imageDir: path.join(__dirname, "../public/images/novosti"),
+    imageUrlBase: "/images/novosti",
+    outFile: path.join(__dirname, "../src/Data/news.generated.json"),
+  },
+  {
+    name: "edu",
+    contentDir: path.join(__dirname, "../src/content/edu"),
+    imageDir: path.join(__dirname, "../public/images/edu"),
+    imageUrlBase: "/images/edu",
+    outFile: path.join(__dirname, "../src/Data/edu.generated.json"),
+  },
+];
 
-const PLACEHOLDER_IMAGE = `${imageUrlBase}/placeholder.svg`;
+// Each section falls back to its own placeholder, in its own images folder.
+const placeholderFor = (section) => `${section.imageUrlBase}/placeholder.svg`;
+
+// Paths are printed relative to the project root, which is what a reader needs.
+const relative = (target) =>
+  path.relative(path.join(__dirname, ".."), target).split(path.sep).join("/");
 
 const IMAGE_EXTENSIONS = [
   ".jpg",
@@ -303,12 +327,12 @@ function countWords(blocks) {
 // Images
 // ---------------------------------------------------------------------------
 
-function listImageFiles() {
-  if (!fs.existsSync(imageDir)) {
+function listImageFiles(section) {
+  if (!fs.existsSync(section.imageDir)) {
     return [];
   }
 
-  return fs.readdirSync(imageDir).filter((file) => {
+  return fs.readdirSync(section.imageDir).filter((file) => {
     const lower = file.toLowerCase();
 
     return IMAGE_EXTENSIONS.some((ext) => lower.endsWith(ext));
@@ -345,10 +369,11 @@ function imageKey(name) {
   `image` is the file that actually exists on disk right now. `imageCandidates`
   are the names the article page will try, in order, if that file is missing —
   so dropping `<slug>.jpg` (or `<slug>.webp`, or even a double-extension
-  `<slug>.jpg.jpg`) into public/images/novosti/ is enough to make a picture
-  appear on refresh, with no rebuild.
+  `<slug>.jpg.jpg`) into the section's images folder is enough to make a
+  picture appear on refresh, with no rebuild.
 */
-function resolveImage(data, slug, availableImages) {
+function resolveImage(data, slug, availableImages, section) {
+  const { imageUrlBase } = section;
   // Names worth trying: whatever the article asked for, then the slug itself.
   const bases = [];
 
@@ -396,9 +421,13 @@ function resolveImage(data, slug, availableImages) {
     }
   }
 
-  push(PLACEHOLDER_IMAGE);
+  push(placeholderFor(section));
 
-  return { image: found || data.image || PLACEHOLDER_IMAGE, candidates, found };
+  return {
+    image: found || data.image || placeholderFor(section),
+    candidates,
+    found,
+  };
 }
 
 function requireField(data, key, fileName) {
@@ -411,8 +440,8 @@ function requireField(data, key, fileName) {
   return value;
 }
 
-function buildArticle(fileName, availableImages) {
-  const raw = fs.readFileSync(path.join(contentDir, fileName), "utf8");
+function buildArticle(fileName, availableImages, section) {
+  const raw = fs.readFileSync(path.join(section.contentDir, fileName), "utf8");
 
   const { data, body } = parseFrontmatter(raw, fileName);
 
@@ -450,7 +479,7 @@ function buildArticle(fileName, availableImages) {
   // The first paragraph doubles as the excerpt when none is given.
   const firstParagraph = blocks.find((block) => block.type === "paragraph");
 
-  const picture = resolveImage(data, slug, availableImages);
+  const picture = resolveImage(data, slug, availableImages, section);
 
   return {
     id: data.id ? Number(data.id) : slug,
@@ -478,8 +507,8 @@ function buildArticle(fileName, availableImages) {
   };
 }
 
-function readCategories(articles) {
-  const file = path.join(contentDir, "categories.json");
+function readCategories(articles, section) {
+  const file = path.join(section.contentDir, "categories.json");
 
   if (fs.existsSync(file)) {
     return JSON.parse(fs.readFileSync(file, "utf8"));
@@ -495,28 +524,28 @@ function readCategories(articles) {
   ];
 }
 
-function main() {
-  if (!fs.existsSync(contentDir)) {
-    console.error(`Missing content folder: ${contentDir}`);
+function buildSection(section) {
+  if (!fs.existsSync(section.contentDir)) {
+    console.error(`Missing content folder: ${section.contentDir}`);
     process.exit(1);
   }
 
   const files = fs
-    .readdirSync(contentDir)
+    .readdirSync(section.contentDir)
     .filter((file) => file.endsWith(".md"))
     // `README.md` documents the folder, and a leading underscore marks a
     // draft — neither is an article.
     .filter((file) => file !== "README.md" && !file.startsWith("_"))
     .sort();
 
-  const availableImages = listImageFiles();
+  const availableImages = listImageFiles(section);
 
   const articles = [];
   const errors = [];
 
   for (const file of files) {
     try {
-      articles.push(buildArticle(file, availableImages));
+      articles.push(buildArticle(file, availableImages, section));
     } catch (error) {
       errors.push(error.message);
     }
@@ -535,7 +564,7 @@ function main() {
   }
 
   if (errors.length > 0) {
-    console.error("Could not build the news content:\n");
+    console.error(`Could not build the ${section.name} content:\n`);
 
     for (const message of errors) {
       console.error(`  - ${message}`);
@@ -549,17 +578,29 @@ function main() {
 
   const payload = {
     generatedAt: new Date().toISOString(),
-    categories: readCategories(articles),
+    categories: readCategories(articles, section),
     articles,
   };
 
-  fs.writeFileSync(outFile, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
-
-  console.log(
-    `Wrote ${articles.length} article(s) from src/content/novosti to src/Data/news.generated.json`
+  fs.writeFileSync(
+    section.outFile,
+    `${JSON.stringify(payload, null, 2)}\n`,
+    "utf8"
   );
 
-  reportImages(articles, availableImages);
+  console.log(
+    `Wrote ${articles.length} article(s) from ${relative(
+      section.contentDir
+    )} to ${relative(section.outFile)}`
+  );
+
+  reportImages(articles, availableImages, section);
+}
+
+function main() {
+  for (const section of SECTIONS) {
+    buildSection(section);
+  }
 }
 
 /*
@@ -567,14 +608,14 @@ function main() {
   fine with the placeholder. It is worth saying out loud, though, together with
   the exact file name to use, so a missing image never turns into a hunt.
 */
-function reportImages(articles, availableImages) {
+function reportImages(articles, availableImages, section) {
   const withoutImage = articles.filter((article) => !article.hasImage);
 
   const used = new Set();
 
   for (const article of articles) {
     const match = availableImages.find(
-      (file) => `${imageUrlBase}/${file}` === article.image
+      (file) => `${section.imageUrlBase}/${file}` === article.image
     );
 
     if (match) {
@@ -587,17 +628,23 @@ function reportImages(articles, availableImages) {
   );
 
   if (withoutImage.length > 0) {
-    console.log("\nArticles still showing the placeholder image:");
+    console.log(
+      `\n[${section.name}] Articles still showing the placeholder image:`
+    );
 
     for (const article of withoutImage) {
       console.log(
-        `  - ${article.slug}  ->  put the picture in public/images/novosti/${article.slug}.jpg`
+        `  - ${article.slug}  ->  put the picture in ${relative(
+          section.imageDir
+        )}/${article.slug}.jpg`
       );
     }
   }
 
   if (unused.length > 0) {
-    console.log("\nImages in public/images/novosti/ that no article uses:");
+    console.log(
+      `\nImages in ${relative(section.imageDir)}/ that no article uses:`
+    );
 
     for (const file of unused) {
       console.log(`  - ${file}`);
