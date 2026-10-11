@@ -844,7 +844,7 @@
     "usb": 2,
     "vrr": false,
     "allm": false,
-    "pictureProcessor": "—",
+    "pictureProcessor": "Jovatek 72690",
     "hdrFormats": [],
     "brightness": "200 cd/m²",
     "audioPower": 20,
@@ -18069,7 +18069,7 @@
     "brand": "TCL",
     "model": "65 C7L 144Hz B&O",
     "size": 65,
-    "technology": "LED",
+    "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
     "year": 2026,
@@ -18097,7 +18097,8 @@
         "image": "/images/tvs/neptun/tcl-65-c7l-144hz-b-o-299141.jpg",
         "url": "https://www.neptun.mk/84122359-TCL-65-C7L-144Hz-B-O"
       }
-    }
+    },
+    "specsSource": "eprel"
   },
   {
     "id": "tcl-65a300",
