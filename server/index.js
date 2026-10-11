@@ -418,6 +418,19 @@ const STATIC_META = {
     description:
       "Услови за користење на Display.mk — точност на податоците и правила за автоматско преземање.",
   },
+  /*
+    Овие мора да стојат тука иако не се интересни за пребарување: сè што не е
+    во листата враќа 404, а /compare е вистинска страница на сајтот. Кога ќе
+    се додаде нова рута во App.js, додај ја и овде.
+  */
+  "/compare": {
+    title: "Спореди телевизори | Display.mk",
+    description: "Спореди до три телевизори рамо до рамо — спецификации една до друга.",
+  },
+  "/addTv": {
+    title: "Display.mk",
+    description: DEFAULT_META.description,
+  },
 };
 
 function metaForPath(pathname) {
@@ -552,18 +565,38 @@ app.post(
     brands: Array.isArray(answers.brands)
       ? answers.brands.filter((b) => typeof b === "string").slice(0, 25)
       : [],
+
+    // Желби за гејминг, не филтри — види коментарот во recommend.js.
+    gamingWishes:
+      answers.gamingWishes && typeof answers.gamingWishes === "object"
+        ? {
+            hz120: answers.gamingWishes.hz120 === true,
+            vrr: answers.gamingWishes.vrr === true,
+            allm: answers.gamingWishes.allm === true,
+          }
+        : {},
   };
 
-  const result = recommend(quizCatalogue, safe);
+  const result = recommend(quizCatalogue, safe, {
+    extra: Number(answers.extra) || 0,
+    sort: typeof answers.sort === "string" ? answers.sort : "match",
+  });
 
   // Се враќаат само тројцата избрани, не целиот каталог.
+  const shape = (pick) => ({
+    kind: pick.kind,
+    reasons: pick.reasons,
+    warnings: pick.warnings,
+    advantage: pick.advantage ?? null,
+    tradeoff: pick.tradeoff ?? null,
+    gaps: pick.gaps ?? [],
+    tv: pick.tv,
+  });
+
   return {
-    picks: result.picks.map((pick) => ({
-      kind: pick.kind,
-      reasons: pick.reasons,
-      warnings: pick.warnings,
-      tv: pick.tv,
-    })),
+    picks: result.picks.map(shape),
+    more: (result.more || []).map(shape),
+    moreAvailable: result.moreAvailable ?? 0,
     blocked: result.blocked,
     relax: result.relax,
       consideredCount: result.consideredCount,

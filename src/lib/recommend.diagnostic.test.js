@@ -183,3 +183,102 @@ test("brand preference actually steers the picks", () => {
 
   expect(problems).toHaveLength(0);
 });
+
+test("gaming wishes are preferences, never filters", () => {
+  const strict = {
+    distance: "2.5-3",
+    light: "umerena",
+    use: "gejming",
+    priority: "gejming",
+    budget: { id: "cheap", min: 0, max: 19000 },
+    brands: [],
+    gamingWishes: { hz120: true, vrr: true, allm: true },
+  };
+
+  const result = recommend(catalogue, strict);
+
+  // Со низок буџет и сите три желби, строг филтер би вратил празно.
+  // Желбите не смеат да го направат тоа.
+  expect(result.picks.length).toBeGreaterThan(0);
+
+  const missing = result.picks.filter((p) =>
+    p.warnings.some((w) => /Нема/.test(w))
+  );
+
+  console.log(`
+gaming wishes on a low budget:
+  picks ..................... ${result.picks.length}
+  of which miss a wish ...... ${missing.length} (told to the user, not filtered out)
+  top ....................... ${result.picks[0].tv.brand} ${result.picks[0].tv.model}`);
+});
+
+test("the third card is only shown when it has a real advantage", () => {
+  let withAlt = 0;
+  let total = 0;
+  const examples = [];
+
+  for (const distance of DISTANCE_OPTIONS) {
+    for (const use of USE_OPTIONS) {
+      total += 1;
+      const r = recommend(catalogue, {
+        distance: distance.id,
+        light: "umerena",
+        use: use.id,
+        priority: "slika",
+        budget: null,
+        brands: [],
+      });
+
+      const alt = r.picks.find((p) => p.kind === "alternativa");
+      if (alt) {
+        withAlt += 1;
+        // ако е прикажана, МОРА да има именувана предност
+        expect(alt.advantage).toBeTruthy();
+        if (examples.length < 5) examples.push(`${alt.tv.brand} ${alt.tv.model} — ${alt.advantage}`);
+      }
+    }
+  }
+
+  console.log(`
+alternative card:
+  shown in .................. ${withAlt}/${total} combinations
+  each with a named advantage:`);
+  examples.forEach((e) => console.log("    " + e));
+});
+
+test("picks are never duplicates of each other", () => {
+  for (const use of USE_OPTIONS) {
+    for (const priority of PRIORITY_OPTIONS) {
+      const r = recommend(catalogue, {
+        distance: "2.5-3",
+        light: "temna",
+        use: use.id,
+        priority: priority.id,
+        budget: null,
+        brands: [],
+      });
+      const ids = r.picks.map((p) => p.tv.id);
+      expect(new Set(ids).size).toBe(ids.length);
+    }
+  }
+});
+
+test("extra results do not repeat the picks", () => {
+  const r = recommend(
+    catalogue,
+    { distance: "2.5-3", light: "umerena", use: "meshano", priority: "slika", budget: null, brands: [] },
+    { extra: 12 }
+  );
+
+  const pickIds = new Set(r.picks.map((p) => p.tv.id));
+  const overlap = r.more.filter((m) => pickIds.has(m.tv.id));
+
+  console.log(`
+show more:
+  extra returned ............ ${r.more.length}
+  total available ........... ${r.moreAvailable}
+  overlapping with picks .... ${overlap.length}`);
+
+  expect(overlap).toHaveLength(0);
+  expect(r.more.length).toBeLessThanOrEqual(12);
+});

@@ -312,6 +312,83 @@ function scorePriority(tv, answers) {
   return { points: 0, reason: null };
 }
 
+/*
+  Гејминг барања — ЖЕЛБИ, не филтри.
+
+  Намерно не се задолжителни: 120Hz + VRR + ALLM оставаат 113 телевизори, а
+  со среден буџет само 18. Задолжително барање би враќало празно и корисникот
+  би помислил дека сајтот не чини. Наместо тоа, секоја исполнета желба носи
+  поени, а на картичката се пишува што недостасува.
+*/
+function scoreGamingWishes(tv, answers) {
+  const wishes = answers.gamingWishes || {};
+  const wanted = Object.keys(wishes).filter((key) => wishes[key]);
+
+  if (wanted.length === 0) {
+    return { points: 0, reason: null };
+  }
+
+  const met = [];
+  const missing = [];
+
+  if (wishes.hz120) {
+    (tv.refreshRate >= 120 ? met : missing).push("120Hz");
+  }
+
+  if (wishes.vrr) {
+    (tv.gaming?.vrr ? met : missing).push("VRR");
+  }
+
+  if (wishes.allm) {
+    (tv.gaming?.allm ? met : missing).push("ALLM");
+  }
+
+  // Поените се делат по желба, за да не доминира над сè друго.
+  const points = Math.round((met.length / wanted.length) * 30);
+
+  if (met.length === wanted.length) {
+    return { points, reason: `Ги има сите барани функции: ${met.join(", ")}` };
+  }
+
+  if (met.length > 0) {
+    return {
+      points,
+      reason: `Има ${met.join(" и ")}`,
+      warning: `Нема ${missing.join(" ниту ")}`,
+    };
+  }
+
+  return { points: 0, reason: null, warning: `Нема ${missing.join(" ниту ")}` };
+}
+
+/*
+  Осветленост — само кога навистина ја знаеме.
+
+  Знаеме за 91 од 529 телевизори. За останатите ова враќа неутрално и
+  запишува дека податокот недостасува, наместо да ги казнува.
+*/
+function scoreBrightness(tv, answers) {
+  const nits = Number(String(tv.brightness ?? "").replace(/[^\d]/g, ""));
+
+  if (!nits || Number.isNaN(nits)) {
+    return { points: 0, reason: null, gap: answers.light === "svetla" ? "осветленост" : null };
+  }
+
+  if (answers.light === "svetla") {
+    if (nits >= 600) return { points: 16, reason: `${nits} nits, доволно за светла соба` };
+    if (nits <= 300) {
+      return { points: -8, reason: null, warning: `${nits} nits — слабо за многу светла соба` };
+    }
+    return { points: 4, reason: null };
+  }
+
+  if (nits >= 1000) {
+    return { points: 6, reason: `${nits} nits, силен HDR` };
+  }
+
+  return { points: 0, reason: null };
+}
+
 function scoreBrand(tv, answers) {
   const brands = answers.brands || [];
 
@@ -354,7 +431,9 @@ function scoreTv(tv, answers) {
   const parts = [
     scoreSize(tv, answers),
     scoreLight(tv, answers),
+    scoreBrightness(tv, answers),
     scoreUse(tv, answers),
+    scoreGamingWishes(tv, answers),
     scorePriority(tv, answers),
     scoreBrand(tv, answers),
     scoreAvailability(tv),
@@ -392,7 +471,89 @@ function scoreTv(tv, answers) {
     );
   }
 
-  return { tv, score, reasons, warnings, knownSpecs };
+  /*
+    Што НЕ можеме да оцениме кај овој модел. Картичката го кажува тоа отворено
+    наместо да молчи — „не знаеме" е поинформативно од празно поле.
+  */
+  const gaps = parts.map((part) => part.gap).filter(Boolean);
+
+  return { tv, score, reasons, warnings, knownSpecs, gaps };
+}
+
+/*
+  Со што конкретно овој телевизор е подобар од препорачаниот.
+
+  Се користи за третата картичка: таа има смисла само ако може да се именува
+  предноста. Ако нема таква, подобро е да нема трета картичка отколку да се
+  прикаже речиси ист телевизор само за да се пополни местото.
+*/
+function advantageOver(candidate, best) {
+  const a = candidate.tv;
+  const b = best.tv;
+
+  if (a.size !== null && b.size !== null && a.size >= b.size + 10) {
+    return { key: "golemina", label: `Поголем екран — ${a.size}" наместо ${b.size}"` };
+  }
+
+  const gamingScore = (tv) =>
+    (tv.refreshRate >= 120 ? 1 : 0) + (tv.gaming?.vrr ? 1 : 0) + (tv.gaming?.allm ? 1 : 0);
+
+  if (gamingScore(a) > gamingScore(b)) {
+    const extras = [
+      a.refreshRate >= 120 && b.refreshRate < 120 && `${a.refreshRate}Hz`,
+      a.gaming?.vrr && !b.gaming?.vrr && "VRR",
+      a.gaming?.allm && !b.gaming?.allm && "ALLM",
+    ].filter(Boolean);
+
+    if (extras.length) {
+      return { key: "gejming", label: `Подобар за гејминг — ${extras.join(", ")}` };
+    }
+  }
+
+  const panelRank = (tv) => (panelOf(tv) ? panelOf(tv).picture : 0);
+
+  if (panelRank(a) > panelRank(b)) {
+    return {
+      key: "slika",
+      label: `Подобар панел — ${panelOf(a).label} наместо ${panelOf(b).label}`,
+    };
+  }
+
+  if (a.price !== null && b.price !== null && a.price <= b.price * 0.75) {
+    const saved = Math.round((b.price - a.price) / 1000) * 1000;
+    return { key: "cena", label: `Поевтин за околу ${saved.toLocaleString("de-DE")} ден.` };
+  }
+
+  return null;
+}
+
+/*
+  Што се губи во однос на препорачаниот — само кога има податок за тоа.
+*/
+function tradeoffAgainst(candidate, best) {
+  const a = candidate.tv;
+  const b = best.tv;
+
+  if (a.size !== null && b.size !== null && a.size <= b.size - 10) {
+    return `Помал екран — ${a.size}" наместо ${b.size}"`;
+  }
+
+  if (b.refreshRate >= 120 && a.refreshRate > 0 && a.refreshRate < 120) {
+    return `${a.refreshRate}Hz наместо ${b.refreshRate}Hz`;
+  }
+
+  const panelRank = (tv) => (panelOf(tv) ? panelOf(tv).picture : 0);
+
+  if (panelRank(b) > panelRank(a) && panelOf(a) && panelOf(b)) {
+    return `${panelOf(a).label} наместо ${panelOf(b).label}`;
+  }
+
+  if (a.price !== null && b.price !== null && a.price >= b.price * 1.25) {
+    const more = Math.round((a.price - b.price) / 1000) * 1000;
+    return `Поскап за околу ${more.toLocaleString("de-DE")} ден.`;
+  }
+
+  return null;
 }
 
 /* ------------------------------------------------------------------ *
@@ -427,7 +588,7 @@ function withinBudget(tv, budget) {
   "no results" screen, and `relax` names the single constraint most worth
   loosening.
 */
-export function recommend(catalogue, answers) {
+export function recommend(catalogue, answers, options = {}) {
   const budget = answers.budget || null;
 
   const affordable = catalogue.filter((tv) => withinBudget(tv, budget));
@@ -474,17 +635,45 @@ export function recommend(catalogue, answers) {
     picks.push({ ...value, kind: "vrednost" });
   }
 
-  // Premium: the strongest pick that costs clearly more than the best match.
-  const premium = ranked.find(
-    (entry) =>
-      entry.tv.price !== null &&
-      best.tv.price !== null &&
-      entry.tv.price > best.tv.price * 1.25 &&
-      !picks.some((pick) => pick.tv.id === entry.tv.id)
-  );
+  /*
+    Третата картичка е „Алтернатива", не „Премиум".
 
-  if (premium) {
-    picks.push({ ...premium, kind: "premium" });
+    Порано тоа беше просто најскапиот добар модел, што честопати даваше
+    речиси ист телевизор. Сега се бара модел со ИМЕНУВАНА предност над
+    препорачаниот — поголем екран, подобар гејминг, подобар панел или
+    значително поевтин. Ако таква нема, нема ни трета картичка: подобро две
+    искрени препораки отколку три од кои едната е пополнување.
+  */
+  const candidates = ranked
+    .filter((entry) => !picks.some((pick) => pick.tv.id === entry.tv.id))
+    .filter((entry) => entry.score >= best.score * 0.5)
+    .map((entry) => ({ entry, advantage: advantageOver(entry, best) }))
+    .filter(({ advantage }) => advantage !== null);
+
+  /*
+    Прво се бара предност што НЕ е цената. „Поевтин" е веќе работата на
+    картичката „најдобра вредност"; ако и третата е само поевтина, корисникот
+    гледа двапати иста понуда. Цената останува резерва ако нема друго.
+  */
+  const alternative =
+    candidates.find(({ advantage }) => advantage.key !== "cena") || candidates[0];
+
+  if (alternative) {
+    picks.push({
+      ...alternative.entry,
+      kind: "alternativa",
+      advantage: alternative.advantage.label,
+    });
+  }
+
+  // Предност и компромис за секоја картичка, во однос на препорачаниот.
+  for (const pick of picks) {
+    if (pick.kind === "najdobar") continue;
+    if (!pick.advantage) {
+      const found = advantageOver(pick, best);
+      if (found) pick.advantage = found.label;
+    }
+    pick.tradeoff = tradeoffAgainst(pick, best);
   }
 
   /*
@@ -499,8 +688,27 @@ export function recommend(catalogue, answers) {
     brands.includes("site") ||
     picks.some((pick) => brands.includes(pick.tv.brand));
 
+  /*
+    „Прикажи повеќе телевизори" — остатокот од веќе пресметаното рангирање.
+    Не се пресметува одново; само се сече подлабоко во истата листа.
+  */
+  const extra = Math.min(Math.max(Number(options.extra) || 0, 0), 48);
+  const chosen = new Set(picks.map((pick) => pick.tv.id));
+  let rest = ranked.filter((entry) => !chosen.has(entry.tv.id));
+
+  if (options.sort === "cena") {
+    rest = rest
+      .filter((entry) => entry.tv.price !== null)
+      .sort((a, b) => a.tv.price - b.tv.price);
+  } else if (options.sort === "golemina") {
+    rest = rest.sort((a, b) => (b.tv.size || 0) - (a.tv.size || 0));
+  }
+  // по дифолт останува редоследот по соодветност
+
   return {
     picks,
+    more: extra > 0 ? rest.slice(0, extra) : [],
+    moreAvailable: rest.length,
     blocked: null,
     relax: null,
     consideredCount: affordable.length,

@@ -1,8 +1,9 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useContext, useEffect, useMemo, useRef, useState } from "react";
 import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 
 import Navigation from "./Navigation";
+import { Context } from "./Context";
 import { usePageMeta } from "../lib/usePageMeta";
 import { formatPrice, technologyLabel } from "../lib/tvSpecs";
 import {
@@ -463,6 +464,171 @@ const Warning = styled(Reason)`
   }
 `;
 
+const Advantage = styled.div`
+  margin-top: 10px;
+
+  color: #1b7a4b;
+
+  font-size: 14px;
+  font-weight: 700;
+`;
+
+const Tradeoff = styled.div`
+  margin-top: 4px;
+
+  color: #9a5b00;
+
+  font-size: 14px;
+  font-weight: 600;
+`;
+
+const DataGap = styled.div`
+  margin-top: 8px;
+
+  color: #888;
+
+  font-size: 13px;
+  line-height: 1.5;
+
+  font-style: italic;
+`;
+
+const CardLinks = styled.div`
+  margin-top: 14px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+`;
+
+const CardLink = styled(Link)`
+  padding: 8px 14px;
+
+  color: ${PURPLE};
+
+  font-size: 13px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  border: 1px solid #dedee5;
+  border-radius: 8px;
+
+  &:hover {
+    border-color: ${PURPLE};
+    background: #f6f6fb;
+  }
+`;
+
+const CompareButton = styled.button`
+  padding: 8px 14px;
+
+  border: 1px solid #dedee5;
+  border-radius: 8px;
+
+  background: white;
+  color: #555;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  &:hover:not(:disabled) {
+    border-color: ${PURPLE};
+    color: ${PURPLE};
+  }
+
+  &:disabled {
+    background: #f1f1f4;
+    color: #999;
+    cursor: default;
+  }
+`;
+
+const MoreCont = styled.div`
+  margin-top: 30px;
+  padding-top: 24px;
+
+  border-top: 1px solid #e8e8ef;
+`;
+
+const MoreHeader = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+
+  margin-bottom: 16px;
+`;
+
+const MoreTitle = styled.h2`
+  margin: 0;
+
+  color: #333;
+
+  font-size: 17px;
+  font-weight: 700;
+`;
+
+const SortSelect = styled.select`
+  height: 36px;
+  padding: 0 10px;
+
+  border: 1px solid #dedee5;
+  border-radius: 8px;
+
+  background: white;
+  color: #555;
+
+  font-size: 13px;
+  font-weight: 600;
+`;
+
+const MoreRow = styled(Link)`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  padding: 12px 14px;
+
+  border: 1px solid #e8e8ef;
+  border-radius: 10px;
+
+  margin-bottom: 8px;
+
+  text-decoration: none;
+
+  &:hover {
+    border-color: ${PURPLE};
+    background: #f8f8fc;
+  }
+`;
+
+const MoreName = styled.span`
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+`;
+
+const MoreSpecs = styled.span`
+  display: block;
+  margin-top: 2px;
+  color: #888;
+  font-size: 12px;
+  font-weight: 500;
+`;
+
+const MorePrice = styled.span`
+  color: ${PURPLE};
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+`;
+
 const Offers = styled.div`
   padding-top: 14px;
 
@@ -705,6 +871,38 @@ function buildSteps(budgetOptions, brandOptions) {
       hint: "Ако мораш да избереш едно нешто за кое вреди да се плати повеќе.",
       options: PRIORITY_OPTIONS.map((o) => ({ id: o.id, label: o.label })),
     },
+    /*
+      Прашање само за оние што играат. Се прикажува условно (види подолу):
+      нема смисла да го прашуваш за VRR некој што гледа само серии.
+
+      Намерно се вели „добро е да има", не „мора": 120Hz + VRR + ALLM
+      оставаат 113 телевизори, а со среден буџет само 18. Задолжително
+      барање би враќало празно.
+    */
+    {
+      key: "gamingWishes",
+      question: "Што ти е важно за гејминг?",
+      hint: "Ова се желби, не услови. Ако нешто недостасува кај препорачаниот, ќе ти кажеме.",
+      multi: true,
+      onlyIf: (a) => a.use === "gejming" || a.priority === "gejming",
+      options: [
+        {
+          id: "hz120",
+          label: "120Hz или повеќе",
+          note: "помазна слика во брзи игри",
+        },
+        {
+          id: "vrr",
+          label: "VRR",
+          note: "спречува кинење на сликата",
+        },
+        {
+          id: "allm",
+          label: "ALLM",
+          note: "автоматски режим со мало доцнење",
+        },
+      ],
+    },
     {
       key: "brands",
       question: "Имаш ли преференца за бренд?",
@@ -727,6 +925,8 @@ function buildSteps(budgetOptions, brandOptions) {
  * ------------------------------------------------------------------ */
 
 const OdberiTv = () => {
+  const { compareList, addToCompare } = useContext(Context);
+
   const [quizOptions, setQuizOptions] = useState({ brands: [], budgets: [] });
 
   usePageMeta({
@@ -756,14 +956,22 @@ const OdberiTv = () => {
     };
   }, []);
 
-  const steps = useMemo(
-    () => buildSteps(quizOptions.budgets, quizOptions.brands),
-    [quizOptions]
-  );
-
   const [stepIndex, setStepIndex] = useState(0);
   const [answers, setAnswers] = useState({});
   const [done, setDone] = useState(false);
+
+  /*
+    Чекорите зависат и од одговорите: прашањето за гејминг се појавува само
+    ако корисникот игра. Затоа `answers` е во зависностите.
+  */
+  const steps = useMemo(
+    () =>
+      buildSteps(quizOptions.budgets, quizOptions.brands).filter(
+        (item) => !item.onlyIf || item.onlyIf(answers)
+      ),
+    [quizOptions, answers]
+  );
+
 
   const optionsRef = useRef(null);
 
@@ -856,6 +1064,11 @@ const OdberiTv = () => {
   const [result, setResult] = useState(null);
   const [scoring, setScoring] = useState(false);
 
+  // „Прикажи повеќе" и сортирањето се праќаат до серверот; тој веќе ја има
+  // рангираната листа, па нема потреба да се пресметува повторно овде.
+  const [extra, setExtra] = useState(0);
+  const [sort, setSort] = useState("match");
+
   useEffect(() => {
     if (!done) {
       setResult(null);
@@ -864,6 +1077,9 @@ const OdberiTv = () => {
 
     let cancelled = false;
     setScoring(true);
+
+    // Повеќекратниот избор чува листа од id-а; серверот чека знаменца.
+    const wishes = Array.isArray(answers.gamingWishes) ? answers.gamingWishes : [];
 
     fetch(`${API}/recommend`, {
       method: "POST",
@@ -875,6 +1091,13 @@ const OdberiTv = () => {
         budget: answers.budget,
         priority: answers.priority,
         brands: answers.brands || [],
+        gamingWishes: {
+          hz120: wishes.includes("hz120"),
+          vrr: wishes.includes("vrr"),
+          allm: wishes.includes("allm"),
+        },
+        extra,
+        sort,
       }),
     })
       .then((r) => (r.ok ? r.json() : Promise.reject(new Error(r.status))))
@@ -892,12 +1115,14 @@ const OdberiTv = () => {
     return () => {
       cancelled = true;
     };
-  }, [done, answers]);
+  }, [done, answers, extra, sort]);
 
   const restart = () => {
     setAnswers({});
     setStepIndex(0);
     setDone(false);
+    setExtra(0);
+    setSort("match");
   };
 
   /* ---------------- Results ---------------- */
@@ -1005,7 +1230,7 @@ const OdberiTv = () => {
                 ? "Најдобар избор за тебе"
                 : pick.kind === "vrednost"
                 ? "Најдобра вредност за парите"
-                : "Ако сакаш да платиш повеќе";
+                : "Алтернатива";
 
             const specs = [
               pick.tv.size ? `${pick.tv.size}"` : null,
@@ -1048,6 +1273,39 @@ const OdberiTv = () => {
                         <Warning key={`w${index}`}>{warning}</Warning>
                       ))}
                     </Reasons>
+
+                    {/* Предноста и компромисот се пресметани во однос на
+                        препорачаниот, не од готов текст. */}
+                    {pick.advantage && <Advantage>+ {pick.advantage}</Advantage>}
+
+                    {pick.tradeoff && <Tradeoff>− {pick.tradeoff}</Tradeoff>}
+
+                    {pick.gaps && pick.gaps.length > 0 && (
+                      <DataGap>
+                        Не можеме сигурно да оцениме: {pick.gaps.join(", ")} —
+                        тој податок ни недостасува за овој модел.
+                      </DataGap>
+                    )}
+
+                    <CardLinks>
+                      <CardLink
+                        to={`/tv/${encodeURIComponent(pick.tv.brand)}/${encodeURIComponent(
+                          pick.tv.model
+                        )}`}
+                      >
+                        Сите спецификации →
+                      </CardLink>
+
+                      <CompareButton
+                        type="button"
+                        onClick={() => addToCompare(pick.tv)}
+                        disabled={compareList.some((item) => item.id === pick.tv.id)}
+                      >
+                        {compareList.some((item) => item.id === pick.tv.id)
+                          ? "Во споредбата"
+                          : "Додај во споредба"}
+                      </CompareButton>
+                    </CardLinks>
 
                     <Offers>
                       {pick.tv.offers.map((offer, index) => {
@@ -1125,6 +1383,67 @@ const OdberiTv = () => {
               Назад на прашањата
             </GhostButton>
           </Controls>
+
+          {/*
+            Повеќе резултати: истата рангирана листа, само подлабоко. Се
+            вчитува од серверот зашто каталогот не е кај корисникот.
+          */}
+          {result.picks.length > 0 && result.moreAvailable > 0 && (
+            <MoreCont>
+              <MoreHeader>
+                <MoreTitle>
+                  Други телевизори што ти одговараат ({result.moreAvailable})
+                </MoreTitle>
+
+                {extra > 0 && (
+                  <SortSelect
+                    value={sort}
+                    onChange={(event) => setSort(event.target.value)}
+                    aria-label="Подреди"
+                  >
+                    <option value="match">Според соодветност</option>
+                    <option value="cena">Според цена</option>
+                    <option value="golemina">Според големина</option>
+                  </SortSelect>
+                )}
+              </MoreHeader>
+
+              {result.more.map((item) => (
+                <MoreRow
+                  key={item.tv.id}
+                  to={`/tv/${encodeURIComponent(item.tv.brand)}/${encodeURIComponent(
+                    item.tv.model
+                  )}`}
+                >
+                  <span>
+                    <MoreName>
+                      {item.tv.brand} {item.tv.model}
+                    </MoreName>
+                    <MoreSpecs>
+                      {[
+                        item.tv.size ? `${item.tv.size}"` : null,
+                        technologyLabel(item.tv.technology),
+                        item.tv.refreshRate ? `${item.tv.refreshRate}Hz` : null,
+                      ]
+                        .filter(Boolean)
+                        .join(" · ")}
+                    </MoreSpecs>
+                  </span>
+
+                  <MorePrice>{formatPrice(item.tv.price)}</MorePrice>
+                </MoreRow>
+              ))}
+
+              {extra < result.moreAvailable && (
+                <PrimaryButton
+                  type="button"
+                  onClick={() => setExtra((current) => current + 8)}
+                >
+                  {extra === 0 ? "Прикажи повеќе телевизори" : "Уште повеќе"}
+                </PrimaryButton>
+              )}
+            </MoreCont>
+          )}
         </Shell>
       </PageCont>
     );
