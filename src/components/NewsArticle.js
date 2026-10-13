@@ -4,6 +4,8 @@ import { Link, Navigate, useParams } from "react-router-dom";
 
 import ArticleImage from "./ArticleImage";
 import Navigation from "./Navigation";
+import { usePageMeta } from "../lib/usePageMeta";
+import { excerptFor } from "../lib/excerptFor";
 import news from "../Data/news";
 import edu from "../Data/edu";
 import {
@@ -546,6 +548,22 @@ const NewsArticle = ({ section = "novosti" }) => {
     [articles, slug]
   );
 
+  // Исто правило за наслов/опис/canonical/og: како за телевизор — секоја
+  // статија добива своја вистинска адреса и свој опис наместо општиот.
+  usePageMeta(
+    post
+      ? {
+          title: `${post.title} | Display.mk`,
+          description: excerptFor(post.excerpt),
+          path: `${basePath}/${encodeURIComponent(post.slug)}`,
+          image: post.hasImage ? post.image : undefined,
+          type: "article",
+          publishedTime: post.date,
+          section: post.category,
+        }
+      : { title: "Display.mk" }
+  );
+
   /*
     Статија преместена во друг дел: старата адреса води кај новата наместо да
     покаже „не е пронајдена". Серверот го прави истото со 301 за посетители
@@ -640,7 +658,7 @@ const NewsArticle = ({ section = "novosti" }) => {
         <HeroImage
           src={post.image}
           candidates={post.imageCandidates}
-          alt=""
+          alt={post.imageCaption || post.title}
         />
 
         {post.imageCaption && <HeroCaption>{post.imageCaption}</HeroCaption>}
@@ -665,7 +683,7 @@ const NewsArticle = ({ section = "novosti" }) => {
                   <RelatedImage
                     src={item.image}
                     candidates={item.imageCandidates}
-                    alt=""
+                    alt={item.imageCaption || item.title}
                   />
 
                   <RelatedBody>

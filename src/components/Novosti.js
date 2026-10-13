@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 
 import ArticleImage from "./ArticleImage";
 import Navigation from "./Navigation";
+import { usePageMeta } from "../lib/usePageMeta";
 import news from "../Data/news";
 import {
   CategoryBadge,
@@ -598,6 +599,14 @@ const ArticleListing = ({
   emptyTitle = "Сè уште нема статии",
   emptyText = "Наскоро ќе објавиме нови статии.",
 }) => {
+  // Исто правило за наслов/опис/canonical како секаде, за да Google и
+  // споделувањето ја гледаат оваа листа исто како секоја друга страница.
+  usePageMeta({
+    title: `${title} | Display.mk`,
+    description: subtitle,
+    path: basePath,
+  });
+
   const [shownCount, setShownCount] = useState(PAGE_SIZE);
 
   const sorted = useMemo(() => sortByNewest(articles), [articles]);
@@ -740,7 +749,7 @@ const ArticleListing = ({
                         <FeaturedImage
                           src={post.image}
                           candidates={post.imageCandidates}
-                          alt=""
+                          alt={post.imageCaption || post.title}
                         />
 
                         <FeaturedBody>
@@ -825,7 +834,7 @@ const ArticleListing = ({
                     <CardImage
                       src={post.image}
                       candidates={post.imageCandidates}
-                      alt=""
+                      alt={post.imageCaption || post.title}
                     />
 
                     <CardBody>

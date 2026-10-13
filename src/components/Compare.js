@@ -338,7 +338,7 @@ const Compare = () => {
 
                 {compareList.map((tv) => (
                   <HeaderCell key={tv.id}>
-                    <TvImage src={image} alt={tv.model} />
+                    <TvImage src={image} alt={`${tv.brand} ${tv.model}`} />
 
                     <Brand>{tv.brand}</Brand>
 

@@ -23,6 +23,7 @@
 */
 
 import generated from "./news.generated.json";
+import { isPublished } from "../lib/isPublished";
 
 /*
   Закажано објавување — scheduled publishing.
@@ -34,34 +35,16 @@ import generated from "./news.generated.json";
   An article dated in the future stays out of the listing (and out of the
   related-articles strip, and its own URL shows the "not found" card) until
   that moment arrives. The check runs in the browser, so nothing has to be
-  rebuilt for an article to go live.
+  rebuilt for an article to go live. The rule itself lives in
+  `src/lib/isPublished.js` so the server's sitemap and meta injection can
+  apply the exact same check — see that file.
 
   Worth knowing: a scheduled article is already inside the JavaScript bundle
   before its date. This schedules publication, it does not hide the text from
   someone who goes digging in the bundle. For that, keep the file named
   `_slug.md` until you are ready — buildNews.js skips those.
 */
-function publishTime(article) {
-  const stamp = article.publishAt || article.date;
-
-  /*
-    Browsers read a bare `2026-10-15` as UTC but `2026-10-15T00:00` as local
-    time, so midnight is written out explicitly. That way an article scheduled
-    for the 15th appears on the 15th as the reader's own clock sees it.
-  */
-  const local = stamp.includes(":")
-    ? stamp.replace(" ", "T")
-    : `${stamp}T00:00`;
-
-  const time = new Date(local).getTime();
-
-  // A date we cannot read should not quietly swallow an article.
-  return Number.isNaN(time) ? 0 : time;
-}
-
-export function isPublished(article, now = Date.now()) {
-  return publishTime(article) <= now;
-}
+export { isPublished };
 
 const news = generated.articles.filter((article) => isPublished(article));
 

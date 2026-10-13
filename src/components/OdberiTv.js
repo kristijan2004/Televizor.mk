@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Navigation from "./Navigation";
 import { Context } from "./Context";
 import { usePageMeta } from "../lib/usePageMeta";
+import { tvPath } from "../lib/tvPath";
 import { formatPrice, technologyLabel } from "../lib/tvSpecs";
 import {
   DISTANCE_OPTIONS,
@@ -1250,7 +1251,7 @@ const OdberiTv = () => {
                   {pick.tv.image && (
                     <PickImage
                       src={pick.tv.image}
-                      alt=""
+                      alt={`${pick.tv.brand} ${pick.tv.model}`}
                       onError={(event) => {
                         event.currentTarget.style.visibility = "hidden";
                       }}
@@ -1288,11 +1289,7 @@ const OdberiTv = () => {
                     )}
 
                     <CardLinks>
-                      <CardLink
-                        to={`/tv/${encodeURIComponent(pick.tv.brand)}/${encodeURIComponent(
-                          pick.tv.model
-                        )}`}
-                      >
+                      <CardLink to={tvPath(pick.tv)}>
                         Сите спецификации →
                       </CardLink>
 
@@ -1409,12 +1406,7 @@ const OdberiTv = () => {
               </MoreHeader>
 
               {result.more.map((item) => (
-                <MoreRow
-                  key={item.tv.id}
-                  to={`/tv/${encodeURIComponent(item.tv.brand)}/${encodeURIComponent(
-                    item.tv.model
-                  )}`}
-                >
+                <MoreRow key={item.tv.id} to={tvPath(item.tv)}>
                   <span>
                     <MoreName>
                       {item.tv.brand} {item.tv.model}

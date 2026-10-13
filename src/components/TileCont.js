@@ -3,6 +3,7 @@ import React, { useContext } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import { Context } from "./Context";
+import { tvPath } from "../lib/tvPath";
 
 const Cont = styled.div`
   width: 100%;
@@ -293,11 +294,7 @@ const checkStockStores = Object.entries(tv.stores || {})
           return (
             <Tile
               key={tv.id}
-              onClick={() =>
-                navigate(
-                  `/tv/${tv.brand.toLowerCase()}/${tv.model.toLowerCase()}`,
-                )
-              }
+              onClick={() => navigate(tvPath(tv))}
             >
               <ImageCont>
                 <TvImage

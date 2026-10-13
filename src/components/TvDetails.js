@@ -7,6 +7,7 @@ import { Context } from "./Context";
 import InfoTooltip from "./InfoToolTip";
 import { formatSpec } from "../lib/specValue";
 import { usePageMeta } from "../lib/usePageMeta";
+import { tvPath } from "../lib/tvPath";
 
 const Page = styled.div`
   min-height: 100vh;
@@ -408,7 +409,8 @@ const TvDetails = () => {
             `${tv.resolution ? ", " + tv.resolution : ""}` +
             `${tv.refreshRate ? ", " + tv.refreshRate + "Hz" : ""}` +
             `. Спецификации и каде е достапен во Македонија.`,
-          path: `/tv/${encodeURIComponent(brand)}/${encodeURIComponent(model)}`,
+          path: tvPath(tv),
+          image: tv.image,
         }
       : { title: "Display.mk" }
   );

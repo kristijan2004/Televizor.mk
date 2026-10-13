@@ -33,6 +33,9 @@ import {
 } from "../src/lib/tvSpecs.js";
 
 import { recommend } from "../src/lib/recommend.js";
+import { tvPath } from "../src/lib/tvPath.js";
+import { isPublished } from "../src/lib/isPublished.js";
+import { excerptFor } from "../src/lib/excerptFor.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -326,12 +329,18 @@ const ARTICLE_SECTIONS = [
   Се чита при секое барање намерно: `npm run build:news` го презапишува фајлот
   без серверот да се рестартира, па кеш во меморија би служел стари наслови.
 */
+/*
+  Исто правило како на клиентот (src/Data/news.js/edu.js): статија со иден
+  `date`/`publishAt` не постои сè уште. Без ова, sitemap-от и og:/title
+  инјектирањето би ја покажале/индексирале статија што вистински посетител ја
+  гледа како „не постои".
+*/
 const readArticles = (section) => {
   try {
     const data = JSON.parse(
       fs.readFileSync(path.join(DATA_DIR, section.file), "utf8")
     );
-    return data.articles || [];
+    return (data.articles || []).filter((a) => isPublished(a));
   } catch {
     // Нема статии — останатото сепак работи.
     return [];
@@ -342,27 +351,32 @@ app.get("/sitemap.xml", async (request, reply) => {
   const today = new Date().toISOString().slice(0, 10);
 
   const urls = [
-    { loc: `${SITE}/`, priority: "1.0", freq: "daily" },
-    { loc: `${SITE}/odberi-tv`, priority: "0.9", freq: "monthly" },
-    { loc: `${SITE}/novosti`, priority: "0.8", freq: "weekly" },
-    { loc: `${SITE}/edu`, priority: "0.5", freq: "monthly" },
-    { loc: `${SITE}/uslovi`, priority: "0.3", freq: "yearly" },
+    { loc: `${SITE}/`, lastmod: today, priority: "1.0", freq: "daily" },
+    { loc: `${SITE}/odberi-tv`, lastmod: today, priority: "0.9", freq: "monthly" },
+    { loc: `${SITE}/novosti`, lastmod: today, priority: "0.8", freq: "weekly" },
+    { loc: `${SITE}/edu`, lastmod: today, priority: "0.5", freq: "monthly" },
+    { loc: `${SITE}/uslovi`, lastmod: today, priority: "0.3", freq: "yearly" },
   ];
 
+  // Нема updated_at/created_at колона на tvs, па нема вистински lastmod за
+  // телевизори — подобро отсутен таг отколку измислена денешна дата.
   for (const row of db.prepare("SELECT brand, model FROM tvs ORDER BY brand, model").all()) {
     urls.push({
-      loc: `${SITE}/tv/${encodeURIComponent(row.brand)}/${encodeURIComponent(row.model)}`,
+      loc: `${SITE}${tvPath(row)}`,
+      lastmod: null,
       priority: "0.7",
       freq: "weekly",
     });
   }
 
-  // Статиите живеат во генерираните JSON фајлови, не во базата.
+  // Статиите живеат во генерираните JSON фајлови, не во базата. `date` е
+  // вистински датум на објавување — не денешен датум секогаш.
   for (const section of ARTICLE_SECTIONS) {
     for (const article of readArticles(section)) {
       if (!article.slug) continue;
       urls.push({
         loc: `${SITE}${section.basePath}/${encodeURIComponent(article.slug)}`,
+        lastmod: /^\d{4}-\d{2}-\d{2}/.test(article.date || "") ? article.date.slice(0, 10) : null,
         priority: "0.6",
         freq: "monthly",
       });
@@ -375,7 +389,8 @@ app.get("/sitemap.xml", async (request, reply) => {
     urls
       .map(
         (u) =>
-          `  <url><loc>${xmlEscape(u.loc)}</loc><lastmod>${today}</lastmod>` +
+          `  <url><loc>${xmlEscape(u.loc)}</loc>` +
+          (u.lastmod ? `<lastmod>${u.lastmod}</lastmod>` : "") +
           `<changefreq>${u.freq}</changefreq><priority>${u.priority}</priority></url>`
       )
       .join("\n") +
@@ -430,13 +445,20 @@ const STATIC_META = {
     во листата враќа 404, а /compare е вистинска страница на сајтот. Кога ќе
     се додаде нова рута во App.js, додај ја и овде.
   */
+  /*
+    noindex: страницата зависи од тоа кои телевизори ги избрал посетителот
+    (query/state), па секое „издание" на /compare е исто со секое друго за
+    Google — нема смисла да се индексира ниту едно.
+  */
   "/compare": {
     title: "Спореди телевизори | Display.mk",
     description: "Спореди до три телевизори рамо до рамо — спецификации една до друга.",
+    noindex: true,
   },
   "/addTv": {
     title: "Display.mk",
     description: DEFAULT_META.description,
+    noindex: true,
   },
   /*
     Не е интересна за пребарување (сопствена најава), но МОРА да стои тука
@@ -458,7 +480,11 @@ const STATIC_META = {
   телевизор/статија навистина не постои", не „не знам за овој пат".
 */
 function metaForPath(pathname) {
-  if (STATIC_META[pathname]) return { ...STATIC_META[pathname], found: true };
+  if (pathname === "/") return { ...STATIC_META["/"], found: true, kind: "home", canonicalPath: "/" };
+
+  if (STATIC_META[pathname]) {
+    return { ...STATIC_META[pathname], found: true, kind: "static", canonicalPath: pathname };
+  }
 
   const tv = pathname.match(/^\/tv\/([^/]+)\/([^/]+)\/?$/);
   if (tv) {
@@ -466,7 +492,13 @@ function metaForPath(pathname) {
       .prepare("SELECT * FROM tvs WHERE LOWER(brand) = ? AND LOWER(model) = ?")
       .get(decodeURIComponent(tv[1]).toLowerCase(), decodeURIComponent(tv[2]).toLowerCase());
 
-    if (!row) return { ...DEFAULT_META, found: false };
+    if (!row) return { ...DEFAULT_META, found: false, kind: "tv", canonicalPath: pathname };
+
+    // Каноничната адреса доаѓа од самиот ред во базата (мала буква,
+    // enkodiranje), не од патот во барањето — така секој телевизор има само
+    // ЕДНА вистинска адреса, а секоја друга форма (голема буква, без
+    // enkodiranje) 301-редиректира кон неа.
+    const canonicalPath = tvPath(row);
 
     const bits = [
       `${row.size} инчи`,
@@ -479,6 +511,11 @@ function metaForPath(pathname) {
       title: `${row.brand} ${row.model} — ${row.size}" ${row.technology || ""} | Display.mk`.replace(/\s+/g, " "),
       description: `${row.brand} ${row.model}: ${bits.join(", ")}. Спецификации и каде е достапен во Македонија.`,
       found: true,
+      kind: "tv",
+      tv: row,
+      image: row.image || null,
+      canonicalPath,
+      redirectTo: canonicalPath !== pathname ? canonicalPath : null,
     };
   }
 
@@ -488,24 +525,34 @@ function metaForPath(pathname) {
     );
     if (!article) continue;
 
-    const found = readArticles(section).find(
-      (a) => a.slug === decodeURIComponent(article[1])
-    );
+    const slug = decodeURIComponent(article[1]);
+    const found = readArticles(section).find((a) => a.slug === slug);
 
     if (found) {
+      // Истата адреса секогаш, независно од тоа како дошло барањето —
+      // слагот во базата е веќе точен облик, нема голема/мала буква да се
+      // нормализира.
+      const canonicalPath = `${section.basePath}/${encodeURIComponent(found.slug)}`;
+
       return {
         title: `${found.title} | Display.mk`,
-        description: (found.summary || found.excerpt || DEFAULT_META.description).slice(0, 180),
+        description: excerptFor(found.excerpt || DEFAULT_META.description),
         found: true,
+        kind: "article",
+        article: found,
+        section,
+        image: found.hasImage ? found.image : null,
+        canonicalPath,
+        redirectTo: canonicalPath !== pathname ? canonicalPath : null,
       };
     }
 
-    return { ...DEFAULT_META, found: false };
+    return { ...DEFAULT_META, found: false, kind: "article", canonicalPath: pathname };
   }
 
   // Непознат пат, но постои во App.js (нов route некој ден) — 200, општ опис,
   // наместо 404. Само /tv/ и /novosti/ смеат вистински да „не постојат".
-  return { ...DEFAULT_META, found: true };
+  return { ...DEFAULT_META, found: true, kind: "static", canonicalPath: pathname };
 }
 
 /*
@@ -545,14 +592,151 @@ function movedTo(pathname) {
   return null;
 }
 
+/*
+  ВРЕМЕНА слика за споделување кога страницата нема своја: нема вистинска
+  слика 1200×630 во проекта сè уште (icon-512.png е квадратна, само лого).
+  Флагирано во docs/seo-pass-2026-10-13.md — Даниел треба да додаде вистинска
+  слика за споделување.
+*/
+const DEFAULT_SHARE_IMAGE = `${SITE}/icon-512.png`;
+
+function absoluteImage(imgPath) {
+  if (!imgPath) return null;
+  if (/^https?:\/\//.test(imgPath)) return imgPath;
+  return `${SITE}${imgPath.startsWith("/") ? "" : "/"}${imgPath}`;
+}
+
+const ldEscape = (json) => json.replace(/</g, "\\u003c").replace(/>/g, "\\u003e");
+
+function ldScript(obj) {
+  return `<script type="application/ld+json">${ldEscape(JSON.stringify(obj))}</script>`;
+}
+
+/*
+  JSON-LD само за Home, ТВ страница и статија — единствените три каде што
+  има вистински, проверливи податоци да се опишат. Само стварни вредности;
+  никогаш offers/price/review/rating (телевизорот нема наша цена/оценка).
+*/
+function jsonLdFor(meta) {
+  if (meta.kind === "home") {
+    return [
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        name: "Display.mk",
+        url: SITE,
+        inLanguage: "mk",
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: "Display.mk",
+        url: SITE,
+        logo: `${SITE}/icon-512.png`,
+      },
+    ];
+  }
+
+  if (meta.kind === "tv" && meta.tv) {
+    const row = meta.tv;
+
+    const additionalProperty = [
+      row.size ? { "@type": "PropertyValue", name: "Големина", value: `${row.size}"` } : null,
+      row.technology ? { "@type": "PropertyValue", name: "Технологија", value: row.technology } : null,
+      row.resolution ? { "@type": "PropertyValue", name: "Резолуција", value: row.resolution } : null,
+      row.refreshRate ? { "@type": "PropertyValue", name: "Освежување", value: `${row.refreshRate}Hz` } : null,
+      row.hdr ? { "@type": "PropertyValue", name: "HDR", value: "Да" } : null,
+    ].filter(Boolean);
+
+    const product = {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      name: `${row.brand} ${row.model}`,
+      brand: { "@type": "Brand", name: row.brand },
+      model: row.model,
+      category: "Телевизори",
+    };
+    if (row.image) product.image = absoluteImage(row.image);
+    if (additionalProperty.length) product.additionalProperty = additionalProperty;
+
+    // Брендот нема своја страница на сајтот (нема /tv/:brand листинг), па
+    // средниот чекор во патеката нема "item" адреса — не измислувам адреса
+    // што не постои.
+    const breadcrumb = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Почетна", item: SITE },
+        { "@type": "ListItem", position: 2, name: row.brand },
+        { "@type": "ListItem", position: 3, name: row.model, item: `${SITE}${meta.canonicalPath}` },
+      ],
+    };
+
+    return [product, breadcrumb];
+  }
+
+  if (meta.kind === "article" && meta.article) {
+    const a = meta.article;
+    const sectionName = meta.section.name === "novosti" ? "Новости" : "Еду";
+
+    const article = {
+      "@context": "https://schema.org",
+      // Новости = вистинска новинска содржина; Еду = траен, неизвесен по
+      // датум текст — затоа различни типови наместо истиот за сите.
+      "@type": meta.section.name === "novosti" ? "NewsArticle" : "Article",
+      headline: a.title,
+      description: excerptFor(a.excerpt),
+      inLanguage: "mk",
+      publisher: {
+        "@type": "Organization",
+        name: "Display.mk",
+        url: SITE,
+        logo: { "@type": "ImageObject", url: `${SITE}/icon-512.png` },
+      },
+      author: a.author
+        ? { "@type": "Person", name: a.author }
+        : { "@type": "Organization", name: "Display.mk", url: SITE },
+    };
+    if (a.date) article.datePublished = a.date;
+    if (a.hasImage && a.image) article.image = absoluteImage(a.image);
+
+    const breadcrumb = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Почетна", item: SITE },
+        { "@type": "ListItem", position: 2, name: sectionName, item: `${SITE}${meta.section.basePath}` },
+        { "@type": "ListItem", position: 3, name: a.title },
+      ],
+    };
+
+    return [article, breadcrumb];
+  }
+
+  return [];
+}
+
 app.get("/__html/*", async (request, reply) => {
-  const pathname = "/" + (request.params["*"] || "").split("?")[0];
+  /*
+    НЕ request.params["*"] — Fastify го декодира целиот wildcard наеднаш, па
+    %2F (екодирана косинка кај 14 Philips модели, пр. "43PFS6808/12") се
+    претвора во вистинска „/" ПРЕД regex-ot во metaForPath да стигне до неа,
+    па патот наеднаш има 3 делови наместо 2 и бара не се совпаѓа со телевизор
+    воопшто. request.raw.url е непроменет, како што стигнал — секој дел се
+    декодира одделно подолу, исто како /api/tvs/:brand/:model.
+  */
+  const pathname = (request.raw.url || "/").split("?")[0].replace(/^\/__html/, "") || "/";
 
   // Преместена статија: 301 кон новата адреса, пред било што друго.
   const moved = movedTo(pathname);
   if (moved) return reply.redirect(moved, 301);
 
   const meta = metaForPath(pathname);
+
+  // Нестандардна форма на постоечки телевизор/статија (голема буква, без
+  // enkodiranje): 301 кон единствената канонична адреса, само кога
+  // навистина постои.
+  if (meta.redirectTo) return reply.redirect(meta.redirectTo, 301);
 
   let html;
   try {
@@ -568,7 +752,36 @@ app.get("/__html/*", async (request, reply) => {
   const escText = (v) =>
     String(v).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
-  const url = `${SITE}${pathname}`;
+  const url = `${SITE}${meta.canonicalPath || pathname}`;
+  const ogType = meta.kind === "article" ? "article" : "website";
+  const image = absoluteImage(meta.image) || DEFAULT_SHARE_IMAGE;
+  const hasRealImage = Boolean(absoluteImage(meta.image));
+
+  let headExtra =
+    `<link rel="canonical" href="${escAttr(url)}"/>` +
+    `<meta property="og:type" content="${ogType}"/>` +
+    `<meta property="og:site_name" content="Display.mk"/>` +
+    `<meta property="og:locale" content="mk_MK"/>` +
+    `<meta property="og:title" content="${escAttr(meta.title)}"/>` +
+    `<meta property="og:description" content="${escAttr(meta.description)}"/>` +
+    `<meta property="og:url" content="${escAttr(url)}"/>` +
+    `<meta property="og:image" content="${escAttr(image)}"/>` +
+    (hasRealImage ? `<meta property="og:image:alt" content="${escAttr(meta.title)}"/>` : "") +
+    `<meta name="twitter:card" content="${hasRealImage ? "summary_large_image" : "summary"}"/>` +
+    (meta.noindex ? `<meta name="robots" content="noindex, nofollow"/>` : "");
+
+  if (meta.kind === "article" && meta.article) {
+    if (meta.article.date) {
+      headExtra += `<meta property="article:published_time" content="${escAttr(meta.article.date)}"/>`;
+    }
+    if (meta.article.category) {
+      headExtra += `<meta property="article:section" content="${escAttr(meta.article.category)}"/>`;
+    }
+  }
+
+  for (const block of jsonLdFor(meta)) {
+    headExtra += ldScript(block);
+  }
 
   html = html
     .replace(/<title>[^<]*<\/title>/, `<title>${escText(meta.title)}</title>`)
@@ -576,18 +789,7 @@ app.get("/__html/*", async (request, reply) => {
       /<meta name="description" content="[^"]*"\s*\/?>/,
       `<meta name="description" content="${escAttr(meta.description)}"/>`
     )
-    .replace(
-      "</head>",
-      `<link rel="canonical" href="${escAttr(url)}"/>` +
-        `<meta property="og:type" content="website"/>` +
-        `<meta property="og:site_name" content="Display.mk"/>` +
-        `<meta property="og:title" content="${escAttr(meta.title)}"/>` +
-        `<meta property="og:description" content="${escAttr(meta.description)}"/>` +
-        `<meta property="og:url" content="${escAttr(url)}"/>` +
-        `<meta name="twitter:card" content="summary"/>` +
-        (meta.noindex ? `<meta name="robots" content="noindex, nofollow"/>` : "") +
-        `</head>`
-    );
+    .replace("</head>", `${headExtra}</head>`);
 
   reply.header("Content-Type", "text/html; charset=utf-8");
   reply.header("Cache-Control", "no-cache, must-revalidate");
