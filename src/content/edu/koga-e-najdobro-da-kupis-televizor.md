@@ -2,10 +2,10 @@
 title: "Кога е најдобро да купиш телевизор и колку реално паѓаат цените"
 slug: "koga-e-najdobro-da-kupis-televizor"
 date: "2026-10-02"
-category: "Понуди"
+category: "Совети"
 excerpt: "Телевизорите се движат по предвидлив годишен циклус на цени. Ако го знаеш, можеш да го купиш истиот модел значително поевтино само со тоа што ќе избереш вистински месец."
-author: "Редакција на Телевизор.мк"
-image: "/images/novosti/koga-da-kupis.jpg"
+image: "/images/edu/koga-e-najdobro-da-kupis-televizor.svg"
+imageCaption: "Поедноставен приказ на годишниот циклус на цените."
 readTime: 4
 featured: false
 ---

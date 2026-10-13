@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif">
+<style>
+.scan { animation: scan 3s linear infinite; }
+@keyframes scan { 0% { transform: translateY(0) } 100% { transform: translateY(186px) } }
+.fp { animation: pulse 3s ease-in-out infinite; }
+@keyframes pulse { 0%, 100% { opacity: 1 } 50% { opacity: 0.55 } }
+.pk { animation: pk 3s linear infinite; }
+.pk.b { animation-delay: -1s; } .pk.c { animation-delay: -2s; }
+@keyframes pk { 0% { transform: translateX(0); opacity: 0 } 10% { opacity: 1 } 90% { opacity: 1 } 100% { transform: translateX(170px); opacity: 0 } }
+.ad { animation: ad 3s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+.ad.b { animation-delay: -1.5s; }
+@keyframes ad { 0%, 100% { transform: scale(1) } 50% { transform: scale(1.04) } }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }</style>
+<rect width="1600" height="900" fill="#f4f4fa"/><defs><clipPath id="tvscr"><rect x="150" y="240" width="300" height="190" rx="8"/></clipPath></defs>
+<text x="800" y="150" font-size="44" font-weight="800" fill="#1b1b2f" text-anchor="middle">Како телевизорот препознава што гледаш</text>
+<rect x="130" y="220" width="340" height="230" rx="16" fill="#1b1b2f"/><rect x="150" y="240" width="300" height="190" rx="8" fill="#242582"/>
+<g class="fp"><ellipse cx="300" cy="340" rx="18" ry="24" fill="none" stroke="#ffffff" stroke-width="5" stroke-dasharray="40 12" opacity="0.9"/><ellipse cx="300" cy="340" rx="32" ry="40" fill="none" stroke="#ffffff" stroke-width="5" stroke-dasharray="52 12" opacity="0.9"/><ellipse cx="300" cy="340" rx="46" ry="56" fill="none" stroke="#ffffff" stroke-width="5" stroke-dasharray="64 12" opacity="0.9"/><ellipse cx="300" cy="340" rx="60" ry="72" fill="none" stroke="#ffffff" stroke-width="5" stroke-dasharray="76 12" opacity="0.9"/><ellipse cx="300" cy="340" rx="74" ry="88" fill="none" stroke="#ffffff" stroke-width="5" stroke-dasharray="88 12" opacity="0.9"/><ellipse cx="300" cy="340" rx="88" ry="104" fill="none" stroke="#ffffff" stroke-width="5" stroke-dasharray="100 12" opacity="0.9"/></g>
+<g clip-path="url(#tvscr)"><rect class="scan" x="150" y="240" width="300" height="6" fill="#9fa0ff" opacity="0.9"/></g>
+<rect x="270" y="456" width="60" height="16" rx="5" fill="#1b1b2f"/><rect x="230" y="472" width="140" height="10" rx="5" fill="#1b1b2f"/>
+<line x1="500" y1="335" x2="672" y2="335" stroke="#d9d9e6" stroke-width="5" stroke-dasharray="14 10"/><path d="M668,321 L690,335 L668,349 Z" fill="#242582"/>
+<circle class="pk" cx="500" cy="335" r="9" fill="#242582"/><circle class="pk b" cx="500" cy="335" r="9" fill="#242582"/><circle class="pk c" cx="500" cy="335" r="9" fill="#242582"/>
+<rect x="720" y="250" width="160" height="60" fill="#242582"/><ellipse cx="800" cy="250" rx="80" ry="22" fill="#3a3bb0"/><ellipse cx="800" cy="310" rx="80" ry="22" fill="#242582"/><rect x="720" y="320" width="160" height="60" fill="#242582"/><ellipse cx="800" cy="320" rx="80" ry="22" fill="#3a3bb0"/><ellipse cx="800" cy="380" rx="80" ry="22" fill="#242582"/><rect x="720" y="390" width="160" height="60" fill="#242582"/><ellipse cx="800" cy="390" rx="80" ry="22" fill="#3a3bb0"/><ellipse cx="800" cy="450" rx="80" ry="22" fill="#242582"/>
+<line x1="910" y1="335" x2="1092" y2="335" stroke="#d9d9e6" stroke-width="5" stroke-dasharray="14 10"/><path d="M1088,321 L1110,335 L1088,349 Z" fill="#242582"/>
+<circle class="pk" cx="910" cy="335" r="9" fill="#242582"/><circle class="pk b" cx="910" cy="335" r="9" fill="#242582"/><circle class="pk c" cx="910" cy="335" r="9" fill="#242582"/>
+<g class="ad "><rect x="1130" y="230" width="190" height="110" rx="14" fill="#fff" stroke="#d9d9e6" stroke-width="3"/><rect x="1148" y="250" width="70" height="70" rx="10" fill="#d64545"/><rect x="1234" y="258" width="68" height="12" rx="6" fill="#d9d9e6"/><rect x="1234" y="282" width="52" height="12" rx="6" fill="#d9d9e6"/></g><g class="ad b"><rect x="1180" y="370" width="190" height="110" rx="14" fill="#fff" stroke="#d9d9e6" stroke-width="3"/><rect x="1198" y="390" width="70" height="70" rx="10" fill="#e3972b"/><rect x="1284" y="398" width="68" height="12" rx="6" fill="#d9d9e6"/><rect x="1284" y="422" width="52" height="12" rx="6" fill="#d9d9e6"/></g>
+<circle cx="300" cy="600" r="26" fill="#242582"/><text x="300" y="610" font-size="28" font-weight="700" fill="#fff" text-anchor="middle">1</text>
+<text x="300" y="670" font-size="30" font-weight="700" fill="#1b1b2f" text-anchor="middle">Отпечаток од екранот</text>
+<text x="300" y="710" font-size="24" fill="#5d5d78" text-anchor="middle">мал примерок од сликата или звукот</text>
+<circle cx="800" cy="600" r="26" fill="#242582"/><text x="800" y="610" font-size="28" font-weight="700" fill="#fff" text-anchor="middle">2</text>
+<text x="800" y="670" font-size="30" font-weight="700" fill="#1b1b2f" text-anchor="middle">Споредба со база</text>
+<text x="800" y="710" font-size="24" fill="#5d5d78" text-anchor="middle">кој филм, емисија или реклама е</text>
+<circle cx="1290" cy="600" r="26" fill="#242582"/><text x="1290" y="610" font-size="28" font-weight="700" fill="#fff" text-anchor="middle">3</text>
+<text x="1290" y="670" font-size="30" font-weight="700" fill="#1b1b2f" text-anchor="middle">Податоци за реклами</text>
+<text x="1290" y="710" font-size="24" fill="#5d5d78" text-anchor="middle">насочени кон тебе и семејството</text></svg>

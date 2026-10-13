@@ -4,8 +4,8 @@ slug: "test-100-televizori-3-godini-oled-izgoruvanje"
 date: "2026-10-06"
 category: "Новости"
 excerpt: "Еден од најголемите тестови на издржливост досега покажа дека OLED телевизорите, кои многумина ги избегнуваат поради стравот од „изгорување", траат подолго од LCD моделите. Но приказната за изгорувањето не е сосема завршена."
-author: "Редакција на Телевизор.мк"
-image: "/images/novosti/test-100-televizori-3-godini-oled-izgoruvanje.jpg"
+image: "/images/novosti/test-100-televizori-3-godini-oled-izgoruvanje.svg"
+imageCaption: "Како настанува изгорувањето: трага остава само она што постојано стои на исто место."
 readTime: 3
 featured: false
 ---

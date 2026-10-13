@@ -4,8 +4,8 @@ slug: "oled-se-poevtini-oled-televizori"
 date: "2026-09-19"
 category: "Новости"
 excerpt: "Најголемата пречка за OLED отсекогаш била цената. Нов тип панел, поевтин за производство, го носи OLED во средната класа, во големини до 83 инчи, но со еден компромис што вреди да го знаеш."
-author: "Редакција на Телевизор.мк"
-image: "/images/novosti/oled-se.jpg"
+image: "/images/novosti/oled-se-poevtini-oled-televizori.jpg"
+imageCaption: "83-инчниот OLED Special Edition панел на штандот на LG Display на CES 2026. Фото: LG Display"
 readTime: 4
 featured: false
 ---

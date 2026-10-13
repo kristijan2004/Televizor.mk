@@ -1,4 +1,4 @@
-// Checks that novosti articles are finished and ready to deploy.
+// Checks that Новости and Еду articles are finished and ready to deploy.
 //
 // Usage (from the project root):
 //   node .claude/skills/write-novosti-article/check-article.mjs <slug or path> [...]
@@ -12,11 +12,13 @@ import { fileURLToPath } from "node:url";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, "../../..");
-const contentDir = path.join(root, "src/content/novosti");
-const imageDir = path.join(root, "public/images/novosti");
+// Both sections are built by scripts/buildNews.js and follow the same rules.
+const SECTIONS = ["novosti", "edu"];
+const contentDirOf = (section) => path.join(root, "src/content", section);
+const sectionOf = (file) => path.basename(path.dirname(file));
 
 const CATEGORIES = ["Новости", "Рецензии", "Совети", "Понуди"];
-const REQUIRED = ["title", "slug", "date", "category", "excerpt", "author", "image", "readTime", "featured"];
+const REQUIRED = ["title", "slug", "date", "category", "excerpt", "image", "readTime", "featured"];
 const MIN_WORDS = 350;
 
 // Leftover notes and placeholders that must never reach the live site.
@@ -52,7 +54,8 @@ function readFrontmatter(raw) {
 }
 
 function imageExists(image) {
-  if (!image || !image.startsWith("/images/novosti/")) return false;
+  if (!image || !image.startsWith("/images/")) return false;
+  const imageDir = path.join(root, "public", path.dirname(image));
   const want = path.basename(image).toLowerCase().replace(/(\.(jpe?g|png|webp|avif|svg))+$/, "");
   if (!fs.existsSync(imageDir)) return false;
   return fs.readdirSync(imageDir).some(
@@ -89,11 +92,22 @@ function check(file) {
 
   const lines = body.split("\n");
   if (lines.some((l) => /^\s*\|.*\|\s*$/.test(l))) errors.push(`markdown table — the article page can't render tables; use a list instead`);
-  if (/!\[[^\]]*\]\(/.test(body)) errors.push(`inline image ![...](...) — not supported, use the frontmatter image`);
+  // Photos in the text: ![what it shows](/images/<section>/file.jpg "caption … Фото: Samsung")
+  const section = sectionOf(file);
+  for (const l of lines) {
+    if (!/^\s*!\[/.test(l)) continue;
+    const fig = l.trim().match(/^!\[([^\]]*)\]\((\S+?)(?:\s+"([^"]*)")?\)$/);
+    if (!fig) { errors.push(`photo line is malformed: ${l.trim().slice(0, 80)}`); continue; }
+    const [, alt, src, caption] = fig;
+    if (!alt) errors.push(`photo ${src} needs a description inside ![...]`);
+    if (!caption || !/Фото:|Илустрација:/.test(caption)) errors.push(`photo ${src} needs a caption with the credit, e.g. "... Фото: Samsung"`);
+    if (!src.startsWith(`/images/${section}/`)) errors.push(`photo ${src} must be in public/images/${section}/`);
+    else if (!fs.existsSync(path.join(root, "public", src))) errors.push(`photo file not found: public${src}`);
+  }
   if (/^#\s/m.test(body)) errors.push(`"# " heading in the body — the title comes from frontmatter, start at "## "`);
   if (/<[a-z][^>]*>/i.test(body)) errors.push(`raw HTML tag in the body — it is shown as text`);
 
-  const words = body.replace(/[#>*_`\-\[\]()|]/g, " ").split(/\s+/).filter(Boolean).length;
+  const words = body.replace(/^\s*!\[.*$/gm, "").replace(/[#>*_`\-\[\]()|]/g, " ").split(/\s+/).filter(Boolean).length;
   if (words < MIN_WORDS) errors.push(`only ${words} words; a finished article needs at least ${MIN_WORDS}`);
 
   const needsSources = data.category && data.category !== "Совети";
@@ -104,7 +118,9 @@ function check(file) {
     if (!/\]\(https?:\/\//.test(after)) errors.push(`"## Извори" has no links`);
   }
 
-  if (!imageExists(data.image)) warns.push(`image ${data.image || "(none)"} is not in public/images/novosti/ — the placeholder will show`);
+  if (!imageExists(data.image)) warns.push(`cover image ${data.image || "(none)"} is missing — the placeholder will show`);
+  // Our own graphics (.svg) carry no credit; photos from manufacturers always do.
+  if (data.imageCaption && !/\.svg$/i.test(data.image || "") && !/Фото:|Илустрација:/.test(data.imageCaption)) warns.push(`imageCaption has no "Фото:" or "Илустрација:" credit`);
 
   return { errors, warns, words };
 }
@@ -116,15 +132,22 @@ if (!args.length) {
 }
 
 const files = args.includes("--all")
-  ? fs.readdirSync(contentDir).filter((f) => f.endsWith(".md") && f !== "README.md" && !f.startsWith("_")).map((f) => path.join(contentDir, f))
-  : args.map((a) => (a.endsWith(".md") ? path.resolve(a) : path.join(contentDir, `${a}.md`)));
+  ? SECTIONS.flatMap((s) =>
+      fs.readdirSync(contentDirOf(s))
+        .filter((f) => f.endsWith(".md") && f !== "README.md" && !f.startsWith("_"))
+        .map((f) => path.join(contentDirOf(s), f)))
+  : args.map((a) => {
+      if (a.endsWith(".md")) return path.resolve(a);
+      const hit = SECTIONS.map((s) => path.join(contentDirOf(s), `${a}.md`)).find((p) => fs.existsSync(p));
+      return hit || path.join(contentDirOf("novosti"), `${a}.md`);
+    });
 
 let failed = 0;
 for (const file of files) {
   if (!fs.existsSync(file)) { console.log(`ERROR ${file}: file not found`); failed++; continue; }
   const { errors, warns, words } = check(file);
   const status = errors.length ? "NOT READY" : "READY";
-  console.log(`${status}  ${path.basename(file)}${words ? `  (${words} words)` : ""}`);
+  console.log(`${status}  ${sectionOf(file)}/${path.basename(file)}${words ? `  (${words} words)` : ""}`);
   for (const e of errors) console.log(`  ERROR ${e}`);
   for (const w of warns) console.log(`  WARN  ${w}`);
   if (errors.length) failed++;

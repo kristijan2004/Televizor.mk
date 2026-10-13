@@ -4,7 +4,6 @@ slug: "iskluci-gi-ovie-postavki-na-noviot-televizor"
 date: "2026-10-06"
 category: "Совети"
 excerpt: "Телевизорот што го донесе од продавница е наместен да изгледа впечатливо под силните светла во изложбениот салон, а не во твојата дневна соба. Пет минути во менито прават поголема разлика од повеќето спецификации."
-author: "Редакција на Телевизор.мк"
 image: "/images/edu/iskluci-gi-ovie-postavki-na-noviot-televizor.jpg"
 readTime: 4
 featured: false

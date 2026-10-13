@@ -131,6 +131,18 @@ const HeroImage = styled(ArticleImage)`
   border-radius: 16px;
 `;
 
+const HeroCaption = styled.p`
+  max-width: 68ch;
+
+  margin: 8px 0 0;
+
+  color: #888;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+`;
+
 const Body = styled.div`
   /*
     ~68 characters per line — inside the 65-75 range that keeps long-form text
@@ -194,6 +206,32 @@ const Divider = styled.hr`
 
   border: none;
   border-top: 1px solid #e6e6e6;
+`;
+
+const Figure = styled.figure`
+  margin: 8px 0 28px;
+`;
+
+const FigureImage = styled.img`
+  width: 100%;
+  height: auto;
+
+  display: block;
+
+  background-color: #f0f0f4;
+
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+`;
+
+const FigureCaption = styled.figcaption`
+  margin-top: 8px;
+
+  color: #888;
+
+  font-size: 13px;
+
+  line-height: 1.5;
 `;
 
 const InlineCode = styled.code`
@@ -273,6 +311,15 @@ const renderBlock = (block, index) => {
 
     case "divider":
       return <Divider key={index} />;
+
+    case "image":
+      return (
+        <Figure key={index}>
+          <FigureImage src={block.src} alt={block.alt} loading="lazy" />
+
+          {block.caption && <FigureCaption>{block.caption}</FigureCaption>}
+        </Figure>
+      );
 
     default:
       return <Paragraph key={index}>{renderInline(block.content)}</Paragraph>;
@@ -575,9 +622,13 @@ const NewsArticle = ({ section = "novosti" }) => {
         <Title>{post.title}</Title>
 
         <Meta>
-          <Author>{post.author}</Author>
+          {post.author && (
+            <>
+              <Author>{post.author}</Author>
 
-          <MetaDot aria-hidden="true">•</MetaDot>
+              <MetaDot aria-hidden="true">•</MetaDot>
+            </>
+          )}
 
           <time dateTime={post.date}>{formatMkDate(post.date)}</time>
 
@@ -591,6 +642,8 @@ const NewsArticle = ({ section = "novosti" }) => {
           candidates={post.imageCandidates}
           alt=""
         />
+
+        {post.imageCaption && <HeroCaption>{post.imageCaption}</HeroCaption>}
 
         <Body>
           {post.blocks

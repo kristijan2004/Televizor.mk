@@ -187,6 +187,27 @@ function parseBody(markdown, fileName) {
       continue;
     }
 
+    /*
+      A picture on its own line: ![what it shows](/images/edu/file.jpg "caption")
+      The optional quoted part becomes the caption under the picture — use it
+      for the credit, e.g. "Фото: Samsung".
+    */
+    const figure = line.match(/^!\[([^\]]*)\]\((\S+?)(?:\s+"([^"]*)")?\)$/);
+
+    if (figure) {
+      flushParagraph();
+      flushList();
+
+      blocks.push({
+        type: "image",
+        src: figure[2],
+        alt: figure[1],
+        caption: figure[3] || "",
+      });
+
+      continue;
+    }
+
     const heading = line.match(/^(#{1,6})\s+(.*)$/);
 
     if (heading) {
@@ -487,12 +508,15 @@ function buildArticle(fileName, availableImages, section) {
     title: requireField(data, "title", fileName),
     excerpt: data.excerpt || blockText(firstParagraph || blocks[0]),
     category: requireField(data, "category", fileName),
-    author: data.author || "Редакција",
+    // Optional: without an `author` line the article shows no byline.
+    author: data.author || "",
     date,
     // Empty unless the article asked for a specific hour.
     publishAt,
     readTime,
     image: picture.image,
+    // Optional credit line under the cover picture, e.g. "Фото: Samsung".
+    imageCaption: data.imageCaption || "",
     // Fallbacks the browser walks through if `image` 404s — this is what lets a
     // newly dropped-in file show up without re-running the build.
     imageCandidates: picture.candidates,
@@ -620,6 +644,19 @@ function reportImages(articles, availableImages, section) {
 
     if (match) {
       used.add(match);
+    }
+
+    // Pictures placed inside the text count as used too.
+    for (const block of article.blocks) {
+      if (block.type === "image") {
+        const inline = availableImages.find(
+          (file) => `${section.imageUrlBase}/${file}` === block.src
+        );
+
+        if (inline) {
+          used.add(inline);
+        }
+      }
     }
   }
 

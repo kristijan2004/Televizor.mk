@@ -4,7 +4,6 @@ slug: "kolkav-televizor-za-tvojata-soba"
 date: "2026-10-01"
 category: "Совети"
 excerpt: "Најчестата грешка при купување не е погрешната технологија, туку погрешната големина. Измери едно растојание и ќе знаеш точно што ти треба."
-author: "Редакција на Телевизор.мк"
 image: "/images/edu/golemina-televizor.jpg"
 readTime: 4
 featured: false

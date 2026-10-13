@@ -3,10 +3,16 @@ name: write-novosti-article
 description: Write, finish, fact-check or fix a Новости (news) article for Televizor.mk so it's ready to deploy. Use when asked to write an article, blog post or news about TVs in Macedonian, or to finish or clean up an existing article in src/content/novosti. Researches official sources, checks local availability at Neptun/Setec/Anhoch/DDStore (no prices in articles), validates the markdown and previews it.
 ---
 
-# Write a finished Новости article
+# Write a finished Новости or Еду article
 
-Articles are markdown files in `src/content/novosti/<slug>.md`. `scripts/buildNews.js` compiles them into
-`src/Data/news.generated.json`, and they're served at `/novosti/<slug>`. Folder rules: `src/content/novosti/README.md`.
+There are two sections, built by the same `scripts/buildNews.js`:
+
+- **Новости** (news tied to a date: launches, new models): `src/content/novosti/<slug>.md`, pictures in
+  `public/images/novosti/`, served at `/novosti/<slug>`, compiled into `src/Data/news.generated.json`.
+- **Еду** (timeless guides: how TVs work, how to choose): `src/content/edu/<slug>.md`, pictures in
+  `public/images/edu/`, served at `/edu/<slug>`, compiled into `src/Data/edu.generated.json`.
+
+Folder rules are in each folder's `README.md`. A future `date` (or `publishAt: YYYY-MM-DD HH:MM`) schedules an article.
 
 **The rule: every article you hand over is finished.** No `<!-- -->` notes, no "провери пред објава", no TODO,
 no `[цена]` placeholders, nothing left for the user to fill in. If a fact can't be verified, either leave it out
@@ -17,7 +23,7 @@ or say it plainly in the text, with a date ("Во моментот на пишу
 no installment amounts. Describe cost only in words ("врвна класа", "средна класа", "поевтин од минатогодишниот модел").
 The checker fails on any price amount.
 
-Only touch `src/content/novosti/` and `public/images/novosti/`. Other people work on the rest of the code.
+Only touch the article folders (`src/content/novosti/`, `src/content/edu/`) and their image folders. Other people work on the rest of the code.
 
 All commands below are run from the project root `E:\televizor\Televizor.mk` (PowerShell).
 
@@ -63,7 +69,7 @@ To link to a TV page on our own site, take `brand` and `model` from `src/Data/ma
 
 ## 4. Write the file
 
-Create `src/content/novosti/<slug>.md`. The slug uses lowercase latin letters and hyphens only (transliterate the Macedonian
+Create `src/content/<novosti|edu>/<slug>.md`. The slug uses lowercase latin letters and hyphens only (transliterate the Macedonian
 title: `oled-ili-mini-led-sto-da-izberes`), and the frontmatter `slug` must equal the file name.
 
 ```markdown
@@ -73,8 +79,8 @@ slug: "ime-na-fajlot"
 date: "2026-10-06"
 category: "Новости"
 excerpt: "Една до две реченици (до ~250 знаци) што кажуваат зошто вреди да се прочита."
-author: "Редакција на Телевизор.мк"
 image: "/images/novosti/ime-na-fajlot.jpg"
+imageCaption: "Што покажува сликата. Фото: Samsung"
 readTime: 5
 featured: false
 ---
@@ -94,7 +100,8 @@ featured: false
 
 What the article page can render: paragraphs, `##`/`###` headings, `-` and `1.` lists, `>` quotes, `---` divider,
 `**bold**`, `*italic*`, `` `code` ``, `[links](url)`. It **can't** render tables (they show as a line of `|`
-characters, so use a list), inline images, raw HTML or HTML comments (both show up as visible text).
+characters, so use a list), raw HTML or HTML comments (both show up as visible text).
+No `author:` line: the user removed the byline for now (the page shows none when it is missing).
 
 Writing style (match the existing articles):
 - Macedonian Cyrillic, standard literary Macedonian. Address the reader informally with "ти". Use „…" quotes and a decimal
@@ -106,12 +113,33 @@ Writing style (match the existing articles):
 - `readTime`: words ÷ 200, rounded. Use `featured: true` only for the one lead story, and set the old lead back to `false`.
 - `## Извори` with links is required for `Новости`, `Рецензии` and `Понуди`, and optional for `Совети`.
 
-## 5. Image
+## 5. Photos
 
-Use the picture at `public/images/novosti/<slug>.jpg` (same name as the slug). Only use images the user supplies or ones
-you're allowed to reuse (manufacturer press kits that permit editorial use). Don't hotlink from shops. If there's
-no image yet, tell the user the exact file name to add. The page shows a placeholder until then, and that's the
-only acceptable gap.
+**Cover:** `public/images/<section>/<slug>.jpg`, set as `image:`, with the credit in `imageCaption:` (shown under it).
+
+**In the text:** a photo on its own line, between paragraphs:
+
+```markdown
+![Samsung OLED телевизор во светла соба](/images/novosti/samsung-2026-oled.jpg "Samsung OLED од линијата за 2026. Фото: Samsung")
+```
+
+The quoted part is the caption under the photo and must end with the credit (`Фото: <company>`). The checker
+requires a description, a caption with `Фото:`, and the file inside the article's own section folder.
+
+**Where photos may come from:** only official press material: manufacturer newsrooms and press pages (Samsung
+Newsroom / samsung.com news, lgusnewsroom.com, news.lgdisplay.com, Hisense press pages). Never shops, RTINGS or other
+review sites. Use a photo only in an article about that product, don't crop out logos, and caption what it really
+shows (if the press photo is a different model of the same technology, say which model). Topics with no fitting
+official photo (e.g. privacy, buying calendar, test results) keep the placeholder; tell the user.
+
+```powershell
+node .claude/skills/write-novosti-article/list-images.mjs <press page url>       # big images on the page, biggest first
+node .claude/skills/write-novosti-article/fetch-image.mjs <image url> <out file> [page url]   # for sites that block curl
+```
+
+Download into the scratchpad first, open each file with Read to look at it, and only then copy the good ones into
+`public/images/<section>/`. Some sites hand out `.png` names for JPEGs, or a browser-check page instead of the image;
+`file <name>` tells you what you actually got.
 
 ## 6. Check and preview
 

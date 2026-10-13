@@ -4,8 +4,8 @@ slug: "zosto-noviot-televizor-zvuci-polosho"
 date: "2026-10-06"
 category: "Совети"
 excerpt: "Сликата е неспоредливо подобра, а дијалогот одеднаш не се разбира и постојано го качуваш и спушташ звукот. Не ти се причинува. Еве зошто се случува и што навистина помага."
-author: "Редакција на Телевизор.мк"
 image: "/images/edu/zosto-noviot-televizor-zvuci-polosho.jpg"
+imageCaption: "Саундбар со звучници и субвуфер од системот LG Sound Suite. Фото: LG"
 readTime: 3
 featured: false
 ---

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" font-family="Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif">
+<style>
+.s1 { animation: sc1 12s infinite; } .s2 { animation: sc2 12s infinite; } .s3 { animation: sc3 12s infinite; }
+@keyframes sc1 { 0%, 21% { opacity: 1 } 24%, 97% { opacity: 0 } 100% { opacity: 1 } }
+@keyframes sc2 { 0%, 21% { opacity: 0 } 24%, 44% { opacity: 1 } 47%, 100% { opacity: 0 } }
+@keyframes sc3 { 0%, 44% { opacity: 0 } 47%, 70% { opacity: 1 } 74%, 100% { opacity: 0 } }
+.overlay, .tag1 { animation: overlay 12s infinite; }
+@keyframes overlay { 0%, 70% { opacity: 1 } 74%, 96% { opacity: 0 } 100% { opacity: 1 } }
+.test, .tag2 { opacity: 0; animation: test 12s infinite; }
+@keyframes test { 0%, 70% { opacity: 0 } 74%, 96% { opacity: 1 } 100% { opacity: 0 } }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; } }</style>
+<rect width="1600" height="900" fill="#f4f4fa"/><defs>
+<linearGradient id="s1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3b2a7a"/><stop offset="0.6" stop-color="#e2694b"/><stop offset="1" stop-color="#f3b45b"/></linearGradient>
+<linearGradient id="s2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fd3f4"/><stop offset="0.55" stop-color="#3a8fc7"/><stop offset="1" stop-color="#1d4f7a"/></linearGradient>
+<linearGradient id="s3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d8f0c8"/><stop offset="0.5" stop-color="#5fa85a"/><stop offset="1" stop-color="#2d5b33"/></linearGradient>
+<clipPath id="scr"><rect x="385" y="165" width="830" height="450" rx="6"/></clipPath></defs>
+<rect x="360" y="140" width="880" height="500" rx="22" fill="#1b1b2f"/>
+<g clip-path="url(#scr)">
+  <rect x="385" y="165" width="830" height="450" fill="#8b8b97"/>
+  <g class="test"><rect x="385" y="545" width="830" height="52" fill="#7f7f8c"/><rect x="385" y="545" width="150" height="52" fill="#7c7c89"/>
+<text x="460" y="580" font-size="26" font-weight="800" fill="#93939f" text-anchor="middle">ВЕСТИ</text>
+<rect x="565" y="565" width="380" height="12" rx="6" fill="#93939f" opacity="0.8"/><rect x="975" y="565" width="200" height="12" rx="6" fill="#93939f" opacity="0.8"/><rect x="1065" y="189" width="120" height="56" rx="10" fill="#7f7f8c"/><text x="1125" y="227" font-size="28" font-weight="800" fill="#93939f" text-anchor="middle">ТВ 24</text></g>
+  <g class="scene s3"><rect x="385" y="165" width="830" height="450" fill="url(#s3)"/><circle cx="1005" cy="275" r="56" fill="#fff6c8"/><path d="M385,545 L565,395 L715,505 L905,345 L1085,495 L1215,415 L1215,615 L385,615 Z" fill="#2d5b33"/></g>
+  <g class="scene s2"><rect x="385" y="165" width="830" height="450" fill="url(#s2)"/><path d="M385,465 Q585,435 800,465 T1215,465 L1215,615 L385,615 Z" fill="#164466"/></g>
+  <g class="scene s1"><rect x="385" y="165" width="830" height="450" fill="url(#s1)"/><circle cx="685" cy="415" r="80" fill="#ffd27a"/><path d="M385,545 L565,395 L715,505 L905,345 L1085,495 L1215,415 L1215,615 L385,615 Z" fill="#2a1f4d"/></g>
+  <g class="overlay"><rect x="385" y="545" width="830" height="52" fill="#242582"/><rect x="385" y="545" width="150" height="52" fill="#d64545"/>
+<text x="460" y="580" font-size="26" font-weight="800" fill="#ffffff" text-anchor="middle">ВЕСТИ</text>
+<rect x="565" y="565" width="380" height="12" rx="6" fill="#ffffff" opacity="0.8"/><rect x="975" y="565" width="200" height="12" rx="6" fill="#ffffff" opacity="0.8"/><rect x="1065" y="189" width="120" height="56" rx="10" fill="#ffffff"/><text x="1125" y="227" font-size="28" font-weight="800" fill="#242582" text-anchor="middle">ТВ 24</text></g>
+</g>
+<rect x="760" y="640" width="80" height="26" rx="6" fill="#1b1b2f"/><rect x="650" y="665" width="300" height="14" rx="7" fill="#1b1b2f"/>
+<g class="tag1"><text x="800" y="760" font-size="34" font-weight="700" fill="#1b1b2f" text-anchor="middle">Сликата постојано се менува, лентата и логото стојат</text></g>
+<g class="tag2"><text x="800" y="760" font-size="34" font-weight="700" fill="#d64545" text-anchor="middle">По илјадници часови: трага токму таму каде што стоеја</text></g>
+<text x="800" y="810" font-size="26" fill="#5d5d78" text-anchor="middle">Изгорување кај OLED: проблем само со слика што никогаш не се менува</text></svg>

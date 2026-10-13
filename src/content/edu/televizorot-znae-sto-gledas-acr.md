@@ -4,8 +4,8 @@ slug: "televizorot-znae-sto-gledas-acr"
 date: "2026-10-06"
 category: "Совети"
 excerpt: "Паметните телевизори можат да препознаат речиси сè што се појавува на екранот, од Netflix до антена и конзола, и тие податоци ги користат за реклами. Функцијата се исклучува за две минути, ако знаеш каде да бараш."
-author: "Редакција на Телевизор.мк"
-image: "/images/edu/televizorot-znae-sto-gledas-acr.jpg"
+image: "/images/edu/televizorot-znae-sto-gledas-acr.svg"
+imageCaption: "Како работи автоматското препознавање на содржина (ACR)."
 readTime: 3
 featured: false
 ---

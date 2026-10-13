@@ -19,7 +19,6 @@ the URL slug: `oled-ili-qled.md` → `/novosti/oled-ili-qled`.
 id: 9                                  # опционално / optional
 title: Наслов на статијата
 category: Рецензии                     # види categories.json
-author: Редакција
 date: 2026-10-04                       # YYYY-MM-DD
 readTime: 6                            # опционално; се пресметува од текстот
 publishAt: 2026-10-15 09:00            # опционално; точен час на објавување
