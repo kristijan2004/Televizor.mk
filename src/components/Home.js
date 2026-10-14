@@ -189,9 +189,9 @@ const MoreButton = styled.button`
 const Home = () => {
   const { total, loadMore, sortBy, setSortBy, hasMore } = useContext(Context);
   usePageMeta({
-    title: "Display.mk",
+    title: "Display.mk — Најди го твојот телевизор",
     description:
-      "Спореди телевизори достапни во Македонија — спецификации, големини и технологии на едно место.",
+      "Сите телевизори достапни во Македонија на едно место. Филтрирај по големина и технологија, спореди модели и најди го вистинскиот телевизор според твоите потреби.",
     path: "/",
   });
 

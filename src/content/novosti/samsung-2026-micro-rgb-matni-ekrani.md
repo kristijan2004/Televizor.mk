@@ -1,7 +1,7 @@
 ---
 title: "Samsung во 2026: Micro RGB, нови OLED модели и мат екран во средната класа"
 slug: "samsung-2026-micro-rgb-matni-ekrani"
-date: "2026-09-26"
+date: "2026-10-09"
 category: "Новости"
 excerpt: "Најинтересната вест од годинешната понуда на Samsung не е новата технологија на врвот, туку тоа што мат екранот конечно слезе од флагманот во OLED моделот од средната класа."
 image: "/images/novosti/samsung-2026-micro-rgb-matni-ekrani.jpg"

@@ -7,13 +7,13 @@ import { useEffect } from "react";
   страница изгледаше исто. Google го извршува JavaScript-от, па поставувањето
   одовде е доволно за пребарувањето. (За преглед при споделување на Facebook
   или Viber не е доволно — тие не чекаат JS; за тоа треба пререндерирање.)
-
-  Почетната намерно останува само „Display.mk".
 */
 
 const SITE = "https://display.mk";
 const DEFAULT_DESCRIPTION =
-  "Display.mk — споредба на телевизори во Македонија. Спореди спецификации, технологии и големини.";
+  "Сите телевизори достапни во Македонија на едно место. Филтрирај по големина и технологија, спореди модели и најди го вистинскиот телевизор според твоите потреби.";
+const DEFAULT_SHARE_IMAGE = `${SITE}/og-image.png`;
+const DEFAULT_SHARE_IMAGE_ALT = "Display.mk — најди го твојот телевизор";
 
 function setMeta(selector, attribute, value) {
   let tag = document.head.querySelector(selector);
@@ -33,6 +33,11 @@ function setMeta(selector, attribute, value) {
   }
 
   tag.setAttribute(attribute, value);
+}
+
+function removeMeta(selector) {
+  const tag = document.head.querySelector(selector);
+  if (tag) tag.remove();
 }
 
 function absoluteImage(image) {
@@ -55,7 +60,8 @@ export function usePageMeta({
     const desc = description || DEFAULT_DESCRIPTION;
     // Canonical секогаш без query string — ?нешто не е посебна страница.
     const cleanPath = path ? path.split("?")[0] : null;
-    const img = absoluteImage(image);
+    const img = absoluteImage(image) || DEFAULT_SHARE_IMAGE;
+    const hasRealImage = Boolean(absoluteImage(image));
 
     document.title = fullTitle;
 
@@ -78,16 +84,28 @@ export function usePageMeta({
     if (cleanPath) {
       setMeta('meta[property="og:url"]', "content", `${SITE}${cleanPath}`);
     }
-    if (img) {
-      setMeta('meta[property="og:image"]', "content", img);
+    setMeta('meta[property="og:image"]', "content", img);
+    if (hasRealImage) {
       setMeta('meta[property="og:image:alt"]', "content", fullTitle);
-      setMeta('meta[name="twitter:card"]', "content", "summary_large_image");
+      // Чистење по навигација од страница без своја слика (која ги постави
+      // на 1200x630) — не смеат да останат за слика со непознати димензии.
+      removeMeta('meta[property="og:image:width"]');
+      removeMeta('meta[property="og:image:height"]');
+    } else {
+      setMeta('meta[property="og:image:width"]', "content", "1200");
+      setMeta('meta[property="og:image:height"]', "content", "630");
+      setMeta('meta[property="og:image:alt"]', "content", DEFAULT_SHARE_IMAGE_ALT);
     }
+    setMeta('meta[name="twitter:card"]', "content", "summary_large_image");
     if (publishedTime) {
       setMeta('meta[property="article:published_time"]', "content", publishedTime);
+    } else {
+      removeMeta('meta[property="article:published_time"]');
     }
     if (section) {
       setMeta('meta[property="article:section"]', "content", section);
+    } else {
+      removeMeta('meta[property="article:section"]');
     }
   }, [title, description, path, image, type, publishedTime, section]);
 }

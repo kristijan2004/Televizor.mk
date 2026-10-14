@@ -1,7 +1,7 @@
 ---
 title: "OLED станува посветол и поевтин: што носи новиот OLED SE панел"
 slug: "oled-se-poevtini-oled-televizori"
-date: "2026-09-19"
+date: "2026-10-13"
 category: "Новости"
 excerpt: "Најголемата пречка за OLED отсекогаш била цената. Нов тип панел, поевтин за производство, го носи OLED во средната класа, во големини до 83 инчи, но со еден компромис што вреди да го знаеш."
 image: "/images/novosti/oled-se-poevtini-oled-televizori.jpg"

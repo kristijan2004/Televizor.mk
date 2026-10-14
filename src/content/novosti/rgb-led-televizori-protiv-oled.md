@@ -1,7 +1,7 @@
 ---
 title: "Технологијата што требаше да го собори OLED. Зошто сè уште не успеа"
 slug: "rgb-led-televizori-protiv-oled"
-date: "2026-10-06"
+date: "2026-10-16"
 category: "Новости"
 excerpt: "На CES 2026 речиси секој голем производител најави RGB LED телевизор. Во мерењата ги собираат најдобрите оцени за бои досега, а сепак тестерите и понатаму го претпочитаат OLED. Еве што се случи."
 image: "/images/novosti/rgb-led-televizori-protiv-oled.jpg"

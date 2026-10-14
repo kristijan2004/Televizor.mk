@@ -8,6 +8,7 @@ import InfoTooltip from "./InfoToolTip";
 import { formatSpec } from "../lib/specValue";
 import { usePageMeta } from "../lib/usePageMeta";
 import { tvPath } from "../lib/tvPath";
+import { displayBrand } from "../lib/brand";
 
 const Page = styled.div`
   min-height: 100vh;
@@ -400,12 +401,12 @@ const TvDetails = () => {
   usePageMeta(
     tv
       ? {
-          title: `${tv.brand} ${tv.model} — ${tv.size}" ${tv.technology || ""} | Display.mk`.replace(
+          title: `${displayBrand(tv.brand)} ${tv.model} — ${tv.size}" ${tv.technology || ""} | Display.mk`.replace(
             /\s+/g,
             " "
           ),
           description:
-            `${tv.brand} ${tv.model}: ${tv.size} инчи, ${tv.technology || "телевизор"}` +
+            `${displayBrand(tv.brand)} ${tv.model}: ${tv.size} инчи, ${tv.technology || "телевизор"}` +
             `${tv.resolution ? ", " + tv.resolution : ""}` +
             `${tv.refreshRate ? ", " + tv.refreshRate + "Hz" : ""}` +
             `. Спецификации и каде е достапен во Македонија.`,
@@ -475,12 +476,12 @@ const TvDetails = () => {
             <ImageCont>
               <TvImage
   src={tv.image}
-  alt={`${tv.brand} ${tv.model}`}
+  alt={`${displayBrand(tv.brand)} ${tv.model}`}
 />
             </ImageCont>
 
             <Info>
-              <Brand>{tv.brand}</Brand>
+              <Brand>{displayBrand(tv.brand)}</Brand>
 
               <Model>{tv.model}</Model>
 
@@ -714,7 +715,7 @@ const TvDetails = () => {
             <SectionTitle>За телевизорот</SectionTitle>
 
             <Description>
-              {tv.brand} {tv.model} е телевизор со {tv.technology} технологија,
+              {displayBrand(tv.brand)} {tv.model} е телевизор со {tv.technology} технологија,
               големина од {tv.size} инчи и {tv.resolution} резолуција. Панелот
               поддржува стапка на освежување до {tv.refreshRate} Hz, што
               овозможува мазна слика и подобро искуство при гледање филмови,

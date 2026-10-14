@@ -1,7 +1,7 @@
 ---
 title: "„240 Hz" на кутијата? Четирите најчести трикови во спецификациите на телевизорите"
 slug: "trikovi-vo-specifikaciite-na-televizorite"
-date: "2026-10-06"
+date: "2026-09-25"
 category: "Совети"
 excerpt: "Некои бројки на кутијата се вистински, други се маркетинг. Еве кои ознаки најчесто ги збунуваат купувачите и што всушност треба да провериш пред да избереш телевизор."
 image: "/images/edu/trikovi-vo-specifikaciite-na-televizorite.jpg"

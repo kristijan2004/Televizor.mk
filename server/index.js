@@ -34,6 +34,7 @@ import {
 
 import { recommend } from "../src/lib/recommend.js";
 import { tvPath } from "../src/lib/tvPath.js";
+import { displayBrand } from "../src/lib/brand.js";
 import { isPublished } from "../src/lib/isPublished.js";
 import { excerptFor } from "../src/lib/excerptFor.js";
 
@@ -348,14 +349,15 @@ const readArticles = (section) => {
 };
 
 app.get("/sitemap.xml", async (request, reply) => {
-  const today = new Date().toISOString().slice(0, 10);
-
+  // Нема вистински lastmod за статичните страници (не се следи кога се
+  // последно променети), па подобро отсутен таг отколку измислена денешна
+  // дата на секој request — исто како кај телевизорите подолу.
   const urls = [
-    { loc: `${SITE}/`, lastmod: today, priority: "1.0", freq: "daily" },
-    { loc: `${SITE}/odberi-tv`, lastmod: today, priority: "0.9", freq: "monthly" },
-    { loc: `${SITE}/novosti`, lastmod: today, priority: "0.8", freq: "weekly" },
-    { loc: `${SITE}/edu`, lastmod: today, priority: "0.5", freq: "monthly" },
-    { loc: `${SITE}/uslovi`, lastmod: today, priority: "0.3", freq: "yearly" },
+    { loc: `${SITE}/`, lastmod: null, priority: "1.0", freq: "daily" },
+    { loc: `${SITE}/odberi-tv`, lastmod: null, priority: "0.9", freq: "monthly" },
+    { loc: `${SITE}/novosti`, lastmod: null, priority: "0.8", freq: "weekly" },
+    { loc: `${SITE}/edu`, lastmod: null, priority: "0.5", freq: "monthly" },
+    { loc: `${SITE}/uslovi`, lastmod: null, priority: "0.3", freq: "yearly" },
   ];
 
   // Нема updated_at/created_at колона на tvs, па нема вистински lastmod за
@@ -415,9 +417,9 @@ app.get("/sitemap.xml", async (request, reply) => {
 const INDEX_HTML = process.env.DISPLAY_MK_INDEX || "/var/www/display.mk/index.html";
 
 const DEFAULT_META = {
-  title: "Display.mk",
+  title: "Display.mk — Најди го твојот телевизор",
   description:
-    "Спореди телевизори достапни во Македонија — спецификации, големини и технологии на едно место.",
+    "Сите телевизори достапни во Македонија на едно место. Филтрирај по големина и технологија, спореди модели и најди го вистинскиот телевизор според твоите потреби.",
 };
 
 const STATIC_META = {
@@ -507,9 +509,11 @@ function metaForPath(pathname) {
       row.refreshRate ? `${row.refreshRate}Hz` : null,
     ].filter(Boolean);
 
+    const brand = displayBrand(row.brand);
+
     return {
-      title: `${row.brand} ${row.model} — ${row.size}" ${row.technology || ""} | Display.mk`.replace(/\s+/g, " "),
-      description: `${row.brand} ${row.model}: ${bits.join(", ")}. Спецификации и каде е достапен во Македонија.`,
+      title: `${brand} ${row.model} — ${row.size}" ${row.technology || ""} | Display.mk`.replace(/\s+/g, " "),
+      description: `${brand} ${row.model}: ${bits.join(", ")}. Спецификации и каде е достапен во Македонија.`,
       found: true,
       kind: "tv",
       tv: row,
@@ -592,13 +596,10 @@ function movedTo(pathname) {
   return null;
 }
 
-/*
-  ВРЕМЕНА слика за споделување кога страницата нема своја: нема вистинска
-  слика 1200×630 во проекта сè уште (icon-512.png е квадратна, само лого).
-  Флагирано во docs/seo-pass-2026-10-13.md — Даниел треба да додаде вистинска
-  слика за споделување.
-*/
-const DEFAULT_SHARE_IMAGE = `${SITE}/icon-512.png`;
+// Слика за споделување кога страницата нема своја (1200×630, генерирана со
+// scripts/makeOgImage.js) — icon-512.png останува само лого за Organization.
+const DEFAULT_SHARE_IMAGE = `${SITE}/og-image.png`;
+const DEFAULT_SHARE_IMAGE_ALT = "Display.mk — најди го твојот телевизор";
 
 function absoluteImage(imgPath) {
   if (!imgPath) return null;
@@ -648,11 +649,13 @@ function jsonLdFor(meta) {
       row.hdr ? { "@type": "PropertyValue", name: "HDR", value: "Да" } : null,
     ].filter(Boolean);
 
+    const brand = displayBrand(row.brand);
+
     const product = {
       "@context": "https://schema.org",
       "@type": "Product",
-      name: `${row.brand} ${row.model}`,
-      brand: { "@type": "Brand", name: row.brand },
+      name: `${brand} ${row.model}`,
+      brand: { "@type": "Brand", name: brand },
       model: row.model,
       category: "Телевизори",
     };
@@ -660,15 +663,14 @@ function jsonLdFor(meta) {
     if (additionalProperty.length) product.additionalProperty = additionalProperty;
 
     // Брендот нема своја страница на сајтот (нема /tv/:brand листинг), па
-    // средниот чекор во патеката нема "item" адреса — не измислувам адреса
-    // што не постои.
+    // нема да измислувам адреса што не постои — чекорот за бренд е изоставен
+    // наместо да му недостасува "item", а Google тоа го флагира.
     const breadcrumb = {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Почетна", item: SITE },
-        { "@type": "ListItem", position: 2, name: row.brand },
-        { "@type": "ListItem", position: 3, name: row.model, item: `${SITE}${meta.canonicalPath}` },
+        { "@type": "ListItem", position: 2, name: `${brand} ${row.model}`, item: `${SITE}${meta.canonicalPath}` },
       ],
     };
 
@@ -766,8 +768,12 @@ app.get("/__html/*", async (request, reply) => {
     `<meta property="og:description" content="${escAttr(meta.description)}"/>` +
     `<meta property="og:url" content="${escAttr(url)}"/>` +
     `<meta property="og:image" content="${escAttr(image)}"/>` +
-    (hasRealImage ? `<meta property="og:image:alt" content="${escAttr(meta.title)}"/>` : "") +
-    `<meta name="twitter:card" content="${hasRealImage ? "summary_large_image" : "summary"}"/>` +
+    (hasRealImage
+      ? `<meta property="og:image:alt" content="${escAttr(meta.title)}"/>`
+      : `<meta property="og:image:width" content="1200"/>` +
+        `<meta property="og:image:height" content="630"/>` +
+        `<meta property="og:image:alt" content="${escAttr(DEFAULT_SHARE_IMAGE_ALT)}"/>`) +
+    `<meta name="twitter:card" content="summary_large_image"/>` +
     (meta.noindex ? `<meta name="robots" content="noindex, nofollow"/>` : "");
 
   if (meta.kind === "article" && meta.article) {

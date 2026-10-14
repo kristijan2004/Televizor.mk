@@ -1,7 +1,7 @@
 ---
 title: "OLED или Mini LED: кој е вистинскиот избор за твојата соба"
 slug: "oled-ili-mini-led-sto-da-izberes"
-date: "2026-09-30"
+date: "2026-09-11"
 category: "Совети"
 excerpt: "Нема победник во оваа расправа — има само погрешен избор за конкретна соба. Еве како да откриеш која технологија ти треба за пет минути."
 image: "/images/edu/oled-ili-mini-led-sto-da-izberes.jpg"
