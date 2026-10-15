@@ -263,6 +263,73 @@ test("picks are never duplicates of each other", () => {
   }
 });
 
+test("an explicit size preference overrides the distance suggestion", () => {
+  // 32" is never "ideal" for 3–3.5m distance (that distance wants 65/75),
+  // so this only passes if preferredSize actually takes over scoreSize.
+  const withoutPreference = recommend(catalogue, {
+    distance: "3-3.5",
+    light: "umerena",
+    use: "meshano",
+    priority: "slika",
+    budget: null,
+    brands: [],
+  });
+
+  const withPreference = recommend(catalogue, {
+    distance: "3-3.5",
+    light: "umerena",
+    use: "meshano",
+    priority: "slika",
+    budget: null,
+    brands: [],
+    preferredSize: 32,
+  });
+
+  expect(withPreference.picks.length).toBeGreaterThan(0);
+  expect(withPreference.picks[0].tv.size).toBe(32);
+
+  console.log(`
+preferred size override:
+  without preference ........ top pick ${withoutPreference.picks[0]?.tv.size}"
+  with 32" preference ........ top pick ${withPreference.picks[0].tv.size}"`);
+});
+
+test("a size preference the budget can't afford is explained, not hidden", () => {
+  // A tight budget has no 100" TV in it, so sizeNote must say so rather than
+  // silently returning whatever small TV scored best on everything else.
+  const tight = recommend(catalogue, {
+    distance: null,
+    light: null,
+    use: null,
+    priority: null,
+    budget: budgets.find((b) => b.id === "do-20000") || budgets[0],
+    brands: [],
+    preferredSize: 100,
+  });
+
+  expect(tight.picks.length).toBeGreaterThan(0);
+  expect(tight.sizeNote).toBe(100);
+
+  // No budget constraint: the preference IS affordable, so no note.
+  const open = recommend(catalogue, {
+    distance: null,
+    light: null,
+    use: null,
+    priority: null,
+    budget: null,
+    brands: [],
+    preferredSize: 100,
+  });
+
+  expect(open.sizeNote).toBeNull();
+  expect(open.picks[0].tv.size).toBe(100);
+
+  console.log(`
+size preference vs budget:
+  tight budget ............. sizeNote=${tight.sizeNote}, top ${tight.picks[0].tv.size}"
+  no budget ................. sizeNote=${open.sizeNote}, top ${open.picks[0].tv.size}"`);
+});
+
 test("extra results do not repeat the picks", () => {
   const r = recommend(
     catalogue,

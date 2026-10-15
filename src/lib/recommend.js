@@ -32,6 +32,15 @@ export const DISTANCE_OPTIONS = [
   { id: "nad-3.5", label: "Над 3,5 метри", ideal: [75, 85, 98], good: [65, 100] },
 ];
 
+/*
+  Преференца за големина — опционално ја презема улогата на растојанието.
+
+  Листата ги покрива сите вредности што веќе се користат погоре во
+  ideal/good, за секоја понудена големина навистина да постојат телевизори
+  што се таргетираат со неа.
+*/
+export const SIZE_OPTIONS = [32, 43, 50, 55, 65, 75, 85, 98, 100];
+
 /* ------------------------------------------------------------------ *
  * Question 2 — room light
  * ------------------------------------------------------------------ */
@@ -93,9 +102,41 @@ function panelOf(tv) {
 */
 
 function scoreSize(tv, answers) {
+  if (tv.size === null) {
+    return { points: 0, reason: null };
+  }
+
+  /*
+    Конкретна преференца за големина секогаш ја презема улогата на
+    растојанието — корисникот намерно пребива сопствена проценка ("Измери
+    до ѕидот...") со своја одлука.
+  */
+  if (answers.preferredSize) {
+    const target = answers.preferredSize;
+    const diff = Math.abs(tv.size - target);
+
+    if (diff === 0) {
+      return { points: 30, reason: `${tv.size} инчи, точно колку бараше` };
+    }
+
+    if (diff <= 5) {
+      return { points: 18, reason: `${tv.size} инчи, близу до бараната големина` };
+    }
+
+    if (diff <= 12) {
+      return { points: 4, reason: null };
+    }
+
+    return {
+      points: -14,
+      reason: null,
+      warning: `${tv.size} инчи е далеку од бараната големина (${target}")`,
+    };
+  }
+
   const distance = DISTANCE_OPTIONS.find((o) => o.id === answers.distance);
 
-  if (!distance || tv.size === null) {
+  if (!distance) {
     return { points: 0, reason: null };
   }
 
@@ -689,6 +730,16 @@ export function recommend(catalogue, answers, options = {}) {
     picks.some((pick) => brands.includes(pick.tv.brand));
 
   /*
+    Истото за бараната големина. Буџетот е цврст филтер, па ако никој
+    телевизор близу бараната големина не се вклопува во буџетот, резултатот
+    е најдобриот ПОСТОЕЧКИ избор — не смее да изгледа како грешка.
+    "Близу" = истото прагче (diff <= 12) што веќе го користи scoreSize.
+  */
+  const sizeHonoured =
+    !answers.preferredSize ||
+    picks.some((pick) => Math.abs((pick.tv.size || 0) - answers.preferredSize) <= 12);
+
+  /*
     „Прикажи повеќе телевизори" — остатокот од веќе пресметаното рангирање.
     Не се пресметува одново; само се сече подлабоко во истата листа.
   */
@@ -713,6 +764,7 @@ export function recommend(catalogue, answers, options = {}) {
     relax: null,
     consideredCount: affordable.length,
     brandNote: brandHonoured ? null : brands,
+    sizeNote: sizeHonoured ? null : answers.preferredSize,
   };
 }
 

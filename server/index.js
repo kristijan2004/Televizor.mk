@@ -834,6 +834,10 @@ app.post(
     light: typeof answers.light === "string" ? answers.light : null,
     use: typeof answers.use === "string" ? answers.use : null,
     priority: typeof answers.priority === "string" ? answers.priority : null,
+    preferredSize:
+      Number.isFinite(Number(answers.preferredSize)) && Number(answers.preferredSize) > 0
+        ? Number(answers.preferredSize)
+        : null,
     budget:
       answers.budget && typeof answers.budget === "object"
         ? {
@@ -881,6 +885,7 @@ app.post(
     relax: result.relax,
       consideredCount: result.consideredCount,
       brandNote: result.brandNote ?? null,
+      sizeNote: result.sizeNote ?? null,
     };
   }
 );

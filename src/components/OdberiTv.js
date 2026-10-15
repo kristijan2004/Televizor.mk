@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useMemo, useRef, useState } from "react";
-import styled, { css } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 import { Link } from "react-router-dom";
 
 import Navigation from "./Navigation";
@@ -11,6 +11,7 @@ import {
   DISTANCE_OPTIONS,
   LIGHT_OPTIONS,
   PRIORITY_OPTIONS,
+  SIZE_OPTIONS,
   USE_OPTIONS,
 } from "../lib/recommend";
 
@@ -36,6 +37,112 @@ const focusRing = css`
   }
 `;
 
+/*
+  Рачно нацртани SVG икони (без нова зависност). currentColor значи секоја
+  автоматски ја презема белата/темната боја на копчето кога е избрано.
+*/
+const svgProps = {
+  viewBox: "0 0 24 24",
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: 1.8,
+  strokeLinecap: "round",
+  strokeLinejoin: "round",
+};
+
+const IconSun = () => (
+  <svg {...svgProps}>
+    <circle cx="12" cy="12" r="4.2" />
+    <path d="M12 2.5v2.2M12 19.3v2.2M4.2 12H2M22 12h-2.2M5.4 5.4l1.6 1.6M17 17l1.6 1.6M18.6 5.4 17 7M7 17l-1.6 1.6" />
+  </svg>
+);
+
+const IconCloudSun = () => (
+  <svg {...svgProps}>
+    <path d="M7.5 9.5a3.5 3.5 0 0 1 6.6-1.6" />
+    <path d="M5 19a3.6 3.6 0 0 1 .6-7.1 4.6 4.6 0 0 1 8.9-.9A3.8 3.8 0 0 1 14 19H5Z" />
+    <path d="M18 3v1.6M21.4 6.6 20.2 7.8M22.5 10.5h-1.6" />
+  </svg>
+);
+
+const IconMoon = () => (
+  <svg {...svgProps}>
+    <path d="M20 14.2A8.5 8.5 0 1 1 9.8 4a7 7 0 0 0 10.2 10.2Z" />
+  </svg>
+);
+
+const IconFilm = () => (
+  <svg {...svgProps}>
+    <rect x="3" y="4.5" width="18" height="15" rx="2" />
+    <path d="M3 9h18M3 15h18M8.5 4.5 7 9M16 4.5l-1.5 4.5" />
+  </svg>
+);
+
+const IconTrophy = () => (
+  <svg {...svgProps}>
+    <path d="M8 4h8v5a4 4 0 0 1-8 0V4Z" />
+    <path d="M8 5H5a3 3 0 0 0 3 4M16 5h3a3 3 0 0 1-3 4" />
+    <path d="M12 13v3M9 20h6M10 20v-2.2a2 2 0 0 1 4 0V20" />
+  </svg>
+);
+
+const IconGamepad = () => (
+  <svg {...svgProps}>
+    <path d="M7 8.5h10a4.5 4.5 0 0 1 4.3 5.8l-.5 1.5a2.6 2.6 0 0 1-4.6.8L15 14.8a2 2 0 0 0-1.6-.8h-2.8a2 2 0 0 0-1.6.8l-1.2 1.8a2.6 2.6 0 0 1-4.6-.8l-.5-1.5A4.5 4.5 0 0 1 7 8.5Z" />
+    <path d="M7.8 11v2.6M6.5 12.3h2.6" />
+    <circle cx="15.2" cy="11" r="0.6" fill="currentColor" />
+    <circle cx="17.2" cy="13" r="0.6" fill="currentColor" />
+  </svg>
+);
+
+const IconTv = () => (
+  <svg {...svgProps}>
+    <rect x="3" y="5.5" width="18" height="12" rx="2" />
+    <path d="M9 21h6M12 17.5V21" />
+  </svg>
+);
+
+const IconEye = () => (
+  <svg {...svgProps}>
+    <path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12Z" />
+    <circle cx="12" cy="12" r="2.7" />
+  </svg>
+);
+
+const IconExpand = () => (
+  <svg {...svgProps}>
+    <path d="M9 3H3v6M15 3h6v6M9 21H3v-6M15 21h6v-6" />
+  </svg>
+);
+
+const IconGrid = () => (
+  <svg {...svgProps}>
+    <rect x="3.5" y="3.5" width="7" height="7" rx="1.3" />
+    <rect x="13.5" y="3.5" width="7" height="7" rx="1.3" />
+    <rect x="3.5" y="13.5" width="7" height="7" rx="1.3" />
+    <rect x="13.5" y="13.5" width="7" height="7" rx="1.3" />
+  </svg>
+);
+
+const IconZap = () => (
+  <svg {...svgProps}>
+    <path d="M12.5 2.5 4 14h6.5L11 21.5 20 10h-6.5L12.5 2.5Z" />
+  </svg>
+);
+
+const IconShuffle = () => (
+  <svg {...svgProps}>
+    <path d="M3 6h3.5L15 17.5H21M3 18h3.5L10 13M16 6h5M16 6l2.5-2.5M16 6l2.5 2.5M21 18l-2.5-2.5M21 18l-2.5 2.5" />
+  </svg>
+);
+
+const IconClock = () => (
+  <svg {...svgProps}>
+    <circle cx="12" cy="12" r="9" />
+    <path d="M12 7v5l3.2 2" />
+  </svg>
+);
+
 const PageCont = styled.div`
   min-height: 100vh;
 
@@ -50,6 +157,24 @@ const Shell = styled.main`
   padding: 28px 16px 72px;
 
   box-sizing: border-box;
+`;
+
+const fadeInUp = keyframes`
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+`;
+
+/*
+  key={stepIndex} на местото каде се користи ова ја тера React да го
+  замонтира повторно при секоја промена на прашањето, па анимацијата секогаш
+  поминува одново — без тоа, истиот <div> само би си ги менувал децата.
+*/
+const StepFade = styled.div`
+  animation: ${fadeInUp} 0.28s ease;
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none;
+  }
 `;
 
 /* ---------- Progress ---------- */
@@ -134,6 +259,77 @@ const Hint = styled.p`
   line-height: 1.6;
 `;
 
+/* ---------- Landing / hero ---------- */
+
+const Hero = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  padding: 56px 0 24px;
+
+  max-width: 560px;
+
+  @media (max-width: 600px) {
+    padding: 28px 0 12px;
+  }
+`;
+
+const HeroEyebrow = styled.span`
+  display: inline-block;
+
+  margin-bottom: 14px;
+
+  padding: 6px 14px;
+
+  border-radius: 999px;
+
+  background-color: #eeeaf2;
+
+  color: #553d67;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.06em;
+`;
+
+const HeroTitle = styled.h1`
+  margin: 0 0 16px;
+
+  color: ${PURPLE};
+
+  font-size: 40px;
+
+  font-weight: 800;
+
+  line-height: 1.15;
+
+  @media (max-width: 600px) {
+    font-size: 30px;
+  }
+`;
+
+const HeroText = styled.p`
+  margin: 0 0 28px;
+
+  color: #4a4a5e;
+
+  font-size: 17px;
+
+  line-height: 1.65;
+`;
+
+const HeroNote = styled.p`
+  margin: 14px 0 0;
+
+  color: #8a8aa3;
+
+  font-size: 13px;
+`;
+
 /*
   One column on a phone, two where there is room. Options are deliberately tall
   so they stay easy to hit with a thumb.
@@ -150,6 +346,12 @@ const Options = styled.div`
   }
 `;
 
+const pop = keyframes`
+  0% { transform: scale(1); }
+  40% { transform: scale(1.035); }
+  100% { transform: scale(1); }
+`;
+
 const Option = styled.button`
   width: 100%;
 
@@ -158,7 +360,7 @@ const Option = styled.button`
   padding: 18px 20px;
 
   display: flex;
-  align-items: center;
+  align-items: ${(props) => (props.$rich ? "flex-start" : "center")};
 
   gap: 14px;
 
@@ -183,6 +385,8 @@ const Option = styled.button`
 
   transition: border-color 0.15s, background-color 0.15s, transform 0.08s;
 
+  ${(props) => props.$selected && css`animation: ${pop} 0.22s ease;`}
+
   ${focusRing}
 
   &:hover {
@@ -195,11 +399,54 @@ const Option = styled.button`
 
   @media (prefers-reduced-motion: reduce) {
     transition: none;
+    animation: none;
 
     &:active {
       transform: none;
     }
   }
+`;
+
+/* Икона во круг пред насловот — само за прашањата со icon. */
+const OptionIcon = styled.span`
+  flex-shrink: 0;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+
+  border-radius: 11px;
+
+  background-color: ${(props) => (props.$selected ? "rgba(255,255,255,0.18)" : "#f1f0f8")};
+
+  color: inherit;
+
+  svg {
+    width: 22px;
+    height: 22px;
+  }
+`;
+
+const OptionBody = styled.span`
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+
+  min-width: 0;
+`;
+
+const OptionBlurb = styled.span`
+  font-size: 13px;
+
+  font-weight: 500;
+
+  line-height: 1.45;
+
+  color: ${(props) => (props.$selected ? "rgba(255,255,255,0.82)" : "#73738c")};
 `;
 
 /* The tick box on multi-select options. */
@@ -838,6 +1085,15 @@ const SrOnly = styled.div`
 
 const BRAND_ANY = "site";
 
+/*
+  Ги спојува {id,label} опциите (од recommend.js — податок, не UI) со
+  икона/опис за секоја, без да се дуплира листата. recommend.js останува
+  единствен извор за id/label; иконите се чисто визуелни и живеат тука.
+*/
+function USE_META_MAP(baseOptions, metaById) {
+  return baseOptions.map((o) => ({ id: o.id, label: o.label, ...metaById[o.id] }));
+}
+
 function buildSteps(budgetOptions, brandOptions) {
   return [
     {
@@ -847,17 +1103,47 @@ function buildSteps(budgetOptions, brandOptions) {
       options: DISTANCE_OPTIONS.map((o) => ({ id: o.id, label: o.label })),
     },
     {
+      key: "preferredSize",
+      question: "Имаш ли конкретна големина на ум?",
+      hint: 'Ако немаш одредена големина, избери „Нема преференца" — ќе предложиме според растојанието од претходното прашање.',
+      options: [
+        ...SIZE_OPTIONS.map((size) => ({ id: String(size), label: `${size}"`, value: size })),
+        { id: "any", label: "Нема преференца", value: null },
+      ],
+    },
+    {
       key: "light",
       question: "Колку светлина има во собата попладне?",
       hint: "Во светла соба подобро се снаоѓаат панели со висока светлина. Во темна доаѓа до израз контрастот.",
-      options: LIGHT_OPTIONS.map((o) => ({ id: o.id, label: o.label })),
       wide: true,
+      options: USE_META_MAP(LIGHT_OPTIONS, {
+        svetla: { icon: <IconSun /> },
+        umerena: { icon: <IconCloudSun /> },
+        temna: { icon: <IconMoon /> },
+      }),
     },
     {
       key: "use",
       question: "Што гледаш најмногу?",
-      hint: "Според ова се одредува дали е поважен контрастот, светлината или брзината на панелот.",
-      options: USE_OPTIONS.map((o) => ({ id: o.id, label: o.label })),
+      hint: "Избери го најчестото — секоја опција бара нешто различно од телевизорот.",
+      options: USE_META_MAP(USE_OPTIONS, {
+        filmovi: {
+          icon: <IconFilm />,
+          blurb: "Длабоко црно и силен контраст — OLED/Mini LED се најсилни тука.",
+        },
+        sport: {
+          icon: <IconTrophy />,
+          blurb: "Брза, јасна слика без замаглување при трчање и брзи акции.",
+        },
+        gejming: {
+          icon: <IconGamepad />,
+          blurb: "Висок Hz, VRR и ALLM — мазна игра без кинење и доцнење.",
+        },
+        meshano: {
+          icon: <IconTv />,
+          blurb: "Балансиран избор што добро се снаоѓа насекаде, без да се специјализира.",
+        },
+      }),
     },
     {
       key: "budget",
@@ -870,7 +1156,12 @@ function buildSteps(budgetOptions, brandOptions) {
       key: "priority",
       question: "Што ти е најважно?",
       hint: "Ако мораш да избереш едно нешто за кое вреди да се плати повеќе.",
-      options: PRIORITY_OPTIONS.map((o) => ({ id: o.id, label: o.label })),
+      options: USE_META_MAP(PRIORITY_OPTIONS, {
+        slika: { icon: <IconEye /> },
+        golemina: { icon: <IconExpand /> },
+        gejming: { icon: <IconGamepad /> },
+        smart: { icon: <IconGrid /> },
+      }),
     },
     /*
       Прашање само за оние што играат. Се прикажува условно (види подолу):
@@ -890,18 +1181,22 @@ function buildSteps(budgetOptions, brandOptions) {
         {
           id: "hz120",
           label: "120Hz или повеќе",
-          note: "помазна слика во брзи игри",
+          icon: <IconZap />,
+          blurb: "помазна слика во брзи игри",
         },
         {
           id: "vrr",
           label: "VRR",
-          note: "спречува кинење на сликата",
+          icon: <IconShuffle />,
+          blurb: "спречува кинење на сликата",
         },
         {
           id: "allm",
           label: "ALLM",
-          note: "автоматски режим со мало доцнење",
+          icon: <IconClock />,
+          blurb: "автоматски режим со мало доцнење",
         },
+        { id: "none", label: "Ништо од ова не ми е важно", exclusive: true },
       ],
     },
     {
@@ -910,7 +1205,7 @@ function buildSteps(budgetOptions, brandOptions) {
       hint: "Можеш да избереш повеќе. Ова е желба, не филтер — ако друг бренд е значително подобар избор, сепак ќе ти го прикажеме.",
       multi: true,
       options: [
-        { id: BRAND_ANY, label: "Нема важност" },
+        { id: BRAND_ANY, label: "Нема важност", exclusive: true },
         ...brandOptions.map((b) => ({
           id: b.brand,
           label: b.brand,
@@ -957,6 +1252,7 @@ const OdberiTv = () => {
     };
   }, []);
 
+  const [started, setStarted] = useState(false);
   const [stepIndex, setStepIndex] = useState(0);
   const [answers, setAnswers] = useState({});
   const [done, setDone] = useState(false);
@@ -1017,11 +1313,14 @@ const OdberiTv = () => {
     setDone(false);
   };
 
-  const answerSingle = (option) => {
-    const value = option.value || option.id;
-
-    setAnswers((previous) => ({ ...previous, [step.key]: value }));
-
+  /*
+    Заедничко за сите начини да се помине напред: одговор, скип или
+    "прикажи препораки" на повеќекратен избор. Порано тоа копче секогаш
+    викаше setDone(true), па истото прашање (гејминг желби) кога не е
+    последен чекор, прескокнуваше сè по себе — вклучително прашањето за
+    бренд. Сега секое „напред" поминува низ исто место.
+  */
+  const advance = () => {
     if (isLast) {
       setDone(true);
     } else {
@@ -1029,16 +1328,28 @@ const OdberiTv = () => {
     }
   };
 
+  const answerSingle = (option) => {
+    // "value" in option, not option.value || — a deliberate `value: null`
+    // ("Нема преференца") must stay null, not fall back to the option's id.
+    const value = "value" in option ? option.value : option.id;
+
+    setAnswers((previous) => ({ ...previous, [step.key]: value }));
+    advance();
+  };
+
   const toggleMulti = (option) => {
     setAnswers((previous) => {
       const current = previous[step.key] || [];
 
-      // "Нема важност" and a brand list are mutually exclusive.
-      if (option.id === BRAND_ANY) {
-        return { ...previous, [step.key]: [BRAND_ANY] };
+      // An "exclusive" option ("no preference" / "none of these") can't sit
+      // alongside real choices — picking one clears the other kind.
+      const exclusiveIds = step.options.filter((o) => o.exclusive).map((o) => o.id);
+
+      if (option.exclusive) {
+        return { ...previous, [step.key]: [option.id] };
       }
 
-      const without = current.filter((id) => id !== BRAND_ANY);
+      const without = current.filter((id) => !exclusiveIds.includes(id));
 
       const next = without.includes(option.id)
         ? without.filter((id) => id !== option.id)
@@ -1055,11 +1366,21 @@ const OdberiTv = () => {
       return (answer || []).includes(option.id);
     }
 
-    if (option.value) {
+    if (!("value" in option)) {
+      return answer === option.id;
+    }
+
+    /*
+      Буџетот носи обект { id, min, max } — се споредува по id. Големината
+      носи гол број (или null за „Нема преференца") — директна споредба.
+      `typeof null === "object"` е вистина во JS, затоа прво се проверува
+      дека option.value е truthy пред да се третира како обект.
+    */
+    if (option.value && typeof option.value === "object") {
       return answer?.id === option.value.id;
     }
 
-    return answer === option.id;
+    return answer === option.value;
   };
 
   const [result, setResult] = useState(null);
@@ -1087,6 +1408,7 @@ const OdberiTv = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         distance: answers.distance,
+        preferredSize: answers.preferredSize || null,
         light: answers.light,
         use: answers.use,
         budget: answers.budget,
@@ -1126,6 +1448,36 @@ const OdberiTv = () => {
     setSort("match");
   };
 
+  /* ---------------- Landing ---------------- */
+
+  if (!started) {
+    return (
+      <PageCont>
+        <Navigation />
+
+        <Shell>
+          <Hero>
+            <HeroEyebrow>ОДБЕРИ ТВ</HeroEyebrow>
+
+            <HeroTitle>Најди го телевизорот за тебе.</HeroTitle>
+
+            <HeroText>
+              Одговори на неколку кратки прашања за твојата соба, навики и
+              буџет — ќе ти препорачаме до три телевизори од нашата база, со
+              објаснување зошто токму тие ти одговараат.
+            </HeroText>
+
+            <PrimaryButton type="button" onClick={() => setStarted(true)}>
+              Започни →
+            </PrimaryButton>
+
+            <HeroNote>Трае околу минута</HeroNote>
+          </Hero>
+        </Shell>
+      </PageCont>
+    );
+  }
+
   /* ---------------- Results ---------------- */
 
   /*
@@ -1163,13 +1515,17 @@ const OdberiTv = () => {
       }
 
       /*
-        Budget options carry a `value` object and are matched by its id;
-        every other option is matched by its own id. Comparing both at once
-        made two undefineds equal and always matched the first option.
+        Будget options carry a `value` object matched by id; size options
+        carry a plain number (or null) matched directly; everything else has
+        no `value` and is matched by its own id. See isSelected() above for
+        why `option.value &&` must guard the object check (typeof null is
+        "object" in JS).
       */
-      const option = source.options.find((o) =>
-        o.value ? o.value.id === answer?.id : o.id === answer
-      );
+      const option = source.options.find((o) => {
+        if (!("value" in o)) return o.id === answer;
+        if (o.value && typeof o.value === "object") return o.value.id === answer?.id;
+        return o.value === answer;
+      });
 
       return option?.label || null;
     };
@@ -1194,6 +1550,15 @@ const OdberiTv = () => {
             <Note>
               Ниеден модел од избраните брендови не влезе во првите три за
               твоите одговори. Подолу се моделите што најдобро одговараат.
+            </Note>
+          )}
+
+          {result.sizeNote && (
+            <Note>
+              Со избраниот буџет нема телевизор близу {result.sizeNote}" —
+              подолу е најдобриот избор во твојот буџет, не твојата барана
+              големина. Зголеми го буџетот за да видиш модели близу{" "}
+              {result.sizeNote}".
             </Note>
           )}
 
@@ -1470,6 +1835,7 @@ const OdberiTv = () => {
           Прашање {stepIndex + 1} од {steps.length}: {step.question}
         </SrOnly>
 
+        <StepFade key={step.key}>
         <Question>{step.question}</Question>
 
         <Hint>{step.hint}</Hint>
@@ -1491,13 +1857,28 @@ const OdberiTv = () => {
                 role={step.multi ? "checkbox" : "radio"}
                 aria-checked={selected}
                 $selected={selected}
+                $rich={Boolean(option.icon)}
                 onClick={() =>
                   step.multi ? toggleMulti(option) : answerSingle(option)
                 }
               >
                 {step.multi && <Check $on={selected}>{selected ? "✓" : ""}</Check>}
 
-                <span>{option.label}</span>
+                {option.icon && (
+                  <OptionIcon $selected={selected}>{option.icon}</OptionIcon>
+                )}
+
+                {option.icon ? (
+                  <OptionBody>
+                    <span>{option.label}</span>
+
+                    {option.blurb && (
+                      <OptionBlurb $selected={selected}>{option.blurb}</OptionBlurb>
+                    )}
+                  </OptionBody>
+                ) : (
+                  <span>{option.label}</span>
+                )}
 
                 {option.note && (
                   <OptionNote $selected={selected}>{option.note}</OptionNote>
@@ -1517,13 +1898,14 @@ const OdberiTv = () => {
           {step.multi && (
             <PrimaryButton
               type="button"
-              onClick={() => setDone(true)}
+              onClick={advance}
               disabled={multiAnswer.length === 0}
             >
-              Прикажи препораки
+              {isLast ? "Прикажи препораки" : "Продолжи"}
             </PrimaryButton>
           )}
         </Controls>
+        </StepFade>
       </Shell>
     </PageCont>
   );
