@@ -1,9 +1,2181 @@
 {
-  "generatedAt": "2026-10-14T07:57:12.080Z",
+  "generatedAt": "2026-10-15T19:55:22.239Z",
   "categories": [
     "Новости"
   ],
   "articles": [
+    {
+      "id": "mini-led-televizori-2026-pregled",
+      "slug": "mini-led-televizori-2026-pregled",
+      "title": "Mini LED телевизори 2026 во Македонија: целосен преглед",
+      "excerpt": "Omdia предупредува дека телевизорите од средната класа, меѓу нив и Mini LED моделите, ќе поскапат поради скапите чипови. Ги прегледавме Mini LED телевизорите што може да се купат кај нас сега: Samsung, TCL, Hisense, LG и Xiaomi.",
+      "category": "Новости",
+      "author": "",
+      "date": "2026-10-29",
+      "publishAt": "",
+      "readTime": 5,
+      "image": "/images/novosti/mini-led-televizori-2026-pregled.webp",
+      "imageCaption": "TCL SQD-Mini LED модели за 2026 (C7L, C8L и X11L) на претставувањето во Дубаи. Фото: TCL",
+      "imageCandidates": [
+        "/images/novosti/mini-led-televizori-2026-pregled.webp",
+        "/images/novosti/mini-led-televizori-2026-pregled.jpg",
+        "/images/novosti/mini-led-televizori-2026-pregled.jpeg",
+        "/images/novosti/mini-led-televizori-2026-pregled.png",
+        "/images/novosti/mini-led-televizori-2026-pregled.avif",
+        "/images/novosti/mini-led-televizori-2026-pregled.svg",
+        "/images/novosti/mini-led-televizori-2026-pregled.jpg.jpg",
+        "/images/novosti/mini-led-televizori-2026-pregled.jpeg.jpeg",
+        "/images/novosti/mini-led-televizori-2026-pregled.png.png",
+        "/images/novosti/mini-led-televizori-2026-pregled.webp.webp",
+        "/images/novosti/placeholder.svg"
+      ],
+      "hasImage": true,
+      "featured": false,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "На 9 октомври истражувачката куќа Omdia објави дека телевизорите од почетната и средната класа се најизложени на поскапувањето на компонентите. Мемориските чипови поскапеа неколку пати за една година, поради големата побарувачка од вештачката интелигенција. Кај 55-инчните 4K телевизори главната плоча веќе е поскапа од самиот екран. Притисокот го чувствуваат и "
+            },
+            {
+              "text": "QLED, QNED и Mini LED моделите од средната класа",
+              "bold": true
+            },
+            {
+              "text": ", а цените на мемориите треба да растат барем до 2027 ("
+            },
+            {
+              "text": "FlatpanelsHD",
+              "href": "https://www.flatpanelshd.com/news.php?subaction=showfull&id=1791529542"
+            },
+            {
+              "text": ")."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Mini LED е LCD телевизор со многу ситни диоди во позадинското светло. Кај добрите модели тие се делат на зони што се затемнуваат одделно, па црната е поцрна, а светлите делови посветли. Подолу е прегледот на Mini LED моделите за 2026 (и еден од 2025) што може да се купат кај нас сега, проверено на 13 октомври 2026."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Samsung M70H и M80H: внимавај на разликата"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ова е новата, пристапна Mini LED линија на Samsung, под Neo QLED серијата."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "M80H",
+                "bold": true
+              },
+              {
+                "text": " е подобриот модел: до 144 Hz, процесор NQ4 AI Gen2 и поддршка за AMD FreeSync Premium за игри ("
+              },
+              {
+                "text": "Samsung Newsroom",
+                "href": "https://news.samsung.com/us/samsung-expands-2026-tv-lineup-refreshed-neo-qled-series-new-mini-led-tvs/"
+              },
+              {
+                "text": ", "
+              },
+              {
+                "text": "SamMobile",
+                "href": "https://www.sammobile.com/news/samsung-m80h-mini-led-tv-everything-we-know/"
+              },
+              {
+                "text": "). Кај Нептун, Сетек и Техномаркет се продава во "
+              },
+              {
+                "text": "55",
+                "href": "/tv/samsung/ue55m80hauxxh"
+              },
+              {
+                "text": ", "
+              },
+              {
+                "text": "65",
+                "href": "/tv/samsung/ue65m80hauxxh"
+              },
+              {
+                "text": ", "
+              },
+              {
+                "text": "75",
+                "href": "/tv/samsung/ue75m80hauxxh"
+              },
+              {
+                "text": " и "
+              },
+              {
+                "text": "85 инчи",
+                "href": "/tv/samsung/ue85m80hauxxh"
+              },
+              {
+                "text": "."
+              }
+            ],
+            [
+              {
+                "text": "M70H",
+                "bold": true
+              },
+              {
+                "text": " е посебен случај. Според "
+              },
+              {
+                "text": "tvreviews.net",
+                "href": "https://tvreviews.net/samsung-m70h/"
+              },
+              {
+                "text": ", нема вистинско локално затемнување, а тоа е главната причина зошто некој купува Mini LED. Работи на 60 Hz и нема HDMI 2.1. Кај нас има најмногу големини, од "
+              },
+              {
+                "text": "43",
+                "href": "/tv/samsung/ue43m70hauxxh"
+              },
+              {
+                "text": " до "
+              },
+              {
+                "text": "85 инчи",
+                "href": "/tv/samsung/ue85m70hauxxh"
+              },
+              {
+                "text": "."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/novosti/mini-led-2026-samsung-m80h.webp",
+          "alt": "Samsung Mini LED телевизор M80H, гледан однапред",
+          "caption": "Samsung Mini LED M80H, модел за 2026 година. Фото: Samsung"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Двата модели имаат само три HDMI приклучоци, а според "
+            },
+            {
+              "text": "Tom's Guide",
+              "href": "https://www.tomsguide.com/tvs/4k-tvs/samsung-just-made-its-2026-mini-led-tv-lineup-official-but-one-popular-tv-wont-be-returning-this-year"
+            },
+            {
+              "text": " немаат квантни точки за посилни бои. Ако ти треба Samsung со вистински Mini LED и квантни точки, погледни ја Neo QLED серијата QN80H."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "TCL C7L: Mini LED со звук од Bang & Olufsen"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "C7L е влезниот модел во новата TCL "
+            },
+            {
+              "text": "SQD-Mini LED",
+              "bold": true
+            },
+            {
+              "text": " генерација. Од истата генерација е и флагманот X11L, кој на годинешниот HDTVTest Shootout заврши втор меѓу сите LCD телевизори ("
+            },
+            {
+              "text": "HDTVTest",
+              "href": "https://www.hdtvtest.co.uk/news/hdtv-test-s-2026-tv-shootout-semi-final-reveals-this-year-s-top-led-tv"
+            },
+            {
+              "text": "). Според "
+            },
+            {
+              "text": "TCL",
+              "href": "https://www.tcl.com/global/en/tvs/75c7l"
+            },
+            {
+              "text": ", C7L има панел HVA 2.0 Pro од CSOT, 144 Hz (до 288 Hz во режимот за игри), Google TV, Dolby Vision и звучници развиени со Bang & Olufsen. Бројот на зони за затемнување се разликува од пазар до пазар."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Нептун го нуди "
+            },
+            {
+              "text": "TCL 65 C7L со B&O звук",
+              "href": "/tv/tcl/65%20c7l%20144hz%20b%26o"
+            },
+            {
+              "text": ". Сетек го продава истиот телевизор под ознаката C79L, во "
+            },
+            {
+              "text": "65",
+              "href": "/tv/tcl/65c79l"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "75",
+              "href": "/tv/tcl/75c79l"
+            },
+            {
+              "text": ", 85 и 98 инчи. Значи C7L и C79L се ист модел, само со различна ознака во двете продавници."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Hisense U8Q: минатогодишен, но сè уште силен"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "U8Q е модел од 2025 година, но сè уште е еден од најопремените Hisense Mini LED модели во понудата кај нас. Нуди режим за игри до 165 Hz, Dolby Vision IQ и звучен систем 4.1.2 ("
+            },
+            {
+              "text": "Hisense U8Q спецификации",
+              "href": "https://www.displayspecifications.com/en/model/ddef40d2"
+            },
+            {
+              "text": "). Кај Сетек се продава во 55 и "
+            },
+            {
+              "text": "65 инчи",
+              "href": "/tv/hisense/65u8q"
+            },
+            {
+              "text": ". Ако сакаш новата Hisense технологија, погледни ја нашата статија за "
+            },
+            {
+              "text": "RGB телевизорите во 2026",
+              "href": "/novosti/rgb-led-televizori-2026-makedonija"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "LG QNED 8M"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "LG Mini LED моделите се продаваат под името QNED. Серијата QNED 8M за 2026 Нептун ја нуди во "
+            },
+            {
+              "text": "55",
+              "href": "/tv/lg/55qned8mb6c"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "65",
+              "href": "/tv/lg/65%20qned8m%20b6c"
+            },
+            {
+              "text": " и "
+            },
+            {
+              "text": "75 инчи",
+              "href": "/tv/lg/75qned8mb6a"
+            },
+            {
+              "text": ", означена како „QNED MiniLED“ со 144 Hz. Предност е webOS системот, ист како кај LG OLED телевизорите."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Xiaomi TV S Mini LED"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Најевтиниот пат до Mini LED со Google TV. Анхоч го има во "
+            },
+            {
+              "text": "55",
+              "href": "/tv/xiaomi/s%20mini%20led%2055"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "65",
+              "href": "/tv/xiaomi/s%20mini%20led%2065"
+            },
+            {
+              "text": " и "
+            },
+            {
+              "text": "75 инчи",
+              "href": "/tv/xiaomi/s%20mini%20led%2075"
+            },
+            {
+              "text": ", а Техномаркет во 55 инчи."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Значи, дали да купуваш сега"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ако веќе си одлучил за Mini LED од средната класа, нема причина да чекаш. Omdia очекува дека производителите повеќе нема да можат сами да ги покриваат поскапите компоненти. Зголемувањето најверојатно ќе стигне до продавниците. Поголемите и поскапите модели имаат повеќе простор да го апсорбираат, а помалите и поевтините најмалку."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "Игри и светла соба",
+                "bold": true
+              },
+              {
+                "text": ": TCL C7L или Samsung M80H"
+              }
+            ],
+            [
+              {
+                "text": "Звук без саундбар",
+                "bold": true
+              },
+              {
+                "text": ": TCL C7L со B&O звучници"
+              }
+            ],
+            [
+              {
+                "text": "Најдобра слика за помалку пари",
+                "bold": true
+              },
+              {
+                "text": ": Hisense U8Q, ако го најдеш"
+              }
+            ],
+            [
+              {
+                "text": "Ограничен буџет, само за ТВ и стриминг",
+                "bold": true
+              },
+              {
+                "text": ": Samsung M70H, но знај дека нема локално затемнување"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Накратко"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "Omdia (9 октомври): Mini LED и QLED моделите од средната класа се под притисок да поскапат."
+              }
+            ],
+            [
+              {
+                "text": "Samsung M80H е вистинскиот Mini LED. M70H нема локално затемнување."
+              }
+            ],
+            [
+              {
+                "text": "TCL C7L е од истата SQD-Mini LED генерација како X11L, вториот најдобар LCD на Shootout 2026."
+              }
+            ],
+            [
+              {
+                "text": "Hisense U8Q е од 2025, но е сè уште силен избор."
+              }
+            ],
+            [
+              {
+                "text": "Mini LED моделите кај нас ги имаат Нептун, Сетек, Техномаркет и Анхоч."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Извори"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "FlatpanelsHD — Many TVs are about to become more expensive, warns Omdia",
+                "href": "https://www.flatpanelshd.com/news.php?subaction=showfull&id=1791529542"
+              }
+            ],
+            [
+              {
+                "text": "Samsung Newsroom — 2026 Neo QLED и Mini LED телевизори",
+                "href": "https://news.samsung.com/us/samsung-expands-2026-tv-lineup-refreshed-neo-qled-series-new-mini-led-tvs/"
+              }
+            ],
+            [
+              {
+                "text": "tvreviews.net — Samsung M70H",
+                "href": "https://tvreviews.net/samsung-m70h/"
+              }
+            ],
+            [
+              {
+                "text": "TCL — C7L SQD-Mini LED TV",
+                "href": "https://www.tcl.com/global/en/tvs/75c7l"
+              }
+            ],
+            [
+              {
+                "text": "HDTVTest — 2026 TV Shootout semi-final",
+                "href": "https://www.hdtvtest.co.uk/news/hdtv-test-s-2026-tv-shootout-semi-final-reveals-this-year-s-top-led-tv"
+              }
+            ],
+            [
+              {
+                "text": "DisplaySpecifications — Hisense U8Q",
+                "href": "https://www.displayspecifications.com/en/model/ddef40d2"
+              }
+            ],
+            [
+              {
+                "text": "Техномаркет — Mini LED TV",
+                "href": "https://www.tehnomarket.com.mk/category/15843710/miniled-tv"
+              }
+            ]
+          ]
+        }
+      ],
+      "body": [
+        "На 9 октомври истражувачката куќа Omdia објави дека телевизорите од почетната и средната класа се најизложени на поскапувањето на компонентите. Мемориските чипови поскапеа неколку пати за една година, поради големата побарувачка од вештачката интелигенција. Кај 55-инчните 4K телевизори главната плоча веќе е поскапа од самиот екран. Притисокот го чувствуваат и QLED, QNED и Mini LED моделите од средната класа, а цените на мемориите треба да растат барем до 2027 (FlatpanelsHD).",
+        "Mini LED е LCD телевизор со многу ситни диоди во позадинското светло. Кај добрите модели тие се делат на зони што се затемнуваат одделно, па црната е поцрна, а светлите делови посветли. Подолу е прегледот на Mini LED моделите за 2026 (и еден од 2025) што може да се купат кај нас сега, проверено на 13 октомври 2026.",
+        "Ова е новата, пристапна Mini LED линија на Samsung, под Neo QLED серијата.",
+        "Двата модели имаат само три HDMI приклучоци, а според Tom's Guide немаат квантни точки за посилни бои. Ако ти треба Samsung со вистински Mini LED и квантни точки, погледни ја Neo QLED серијата QN80H.",
+        "C7L е влезниот модел во новата TCL SQD-Mini LED генерација. Од истата генерација е и флагманот X11L, кој на годинешниот HDTVTest Shootout заврши втор меѓу сите LCD телевизори (HDTVTest). Според TCL, C7L има панел HVA 2.0 Pro од CSOT, 144 Hz (до 288 Hz во режимот за игри), Google TV, Dolby Vision и звучници развиени со Bang & Olufsen. Бројот на зони за затемнување се разликува од пазар до пазар.",
+        "Нептун го нуди TCL 65 C7L со B&O звук. Сетек го продава истиот телевизор под ознаката C79L, во 65, 75, 85 и 98 инчи. Значи C7L и C79L се ист модел, само со различна ознака во двете продавници.",
+        "U8Q е модел од 2025 година, но сè уште е еден од најопремените Hisense Mini LED модели во понудата кај нас. Нуди режим за игри до 165 Hz, Dolby Vision IQ и звучен систем 4.1.2 (Hisense U8Q спецификации). Кај Сетек се продава во 55 и 65 инчи. Ако сакаш новата Hisense технологија, погледни ја нашата статија за RGB телевизорите во 2026.",
+        "LG Mini LED моделите се продаваат под името QNED. Серијата QNED 8M за 2026 Нептун ја нуди во 55, 65 и 75 инчи, означена како „QNED MiniLED“ со 144 Hz. Предност е webOS системот, ист како кај LG OLED телевизорите.",
+        "Најевтиниот пат до Mini LED со Google TV. Анхоч го има во 55, 65 и 75 инчи, а Техномаркет во 55 инчи.",
+        "Ако веќе си одлучил за Mini LED од средната класа, нема причина да чекаш. Omdia очекува дека производителите повеќе нема да можат сами да ги покриваат поскапите компоненти. Зголемувањето најверојатно ќе стигне до продавниците. Поголемите и поскапите модели имаат повеќе простор да го апсорбираат, а помалите и поевтините најмалку."
+      ]
+    },
+    {
+      "id": "rgb-led-televizori-2026-makedonija",
+      "slug": "rgb-led-televizori-2026-makedonija",
+      "title": "RGB LED телевизори 2026: новата технологија веќе е во Македонија",
+      "excerpt": "Првиот голем независен тест на RGB телевизори ги рангираше Sony, TCL, Hisense, Samsung и LG. Кои од тестираните серии можеш да ги купиш кај нас, што значи нивното место и кој добива Dolby Vision 2.",
+      "category": "Новости",
+      "author": "",
+      "date": "2026-10-26",
+      "publishAt": "",
+      "readTime": 5,
+      "image": "/images/novosti/rgb-led-televizori-2026-makedonija.webp",
+      "imageCaption": "Samsung Micro RGB телевизор во дневна соба. Фото: Samsung",
+      "imageCandidates": [
+        "/images/novosti/rgb-led-televizori-2026-makedonija.webp",
+        "/images/novosti/rgb-led-televizori-2026-makedonija.jpg",
+        "/images/novosti/rgb-led-televizori-2026-makedonija.jpeg",
+        "/images/novosti/rgb-led-televizori-2026-makedonija.png",
+        "/images/novosti/rgb-led-televizori-2026-makedonija.avif",
+        "/images/novosti/rgb-led-televizori-2026-makedonija.svg",
+        "/images/novosti/rgb-led-televizori-2026-makedonija.jpg.jpg",
+        "/images/novosti/rgb-led-televizori-2026-makedonija.jpeg.jpeg",
+        "/images/novosti/rgb-led-televizori-2026-makedonija.png.png",
+        "/images/novosti/rgb-led-televizori-2026-makedonija.webp.webp",
+        "/images/novosti/placeholder.svg"
+      ],
+      "hasImage": true,
+      "featured": false,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "На 6 октомври британскиот HDTVTest го објави првото полуфинале на својот годишен TV Shootout посветено само на LCD телевизори. Резултатот е најдобрата споредба на RGB телевизорите досега: пет флагмани од 65 инчи, гледани едни до други, без судиите да знаат која марка е која ("
+            },
+            {
+              "text": "HDTVTest",
+              "href": "https://www.hdtvtest.co.uk/news/hdtv-test-s-2026-tv-shootout-semi-final-reveals-this-year-s-top-led-tv"
+            },
+            {
+              "text": ")."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "RGB телевизорите (кај Samsung „Micro RGB“, кај LG „Micro“ или „Mini RGB“, кај Hisense „RGB MiniLED“) наместо бело позадинско светло користат посебни црвени, зелени и сини диоди. Така добиваат многу почисти бои од обичниот LCD. Зошто сепак сè уште не го собориле OLED, објаснивме во статијата "
+            },
+            {
+              "text": "Технологијата што требаше да го собори OLED",
+              "href": "/novosti/rgb-led-televizori-protiv-oled"
+            },
+            {
+              "text": ". Тука се фокусираме на тоа што е новото и што од тоа може да се купи кај нас."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Како завршија RGB флагманите"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Редоследот според HDTVTest:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            [
+              {
+                "text": "Sony Bravia 9 II",
+                "bold": true
+              },
+              {
+                "text": " (True RGB): убедливо прв, победи во шест од осум категории"
+              }
+            ],
+            [
+              {
+                "text": "TCL X11L",
+                "bold": true
+              },
+              {
+                "text": " (SQD-Mini LED, не е RGB): втор, најдобар во темни сцени и точност на боите"
+              }
+            ],
+            [
+              {
+                "text": "Hisense UR9",
+                "bold": true
+              },
+              {
+                "text": " (RGB MiniLED): трет"
+              }
+            ],
+            [
+              {
+                "text": "Samsung R95H",
+                "bold": true
+              },
+              {
+                "text": " (Micro RGB): четврт"
+              }
+            ],
+            [
+              {
+                "text": "LG MRGB95",
+                "bold": true
+              },
+              {
+                "text": " (Micro RGB): последен"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Bravia 9 II потоа отиде во финалето против најдобрите OLED телевизори и заврши втор, веднаш зад Samsung S99H ("
+            },
+            {
+              "text": "HDTVTest",
+              "href": "https://www.hdtvtest.co.uk/news/samsung-s-s99-h-qd-oled-tv-wins-the-2026-hdtv-test-tv-shootout"
+            },
+            {
+              "text": "). Тоа е најдобар резултат за LCD телевизор на Shootout во последните години. Сепак, судиите заклучија дека RGB LED сè уште не може да го стигне OLED во контрастот на ниво на пиксел и во речиси црните делови."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Што од ова се продава кај нас"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Победникот Sony Bravia 9 II и вториот TCL X11L засега не ги најдовме во понудата на македонските продавници. Другите три бренда имаат RGB модели кај нас (проверено на 13 октомври 2026):"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "Samsung Micro RGB R95H",
+                "bold": true
+              },
+              {
+                "text": ": "
+              },
+              {
+                "text": "65 инчи",
+                "href": "/tv/samsung/mre65r95hatxxh"
+              },
+              {
+                "text": " кај Нептун и Сетек. Тоа е истата серија што HDTVTest ја тестираше. Според "
+              },
+              {
+                "text": "Samsung",
+                "href": "https://www.samsung.com/ie/support/tv-audio-video/what-are-the-differences-between-the-2026-micro-rgb-tv-models/"
+              },
+              {
+                "text": ", има мат екран против рефлексии и до 165 Hz."
+              }
+            ],
+            [
+              {
+                "text": "Samsung Micro RGB R85H",
+                "bold": true
+              },
+              {
+                "text": ": поевтината серија, со до 144 Hz и без мат екран. Ја има кај Нептун ("
+              },
+              {
+                "text": "55",
+                "href": "/tv/samsung/mre55r85hauxxh"
+              },
+              {
+                "text": " и "
+              },
+              {
+                "text": "65 инчи",
+                "href": "/tv/samsung/mre65r85hauxxh"
+              },
+              {
+                "text": "), Сетек (55 до 85 инчи) и Техномаркет, кој отвори посебна категорија „MicroRGB TV“ (65 инчи)."
+              }
+            ],
+            [
+              {
+                "text": "Hisense UR9S",
+                "bold": true
+              },
+              {
+                "text": ": "
+              },
+              {
+                "text": "65",
+                "href": "/tv/hisense/65ur9s"
+              },
+              {
+                "text": " и "
+              },
+              {
+                "text": "75 инчи",
+                "href": "/tv/hisense/75ur9s"
+              },
+              {
+                "text": " кај Сетек. Ова е серијата што заврши трета."
+              }
+            ],
+            [
+              {
+                "text": "Hisense UR8S",
+                "bold": true
+              },
+              {
+                "text": ": "
+              },
+              {
+                "text": "65 инчи",
+                "href": "/tv/hisense/65ur8s"
+              },
+              {
+                "text": " кај Нептун и Сетек, и 75 инчи кај Сетек."
+              }
+            ],
+            [
+              {
+                "text": "LG MRGB87",
+                "bold": true
+              },
+              {
+                "text": ": "
+              },
+              {
+                "text": "55",
+                "href": "/tv/lg/55%20mrgb%2087b3b"
+              },
+              {
+                "text": ", "
+              },
+              {
+                "text": "65",
+                "href": "/tv/lg/65%20mrgb%2087b3b"
+              },
+              {
+                "text": ", "
+              },
+              {
+                "text": "75",
+                "href": "/tv/lg/75%20mrgb%2087b3b"
+              },
+              {
+                "text": " и "
+              },
+              {
+                "text": "86 инчи",
+                "href": "/tv/lg/86%20mrgb%2087b3b"
+              },
+              {
+                "text": " кај Нептун."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Еден важен детаљ за LG: моделот кај нас "
+            },
+            {
+              "text": "не е",
+              "bold": true
+            },
+            {
+              "text": " MRGB95 што заврши последен. MRGB87 е од пониската „Mini RGB evo“ линија. LG за таа линија наведува „двојна 100% покриеност“ на бојниот простор, наспроти „тројната“ кај флагманот ("
+            },
+            {
+              "text": "LG",
+              "href": "https://www.lg.com/us/newsroom/media-entertainment/micro-rgb-evo-2026"
+            },
+            {
+              "text": "). Резултатот од тестот не важи директно за него, ни во добра ни во лоша смисла."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Hisense добива Dolby Vision 2"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Hisense е првиот бренд со "
+            },
+            {
+              "text": "Dolby Vision 2",
+              "bold": true
+            },
+            {
+              "text": ", новата верзија на HDR форматот што подобро ја прилагодува сликата на телевизорот и на светлото во собата. Според "
+            },
+            {
+              "text": "Dolby",
+              "href": "https://investor.dolby.com/news-events/financial-news/news-details/2026/Dolby-Vision-2-Arrives-Bringing-Dolbys-Most-Advanced-Picture-Experience-Yet-to-Hisense-TVs/default.aspx"
+            },
+            {
+              "text": ", надградбата стига преку софтвер на сериите UX, UR9, UR8 и U7 за 2026 во Северна Америка, Европа и Азија. Тоа ги вклучува и UR9S и UR8S што се продаваат кај нас. Ако го имаш таков телевизор, провери дали има нов софтвер во поставките."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/novosti/rgb-led-2026-hisense-dolby-vision-2.webp",
+          "alt": "Семејство гледа Hisense телевизор со ознака Dolby Vision 2",
+          "caption": "Промотивна слика на Hisense за надградбата на Dolby Vision 2. Фото: Hisense"
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Samsung воопшто не користи Dolby Vision, туку својот HDR10+. LG засега нема планови за Dolby Vision 2 во моделите за 2026."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Значи, кој RGB телевизор да купиш"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "Најдобра слика од RGB што може да се купи кај нас",
+                "bold": true
+              },
+              {
+                "text": ": Hisense UR9S. Во тестот беше пред Samsung R95H."
+              }
+            ],
+            [
+              {
+                "text": "Светла дневна соба",
+                "bold": true
+              },
+              {
+                "text": ": Samsung R95H, поради мат екранот."
+              }
+            ],
+            [
+              {
+                "text": "Пристапен влез во RGB",
+                "bold": true
+              },
+              {
+                "text": ": Samsung R85H или Hisense UR8S."
+              }
+            ],
+            [
+              {
+                "text": "Голем екран и webOS",
+                "bold": true
+              },
+              {
+                "text": ": LG MRGB87, до 86 инчи."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ако гледаш претежно навечер во темна соба, добар OLED и понатаму дава подобар контраст за слична класа на цена."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Накратко"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "HDTVTest Shootout (6 октомври): Sony Bravia 9 II е најдобар LCD телевизор на 2026."
+              }
+            ],
+            [
+              {
+                "text": "Од RGB сериите што се продаваат кај нас, најдобро помина Hisense UR9 (трета), пред Samsung R95H."
+              }
+            ],
+            [
+              {
+                "text": "LG MRGB95 беше последен, но кај нас се продава друга, пониска серија (MRGB87)."
+              }
+            ],
+            [
+              {
+                "text": "Hisense UR9S и UR8S добиваат Dolby Vision 2 преку надградба на софтверот."
+              }
+            ],
+            [
+              {
+                "text": "RGB моделите кај нас ги имаат Нептун, Сетек и Техномаркет."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Извори"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "HDTVTest — 2026 TV Shootout semi-final reveals this year's top LED TV",
+                "href": "https://www.hdtvtest.co.uk/news/hdtv-test-s-2026-tv-shootout-semi-final-reveals-this-year-s-top-led-tv"
+              }
+            ],
+            [
+              {
+                "text": "HDTVTest — Samsung S99H wins the 2026 TV Shootout",
+                "href": "https://www.hdtvtest.co.uk/news/samsung-s-s99-h-qd-oled-tv-wins-the-2026-hdtv-test-tv-shootout"
+              }
+            ],
+            [
+              {
+                "text": "Samsung — разлики меѓу Micro RGB моделите за 2026",
+                "href": "https://www.samsung.com/ie/support/tv-audio-video/what-are-the-differences-between-the-2026-micro-rgb-tv-models/"
+              }
+            ],
+            [
+              {
+                "text": "LG USA — Micro RGB evo 2026",
+                "href": "https://www.lg.com/us/newsroom/media-entertainment/micro-rgb-evo-2026"
+              }
+            ],
+            [
+              {
+                "text": "Dolby — Dolby Vision 2 Arrives on Hisense TVs",
+                "href": "https://investor.dolby.com/news-events/financial-news/news-details/2026/Dolby-Vision-2-Arrives-Bringing-Dolbys-Most-Advanced-Picture-Experience-Yet-to-Hisense-TVs/default.aspx"
+              }
+            ],
+            [
+              {
+                "text": "Нептун — Samsung MRE 65 R95H",
+                "href": "https://www.neptun.mk/categories/televizori/84121521-SAMSUNG-MRE-65-R95H-ATXXH"
+              }
+            ],
+            [
+              {
+                "text": "Техномаркет — MicroRGB TV",
+                "href": "https://www.tehnomarket.com.mk/category/15843711/mikrorgb-tv"
+              }
+            ]
+          ]
+        }
+      ],
+      "body": [
+        "На 6 октомври британскиот HDTVTest го објави првото полуфинале на својот годишен TV Shootout посветено само на LCD телевизори. Резултатот е најдобрата споредба на RGB телевизорите досега: пет флагмани од 65 инчи, гледани едни до други, без судиите да знаат која марка е која (HDTVTest).",
+        "RGB телевизорите (кај Samsung „Micro RGB“, кај LG „Micro“ или „Mini RGB“, кај Hisense „RGB MiniLED“) наместо бело позадинско светло користат посебни црвени, зелени и сини диоди. Така добиваат многу почисти бои од обичниот LCD. Зошто сепак сè уште не го собориле OLED, објаснивме во статијата Технологијата што требаше да го собори OLED. Тука се фокусираме на тоа што е новото и што од тоа може да се купи кај нас.",
+        "Редоследот според HDTVTest:",
+        "Bravia 9 II потоа отиде во финалето против најдобрите OLED телевизори и заврши втор, веднаш зад Samsung S99H (HDTVTest). Тоа е најдобар резултат за LCD телевизор на Shootout во последните години. Сепак, судиите заклучија дека RGB LED сè уште не може да го стигне OLED во контрастот на ниво на пиксел и во речиси црните делови.",
+        "Победникот Sony Bravia 9 II и вториот TCL X11L засега не ги најдовме во понудата на македонските продавници. Другите три бренда имаат RGB модели кај нас (проверено на 13 октомври 2026):",
+        "Еден важен детаљ за LG: моделот кај нас не е MRGB95 што заврши последен. MRGB87 е од пониската „Mini RGB evo“ линија. LG за таа линија наведува „двојна 100% покриеност“ на бојниот простор, наспроти „тројната“ кај флагманот (LG). Резултатот од тестот не важи директно за него, ни во добра ни во лоша смисла.",
+        "Hisense е првиот бренд со Dolby Vision 2, новата верзија на HDR форматот што подобро ја прилагодува сликата на телевизорот и на светлото во собата. Според Dolby, надградбата стига преку софтвер на сериите UX, UR9, UR8 и U7 за 2026 во Северна Америка, Европа и Азија. Тоа ги вклучува и UR9S и UR8S што се продаваат кај нас. Ако го имаш таков телевизор, провери дали има нов софтвер во поставките.",
+        "Samsung воопшто не користи Dolby Vision, туку својот HDR10+. LG засега нема планови за Dolby Vision 2 во моделите за 2026.",
+        "Ако гледаш претежно навечер во темна соба, добар OLED и понатаму дава подобар контраст за слична класа на цена."
+      ]
+    },
+    {
+      "id": "lg-oled-2026-b6-c6-g6-w6",
+      "slug": "lg-oled-2026-b6-c6-g6-w6",
+      "title": "LG OLED 2026 во Македонија: B6, C6, G6 и W6 објаснети",
+      "excerpt": "LG G6 заврши трет на годинешниот HDTVTest Shootout, а OLED панелите поевтинуваат додека LCD телевизорите поскапуваат. Сите четири LG OLED серии за 2026 се продаваат во Македонија. Еве како да избереш меѓу нив.",
+      "category": "Новости",
+      "author": "",
+      "date": "2026-10-23",
+      "publishAt": "",
+      "readTime": 5,
+      "image": "/images/novosti/lg-oled-2026-b6-c6-g6-w6.webp",
+      "imageCaption": "LG OLED evo G6, модел за 2026 година. Фото: LG",
+      "imageCandidates": [
+        "/images/novosti/lg-oled-2026-b6-c6-g6-w6.webp",
+        "/images/novosti/lg-oled-2026-b6-c6-g6-w6.jpg",
+        "/images/novosti/lg-oled-2026-b6-c6-g6-w6.jpeg",
+        "/images/novosti/lg-oled-2026-b6-c6-g6-w6.png",
+        "/images/novosti/lg-oled-2026-b6-c6-g6-w6.avif",
+        "/images/novosti/lg-oled-2026-b6-c6-g6-w6.svg",
+        "/images/novosti/lg-oled-2026-b6-c6-g6-w6.jpg.jpg",
+        "/images/novosti/lg-oled-2026-b6-c6-g6-w6.jpeg.jpeg",
+        "/images/novosti/lg-oled-2026-b6-c6-g6-w6.png.png",
+        "/images/novosti/lg-oled-2026-b6-c6-g6-w6.webp.webp",
+        "/images/novosti/placeholder.svg"
+      ],
+      "hasImage": true,
+      "featured": false,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Октомври донесе две вести што ги засегаат сите што размислуваат за нов LG OLED. На 8 октомври флагманот "
+            },
+            {
+              "text": "LG G6",
+              "bold": true
+            },
+            {
+              "text": " заврши трет на британскиот "
+            },
+            {
+              "text": "HDTVTest TV Shootout",
+              "href": "https://www.hdtvtest.co.uk/news/samsung-s-s99-h-qd-oled-tv-wins-the-2026-hdtv-test-tv-shootout"
+            },
+            {
+              "text": ", зад Samsung S99H и Sony Bravia 9 II. Еден ден подоцна аналитичката куќа Omdia предупреди дека многу LCD телевизори наскоро ќе поскапат, а "
+            },
+            {
+              "text": "OLED е единствениот исклучок",
+              "href": "https://www.flatpanelshd.com/news.php?subaction=showfull&id=1791529542"
+            },
+            {
+              "text": ", бидејќи цените на OLED панелите продолжуваат да паѓаат."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Сите четири LG OLED серии за 2026 (B6, C6, G6 и W6) веќе се во понудата на Нептун. Разликите меѓу нив се поголеми отколку што изгледаат на полица."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Што покажа Shootout за G6"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Во финалето осум судии ги гледаа телевизорите без да знаат која марка е која. Според "
+            },
+            {
+              "text": "HDTVTest",
+              "href": "https://www.hdtvtest.co.uk/news/samsung-s-s99-h-qd-oled-tv-wins-the-2026-hdtv-test-tv-shootout"
+            },
+            {
+              "text": ", G6 доби пофалби за „беспрекорно движење“ и сигурна слика во речиси црните делови. Изгуби кај заситеноста на боите, каде што QD-OLED панелот на Samsung е посилен."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Третото место во финале со четири најдобри телевизори на годината не е пораз. G6 е единствениот LG модел што стигна дотаму."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Четирите серии, од најпристапната до најскапата"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "B6: влезот во OLED.",
+              "bold": true
+            },
+            {
+              "text": " Според "
+            },
+            {
+              "text": "FlatpanelsHD",
+              "href": "https://www.flatpanelshd.com/news.php?subaction=showfull&id=1782898865"
+            },
+            {
+              "text": ", B6 е прв LG модел со новиот, поевтин "
+            },
+            {
+              "text": "OLED SE",
+              "bold": true
+            },
+            {
+              "text": " панел, со осветленост до 1000 нити. Повеќе за тој панел прочитај во "
+            },
+            {
+              "text": "нашата статија за OLED SE",
+              "href": "/novosti/oled-se-poevtini-oled-televizori"
+            },
+            {
+              "text": ". Кај нас има две ознаки:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "B6 ELC: "
+              },
+              {
+                "text": "55",
+                "href": "/tv/lg/55%20b6%20elc"
+              },
+              {
+                "text": ", "
+              },
+              {
+                "text": "65",
+                "href": "/tv/lg/65%20b6%20elc"
+              },
+              {
+                "text": " и "
+              },
+              {
+                "text": "77 инчи",
+                "href": "/tv/lg/77%20b6%20elc"
+              }
+            ],
+            [
+              {
+                "text": "B62LA: "
+              },
+              {
+                "text": "55",
+                "href": "/tv/lg/55b62la"
+              },
+              {
+                "text": " и "
+              },
+              {
+                "text": "65 инчи",
+                "href": "/tv/lg/65b62la"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "C6: најпродаваниот LG OLED.",
+              "bold": true
+            },
+            {
+              "text": " Има четири HDMI 2.1 приклучоци и до 165 Hz за игри, како и G6. Тука е најважната подробност од целата понуда: само C6 моделите од "
+            },
+            {
+              "text": "77 и 83 инчи",
+              "bold": true
+            },
+            {
+              "text": " го добиваат посветлиот tandem панел, односно панел со повеќе слоеви што свети посилно. Помалите C6 модели имаат обичен OLED панел ("
+            },
+            {
+              "text": "FlatpanelsHD",
+              "href": "https://www.flatpanelshd.com/news.php?subaction=showfull&id=1782898865"
+            },
+            {
+              "text": "). Кај Нептун C61LA се продава во "
+            },
+            {
+              "text": "48",
+              "href": "/tv/lg/48c61la"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "55",
+              "href": "/tv/lg/55c61la"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "65",
+              "href": "/tv/lg/65c61la"
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "77",
+              "href": "/tv/lg/77c61la"
+            },
+            {
+              "text": " и "
+            },
+            {
+              "text": "83 инчи",
+              "href": "/tv/lg/83c61la"
+            },
+            {
+              "text": ". Моделот од 55 инчи го има и eKupi."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "G6: флагманот.",
+              "bold": true
+            },
+            {
+              "text": " LG го нарекува својот најсветол OLED досега. Користи tandem панел во сите големини и процесор Alpha 11 Gen3. Кај нас има две варијанти:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "G61 LW: "
+              },
+              {
+                "text": "55",
+                "href": "/tv/lg/55%20g61%20lw"
+              },
+              {
+                "text": ", "
+              },
+              {
+                "text": "65",
+                "href": "/tv/lg/65%20g61%20lw"
+              },
+              {
+                "text": ", "
+              },
+              {
+                "text": "77",
+                "href": "/tv/lg/77%20g61%20lw"
+              },
+              {
+                "text": " и "
+              },
+              {
+                "text": "83 инчи",
+                "href": "/tv/lg/83%20g61%20lw"
+              }
+            ],
+            [
+              {
+                "text": "G63 LS: "
+              },
+              {
+                "text": "55",
+                "href": "/tv/lg/55%20g63%20ls"
+              },
+              {
+                "text": " и "
+              },
+              {
+                "text": "65 инчи",
+                "href": "/tv/lg/65%20g63%20ls"
+              },
+              {
+                "text": ". Нептун ја наведува со 165 Hz."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "W6: тенкиот „тапет“.",
+              "bold": true
+            },
+            {
+              "text": " Панелот и технологијата речиси се исти како кај G6, но W6 е многу потенок и сигналот го прима безжично од посебна кутија. Кај Нептун е достапен во "
+            },
+            {
+              "text": "77 инчи",
+              "href": "/tv/lg/77%20w69%20la"
+            },
+            {
+              "text": " (W69 LA). Целата приказна за W6 ја имаме во статијата "
+            },
+            {
+              "text": "LG го врати Wallpaper телевизорот",
+              "href": "/novosti/lg-oled-evo-w6-wallpaper"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/novosti/lg-w6-dnevna-soba.jpg",
+          "alt": "LG OLED evo W6 монтиран на ѕид во дневна соба",
+          "caption": "LG OLED evo W6 монтиран рамно на ѕид. Фото: LG"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Нема Dolby Vision 2"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "LG ја поддржува Dolby Vision, но не и новата верзија "
+            },
+            {
+              "text": "Dolby Vision 2",
+              "bold": true
+            },
+            {
+              "text": ". Директорот на LG за продуктна стратегија во САД изјави дека брендот "
+            },
+            {
+              "text": "нема планови за Dolby Vision 2 во 2026",
+              "href": "https://www.techradar.com/televisions/lg-currently-does-not-have-plans-to-support-dolby-vision-2-hdr-i-asked-the-big-tv-makers-about-dolbys-next-gen-hdr-and-its-a-mixed-bag"
+            },
+            {
+              "text": ". Тоа важи и за G6 и за C6 ("
+            },
+            {
+              "text": "What Hi-Fi?",
+              "href": "https://www.whathifi.com/tv-home-cinema/televisions/the-lg-g6-oled-tv-is-brighter-blacker-and-more-colourful-than-the-g5-but-it-doesnt-support-dolby-vision-2"
+            },
+            {
+              "text": ")."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Засега тоа малку значи во пракса, бидејќи содржините во Dolby Vision 2 се сè уште ретки. Сите филмови и серии во обичен Dolby Vision ќе работат како и досега."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Зошто октомври е добар месец за OLED"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Според Omdia, мемориските чипови и мрежните модули поскапеа, а главните плочи стануваат поскапи од самиот екран кај помалите LCD телевизори. Притисокот се шири и кај QLED, QNED и Mini LED моделите од средната класа ("
+            },
+            {
+              "text": "FlatpanelsHD",
+              "href": "https://www.flatpanelshd.com/news.php?subaction=showfull&id=1791529542"
+            },
+            {
+              "text": "). Кај OLED трендот е обратен, бидејќи панелите поевтинуваат."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Тоа не значи дека LG OLED ќе поевтини утре. Значи дека разликата меѓу добар LCD и почетен OLED како B6 полека се намалува."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Кој е за тебе"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "B6",
+                "bold": true
+              },
+              {
+                "text": ": прв OLED, потемна или средно светла соба, филмови и серии."
+              }
+            ],
+            [
+              {
+                "text": "C6 55 или 65 инчи",
+                "bold": true
+              },
+              {
+                "text": ": најдобар однос на вредност и квалитет за повеќето, и за игри."
+              }
+            ],
+            [
+              {
+                "text": "C6 77 или 83 инчи",
+                "bold": true
+              },
+              {
+                "text": ": голем екран со tandem панел, без да плаќаш за G6."
+              }
+            ],
+            [
+              {
+                "text": "G6",
+                "bold": true
+              },
+              {
+                "text": ": светла дневна соба и најдобра слика што LG ја нуди."
+              }
+            ],
+            [
+              {
+                "text": "W6",
+                "bold": true
+              },
+              {
+                "text": ": кога дизајнот и монтирањето рамно на ѕид се на прво место."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Накратко"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "LG G6 е трет на HDTVTest Shootout 2026, со пофалби за движењето и темните сцени."
+              }
+            ],
+            [
+              {
+                "text": "Omdia: LCD телевизорите поскапуваат, а OLED панелите поевтинуваат."
+              }
+            ],
+            [
+              {
+                "text": "B6 користи OLED SE панел. C6 има tandem панел само во 77 и 83 инчи."
+              }
+            ],
+            [
+              {
+                "text": "LG нема Dolby Vision 2 во моделите за 2026."
+              }
+            ],
+            [
+              {
+                "text": "Сите четири серии се продаваат кај Нептун, а C6 од 55 инчи и кај eKupi."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Извори"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "HDTVTest — 2026 TV Shootout: финале",
+                "href": "https://www.hdtvtest.co.uk/news/samsung-s-s99-h-qd-oled-tv-wins-the-2026-hdtv-test-tv-shootout"
+              }
+            ],
+            [
+              {
+                "text": "FlatpanelsHD — LG's G6, C6 and B6 OLED TVs now widely available",
+                "href": "https://www.flatpanelshd.com/news.php?subaction=showfull&id=1782898865"
+              }
+            ],
+            [
+              {
+                "text": "FlatpanelsHD — Many TVs are about to become more expensive, warns Omdia",
+                "href": "https://www.flatpanelshd.com/news.php?subaction=showfull&id=1791529542"
+              }
+            ],
+            [
+              {
+                "text": "LG USA — 2026 flagship TV models",
+                "href": "https://www.lg.com/us/newsroom/media-entertainment/lg-announces-pricing-and-availability-for-2026-flagship-tv-models"
+              }
+            ],
+            [
+              {
+                "text": "TechRadar — LG and Dolby Vision 2",
+                "href": "https://www.techradar.com/televisions/lg-currently-does-not-have-plans-to-support-dolby-vision-2-hdr-i-asked-the-big-tv-makers-about-dolbys-next-gen-hdr-and-its-a-mixed-bag"
+              }
+            ],
+            [
+              {
+                "text": "Нептун — LG 77 W69 LA",
+                "href": "https://www.neptun.mk/categories/televizori/84122311-LG-77-W69-LA"
+              }
+            ]
+          ]
+        }
+      ],
+      "body": [
+        "Октомври донесе две вести што ги засегаат сите што размислуваат за нов LG OLED. На 8 октомври флагманот LG G6 заврши трет на британскиот HDTVTest TV Shootout, зад Samsung S99H и Sony Bravia 9 II. Еден ден подоцна аналитичката куќа Omdia предупреди дека многу LCD телевизори наскоро ќе поскапат, а OLED е единствениот исклучок, бидејќи цените на OLED панелите продолжуваат да паѓаат.",
+        "Сите четири LG OLED серии за 2026 (B6, C6, G6 и W6) веќе се во понудата на Нептун. Разликите меѓу нив се поголеми отколку што изгледаат на полица.",
+        "Во финалето осум судии ги гледаа телевизорите без да знаат која марка е која. Според HDTVTest, G6 доби пофалби за „беспрекорно движење“ и сигурна слика во речиси црните делови. Изгуби кај заситеноста на боите, каде што QD-OLED панелот на Samsung е посилен.",
+        "Третото место во финале со четири најдобри телевизори на годината не е пораз. G6 е единствениот LG модел што стигна дотаму.",
+        "B6: влезот во OLED. Според FlatpanelsHD, B6 е прв LG модел со новиот, поевтин OLED SE панел, со осветленост до 1000 нити. Повеќе за тој панел прочитај во нашата статија за OLED SE. Кај нас има две ознаки:",
+        "C6: најпродаваниот LG OLED. Има четири HDMI 2.1 приклучоци и до 165 Hz за игри, како и G6. Тука е најважната подробност од целата понуда: само C6 моделите од 77 и 83 инчи го добиваат посветлиот tandem панел, односно панел со повеќе слоеви што свети посилно. Помалите C6 модели имаат обичен OLED панел (FlatpanelsHD). Кај Нептун C61LA се продава во 48, 55, 65, 77 и 83 инчи. Моделот од 55 инчи го има и eKupi.",
+        "G6: флагманот. LG го нарекува својот најсветол OLED досега. Користи tandem панел во сите големини и процесор Alpha 11 Gen3. Кај нас има две варијанти:",
+        "W6: тенкиот „тапет“. Панелот и технологијата речиси се исти како кај G6, но W6 е многу потенок и сигналот го прима безжично од посебна кутија. Кај Нептун е достапен во 77 инчи (W69 LA). Целата приказна за W6 ја имаме во статијата LG го врати Wallpaper телевизорот.",
+        "LG ја поддржува Dolby Vision, но не и новата верзија Dolby Vision 2. Директорот на LG за продуктна стратегија во САД изјави дека брендот нема планови за Dolby Vision 2 во 2026. Тоа важи и за G6 и за C6 (What Hi-Fi?).",
+        "Засега тоа малку значи во пракса, бидејќи содржините во Dolby Vision 2 се сè уште ретки. Сите филмови и серии во обичен Dolby Vision ќе работат како и досега.",
+        "Според Omdia, мемориските чипови и мрежните модули поскапеа, а главните плочи стануваат поскапи од самиот екран кај помалите LCD телевизори. Притисокот се шири и кај QLED, QNED и Mini LED моделите од средната класа (FlatpanelsHD). Кај OLED трендот е обратен, бидејќи панелите поевтинуваат.",
+        "Тоа не значи дека LG OLED ќе поевтини утре. Значи дека разликата меѓу добар LCD и почетен OLED како B6 полека се намалува."
+      ]
+    },
+    {
+      "id": "samsung-oled-2026-s95h-s90h-s85h",
+      "slug": "samsung-oled-2026-s95h-s90h-s85h",
+      "title": "Samsung OLED 2026 во Македонија: S95H, S90H и S85H, кој е за тебе",
+      "excerpt": "Samsung S99H е прогласен за најдобар телевизор на 2026 година на годинешниот HDTVTest Shootout. Ги проверивме Samsung OLED моделите во македонските продавници: што добиваш со S99H, S95H, S90H и S85H, и како да ги разликуваш од минатогодишните.",
+      "category": "Новости",
+      "author": "",
+      "date": "2026-10-20",
+      "publishAt": "",
+      "readTime": 5,
+      "image": "/images/novosti/samsung-oled-2026-s95h-s90h-s85h.webp",
+      "imageCaption": "Samsung OLED S99H на ѕид во дневна соба. Фото: Samsung",
+      "imageCandidates": [
+        "/images/novosti/samsung-oled-2026-s95h-s90h-s85h.webp",
+        "/images/novosti/samsung-oled-2026-s95h-s90h-s85h.jpg",
+        "/images/novosti/samsung-oled-2026-s95h-s90h-s85h.jpeg",
+        "/images/novosti/samsung-oled-2026-s95h-s90h-s85h.png",
+        "/images/novosti/samsung-oled-2026-s95h-s90h-s85h.avif",
+        "/images/novosti/samsung-oled-2026-s95h-s90h-s85h.svg",
+        "/images/novosti/samsung-oled-2026-s95h-s90h-s85h.jpg.jpg",
+        "/images/novosti/samsung-oled-2026-s95h-s90h-s85h.jpeg.jpeg",
+        "/images/novosti/samsung-oled-2026-s95h-s90h-s85h.png.png",
+        "/images/novosti/samsung-oled-2026-s95h-s90h-s85h.webp.webp",
+        "/images/novosti/placeholder.svg"
+      ],
+      "hasImage": true,
+      "featured": false,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "На 8 октомври Samsung S99H ги освои сите три главни награди на годинешниот "
+            },
+            {
+              "text": "HDTVTest TV Shootout",
+              "href": "https://www.hdtvtest.co.uk/news/samsung-s-s99-h-qd-oled-tv-wins-the-2026-hdtv-test-tv-shootout"
+            },
+            {
+              "text": ": „Најдобар телевизор на 2026“, „Најдобар телевизор за домашно кино“ и „Најдобар телевизор за дневна соба“. Ова е британско натпреварување каде што осум професионалци и рецензенти ги оценуваат телевизорите без да знаат која марка гледаат. Според "
+            },
+            {
+              "text": "Samsung UK",
+              "href": "https://news.samsung.com/uk/samsung-s99h-oled-makes-history-as-first-tv-to-win-all-three-awards-at-the-hdtvtest-2026-tv-shootout"
+            },
+            {
+              "text": ", досега ниту еден телевизор не ги освоил сите три награди."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Добрата вест за нас е што целата Samsung OLED понуда за 2026 веќе се продава во Македонија. Лошата е што имињата лесно се мешаат. Еве што е што."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Кој победи и кого победи"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Во финалето S99H се натпреваруваше со LG G6, Sony Bravia 8 II и Sony Bravia 9 II. Победи во шест од осумте категории, меѓу кои темни сцени, точност на боите и HDR, односно сликата со висок динамички опсег. Bravia 9 II заврши втор, а LG G6 трет. Судиите на G6 му ги пофалија движењето и деталите во темните делови, но кај заситеноста на боите го победи QD-OLED панелот на Samsung."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "QD-OLED е OLED панел кој боите ги добива преку слој со квантни точки наместо преку бел потпиксел. Затоа црвената и зелената остануваат чисти и при висока осветленост."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/novosti/samsung-oled-2026-s99h-nagrada.webp",
+          "alt": "Претставници на Samsung и HDTVTest ја држат наградата „Best TV Winner“ за 2026",
+          "caption": "Наградата „Најдобар телевизор“ на HDTVTest TV Shootout 2026 за Samsung S99H. Фото: Samsung"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "S99H и S95H не се ист телевизор"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Тука е првата замка. Во САД најскапиот Samsung OLED се продава како S95H. Во Европа постојат два различни модели:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "S99H",
+                "bold": true
+              },
+              {
+                "text": " е вистинскиот флагман, со QD-OLED панел и дизајн за монтирање на ѕид. "
+              },
+              {
+                "text": "Notebookcheck",
+                "href": "https://www.notebookcheck.com/Samsung-bestaetigt-Europreise-fuer-S99H-und-S95H-OLED-Smart-TVs.1281443.0.html"
+              },
+              {
+                "text": " наведува големини од 55 до 83 инчи."
+              }
+            ],
+            [
+              {
+                "text": "S95H",
+                "bold": true
+              },
+              {
+                "text": " е на постамент, со дизајнот Infinity One од минатогодишниот S95F, во големини од 48 до 77 инчи. "
+              },
+              {
+                "text": "What Hi-Fi?",
+                "href": "https://www.whathifi.com/tv-home-cinema/televisions/i-tested-samsungs-two-flagship-oled-tvs-and-despite-what-you-might-have-heard-theyre-very-different"
+              },
+              {
+                "text": " ги тестираше двата модели еден до друг и европскиот S95H го оцени како видливо потемен и со помалку живи бои од S99H."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Значи, наградата ја доби S99H. Ако во продавница ти понудат „победникот на Shootout“, провери дали на кутијата пишува S99H."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Што од ова се продава кај нас"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Проверивме во понудата на македонските продавници на 13 октомври 2026:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "S99H",
+                "bold": true
+              },
+              {
+                "text": ": Сетек го има во понудата во "
+              },
+              {
+                "text": "65",
+                "href": "/tv/samsung/qe65s99hatxxh"
+              },
+              {
+                "text": " и "
+              },
+              {
+                "text": "77 инчи",
+                "href": "/tv/samsung/qe77s99hatxxh"
+              },
+              {
+                "text": ". Ова е врвна класа."
+              }
+            ],
+            [
+              {
+                "text": "S95H",
+                "bold": true
+              },
+              {
+                "text": ": кај Сетек во 55, "
+              },
+              {
+                "text": "65",
+                "href": "/tv/samsung/qe65s95hftxxh"
+              },
+              {
+                "text": " и 77 инчи. Тоа е горниот дел од понудата, со мат екран против рефлексии."
+              }
+            ],
+            [
+              {
+                "text": "S90H",
+                "bold": true
+              },
+              {
+                "text": ": кај Нептун и Сетек во 55, "
+              },
+              {
+                "text": "65",
+                "href": "/tv/samsung/qe65s90haexxh"
+              },
+              {
+                "text": " и 77 инчи, а Техномаркет ги има 55 и 65 инчи. Моделот е од средно-високата класа и исто така има мат екран."
+              }
+            ],
+            [
+              {
+                "text": "S85H",
+                "bold": true
+              },
+              {
+                "text": ": кај Сетек во "
+              },
+              {
+                "text": "55",
+                "href": "/tv/samsung/qe55s85heuxxh"
+              },
+              {
+                "text": " и 65 инчи. Ова е најпристапниот Samsung OLED."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Важно: кој панел е внатре"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Samsung не ги купува сите OLED панели од својата фабрика. Според "
+            },
+            {
+              "text": "RTINGS",
+              "href": "https://www.rtings.com/tv/reviews/samsung/s85h-oled"
+            },
+            {
+              "text": ", S85H во сите големини користи WOLED панел од LG Display, ист тип на технологија како кај LG OLED. RTINGS и "
+            },
+            {
+              "text": "Notebookcheck",
+              "href": "https://www.notebookcheck.net/Early-reviews-suggest-Samsung-may-have-ditched-QD-OLED-panels-for-WOLEDs-on-the-S90H-TV-series-even-in-the-US.1265616.0.html"
+            },
+            {
+              "text": " пријавуваат WOLED и кај S90H. Samsung официјално не кажува кој панел е во кој модел."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "SamMobile",
+              "href": "https://www.sammobile.com/news/samsung-s95h-vs-s99h-oled-tv-differences/"
+            },
+            {
+              "text": " нуди практична подсказка: кај европските кодови, „AE“ по ознаката на серијата значи WOLED, а „AT“ и „FT“ значат QD-OLED. Двата наши S90H модели од 55 и 65 инчи носат „AE“ (QE65S90"
+            },
+            {
+              "text": "HAE",
+              "bold": true
+            },
+            {
+              "text": "XXH). S95H и S99H кај нас носат „AT“ или „FT“."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ова не значи дека WOLED е лош. Панелот на S90H е ист со оној во LG C6. Само не плаќај за QD-OLED ако во кодот пишува „AE“."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "F е 2025, H е 2026"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Во продавниците стојат и минатогодишните модели, често со поголем попуст. Буквата по бројот на серијата ја кажува годината:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "F",
+                "bold": true
+              },
+              {
+                "text": " = модел од 2025 (S95F, S90F)"
+              }
+            ],
+            [
+              {
+                "text": "H",
+                "bold": true
+              },
+              {
+                "text": " = модел од 2026 (S95H, S90H, S85H, S99H)"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "S95F сè уште се продава кај Нептун, Сетек и Техномаркет, а S90F кај Техномаркет и Сетек. Минатогодишниот S95F е добар телевизор и има QD-OLED панел. Ако попустот е голем, тој е разумен избор наместо новиот S90H."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Кој е за тебе"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "S99H",
+                "bold": true
+              },
+              {
+                "text": ": ако сакаш најдобра слика во 2026 и телевизорот ќе стои на ѕид."
+              }
+            ],
+            [
+              {
+                "text": "S95H",
+                "bold": true
+              },
+              {
+                "text": ": светла дневна соба и сакаш QD-OLED боја, но не ти треба флагманот."
+              }
+            ],
+            [
+              {
+                "text": "S90H",
+                "bold": true
+              },
+              {
+                "text": ": најдобра рамнотежа за повеќето луѓе. Има мат екран и до 165 Hz за игри."
+              }
+            ],
+            [
+              {
+                "text": "S85H",
+                "bold": true
+              },
+              {
+                "text": ": потемна соба, првиот OLED во домот, најнизок трошок."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Повеќе за целата Samsung понуда за 2026 прочитај во нашата статија "
+            },
+            {
+              "text": "Samsung во 2026: Micro RGB, нови OLED модели и мат екран во средната класа",
+              "href": "/novosti/samsung-2026-micro-rgb-matni-ekrani"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Накратко"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "Samsung S99H е најдобар телевизор на 2026 според HDTVTest Shootout (8 октомври)."
+              }
+            ],
+            [
+              {
+                "text": "S99H и S95H се различни модели во Европа. Наградата ја доби S99H."
+              }
+            ],
+            [
+              {
+                "text": "Сите четири серии (S99H, S95H, S90H, S85H) се продаваат во Македонија."
+              }
+            ],
+            [
+              {
+                "text": "„AE“ во кодот значи WOLED панел, а „AT“ или „FT“ значи QD-OLED."
+              }
+            ],
+            [
+              {
+                "text": "Буквата F значи модел од 2025, а H значи модел од 2026."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Извори"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "HDTVTest — Samsung S99H wins the 2026 HDTVTest TV Shootout",
+                "href": "https://www.hdtvtest.co.uk/news/samsung-s-s99-h-qd-oled-tv-wins-the-2026-hdtv-test-tv-shootout"
+              }
+            ],
+            [
+              {
+                "text": "Samsung UK Newsroom — S99H first TV to win all three awards",
+                "href": "https://news.samsung.com/uk/samsung-s99h-oled-makes-history-as-first-tv-to-win-all-three-awards-at-the-hdtvtest-2026-tv-shootout"
+              }
+            ],
+            [
+              {
+                "text": "What Hi-Fi? — S99H и S95H тестирани еден до друг",
+                "href": "https://www.whathifi.com/tv-home-cinema/televisions/i-tested-samsungs-two-flagship-oled-tvs-and-despite-what-you-might-have-heard-theyre-very-different"
+              }
+            ],
+            [
+              {
+                "text": "SamMobile — S95H vs S99H differences",
+                "href": "https://www.sammobile.com/news/samsung-s95h-vs-s99h-oled-tv-differences/"
+              }
+            ],
+            [
+              {
+                "text": "RTINGS — Samsung S85H OLED Review",
+                "href": "https://www.rtings.com/tv/reviews/samsung/s85h-oled"
+              }
+            ],
+            [
+              {
+                "text": "Нептун — Samsung QE 65 S90H",
+                "href": "https://www.neptun.mk/categories/televizori/84121520-SAMSUNG-QE-65-S90H-AEXXH"
+              }
+            ]
+          ]
+        }
+      ],
+      "body": [
+        "На 8 октомври Samsung S99H ги освои сите три главни награди на годинешниот HDTVTest TV Shootout: „Најдобар телевизор на 2026“, „Најдобар телевизор за домашно кино“ и „Најдобар телевизор за дневна соба“. Ова е британско натпреварување каде што осум професионалци и рецензенти ги оценуваат телевизорите без да знаат која марка гледаат. Според Samsung UK, досега ниту еден телевизор не ги освоил сите три награди.",
+        "Добрата вест за нас е што целата Samsung OLED понуда за 2026 веќе се продава во Македонија. Лошата е што имињата лесно се мешаат. Еве што е што.",
+        "Во финалето S99H се натпреваруваше со LG G6, Sony Bravia 8 II и Sony Bravia 9 II. Победи во шест од осумте категории, меѓу кои темни сцени, точност на боите и HDR, односно сликата со висок динамички опсег. Bravia 9 II заврши втор, а LG G6 трет. Судиите на G6 му ги пофалија движењето и деталите во темните делови, но кај заситеноста на боите го победи QD-OLED панелот на Samsung.",
+        "QD-OLED е OLED панел кој боите ги добива преку слој со квантни точки наместо преку бел потпиксел. Затоа црвената и зелената остануваат чисти и при висока осветленост.",
+        "Тука е првата замка. Во САД најскапиот Samsung OLED се продава како S95H. Во Европа постојат два различни модели:",
+        "Значи, наградата ја доби S99H. Ако во продавница ти понудат „победникот на Shootout“, провери дали на кутијата пишува S99H.",
+        "Проверивме во понудата на македонските продавници на 13 октомври 2026:",
+        "Samsung не ги купува сите OLED панели од својата фабрика. Според RTINGS, S85H во сите големини користи WOLED панел од LG Display, ист тип на технологија како кај LG OLED. RTINGS и Notebookcheck пријавуваат WOLED и кај S90H. Samsung официјално не кажува кој панел е во кој модел.",
+        "SamMobile нуди практична подсказка: кај европските кодови, „AE“ по ознаката на серијата значи WOLED, а „AT“ и „FT“ значат QD-OLED. Двата наши S90H модели од 55 и 65 инчи носат „AE“ (QE65S90HAEXXH). S95H и S99H кај нас носат „AT“ или „FT“.",
+        "Ова не значи дека WOLED е лош. Панелот на S90H е ист со оној во LG C6. Само не плаќај за QD-OLED ако во кодот пишува „AE“.",
+        "Во продавниците стојат и минатогодишните модели, често со поголем попуст. Буквата по бројот на серијата ја кажува годината:",
+        "S95F сè уште се продава кај Нептун, Сетек и Техномаркет, а S90F кај Техномаркет и Сетек. Минатогодишниот S95F е добар телевизор и има QD-OLED панел. Ако попустот е голем, тој е разумен избор наместо новиот S90H.",
+        "Повеќе за целата Samsung понуда за 2026 прочитај во нашата статија Samsung во 2026: Micro RGB, нови OLED модели и мат екран во средната класа."
+      ]
+    },
     {
       "id": "rgb-led-televizori-protiv-oled",
       "slug": "rgb-led-televizori-protiv-oled",
