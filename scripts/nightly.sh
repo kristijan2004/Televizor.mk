@@ -153,8 +153,11 @@ echo "  кандидат: $(node -e "console.log(require('$CANDIDATE').length)")
 #   2. слика — празна страница без слика и без потврдени спецификации
 #      изгледа расипано на жив сајт, не „нов модел на патот".
 #
-# Таквите не одат на сајтот — остануваат во извештајот додека следната
-# ноќ не донесе слика/големина, или додека некој рачно не ги довери.
+# Таквите не одат директно на сајтот — паѓаат во pendingTvs.json, каде
+# админ-панелот (таб „Чекаат одобрување") дозволува да се пополни
+# недостасувачкото и рачно да се одобри. Веќе одбиени модели (REJECTED_FILE,
+# запишан од истиот панел) никогаш не се враќаат во чекање — admin веќе
+# рекол „не", нема смисла да праша секоја ноќ истото.
 # ---------------------------------------------------------------
 echo
 echo "--- квалитет ---"
@@ -162,11 +165,16 @@ node -e '
 const fs = require("fs");
 const file = process.argv[1];
 const liveFile = process.argv[3];
+const pendingFile = process.argv[4];
+const rejectedFile = process.argv[5];
+
+const readArr = (f) => {
+  try { return JSON.parse(fs.readFileSync(f, "utf8")); } catch { return []; }
+};
 
 const tvs = JSON.parse(fs.readFileSync(file, "utf8"));
-const oldIds = new Set(
-  fs.existsSync(liveFile) ? JSON.parse(fs.readFileSync(liveFile, "utf8")).map((t) => t.id) : []
-);
+const oldIds = new Set(readArr(liveFile).map((t) => t.id));
+const rejectedIds = new Set(readArr(rejectedFile).map((r) => r.id));
 
 const reasons = (t) => {
   const r = [];
@@ -179,13 +187,14 @@ const bad = [];
 const good = [];
 
 for (const t of tvs) {
+  if (rejectedIds.has(t.id)) continue; // админ веќе го одбил - не се враќа
   const r = reasons(t);
   if (r.length) bad.push({ tv: t, reasons: r });
   else good.push(t);
 }
 
 if (bad.length) {
-  console.log("  одбиени: " + bad.length);
+  console.log("  на чекање: " + bad.length);
   for (const { tv, reasons: r } of bad.slice(0, 15)) {
     console.log("     " + tv.brand + " " + tv.model + "  (" + r.join(", ") + ")");
   }
@@ -193,8 +202,9 @@ if (bad.length) {
 
   fs.writeFileSync(
     process.argv[2],
-    "# Одбиени телевизори — " + new Date().toISOString().slice(0, 10) + "\n\n" +
-    "Не одат на сајтот додека причината не се поправи.\n\n" +
+    "# На чекање одобрување — " + new Date().toISOString().slice(0, 10) + "\n\n" +
+    "Не одат на сајтот додека некој не ги довери во админ-панелот " +
+    "(Чекаат одобрување).\n\n" +
     bad.map(({ tv, reasons: r }) =>
       "- " + tv.brand + " " + tv.model +
       " — " + r.join(", ") +
@@ -205,8 +215,32 @@ if (bad.length) {
   console.log("  сите имаат големина и слика ✓");
 }
 
+// --- опашка за чекање: спои со постоечката, без дупликати по id ---
+let pending = readArr(pendingFile);
+const badIds = new Set(bad.map((b) => b.tv.id));
+
+// отстрани ги оние што веќе не се лоши (добиле слика/големина, можеби
+// рачно во меѓувреме) или трговецот веќе не ги нуди
+pending = pending.filter((p) => badIds.has(p.tv.id));
+
+const pendingIds = new Set(pending.map((p) => p.tv.id));
+const today = new Date().toISOString().slice(0, 10);
+
+for (const b of bad) {
+  const existing = pending.find((p) => p.tv.id === b.tv.id);
+  if (existing) {
+    // веќе чека - само освежи ги податоците/причините (трговецот можел да смени нешто)
+    existing.tv = b.tv;
+    existing.reasons = b.reasons;
+  } else {
+    pending.push({ tv: b.tv, reasons: b.reasons, discoveredAt: today });
+  }
+}
+
+fs.writeFileSync(pendingFile, JSON.stringify(pending, null, 2) + "\n");
+
 fs.writeFileSync(file, JSON.stringify(good, null, 2));
-' "$CANDIDATE" "$REPORTS/odbieni-$(date +%F).md" "$LIVE/masterTvs.json"
+' "$CANDIDATE" "$REPORTS/odbieni-$(date +%F).md" "$LIVE/masterTvs.json" "$LIVE/pendingTvs.json" "$LIVE/rejectedTvs.json"
 
 # ---------------------------------------------------------------
 # Промени во цените — ова е единственото нешто што се запишува,

@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import { adminApi } from "../lib/adminApi";
 import AdminEditTvs from "./AdminEditTvs";
+import AdminPendingTvs from "./AdminPendingTvs";
 import AdminHistory from "./AdminHistory";
 
 const PURPLE = "#242582";
@@ -81,6 +82,21 @@ const Tab = styled.button`
   &:hover {
     color: ${PURPLE};
   }
+`;
+
+const TabBadge = styled.span`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 18px;
+  margin-left: 6px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: #c75c00;
+  color: white;
+  font-size: 11px;
+  font-weight: 800;
 `;
 
 const StatsGrid = styled.div`
@@ -298,6 +314,7 @@ const ChangePassword = ({ onDone, onSessionExpired }) => {
 const TABS = [
   { id: "overview", label: "Контролна табла" },
   { id: "edit", label: "Уреди телевизори" },
+  { id: "pending", label: "Чекаат одобрување" },
   { id: "history", label: "Историја на промени" },
 ];
 
@@ -352,6 +369,11 @@ const AdminOverview = ({ onSessionExpired }) => {
         </StatCard>
 
         <StatCard>
+          <StatNumber>{stats.pendingTvs}</StatNumber>
+          <StatLabel>чекаат одобрување</StatLabel>
+        </StatCard>
+
+        <StatCard>
           <StatNumber>{stats.totalEdits}</StatNumber>
           <StatLabel>рачни измени вкупно</StatLabel>
         </StatCard>
@@ -383,6 +405,16 @@ const AdminDashboard = ({ username, onLoggedOut, onSessionExpired }) => {
   const [tab, setTab] = useState("overview");
   const [loggingOut, setLoggingOut] = useState(false);
   const [showPw, setShowPw] = useState(false);
+  const [pendingCount, setPendingCount] = useState(0);
+
+  // Се освежува секогаш кога се менува табот — вклучително по враќање од
+  // „Чекаат одобрување" откако нешто е одобрено/одбиено таму.
+  useEffect(() => {
+    adminApi
+      .listPendingTvs()
+      .then((d) => setPendingCount(d.total || 0))
+      .catch(() => {});
+  }, [tab]);
 
   const handleLogout = () => {
     setLoggingOut(true);
@@ -416,12 +448,16 @@ const AdminDashboard = ({ username, onLoggedOut, onSessionExpired }) => {
         {TABS.map((item) => (
           <Tab key={item.id} $active={tab === item.id} onClick={() => setTab(item.id)}>
             {item.label}
+            {item.id === "pending" && pendingCount > 0 && (
+              <TabBadge>{pendingCount}</TabBadge>
+            )}
           </Tab>
         ))}
       </Tabs>
 
       {tab === "overview" && <AdminOverview onSessionExpired={onSessionExpired} />}
       {tab === "edit" && <AdminEditTvs onSessionExpired={onSessionExpired} />}
+      {tab === "pending" && <AdminPendingTvs onSessionExpired={onSessionExpired} />}
       {tab === "history" && <AdminHistory onSessionExpired={onSessionExpired} />}
     </Shell>
   );

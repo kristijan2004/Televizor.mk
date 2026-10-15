@@ -91,6 +91,20 @@ function validateField(field, value) {
 export default async function adminPlugin(app, opts) {
   const { db, dataDir } = opts;
   const MASTER_FILE = path.join(dataDir, "masterTvs.json");
+  const PENDING_FILE = path.join(dataDir, "pendingTvs.json");
+  const REJECTED_FILE = path.join(dataDir, "rejectedTvs.json");
+
+  function readJsonArray(file) {
+    try {
+      return JSON.parse(fs.readFileSync(file, "utf8"));
+    } catch {
+      return [];
+    }
+  }
+
+  function writeJsonArray(file, arr) {
+    fs.writeFileSync(file, JSON.stringify(arr, null, 2) + "\n", "utf8");
+  }
 
   // Застарени сесии се бришат мрзливо — нема потреба од cron за ова.
   db.exec(`DELETE FROM admin_sessions WHERE expires_at < ${Date.now()}`);
@@ -258,6 +272,7 @@ export default async function adminPlugin(app, opts) {
       .prepare("SELECT COUNT(*) AS noBrightness FROM tvs WHERE brightness IS NULL OR brightness = '' OR brightness = '—'")
       .get();
     const { edits } = db.prepare("SELECT COUNT(*) AS edits FROM admin_audit_log").get();
+    const pending = readJsonArray(PENDING_FILE).length;
 
     const recent = db
       .prepare("SELECT tv_id, brand, model, changed_by, changed_at FROM admin_audit_log ORDER BY changed_at DESC LIMIT 5")
@@ -269,6 +284,7 @@ export default async function adminPlugin(app, opts) {
       brands,
       missingBrightness: noBrightness,
       totalEdits: edits,
+      pendingTvs: pending,
       recentEdits: recent,
     };
   });
@@ -393,6 +409,162 @@ export default async function adminPlugin(app, opts) {
 
     const updated = db.prepare("SELECT * FROM tvs WHERE id = ?").get(id);
     return hydrateRow(updated);
+  });
+
+  /*
+    Телевизори на чекање одобрување.
+
+    scripts/nightly.sh во кандидатот наоѓа НОВИ модели без големина или без
+    слика (види го неговиот коментар „целосна информација или никаква") и
+    наместо да ги отфрли засекогаш, ги запишува во pendingTvs.json — плоснат
+    JSON, не табела во базата, зашто ноќниот скрипт веќе работи со вакви
+    JSON фајлови директно (исто како masterTvs.json), без притоа да ја
+    допира SQLite базата додека API-то можеби работи.
+
+    Секој запис: { tv: {...истиот облик како во masterTvs.json}, reasons,
+    discoveredAt }. Одбивањето се памети во rejectedTvs.json за да
+    nightly.sh не го предложи истиот модел секоја ноќ одново.
+  */
+  app.get("/pending-tvs", async () => {
+    const items = readJsonArray(PENDING_FILE);
+    return { items, total: items.length };
+  });
+
+  app.get("/pending-tvs/:id", async (request, reply) => {
+    const items = readJsonArray(PENDING_FILE);
+    const entry = items.find((p) => p.tv.id === request.params.id);
+    if (!entry) return reply.code(404).send({ error: "Записот не е пронајден." });
+    return entry;
+  });
+
+  app.put("/pending-tvs/:id", async (request, reply) => {
+    const { id } = request.params;
+    const items = readJsonArray(PENDING_FILE);
+    const index = items.findIndex((p) => p.tv.id === id);
+
+    if (index === -1) return reply.code(404).send({ error: "Записот не е пронајден." });
+
+    const body = request.body || {};
+    if (typeof body !== "object" || Array.isArray(body)) {
+      return reply.code(400).send({ error: "Неисправни податоци." });
+    }
+
+    const tv = { ...items[index].tv };
+
+    for (const field of Object.keys(body)) {
+      if (!EDITABLE_FIELDS.includes(field)) {
+        return reply.code(400).send({ error: `Полето „${field}" не смее да се уредува.` });
+      }
+
+      const check = validateField(field, body[field]);
+      if (!check.ok) {
+        return reply.code(400).send({ error: `Невалидна вредност за „${field}".` });
+      }
+
+      tv[field] = check.value;
+    }
+
+    items[index] = { ...items[index], tv };
+    writeJsonArray(PENDING_FILE, items);
+
+    return items[index];
+  });
+
+  app.post("/pending-tvs/:id/approve", async (request, reply) => {
+    const { id } = request.params;
+    const items = readJsonArray(PENDING_FILE);
+    const index = items.findIndex((p) => p.tv.id === id);
+
+    if (index === -1) return reply.code(404).send({ error: "Записот не е пронајден." });
+
+    const { tv } = items[index];
+
+    // Истата причина поради која овде чека — не смее да замине на сајтот
+    // сè додека тоа не се поправи.
+    const missing = [];
+    if (!tv.size) missing.push("големина");
+    if (!tv.image) missing.push("слика");
+    if (missing.length) {
+      return reply
+        .code(400)
+        .send({ error: `Пред одобрување, пополни: ${missing.join(", ")}.` });
+    }
+
+    if (db.prepare("SELECT 1 FROM tvs WHERE id = ?").get(id)) {
+      return reply.code(409).send({ error: "Веќе постои телевизор со истиот id." });
+    }
+
+    try {
+      db.exec("BEGIN");
+
+      db.prepare(
+        `INSERT INTO tvs (${COLUMNS.join(", ")}) VALUES (${COLUMNS.map(() => "?").join(", ")})`
+      ).run(...COLUMNS.map((c) => toCell(c, tv[c])));
+
+      const master = readJsonArray(MASTER_FILE);
+      master.push(tv);
+      writeJsonArray(MASTER_FILE, master);
+
+      const remaining = items.filter((_, i) => i !== index);
+      writeJsonArray(PENDING_FILE, remaining);
+
+      db.prepare(
+        `INSERT INTO admin_audit_log (tv_id, brand, model, changed_by, changed_at, diff)
+         VALUES (?, ?, ?, ?, ?, ?)`
+      ).run(
+        id,
+        tv.brand,
+        tv.model,
+        request.adminUsername || "admin",
+        Date.now(),
+        JSON.stringify({ action: "одобрен од чекање" })
+      );
+
+      db.exec("COMMIT");
+    } catch (error) {
+      db.exec("ROLLBACK");
+      request.log.error(error, "pending tv approve failed");
+      return reply.code(500).send({ error: "Настана грешка при одобрување." });
+    }
+
+    return { ok: true };
+  });
+
+  app.post("/pending-tvs/:id/reject", async (request, reply) => {
+    const { id } = request.params;
+    const items = readJsonArray(PENDING_FILE);
+    const index = items.findIndex((p) => p.tv.id === id);
+
+    if (index === -1) return reply.code(404).send({ error: "Записот не е пронајден." });
+
+    const { tv } = items[index];
+
+    const rejected = readJsonArray(REJECTED_FILE);
+    rejected.push({
+      id,
+      brand: tv.brand,
+      model: tv.model,
+      rejectedAt: Date.now(),
+      rejectedBy: request.adminUsername || "admin",
+    });
+    writeJsonArray(REJECTED_FILE, rejected);
+
+    const remaining = items.filter((_, i) => i !== index);
+    writeJsonArray(PENDING_FILE, remaining);
+
+    db.prepare(
+      `INSERT INTO admin_audit_log (tv_id, brand, model, changed_by, changed_at, diff)
+       VALUES (?, ?, ?, ?, ?, ?)`
+    ).run(
+      id,
+      tv.brand,
+      tv.model,
+      request.adminUsername || "admin",
+      Date.now(),
+      JSON.stringify({ action: "одбиен" })
+    );
+
+    return { ok: true };
   });
 
   app.get("/history", async (request) => {

@@ -336,7 +336,20 @@ function fromFormValue(field, raw) {
   return raw.trim() === "" ? null : raw;
 }
 
-const TvEditForm = ({ tv, onSaved, onBack, onSessionExpired }) => {
+/*
+  saveFn/extraActions ѝ дозволуваат на AdminPendingTvs.js да ја употребува
+  истата форма (исти полиња, иста валидација на серверот преку
+  EDITABLE_FIELDS) наместо да дуплира ~100 реда, само со друг crud-повик и
+  копчиња Одобри/Одбиј под Зачувај.
+*/
+export const TvEditForm = ({
+  tv,
+  onSaved,
+  onBack,
+  onSessionExpired,
+  saveFn = (id, patch) => adminApi.updateTv(id, patch),
+  extraActions = null,
+}) => {
   const [form, setForm] = useState(() => {
     const initial = {};
     for (const group of FIELD_GROUPS) {
@@ -368,8 +381,7 @@ const TvEditForm = ({ tv, onSaved, onBack, onSessionExpired }) => {
       }
     }
 
-    adminApi
-      .updateTv(tv.id, patch)
+    saveFn(tv.id, patch)
       .then(() => {
         setSavedAt(Date.now());
         onSaved();
@@ -435,6 +447,8 @@ const TvEditForm = ({ tv, onSaved, onBack, onSessionExpired }) => {
           {savedAt && <SuccessMsg>Зачувано.</SuccessMsg>}
         </FormActions>
       </form>
+
+      {extraActions}
     </div>
   );
 };

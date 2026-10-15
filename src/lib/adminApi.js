@@ -69,4 +69,17 @@ export const adminApi = {
   updateTv: (id, patch) => request(`/tvs/${encodeURIComponent(id)}`, { method: "PUT", body: patch }),
 
   history: (params = {}) => request(`/history?${new URLSearchParams(params)}`),
+
+  listPendingTvs: () => request("/pending-tvs"),
+
+  getPendingTv: (id) => request(`/pending-tvs/${encodeURIComponent(id)}`),
+
+  updatePendingTv: (id, patch) =>
+    request(`/pending-tvs/${encodeURIComponent(id)}`, { method: "PUT", body: patch }),
+
+  approvePendingTv: (id) =>
+    request(`/pending-tvs/${encodeURIComponent(id)}/approve`, { method: "POST" }),
+
+  rejectPendingTv: (id) =>
+    request(`/pending-tvs/${encodeURIComponent(id)}/reject`, { method: "POST" }),
 };
