@@ -15,6 +15,20 @@ import {
   USE_OPTIONS,
 } from "../lib/recommend";
 
+import sceneDo2 from "../assets/odberi-distance/do-2.png";
+import scene2_25 from "../assets/odberi-distance/2-2.5.png";
+import scene25_3 from "../assets/odberi-distance/2.5-3.png";
+import scene3_35 from "../assets/odberi-distance/3-3.5.png";
+import sceneNad35 from "../assets/odberi-distance/nad-3.5.png";
+
+const DISTANCE_SCENES = {
+  "do-2": sceneDo2,
+  "2-2.5": scene2_25,
+  "2.5-3": scene25_3,
+  "3-3.5": scene3_35,
+  "nad-3.5": sceneNad35,
+};
+
 /*
   Прашањата се тука (не зависат од податоци), но оценувањето е на серверот:
   за да избере три телевизори мора да ги измери сите 514, а тоа значеше
@@ -334,6 +348,26 @@ const HeroNote = styled.p`
   One column on a phone, two where there is room. Options are deliberately tall
   so they stay easy to hit with a thumb.
 */
+const SceneBox = styled.div`
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1376 / 768;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #eae7df;
+  margin-bottom: 18px;
+`;
+
+const SceneImg = styled.img`
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: ${(props) => (props.$active ? 1 : 0)};
+  transition: opacity 0.35s ease;
+`;
+
 const Options = styled.div`
   display: grid;
 
@@ -1334,7 +1368,6 @@ const OdberiTv = () => {
     const value = "value" in option ? option.value : option.id;
 
     setAnswers((previous) => ({ ...previous, [step.key]: value }));
-    advance();
   };
 
   const toggleMulti = (option) => {
@@ -1812,6 +1845,11 @@ const OdberiTv = () => {
 
   const multiAnswer = answers[step.key] || [];
 
+  const activeDistanceId =
+    step.key === "distance"
+      ? answers.distance || DISTANCE_OPTIONS[2].id
+      : null;
+
   return (
     <PageCont>
       <Navigation />
@@ -1839,6 +1877,14 @@ const OdberiTv = () => {
         <Question>{step.question}</Question>
 
         <Hint>{step.hint}</Hint>
+
+        {step.key === "distance" && (
+          <SceneBox>
+            {Object.entries(DISTANCE_SCENES).map(([id, src]) => (
+              <SceneImg key={id} src={src} alt="" $active={id === activeDistanceId} />
+            ))}
+          </SceneBox>
+        )}
 
         <Options
           ref={optionsRef}
@@ -1900,6 +1946,16 @@ const OdberiTv = () => {
               type="button"
               onClick={advance}
               disabled={multiAnswer.length === 0}
+            >
+              {isLast ? "Прикажи препораки" : "Продолжи"}
+            </PrimaryButton>
+          )}
+
+          {!step.multi && (
+            <PrimaryButton
+              type="button"
+              onClick={advance}
+              disabled={answers[step.key] === undefined}
             >
               {isLast ? "Прикажи препораки" : "Продолжи"}
             </PrimaryButton>
