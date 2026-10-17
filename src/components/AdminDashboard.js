@@ -134,6 +134,59 @@ const RecentTitle = styled.h2`
   font-weight: 700;
 `;
 
+const AnhochCard = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 18px 20px;
+  margin-bottom: 28px;
+  background: white;
+  border: 1px solid ${(props) => (props.$overdue ? "#f0c36d" : "#e8e8ef")};
+  border-radius: 14px;
+`;
+
+const AnhochInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+`;
+
+const AnhochHint = styled.span`
+  color: #aaa;
+  font-size: 12px;
+`;
+
+const AnhochTitle = styled.span`
+  color: #333;
+  font-size: 14px;
+  font-weight: 700;
+`;
+
+const AnhochMeta = styled.span`
+  color: ${(props) => (props.$overdue ? "#9a5b00" : "#888")};
+  font-size: 13px;
+  font-weight: 600;
+`;
+
+const AnhochButton = styled.button`
+  height: 38px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 8px;
+  background: ${PURPLE};
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+
+  &:hover {
+    background: #1b1c68;
+  }
+`;
+
 const RecentRow = styled.div`
   padding: 12px 14px;
   border: 1px solid #e8e8ef;
@@ -328,6 +381,58 @@ function formatDate(ms) {
   });
 }
 
+const ANHOCH_COMMAND = "./scripts/anhoch.sh";
+
+const AnhochStatus = ({ onSessionExpired }) => {
+  const [status, setStatus] = useState(null);
+  const [copied, setCopied] = useState(false);
+
+  useEffect(() => {
+    adminApi
+      .anhochStatus()
+      .then(setStatus)
+      .catch((err) => {
+        if (err.status === 401) onSessionExpired();
+      });
+  }, [onSessionExpired]);
+
+  if (!status) return null;
+
+  const overdue = status.daysAgo === null || status.daysAgo >= 7;
+
+  const copy = () => {
+    navigator.clipboard?.writeText(ANHOCH_COMMAND).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  };
+
+  return (
+    <AnhochCard $overdue={overdue}>
+      <AnhochInfo>
+        <AnhochTitle>Anhoch</AnhochTitle>
+        <AnhochMeta $overdue={overdue}>
+          {status.daysAgo === null
+            ? "Никогаш не е пуштено"
+            : status.daysAgo === 0
+            ? "Ажурирано денес"
+            : `Последно ажурирано пред ${status.daysAgo} ${status.daysAgo === 1 ? "ден" : "дена"}`}
+          {overdue && " — веќе доцни (неделно е доволно)"}
+          {" · "}
+          {status.productCount} производи
+        </AnhochMeta>
+        <AnhochHint>
+          Отвори терминал во проектната папка, залепи ја командата, Enter.
+        </AnhochHint>
+      </AnhochInfo>
+
+      <AnhochButton type="button" onClick={copy}>
+        {copied ? "Копирано ✓" : "Копирај команда"}
+      </AnhochButton>
+    </AnhochCard>
+  );
+};
+
 const AdminOverview = ({ onSessionExpired }) => {
   const [stats, setStats] = useState(null);
   const [error, setError] = useState(null);
@@ -347,6 +452,8 @@ const AdminOverview = ({ onSessionExpired }) => {
 
   return (
     <>
+      <AnhochStatus onSessionExpired={onSessionExpired} />
+
       <StatsGrid>
         <StatCard>
           <StatNumber>{stats.totalTvs}</StatNumber>

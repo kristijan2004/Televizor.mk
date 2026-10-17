@@ -62,6 +62,8 @@ export const adminApi = {
 
   stats: () => request("/stats"),
 
+  anhochStatus: () => request("/anhoch-status"),
+
   listTvs: (params = {}) => request(`/tvs?${new URLSearchParams(params)}`),
 
   getTv: (id) => request(`/tvs/${encodeURIComponent(id)}`),

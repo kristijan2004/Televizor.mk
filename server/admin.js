@@ -262,6 +262,27 @@ export default async function adminPlugin(app, opts) {
     return { ok: true };
   });
 
+  /*
+    Anhoch не се чита автоматски (зад Cloudflare challenge што ги блокира
+    серверските IP адреси — види scripts/anhoch.sh) — некој мора да го
+    пушти рачно, од дома. Ова само го покажува колку е застарено, не го
+    пушта: датумот на модификација на anhochTvs.json е последниот пат кога
+    некој навистина го извршил скриптот.
+  */
+  app.get("/anhoch-status", async () => {
+    const file = path.join(dataDir, "anhochTvs.json");
+
+    try {
+      const stat = fs.statSync(file);
+      const count = JSON.parse(fs.readFileSync(file, "utf8")).length;
+      const days = Math.floor((Date.now() - stat.mtimeMs) / 86400000);
+
+      return { lastUpdated: stat.mtimeMs, daysAgo: days, productCount: count };
+    } catch {
+      return { lastUpdated: null, daysAgo: null, productCount: 0 };
+    }
+  });
+
   app.get("/stats", async () => {
     const { total } = db.prepare("SELECT COUNT(*) AS total FROM tvs").get();
     const { verified } = db
