@@ -21,12 +21,34 @@ import scene25_3 from "../assets/odberi-distance/2.5-3.png";
 import scene3_35 from "../assets/odberi-distance/3-3.5.png";
 import sceneNad35 from "../assets/odberi-distance/nad-3.5.png";
 
+import size32 from "../assets/odberi-size/32.png";
+import size43 from "../assets/odberi-size/43.png";
+import size50 from "../assets/odberi-size/50.png";
+import size55 from "../assets/odberi-size/55.png";
+import size65 from "../assets/odberi-size/65.png";
+import size75 from "../assets/odberi-size/75.png";
+import size85 from "../assets/odberi-size/85.png";
+import size98 from "../assets/odberi-size/98.png";
+import size100 from "../assets/odberi-size/100.png";
+
 const DISTANCE_SCENES = {
   "do-2": sceneDo2,
   "2-2.5": scene2_25,
   "2.5-3": scene25_3,
   "3-3.5": scene3_35,
   "nad-3.5": sceneNad35,
+};
+
+const SIZE_SCENES = {
+  "32": size32,
+  "43": size43,
+  "50": size50,
+  "55": size55,
+  "65": size65,
+  "75": size75,
+  "85": size85,
+  "98": size98,
+  "100": size100,
 };
 
 /*
@@ -348,6 +370,23 @@ const HeroNote = styled.p`
   One column on a phone, two where there is room. Options are deliberately tall
   so they stay easy to hit with a thumb.
 */
+const SceneLayout = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (min-width: 680px) {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 24px;
+  }
+`;
+
+const SceneTextCol = styled.div`
+  flex: 1;
+  min-width: 0;
+`;
+
 const SceneBox = styled.div`
   position: relative;
   width: 100%;
@@ -355,7 +394,11 @@ const SceneBox = styled.div`
   border-radius: 14px;
   overflow: hidden;
   background: #eae7df;
-  margin-bottom: 18px;
+  flex-shrink: 0;
+
+  @media (min-width: 680px) {
+    width: 300px;
+  }
 `;
 
 const SceneImg = styled.img`
@@ -363,7 +406,7 @@ const SceneImg = styled.img`
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   opacity: ${(props) => (props.$active ? 1 : 0)};
   transition: opacity 0.35s ease;
 `;
@@ -371,12 +414,13 @@ const SceneImg = styled.img`
 const Options = styled.div`
   display: grid;
 
-  grid-template-columns: 1fr;
+  grid-template-columns: ${(props) => (props.$compact ? "repeat(3, 1fr)" : "1fr")};
 
-  gap: 12px;
+  gap: ${(props) => (props.$compact ? "8px" : "12px")};
 
   @media (min-width: 620px) {
-    grid-template-columns: ${(props) => (props.$wide ? "1fr" : "1fr 1fr")};
+    grid-template-columns: ${(props) =>
+      props.$compact ? "repeat(5, 1fr)" : props.$wide ? "1fr" : "1fr 1fr"};
   }
 `;
 
@@ -389,16 +433,17 @@ const pop = keyframes`
 const Option = styled.button`
   width: 100%;
 
-  min-height: 64px;
+  min-height: ${(props) => (props.$compact ? "48px" : "64px")};
 
-  padding: 18px 20px;
+  padding: ${(props) => (props.$compact ? "10px 8px" : "18px 20px")};
 
   display: flex;
   align-items: ${(props) => (props.$rich ? "flex-start" : "center")};
+  justify-content: ${(props) => (props.$compact ? "center" : "flex-start")};
 
   gap: 14px;
 
-  text-align: left;
+  text-align: ${(props) => (props.$compact ? "center" : "left")};
 
   color: ${(props) => (props.$selected ? "#ffffff" : "#2a2a3c")};
 
@@ -406,7 +451,7 @@ const Option = styled.button`
 
   font-family: inherit;
 
-  font-size: 16px;
+  font-size: ${(props) => (props.$compact ? "15px" : "16px")};
 
   font-weight: 600;
 
@@ -764,17 +809,6 @@ const Tradeoff = styled.div`
   font-weight: 600;
 `;
 
-const DataGap = styled.div`
-  margin-top: 8px;
-
-  color: #888;
-
-  font-size: 13px;
-  line-height: 1.5;
-
-  font-style: italic;
-`;
-
 const CardLinks = styled.div`
   margin-top: 14px;
 
@@ -1092,6 +1126,20 @@ const BackHome = styled(Link)`
   &:hover {
     text-decoration: underline;
   }
+`;
+
+const TopBar = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+`;
+
+const TopBarActions = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 10px;
 `;
 
 /* Screen-reader-only live region for step announcements. */
@@ -1679,13 +1727,6 @@ const OdberiTv = () => {
 
                     {pick.tradeoff && <Tradeoff>− {pick.tradeoff}</Tradeoff>}
 
-                    {pick.gaps && pick.gaps.length > 0 && (
-                      <DataGap>
-                        Не можеме сигурно да оцениме: {pick.gaps.join(", ")} —
-                        тој податок ни недостасува за овој модел.
-                      </DataGap>
-                    )}
-
                     <CardLinks>
                       <CardLink to={tvPath(pick.tv)}>
                         Сите спецификации →
@@ -1850,12 +1891,39 @@ const OdberiTv = () => {
       ? answers.distance || DISTANCE_OPTIONS[2].id
       : null;
 
+  const activeSizeId =
+    step.key === "preferredSize" && SIZE_SCENES[String(answers.preferredSize)]
+      ? String(answers.preferredSize)
+      : null;
+
   return (
     <PageCont>
       <Navigation />
 
       <Shell>
-        <BackHome to="/">← Назад на почетна</BackHome>
+        <TopBar>
+          <BackHome to="/">← Назад на почетна</BackHome>
+
+          <TopBarActions>
+            {stepIndex > 0 && (
+              <GhostButton type="button" onClick={() => goTo(stepIndex - 1)}>
+                ← Назад
+              </GhostButton>
+            )}
+
+            <PrimaryButton
+              type="button"
+              onClick={advance}
+              disabled={
+                step.multi
+                  ? multiAnswer.length === 0
+                  : answers[step.key] === undefined
+              }
+            >
+              {isLast ? "Прикажи препораки" : "Продолжи"}
+            </PrimaryButton>
+          </TopBarActions>
+        </TopBar>
 
         <ProgressCont>
           <ProgressTop>
@@ -1874,93 +1942,139 @@ const OdberiTv = () => {
         </SrOnly>
 
         <StepFade key={step.key}>
-        <Question>{step.question}</Question>
+        {(step.key === "distance" || (step.key === "preferredSize" && activeSizeId)) ? (
+          <>
+            <SceneLayout>
+              {step.key === "distance" && (
+                <SceneBox>
+                  {Object.entries(DISTANCE_SCENES).map(([id, src]) => (
+                    <SceneImg key={id} src={src} alt="" $active={id === activeDistanceId} />
+                  ))}
+                </SceneBox>
+              )}
 
-        <Hint>{step.hint}</Hint>
+              {step.key === "preferredSize" && (
+                <SceneBox>
+                  {Object.entries(SIZE_SCENES).map(([id, src]) => (
+                    <SceneImg key={id} src={src} alt="" $active={id === activeSizeId} />
+                  ))}
+                </SceneBox>
+              )}
 
-        {step.key === "distance" && (
-          <SceneBox>
-            {Object.entries(DISTANCE_SCENES).map(([id, src]) => (
-              <SceneImg key={id} src={src} alt="" $active={id === activeDistanceId} />
-            ))}
-          </SceneBox>
-        )}
+              <SceneTextCol>
+                <Question>{step.question}</Question>
 
-        <Options
-          ref={optionsRef}
-          role={step.multi ? "group" : "radiogroup"}
-          aria-label={step.question}
-          onKeyDown={handleOptionKeys}
-          $wide={step.wide}
-        >
-          {step.options.map((option) => {
-            const selected = isSelected(option);
+                <Hint>{step.hint}</Hint>
+              </SceneTextCol>
+            </SceneLayout>
 
-            return (
-              <Option
-                key={option.id}
-                type="button"
-                role={step.multi ? "checkbox" : "radio"}
-                aria-checked={selected}
-                $selected={selected}
-                $rich={Boolean(option.icon)}
-                onClick={() =>
-                  step.multi ? toggleMulti(option) : answerSingle(option)
-                }
-              >
-                {step.multi && <Check $on={selected}>{selected ? "✓" : ""}</Check>}
+            <Options
+              ref={optionsRef}
+              role={step.multi ? "group" : "radiogroup"}
+              aria-label={step.question}
+              onKeyDown={handleOptionKeys}
+              $wide={step.wide}
+              $compact={step.key === "preferredSize"}
+            >
+              {step.options.map((option) => {
+                const selected = isSelected(option);
 
-                {option.icon && (
-                  <OptionIcon $selected={selected}>{option.icon}</OptionIcon>
-                )}
+                return (
+                  <Option
+                    key={option.id}
+                    type="button"
+                    role={step.multi ? "checkbox" : "radio"}
+                    aria-checked={selected}
+                    $selected={selected}
+                    $rich={Boolean(option.icon)}
+                    $compact={step.key === "preferredSize"}
+                    onClick={() =>
+                      step.multi ? toggleMulti(option) : answerSingle(option)
+                    }
+                  >
+                    {step.multi && <Check $on={selected}>{selected ? "✓" : ""}</Check>}
 
-                {option.icon ? (
-                  <OptionBody>
-                    <span>{option.label}</span>
-
-                    {option.blurb && (
-                      <OptionBlurb $selected={selected}>{option.blurb}</OptionBlurb>
+                    {option.icon && (
+                      <OptionIcon $selected={selected}>{option.icon}</OptionIcon>
                     )}
-                  </OptionBody>
-                ) : (
-                  <span>{option.label}</span>
-                )}
 
-                {option.note && (
-                  <OptionNote $selected={selected}>{option.note}</OptionNote>
-                )}
-              </Option>
-            );
-          })}
-        </Options>
+                    {option.icon ? (
+                      <OptionBody>
+                        <span>{option.label}</span>
 
-        <Controls>
-          {stepIndex > 0 && (
-            <GhostButton type="button" onClick={() => goTo(stepIndex - 1)}>
-              ← Назад
-            </GhostButton>
-          )}
+                        {option.blurb && (
+                          <OptionBlurb $selected={selected}>{option.blurb}</OptionBlurb>
+                        )}
+                      </OptionBody>
+                    ) : (
+                      <span>{option.label}</span>
+                    )}
 
-          {step.multi && (
-            <PrimaryButton
-              type="button"
-              onClick={advance}
-              disabled={multiAnswer.length === 0}
+                    {option.note && (
+                      <OptionNote $selected={selected}>{option.note}</OptionNote>
+                    )}
+                  </Option>
+                );
+              })}
+            </Options>
+          </>
+        ) : (
+          <>
+            <Question>{step.question}</Question>
+
+            <Hint>{step.hint}</Hint>
+
+            <Options
+              ref={optionsRef}
+              role={step.multi ? "group" : "radiogroup"}
+              aria-label={step.question}
+              onKeyDown={handleOptionKeys}
+              $wide={step.wide}
+              $compact={step.key === "preferredSize"}
             >
-              {isLast ? "Прикажи препораки" : "Продолжи"}
-            </PrimaryButton>
-          )}
+              {step.options.map((option) => {
+                const selected = isSelected(option);
 
-          {!step.multi && (
-            <PrimaryButton
-              type="button"
-              onClick={advance}
-              disabled={answers[step.key] === undefined}
-            >
-              {isLast ? "Прикажи препораки" : "Продолжи"}
-            </PrimaryButton>
-          )}
-        </Controls>
+                return (
+                  <Option
+                    key={option.id}
+                    type="button"
+                    role={step.multi ? "checkbox" : "radio"}
+                    aria-checked={selected}
+                    $selected={selected}
+                    $rich={Boolean(option.icon)}
+                    $compact={step.key === "preferredSize"}
+                    onClick={() =>
+                      step.multi ? toggleMulti(option) : answerSingle(option)
+                    }
+                  >
+                    {step.multi && <Check $on={selected}>{selected ? "✓" : ""}</Check>}
+
+                    {option.icon && (
+                      <OptionIcon $selected={selected}>{option.icon}</OptionIcon>
+                    )}
+
+                    {option.icon ? (
+                      <OptionBody>
+                        <span>{option.label}</span>
+
+                        {option.blurb && (
+                          <OptionBlurb $selected={selected}>{option.blurb}</OptionBlurb>
+                        )}
+                      </OptionBody>
+                    ) : (
+                      <span>{option.label}</span>
+                    )}
+
+                    {option.note && (
+                      <OptionNote $selected={selected}>{option.note}</OptionNote>
+                    )}
+                  </Option>
+                );
+              })}
+            </Options>
+          </>
+        )}
         </StepFade>
       </Shell>
     </PageCont>

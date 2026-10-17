@@ -402,34 +402,6 @@ function scoreGamingWishes(tv, answers) {
   return { points: 0, reason: null, warning: `Нема ${missing.join(" ниту ")}` };
 }
 
-/*
-  Осветленост — само кога навистина ја знаеме.
-
-  Знаеме за 91 од 529 телевизори. За останатите ова враќа неутрално и
-  запишува дека податокот недостасува, наместо да ги казнува.
-*/
-function scoreBrightness(tv, answers) {
-  const nits = Number(String(tv.brightness ?? "").replace(/[^\d]/g, ""));
-
-  if (!nits || Number.isNaN(nits)) {
-    return { points: 0, reason: null, gap: answers.light === "svetla" ? "осветленост" : null };
-  }
-
-  if (answers.light === "svetla") {
-    if (nits >= 600) return { points: 16, reason: `${nits} nits, доволно за светла соба` };
-    if (nits <= 300) {
-      return { points: -8, reason: null, warning: `${nits} nits — слабо за многу светла соба` };
-    }
-    return { points: 4, reason: null };
-  }
-
-  if (nits >= 1000) {
-    return { points: 6, reason: `${nits} nits, силен HDR` };
-  }
-
-  return { points: 0, reason: null };
-}
-
 function scoreBrand(tv, answers) {
   const brands = answers.brands || [];
 
@@ -472,7 +444,6 @@ function scoreTv(tv, answers) {
   const parts = [
     scoreSize(tv, answers),
     scoreLight(tv, answers),
-    scoreBrightness(tv, answers),
     scoreUse(tv, answers),
     scoreGamingWishes(tv, answers),
     scorePriority(tv, answers),
@@ -512,13 +483,7 @@ function scoreTv(tv, answers) {
     );
   }
 
-  /*
-    Што НЕ можеме да оцениме кај овој модел. Картичката го кажува тоа отворено
-    наместо да молчи — „не знаеме" е поинформативно од празно поле.
-  */
-  const gaps = parts.map((part) => part.gap).filter(Boolean);
-
-  return { tv, score, reasons, warnings, knownSpecs, gaps };
+  return { tv, score, reasons, warnings, knownSpecs };
 }
 
 /*
