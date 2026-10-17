@@ -450,7 +450,7 @@ const Navigation = () => {
 
       <Item>
         <TextLink to="/edu" onClick={() => setMenuOpen(false)}>
-          Еду
+          Едукација
         </TextLink>
       </Item>
 

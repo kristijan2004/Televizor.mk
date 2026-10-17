@@ -31,6 +31,38 @@ import size85 from "../assets/odberi-size/85.png";
 import size98 from "../assets/odberi-size/98.png";
 import size100 from "../assets/odberi-size/100.png";
 
+import sceneSvetla from "../assets/odberi-light/svetla.png";
+import sceneUmerena from "../assets/odberi-light/umerena.png";
+import sceneTemna from "../assets/odberi-light/temna.png";
+
+import sceneFilmovi from "../assets/odberi-use/filmovi.jpg";
+import sceneSport from "../assets/odberi-use/sport.jpg";
+import sceneGejming from "../assets/odberi-use/gejmin.jpg";
+import sceneMeshano from "../assets/odberi-use/meshano.jpg";
+
+import logoSamsung from "../assets/brand-logos/samsung.png";
+import logoLg from "../assets/brand-logos/lg.png";
+import logoSony from "../assets/brand-logos/sony.png";
+import logoPhilips from "../assets/brand-logos/philips.png";
+import logoHisense from "../assets/brand-logos/hisense.png";
+import logoTcl from "../assets/brand-logos/tcl.png";
+import logoJvc from "../assets/brand-logos/jvc.png";
+import logoFuego from "../assets/brand-logos/fuego.png";
+import logoXiaomi from "../assets/brand-logos/xiaomi.png";
+import logoHaier from "../assets/brand-logos/haier.png";
+import logoBeko from "../assets/brand-logos/beko.png";
+import logoTesla from "../assets/brand-logos/tesla.png";
+import logoVivax from "../assets/brand-logos/vivax.png";
+import logoAiwa from "../assets/brand-logos/aiwa.png";
+import logoFavorit from "../assets/brand-logos/favorit.png";
+import logoSt from "../assets/brand-logos/st.png";
+
+const LIGHT_SCENES = {
+  svetla: sceneSvetla,
+  umerena: sceneUmerena,
+  temna: sceneTemna,
+};
+
 const DISTANCE_SCENES = {
   "do-2": sceneDo2,
   "2-2.5": scene2_25,
@@ -49,6 +81,13 @@ const SIZE_SCENES = {
   "85": size85,
   "98": size98,
   "100": size100,
+};
+
+const USE_SCENES = {
+  filmovi: sceneFilmovi,
+  sport: sceneSport,
+  gejming: sceneGejming,
+  meshano: sceneMeshano,
 };
 
 /*
@@ -390,14 +429,15 @@ const SceneTextCol = styled.div`
 const SceneBox = styled.div`
   position: relative;
   width: 100%;
-  aspect-ratio: 1376 / 768;
+  aspect-ratio: ${(props) => (props.$portrait ? "3 / 5" : "1376 / 768")};
+  max-height: 260px;
   border-radius: 14px;
   overflow: hidden;
   background: #eae7df;
   flex-shrink: 0;
 
   @media (min-width: 680px) {
-    width: 300px;
+    width: ${(props) => (props.$portrait ? "195px" : "300px")};
   }
 `;
 
@@ -406,7 +446,7 @@ const SceneImg = styled.img`
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: ${(props) => (props.$portrait ? "cover" : "contain")};
   opacity: ${(props) => (props.$active ? 1 : 0)};
   transition: opacity 0.35s ease;
 `;
@@ -507,6 +547,17 @@ const OptionIcon = styled.span`
     width: 22px;
     height: 22px;
   }
+`;
+
+const OptionLogo = styled.img`
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+`;
+
+const OptionLogoBox = styled(OptionIcon)`
+  width: 48px;
+  height: 48px;
 `;
 
 const OptionBody = styled.span`
@@ -1167,6 +1218,25 @@ const SrOnly = styled.div`
 
 const BRAND_ANY = "site";
 
+const BRAND_LOGOS = {
+  SAMSUNG: logoSamsung,
+  LG: logoLg,
+  SONY: logoSony,
+  PHILIPS: logoPhilips,
+  HISENSE: logoHisense,
+  TCL: logoTcl,
+  JVC: logoJvc,
+  FUEGO: logoFuego,
+  XIAOMI: logoXiaomi,
+  HAIER: logoHaier,
+  BEKO: logoBeko,
+  TESLA: logoTesla,
+  VIVAX: logoVivax,
+  AIWA: logoAiwa,
+  FAVORIT: logoFavorit,
+  ST: logoSt,
+};
+
 /*
   Ги спојува {id,label} опциите (од recommend.js — податок, не UI) со
   икона/опис за секоја, без да се дуплира листата. recommend.js останува
@@ -1181,7 +1251,7 @@ function buildSteps(budgetOptions, brandOptions) {
     {
       key: "distance",
       question: "Колку си оддалечен од телевизорот?",
-      hint: "Измери од каучот до ѕидот каде што ќе стои телевизорот. Ова е најважниот податок за големината.",
+      hint: "Измери го растојанието од гарнитурата за седење до ѕидот каде што ќе стои телевизорот. Ова е најважниот податок за одредување на големината.",
       options: DISTANCE_OPTIONS.map((o) => ({ id: o.id, label: o.label })),
     },
     {
@@ -1197,11 +1267,19 @@ function buildSteps(budgetOptions, brandOptions) {
       key: "light",
       question: "Колку светлина има во собата попладне?",
       hint: "Во светла соба подобро се снаоѓаат панели со висока светлина. Во темна доаѓа до израз контрастот.",
-      wide: true,
       options: USE_META_MAP(LIGHT_OPTIONS, {
-        svetla: { icon: <IconSun /> },
-        umerena: { icon: <IconCloudSun /> },
-        temna: { icon: <IconMoon /> },
+        svetla: {
+          icon: <IconSun />,
+          blurb: "Подобро се снаоѓаат панели со висока осветленост.",
+        },
+        umerena: {
+          icon: <IconCloudSun />,
+          blurb: "Балансирана поставка — повеќето панели работат добро.",
+        },
+        temna: {
+          icon: <IconMoon />,
+          blurb: "Контрастот доаѓа до израз — OLED/Mini LED се најсилни тука.",
+        },
       }),
     },
     {
@@ -1283,15 +1361,16 @@ function buildSteps(budgetOptions, brandOptions) {
     },
     {
       key: "brands",
-      question: "Имаш ли преференца за бренд?",
+      question: "Преферираш ли некој одреден бренд?",
       hint: "Можеш да избереш повеќе. Ова е желба, не филтер — ако друг бренд е значително подобар избор, сепак ќе ти го прикажеме.",
       multi: true,
       options: [
-        { id: BRAND_ANY, label: "Нема важност", exclusive: true },
+        { id: BRAND_ANY, label: "Не, немам преференца", exclusive: true },
         ...brandOptions.map((b) => ({
           id: b.brand,
           label: b.brand,
           note: `${b.count} модели`,
+          logo: BRAND_LOGOS[b.brand],
         })),
       ],
     },
@@ -1887,14 +1966,20 @@ const OdberiTv = () => {
   const multiAnswer = answers[step.key] || [];
 
   const activeDistanceId =
-    step.key === "distance"
-      ? answers.distance || DISTANCE_OPTIONS[2].id
-      : null;
+    step.key === "distance" ? answers.distance || null : null;
 
   const activeSizeId =
     step.key === "preferredSize" && SIZE_SCENES[String(answers.preferredSize)]
       ? String(answers.preferredSize)
       : null;
+
+  const activeLightId =
+    step.key === "light" && LIGHT_SCENES[answers.light]
+      ? answers.light
+      : null;
+
+  const activeUseId =
+    step.key === "use" && USE_SCENES[answers.use] ? answers.use : null;
 
   return (
     <PageCont>
@@ -1942,7 +2027,7 @@ const OdberiTv = () => {
         </SrOnly>
 
         <StepFade key={step.key}>
-        {(step.key === "distance" || (step.key === "preferredSize" && activeSizeId)) ? (
+        {((step.key === "distance" && activeDistanceId) || (step.key === "preferredSize" && activeSizeId) || (step.key === "light" && activeLightId) || (step.key === "use" && activeUseId)) ? (
           <>
             <SceneLayout>
               {step.key === "distance" && (
@@ -1957,6 +2042,22 @@ const OdberiTv = () => {
                 <SceneBox>
                   {Object.entries(SIZE_SCENES).map(([id, src]) => (
                     <SceneImg key={id} src={src} alt="" $active={id === activeSizeId} />
+                  ))}
+                </SceneBox>
+              )}
+
+              {step.key === "light" && (
+                <SceneBox $portrait>
+                  {Object.entries(LIGHT_SCENES).map(([id, src]) => (
+                    <SceneImg key={id} src={src} alt="" $active={id === activeLightId} $portrait />
+                  ))}
+                </SceneBox>
+              )}
+
+              {step.key === "use" && (
+                <SceneBox>
+                  {Object.entries(USE_SCENES).map(([id, src]) => (
+                    <SceneImg key={id} src={src} alt="" $active={id === activeUseId} />
                   ))}
                 </SceneBox>
               )}
@@ -2052,6 +2153,12 @@ const OdberiTv = () => {
 
                     {option.icon && (
                       <OptionIcon $selected={selected}>{option.icon}</OptionIcon>
+                    )}
+
+                    {option.logo && (
+                      <OptionLogoBox $selected={selected}>
+                        <OptionLogo src={option.logo} alt="" />
+                      </OptionLogoBox>
                     )}
 
                     {option.icon ? (

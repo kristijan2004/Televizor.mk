@@ -68,7 +68,7 @@ export const USE_OPTIONS = [
 
 export const PRIORITY_OPTIONS = [
   { id: "slika", label: "Квалитет на слика" },
-  { id: "golemina", label: "Најголем екран за парите" },
+  { id: "golemina", label: "Голем екран" },
   { id: "gejming", label: "Гејминг можности" },
   { id: "smart", label: "Smart функции и апликации" },
 ];

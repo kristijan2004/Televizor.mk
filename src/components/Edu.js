@@ -16,7 +16,7 @@ const Edu = () => {
     <ArticleListing
       articles={edu}
       basePath="/edu"
-      title="Еду"
+      title="Едукација"
       subtitle="Објаснуваме како работат технологиите кај телевизорите и како да го избереш вистинскиот"
       emptyTitle="Сè уште нема статии"
       emptyText="Наскоро ќе објавиме нови објаснувања."
