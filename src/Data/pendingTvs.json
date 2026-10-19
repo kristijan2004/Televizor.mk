@@ -1,0 +1,44 @@
+[
+  {
+    "tv": {
+      "id": "philips-philips-75pqs8611",
+      "brand": "PHILIPS",
+      "model": "75PQS8611",
+      "size": 0,
+      "technology": "LED",
+      "resolution": "4K",
+      "refreshRate": 60,
+      "year": 2026,
+      "os": "Smart TV",
+      "hdr": false,
+      "dolbyVision": false,
+      "hdmi": 0,
+      "usb": 0,
+      "vrr": false,
+      "allm": false,
+      "pictureProcessor": "—",
+      "hdrFormats": [],
+      "brightness": "—",
+      "audioPower": 0,
+      "audioChannels": "2.0",
+      "dolbyAtmos": false,
+      "freeSync": false,
+      "gSync": false,
+      "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/PHILIPS%2075PQS8611_92447-01M526PZY7JWQBTT45NS7GCPXK.png",
+      "stores": {
+        "Setec": {
+          "price": 49999,
+          "regularPrice": 54999,
+          "inStock": false,
+          "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/PHILIPS%2075PQS8611_92447-01M526PZY7JWQBTT45NS7GCPXK.png",
+          "handle": "philips-75pqs8611"
+        }
+      }
+    },
+    "reasons": [
+      "нов модел — чека преглед",
+      "нема големина"
+    ],
+    "discoveredAt": "2026-10-16"
+  }
+]
