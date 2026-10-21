@@ -982,3 +982,23 @@
 {"at":"2026-10-19T01:31:33.776Z","type":"price","id":"samsung-ue65u8072huxxh","store":"Neptun","brand":"SAMSUNG","model":"UE65U8072HUXXH","from":33999,"to":32999,"pct":-2.94}
 {"at":"2026-10-19T01:31:33.776Z","type":"price","id":"samsung-ue75m70hauxxh","store":"Neptun","brand":"SAMSUNG","model":"UE75M70HAUXXH","from":49999,"to":48999,"pct":-2}
 {"at":"2026-10-19T01:31:33.776Z","type":"removed","id":"samsung-qe55q7faauxxh","store":"Neptun","brand":"SAMSUNG","model":"QE55Q7FAAUXXH","from":24995}
+{"at":"2026-10-20T01:31:33.132Z","type":"price","id":"tcl-65t69c","store":"Setec","brand":"TCL","model":"65T69C","from":32999,"to":29999,"pct":-9.09}
+{"at":"2026-10-20T01:31:33.132Z","type":"price","id":"tcl-75p61k","store":"Setec","brand":"TCL","model":"75P61K","from":35999,"to":38999,"pct":8.33}
+{"at":"2026-10-20T01:31:33.132Z","type":"price","id":"tcl-75c61k","store":"Setec","brand":"TCL","model":"75C61K","from":55999,"to":51999,"pct":-7.14}
+{"at":"2026-10-20T01:31:33.132Z","type":"price","id":"samsung-qe55s85heuxxh","store":"Setec","brand":"SAMSUNG","model":"QE55S85HEUXXH","from":82999,"to":79999,"pct":-3.61}
+{"at":"2026-10-20T01:31:33.132Z","type":"price","id":"samsung-ue75m70hauxxh","store":"Setec","brand":"SAMSUNG","model":"UE75M70HAUXXH","from":49999,"to":48999,"pct":-2}
+{"at":"2026-10-20T01:31:33.132Z","type":"stock","id":"hisense-75ur8s","store":"Setec","brand":"HISENSE","model":"75UR8S","from":false,"to":true}
+{"at":"2026-10-20T01:31:33.132Z","type":"stock","id":"samsung-qe55s90faexxh","store":"Setec","brand":"SAMSUNG","model":"QE55S90FAEXXH","from":true,"to":false}
+{"at":"2026-10-20T01:31:33.132Z","type":"stock","id":"samsung-ue43u8072fuxxh","store":"Setec","brand":"SAMSUNG","model":"UE43U8072FUXXH","from":true,"to":false}
+{"at":"2026-10-20T01:31:33.132Z","type":"stock","id":"tcl-85c79l","store":"Setec","brand":"TCL","model":"85C79L","from":true,"to":false}
+{"at":"2026-10-20T01:31:33.132Z","type":"added","id":"samsung-samsung-ue55m72hauxxh","store":"Neptun","brand":"SAMSUNG","model":"UE 55 M72H AUXXH","to":33999}
+{"at":"2026-10-20T01:31:33.132Z","type":"removed","id":"seagate-samsung-qe55ls03hauxxh","store":"Setec","brand":"SEAGATE","model":"SAMSUNG QE55LS03HAUXXH","from":59999}
+{"at":"2026-10-21T01:32:22.746Z","type":"price","id":"sony-k65s25m2pb-cei","store":"Setec","brand":"SONY","model":"K65S25M2PB.CEI","from":63999,"to":59999,"pct":-6.25}
+{"at":"2026-10-21T01:32:22.746Z","type":"price","id":"sony-k55s25m2pb-cei","store":"Setec","brand":"SONY","model":"K55S25M2PB.CEI","from":51999,"to":49999,"pct":-3.85}
+{"at":"2026-10-21T01:32:22.746Z","type":"price","id":"sony-k75s25m2pb-cei","store":"Setec","brand":"SONY","model":"K75S25M2PB.CEI","from":81999,"to":79999,"pct":-2.44}
+{"at":"2026-10-21T01:32:22.746Z","type":"stock","id":"samsung-qe55s95fatxxh","store":"Setec","brand":"SAMSUNG","model":"QE55S95FATXXH","from":true,"to":false}
+{"at":"2026-10-21T01:32:22.746Z","type":"stock","id":"samsung-samsung-qe55qn72hauxxh","store":"Setec","brand":"SAMSUNG","model":"QE55QN72HAUXXH","from":false,"to":true}
+{"at":"2026-10-21T01:32:22.746Z","type":"stock","id":"samsung-samsung-qe65qn72hauxxh","store":"Setec","brand":"SAMSUNG","model":"QE65QN72HAUXXH","from":false,"to":true}
+{"at":"2026-10-21T01:32:22.746Z","type":"stock","id":"samsung-samsung-ue50m72hauxxh","store":"Setec","brand":"SAMSUNG","model":"UE50M72HAUXXH","from":false,"to":true}
+{"at":"2026-10-21T01:32:22.746Z","type":"stock","id":"samsung-samsung-ue55m72hauxxh","store":"Setec","brand":"SAMSUNG","model":"UE55M72HAUXXH","from":false,"to":true}
+{"at":"2026-10-21T01:32:22.746Z","type":"stock","id":"samsung-samsung-ue65m72hauxxh","store":"Setec","brand":"SAMSUNG","model":"UE65M72HAUXXH","from":false,"to":true}

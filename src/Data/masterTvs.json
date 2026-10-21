@@ -3669,7 +3669,7 @@
       "Setec": {
         "price": 99999,
         "regularPrice": 109999,
-        "inStock": false,
+        "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/Hisense%2075UR8S_92427-01M3PR9Z6P15586ZFYWXE4J6WM.jpg",
         "handle": "hisense-75ur8s"
       }
@@ -12072,7 +12072,7 @@
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92335_SAMSUNG%20QE55S85HEUXXH-01KRN7SBZ5QYN234NRKMX4H5CX.jpg",
     "stores": {
       "Setec": {
-        "price": 82999,
+        "price": 79999,
         "regularPrice": 92999,
         "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92335_SAMSUNG%20QE55S85HEUXXH-01KRN7SBZ5QYN234NRKMX4H5CX.jpg",
@@ -12114,7 +12114,7 @@
       "Setec": {
         "price": 49995,
         "regularPrice": 109999,
-        "inStock": true,
+        "inStock": false,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63091_SAMSUNG QE55S90FAEXXH-01JXWGH1E1YPTG8C3TGFZBEX5W.jpg",
         "handle": "samsung-qe55s90faexxh"
       }
@@ -12199,7 +12199,7 @@
       "Setec": {
         "price": 69995,
         "regularPrice": 119999,
-        "inStock": true,
+        "inStock": false,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63545_SAMSUNG QE55S95FATXXH-01K5B7CZTGS861P7TJ3VZDTV3K.jpg",
         "handle": "samsung-qe55s95fatxxh"
       },
@@ -13636,7 +13636,7 @@
       "Setec": {
         "price": 42999,
         "regularPrice": 46999,
-        "inStock": false,
+        "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20QE55QN72HAUXXH_92449-01M52EM10PH4SRD3RYYG9EFF8Q.png",
         "handle": "samsung-qe55qn72hauxxh"
       }
@@ -13671,7 +13671,7 @@
       "Setec": {
         "price": 49999,
         "regularPrice": 59999,
-        "inStock": false,
+        "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20QE55QN72HAUXXH_92449-01M52EPRM9PN4BYSMV6A2V5HM0.png",
         "handle": "samsung-qe65qn72hauxxh"
       }
@@ -13706,44 +13706,9 @@
       "Setec": {
         "price": 24999,
         "regularPrice": 30999,
-        "inStock": false,
+        "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20UE50M72HAUXXH_92450-01M52EWJM2EFTN1ZMFDF83MWPP.png",
         "handle": "samsung-ue50m72hauxxh"
-      }
-    }
-  },
-  {
-    "id": "samsung-samsung-ue55m72hauxxh",
-    "brand": "SAMSUNG",
-    "model": "UE55M72HAUXXH",
-    "size": 55,
-    "technology": "LED",
-    "resolution": "4K",
-    "refreshRate": 60,
-    "year": 2026,
-    "os": "Smart TV",
-    "hdr": false,
-    "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
-    "brightness": "—",
-    "audioPower": 0,
-    "audioChannels": "2.0",
-    "dolbyAtmos": false,
-    "freeSync": false,
-    "gSync": false,
-    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20UE50M72HAUXXH_92450-01M52EZ46K3RGTH5JZQ62R0CXW.png",
-    "stores": {
-      "Setec": {
-        "price": 27999,
-        "regularPrice": 33999,
-        "inStock": false,
-        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20UE50M72HAUXXH_92450-01M52EZ46K3RGTH5JZQ62R0CXW.png",
-        "handle": "samsung-ue55m72hauxxh"
       }
     }
   },
@@ -13776,7 +13741,7 @@
       "Setec": {
         "price": 35999,
         "regularPrice": 45999,
-        "inStock": false,
+        "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20UE50M72HAUXXH_92450-01M52F1R9NA4GBD8F9N8GRC5BM.png",
         "handle": "samsung-ue65m72hauxxh"
       }
@@ -14217,7 +14182,7 @@
       "Setec": {
         "price": 14995,
         "regularPrice": 24299,
-        "inStock": true,
+        "inStock": false,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63210_SAMSUNG UE43U8072FUXXH-01JZA5T85MDH34DZZBKP2M74TM.jpg",
         "handle": "samsung-ue43u8072fuxxh"
       }
@@ -15144,7 +15109,7 @@
     "image": "/images/tvs/neptun/samsung-ue-75-m70h-auxxh-75-4k-miniled-297725.jpg",
     "stores": {
       "Setec": {
-        "price": 49999,
+        "price": 48999,
         "regularPrice": 64999,
         "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92320_SAMSUNG%20UE75M70HAUXXH-01KRDHPW0VMNEFGZ2K9CQQ8QQE.jpg",
@@ -15586,45 +15551,6 @@
     }
   },
   {
-    "id": "samsung-qe55ls03hauxxh",
-    "brand": "SAMSUNG",
-    "model": "QE55LS03HAUXXH",
-    "size": 55,
-    "technology": "QLED",
-    "resolution": "4K",
-    "refreshRate": 144,
-    "year": 2026,
-    "os": "Tizen",
-    "hdr": true,
-    "dolbyVision": false,
-    "hdmi": 4,
-    "usb": 3,
-    "vrr": true,
-    "allm": true,
-    "pictureProcessor": "NQ4 AI Gen2 Processor",
-    "hdrFormats": [
-      "HDR10",
-      "HDR10+"
-    ],
-    "brightness": "—",
-    "audioPower": 40,
-    "audioChannels": "2.0.2",
-    "dolbyAtmos": true,
-    "freeSync": true,
-    "gSync": false,
-    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20QE55LS03HAUXXH_92448-01M52EG8H5B61FTDS7W1VPBQGB.png",
-    "stores": {
-      "Setec": {
-        "price": 59999,
-        "regularPrice": 69999,
-        "inStock": true,
-        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20QE55LS03HAUXXH_92448-01M52EG8H5B61FTDS7W1VPBQGB.png",
-        "handle": "samsung-qe55ls03hauxxh"
-      }
-    },
-    "specsSource": "samsung"
-  },
-  {
     "id": "sony-k55a65pb-cei",
     "brand": "SONY",
     "model": "K55A65PB.CEI",
@@ -15699,7 +15625,7 @@
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92383_SONY%20K55S25M2PB.CEI-01KWXY18Y1ZMXMWMSSGP31E4CM.jpg",
     "stores": {
       "Setec": {
-        "price": 51999,
+        "price": 49999,
         "regularPrice": 59999,
         "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92383_SONY%20K55S25M2PB.CEI-01KWXY18Y1ZMXMWMSSGP31E4CM.jpg",
@@ -15945,7 +15871,7 @@
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92384_SONY%20K65S25M2PB.CEI-01KWXY57V6XV3W0A7KR6296EBT.jpg",
     "stores": {
       "Setec": {
-        "price": 63999,
+        "price": 59999,
         "regularPrice": 72999,
         "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92384_SONY%20K65S25M2PB.CEI-01KWXY57V6XV3W0A7KR6296EBT.jpg",
@@ -16106,7 +16032,7 @@
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92385_SONY%20K75S25M2PB.CEI-01KWXXYFVD30ET9RVT5SSF5F9J.jpg",
     "stores": {
       "Setec": {
-        "price": 81999,
+        "price": 79999,
         "regularPrice": 90999,
         "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92385_SONY%20K75S25M2PB.CEI-01KWXXYFVD30ET9RVT5SSF5F9J.jpg",
@@ -18762,7 +18688,7 @@
     "image": "/images/tvs/neptun/tcl-65-t69c-299143.jpg",
     "stores": {
       "Setec": {
-        "price": 32999,
+        "price": 29999,
         "regularPrice": 35999,
         "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92363_TCL%2065T69C-01KWEKV75ZHYD3WS1GWTVFFWE9.jpg",
@@ -18810,7 +18736,7 @@
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79277_TCL 75C61K-01JY65FRDW4YB0XGPFRRH5TSW9.jpg",
     "stores": {
       "Setec": {
-        "price": 55999,
+        "price": 51999,
         "regularPrice": 64999,
         "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79277_TCL 75C61K-01JY65FRDW4YB0XGPFRRH5TSW9.jpg",
@@ -19047,7 +18973,7 @@
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92281_TCL%2075P61K-01KMMR1XYH5AHVBB2TM2HDS5S2.jpg",
     "stores": {
       "Setec": {
-        "price": 35999,
+        "price": 38999,
         "regularPrice": 59999,
         "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92281_TCL%2075P61K-01KMMR1XYH5AHVBB2TM2HDS5S2.jpg",
@@ -19450,7 +19376,7 @@
       "Setec": {
         "price": 99999,
         "regularPrice": 109999,
-        "inStock": true,
+        "inStock": false,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92366_TCL%2085C79L-01KWY01D35Z3Z0R4EVK1ENP070.jpg",
         "handle": "tcl-85c79l"
       }
@@ -21397,6 +21323,87 @@
         "inStock": true,
         "image": "/images/tvs/anhoch/tv-xiaomi-tv-a-55-4k-qled-google-9202.jpg",
         "url": "tv-xiaomi-tv-a-55-4k-qled-google-9202"
+      }
+    }
+  },
+  {
+    "id": "philips-philips-75pqs8611",
+    "brand": "PHILIPS",
+    "model": "75PQS8611",
+    "size": 75,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "TITAN OS",
+    "hdr": true,
+    "dolbyVision": false,
+    "hdmi": 3,
+    "usb": 2,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "P5 Picture Engine",
+    "hdrFormats": [
+      "HDR10",
+      "HLG"
+    ],
+    "brightness": "—",
+    "audioPower": 20,
+    "audioChannels": "2.0",
+    "dolbyAtmos": true,
+    "freeSync": false,
+    "gSync": false,
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/PHILIPS%2075PQS8611_92447-01M526PZY7JWQBTT45NS7GCPXK.png",
+    "stores": {
+      "Setec": {
+        "price": 49999,
+        "regularPrice": 54999,
+        "inStock": false,
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/PHILIPS%2075PQS8611_92447-01M526PZY7JWQBTT45NS7GCPXK.png",
+        "handle": "philips-75pqs8611"
+      }
+    },
+    "specsSource": null
+  },
+  {
+    "id": "samsung-samsung-ue55m72hauxxh",
+    "brand": "SAMSUNG",
+    "model": "UE55M72HAUXXH",
+    "size": 55,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20UE50M72HAUXXH_92450-01M52EZ46K3RGTH5JZQ62R0CXW.png",
+    "stores": {
+      "Setec": {
+        "price": 27999,
+        "regularPrice": 33999,
+        "inStock": true,
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20UE50M72HAUXXH_92450-01M52EZ46K3RGTH5JZQ62R0CXW.png",
+        "handle": "samsung-ue55m72hauxxh"
+      },
+      "Neptun": {
+        "price": 33999,
+        "regularPrice": 33999,
+        "inStock": true,
+        "image": "/images/tvs/neptun/samsung-ue-55-m72h-auxxh-301310.jpg",
+        "url": "https://www.neptun.mk/84123986-SAMSUNG-UE-55-M72H-AUXXH"
       }
     }
   }

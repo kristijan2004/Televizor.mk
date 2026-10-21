@@ -77,6 +77,30 @@ function key(brand, model) {
   return `${normalizeBrand(brand)}|${normalizeText(model)}`;
 }
 
+/*
+ * „TCL TCL 50S5L" -> „TCL 50S5L"; „SAMSUNG Samsung QE55" -> „SAMSUNG QE55".
+ *
+ * МОРА да се примени пред key()/slugify() (во getIdentity, не само на
+ * крајот над `master`) — инаку истиот телевизор со и без повторен бренд во
+ * суровиот текст од трговецот нормализира во РАЗЛИЧНИ клучеви, завршува
+ * како два одделни записи, и секој добива свое id од нечистиот текст. Ако
+ * тие две id случајно се совпаднат (преку old?.id reuse низ денови), node
+ * import.js паѓа на UNIQUE constraint — токму тоа се случи на 2026-10-21 и
+ * ја расипа живата база неколку дена без никој да забележи.
+ */
+function stripBrandPrefix(brand, model) {
+  if (!brand || !model) return model;
+
+  const stripped = model
+    .replace(
+      new RegExp(`^\\s*${brand.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s+`, "i"),
+      ""
+    )
+    .trim();
+
+  return stripped || model;
+}
+
 function slugify(brand, model) {
   return `${brand}-${model}`
     .toLowerCase()
@@ -581,7 +605,7 @@ function getIdentity(tv, store) {
   if (!brand || !model) return null;
 
   brand = String(brand).trim().toUpperCase();
-  model = String(model).trim();
+  model = stripBrandPrefix(brand, String(model).trim());
 
   /*
    * Try to match the existing canonical model.
@@ -802,21 +826,18 @@ master.sort((a, b) => {
 /*
  * Чистење пред запишување.
  *
- * Автоматски најдените телевизори доаѓаат со името како што го пишува
- * трговецот, па знае да биде „TCL TCL 50S5L" или моделот да го нема
- * препознаено бројот на инчи. Двете се поправаат тука, по градењето,
- * за да не се менува логиката на секој трговец поединечно.
+ * stripBrandPrefix веќе се применува порано, во getIdentity() (пред
+ * key()/id), токму за да не се повтори багот од 2026-10-21 — овде е сепак
+ * безопасна втора рака, за стари записи чиешто име било зачувано со
+ * повторен бренд пред овој поправка да постои, и за да не се менува
+ * логиката на секој трговец поединечно за препознавање големина.
  */
 let fixedBrand = 0;
 let fixedSize = 0;
 
 for (const tv of master) {
   if (tv.brand && tv.model) {
-    // „TCL TCL 50S5L" -> „TCL 50S5L"; „SAMSUNG Samsung QE55" -> „SAMSUNG QE55"
-    const stripped = tv.model.replace(
-      new RegExp(`^\\s*${tv.brand.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s+`, "i"),
-      ""
-    ).trim();
+    const stripped = stripBrandPrefix(tv.brand, tv.model);
 
     if (stripped && stripped !== tv.model) {
       tv.model = stripped;

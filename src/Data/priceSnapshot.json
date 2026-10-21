@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-10-19T01:31:33.776Z",
+  "takenAt": "2026-10-21T01:32:22.746Z",
   "source": "staging/src/Data/masterTvs.json",
   "listings": {
     "aiwa-43n21|Anhoch": {
@@ -1150,7 +1150,7 @@
       "size": 75,
       "price": 99999,
       "regularPrice": 109999,
-      "inStock": false
+      "inStock": true
     },
     "hisense-75ur9s|Setec": {
       "id": "hisense-75ur9s",
@@ -3488,7 +3488,7 @@
       "brand": "SAMSUNG",
       "model": "QE55S85HEUXXH",
       "size": 55,
-      "price": 82999,
+      "price": 79999,
       "regularPrice": 92999,
       "inStock": true
     },
@@ -3500,7 +3500,7 @@
       "size": 55,
       "price": 49995,
       "regularPrice": 109999,
-      "inStock": true
+      "inStock": false
     },
     "samsung-qe55s90haexxh|Setec": {
       "id": "samsung-qe55s90haexxh",
@@ -3530,7 +3530,7 @@
       "size": 55,
       "price": 69995,
       "regularPrice": 119999,
-      "inStock": true
+      "inStock": false
     },
     "samsung-qe55s95fatxxh|Neptun": {
       "id": "samsung-qe55s95fatxxh",
@@ -3940,7 +3940,7 @@
       "size": 55,
       "price": 42999,
       "regularPrice": 46999,
-      "inStock": false
+      "inStock": true
     },
     "samsung-samsung-qe65qn72hauxxh|Setec": {
       "id": "samsung-samsung-qe65qn72hauxxh",
@@ -3950,7 +3950,7 @@
       "size": 65,
       "price": 49999,
       "regularPrice": 59999,
-      "inStock": false
+      "inStock": true
     },
     "samsung-samsung-ue50m72hauxxh|Setec": {
       "id": "samsung-samsung-ue50m72hauxxh",
@@ -3960,7 +3960,7 @@
       "size": 50,
       "price": 24999,
       "regularPrice": 30999,
-      "inStock": false
+      "inStock": true
     },
     "samsung-samsung-ue55m72hauxxh|Setec": {
       "id": "samsung-samsung-ue55m72hauxxh",
@@ -3970,7 +3970,7 @@
       "size": 55,
       "price": 27999,
       "regularPrice": 33999,
-      "inStock": false
+      "inStock": true
     },
     "samsung-samsung-ue65m72hauxxh|Setec": {
       "id": "samsung-samsung-ue65m72hauxxh",
@@ -3980,7 +3980,17 @@
       "size": 65,
       "price": 35999,
       "regularPrice": 45999,
-      "inStock": false
+      "inStock": true
+    },
+    "samsung-samsung-ue55m72hauxxh|Neptun": {
+      "id": "samsung-samsung-ue55m72hauxxh",
+      "store": "Neptun",
+      "brand": "SAMSUNG",
+      "model": "UE 55 M72H AUXXH",
+      "size": 55,
+      "price": 33999,
+      "regularPrice": 33999,
+      "inStock": true
     },
     "samsung-ue-43cu7092uxxh|Anhoch": {
       "id": "samsung-ue-43cu7092uxxh",
@@ -4100,7 +4110,7 @@
       "size": 43,
       "price": 14995,
       "regularPrice": 24299,
-      "inStock": true
+      "inStock": false
     },
     "samsung-ue43u8072huxxh|Neptun": {
       "id": "samsung-ue43u8072huxxh",
@@ -4368,7 +4378,7 @@
       "brand": "SAMSUNG",
       "model": "UE75M70HAUXXH",
       "size": 75,
-      "price": 49999,
+      "price": 48999,
       "regularPrice": 64999,
       "inStock": true
     },
@@ -4532,16 +4542,6 @@
       "regularPrice": 149999,
       "inStock": true
     },
-    "seagate-samsung-qe55ls03hauxxh|Setec": {
-      "id": "seagate-samsung-qe55ls03hauxxh",
-      "store": "Setec",
-      "brand": "SEAGATE",
-      "model": "SAMSUNG QE55LS03HAUXXH",
-      "size": 55,
-      "price": 59999,
-      "regularPrice": 69999,
-      "inStock": true
-    },
     "sony-k55a65pb-cei|Anhoch": {
       "id": "sony-k55a65pb-cei",
       "store": "Anhoch",
@@ -4568,7 +4568,7 @@
       "brand": "SONY",
       "model": "K55S25M2PB.CEI",
       "size": 55,
-      "price": 51999,
+      "price": 49999,
       "regularPrice": 59999,
       "inStock": true
     },
@@ -4648,7 +4648,7 @@
       "brand": "SONY",
       "model": "K65S25M2PB.CEI",
       "size": 65,
-      "price": 63999,
+      "price": 59999,
       "regularPrice": 72999,
       "inStock": true
     },
@@ -4698,7 +4698,7 @@
       "brand": "SONY",
       "model": "K75S25M2PB.CEI",
       "size": 75,
-      "price": 81999,
+      "price": 79999,
       "regularPrice": 90999,
       "inStock": true
     },
@@ -5438,7 +5438,7 @@
       "brand": "TCL",
       "model": "65T69C",
       "size": 65,
-      "price": 32999,
+      "price": 29999,
       "regularPrice": 35999,
       "inStock": true
     },
@@ -5458,7 +5458,7 @@
       "brand": "TCL",
       "model": "75C61K",
       "size": 75,
-      "price": 55999,
+      "price": 51999,
       "regularPrice": 64999,
       "inStock": true
     },
@@ -5508,7 +5508,7 @@
       "brand": "TCL",
       "model": "75P61K",
       "size": 75,
-      "price": 35999,
+      "price": 38999,
       "regularPrice": 59999,
       "inStock": true
     },
@@ -5600,7 +5600,7 @@
       "size": 85,
       "price": 99999,
       "regularPrice": 109999,
-      "inStock": true
+      "inStock": false
     },
     "tcl-85c803|Neptun": {
       "id": "tcl-85c803",

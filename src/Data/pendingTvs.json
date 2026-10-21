@@ -1,10 +1,10 @@
 [
   {
     "tv": {
-      "id": "philips-philips-75pqs8611",
-      "brand": "PHILIPS",
-      "model": "75PQS8611",
-      "size": 0,
+      "id": "hoobart-40-mc-620-and-t",
+      "brand": "HOOBART",
+      "model": "40 MC 620 AND T",
+      "size": 40,
       "technology": "LED",
       "resolution": "4K",
       "refreshRate": 60,
@@ -24,21 +24,61 @@
       "dolbyAtmos": false,
       "freeSync": false,
       "gSync": false,
-      "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/PHILIPS%2075PQS8611_92447-01M526PZY7JWQBTT45NS7GCPXK.png",
+      "image": "/images/tvs/neptun/hoobart-40-mc-620-and-t-280267.jpg",
       "stores": {
-        "Setec": {
-          "price": 49999,
-          "regularPrice": 54999,
-          "inStock": false,
-          "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/PHILIPS%2075PQS8611_92447-01M526PZY7JWQBTT45NS7GCPXK.png",
-          "handle": "philips-75pqs8611"
+        "Neptun": {
+          "price": 9999,
+          "regularPrice": 9999,
+          "inStock": true,
+          "image": "/images/tvs/neptun/hoobart-40-mc-620-and-t-280267.jpg",
+          "url": "https://www.neptun.mk/84107526-HOOBART-40-MC-620-AND-T"
         }
       }
     },
     "reasons": [
-      "нов модел — чека преглед",
-      "нема големина"
+      "нов модел — чека преглед"
     ],
-    "discoveredAt": "2026-10-16"
+    "discoveredAt": "2026-10-20"
+  },
+  {
+    "tv": {
+      "id": "seagate-samsung-qe55ls03hauxxh",
+      "brand": "SEAGATE",
+      "model": "SAMSUNG QE55LS03HAUXXH",
+      "size": 55,
+      "technology": "LED",
+      "resolution": "4K",
+      "refreshRate": 60,
+      "year": 2026,
+      "os": "Smart TV",
+      "hdr": false,
+      "dolbyVision": false,
+      "hdmi": 0,
+      "usb": 0,
+      "vrr": false,
+      "allm": false,
+      "pictureProcessor": "—",
+      "hdrFormats": [],
+      "brightness": "—",
+      "audioPower": 0,
+      "audioChannels": "2.0",
+      "dolbyAtmos": false,
+      "freeSync": false,
+      "gSync": false,
+      "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20QE55LS03HAUXXH_92448-01M52EG8H5B61FTDS7W1VPBQGB.png",
+      "stores": {
+        "Setec": {
+          "price": 59999,
+          "regularPrice": 69999,
+          "inStock": true,
+          "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20QE55LS03HAUXXH_92448-01M52EG8H5B61FTDS7W1VPBQGB.png",
+          "handle": "samsung-qe55ls03hauxxh"
+        }
+      }
+    },
+    "reasons": [
+      "нов модел — чека преглед"
+    ],
+    "discoveredAt": "2026-10-20"
   }
 ]
