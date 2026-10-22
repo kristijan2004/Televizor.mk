@@ -589,7 +589,7 @@
     "image": "/images/tvs/neptun/beko-65-bhu-7800-299114.jpg",
     "stores": {
       "Neptun": {
-        "price": 24999,
+        "price": 22999,
         "regularPrice": 31999,
         "inStock": true,
         "image": "/images/tvs/neptun/beko-65-bhu-7800-65-299114.jpg",
@@ -1968,7 +1968,7 @@
         "handle": "hisense-40a4s"
       },
       "Neptun": {
-        "price": 12999,
+        "price": 12499,
         "regularPrice": 15999,
         "inStock": true,
         "image": "/images/tvs/neptun/hisense-40-a4s-40-fhd-dled-smart-297455.jpg",
@@ -2477,6 +2477,13 @@
         "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79480_Hisense%2055E7Q-01KQYWH5AQGWSMBBKSZ4R228W1.jpg",
         "handle": "hisense-55e7q"
+      },
+      "Neptun": {
+        "price": 19999,
+        "regularPrice": 28999,
+        "inStock": true,
+        "image": "/images/tvs/neptun/hisense-55-e7q-55-4k-qled-294866.jpg",
+        "url": "https://www.neptun.mk/84119096-HISENSE-55-E7Q"
       }
     }
   },
@@ -2554,7 +2561,7 @@
     "image": "/images/tvs/neptun/hisense-55-e7s-299438.jpg",
     "stores": {
       "Setec": {
-        "price": 24999,
+        "price": 18999,
         "regularPrice": 27999,
         "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92342_Hisense%2055E7S-01KS7BHCXMCX36XKZJWQ9843QX.jpg",
@@ -2614,6 +2621,41 @@
         "inStock": true,
         "image": "/images/tvs/neptun/hisense-55-e7s-pro-55-4k-qled-144hz-297954.jpg",
         "url": "https://www.neptun.mk/84121464-HISENSE-55-E7S-PRO"
+      }
+    }
+  },
+  {
+    "id": "hisense-hisense-55e8q",
+    "brand": "HISENSE",
+    "model": "55E8Q",
+    "size": 55,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/Hisense%2055U8Q_92424-01M3PQRWAW9682B07CPZSC6AZS.jpg",
+    "stores": {
+      "Setec": {
+        "price": 34999,
+        "regularPrice": 39999,
+        "inStock": true,
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/Hisense%2055U8Q_92424-01M3PQRWAW9682B07CPZSC6AZS.jpg",
+        "handle": "hisense-55u8q"
       }
     }
   },
@@ -2733,7 +2775,7 @@
     "image": "/images/tvs/neptun/hisense-65-q7s-4k-ultra-hd-8ms-300930.jpg",
     "stores": {
       "Neptun": {
-        "price": 36999,
+        "price": 29999,
         "regularPrice": 36999,
         "inStock": true,
         "image": "/images/tvs/neptun/hisense-65-q7s-4k-ultra-hd-8ms-300930.jpg",
@@ -3922,41 +3964,6 @@
     }
   },
   {
-    "id": "hisense-hisense-55e8q",
-    "brand": "HISENSE",
-    "model": "55E8Q",
-    "size": 55,
-    "technology": "LED",
-    "resolution": "4K",
-    "refreshRate": 60,
-    "year": 2026,
-    "os": "Smart TV",
-    "hdr": false,
-    "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
-    "brightness": "—",
-    "audioPower": 0,
-    "audioChannels": "2.0",
-    "dolbyAtmos": false,
-    "freeSync": false,
-    "gSync": false,
-    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/Hisense%2055U8Q_92424-01M3PQRWAW9682B07CPZSC6AZS.jpg",
-    "stores": {
-      "Setec": {
-        "price": 34999,
-        "regularPrice": 39999,
-        "inStock": true,
-        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/Hisense%2055U8Q_92424-01M3PQRWAW9682B07CPZSC6AZS.jpg",
-        "handle": "hisense-55u8q"
-      }
-    }
-  },
-  {
     "id": "jvc-32vh5300",
     "brand": "JVC",
     "model": "32VH5300",
@@ -4848,7 +4855,7 @@
     "image": "/images/tvs/neptun/lg-43-nu850-b3la-298046.jpg",
     "stores": {
       "Neptun": {
-        "price": 22999,
+        "price": 21999,
         "regularPrice": 22999,
         "inStock": true,
         "image": "/images/tvs/neptun/lg-43-nu850-b3la-298046.jpg",
@@ -4883,7 +4890,7 @@
     "image": "/images/tvs/neptun/lg-43-qned81-b3c-301253.jpg",
     "stores": {
       "Neptun": {
-        "price": 28999,
+        "price": 27999,
         "regularPrice": 28999,
         "inStock": true,
         "image": "/images/tvs/neptun/lg-43-qned81-b3c-301253.jpg",
@@ -5216,7 +5223,7 @@
     "image": "/images/tvs/neptun/lg-50-ua-75003-la-50-4k-smart-288103.jpg",
     "stores": {
       "Neptun": {
-        "price": 26999,
+        "price": 25999,
         "regularPrice": 26999,
         "inStock": true,
         "image": "/images/tvs/neptun/lg-50-ua-75003-la-50-4k-smart-288103.jpg",
@@ -5254,7 +5261,7 @@
     "image": "/images/tvs/neptun/lg-55-b6-elc-299495.jpg",
     "stores": {
       "Neptun": {
-        "price": 76999,
+        "price": 69999,
         "regularPrice": 76999,
         "inStock": true,
         "image": "/images/tvs/neptun/lg-55-b6-elc-4k-oled-120hz-299495.jpg",
@@ -5677,7 +5684,7 @@
     "image": "/images/tvs/neptun/lg-uhd-55-nano-80a3b-55-4k-nanocell-290793.jpg",
     "stores": {
       "Neptun": {
-        "price": 32999,
+        "price": 31999,
         "regularPrice": 32999,
         "inStock": true,
         "image": "/images/tvs/neptun/lg-uhd-55-nano-80a3b-55-4k-nanocell-290793.jpg",
@@ -5748,7 +5755,7 @@
     "image": "/images/tvs/neptun/lg-55-qned-70b3c-300040.jpg",
     "stores": {
       "Neptun": {
-        "price": 22999,
+        "price": 29999,
         "regularPrice": 38999,
         "inStock": true,
         "image": "/images/tvs/neptun/lg-55-qned-70b3c-55-4k-qned-miniled-300040.jpg",
@@ -5787,7 +5794,7 @@
     "image": "/images/tvs/neptun/lg-55-qned-80a3a-55-4k-qned-smart-288105.jpg",
     "stores": {
       "Neptun": {
-        "price": 43999,
+        "price": 42999,
         "regularPrice": 43999,
         "inStock": true,
         "image": "/images/tvs/neptun/lg-55-qned-80a3a-55-4k-qned-smart-288105.jpg",
@@ -5826,7 +5833,7 @@
     "image": "/images/tvs/neptun/lg-55-qned-81b3a-299858.jpg",
     "stores": {
       "Neptun": {
-        "price": 42999,
+        "price": 41999,
         "regularPrice": 42999,
         "inStock": true,
         "image": "/images/tvs/neptun/lg-55-qned-81b3a-55-4k-qned-miniled-299858.jpg",
@@ -6218,7 +6225,7 @@
     "image": "/images/tvs/neptun/lg-65-nu850-b3la-299494.jpg",
     "stores": {
       "Neptun": {
-        "price": 42999,
+        "price": 41999,
         "regularPrice": 42999,
         "inStock": true,
         "image": "/images/tvs/neptun/lg-65-nu850-b3la-4k-uhd-299494.jpg",
@@ -6291,7 +6298,7 @@
     "image": "/images/tvs/neptun/lg-65-qned72-b3b-65-4k-qned-miniled-300842.jpg",
     "stores": {
       "Neptun": {
-        "price": 49999,
+        "price": 48999,
         "regularPrice": 49999,
         "inStock": true,
         "image": "/images/tvs/neptun/lg-65-qned72-b3b-65-4k-qned-miniled-300842.jpg",
@@ -6366,7 +6373,7 @@
     "image": "/images/tvs/neptun/lg-65-b62-la-299046.jpg",
     "stores": {
       "Neptun": {
-        "price": 86999,
+        "price": 84999,
         "regularPrice": 109999,
         "inStock": true,
         "image": "/images/tvs/neptun/lg-65-b62-la-65-120-hz-299046.jpg",
@@ -6406,7 +6413,7 @@
     "image": "/images/tvs/neptun/lg-65-c61-la-298667.jpg",
     "stores": {
       "Neptun": {
-        "price": 112999,
+        "price": 109999,
         "regularPrice": 126999,
         "inStock": true,
         "image": "/images/tvs/neptun/lg-65-c61-la-65-120hz-298667.jpg",
@@ -6446,7 +6453,7 @@
     "image": "/images/tvs/neptun/lg-uhd-65-nano-80a3b-65-4k-nanocell-290794.jpg",
     "stores": {
       "Neptun": {
-        "price": 42999,
+        "price": 41999,
         "regularPrice": 42999,
         "inStock": true,
         "image": "/images/tvs/neptun/lg-uhd-65-nano-80a3b-65-4k-nanocell-290794.jpg",
@@ -6556,7 +6563,7 @@
     "image": "/images/tvs/neptun/lg-65-qned-70b3c-300042.jpg",
     "stores": {
       "Neptun": {
-        "price": 34999,
+        "price": 36999,
         "regularPrice": 47999,
         "inStock": true,
         "image": "/images/tvs/neptun/lg-65-qned-70b3c-65-4k-qned-miniled-300042.jpg",
@@ -6595,7 +6602,7 @@
     "image": "/images/tvs/neptun/lg-65-qned-80a3a-65-4k-qned-smart-288129.jpg",
     "stores": {
       "Neptun": {
-        "price": 54999,
+        "price": 53999,
         "regularPrice": 54999,
         "inStock": true,
         "image": "/images/tvs/neptun/lg-65-qned-80a3a-65-4k-qned-smart-288129.jpg",
@@ -6672,7 +6679,15 @@
     "gSync": false,
     "specsSource": "icecat",
     "image": "/images/tvs/neptun/lg-65-qned-92a6a-65-4k-qned-miniled-120hz-294779.jpg",
-    "stores": {}
+    "stores": {
+      "Neptun": {
+        "price": 39995,
+        "regularPrice": 71999,
+        "inStock": true,
+        "image": "/images/tvs/neptun/lg-65-qned-92a6a-65-4k-qned-miniled-120hz-294779.jpg",
+        "url": "https://www.neptun.mk/84119028-LG-65-QNED-92A6A"
+      }
+    }
   },
   {
     "id": "lg-75-mrgb-87b3b",
@@ -6745,7 +6760,7 @@
     "image": "/images/tvs/neptun/lg-75-nu800-b3la-299961.jpg",
     "stores": {
       "Neptun": {
-        "price": 40999,
+        "price": 38999,
         "regularPrice": 46999,
         "inStock": true,
         "image": "/images/tvs/neptun/lg-75-nu800-b3la-75-4k-nano-led-299961.jpg",
@@ -6823,7 +6838,7 @@
     "image": "/images/tvs/neptun/lg-uhd-75-nano-80a3b-75-4k-nanocell-290796.jpg",
     "stores": {
       "Neptun": {
-        "price": 64599,
+        "price": 63599,
         "regularPrice": 64599,
         "inStock": true,
         "image": "/images/tvs/neptun/lg-uhd-75-nano-80a3b-75-4k-nanocell-290796.jpg",
@@ -6965,7 +6980,7 @@
     "image": "/images/tvs/neptun/lg-75-qned-8mb6a-300043.jpg",
     "stores": {
       "Neptun": {
-        "price": 44999,
+        "price": 59999,
         "regularPrice": 74999,
         "inStock": true,
         "image": "/images/tvs/neptun/lg-75-qned-8mb6a-75-4k-qned-miniled-144hz-300043.jpg",
@@ -7005,7 +7020,7 @@
     "image": "/images/tvs/neptun/lg-77-b6-elc-77-4k-oled-120hz-300846.jpg",
     "stores": {
       "Neptun": {
-        "price": 99999,
+        "price": 129999,
         "regularPrice": 134999,
         "inStock": true,
         "image": "/images/tvs/neptun/lg-77-b6-elc-77-4k-oled-120hz-300846.jpg",
@@ -7284,7 +7299,7 @@
     "image": "/images/tvs/neptun/lg-85-nu850-b3la-298669.jpg",
     "stores": {
       "Neptun": {
-        "price": 76999,
+        "price": 75999,
         "regularPrice": 76999,
         "inStock": true,
         "image": "/images/tvs/neptun/lg-85-nu850-b3la-85-4k-uhd-298669.jpg",
@@ -9880,6 +9895,41 @@
     }
   },
   {
+    "id": "philips-philips-65oled801",
+    "brand": "PHILIPS",
+    "model": "65OLED801",
+    "size": 65,
+    "technology": "OLED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/PHILIPS%2065OLED801_92446-01M526FRY01KDXGCT2S5NNKAV7.png",
+    "stores": {
+      "Setec": {
+        "price": 89999,
+        "regularPrice": 99999,
+        "inStock": false,
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/PHILIPS%2065OLED801_92446-01M526FRY01KDXGCT2S5NNKAV7.png",
+        "handle": "philips-65oled801"
+      }
+    }
+  },
+  {
     "id": "philips-65oled820",
     "brand": "PHILIPS",
     "model": "65OLED820",
@@ -10508,6 +10558,44 @@
     }
   },
   {
+    "id": "philips-philips-75pqs8611",
+    "brand": "PHILIPS",
+    "model": "75PQS8611",
+    "size": 75,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "TITAN OS",
+    "hdr": true,
+    "dolbyVision": false,
+    "hdmi": 3,
+    "usb": 2,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "P5 Picture Engine",
+    "hdrFormats": [
+      "HDR10",
+      "HLG"
+    ],
+    "brightness": "—",
+    "audioPower": 20,
+    "audioChannels": "2.0",
+    "dolbyAtmos": true,
+    "freeSync": false,
+    "gSync": false,
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/PHILIPS%2075PQS8611_92447-01M526PZY7JWQBTT45NS7GCPXK.png",
+    "stores": {
+      "Setec": {
+        "price": 49999,
+        "regularPrice": 54999,
+        "inStock": false,
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/PHILIPS%2075PQS8611_92447-01M526PZY7JWQBTT45NS7GCPXK.png",
+        "handle": "philips-75pqs8611"
+      }
+    }
+  },
+  {
     "id": "philips-75pus7000",
     "brand": "PHILIPS",
     "model": "75PUS7000",
@@ -10758,41 +10846,6 @@
         "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92195_PHILIPS 85PUS9010-01KA1C5CPXSEHK2PWF622RD9JZ.jpg",
         "handle": "philips-85pus9010"
-      }
-    }
-  },
-  {
-    "id": "philips-philips-65oled801",
-    "brand": "PHILIPS",
-    "model": "65OLED801",
-    "size": 65,
-    "technology": "OLED",
-    "resolution": "4K",
-    "refreshRate": 60,
-    "year": 2026,
-    "os": "Smart TV",
-    "hdr": false,
-    "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
-    "brightness": "—",
-    "audioPower": 0,
-    "audioChannels": "2.0",
-    "dolbyAtmos": false,
-    "freeSync": false,
-    "gSync": false,
-    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/PHILIPS%2065OLED801_92446-01M526FRY01KDXGCT2S5NNKAV7.png",
-    "stores": {
-      "Setec": {
-        "price": 89999,
-        "regularPrice": 99999,
-        "inStock": false,
-        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/PHILIPS%2065OLED801_92446-01M526FRY01KDXGCT2S5NNKAV7.png",
-        "handle": "philips-65oled801"
       }
     }
   },
@@ -11847,6 +11900,41 @@
     }
   },
   {
+    "id": "samsung-samsung-qe55qn72hauxxh",
+    "brand": "SAMSUNG",
+    "model": "QE55QN72HAUXXH",
+    "size": 55,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20QE55QN72HAUXXH_92449-01M52EM10PH4SRD3RYYG9EFF8Q.png",
+    "stores": {
+      "Setec": {
+        "price": 42999,
+        "regularPrice": 46999,
+        "inStock": true,
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20QE55QN72HAUXXH_92449-01M52EM10PH4SRD3RYYG9EFF8Q.png",
+        "handle": "samsung-qe55qn72hauxxh"
+      }
+    }
+  },
+  {
     "id": "samsung-qe55qn80fauxxh",
     "brand": "SAMSUNG",
     "model": "QE55QN80FAUXXH",
@@ -12114,7 +12202,7 @@
       "Setec": {
         "price": 49995,
         "regularPrice": 109999,
-        "inStock": false,
+        "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63091_SAMSUNG QE55S90FAEXXH-01JXWGH1E1YPTG8C3TGFZBEX5W.jpg",
         "handle": "samsung-qe55s90faexxh"
       }
@@ -12372,6 +12460,13 @@
         "inStock": false,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92315_SAMSUNG%20QE65LS03HAUXXH-01KR3CT8RR3R3EGQVJK4D1BZF6.jpg",
         "handle": "samsung-qe65ls03hauxxh"
+      },
+      "Neptun": {
+        "price": 79999,
+        "regularPrice": 107999,
+        "inStock": true,
+        "image": "/images/tvs/neptun/samsung-frame-qe-65-ls03h-auxxh-298172.jpg",
+        "url": "https://www.neptun.mk/84121661-SAMSUNG-FRAME-QE-65-LS03H-AUXXH"
       }
     }
   },
@@ -12489,13 +12584,6 @@
         "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63085_SAMSUNG QE65Q7FAAUXÐ¥H-01KCGJYGHCSVKVS99FCX028JA2.jpg",
         "handle": "samsung-qe65q7faauxkhh"
-      },
-      "Neptun": {
-        "price": 33995,
-        "regularPrice": 59999,
-        "inStock": true,
-        "image": "/images/tvs/neptun/samsung-qe-65-q7f-aauxxh-287911.jpg",
-        "url": "https://www.neptun.mk/84113523-SAMSUNG-QE-65-Q7F-AAUXXH"
       }
     }
   },
@@ -12656,6 +12744,41 @@
     }
   },
   {
+    "id": "samsung-samsung-qe65qn72hauxxh",
+    "brand": "SAMSUNG",
+    "model": "QE65QN72HAUXXH",
+    "size": 65,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20QE55QN72HAUXXH_92449-01M52EPRM9PN4BYSMV6A2V5HM0.png",
+    "stores": {
+      "Setec": {
+        "price": 49999,
+        "regularPrice": 59999,
+        "inStock": true,
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20QE55QN72HAUXXH_92449-01M52EPRM9PN4BYSMV6A2V5HM0.png",
+        "handle": "samsung-qe65qn72hauxxh"
+      }
+    }
+  },
+  {
     "id": "samsung-qe65qn800ctxxh",
     "brand": "SAMSUNG",
     "model": "QE65QN800CTXXH",
@@ -12772,7 +12895,7 @@
         "handle": "samsung-qe65qn80hauxxh"
       },
       "Neptun": {
-        "price": 68999,
+        "price": 67999,
         "regularPrice": 84999,
         "inStock": true,
         "image": "/images/tvs/neptun/samsung-qe-65-qn80h-auxxh-65-4k-neo-qled-144hz-297805.jpg",
@@ -12967,7 +13090,7 @@
     "image": "/images/tvs/neptun/samsung-qe-65-s90h-aexxh-65-4k-oled-165hz-298024.jpg",
     "stores": {
       "Setec": {
-        "price": 78999,
+        "price": 94999,
         "regularPrice": 129999,
         "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92321_SAMSUNG%20QE65S90HAEXXH-01KRG94Z3NCFRRDDD9Z5VB3CQY.jpg",
@@ -13597,155 +13720,7 @@
     "gSync": false,
     "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/55465_0-01JVYCH4NCZ3HPYC9PV524TN8J.webp",
-    "stores": {
-      "Setec": {
-        "price": 427799,
-        "regularPrice": 433999,
-        "inStock": false,
-        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/55465_0-01JVYCH4NCZ3HPYC9PV524TN8J.webp",
-        "handle": "samsung-qe85qn800ctxxh-1"
-      }
-    }
-  },
-  {
-    "id": "samsung-samsung-qe55qn72hauxxh",
-    "brand": "SAMSUNG",
-    "model": "QE55QN72HAUXXH",
-    "size": 55,
-    "technology": "LED",
-    "resolution": "4K",
-    "refreshRate": 60,
-    "year": 2026,
-    "os": "Smart TV",
-    "hdr": false,
-    "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
-    "brightness": "—",
-    "audioPower": 0,
-    "audioChannels": "2.0",
-    "dolbyAtmos": false,
-    "freeSync": false,
-    "gSync": false,
-    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20QE55QN72HAUXXH_92449-01M52EM10PH4SRD3RYYG9EFF8Q.png",
-    "stores": {
-      "Setec": {
-        "price": 42999,
-        "regularPrice": 46999,
-        "inStock": true,
-        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20QE55QN72HAUXXH_92449-01M52EM10PH4SRD3RYYG9EFF8Q.png",
-        "handle": "samsung-qe55qn72hauxxh"
-      }
-    }
-  },
-  {
-    "id": "samsung-samsung-qe65qn72hauxxh",
-    "brand": "SAMSUNG",
-    "model": "QE65QN72HAUXXH",
-    "size": 65,
-    "technology": "LED",
-    "resolution": "4K",
-    "refreshRate": 60,
-    "year": 2026,
-    "os": "Smart TV",
-    "hdr": false,
-    "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
-    "brightness": "—",
-    "audioPower": 0,
-    "audioChannels": "2.0",
-    "dolbyAtmos": false,
-    "freeSync": false,
-    "gSync": false,
-    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20QE55QN72HAUXXH_92449-01M52EPRM9PN4BYSMV6A2V5HM0.png",
-    "stores": {
-      "Setec": {
-        "price": 49999,
-        "regularPrice": 59999,
-        "inStock": true,
-        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20QE55QN72HAUXXH_92449-01M52EPRM9PN4BYSMV6A2V5HM0.png",
-        "handle": "samsung-qe65qn72hauxxh"
-      }
-    }
-  },
-  {
-    "id": "samsung-samsung-ue50m72hauxxh",
-    "brand": "SAMSUNG",
-    "model": "UE50M72HAUXXH",
-    "size": 50,
-    "technology": "LED",
-    "resolution": "4K",
-    "refreshRate": 60,
-    "year": 2026,
-    "os": "Smart TV",
-    "hdr": false,
-    "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
-    "brightness": "—",
-    "audioPower": 0,
-    "audioChannels": "2.0",
-    "dolbyAtmos": false,
-    "freeSync": false,
-    "gSync": false,
-    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20UE50M72HAUXXH_92450-01M52EWJM2EFTN1ZMFDF83MWPP.png",
-    "stores": {
-      "Setec": {
-        "price": 24999,
-        "regularPrice": 30999,
-        "inStock": true,
-        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20UE50M72HAUXXH_92450-01M52EWJM2EFTN1ZMFDF83MWPP.png",
-        "handle": "samsung-ue50m72hauxxh"
-      }
-    }
-  },
-  {
-    "id": "samsung-samsung-ue65m72hauxxh",
-    "brand": "SAMSUNG",
-    "model": "UE65M72HAUXXH",
-    "size": 65,
-    "technology": "LED",
-    "resolution": "4K",
-    "refreshRate": 60,
-    "year": 2026,
-    "os": "Smart TV",
-    "hdr": false,
-    "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
-    "brightness": "—",
-    "audioPower": 0,
-    "audioChannels": "2.0",
-    "dolbyAtmos": false,
-    "freeSync": false,
-    "gSync": false,
-    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20UE50M72HAUXXH_92450-01M52F1R9NA4GBD8F9N8GRC5BM.png",
-    "stores": {
-      "Setec": {
-        "price": 35999,
-        "regularPrice": 45999,
-        "inStock": true,
-        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20UE50M72HAUXXH_92450-01M52F1R9NA4GBD8F9N8GRC5BM.png",
-        "handle": "samsung-ue65m72hauxxh"
-      }
-    }
+    "stores": {}
   },
   {
     "id": "samsung-ue-43cu7092uxxh",
@@ -14504,6 +14479,41 @@
     }
   },
   {
+    "id": "samsung-samsung-ue50m72hauxxh",
+    "brand": "SAMSUNG",
+    "model": "UE50M72HAUXXH",
+    "size": 50,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20UE50M72HAUXXH_92450-01M52EWJM2EFTN1ZMFDF83MWPP.png",
+    "stores": {
+      "Setec": {
+        "price": 24999,
+        "regularPrice": 30999,
+        "inStock": true,
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20UE50M72HAUXXH_92450-01M52EWJM2EFTN1ZMFDF83MWPP.png",
+        "handle": "samsung-ue50m72hauxxh"
+      }
+    }
+  },
+  {
     "id": "samsung-ue50u8072huxxh",
     "brand": "SAMSUNG",
     "model": "UE50U8072HUXXH",
@@ -14707,6 +14717,48 @@
     }
   },
   {
+    "id": "samsung-samsung-ue55m72hauxxh",
+    "brand": "SAMSUNG",
+    "model": "UE55M72HAUXXH",
+    "size": 55,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20UE50M72HAUXXH_92450-01M52EZ46K3RGTH5JZQ62R0CXW.png",
+    "stores": {
+      "Setec": {
+        "price": 27999,
+        "regularPrice": 33999,
+        "inStock": true,
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20UE50M72HAUXXH_92450-01M52EZ46K3RGTH5JZQ62R0CXW.png",
+        "handle": "samsung-ue55m72hauxxh"
+      },
+      "Neptun": {
+        "price": 32999,
+        "regularPrice": 33999,
+        "inStock": true,
+        "image": "/images/tvs/neptun/samsung-ue-55-m72h-auxxh-301310.jpg",
+        "url": "https://www.neptun.mk/84123986-SAMSUNG-UE-55-M72H-AUXXH"
+      }
+    }
+  },
+  {
     "id": "samsung-ue55m80hauxxh",
     "brand": "SAMSUNG",
     "model": "UE55M80HAUXXH",
@@ -14744,7 +14796,7 @@
         "handle": "samsung-ue55m80hauxxh"
       },
       "Neptun": {
-        "price": 25999,
+        "price": 29999,
         "regularPrice": 37999,
         "inStock": true,
         "image": "/images/tvs/neptun/samsung-ue-55-m80h-auxxh-55-4k-miniled-144hz-297728.jpg",
@@ -14912,6 +14964,48 @@
         "inStock": true,
         "image": "/images/tvs/neptun/samsung-ue-65-m70h-auxxh-65-4k-uhd-50hz-120hz-298177.jpg",
         "url": "https://www.neptun.mk/84121666-SAMSUNG-UE-65-M70H-AUXXH"
+      }
+    }
+  },
+  {
+    "id": "samsung-samsung-ue65m72hauxxh",
+    "brand": "SAMSUNG",
+    "model": "UE65M72HAUXXH",
+    "size": 65,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20UE50M72HAUXXH_92450-01M52F1R9NA4GBD8F9N8GRC5BM.png",
+    "stores": {
+      "Setec": {
+        "price": 35999,
+        "regularPrice": 45999,
+        "inStock": true,
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20UE50M72HAUXXH_92450-01M52F1R9NA4GBD8F9N8GRC5BM.png",
+        "handle": "samsung-ue65m72hauxxh"
+      },
+      "Neptun": {
+        "price": 45999,
+        "regularPrice": 45999,
+        "inStock": true,
+        "image": "/images/tvs/neptun/samsung-ue-65-m72h-auxxh-301311.jpg",
+        "url": "https://www.neptun.mk/84123987-SAMSUNG-UE-65-M72H-AUXXH"
       }
     }
   },
@@ -17528,6 +17622,41 @@
     "stores": {}
   },
   {
+    "id": "tcl-tcl-50s5l",
+    "brand": "TCL",
+    "model": "50S5L",
+    "size": 50,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2050S5L_92435-01M4FVW7D3C9WJ0GXVXG9BSQMQ.png",
+    "stores": {
+      "Setec": {
+        "price": 20999,
+        "regularPrice": 22999,
+        "inStock": false,
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2050S5L_92435-01M4FVW7D3C9WJ0GXVXG9BSQMQ.png",
+        "handle": "tcl-50s5l"
+      }
+    }
+  },
+  {
     "id": "tcl-50t69c",
     "brand": "TCL",
     "model": "50T69C",
@@ -17690,7 +17819,7 @@
         "handle": "tcl-55c69k-pro"
       },
       "Neptun": {
-        "price": 29999,
+        "price": 26999,
         "regularPrice": 34999,
         "inStock": true,
         "image": "/images/tvs/neptun/tcl-55-c69k-55-4k-mini-led-144hz-293195.jpg",
@@ -17777,6 +17906,41 @@
         "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79441_TCL 55C71K-01K0BTETKHCFKAQS30QEHHVZVT.jpg",
         "handle": "tcl-55c71k"
+      }
+    }
+  },
+  {
+    "id": "tcl-tcl-55c79l",
+    "brand": "TCL",
+    "model": "55C79L",
+    "size": 55,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2055C79L_92438-01M4G9G1A7AQ383AZFHB5TRFJN.png",
+    "stores": {
+      "Setec": {
+        "price": 50999,
+        "regularPrice": 54999,
+        "inStock": false,
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2055C79L_92438-01M4G9G1A7AQ383AZFHB5TRFJN.png",
+        "handle": "tcl-55c79l"
       }
     }
   },
@@ -17887,6 +18051,41 @@
         "inStock": true,
         "image": "/images/tvs/neptun/tcl-55-p69k-55-4k-dled-290624.jpg",
         "url": "https://www.neptun.mk/84115809-TCL-55-P69K"
+      }
+    }
+  },
+  {
+    "id": "tcl-tcl-55p6l",
+    "brand": "TCL",
+    "model": "55P6L",
+    "size": 55,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2055P6L_92436-01M4G9N8F33GD0BE2YYJCQPDWQ.png",
+    "stores": {
+      "Setec": {
+        "price": 25999,
+        "regularPrice": 28999,
+        "inStock": false,
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2055P6L_92436-01M4G9N8F33GD0BE2YYJCQPDWQ.png",
+        "handle": "tcl-55p6l"
       }
     }
   },
@@ -18053,6 +18252,41 @@
     }
   },
   {
+    "id": "tcl-tcl-55p89l",
+    "brand": "TCL",
+    "model": "55P89L",
+    "size": 55,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2055P89L_92439-01M4G9SA1C0NNZ8M06M8E3E6T9.png",
+    "stores": {
+      "Setec": {
+        "price": 32999,
+        "regularPrice": 36999,
+        "inStock": false,
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2055P89L_92439-01M4G9SA1C0NNZ8M06M8E3E6T9.png",
+        "handle": "tcl-55p89l"
+      }
+    }
+  },
+  {
     "id": "tcl-55t69c",
     "brand": "TCL",
     "model": "55T69C",
@@ -18168,7 +18402,7 @@
     "image": "/images/tvs/neptun/tcl-65-c7l-144hz-b-o-299141.jpg",
     "stores": {
       "Neptun": {
-        "price": 62999,
+        "price": 59999,
         "regularPrice": 62999,
         "inStock": true,
         "image": "/images/tvs/neptun/tcl-65-c7l-144hz-b-o-299141.jpg",
@@ -18332,7 +18566,7 @@
     "image": "/images/tvs/neptun/tcl-65-c79k-65-4k-qd-mini-led-144hz-audio-by-b-o-297931.jpg",
     "stores": {
       "Neptun": {
-        "price": 56999,
+        "price": 49999,
         "regularPrice": 62999,
         "inStock": true,
         "image": "/images/tvs/neptun/tcl-65-c79k-65-4k-qd-mini-led-144hz-audio-by-b-o-297931.jpg",
@@ -18378,6 +18612,41 @@
         "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92364_TCL%2065C79L-01KWXZW6JWASSTHHNE57K3Z51G.jpg",
         "handle": "tcl-65c79l"
+      }
+    }
+  },
+  {
+    "id": "tcl-tcl-65c89l",
+    "brand": "TCL",
+    "model": "65C89L",
+    "size": 65,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2065C89L_92440-01M4G9Y9DE1EB43YX1BXJGENJR.png",
+    "stores": {
+      "Setec": {
+        "price": 82999,
+        "regularPrice": 89999,
+        "inStock": false,
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2065C89L_92440-01M4G9Y9DE1EB43YX1BXJGENJR.png",
+        "handle": "tcl-65c89l"
       }
     }
   },
@@ -18647,11 +18916,46 @@
     "image": "/images/tvs/neptun/tcl-65-p89l-144hz-299144.jpg",
     "stores": {
       "Neptun": {
-        "price": 32999,
+        "price": 39999,
         "regularPrice": 42999,
         "inStock": true,
         "image": "/images/tvs/neptun/tcl-65-p89l-144hz-65-299144.jpg",
         "url": "https://www.neptun.mk/84122362-TCL-65-P89L-144Hz"
+      }
+    }
+  },
+  {
+    "id": "tcl-tcl-65rm7l",
+    "brand": "TCL",
+    "model": "65RM7L",
+    "size": 65,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2065RM7L_92443-01M4GA2E65HN5B1VDEZ9B1QHCE.png",
+    "stores": {
+      "Setec": {
+        "price": 72999,
+        "regularPrice": 79999,
+        "inStock": false,
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2065RM7L_92443-01M4GA2E65HN5B1VDEZ9B1QHCE.png",
+        "handle": "tcl-65rm7l"
       }
     }
   },
@@ -18942,6 +19246,41 @@
     }
   },
   {
+    "id": "tcl-tcl-75c89l",
+    "brand": "TCL",
+    "model": "75C89L",
+    "size": 75,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2075C89L_92441-01M4GA64D1QQ9Q21FTBG3ZESZV.png",
+    "stores": {
+      "Setec": {
+        "price": 103999,
+        "regularPrice": 109999,
+        "inStock": false,
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2075C89L_92441-01M4GA64D1QQ9Q21FTBG3ZESZV.png",
+        "handle": "tcl-75c89l"
+      }
+    }
+  },
+  {
     "id": "tcl-75p61k",
     "brand": "TCL",
     "model": "75P61K",
@@ -19187,6 +19526,41 @@
     }
   },
   {
+    "id": "tcl-tcl-75rm7l",
+    "brand": "TCL",
+    "model": "75RM7L",
+    "size": 75,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2075RM7L_92444-01M4GAVF48G02JTRFR0XPTWM3J.png",
+    "stores": {
+      "Setec": {
+        "price": 89999,
+        "regularPrice": 96999,
+        "inStock": false,
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2075RM7L_92444-01M4GAVF48G02JTRFR0XPTWM3J.png",
+        "handle": "tcl-75rm7l"
+      }
+    }
+  },
+  {
     "id": "tcl-75v6c",
     "brand": "TCL",
     "model": "75V6C",
@@ -19423,6 +19797,41 @@
     }
   },
   {
+    "id": "tcl-tcl-85c89l",
+    "brand": "TCL",
+    "model": "85C89L",
+    "size": 85,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2085C89L_92442-01M4GB1HSTTGV3JQ8NCV98EXR7.png",
+    "stores": {
+      "Setec": {
+        "price": 129999,
+        "regularPrice": 139999,
+        "inStock": false,
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2085C89L_92442-01M4GB1HSTTGV3JQ8NCV98EXR7.png",
+        "handle": "tcl-85c89l"
+      }
+    }
+  },
+  {
     "id": "tcl-85p71k",
     "brand": "TCL",
     "model": "85P71K",
@@ -19581,6 +19990,41 @@
         "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79446_TCL 85P81K-01K0BVBC7339V539W41FT8050Q.jpg",
         "handle": "tcl-85p81k"
+      }
+    }
+  },
+  {
+    "id": "tcl-tcl-85rm7l",
+    "brand": "TCL",
+    "model": "85RM7L",
+    "size": 85,
+    "technology": "LED",
+    "resolution": "4K",
+    "refreshRate": 60,
+    "year": 2026,
+    "os": "Smart TV",
+    "hdr": false,
+    "dolbyVision": false,
+    "hdmi": 0,
+    "usb": 0,
+    "vrr": false,
+    "allm": false,
+    "pictureProcessor": "—",
+    "hdrFormats": [],
+    "brightness": "—",
+    "audioPower": 0,
+    "audioChannels": "2.0",
+    "dolbyAtmos": false,
+    "freeSync": false,
+    "gSync": false,
+    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2085RM7L_92445-01M4GB6ZW4FEK3W8X3MXTNRBYB.png",
+    "stores": {
+      "Setec": {
+        "price": 114999,
+        "regularPrice": 119999,
+        "inStock": false,
+        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2085RM7L_92445-01M4GB6ZW4FEK3W8X3MXTNRBYB.png",
+        "handle": "tcl-85rm7l"
       }
     }
   },
@@ -19785,356 +20229,6 @@
         "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79269_TCL 98P81K-01JY6Q348ENREV19NXD5JZ1HS3.jpg",
         "handle": "tcl-98p81k"
-      }
-    }
-  },
-  {
-    "id": "tcl-tcl-50s5l",
-    "brand": "TCL",
-    "model": "50S5L",
-    "size": 50,
-    "technology": "LED",
-    "resolution": "4K",
-    "refreshRate": 60,
-    "year": 2026,
-    "os": "Smart TV",
-    "hdr": false,
-    "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
-    "brightness": "—",
-    "audioPower": 0,
-    "audioChannels": "2.0",
-    "dolbyAtmos": false,
-    "freeSync": false,
-    "gSync": false,
-    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2050S5L_92435-01M4FVW7D3C9WJ0GXVXG9BSQMQ.png",
-    "stores": {
-      "Setec": {
-        "price": 20999,
-        "regularPrice": 22999,
-        "inStock": false,
-        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2050S5L_92435-01M4FVW7D3C9WJ0GXVXG9BSQMQ.png",
-        "handle": "tcl-50s5l"
-      }
-    }
-  },
-  {
-    "id": "tcl-tcl-55c79l",
-    "brand": "TCL",
-    "model": "55C79L",
-    "size": 55,
-    "technology": "LED",
-    "resolution": "4K",
-    "refreshRate": 60,
-    "year": 2026,
-    "os": "Smart TV",
-    "hdr": false,
-    "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
-    "brightness": "—",
-    "audioPower": 0,
-    "audioChannels": "2.0",
-    "dolbyAtmos": false,
-    "freeSync": false,
-    "gSync": false,
-    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2055C79L_92438-01M4G9G1A7AQ383AZFHB5TRFJN.png",
-    "stores": {
-      "Setec": {
-        "price": 50999,
-        "regularPrice": 54999,
-        "inStock": false,
-        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2055C79L_92438-01M4G9G1A7AQ383AZFHB5TRFJN.png",
-        "handle": "tcl-55c79l"
-      }
-    }
-  },
-  {
-    "id": "tcl-tcl-55p6l",
-    "brand": "TCL",
-    "model": "55P6L",
-    "size": 55,
-    "technology": "LED",
-    "resolution": "4K",
-    "refreshRate": 60,
-    "year": 2026,
-    "os": "Smart TV",
-    "hdr": false,
-    "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
-    "brightness": "—",
-    "audioPower": 0,
-    "audioChannels": "2.0",
-    "dolbyAtmos": false,
-    "freeSync": false,
-    "gSync": false,
-    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2055P6L_92436-01M4G9N8F33GD0BE2YYJCQPDWQ.png",
-    "stores": {
-      "Setec": {
-        "price": 25999,
-        "regularPrice": 28999,
-        "inStock": false,
-        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2055P6L_92436-01M4G9N8F33GD0BE2YYJCQPDWQ.png",
-        "handle": "tcl-55p6l"
-      }
-    }
-  },
-  {
-    "id": "tcl-tcl-55p89l",
-    "brand": "TCL",
-    "model": "55P89L",
-    "size": 55,
-    "technology": "LED",
-    "resolution": "4K",
-    "refreshRate": 60,
-    "year": 2026,
-    "os": "Smart TV",
-    "hdr": false,
-    "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
-    "brightness": "—",
-    "audioPower": 0,
-    "audioChannels": "2.0",
-    "dolbyAtmos": false,
-    "freeSync": false,
-    "gSync": false,
-    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2055P89L_92439-01M4G9SA1C0NNZ8M06M8E3E6T9.png",
-    "stores": {
-      "Setec": {
-        "price": 32999,
-        "regularPrice": 36999,
-        "inStock": false,
-        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2055P89L_92439-01M4G9SA1C0NNZ8M06M8E3E6T9.png",
-        "handle": "tcl-55p89l"
-      }
-    }
-  },
-  {
-    "id": "tcl-tcl-65c89l",
-    "brand": "TCL",
-    "model": "65C89L",
-    "size": 65,
-    "technology": "LED",
-    "resolution": "4K",
-    "refreshRate": 60,
-    "year": 2026,
-    "os": "Smart TV",
-    "hdr": false,
-    "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
-    "brightness": "—",
-    "audioPower": 0,
-    "audioChannels": "2.0",
-    "dolbyAtmos": false,
-    "freeSync": false,
-    "gSync": false,
-    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2065C89L_92440-01M4G9Y9DE1EB43YX1BXJGENJR.png",
-    "stores": {
-      "Setec": {
-        "price": 82999,
-        "regularPrice": 89999,
-        "inStock": false,
-        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2065C89L_92440-01M4G9Y9DE1EB43YX1BXJGENJR.png",
-        "handle": "tcl-65c89l"
-      }
-    }
-  },
-  {
-    "id": "tcl-tcl-65rm7l",
-    "brand": "TCL",
-    "model": "65RM7L",
-    "size": 65,
-    "technology": "LED",
-    "resolution": "4K",
-    "refreshRate": 60,
-    "year": 2026,
-    "os": "Smart TV",
-    "hdr": false,
-    "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
-    "brightness": "—",
-    "audioPower": 0,
-    "audioChannels": "2.0",
-    "dolbyAtmos": false,
-    "freeSync": false,
-    "gSync": false,
-    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2065RM7L_92443-01M4GA2E65HN5B1VDEZ9B1QHCE.png",
-    "stores": {
-      "Setec": {
-        "price": 72999,
-        "regularPrice": 79999,
-        "inStock": false,
-        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2065RM7L_92443-01M4GA2E65HN5B1VDEZ9B1QHCE.png",
-        "handle": "tcl-65rm7l"
-      }
-    }
-  },
-  {
-    "id": "tcl-tcl-75c89l",
-    "brand": "TCL",
-    "model": "75C89L",
-    "size": 75,
-    "technology": "LED",
-    "resolution": "4K",
-    "refreshRate": 60,
-    "year": 2026,
-    "os": "Smart TV",
-    "hdr": false,
-    "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
-    "brightness": "—",
-    "audioPower": 0,
-    "audioChannels": "2.0",
-    "dolbyAtmos": false,
-    "freeSync": false,
-    "gSync": false,
-    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2075C89L_92441-01M4GA64D1QQ9Q21FTBG3ZESZV.png",
-    "stores": {
-      "Setec": {
-        "price": 103999,
-        "regularPrice": 109999,
-        "inStock": false,
-        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2075C89L_92441-01M4GA64D1QQ9Q21FTBG3ZESZV.png",
-        "handle": "tcl-75c89l"
-      }
-    }
-  },
-  {
-    "id": "tcl-tcl-75rm7l",
-    "brand": "TCL",
-    "model": "75RM7L",
-    "size": 75,
-    "technology": "LED",
-    "resolution": "4K",
-    "refreshRate": 60,
-    "year": 2026,
-    "os": "Smart TV",
-    "hdr": false,
-    "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
-    "brightness": "—",
-    "audioPower": 0,
-    "audioChannels": "2.0",
-    "dolbyAtmos": false,
-    "freeSync": false,
-    "gSync": false,
-    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2075RM7L_92444-01M4GAVF48G02JTRFR0XPTWM3J.png",
-    "stores": {
-      "Setec": {
-        "price": 89999,
-        "regularPrice": 96999,
-        "inStock": false,
-        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2075RM7L_92444-01M4GAVF48G02JTRFR0XPTWM3J.png",
-        "handle": "tcl-75rm7l"
-      }
-    }
-  },
-  {
-    "id": "tcl-tcl-85c89l",
-    "brand": "TCL",
-    "model": "85C89L",
-    "size": 85,
-    "technology": "LED",
-    "resolution": "4K",
-    "refreshRate": 60,
-    "year": 2026,
-    "os": "Smart TV",
-    "hdr": false,
-    "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
-    "brightness": "—",
-    "audioPower": 0,
-    "audioChannels": "2.0",
-    "dolbyAtmos": false,
-    "freeSync": false,
-    "gSync": false,
-    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2085C89L_92442-01M4GB1HSTTGV3JQ8NCV98EXR7.png",
-    "stores": {
-      "Setec": {
-        "price": 129999,
-        "regularPrice": 139999,
-        "inStock": false,
-        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2085C89L_92442-01M4GB1HSTTGV3JQ8NCV98EXR7.png",
-        "handle": "tcl-85c89l"
-      }
-    }
-  },
-  {
-    "id": "tcl-tcl-85rm7l",
-    "brand": "TCL",
-    "model": "85RM7L",
-    "size": 85,
-    "technology": "LED",
-    "resolution": "4K",
-    "refreshRate": 60,
-    "year": 2026,
-    "os": "Smart TV",
-    "hdr": false,
-    "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
-    "brightness": "—",
-    "audioPower": 0,
-    "audioChannels": "2.0",
-    "dolbyAtmos": false,
-    "freeSync": false,
-    "gSync": false,
-    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2085RM7L_92445-01M4GB6ZW4FEK3W8X3MXTNRBYB.png",
-    "stores": {
-      "Setec": {
-        "price": 114999,
-        "regularPrice": 119999,
-        "inStock": false,
-        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/TCL%2085RM7L_92445-01M4GB6ZW4FEK3W8X3MXTNRBYB.png",
-        "handle": "tcl-85rm7l"
       }
     }
   },
@@ -21323,87 +21417,6 @@
         "inStock": true,
         "image": "/images/tvs/anhoch/tv-xiaomi-tv-a-55-4k-qled-google-9202.jpg",
         "url": "tv-xiaomi-tv-a-55-4k-qled-google-9202"
-      }
-    }
-  },
-  {
-    "id": "philips-philips-75pqs8611",
-    "brand": "PHILIPS",
-    "model": "75PQS8611",
-    "size": 75,
-    "technology": "LED",
-    "resolution": "4K",
-    "refreshRate": 60,
-    "year": 2026,
-    "os": "TITAN OS",
-    "hdr": true,
-    "dolbyVision": false,
-    "hdmi": 3,
-    "usb": 2,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "P5 Picture Engine",
-    "hdrFormats": [
-      "HDR10",
-      "HLG"
-    ],
-    "brightness": "—",
-    "audioPower": 20,
-    "audioChannels": "2.0",
-    "dolbyAtmos": true,
-    "freeSync": false,
-    "gSync": false,
-    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/PHILIPS%2075PQS8611_92447-01M526PZY7JWQBTT45NS7GCPXK.png",
-    "stores": {
-      "Setec": {
-        "price": 49999,
-        "regularPrice": 54999,
-        "inStock": false,
-        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/PHILIPS%2075PQS8611_92447-01M526PZY7JWQBTT45NS7GCPXK.png",
-        "handle": "philips-75pqs8611"
-      }
-    },
-    "specsSource": null
-  },
-  {
-    "id": "samsung-samsung-ue55m72hauxxh",
-    "brand": "SAMSUNG",
-    "model": "UE55M72HAUXXH",
-    "size": 55,
-    "technology": "LED",
-    "resolution": "4K",
-    "refreshRate": 60,
-    "year": 2026,
-    "os": "Smart TV",
-    "hdr": false,
-    "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
-    "brightness": "—",
-    "audioPower": 0,
-    "audioChannels": "2.0",
-    "dolbyAtmos": false,
-    "freeSync": false,
-    "gSync": false,
-    "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20UE50M72HAUXXH_92450-01M52EZ46K3RGTH5JZQ62R0CXW.png",
-    "stores": {
-      "Setec": {
-        "price": 27999,
-        "regularPrice": 33999,
-        "inStock": true,
-        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20UE50M72HAUXXH_92450-01M52EZ46K3RGTH5JZQ62R0CXW.png",
-        "handle": "samsung-ue55m72hauxxh"
-      },
-      "Neptun": {
-        "price": 33999,
-        "regularPrice": 33999,
-        "inStock": true,
-        "image": "/images/tvs/neptun/samsung-ue-55-m72h-auxxh-301310.jpg",
-        "url": "https://www.neptun.mk/84123986-SAMSUNG-UE-55-M72H-AUXXH"
       }
     }
   }

@@ -39,5 +39,87 @@
       "нов модел — чека преглед"
     ],
     "discoveredAt": "2026-10-20"
+  },
+  {
+    "tv": {
+      "id": "hisense-50-a7-nq",
+      "brand": "HISENSE",
+      "model": "50 A7 NQ",
+      "size": 50,
+      "technology": "LED",
+      "resolution": "4K",
+      "refreshRate": 60,
+      "year": 2026,
+      "os": "Smart TV",
+      "hdr": false,
+      "dolbyVision": false,
+      "hdmi": 0,
+      "usb": 0,
+      "vrr": false,
+      "allm": false,
+      "pictureProcessor": "—",
+      "hdrFormats": [],
+      "brightness": "—",
+      "audioPower": 0,
+      "audioChannels": "2.0",
+      "dolbyAtmos": false,
+      "freeSync": false,
+      "gSync": false,
+      "image": "/images/tvs/neptun/4k-qled-uhd-smart-hisense-50-a7-nq-50-126cm-283301.jpg",
+      "stores": {
+        "Neptun": {
+          "price": 17995,
+          "regularPrice": 23999,
+          "inStock": true,
+          "image": "/images/tvs/neptun/4k-qled-uhd-smart-hisense-50-a7-nq-50-126cm-283301.jpg",
+          "url": "https://www.neptun.mk/HISENSE-50-A7-NQ"
+        }
+      }
+    },
+    "reasons": [
+      "нов модел — чека преглед"
+    ],
+    "discoveredAt": "2026-10-22"
+  },
+  {
+    "tv": {
+      "id": "samsung-frame-qe-55-ls03h-auxxh",
+      "brand": "SAMSUNG",
+      "model": "FRAME QE 55 LS03H AUXXH",
+      "size": 55,
+      "technology": "LED",
+      "resolution": "4K",
+      "refreshRate": 60,
+      "year": 2026,
+      "os": "Smart TV",
+      "hdr": false,
+      "dolbyVision": false,
+      "hdmi": 0,
+      "usb": 0,
+      "vrr": false,
+      "allm": false,
+      "pictureProcessor": "—",
+      "hdrFormats": [],
+      "brightness": "—",
+      "audioPower": 0,
+      "audioChannels": "2.0",
+      "dolbyAtmos": false,
+      "freeSync": false,
+      "gSync": false,
+      "image": "/images/tvs/neptun/samsung-frame-qe-55-ls03h-auxxh-298173.jpg",
+      "stores": {
+        "Neptun": {
+          "price": 59999,
+          "regularPrice": 84999,
+          "inStock": true,
+          "image": "/images/tvs/neptun/samsung-frame-qe-55-ls03h-auxxh-298173.jpg",
+          "url": "https://www.neptun.mk/84121662-SAMSUNG-FRAME-QE-55-LS03H-AUXXH"
+        }
+      }
+    },
+    "reasons": [
+      "нов модел — чека преглед"
+    ],
+    "discoveredAt": "2026-10-22"
   }
 ]

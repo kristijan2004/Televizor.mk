@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-10-21T01:32:22.746Z",
+  "takenAt": "2026-10-22T01:31:41.215Z",
   "source": "staging/src/Data/masterTvs.json",
   "listings": {
     "aiwa-43n21|Anhoch": {
@@ -178,7 +178,7 @@
       "brand": "BEKO",
       "model": "65BHU7800",
       "size": 65,
-      "price": 24999,
+      "price": 22999,
       "regularPrice": 31999,
       "inStock": true
     },
@@ -648,7 +648,7 @@
       "brand": "HISENSE",
       "model": "40A4S",
       "size": 40,
-      "price": 12999,
+      "price": 12499,
       "regularPrice": 15999,
       "inStock": true
     },
@@ -792,6 +792,16 @@
       "regularPrice": 28999,
       "inStock": true
     },
+    "hisense-55e7q|Neptun": {
+      "id": "hisense-55e7q",
+      "store": "Neptun",
+      "brand": "HISENSE",
+      "model": "55E7Q",
+      "size": 55,
+      "price": 19999,
+      "regularPrice": 28999,
+      "inStock": true
+    },
     "hisense-55e7q-pro|Setec": {
       "id": "hisense-55e7q-pro",
       "store": "Setec",
@@ -808,7 +818,7 @@
       "brand": "HISENSE",
       "model": "55E7S",
       "size": 55,
-      "price": 24999,
+      "price": 18999,
       "regularPrice": 27999,
       "inStock": true
     },
@@ -839,6 +849,16 @@
       "model": "55E7S PRO",
       "size": 55,
       "price": 32999,
+      "regularPrice": 39999,
+      "inStock": true
+    },
+    "hisense-hisense-55e8q|Setec": {
+      "id": "hisense-hisense-55e8q",
+      "store": "Setec",
+      "brand": "HISENSE",
+      "model": "55E8Q",
+      "size": 55,
+      "price": 34999,
       "regularPrice": 39999,
       "inStock": true
     },
@@ -878,7 +898,7 @@
       "brand": "HISENSE",
       "model": "65 Q7S",
       "size": 65,
-      "price": 36999,
+      "price": 29999,
       "regularPrice": 36999,
       "inStock": true
     },
@@ -1212,16 +1232,6 @@
       "regularPrice": 92990,
       "inStock": true
     },
-    "hisense-hisense-55e8q|Setec": {
-      "id": "hisense-hisense-55e8q",
-      "store": "Setec",
-      "brand": "HISENSE",
-      "model": "55E8Q",
-      "size": 55,
-      "price": 34999,
-      "regularPrice": 39999,
-      "inStock": true
-    },
     "jvc-32vh5300|Anhoch": {
       "id": "jvc-32vh5300",
       "store": "Anhoch",
@@ -1448,7 +1458,7 @@
       "brand": "LG",
       "model": "43 NU850 B3LA",
       "size": 43,
-      "price": 22999,
+      "price": 21999,
       "regularPrice": 22999,
       "inStock": true
     },
@@ -1458,7 +1468,7 @@
       "brand": "LG",
       "model": "43 QNED81 B3C",
       "size": 43,
-      "price": 28999,
+      "price": 27999,
       "regularPrice": 28999,
       "inStock": true
     },
@@ -1528,7 +1538,7 @@
       "brand": "LG",
       "model": "50UA75003LA",
       "size": 50,
-      "price": 26999,
+      "price": 25999,
       "regularPrice": 26999,
       "inStock": true
     },
@@ -1538,7 +1548,7 @@
       "brand": "LG",
       "model": "55 B6 ELC",
       "size": 55,
-      "price": 76999,
+      "price": 69999,
       "regularPrice": 76999,
       "inStock": true
     },
@@ -1638,7 +1648,7 @@
       "brand": "LG",
       "model": "55NANO80A3B",
       "size": 55,
-      "price": 32999,
+      "price": 31999,
       "regularPrice": 32999,
       "inStock": true
     },
@@ -1648,7 +1658,7 @@
       "brand": "LG",
       "model": "55QNED70B3C",
       "size": 55,
-      "price": 22999,
+      "price": 29999,
       "regularPrice": 38999,
       "inStock": true
     },
@@ -1658,7 +1668,7 @@
       "brand": "LG",
       "model": "55QNED80A3A",
       "size": 55,
-      "price": 43999,
+      "price": 42999,
       "regularPrice": 43999,
       "inStock": true
     },
@@ -1668,7 +1678,7 @@
       "brand": "LG",
       "model": "55QNED81B3A",
       "size": 55,
-      "price": 42999,
+      "price": 41999,
       "regularPrice": 42999,
       "inStock": true
     },
@@ -1768,7 +1778,7 @@
       "brand": "LG",
       "model": "65 NU850 B3LA",
       "size": 65,
-      "price": 42999,
+      "price": 41999,
       "regularPrice": 42999,
       "inStock": true
     },
@@ -1788,7 +1798,7 @@
       "brand": "LG",
       "model": "65 QNED72 B3B",
       "size": 65,
-      "price": 49999,
+      "price": 48999,
       "regularPrice": 49999,
       "inStock": true
     },
@@ -1808,7 +1818,7 @@
       "brand": "LG",
       "model": "65B62LA",
       "size": 65,
-      "price": 86999,
+      "price": 84999,
       "regularPrice": 109999,
       "inStock": true
     },
@@ -1818,7 +1828,7 @@
       "brand": "LG",
       "model": "65C61LA",
       "size": 65,
-      "price": 112999,
+      "price": 109999,
       "regularPrice": 126999,
       "inStock": true
     },
@@ -1828,7 +1838,7 @@
       "brand": "LG",
       "model": "65NANO80A3B",
       "size": 65,
-      "price": 42999,
+      "price": 41999,
       "regularPrice": 42999,
       "inStock": true
     },
@@ -1848,7 +1858,7 @@
       "brand": "LG",
       "model": "65QNED70B3C",
       "size": 65,
-      "price": 34999,
+      "price": 36999,
       "regularPrice": 47999,
       "inStock": true
     },
@@ -1858,7 +1868,7 @@
       "brand": "LG",
       "model": "65QNED80A3A",
       "size": 65,
-      "price": 54999,
+      "price": 53999,
       "regularPrice": 54999,
       "inStock": true
     },
@@ -1870,6 +1880,16 @@
       "size": 65,
       "price": 44999,
       "regularPrice": 52999,
+      "inStock": true
+    },
+    "lg-65qned92a6a|Neptun": {
+      "id": "lg-65qned92a6a",
+      "store": "Neptun",
+      "brand": "LG",
+      "model": "65QNED92A6A",
+      "size": 65,
+      "price": 39995,
+      "regularPrice": 71999,
       "inStock": true
     },
     "lg-75-mrgb-87b3b|Neptun": {
@@ -1888,7 +1908,7 @@
       "brand": "LG",
       "model": "75 NU800 B3LA",
       "size": 75,
-      "price": 40999,
+      "price": 38999,
       "regularPrice": 46999,
       "inStock": true
     },
@@ -1908,7 +1928,7 @@
       "brand": "LG",
       "model": "75NANO80A3B",
       "size": 75,
-      "price": 64599,
+      "price": 63599,
       "regularPrice": 64599,
       "inStock": true
     },
@@ -1928,7 +1948,7 @@
       "brand": "LG",
       "model": "75QNED8MB6A",
       "size": 75,
-      "price": 44999,
+      "price": 59999,
       "regularPrice": 74999,
       "inStock": true
     },
@@ -1938,7 +1958,7 @@
       "brand": "LG",
       "model": "77 B6 ELC",
       "size": 77,
-      "price": 99999,
+      "price": 129999,
       "regularPrice": 134999,
       "inStock": true
     },
@@ -2008,7 +2028,7 @@
       "brand": "LG",
       "model": "85 NU850 B3LA",
       "size": 85,
-      "price": 76999,
+      "price": 75999,
       "regularPrice": 76999,
       "inStock": true
     },
@@ -2842,6 +2862,16 @@
       "regularPrice": 82999,
       "inStock": true
     },
+    "philips-philips-65oled801|Setec": {
+      "id": "philips-philips-65oled801",
+      "store": "Setec",
+      "brand": "PHILIPS",
+      "model": "65OLED801",
+      "size": 65,
+      "price": 89999,
+      "regularPrice": 99999,
+      "inStock": false
+    },
     "philips-65oled820|Setec": {
       "id": "philips-65oled820",
       "store": "Setec",
@@ -3032,6 +3062,16 @@
       "regularPrice": 69999,
       "inStock": true
     },
+    "philips-philips-75pqs8611|Setec": {
+      "id": "philips-philips-75pqs8611",
+      "store": "Setec",
+      "brand": "PHILIPS",
+      "model": "75PQS8611",
+      "size": 75,
+      "price": 49999,
+      "regularPrice": 54999,
+      "inStock": false
+    },
     "philips-75pus7000|Setec": {
       "id": "philips-75pus7000",
       "store": "Setec",
@@ -3111,16 +3151,6 @@
       "price": 73999,
       "regularPrice": 79999,
       "inStock": true
-    },
-    "philips-philips-65oled801|Setec": {
-      "id": "philips-philips-65oled801",
-      "store": "Setec",
-      "brand": "PHILIPS",
-      "model": "65OLED801",
-      "size": 65,
-      "price": 89999,
-      "regularPrice": 99999,
-      "inStock": false
     },
     "samsung-hg55q60aaeuxeh|Setec": {
       "id": "samsung-hg55q60aaeuxeh",
@@ -3432,6 +3462,16 @@
       "regularPrice": 46999,
       "inStock": true
     },
+    "samsung-samsung-qe55qn72hauxxh|Setec": {
+      "id": "samsung-samsung-qe55qn72hauxxh",
+      "store": "Setec",
+      "brand": "SAMSUNG",
+      "model": "QE55QN72HAUXXH",
+      "size": 55,
+      "price": 42999,
+      "regularPrice": 46999,
+      "inStock": true
+    },
     "samsung-qe55qn80fauxxh|Setec": {
       "id": "samsung-qe55qn80fauxxh",
       "store": "Setec",
@@ -3500,7 +3540,7 @@
       "size": 55,
       "price": 49995,
       "regularPrice": 109999,
-      "inStock": false
+      "inStock": true
     },
     "samsung-qe55s90haexxh|Setec": {
       "id": "samsung-qe55s90haexxh",
@@ -3592,6 +3632,16 @@
       "regularPrice": 107999,
       "inStock": false
     },
+    "samsung-qe65ls03hauxxh|Neptun": {
+      "id": "samsung-qe65ls03hauxxh",
+      "store": "Neptun",
+      "brand": "SAMSUNG",
+      "model": "QE65LS03HAUXXH",
+      "size": 65,
+      "price": 79999,
+      "regularPrice": 107999,
+      "inStock": true
+    },
     "samsung-qe65ls03hwuxxh|Setec": {
       "id": "samsung-qe65ls03hwuxxh",
       "store": "Setec",
@@ -3615,16 +3665,6 @@
     "samsung-qe65q7faauxxh|Setec": {
       "id": "samsung-qe65q7faauxxh",
       "store": "Setec",
-      "brand": "SAMSUNG",
-      "model": "QE65Q7FAAUXXH",
-      "size": 65,
-      "price": 33995,
-      "regularPrice": 59999,
-      "inStock": true
-    },
-    "samsung-qe65q7faauxxh|Neptun": {
-      "id": "samsung-qe65q7faauxxh",
-      "store": "Neptun",
       "brand": "SAMSUNG",
       "model": "QE65Q7FAAUXXH",
       "size": 65,
@@ -3672,6 +3712,16 @@
       "regularPrice": 62999,
       "inStock": true
     },
+    "samsung-samsung-qe65qn72hauxxh|Setec": {
+      "id": "samsung-samsung-qe65qn72hauxxh",
+      "store": "Setec",
+      "brand": "SAMSUNG",
+      "model": "QE65QN72HAUXXH",
+      "size": 65,
+      "price": 49999,
+      "regularPrice": 59999,
+      "inStock": true
+    },
     "samsung-qe65qn800ctxxh|Setec": {
       "id": "samsung-qe65qn800ctxxh",
       "store": "Setec",
@@ -3708,7 +3758,7 @@
       "brand": "SAMSUNG",
       "model": "QE65QN80HAUXXH",
       "size": 65,
-      "price": 68999,
+      "price": 67999,
       "regularPrice": 84999,
       "inStock": true
     },
@@ -3758,7 +3808,7 @@
       "brand": "SAMSUNG",
       "model": "QE65S90HAEXXH",
       "size": 65,
-      "price": 78999,
+      "price": 94999,
       "regularPrice": 129999,
       "inStock": true
     },
@@ -3920,76 +3970,6 @@
       "size": 85,
       "price": 66995,
       "regularPrice": 109999,
-      "inStock": true
-    },
-    "samsung-qe85qn800ctxxh|Setec": {
-      "id": "samsung-qe85qn800ctxxh",
-      "store": "Setec",
-      "brand": "SAMSUNG",
-      "model": "QE85QN800CTXXH",
-      "size": 85,
-      "price": 427799,
-      "regularPrice": 433999,
-      "inStock": false
-    },
-    "samsung-samsung-qe55qn72hauxxh|Setec": {
-      "id": "samsung-samsung-qe55qn72hauxxh",
-      "store": "Setec",
-      "brand": "SAMSUNG",
-      "model": "QE55QN72HAUXXH",
-      "size": 55,
-      "price": 42999,
-      "regularPrice": 46999,
-      "inStock": true
-    },
-    "samsung-samsung-qe65qn72hauxxh|Setec": {
-      "id": "samsung-samsung-qe65qn72hauxxh",
-      "store": "Setec",
-      "brand": "SAMSUNG",
-      "model": "QE65QN72HAUXXH",
-      "size": 65,
-      "price": 49999,
-      "regularPrice": 59999,
-      "inStock": true
-    },
-    "samsung-samsung-ue50m72hauxxh|Setec": {
-      "id": "samsung-samsung-ue50m72hauxxh",
-      "store": "Setec",
-      "brand": "SAMSUNG",
-      "model": "UE50M72HAUXXH",
-      "size": 50,
-      "price": 24999,
-      "regularPrice": 30999,
-      "inStock": true
-    },
-    "samsung-samsung-ue55m72hauxxh|Setec": {
-      "id": "samsung-samsung-ue55m72hauxxh",
-      "store": "Setec",
-      "brand": "SAMSUNG",
-      "model": "UE55M72HAUXXH",
-      "size": 55,
-      "price": 27999,
-      "regularPrice": 33999,
-      "inStock": true
-    },
-    "samsung-samsung-ue65m72hauxxh|Setec": {
-      "id": "samsung-samsung-ue65m72hauxxh",
-      "store": "Setec",
-      "brand": "SAMSUNG",
-      "model": "UE65M72HAUXXH",
-      "size": 65,
-      "price": 35999,
-      "regularPrice": 45999,
-      "inStock": true
-    },
-    "samsung-samsung-ue55m72hauxxh|Neptun": {
-      "id": "samsung-samsung-ue55m72hauxxh",
-      "store": "Neptun",
-      "brand": "SAMSUNG",
-      "model": "UE 55 M72H AUXXH",
-      "size": 55,
-      "price": 33999,
-      "regularPrice": 33999,
       "inStock": true
     },
     "samsung-ue-43cu7092uxxh|Anhoch": {
@@ -4192,6 +4172,16 @@
       "regularPrice": 30999,
       "inStock": true
     },
+    "samsung-samsung-ue50m72hauxxh|Setec": {
+      "id": "samsung-samsung-ue50m72hauxxh",
+      "store": "Setec",
+      "brand": "SAMSUNG",
+      "model": "UE50M72HAUXXH",
+      "size": 50,
+      "price": 24999,
+      "regularPrice": 30999,
+      "inStock": true
+    },
     "samsung-ue50u8072huxxh|Neptun": {
       "id": "samsung-ue50u8072huxxh",
       "store": "Neptun",
@@ -4252,6 +4242,26 @@
       "regularPrice": 33999,
       "inStock": true
     },
+    "samsung-samsung-ue55m72hauxxh|Setec": {
+      "id": "samsung-samsung-ue55m72hauxxh",
+      "store": "Setec",
+      "brand": "SAMSUNG",
+      "model": "UE55M72HAUXXH",
+      "size": 55,
+      "price": 27999,
+      "regularPrice": 33999,
+      "inStock": true
+    },
+    "samsung-samsung-ue55m72hauxxh|Neptun": {
+      "id": "samsung-samsung-ue55m72hauxxh",
+      "store": "Neptun",
+      "brand": "SAMSUNG",
+      "model": "UE55M72HAUXXH",
+      "size": 55,
+      "price": 32999,
+      "regularPrice": 33999,
+      "inStock": true
+    },
     "samsung-ue55m80hauxxh|Setec": {
       "id": "samsung-ue55m80hauxxh",
       "store": "Setec",
@@ -4268,7 +4278,7 @@
       "brand": "SAMSUNG",
       "model": "UE55M80HAUXXH",
       "size": 55,
-      "price": 25999,
+      "price": 29999,
       "regularPrice": 37999,
       "inStock": true
     },
@@ -4319,6 +4329,26 @@
       "model": "UE65M70HAUXXH",
       "size": 65,
       "price": 35999,
+      "regularPrice": 45999,
+      "inStock": true
+    },
+    "samsung-samsung-ue65m72hauxxh|Setec": {
+      "id": "samsung-samsung-ue65m72hauxxh",
+      "store": "Setec",
+      "brand": "SAMSUNG",
+      "model": "UE65M72HAUXXH",
+      "size": 65,
+      "price": 35999,
+      "regularPrice": 45999,
+      "inStock": true
+    },
+    "samsung-samsung-ue65m72hauxxh|Neptun": {
+      "id": "samsung-samsung-ue65m72hauxxh",
+      "store": "Neptun",
+      "brand": "SAMSUNG",
+      "model": "UE65M72HAUXXH",
+      "size": 65,
+      "price": 45999,
       "regularPrice": 45999,
       "inStock": true
     },
@@ -5152,6 +5182,16 @@
       "regularPrice": 23999,
       "inStock": true
     },
+    "tcl-tcl-50s5l|Setec": {
+      "id": "tcl-tcl-50s5l",
+      "store": "Setec",
+      "brand": "TCL",
+      "model": "50S5L",
+      "size": 50,
+      "price": 20999,
+      "regularPrice": 22999,
+      "inStock": false
+    },
     "tcl-50t69c|Setec": {
       "id": "tcl-50t69c",
       "store": "Setec",
@@ -5198,7 +5238,7 @@
       "brand": "TCL",
       "model": "55C69K",
       "size": 55,
-      "price": 29999,
+      "price": 26999,
       "regularPrice": 34999,
       "inStock": true
     },
@@ -5222,6 +5262,16 @@
       "regularPrice": 45999,
       "inStock": true
     },
+    "tcl-tcl-55c79l|Setec": {
+      "id": "tcl-tcl-55c79l",
+      "store": "Setec",
+      "brand": "TCL",
+      "model": "55C79L",
+      "size": 55,
+      "price": 50999,
+      "regularPrice": 54999,
+      "inStock": false
+    },
     "tcl-55p61k|Setec": {
       "id": "tcl-55p61k",
       "store": "Setec",
@@ -5241,6 +5291,16 @@
       "price": 21999,
       "regularPrice": 28999,
       "inStock": true
+    },
+    "tcl-tcl-55p6l|Setec": {
+      "id": "tcl-tcl-55p6l",
+      "store": "Setec",
+      "brand": "TCL",
+      "model": "55P6L",
+      "size": 55,
+      "price": 25999,
+      "regularPrice": 28999,
+      "inStock": false
     },
     "tcl-55p71k|Setec": {
       "id": "tcl-55p71k",
@@ -5282,6 +5342,16 @@
       "regularPrice": 34999,
       "inStock": true
     },
+    "tcl-tcl-55p89l|Setec": {
+      "id": "tcl-tcl-55p89l",
+      "store": "Setec",
+      "brand": "TCL",
+      "model": "55P89L",
+      "size": 55,
+      "price": 32999,
+      "regularPrice": 36999,
+      "inStock": false
+    },
     "tcl-55t69c|Setec": {
       "id": "tcl-55t69c",
       "store": "Setec",
@@ -5318,7 +5388,7 @@
       "brand": "TCL",
       "model": "65 C7L 144Hz B&O",
       "size": 65,
-      "price": 62999,
+      "price": 59999,
       "regularPrice": 62999,
       "inStock": true
     },
@@ -5358,7 +5428,7 @@
       "brand": "TCL",
       "model": "65C79K",
       "size": 65,
-      "price": 56999,
+      "price": 49999,
       "regularPrice": 62999,
       "inStock": true
     },
@@ -5371,6 +5441,16 @@
       "price": 59999,
       "regularPrice": 62999,
       "inStock": true
+    },
+    "tcl-tcl-65c89l|Setec": {
+      "id": "tcl-tcl-65c89l",
+      "store": "Setec",
+      "brand": "TCL",
+      "model": "65C89L",
+      "size": 65,
+      "price": 82999,
+      "regularPrice": 89999,
+      "inStock": false
     },
     "tcl-65p61k|Setec": {
       "id": "tcl-65p61k",
@@ -5428,9 +5508,19 @@
       "brand": "TCL",
       "model": "65P89L",
       "size": 65,
-      "price": 32999,
+      "price": 39999,
       "regularPrice": 42999,
       "inStock": true
+    },
+    "tcl-tcl-65rm7l|Setec": {
+      "id": "tcl-tcl-65rm7l",
+      "store": "Setec",
+      "brand": "TCL",
+      "model": "65RM7L",
+      "size": 65,
+      "price": 72999,
+      "regularPrice": 79999,
+      "inStock": false
     },
     "tcl-65t69c|Setec": {
       "id": "tcl-65t69c",
@@ -5502,6 +5592,16 @@
       "regularPrice": 79999,
       "inStock": true
     },
+    "tcl-tcl-75c89l|Setec": {
+      "id": "tcl-tcl-75c89l",
+      "store": "Setec",
+      "brand": "TCL",
+      "model": "75C89L",
+      "size": 75,
+      "price": 103999,
+      "regularPrice": 109999,
+      "inStock": false
+    },
     "tcl-75p61k|Setec": {
       "id": "tcl-75p61k",
       "store": "Setec",
@@ -5562,6 +5662,16 @@
       "regularPrice": 56999,
       "inStock": true
     },
+    "tcl-tcl-75rm7l|Setec": {
+      "id": "tcl-tcl-75rm7l",
+      "store": "Setec",
+      "brand": "TCL",
+      "model": "75RM7L",
+      "size": 75,
+      "price": 89999,
+      "regularPrice": 96999,
+      "inStock": false
+    },
     "tcl-85c69b|Setec": {
       "id": "tcl-85c69b",
       "store": "Setec",
@@ -5612,6 +5722,16 @@
       "regularPrice": 115999,
       "inStock": true
     },
+    "tcl-tcl-85c89l|Setec": {
+      "id": "tcl-tcl-85c89l",
+      "store": "Setec",
+      "brand": "TCL",
+      "model": "85C89L",
+      "size": 85,
+      "price": 129999,
+      "regularPrice": 139999,
+      "inStock": false
+    },
     "tcl-85p71k|Setec": {
       "id": "tcl-85p71k",
       "store": "Setec",
@@ -5651,6 +5771,16 @@
       "price": 69999,
       "regularPrice": 86999,
       "inStock": true
+    },
+    "tcl-tcl-85rm7l|Setec": {
+      "id": "tcl-tcl-85rm7l",
+      "store": "Setec",
+      "brand": "TCL",
+      "model": "85RM7L",
+      "size": 85,
+      "price": 114999,
+      "regularPrice": 119999,
+      "inStock": false
     },
     "tcl-98c69b|Setec": {
       "id": "tcl-98c69b",
@@ -5701,106 +5831,6 @@
       "price": 99999,
       "regularPrice": 139999,
       "inStock": true
-    },
-    "tcl-tcl-50s5l|Setec": {
-      "id": "tcl-tcl-50s5l",
-      "store": "Setec",
-      "brand": "TCL",
-      "model": "50S5L",
-      "size": 50,
-      "price": 20999,
-      "regularPrice": 22999,
-      "inStock": false
-    },
-    "tcl-tcl-55c79l|Setec": {
-      "id": "tcl-tcl-55c79l",
-      "store": "Setec",
-      "brand": "TCL",
-      "model": "55C79L",
-      "size": 55,
-      "price": 50999,
-      "regularPrice": 54999,
-      "inStock": false
-    },
-    "tcl-tcl-55p6l|Setec": {
-      "id": "tcl-tcl-55p6l",
-      "store": "Setec",
-      "brand": "TCL",
-      "model": "55P6L",
-      "size": 55,
-      "price": 25999,
-      "regularPrice": 28999,
-      "inStock": false
-    },
-    "tcl-tcl-55p89l|Setec": {
-      "id": "tcl-tcl-55p89l",
-      "store": "Setec",
-      "brand": "TCL",
-      "model": "55P89L",
-      "size": 55,
-      "price": 32999,
-      "regularPrice": 36999,
-      "inStock": false
-    },
-    "tcl-tcl-65c89l|Setec": {
-      "id": "tcl-tcl-65c89l",
-      "store": "Setec",
-      "brand": "TCL",
-      "model": "65C89L",
-      "size": 65,
-      "price": 82999,
-      "regularPrice": 89999,
-      "inStock": false
-    },
-    "tcl-tcl-65rm7l|Setec": {
-      "id": "tcl-tcl-65rm7l",
-      "store": "Setec",
-      "brand": "TCL",
-      "model": "65RM7L",
-      "size": 65,
-      "price": 72999,
-      "regularPrice": 79999,
-      "inStock": false
-    },
-    "tcl-tcl-75c89l|Setec": {
-      "id": "tcl-tcl-75c89l",
-      "store": "Setec",
-      "brand": "TCL",
-      "model": "75C89L",
-      "size": 75,
-      "price": 103999,
-      "regularPrice": 109999,
-      "inStock": false
-    },
-    "tcl-tcl-75rm7l|Setec": {
-      "id": "tcl-tcl-75rm7l",
-      "store": "Setec",
-      "brand": "TCL",
-      "model": "75RM7L",
-      "size": 75,
-      "price": 89999,
-      "regularPrice": 96999,
-      "inStock": false
-    },
-    "tcl-tcl-85c89l|Setec": {
-      "id": "tcl-tcl-85c89l",
-      "store": "Setec",
-      "brand": "TCL",
-      "model": "85C89L",
-      "size": 85,
-      "price": 129999,
-      "regularPrice": 139999,
-      "inStock": false
-    },
-    "tcl-tcl-85rm7l|Setec": {
-      "id": "tcl-tcl-85rm7l",
-      "store": "Setec",
-      "brand": "TCL",
-      "model": "85RM7L",
-      "size": 85,
-      "price": 114999,
-      "regularPrice": 119999,
-      "inStock": false
     },
     "telefunken-40rcn24|Setec": {
       "id": "telefunken-40rcn24",
