@@ -2,8 +2,13 @@ import fs from "fs";
 import { execSync } from "child_process";
 import * as cheerio from "cheerio";
 
-const CURL_TEMPLATE = "/tmp/ddstore-curl.sh";
 const OUTPUT = "./src/data/ddstoreTvs.json";
+const USER_AGENT =
+  "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36";
+
+function buildCurlCommand(url) {
+  return `curl -s -A ${JSON.stringify(USER_AGENT)} ${JSON.stringify(url)}`;
+}
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
@@ -130,31 +135,18 @@ async function scrape() {
   console.log("DDStore scraper");
   console.log("================");
 
-  if (!fs.existsSync(CURL_TEMPLATE)) {
-    console.log(`Не постои ${CURL_TEMPLATE}`);
-    process.exit(1);
-  }
-
   const allProducts = [];
 
   for (let page = 1; page <= 3; page++) {
     console.log(`\nСтрана ${page}...`);
 
     try {
-      let command = fs.readFileSync(
-        CURL_TEMPLATE,
-        "utf8"
-      );
+      const pageUrl =
+        page === 1
+          ? "https://ddstore.mk/mk/monitorstvandprojectors/televisionsandequipment/televisions.html"
+          : `https://ddstore.mk/mk/monitorstvandprojectors/televisionsandequipment/televisions.html?p=${page}`;
 
-     const pageUrl =
-  page === 1
-    ? "https://ddstore.mk/mk/monitorstvandprojectors/televisionsandequipment/televisions.html?utm_source=chatgpt.com"
-    : `https://ddstore.mk/mk/monitorstvandprojectors/televisionsandequipment/televisions.html?p=${page}&utm_source=chatgpt.com`;
-
-command = command.replace(
-  /https:\/\/ddstore\.mk\/mk\/monitorstvandprojectors\/televisionsandequipment\/televisions\.html\?utm_source=chatgpt\.com/,
-  pageUrl
-);
+      const command = buildCurlCommand(pageUrl);
 
       const raw = execSync(command, {
         encoding: "utf8",
