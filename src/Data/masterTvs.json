@@ -487,35 +487,39 @@
     "brand": "BEKO",
     "model": "65 BIQ 8000",
     "size": 65,
-    "technology": "LED",
+    "technology": "QLED",
     "resolution": "4K",
     "refreshRate": 60,
     "year": 2026,
-    "os": "Smart TV",
-    "hdr": false,
-    "dolbyVision": false,
+    "os": "Google TV",
+    "hdr": true,
+    "dolbyVision": true,
     "hdmi": 0,
     "usb": 0,
     "vrr": false,
     "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
-    "brightness": "—",
-    "audioPower": 0,
+    "pictureProcessor": null,
+    "hdrFormats": [
+      "HDR10"
+    ],
+    "brightness": null,
+    "audioPower": 20,
     "audioChannels": "2.0",
-    "dolbyAtmos": false,
+    "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
     "image": "/images/tvs/neptun/beko-65-biq-8000-300663.jpg",
     "stores": {
       "Neptun": {
-        "price": 25999,
+        "price": 24999,
         "regularPrice": 32999,
         "inStock": true,
         "image": "/images/tvs/neptun/beko-65-biq-8000-300663.jpg",
         "url": "https://www.neptun.mk/84123493-BEKO-65-BIQ-8000"
       }
-    }
+    },
+    "specialFeatures": [],
+    "specsSource": "рачно"
   },
   {
     "id": "beko-65bcq8000",
@@ -887,7 +891,7 @@
     "image": "/images/tvs/neptun/fuego-kids-32-mtc-720-gtv-32-2k-google-smart-tv-293617.jpg",
     "stores": {
       "Neptun": {
-        "price": 12999,
+        "price": 10999,
         "regularPrice": 13999,
         "inStock": true,
         "image": "/images/tvs/neptun/fuego-kids-32-mtc-720-gtv-32-2k-google-smart-tv-293617.jpg",
@@ -1183,7 +1187,7 @@
     "image": "/images/tvs/neptun/fuego-qled-mini-led-65-ch944-gtv-65-qled-pro-144hz-293164.jpg",
     "stores": {
       "Neptun": {
-        "price": 31999,
+        "price": 29999,
         "regularPrice": 34999,
         "inStock": true,
         "image": "/images/tvs/neptun/fuego-qled-mini-led-65-ch944-gtv-65-qled-pro-144hz-293164.jpg",
@@ -2390,7 +2394,7 @@
         "handle": "hisense-55a6s"
       },
       "Neptun": {
-        "price": 17999,
+        "price": 23999,
         "regularPrice": 27999,
         "inStock": true,
         "image": "/images/tvs/neptun/hisense-55-a6s-55-4k-dled-smart-297953.jpg",
@@ -2629,23 +2633,28 @@
     "brand": "HISENSE",
     "model": "55E8Q",
     "size": 55,
-    "technology": "LED",
+    "technology": "ULED",
     "resolution": "4K",
-    "refreshRate": 60,
+    "refreshRate": 144,
     "year": 2026,
     "os": "Smart TV",
-    "hdr": false,
-    "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
+    "hdr": true,
+    "dolbyVision": true,
+    "hdmi": 4,
+    "usb": 2,
     "vrr": false,
     "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
-    "brightness": "—",
-    "audioPower": 0,
+    "pictureProcessor": "Hi-View AI Engine",
+    "hdrFormats": [
+      "HDR10",
+      "HDR10+",
+      "HDR10+ Adaptive",
+      "Immersives 4K HDR .HLG"
+    ],
+    "brightness": null,
+    "audioPower": 20,
     "audioChannels": "2.0",
-    "dolbyAtmos": false,
+    "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/Hisense%2055U8Q_92424-01M3PQRWAW9682B07CPZSC6AZS.jpg",
@@ -2657,7 +2666,9 @@
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/Hisense%2055U8Q_92424-01M3PQRWAW9682B07CPZSC6AZS.jpg",
         "handle": "hisense-55u8q"
       }
-    }
+    },
+    "specialFeatures": [],
+    "specsSource": "рачно"
   },
   {
     "id": "hisense-55u7q",
@@ -2753,23 +2764,28 @@
     "brand": "HISENSE",
     "model": "65 Q7S",
     "size": 65,
-    "technology": "LED",
+    "technology": "DLED",
     "resolution": "4K",
     "refreshRate": 60,
     "year": 2026,
-    "os": "Smart TV",
-    "hdr": false,
-    "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
+    "os": "VIDAA Smart OS",
+    "hdr": true,
+    "dolbyVision": true,
+    "hdmi": 3,
+    "usb": 2,
     "vrr": false,
     "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
-    "brightness": "—",
-    "audioPower": 0,
+    "pictureProcessor": "AI 4K Upscaler",
+    "hdrFormats": [
+      "HDR10",
+      "HDR10+",
+      "HDR10+ Adaptive",
+      "Immersives 4K HDR"
+    ],
+    "brightness": null,
+    "audioPower": 20,
     "audioChannels": "2.0",
-    "dolbyAtmos": false,
+    "dolbyAtmos": true,
     "freeSync": false,
     "gSync": false,
     "image": "/images/tvs/neptun/hisense-65-q7s-4k-ultra-hd-8ms-300930.jpg",
@@ -2781,7 +2797,9 @@
         "image": "/images/tvs/neptun/hisense-65-q7s-4k-ultra-hd-8ms-300930.jpg",
         "url": "https://www.neptun.mk/84123695-HISENSE-65-Q7S"
       }
-    }
+    },
+    "specialFeatures": [],
+    "specsSource": "рачно"
   },
   {
     "id": "hisense-65a6q",
@@ -3083,7 +3101,7 @@
         "handle": "hisense-65e7s-pro"
       },
       "Neptun": {
-        "price": 42999,
+        "price": 41999,
         "regularPrice": 49999,
         "inStock": true,
         "image": "/images/tvs/neptun/hisense-65-e7s-pro-65-4k-qled-144hz-297956.jpg",
@@ -3124,7 +3142,7 @@
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/Hisense%2065Q7S%20PRO_92423-01M3PQWWY7XESAKTTPRMPX5QQB.jpg",
     "stores": {
       "Setec": {
-        "price": 42999,
+        "price": 35999,
         "regularPrice": 44999,
         "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/Hisense%2065Q7S%20PRO_92423-01M3PQWWY7XESAKTTPRMPX5QQB.jpg",
@@ -3957,7 +3975,7 @@
       "Setec": {
         "price": 79995,
         "regularPrice": 92990,
-        "inStock": true,
+        "inStock": false,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/79353_Hisense%2085U7Q-01KR0RH72BVNQ1RX86ETWVMSJW.jpg",
         "handle": "hisense-85u7q"
       }
@@ -4873,16 +4891,19 @@
     "refreshRate": 60,
     "year": 2026,
     "os": "Smart TV",
-    "hdr": false,
+    "hdr": true,
     "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
-    "brightness": "—",
-    "audioPower": 0,
+    "hdmi": 3,
+    "usb": 1,
+    "vrr": true,
+    "allm": true,
+    "pictureProcessor": "a7 Gen 9 AI Processor 4K",
+    "hdrFormats": [
+      "HDR10",
+      "HLG"
+    ],
+    "brightness": null,
+    "audioPower": 20,
     "audioChannels": "2.0",
     "dolbyAtmos": false,
     "freeSync": false,
@@ -4893,10 +4914,12 @@
         "price": 27999,
         "regularPrice": 28999,
         "inStock": true,
-        "image": "/images/tvs/neptun/lg-43-qned81-b3c-301253.jpg",
+        "image": "/images/tvs/neptun/lg-43-qned81-b3c-43-4k-uhd-301253.jpg",
         "url": "https://www.neptun.mk/84123929-LG-43-QNED81-B3C"
       }
-    }
+    },
+    "specialFeatures": [],
+    "specsSource": "рачно"
   },
   {
     "id": "lg-43nano81a3a",
@@ -5084,21 +5107,24 @@
     "brand": "LG",
     "model": "50 NU800 B3LC",
     "size": 50,
-    "technology": "LED",
+    "technology": "Direct LED",
     "resolution": "4K",
     "refreshRate": 60,
     "year": 2026,
-    "os": "Smart TV",
-    "hdr": false,
+    "os": "webOS 26",
+    "hdr": true,
     "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
+    "hdmi": 3,
+    "usb": 1,
     "vrr": false,
     "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
+    "pictureProcessor": "Alpha 6 Gen9 4K AI-Prozessor",
+    "hdrFormats": [
+      "HDR10",
+      "HLG"
+    ],
     "brightness": "—",
-    "audioPower": 0,
+    "audioPower": 20,
     "audioChannels": "2.0",
     "dolbyAtmos": false,
     "freeSync": false,
@@ -5112,7 +5138,9 @@
         "image": "/images/tvs/neptun/lg-50-nu800-b3lc-4k-ultra-hd-299556.jpg",
         "url": "https://www.neptun.mk/84122690-LG-50-NU800-B3LC"
       }
-    }
+    },
+    "specialFeatures": [],
+    "specsSource": "рачно"
   },
   {
     "id": "lg-50-qned87-b3a",
@@ -5261,7 +5289,7 @@
     "image": "/images/tvs/neptun/lg-55-b6-elc-299495.jpg",
     "stores": {
       "Neptun": {
-        "price": 69999,
+        "price": 66999,
         "regularPrice": 76999,
         "inStock": true,
         "image": "/images/tvs/neptun/lg-55-b6-elc-4k-oled-120hz-299495.jpg",
@@ -5381,7 +5409,7 @@
     "image": "/images/tvs/neptun/lg-55-mrgb-87b3b-55-4k-minirgb-144hz-300840.jpg",
     "stores": {
       "Neptun": {
-        "price": 59999,
+        "price": 49999,
         "regularPrice": 78999,
         "inStock": true,
         "image": "/images/tvs/neptun/lg-55-mrgb-87b3b-55-4k-minirgb-144hz-300840.jpg",
@@ -5433,21 +5461,25 @@
     "brand": "LG",
     "model": "55 NU850 B3LA",
     "size": 55,
-    "technology": "LED",
+    "technology": "Direct LED",
     "resolution": "4K",
     "refreshRate": 60,
     "year": 2026,
-    "os": "Smart TV",
+    "os": "WebOS 26",
     "hdr": false,
     "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
+    "hdmi": 3,
+    "usb": 1,
+    "vrr": true,
+    "allm": true,
+    "pictureProcessor": "Alpha 7 Gen9",
+    "hdrFormats": [
+      "HDR10",
+      "HLG",
+      "HDR10 PRO"
+    ],
     "brightness": "—",
-    "audioPower": 0,
+    "audioPower": 20,
     "audioChannels": "2.0",
     "dolbyAtmos": false,
     "freeSync": false,
@@ -5461,7 +5493,9 @@
         "image": "/images/tvs/neptun/lg-55-nu850-b3la-4k-ultra-hd-300838.jpg",
         "url": "https://www.neptun.mk/84123607-LG-55-NU850-B3LA"
       }
-    }
+    },
+    "specialFeatures": [],
+    "specsSource": "рачно"
   },
   {
     "id": "lg-55-qned71-b3b",
@@ -5910,15 +5944,7 @@
     "gSync": false,
     "specsSource": "neptun",
     "image": "/images/tvs/neptun/lg-55-qned-87b3a-299559.jpg",
-    "stores": {
-      "Neptun": {
-        "price": 45999,
-        "regularPrice": 52999,
-        "inStock": true,
-        "image": "/images/tvs/neptun/lg-55-qned-87b3a-55-4k-qned-miniled-120hz-299559.jpg",
-        "url": "https://www.neptun.mk/84122693-LG-55-QNED-87B3A"
-      }
-    }
+    "stores": {}
   },
   {
     "id": "lg-55qned8mb6c",
@@ -5951,7 +5977,7 @@
     "image": "/images/tvs/neptun/lg-55-qned-8mb6c-300041.jpg",
     "stores": {
       "Neptun": {
-        "price": 29999,
+        "price": 28999,
         "regularPrice": 41999,
         "inStock": true,
         "image": "/images/tvs/neptun/lg-55-qned-8mb6c-55-4k-qned-miniled-144hz-300041.jpg",
@@ -6163,21 +6189,25 @@
     "brand": "LG",
     "model": "65 NU800 B3LA",
     "size": 65,
-    "technology": "LED",
+    "technology": "Direct LED",
     "resolution": "4K",
     "refreshRate": 60,
     "year": 2026,
     "os": "Smart TV",
     "hdr": false,
     "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
-    "brightness": "—",
-    "audioPower": 0,
+    "hdmi": 3,
+    "usb": 1,
+    "vrr": true,
+    "allm": true,
+    "pictureProcessor": "Alpha 7 Gen9",
+    "hdrFormats": [
+      "HDR10",
+      "HLG",
+      "HDR10 PRO"
+    ],
+    "brightness": null,
+    "audioPower": 20,
     "audioChannels": "2.0",
     "dolbyAtmos": false,
     "freeSync": false,
@@ -6191,7 +6221,9 @@
         "image": "/images/tvs/neptun/lg-65-nu800-b3la-65-4k-nanocell-298049.jpg",
         "url": "https://www.neptun.mk/84121544-LG-65-NU800-B3LA"
       }
-    }
+    },
+    "specialFeatures": [],
+    "specsSource": "рачно"
   },
   {
     "id": "lg-65-nu850-b3la",
@@ -6238,21 +6270,24 @@
     "brand": "LG",
     "model": "65 QNED 87B3A",
     "size": 65,
-    "technology": "QNED",
+    "technology": "QNED MiniLED",
     "resolution": "4K",
-    "refreshRate": 60,
+    "refreshRate": 120,
     "year": 2026,
-    "os": "Smart TV",
-    "hdr": false,
-    "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
-    "vrr": false,
+    "os": "WebOS 25",
+    "hdr": true,
+    "dolbyVision": true,
+    "hdmi": 4,
+    "usb": 2,
+    "vrr": true,
     "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
-    "brightness": "—",
-    "audioPower": 0,
+    "pictureProcessor": "α8 Gen2 4K AI-Prozessor",
+    "hdrFormats": [
+      "HDR10",
+      "HLG"
+    ],
+    "brightness": null,
+    "audioPower": 20,
     "audioChannels": "2.0",
     "dolbyAtmos": false,
     "freeSync": false,
@@ -6266,7 +6301,9 @@
         "image": "/images/tvs/neptun/lg-65-qned-87b3a-299562.jpg",
         "url": "https://www.neptun.mk/84122696-LG-65-QNED-87B3A"
       }
-    }
+    },
+    "specialFeatures": [],
+    "specsSource": "рачно"
   },
   {
     "id": "lg-65-qned72-b3b",
@@ -6311,24 +6348,27 @@
     "brand": "LG",
     "model": "65 QNED8M B6C",
     "size": 65,
-    "technology": "QNED",
+    "technology": "QNED MiniLED",
     "resolution": "4K",
     "refreshRate": 60,
     "year": 2026,
-    "os": "Smart TV",
-    "hdr": false,
+    "os": "webOS 26",
+    "hdr": true,
     "dolbyVision": false,
-    "hdmi": 0,
-    "usb": 0,
-    "vrr": false,
-    "allm": false,
-    "pictureProcessor": "—",
-    "hdrFormats": [],
+    "hdmi": 3,
+    "usb": 1,
+    "vrr": true,
+    "allm": true,
+    "pictureProcessor": "a8 Gen3 4K AI-Prozessor,",
+    "hdrFormats": [
+      "HDR10",
+      "HLG"
+    ],
     "brightness": "—",
-    "audioPower": 0,
+    "audioPower": 20,
     "audioChannels": "2.0",
     "dolbyAtmos": false,
-    "freeSync": false,
+    "freeSync": true,
     "gSync": false,
     "image": "/images/tvs/neptun/lg-65-qned8m-b6c-4k-ultra-hd-120hz-300843.jpg",
     "stores": {
@@ -6339,7 +6379,9 @@
         "image": "/images/tvs/neptun/lg-65-qned8m-b6c-4k-ultra-hd-120hz-300843.jpg",
         "url": "https://www.neptun.mk/84123612-LG-65-QNED8M-B6C"
       }
-    }
+    },
+    "specialFeatures": [],
+    "specsSource": "рачно"
   },
   {
     "id": "lg-65b62la",
@@ -6490,15 +6532,7 @@
     "gSync": false,
     "specsSource": "icecat",
     "image": "/images/tvs/neptun/lg-65-nano-81a6a-65-4k-nanocell-298050.jpg",
-    "stores": {
-      "Neptun": {
-        "price": 24995,
-        "regularPrice": 39999,
-        "inStock": true,
-        "image": "/images/tvs/neptun/lg-65-nano-81a6a-65-4k-nanocell-298050.jpg",
-        "url": "https://www.neptun.mk/84121545-LG-65-NANO-81A6A"
-      }
-    }
+    "stores": {}
   },
   {
     "id": "lg-65qned70a6a",
@@ -9923,7 +9957,7 @@
       "Setec": {
         "price": 89999,
         "regularPrice": 99999,
-        "inStock": false,
+        "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/PHILIPS%2065OLED801_92446-01M526FRY01KDXGCT2S5NNKAV7.png",
         "handle": "philips-65oled801"
       }
@@ -10589,7 +10623,7 @@
       "Setec": {
         "price": 49999,
         "regularPrice": 54999,
-        "inStock": false,
+        "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/PHILIPS%2075PQS8611_92447-01M526PZY7JWQBTT45NS7GCPXK.png",
         "handle": "philips-75pqs8611"
       }
@@ -12202,7 +12236,7 @@
       "Setec": {
         "price": 49995,
         "regularPrice": 109999,
-        "inStock": true,
+        "inStock": false,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/63091_SAMSUNG QE55S90FAEXXH-01JXWGH1E1YPTG8C3TGFZBEX5W.jpg",
         "handle": "samsung-qe55s90faexxh"
       }
@@ -12246,7 +12280,7 @@
         "handle": "samsung-qe65s90haexxh"
       },
       "Neptun": {
-        "price": 82999,
+        "price": 79999,
         "regularPrice": 107999,
         "inStock": true,
         "image": "/images/tvs/neptun/samsung-qe-55-s90h-aexxh-55-4k-oled-165hz-297962.jpg",
@@ -12377,7 +12411,7 @@
         "handle": "samsung-qe65ls03fauxxh"
       },
       "Neptun": {
-        "price": 69999,
+        "price": 64999,
         "regularPrice": 105999,
         "inStock": true,
         "image": "/images/tvs/neptun/samsung-frame-qe-65-ls03f-auxxh-4k-qled-144hz-286877.jpg",
@@ -12455,7 +12489,7 @@
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92315_SAMSUNG%20QE65LS03HAUXXH-01KR3CT8RR3R3EGQVJK4D1BZF6.jpg",
     "stores": {
       "Setec": {
-        "price": 99999,
+        "price": 79999,
         "regularPrice": 107999,
         "inStock": false,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92315_SAMSUNG%20QE65LS03HAUXXH-01KR3CT8RR3R3EGQVJK4D1BZF6.jpg",
@@ -12888,7 +12922,7 @@
     "image": "/images/tvs/neptun/samsung-qe-65-qn80h-auxxh-65-4k-neo-qled-144hz-297805.jpg",
     "stores": {
       "Setec": {
-        "price": 68999,
+        "price": 66999,
         "regularPrice": 84999,
         "inStock": true,
         "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/92340_SAMSUNG%20QE65QN80HAUXXH-01KS7B063PYWY4EWYJ45RNGZ5D.jpg",
@@ -13097,7 +13131,7 @@
         "handle": "samsung-qe65s90haexxh-1"
       },
       "Neptun": {
-        "price": 89999,
+        "price": 94999,
         "regularPrice": 129999,
         "inStock": true,
         "image": "/images/tvs/neptun/samsung-qe-65-s90h-aexxh-65-4k-oled-165hz-298024.jpg",
@@ -13447,15 +13481,7 @@
     "gSync": false,
     "specsSource": "icecat+samsung",
     "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/55463_0-01JWR74H6WTPQ0RQSJ55CZXBJS.webp",
-    "stores": {
-      "Setec": {
-        "price": 408799,
-        "regularPrice": 419999,
-        "inStock": false,
-        "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/55463_0-01JWR74H6WTPQ0RQSJ55CZXBJS.webp",
-        "handle": "samsung-qe75qn900ctxxh-1"
-      }
-    }
+    "stores": {}
   },
   {
     "id": "samsung-qe77s85faexxh",
@@ -13534,7 +13560,7 @@
         "handle": "samsung-qe77s90hatxxh"
       },
       "Neptun": {
-        "price": 139999,
+        "price": 133999,
         "regularPrice": 192999,
         "inStock": true,
         "image": "/images/tvs/neptun/samsung-qe-77-s90h-atxxh-77-4k-165-hz-298167.jpg",
@@ -14544,7 +14570,7 @@
     "image": "/images/tvs/neptun/samsung-ue-50-u8072h-uxxh-298182.jpg",
     "stores": {
       "Neptun": {
-        "price": 20999,
+        "price": 19999,
         "regularPrice": 27999,
         "inStock": true,
         "image": "/images/tvs/neptun/samsung-ue-50-u8072h-uxxh-50-4k-298182.jpg",
@@ -14753,7 +14779,7 @@
         "price": 32999,
         "regularPrice": 33999,
         "inStock": true,
-        "image": "/images/tvs/neptun/samsung-ue-55-m72h-auxxh-301310.jpg",
+        "image": "/images/tvs/neptun/samsung-ue-55-m72h-auxxh-55-4k-uhd-120hz-301310.jpg",
         "url": "https://www.neptun.mk/84123986-SAMSUNG-UE-55-M72H-AUXXH"
       }
     }
@@ -14796,7 +14822,7 @@
         "handle": "samsung-ue55m80hauxxh"
       },
       "Neptun": {
-        "price": 29999,
+        "price": 28999,
         "regularPrice": 37999,
         "inStock": true,
         "image": "/images/tvs/neptun/samsung-ue-55-m80h-auxxh-55-4k-miniled-144hz-297728.jpg",
@@ -15004,7 +15030,7 @@
         "price": 45999,
         "regularPrice": 45999,
         "inStock": true,
-        "image": "/images/tvs/neptun/samsung-ue-65-m72h-auxxh-301311.jpg",
+        "image": "/images/tvs/neptun/samsung-ue-65-m72h-auxxh-65-4k-uhd-120hz-301311.jpg",
         "url": "https://www.neptun.mk/84123987-SAMSUNG-UE-65-M72H-AUXXH"
       }
     }
@@ -15473,7 +15499,7 @@
         "handle": "samsung-ue85u8072fuxkhh-1"
       },
       "Neptun": {
-        "price": 65995,
+        "price": 64995,
         "regularPrice": 109999,
         "inStock": true,
         "image": "/images/tvs/neptun/samsung-ue-85-u8072f-uxxh-85-4k-smart-288060.jpg",
@@ -18046,7 +18072,7 @@
     "image": "/images/tvs/neptun/tcl-55-p69k-55-4k-dled-290624.jpg",
     "stores": {
       "Neptun": {
-        "price": 21999,
+        "price": 21499,
         "regularPrice": 28999,
         "inStock": true,
         "image": "/images/tvs/neptun/tcl-55-p69k-55-4k-dled-290624.jpg",
@@ -19435,7 +19461,7 @@
     "image": "/images/tvs/neptun/tcl-75-p79l-299145.jpg",
     "stores": {
       "Neptun": {
-        "price": 46999,
+        "price": 43999,
         "regularPrice": 48999,
         "inStock": true,
         "image": "/images/tvs/neptun/tcl-75-p79l-75-299145.jpg",

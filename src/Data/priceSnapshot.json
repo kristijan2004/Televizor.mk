@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-10-22T01:31:41.215Z",
+  "takenAt": "2026-10-25T02:31:38.315Z",
   "source": "staging/src/Data/masterTvs.json",
   "listings": {
     "aiwa-43n21|Anhoch": {
@@ -158,7 +158,7 @@
       "brand": "BEKO",
       "model": "65 BIQ 8000",
       "size": 65,
-      "price": 25999,
+      "price": 24999,
       "regularPrice": 32999,
       "inStock": true
     },
@@ -258,7 +258,7 @@
       "brand": "FUEGO",
       "model": "32MTC720GTV",
       "size": 32,
-      "price": 12999,
+      "price": 10999,
       "regularPrice": 13999,
       "inStock": true
     },
@@ -338,7 +338,7 @@
       "brand": "FUEGO",
       "model": "65CH944GTV",
       "size": 65,
-      "price": 31999,
+      "price": 29999,
       "regularPrice": 34999,
       "inStock": true
     },
@@ -768,7 +768,7 @@
       "brand": "HISENSE",
       "model": "55A6S",
       "size": 55,
-      "price": 17999,
+      "price": 23999,
       "regularPrice": 27999,
       "inStock": true
     },
@@ -998,7 +998,7 @@
       "brand": "HISENSE",
       "model": "65E7S PRO",
       "size": 65,
-      "price": 42999,
+      "price": 41999,
       "regularPrice": 49999,
       "inStock": true
     },
@@ -1008,7 +1008,7 @@
       "brand": "HISENSE",
       "model": "65Q7S PRO",
       "size": 65,
-      "price": 42999,
+      "price": 35999,
       "regularPrice": 44999,
       "inStock": true
     },
@@ -1230,7 +1230,7 @@
       "size": 85,
       "price": 79995,
       "regularPrice": 92990,
-      "inStock": true
+      "inStock": false
     },
     "jvc-32vh5300|Anhoch": {
       "id": "jvc-32vh5300",
@@ -1548,7 +1548,7 @@
       "brand": "LG",
       "model": "55 B6 ELC",
       "size": 55,
-      "price": 69999,
+      "price": 66999,
       "regularPrice": 76999,
       "inStock": true
     },
@@ -1578,7 +1578,7 @@
       "brand": "LG",
       "model": "55 MRGB 87B3B",
       "size": 55,
-      "price": 59999,
+      "price": 49999,
       "regularPrice": 78999,
       "inStock": true
     },
@@ -1692,23 +1692,13 @@
       "regularPrice": 44999,
       "inStock": true
     },
-    "lg-55qned87b3a|Neptun": {
-      "id": "lg-55qned87b3a",
-      "store": "Neptun",
-      "brand": "LG",
-      "model": "55QNED87B3A",
-      "size": 55,
-      "price": 45999,
-      "regularPrice": 52999,
-      "inStock": true
-    },
     "lg-55qned8mb6c|Neptun": {
       "id": "lg-55qned8mb6c",
       "store": "Neptun",
       "brand": "LG",
       "model": "55QNED8MB6C",
       "size": 55,
-      "price": 29999,
+      "price": 28999,
       "regularPrice": 41999,
       "inStock": true
     },
@@ -1840,16 +1830,6 @@
       "size": 65,
       "price": 41999,
       "regularPrice": 42999,
-      "inStock": true
-    },
-    "lg-65nano81a6a|Neptun": {
-      "id": "lg-65nano81a6a",
-      "store": "Neptun",
-      "brand": "LG",
-      "model": "65NANO81A6A",
-      "size": 65,
-      "price": 24995,
-      "regularPrice": 39999,
       "inStock": true
     },
     "lg-65qned70b3c|Neptun": {
@@ -2870,7 +2850,7 @@
       "size": 65,
       "price": 89999,
       "regularPrice": 99999,
-      "inStock": false
+      "inStock": true
     },
     "philips-65oled820|Setec": {
       "id": "philips-65oled820",
@@ -3070,7 +3050,7 @@
       "size": 75,
       "price": 49999,
       "regularPrice": 54999,
-      "inStock": false
+      "inStock": true
     },
     "philips-75pus7000|Setec": {
       "id": "philips-75pus7000",
@@ -3540,7 +3520,7 @@
       "size": 55,
       "price": 49995,
       "regularPrice": 109999,
-      "inStock": true
+      "inStock": false
     },
     "samsung-qe55s90haexxh|Setec": {
       "id": "samsung-qe55s90haexxh",
@@ -3558,7 +3538,7 @@
       "brand": "SAMSUNG",
       "model": "QE55S90HAEXXH",
       "size": 55,
-      "price": 82999,
+      "price": 79999,
       "regularPrice": 107999,
       "inStock": true
     },
@@ -3608,7 +3588,7 @@
       "brand": "SAMSUNG",
       "model": "QE65LS03FAUXXH",
       "size": 65,
-      "price": 69999,
+      "price": 64999,
       "regularPrice": 105999,
       "inStock": true
     },
@@ -3628,7 +3608,7 @@
       "brand": "SAMSUNG",
       "model": "QE65LS03HAUXXH",
       "size": 65,
-      "price": 99999,
+      "price": 79999,
       "regularPrice": 107999,
       "inStock": false
     },
@@ -3748,7 +3728,7 @@
       "brand": "SAMSUNG",
       "model": "QE65QN80HAUXXH",
       "size": 65,
-      "price": 68999,
+      "price": 66999,
       "regularPrice": 84999,
       "inStock": true
     },
@@ -3818,7 +3798,7 @@
       "brand": "SAMSUNG",
       "model": "QE65S90HAEXXH",
       "size": 65,
-      "price": 89999,
+      "price": 94999,
       "regularPrice": 129999,
       "inStock": true
     },
@@ -3902,16 +3882,6 @@
       "regularPrice": 114999,
       "inStock": true
     },
-    "samsung-qe75qn900ctxxh|Setec": {
-      "id": "samsung-qe75qn900ctxxh",
-      "store": "Setec",
-      "brand": "SAMSUNG",
-      "model": "QE75QN900CTXXH",
-      "size": 75,
-      "price": 408799,
-      "regularPrice": 419999,
-      "inStock": false
-    },
     "samsung-qe77s85faexxh|Setec": {
       "id": "samsung-qe77s85faexxh",
       "store": "Setec",
@@ -3938,7 +3908,7 @@
       "brand": "SAMSUNG",
       "model": "QE77S90HATXXH",
       "size": 77,
-      "price": 139999,
+      "price": 133999,
       "regularPrice": 192999,
       "inStock": true
     },
@@ -4188,7 +4158,7 @@
       "brand": "SAMSUNG",
       "model": "UE50U8072HUXXH",
       "size": 50,
-      "price": 20999,
+      "price": 19999,
       "regularPrice": 27999,
       "inStock": true
     },
@@ -4278,7 +4248,7 @@
       "brand": "SAMSUNG",
       "model": "UE55M80HAUXXH",
       "size": 55,
-      "price": 29999,
+      "price": 28999,
       "regularPrice": 37999,
       "inStock": true
     },
@@ -4518,7 +4488,7 @@
       "brand": "SAMSUNG",
       "model": "UE85U8072FUXXH",
       "size": 85,
-      "price": 65995,
+      "price": 64995,
       "regularPrice": 109999,
       "inStock": true
     },
@@ -5288,7 +5258,7 @@
       "brand": "TCL",
       "model": "55P69K",
       "size": 55,
-      "price": 21999,
+      "price": 21499,
       "regularPrice": 28999,
       "inStock": true
     },
@@ -5638,7 +5608,7 @@
       "brand": "TCL",
       "model": "75P79L",
       "size": 75,
-      "price": 46999,
+      "price": 43999,
       "regularPrice": 48999,
       "inStock": true
     },
