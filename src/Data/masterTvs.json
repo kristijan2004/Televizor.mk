@@ -15686,7 +15686,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "XR Processor",
+    "pictureProcessor": "4K Processor",
     "hdrFormats": [
       "HDR10",
       "HLG",
@@ -15932,7 +15932,7 @@
     "usb": 2,
     "vrr": true,
     "allm": true,
-    "pictureProcessor": "XR Processor",
+    "pictureProcessor": "4K Processor",
     "hdrFormats": [
       "HDR10",
       "HLG",
