@@ -42,6 +42,115 @@ echo "=============================================="
 
 cd "$ROOT"
 
+# ---------------------------------------------------------------
+# Е-пошта со резиме по секое пуштање — без разлика дали успеало, стопирало
+# на некој осигурувач, или паднало неочекувано.
+#
+# WARNINGS собира секое „нешто не е сосема во ред" низ скриптата (трговец
+# прескокнат, осигурувач активиран итн) — не секое е exit 1, затоа мора да
+# се собира одделно, не само да се гледа излезниот код. Испраќа преку
+# `trap ... EXIT`, кое секогаш се активира при излез, вклучително exit 1 на
+# средина од скриптата — инаку е-пошта би стигнала само при успешно
+# завршување, а токму грешките се она што треба да се знае веднаш.
+#
+# API клучот е во $ROOT/.env.nightly (НЕ во git, читливо само за root) —
+# истиот образец како лозинката на админ-панелот.
+# ---------------------------------------------------------------
+WARNINGS=()
+PENDING_TONIGHT=0
+PROMOTED="не"
+FINAL_COUNT="?"
+
+RESEND_API_KEY=""
+NIGHTLY_EMAIL_TO=""
+[ -f "$ROOT/.env.nightly" ] && source "$ROOT/.env.nightly"
+
+send_summary_email() {
+  local exit_code=$?
+
+  if [ -z "$RESEND_API_KEY" ] || [ -z "$NIGHTLY_EMAIL_TO" ]; then
+    return 0
+  fi
+
+  local status_line
+  if [ "$PROMOTED" = "да" ]; then
+    status_line="✓ Промовирано — $FINAL_COUNT телевизори живи."
+  elif [ "$exit_code" -ne 0 ]; then
+    status_line="❌ Запрено пред промоција (излезен код $exit_code) — живите податоци НЕ се допрени."
+  else
+    status_line="⚠ Завршено без промоција."
+  fi
+
+  local warnings_text="Нема предупредувања."
+  if [ "${#WARNINGS[@]}" -gt 0 ]; then
+    warnings_text=$(printf '%s\n' "${WARNINGS[@]}")
+  fi
+
+  local body
+  body=$(cat <<BODY
+Display.mk — ноќно скрапирање $(date '+%F %T')
+
+$status_line
+
+Нови модели на чекање вечерва: $PENDING_TONIGHT
+(преглед/одобрување: https://display.mk/admin)
+
+Предупредувања:
+$warnings_text
+
+— целосен лог: $LOG
+BODY
+)
+
+  local subject="Display.mk ноќно скрапирање — $(date +%F)"
+  if [ "$PROMOTED" != "да" ]; then
+    subject="⚠ $subject (НЕ промовирано)"
+  fi
+
+  node -e '
+const https = require("https");
+
+const [apiKey, to, subject, text] = process.argv.slice(1);
+
+const payload = JSON.stringify({
+  from: "Display.mk <nightly@display.mk>",
+  to: to.split(","),
+  subject,
+  text,
+});
+
+const req = https.request(
+  {
+    hostname: "api.resend.com",
+    path: "/emails",
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Authorization": "Bearer " + apiKey,
+      "Content-Length": Buffer.byteLength(payload),
+    },
+  },
+  (res) => {
+    let data = "";
+    res.on("data", (c) => (data += c));
+    res.on("end", () => {
+      if (res.statusCode >= 300) {
+        console.error("  ❌ Resend " + res.statusCode + ": " + data);
+      } else {
+        console.log("  ✓ е-пошта испратена");
+      }
+    });
+  }
+);
+
+req.on("error", (e) => console.error("  ❌ е-пошта не успеа: " + e.message));
+req.write(payload);
+req.end();
+' "$RESEND_API_KEY" "$NIGHTLY_EMAIL_TO" "$subject" "$body"
+}
+
+trap send_summary_email EXIT
+
 # Најмал прифатлив број производи по трговец. Под ова значи дека нешто е
 # скршено (блокада, сменета страница), па старите податоци се задржуваат.
 declare -A MIN=( [setecTvs]=150 [neptunTvs]=80 [ddstoreTvs]=30 )
@@ -53,12 +162,14 @@ run_scraper() {
 
   if ! timeout 900 node "scripts/$script" >/dev/null 2>&1; then
     echo "  ❌ скриптата падна — се задржува претходната датотека"
+    WARNINGS+=("$name: скриптата падна, се задржува претходната датотека")
     return 1
   fi
 
   local path="$SCRATCH/$file.json"
   if [ ! -f "$path" ]; then
     echo "  ❌ нема $path"
+    WARNINGS+=("$name: нема излезна датотека")
     return 1
   fi
 
@@ -68,6 +179,7 @@ run_scraper() {
 
   if [ "$count" -lt "$min" ]; then
     echo "  ❌ само $count производи (очекувано барем $min) — се отфрла"
+    WARNINGS+=("$name: само $count производи (очекувано барем $min) — се отфрла")
     return 1
   fi
 
@@ -102,6 +214,7 @@ if [ -n "$SETEC_TOKEN" ]; then
   run_scraper "Setec"   scrapeSetec.js   setecTvs   && OK_SETEC=1
 else
   echo "  ❌ нема токен — Setec се прескокнува"
+  WARNINGS+=("Setec: не можеше да се земе токен, се прескокнува")
 fi
 
 run_scraper "Neptun"  scrapeNeptun.js  neptunTvs  && OK_NEPTUN=1
@@ -110,6 +223,7 @@ run_scraper "DDStore" scrapeDDStore.js ddstoreTvs && OK_DDSTORE=1
 if [ $((OK_SETEC + OK_NEPTUN + OK_DDSTORE)) -eq 0 ]; then
   echo
   echo "❌ ниеден трговец не успеа — нема што да се гради"
+  WARNINGS+=("Ниеден трговец не успеа — нема што да се гради")
   exit 1
 fi
 
@@ -138,6 +252,7 @@ cp "$LIVE/anhochTvs.json" "$STAGING/src/Data/"
 CANDIDATE="$STAGING/src/Data/masterTvs.json"
 if [ ! -f "$CANDIDATE" ]; then
   echo "❌ кандидатот не е изграден"
+  WARNINGS+=("Кандидатот не е изграден — buildMasterTvs.js не создаде masterTvs.json")
   exit 1
 fi
 
@@ -169,6 +284,7 @@ if [ -n "$DUP_IDS" ]; then
   echo "❌ дупликат id во кандидатот — НЕ продолжувам:"
   echo "$DUP_IDS" | sed 's/^/     /'
   echo "   Кандидатот стои во $CANDIDATE за рачна проверка."
+  WARNINGS+=("Дупликат id во кандидатот — промоцијата е запрена: $DUP_IDS")
   exit 1
 fi
 
@@ -274,6 +390,14 @@ fs.writeFileSync(pendingFile, JSON.stringify(pending, null, 2) + "\n");
 fs.writeFileSync(file, JSON.stringify(good, null, 2));
 ' "$CANDIDATE" "$REPORTS/odbieni-$(date +%F).md" "$LIVE/masterTvs.json" "$LIVE/pendingTvs.json" "$LIVE/rejectedTvs.json"
 
+PENDING_TONIGHT=$(node -e "
+try {
+  const items = JSON.parse(require('fs').readFileSync('$LIVE/pendingTvs.json', 'utf8'));
+  const today = new Date().toISOString().slice(0, 10);
+  console.log(items.filter((p) => p.discoveredAt === today).length);
+} catch { console.log(0); }
+")
+
 # ---------------------------------------------------------------
 # Промени во цените — ова е единственото нешто што се запишува,
 # и само додава редови; ништо не се менува наназад.
@@ -311,6 +435,8 @@ echo "  живо: $LIVE_COUNT   кандидат: $CAND_COUNT   разлика: 
 if [ "$ABS" -gt "$LIMIT" ]; then
   echo "  ❌ разликата е преголема (над $LIMIT) — НЕ промовирам."
   echo "     Кандидатот стои во $CANDIDATE за рачна проверка."
+  FINAL_COUNT="$LIVE_COUNT"
+  WARNINGS+=("Осигурувач: разлика од $DIFF (живо $LIVE_COUNT → кандидат $CAND_COUNT) е над дозволеното — НЕ промовирано")
   exit 1
 fi
 
@@ -325,6 +451,8 @@ cp "$STAGING/src/Data/setecTvs.json" "$STAGING/src/Data/neptunTvs.json" \
    "$STAGING/src/Data/ddstoreTvs.json" "$LIVE/" 2>/dev/null || true
 
 echo "  ✓ промовирано (резерва: $(basename "$BACKUP"))"
+PROMOTED="да"
+FINAL_COUNT="$CAND_COUNT"
 
 # ---------------------------------------------------------------
 # Во базата и кај API-то. Сајтот ги чита од API, па нема потреба од
@@ -336,7 +464,12 @@ echo "--- база и API ---"
 chown -R displaymk:displaymk "$ROOT" 2>/dev/null || true
 systemctl restart display-mk-api
 sleep 3
-echo "  API: $(systemctl is-active display-mk-api) — $(curl -sS -m 10 http://127.0.0.1:3001/api/health)"
+API_STATUS=$(systemctl is-active display-mk-api)
+API_HEALTH=$(curl -sS -m 10 http://127.0.0.1:3001/api/health)
+echo "  API: $API_STATUS — $API_HEALTH"
+if [ "$API_STATUS" != "active" ]; then
+  WARNINGS+=("API-то не е активно по рестартирање: $API_STATUS")
+fi
 
 # ---------------------------------------------------------------
 # Слики: скрапирачите (Neptun) ги симнуваат во $ROOT/public/images/, не во

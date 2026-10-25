@@ -293,7 +293,7 @@ export default async function adminPlugin(app, opts) {
   app.get("/stats", async () => {
     const { total } = db.prepare("SELECT COUNT(*) AS total FROM tvs").get();
     const { verified } = db
-      .prepare("SELECT COUNT(*) AS verified FROM tvs WHERE specsSource IS NOT NULL AND specsSource != ''")
+      .prepare("SELECT COUNT(*) AS verified FROM tvs WHERE specsSource = 'рачно'")
       .get();
     const { brands } = db.prepare("SELECT COUNT(DISTINCT brand) AS brands FROM tvs").get();
     const { noBrightness } = db
@@ -335,9 +335,9 @@ export default async function adminPlugin(app, opts) {
     }
 
     if (q.verified === "0") {
-      where.push("(specsSource IS NULL OR specsSource = '')");
+      where.push("(specsSource IS NULL OR specsSource != 'рачно')");
     } else if (q.verified === "1") {
-      where.push("(specsSource IS NOT NULL AND specsSource != '')");
+      where.push("specsSource = 'рачно'");
     }
 
     const clause = where.length ? `WHERE ${where.join(" AND ")}` : "";

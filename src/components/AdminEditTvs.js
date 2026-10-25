@@ -451,7 +451,7 @@ export const TvEditForm = ({
     спецификациите. Копчето само го пополнува тоа поле со „рачно" и го
     зачувува тековниот формулар — не отвора ново уредување.
   */
-  const isVerified = form.specsSource.trim() !== "";
+  const isVerified = form.specsSource.trim() === "рачно";
 
   const handleConfirm = () => {
     setSaving(true);
@@ -660,8 +660,8 @@ const AdminEditTvs = ({ onSessionExpired }) => {
               </RowSpecs>
             </span>
 
-            <Badge $ok={Boolean(tv.specsSource)}>
-              {tv.specsSource ? "проверено" : "непроверено"}
+            <Badge $ok={tv.specsSource === "рачно"}>
+              {tv.specsSource === "рачно" ? "проверено" : "непроверено"}
             </Badge>
           </ListRow>
         ))}
