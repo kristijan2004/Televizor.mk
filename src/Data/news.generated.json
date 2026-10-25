@@ -1,9 +1,452 @@
 {
-  "generatedAt": "2026-10-25T12:23:05.756Z",
+  "generatedAt": "2026-10-25T13:23:33.690Z",
   "categories": [
     "Новости"
   ],
   "articles": [
+    {
+      "id": "samsung-the-frame-2026-makedonija",
+      "slug": "samsung-the-frame-2026-makedonija",
+      "title": "Samsung The Frame 2026 во Македонија: телевизор или уметничко дело?",
+      "excerpt": "Samsung The Frame 2026 (LS03H) веќе се продава кај нас, а Samsung Art Store доби 19 нови дела од Art Basel Paris. Што е ново, што не е, и за кого вреди телевизорот што изгледа како слика.",
+      "category": "Новости",
+      "author": "",
+      "date": "2026-11-02",
+      "publishAt": "",
+      "readTime": 5,
+      "image": "/images/novosti/samsung-the-frame-2026-makedonija.webp",
+      "imageCaption": "Samsung Art TV со дело од колекцијата Art Basel Paris 2026 во Samsung Art Store. Фото: Samsung",
+      "imageCandidates": [
+        "/images/novosti/samsung-the-frame-2026-makedonija.webp",
+        "/images/novosti/samsung-the-frame-2026-makedonija.jpg",
+        "/images/novosti/samsung-the-frame-2026-makedonija.jpeg",
+        "/images/novosti/samsung-the-frame-2026-makedonija.png",
+        "/images/novosti/samsung-the-frame-2026-makedonija.avif",
+        "/images/novosti/samsung-the-frame-2026-makedonija.svg",
+        "/images/novosti/samsung-the-frame-2026-makedonija.jpg.jpg",
+        "/images/novosti/samsung-the-frame-2026-makedonija.jpeg.jpeg",
+        "/images/novosti/samsung-the-frame-2026-makedonija.png.png",
+        "/images/novosti/samsung-the-frame-2026-makedonija.webp.webp",
+        "/images/novosti/placeholder.svg"
+      ],
+      "hasImage": true,
+      "featured": false,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Samsung The Frame е телевизор што, кога не гледаш ништо, на ѕидот прикажува уметничко дело наместо црн екран. Моделот за 2026 година го носи кодот LS03H и веќе се продава во Македонија. На 20 октомври 2026 Samsung во својата продавница за уметност, Samsung Art Store, додаде и "
+            },
+            {
+              "text": "19 нови дела од саемот Art Basel Paris 2026",
+              "href": "https://news.samsung.com/global/samsung-art-store-unveils-curated-collection-from-art-basel-paris-2026"
+            },
+            {
+              "text": ", достапни на The Frame и на другите Samsung Art телевизори."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Пред да продолжиш, една важна разлика: постои и "
+            },
+            {
+              "text": "The Frame Pro",
+              "bold": true
+            },
+            {
+              "text": " (код LS03HW). Тоа е друга, поскапа линија со Mini LED позадинско осветлување. Оваа статија е за обичниот The Frame, LS03H."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Што ново донесува Art Basel Paris"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Новите 19 дела доаѓаат од галерии што учествуваат на Art Basel Paris во Grand Palais. Меѓу нив се „Poppies #4“ од Елене Шатберашвили и „The Lounge (black and white)“ од Ханс Оп де Бек, црно-бела скулптура на соба замрзната во времето."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "„Откривањето е во срцето на Art Basel“, изјави Карим Крипа, директор на Art Basel Paris, во "
+            },
+            {
+              "text": "соопштението на Samsung",
+              "href": "https://news.samsung.com/global/samsung-art-store-unveils-curated-collection-from-art-basel-paris-2026"
+            },
+            {
+              "text": ". Дарија Грин, глобална раководителка за содржина во Samsung Art Store, додаде дека збирката им овозможува на гледачите да го откријат „опсегот на уметничката имагинација во сопствениот дом“."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/novosti/samsung-the-frame-2026-art-basel-paris.webp",
+          "alt": "Samsung Art TV на ѕид во дневна соба со црно-бело дело од Hans Op de Beeck",
+          "caption": "„The Lounge (black and white)“ од Hans Op de Beeck, едно од новите дела од Art Basel Paris 2026. Фото: Samsung"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Како работи режимот за уметност"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Art Mode е причината луѓето да купуваат The Frame. Според "
+            },
+            {
+              "text": "Samsung",
+              "href": "https://www.samsung.com/uk/lifestyle-tvs/the-frame/art-mode/"
+            },
+            {
+              "text": ", телевизорот има сензор за движење што го вклучува приказот кога ќе влезеш во собата и го гаси кога ќе излезеш. Сензорот за осветленост ја прилагодува сликата на светлината во просторијата, за делото да не свети како екран."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "Samsung Art Store",
+                "bold": true
+              },
+              {
+                "text": ": според "
+              },
+              {
+                "text": "Samsung",
+                "href": "https://news.samsung.com/us/samsung-elevates-2026-frame-lineup-broader-customization-advanced-glare-free-technology/"
+              },
+              {
+                "text": ", над 5.000 дела од повеќе од 800 уметници, со претплата. Без претплата, преку Art Store Streams секој месец добиваш 30 бесплатни дела."
+              }
+            ],
+            [
+              {
+                "text": "Art Home",
+                "bold": true
+              },
+              {
+                "text": ": место каде ги средуваш омилените дела во листи и теми."
+              }
+            ],
+            [
+              {
+                "text": "My Photo",
+                "bold": true
+              },
+              {
+                "text": ": твоите фотографии од телефон или USB, со 5 распореди на паспартуто и 16 бои."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Екранот и сликата"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "The Frame 2026 е 4K QLED телевизор со VA панел. QLED значи LCD екран со слој од квантни точки за поживи бои. Екранот е мат, со технологијата Glare Free против рефлексии, што го прави делото да изгледа повеќе како хартија отколку како стакло. Процесорот е NQ4 AI од втора генерација, според "
+            },
+            {
+              "text": "choose.tv",
+              "href": "https://www.choose.tv/us/tv/reviews/samsung/samsung-the-frame-2026-ls03h_AJS"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Главниот недостаток: телевизорот нема локално затемнување (local dimming), односно не може да затемни само делови од екранот. Затоа "
+            },
+            {
+              "text": "choose.tv",
+              "href": "https://www.choose.tv/us/tv/reviews/samsung/samsung-the-frame-2026-ls03h_AJS"
+            },
+            {
+              "text": " пишува дека вечерното гледање филмови во темна соба „дефинитивно не е неговата најсилна страна“. Поддржува HDR10, HDR10+ и HLG (формати за слика со висок динамички опсег), но не и Dolby Vision."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/novosti/samsung-the-frame-2026-ls03h.webp",
+          "alt": "Samsung The Frame 2026 гледан од напред, со уметничко дело на екранот",
+          "caption": "Samsung The Frame 2026 (LS03H), на сликата верзијата од 98 инчи. Фото: Samsung"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Игри: новиот режим од 240 Hz"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Главната новост за 2026 е за играчите. Покрај Motion Xcelerator со до 144 Hz, "
+            },
+            {
+              "text": "Samsung",
+              "href": "https://news.samsung.com/us/samsung-elevates-2026-frame-lineup-broader-customization-advanced-glare-free-technology/"
+            },
+            {
+              "text": " воведува DLG 240 Hz, режим за компјутер што дава 240 слики во секунда во Full HD резолуција. "
+            },
+            {
+              "text": "choose.tv",
+              "href": "https://www.choose.tv/us/tv/reviews/samsung/samsung-the-frame-2026-ls03h_AJS"
+            },
+            {
+              "text": " го опишува како прв посебен режим за PC игри во историјата на The Frame. Има и VRR (променлива фреквенција што го усогласува екранот со конзолата) и ALLM (автоматско вклучување на режимот за игри)."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Една забелешка: според истиот тест, само еден HDMI влез е HDMI 2.1, па конзола и компјутер за 4K на 120 Hz не можеш да ги приклучиш истовремено."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Монтажа и рамки"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Samsung наведува дека The Frame 2026 има вградени приклучоци и тенок држач за ѕид (Slim Fit Wall Mount) во пакетот, така што телевизорот стои рамно до ѕидот како слика. Рамките во боја (бела, тиково дрво, кафеава и други) се купуваат посебно."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Дали е голема надградба?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Не многу. "
+            },
+            {
+              "text": "choose.tv",
+              "href": "https://www.choose.tv/us/tv/reviews/samsung/samsung-the-frame-2026-ls03h_AJS"
+            },
+            {
+              "text": " заклучува дека новиот The Frame „не носи значајни промени“ и дека сопствениците на минатогодишниот модел немаат голема причина за замена. Минатогодишниот LS03F сè уште стои во продавниците, често со попуст, и е разумен избор ако не ти треба режимот од 240 Hz."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Кај нас"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "На 25 октомври 2026 проверивме: Сетек го има The Frame 2026 во понудата во "
+            },
+            {
+              "text": "43",
+              "href": "/tv/samsung/qe43ls03heuxxh"
+            },
+            {
+              "text": ", 55 и "
+            },
+            {
+              "text": "65 инчи",
+              "href": "/tv/samsung/qe65ls03hauxxh"
+            },
+            {
+              "text": ", а Нептун го има моделот од 65 инчи. Во светот линијата оди до 98 инчи, но поголемите големини кај нас не ги најдовме. Ова е телевизор од средно-високата класа, а плаќаш повеќе за дизајнот отколку за сликата."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "За кого е:",
+              "bold": true
+            },
+            {
+              "text": " светла дневна соба, телевизор на ѕид што треба да изгледа убаво и кога е исклучен. "
+            },
+            {
+              "text": "За кого не е:",
+              "bold": true
+            },
+            {
+              "text": " темна соба за филмови, каде за ист буџет добиваш подобра слика со Mini LED или OLED."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Накратко"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "The Frame 2026 (LS03H) е обичната линија, а The Frame Pro (LS03HW) е друг, поскап модел."
+              }
+            ],
+            [
+              {
+                "text": "Samsung Art Store доби 19 дела од Art Basel Paris 2026 на 20 октомври."
+              }
+            ],
+            [
+              {
+                "text": "Новоста е PC режимот од 240 Hz во Full HD. Останатото е слично на 2025."
+              }
+            ],
+            [
+              {
+                "text": "Нема локално затемнување, па не е за темна соба."
+              }
+            ],
+            [
+              {
+                "text": "Кај нас: Сетек (43, 55 и 65 инчи) и Нептун (65 инчи)."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Извори"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "Samsung Newsroom — Samsung Art Store Unveils Curated Collection From Art Basel Paris 2026",
+                "href": "https://news.samsung.com/global/samsung-art-store-unveils-curated-collection-from-art-basel-paris-2026"
+              }
+            ],
+            [
+              {
+                "text": "Samsung Newsroom US — 2026 The Frame lineup",
+                "href": "https://news.samsung.com/us/samsung-elevates-2026-frame-lineup-broader-customization-advanced-glare-free-technology/"
+              }
+            ],
+            [
+              {
+                "text": "Samsung UK — The Frame Art Mode",
+                "href": "https://www.samsung.com/uk/lifestyle-tvs/the-frame/art-mode/"
+              }
+            ],
+            [
+              {
+                "text": "choose.tv — Samsung The Frame 2026 (LS03H) Review",
+                "href": "https://www.choose.tv/us/tv/reviews/samsung/samsung-the-frame-2026-ls03h_AJS"
+              }
+            ],
+            [
+              {
+                "text": "Сетек — Samsung QE65LS03HAUXXH",
+                "href": "https://setec.mk/products/samsung-qe65ls03hauxxh"
+              }
+            ],
+            [
+              {
+                "text": "Нептун — Samsung Frame QE 65 LS03H",
+                "href": "https://www.neptun.mk/categories/televizori/84121661-SAMSUNG-FRAME-QE-65-LS03H-AUXXH"
+              }
+            ]
+          ]
+        }
+      ],
+      "body": [
+        "Samsung The Frame е телевизор што, кога не гледаш ништо, на ѕидот прикажува уметничко дело наместо црн екран. Моделот за 2026 година го носи кодот LS03H и веќе се продава во Македонија. На 20 октомври 2026 Samsung во својата продавница за уметност, Samsung Art Store, додаде и 19 нови дела од саемот Art Basel Paris 2026, достапни на The Frame и на другите Samsung Art телевизори.",
+        "Пред да продолжиш, една важна разлика: постои и The Frame Pro (код LS03HW). Тоа е друга, поскапа линија со Mini LED позадинско осветлување. Оваа статија е за обичниот The Frame, LS03H.",
+        "Новите 19 дела доаѓаат од галерии што учествуваат на Art Basel Paris во Grand Palais. Меѓу нив се „Poppies #4“ од Елене Шатберашвили и „The Lounge (black and white)“ од Ханс Оп де Бек, црно-бела скулптура на соба замрзната во времето.",
+        "„Откривањето е во срцето на Art Basel“, изјави Карим Крипа, директор на Art Basel Paris, во соопштението на Samsung. Дарија Грин, глобална раководителка за содржина во Samsung Art Store, додаде дека збирката им овозможува на гледачите да го откријат „опсегот на уметничката имагинација во сопствениот дом“.",
+        "Art Mode е причината луѓето да купуваат The Frame. Според Samsung, телевизорот има сензор за движење што го вклучува приказот кога ќе влезеш во собата и го гаси кога ќе излезеш. Сензорот за осветленост ја прилагодува сликата на светлината во просторијата, за делото да не свети како екран.",
+        "The Frame 2026 е 4K QLED телевизор со VA панел. QLED значи LCD екран со слој од квантни точки за поживи бои. Екранот е мат, со технологијата Glare Free против рефлексии, што го прави делото да изгледа повеќе како хартија отколку како стакло. Процесорот е NQ4 AI од втора генерација, според choose.tv.",
+        "Главниот недостаток: телевизорот нема локално затемнување (local dimming), односно не може да затемни само делови од екранот. Затоа choose.tv пишува дека вечерното гледање филмови во темна соба „дефинитивно не е неговата најсилна страна“. Поддржува HDR10, HDR10+ и HLG (формати за слика со висок динамички опсег), но не и Dolby Vision.",
+        "Главната новост за 2026 е за играчите. Покрај Motion Xcelerator со до 144 Hz, Samsung воведува DLG 240 Hz, режим за компјутер што дава 240 слики во секунда во Full HD резолуција. choose.tv го опишува како прв посебен режим за PC игри во историјата на The Frame. Има и VRR (променлива фреквенција што го усогласува екранот со конзолата) и ALLM (автоматско вклучување на режимот за игри).",
+        "Една забелешка: според истиот тест, само еден HDMI влез е HDMI 2.1, па конзола и компјутер за 4K на 120 Hz не можеш да ги приклучиш истовремено.",
+        "Samsung наведува дека The Frame 2026 има вградени приклучоци и тенок држач за ѕид (Slim Fit Wall Mount) во пакетот, така што телевизорот стои рамно до ѕидот како слика. Рамките во боја (бела, тиково дрво, кафеава и други) се купуваат посебно.",
+        "Не многу. choose.tv заклучува дека новиот The Frame „не носи значајни промени“ и дека сопствениците на минатогодишниот модел немаат голема причина за замена. Минатогодишниот LS03F сè уште стои во продавниците, често со попуст, и е разумен избор ако не ти треба режимот од 240 Hz.",
+        "На 25 октомври 2026 проверивме: Сетек го има The Frame 2026 во понудата во 43, 55 и 65 инчи, а Нептун го има моделот од 65 инчи. Во светот линијата оди до 98 инчи, но поголемите големини кај нас не ги најдовме. Ова е телевизор од средно-високата класа, а плаќаш повеќе за дизајнот отколку за сликата.",
+        "За кого е: светла дневна соба, телевизор на ѕид што треба да изгледа убаво и кога е исклучен. За кого не е: темна соба за филмови, каде за ист буџет добиваш подобра слика со Mini LED или OLED."
+      ]
+    },
     {
       "id": "mini-led-televizori-2026-pregled",
       "slug": "mini-led-televizori-2026-pregled",
