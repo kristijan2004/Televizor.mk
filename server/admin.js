@@ -327,6 +327,12 @@ export default async function adminPlugin(app, opts) {
       }
     }
 
+    if (q.verified === "0") {
+      where.push("(specsSource IS NULL OR specsSource = '')");
+    } else if (q.verified === "1") {
+      where.push("(specsSource IS NOT NULL AND specsSource != '')");
+    }
+
     const clause = where.length ? `WHERE ${where.join(" AND ")}` : "";
 
     const { total } = db.prepare(`SELECT COUNT(*) AS total FROM tvs ${clause}`).get(...params);

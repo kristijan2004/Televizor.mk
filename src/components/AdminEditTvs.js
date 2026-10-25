@@ -11,6 +11,23 @@ const SearchRow = styled.div`
   margin-bottom: 18px;
 `;
 
+const FilterToggle = styled.label`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 14px;
+  height: 42px;
+  box-sizing: border-box;
+  border: 1px solid #dedee5;
+  border-radius: 9px;
+  background: white;
+  color: #555;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+`;
+
 const SearchInput = styled.input`
   flex: 1;
   height: 42px;
@@ -244,6 +261,28 @@ const SuccessMsg = styled.span`
   font-weight: 700;
 `;
 
+const ConfirmButton = styled.button`
+  height: 42px;
+  padding: 0 18px;
+  border: 1px solid #1b7a4b;
+  border-radius: 9px;
+  background: white;
+  color: #1b7a4b;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover:not(:disabled) {
+    background: #e8f5ee;
+  }
+
+  &:disabled {
+    border-color: #ccc;
+    color: #ccc;
+    cursor: default;
+  }
+`;
+
 const ErrorMsg = styled.div`
   margin-bottom: 16px;
   padding: 10px 14px;
@@ -369,20 +408,52 @@ export const TvEditForm = ({
     setSavedAt(null);
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setSaving(true);
-    setError(null);
-
+  const buildPatch = () => {
     const patch = {};
     for (const group of FIELD_GROUPS) {
       for (const field of group.fields) {
         patch[field.key] = fromFormValue(field, form[field.key]);
       }
     }
+    return patch;
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setSaving(true);
+    setError(null);
+
+    saveFn(tv.id, buildPatch())
+      .then(() => {
+        setSavedAt(Date.now());
+        onSaved();
+      })
+      .catch((err) => {
+        if (err.status === 401) onSessionExpired();
+        else setError(err.message);
+      })
+      .finally(() => setSaving(false));
+  };
+
+  /*
+    Ѕвезди/заклучување: штом корисникот рачно провери телевизор, specsSource
+    треба да биде пополнет, инаку апликациите за обогатување (apply*Specs.js)
+    може подоцна да го „пронајдат" како непроверен и да му ги променат
+    спецификациите. Копчето само го пополнува тоа поле со „рачно" и го
+    зачувува тековниот формулар — не отвора ново уредување.
+  */
+  const isVerified = form.specsSource.trim() !== "";
+
+  const handleConfirm = () => {
+    setSaving(true);
+    setError(null);
+
+    const patch = buildPatch();
+    patch.specsSource = "рачно";
 
     saveFn(tv.id, patch)
       .then(() => {
+        setField("specsSource", "рачно");
         setSavedAt(Date.now());
         onSaved();
       })
@@ -444,6 +515,10 @@ export const TvEditForm = ({
             {saving ? "Се зачувува..." : "Зачувај"}
           </SaveButton>
 
+          <ConfirmButton type="button" disabled={saving || isVerified} onClick={handleConfirm}>
+            {isVerified ? "✓ Потврдено" : "✓ Потврди проверка"}
+          </ConfirmButton>
+
           {savedAt && <SuccessMsg>Зачувано.</SuccessMsg>}
         </FormActions>
       </form>
@@ -457,6 +532,7 @@ export const TvEditForm = ({
 
 const AdminEditTvs = ({ onSessionExpired }) => {
   const [search, setSearch] = useState("");
+  const [onlyUnverified, setOnlyUnverified] = useState(false);
   const [page, setPage] = useState(1);
   const [list, setList] = useState({ items: [], total: 0, limit: 20 });
   const [loading, setLoading] = useState(true);
@@ -465,14 +541,17 @@ const AdminEditTvs = ({ onSessionExpired }) => {
 
   const loadList = React.useCallback(() => {
     setLoading(true);
+    const params = { search, page, limit: 20 };
+    if (onlyUnverified) params.verified = "0";
+
     adminApi
-      .listTvs({ search, page, limit: 20 })
+      .listTvs(params)
       .then(setList)
       .catch((err) => {
         if (err.status === 401) onSessionExpired();
       })
       .finally(() => setLoading(false));
-  }, [search, page, onSessionExpired]);
+  }, [search, page, onlyUnverified, onSessionExpired]);
 
   useEffect(() => {
     if (!selectedId) loadList();
@@ -525,6 +604,18 @@ const AdminEditTvs = ({ onSessionExpired }) => {
             setPage(1);
           }}
         />
+
+        <FilterToggle>
+          <Checkbox
+            type="checkbox"
+            checked={onlyUnverified}
+            onChange={(event) => {
+              setOnlyUnverified(event.target.checked);
+              setPage(1);
+            }}
+          />
+          Само непроверени
+        </FilterToggle>
       </SearchRow>
 
       {loading && <Empty>Се вчитува...</Empty>}
