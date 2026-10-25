@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
 import { adminApi } from "../lib/adminApi";
+import { SPECIAL_FEATURES } from "../lib/specialFeatures";
 
 const PURPLE = "#242582";
 
@@ -345,6 +346,12 @@ const FIELD_GROUPS = [
     ],
   },
   {
+    title: "Посебни карактеристики",
+    fields: [
+      { key: "specialFeatures", label: "Посебни карактеристики", type: "checklist" },
+    ],
+  },
+  {
     title: "Останато",
     fields: [
       { key: "image", label: "Слика (URL или патека)", type: "text" },
@@ -355,12 +362,14 @@ const FIELD_GROUPS = [
 
 function toFormValue(field, value) {
   if (field.type === "list") return Array.isArray(value) ? value.join(", ") : "";
+  if (field.type === "checklist") return Array.isArray(value) ? value : [];
   if (field.type === "number") return value === null || value === undefined ? "" : String(value);
   return value ?? "";
 }
 
 function fromFormValue(field, raw) {
   if (field.type === "bool") return raw === true;
+  if (field.type === "checklist") return Array.isArray(raw) ? raw : [];
   if (field.type === "list") {
     return raw
       .split(",")
@@ -493,6 +502,23 @@ export const TvEditForm = ({
                       />
                       {field.label}
                     </CheckboxRow>
+                  ) : field.type === "checklist" ? (
+                    SPECIAL_FEATURES.map((feature) => (
+                      <CheckboxRow key={feature.key}>
+                        <Checkbox
+                          type="checkbox"
+                          checked={form[field.key].includes(feature.key)}
+                          onChange={(event) => {
+                            const current = form[field.key];
+                            const next = event.target.checked
+                              ? [...current, feature.key]
+                              : current.filter((k) => k !== feature.key);
+                            setField(field.key, next);
+                          }}
+                        />
+                        {feature.label}
+                      </CheckboxRow>
+                    ))
                   ) : (
                     <>
                       <FieldLabel htmlFor={`f-${field.key}`}>{field.label}</FieldLabel>

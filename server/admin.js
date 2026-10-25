@@ -20,6 +20,7 @@ import path from "node:path";
 import { verifyPassword, DUMMY_HASH } from "./password.js";
 import { parseCookies, serializeCookie, clearCookie } from "./cookies.js";
 import { COLUMNS, EDITABLE_FIELDS, JSON_FIELDS, BOOL_FIELDS, toCell, hydrateRow } from "./tvRows.js";
+import { SPECIAL_FEATURE_KEYS } from "../src/lib/specialFeatures.js";
 
 const SESSION_TTL_MS = 8 * 60 * 60 * 1000; // 8 часа
 const SESSION_COOKIE = "admin_session";
@@ -51,6 +52,12 @@ function validateField(field, value) {
     if (!Array.isArray(value) || value.length > 10) return { ok: false };
     if (!value.every((v) => typeof v === "string" && v.length <= 30)) return { ok: false };
     return { ok: true, value: value.map((v) => v.trim()).filter(Boolean) };
+  }
+
+  if (field === "specialFeatures") {
+    if (!Array.isArray(value)) return { ok: false };
+    if (!value.every((v) => SPECIAL_FEATURE_KEYS.includes(v))) return { ok: false };
+    return { ok: true, value: [...new Set(value)] };
   }
 
   if (field === "size") {

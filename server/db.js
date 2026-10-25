@@ -21,9 +21,20 @@ export function openDb({ create = true } = {}) {
 
   if (create) {
     db.exec(fs.readFileSync(path.join(__dirname, "schema.sql"), "utf8"));
+
+    // CREATE TABLE IF NOT EXISTS не додава колони на постоечка табела, па
+    // нови полиња во schema.sql не стигнуваат до живата база сами.
+    ensureColumn(db, "tvs", "specialFeatures", "TEXT");
   }
 
   return db;
+}
+
+function ensureColumn(db, table, column, type) {
+  const columns = db.prepare(`PRAGMA table_info(${table})`).all();
+  if (!columns.some((c) => c.name === column)) {
+    db.exec(`ALTER TABLE ${table} ADD COLUMN ${column} ${type}`);
+  }
 }
 
 export { DB_FILE };

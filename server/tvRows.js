@@ -10,10 +10,10 @@ export const COLUMNS = [
   "year", "os", "hdr", "dolbyVision", "hdmi", "usb", "vrr", "allm",
   "pictureProcessor", "hdrFormats", "brightness", "audioPower",
   "audioChannels", "dolbyAtmos", "freeSync", "gSync", "image", "stores",
-  "specsSource",
+  "specsSource", "specialFeatures",
 ];
 
-export const JSON_FIELDS = ["hdrFormats", "stores"];
+export const JSON_FIELDS = ["hdrFormats", "stores", "specialFeatures"];
 
 export const BOOL_FIELDS = [
   "hdr", "dolbyVision", "vrr", "allm",
@@ -31,6 +31,7 @@ export const EDITABLE_FIELDS = [
   "hdr", "dolbyVision", "hdmi", "usb", "vrr", "allm",
   "pictureProcessor", "hdrFormats", "brightness", "audioPower",
   "audioChannels", "dolbyAtmos", "freeSync", "gSync", "image", "specsSource",
+  "specialFeatures",
 ];
 
 // JS вредност -> ќелија за SQLite (null/number/string/bigint/Buffer).

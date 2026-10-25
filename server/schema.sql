@@ -36,7 +36,8 @@ CREATE TABLE IF NOT EXISTS tvs (
 
   image           TEXT,
   stores          TEXT,
-  specsSource     TEXT
+  specsSource     TEXT,
+  specialFeatures TEXT
 );
 
 CREATE INDEX IF NOT EXISTS idx_tvs_brand       ON tvs(brand);

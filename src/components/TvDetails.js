@@ -9,6 +9,7 @@ import { formatSpec } from "../lib/specValue";
 import { usePageMeta } from "../lib/usePageMeta";
 import { tvPath } from "../lib/tvPath";
 import { displayBrand } from "../lib/brand";
+import { SPECIAL_FEATURES } from "../lib/specialFeatures";
 
 const Page = styled.div`
   min-height: 100vh;
@@ -687,6 +688,30 @@ const TvDetails = () => {
               </Spec>
             </Specifications>
           </Section>
+
+          {tv.specialFeatures?.length > 0 && (
+            <Section>
+              <SectionTitle>Посебни карактеристики</SectionTitle>
+
+              <Specifications>
+                {tv.specialFeatures.map((key) => {
+                  const feature = SPECIAL_FEATURES.find((f) => f.key === key);
+                  if (!feature) return null;
+
+                  return (
+                    <Spec key={key}>
+                      <SpecLabel>
+                        {feature.label}
+                        <InfoTooltip text={feature.description} />
+                      </SpecLabel>
+
+                      <SpecValue>Да</SpecValue>
+                    </Spec>
+                  );
+                })}
+              </Specifications>
+            </Section>
+          )}
 
           <Section>
             <SectionTitle>Звук</SectionTitle>

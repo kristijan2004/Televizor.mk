@@ -230,7 +230,8 @@ function defaultSpecs() {
     audioChannels: "2.0",
     dolbyAtmos: false,
     freeSync: false,
-    gSync: false
+    gSync: false,
+    specialFeatures: []
   };
 }
 
@@ -263,6 +264,7 @@ function getSpecs(old) {
     dolbyAtmos: old.dolbyAtmos ?? false,
     freeSync: old.freeSync ?? false,
     gSync: old.gSync ?? false,
+    specialFeatures: old.specialFeatures ?? [],
     // Where verified specs came from (e.g. "icecat"). Missing = placeholders.
     ...(old.specsSource ? { specsSource: old.specsSource } : {})
   };
