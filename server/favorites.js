@@ -142,6 +142,21 @@ export default async function favoritesPlugin(app, opts) {
     const tvUrl = tv ? `${SITE}${tvPath(tv)}` : "/";
     const unsubUrl = `${SITE}/api/favorites/unsubscribe?token=${row.unsub_token}`;
 
+    /*
+      Линкот на страницата исчезнува штом ја затвори — ако цената не падне со
+      месеци, тоа е единствениот момент кога корисникот го гледа. Затоа оди и
+      на е-пошта, каде што останува пронајдлив. Не ја блокира страницата ако
+      испраќањето падне — тогаш барем линкот на страницата сепак работи.
+    */
+    sendEmail({
+      to: row.email,
+      subject: `Следењето е потврдено — ${tv ? `${tv.brand} ${tv.model}` : "телевизор"}`,
+      text:
+        `Потврдено. Ќе те известиме на оваа адреса кога цената ` +
+        `${tv ? `на ${tv.brand} ${tv.model}` : "на овој телевизор"} ќе падне.\n\n` +
+        `За да се отпишеш в секое време:\n${unsubUrl}`,
+    }).catch((err) => request.log.error(err, "favorites: е-поштата со линкот за отпишување не успеа"));
+
     reply.type("text/html");
     return page(
       "Потврдено",
