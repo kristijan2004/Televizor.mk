@@ -451,6 +451,93 @@ const SceneImg = styled.img`
   transition: opacity 0.35s ease;
 `;
 
+const BudgetRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+`;
+
+const BudgetField = styled.label`
+  flex: 1;
+  min-width: 140px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  font-size: 13px;
+  font-weight: 700;
+  color: #666;
+`;
+
+const BudgetInputWrap = styled.div`
+  position: relative;
+
+  display: flex;
+  align-items: center;
+`;
+
+const BudgetInput = styled.input`
+  width: 100%;
+
+  height: 56px;
+
+  padding: 0 60px 0 18px;
+
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2a2a3c;
+
+  background-color: #ffffff;
+
+  border: 2px solid #e2e2ec;
+  border-radius: 14px;
+
+  box-sizing: border-box;
+
+  transition: border-color 0.15s;
+
+  ${focusRing}
+
+  &:hover {
+    border-color: ${PURPLE};
+  }
+
+  &::placeholder {
+    color: #b7b6c6;
+    font-weight: 600;
+  }
+
+  /* Отстранува стрелки за број — нема потреба на вредности од илјадници денари. */
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  &[type="number"] {
+    -moz-appearance: textfield;
+  }
+`;
+
+const BudgetSuffix = styled.span`
+  position: absolute;
+  right: 18px;
+
+  font-size: 14px;
+  font-weight: 700;
+  color: #9a99ab;
+
+  pointer-events: none;
+`;
+
+const BudgetNote = styled.p`
+  margin: 14px 0 0;
+
+  font-size: 13px;
+  color: #8c8b9c;
+`;
+
 const Options = styled.div`
   display: grid;
 
@@ -728,6 +815,8 @@ const PickKind = styled.div`
       ? PURPLE
       : props.$kind === "vrednost"
       ? "#1f7a4d"
+      : props.$kind === "stretch"
+      ? "#0f6fb5"
       : "#8a5a1f"};
 
   font-size: 12px;
@@ -1159,6 +1248,28 @@ const Note = styled.p`
   border-radius: 12px;
 `;
 
+const StretchHead = styled.div`
+  margin: 28px 0 14px;
+
+  h2 {
+    margin: 0 0 4px;
+
+    color: #2a2a3c;
+
+    font-size: 19px;
+    font-weight: 800;
+  }
+
+  p {
+    margin: 0;
+
+    color: #6a6a7c;
+
+    font-size: 14px;
+    line-height: 1.5;
+  }
+`;
+
 const BackHome = styled(Link)`
   display: inline-block;
 
@@ -1246,7 +1357,7 @@ function USE_META_MAP(baseOptions, metaById) {
   return baseOptions.map((o) => ({ id: o.id, label: o.label, ...metaById[o.id] }));
 }
 
-function buildSteps(budgetOptions, brandOptions) {
+function buildSteps(brandOptions) {
   return [
     {
       key: "distance",
@@ -1308,8 +1419,9 @@ function buildSteps(budgetOptions, brandOptions) {
     {
       key: "budget",
       question: "Колку сакаш да потрошиш?",
-      hint: "Опсезите се пресметани од вистинските цени кај македонските трговци во нашата база.",
-      options: budgetOptions.map((o) => ({ id: o.id, label: o.label, value: o })),
+      hint: "Внеси опсег во денари. Остави „до” празно ако нема горна граница.",
+      budgetInput: true,
+      options: [],
       wide: true,
     },
     {
@@ -1424,7 +1536,7 @@ const OdberiTv = () => {
   */
   const steps = useMemo(
     () =>
-      buildSteps(quizOptions.budgets, quizOptions.brands).filter(
+      buildSteps(quizOptions.brands).filter(
         (item) => !item.onlyIf || item.onlyIf(answers)
       ),
     [quizOptions, answers]
@@ -1495,6 +1607,22 @@ const OdberiTv = () => {
     const value = "value" in option ? option.value : option.id;
 
     setAnswers((previous) => ({ ...previous, [step.key]: value }));
+  };
+
+  // Буџетот сега е слободен опсег, не избор меѓу подготвени опции — „до"
+  // празно значи без горна граница (исто како претходната опција „Без
+  // ограничување"), „од" празно значи 0.
+  const [budgetMin, setBudgetMin] = useState("");
+  const [budgetMax, setBudgetMax] = useState("");
+
+  const updateBudget = (rawMin, rawMax) => {
+    setBudgetMin(rawMin);
+    setBudgetMax(rawMax);
+
+    const min = rawMin === "" ? 0 : Math.max(0, Number(rawMin) || 0);
+    const max = rawMax === "" ? Infinity : Math.max(0, Number(rawMax) || 0);
+
+    setAnswers((previous) => ({ ...previous, budget: { id: "custom", min, max } }));
   };
 
   const toggleMulti = (option) => {
@@ -1873,6 +2001,122 @@ const OdberiTv = () => {
             );
           })}
 
+          {result.stretch && (
+            <>
+              <StretchHead>
+                <h2>Со малку повеќе пари...</h2>
+
+                <p>
+                  За {formatPrice(result.stretch.extraCost)} повеќе (
+                  {result.stretch.extraPercent}% над буџетот) добиваш нешто
+                  забележливо подобро.
+                </p>
+              </StretchHead>
+
+              <PickCard>
+                <PickKind $kind="stretch">
+                  За {formatPrice(result.stretch.extraCost)} повеќе
+                </PickKind>
+
+                <PickBody>
+                  {result.stretch.tv.image && (
+                    <PickImage
+                      src={result.stretch.tv.image}
+                      alt={`${result.stretch.tv.brand} ${result.stretch.tv.model}`}
+                      onError={(event) => {
+                        event.currentTarget.style.visibility = "hidden";
+                      }}
+                    />
+                  )}
+
+                  <PickMain>
+                    <PickName>
+                      {result.stretch.tv.brand} {result.stretch.tv.model}
+                    </PickName>
+
+                    <PickSpecs>
+                      {[
+                        result.stretch.tv.size ? `${result.stretch.tv.size}"` : null,
+                        technologyLabel(result.stretch.tv.technology),
+                        result.stretch.tv.resolution,
+                        result.stretch.tv.refreshRate
+                          ? `${result.stretch.tv.refreshRate}Hz`
+                          : null,
+                        result.stretch.tv.os,
+                      ]
+                        .filter(Boolean)
+                        .join(" · ") || "Спецификациите не се целосни"}
+                    </PickSpecs>
+
+                    {/* Истата именувана предност што ја користи и третата
+                        картичка (advantageOver) — вреди да се плати повеќе
+                        само ако може конкретно да се каже зошто. */}
+                    <Advantage>+ {result.stretch.advantage}</Advantage>
+
+                    <CardLinks>
+                      <CardLink to={tvPath(result.stretch.tv)}>
+                        Сите спецификации →
+                      </CardLink>
+
+                      <CompareButton
+                        type="button"
+                        onClick={() => addToCompare(result.stretch.tv)}
+                        disabled={compareList.some(
+                          (item) => item.id === result.stretch.tv.id
+                        )}
+                      >
+                        {compareList.some((item) => item.id === result.stretch.tv.id)
+                          ? "Во споредбата"
+                          : "Додај во споредба"}
+                      </CompareButton>
+                    </CardLinks>
+
+                    <Offers>
+                      {result.stretch.tv.offers.map((offer, index) => {
+                        const cheapest =
+                          index === 0 &&
+                          result.stretch.tv.offers.length > 1 &&
+                          offer.price < result.stretch.tv.offers[1].price;
+
+                        const content = (
+                          <>
+                            <OfferStore>{offer.store}</OfferStore>
+
+                            <OfferPrice>
+                              {!offer.inStock && (
+                                <OutOfStock>нема залиха</OutOfStock>
+                              )}
+
+                              {cheapest && <CheapestTag>најевтино</CheapestTag>}
+
+                              {formatPrice(offer.price)}
+                            </OfferPrice>
+                          </>
+                        );
+
+                        return offer.url ? (
+                          <OfferRow
+                            key={offer.store}
+                            href={offer.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            $best={cheapest}
+                          >
+                            {content}
+                          </OfferRow>
+                        ) : (
+                          <OfferRow key={offer.store} as="div" $best={cheapest}>
+                            {content}
+                          </OfferRow>
+                        );
+                      })}
+                    </Offers>
+                  </PickMain>
+                </PickBody>
+              </PickCard>
+            </>
+          )}
+
           <Chips>
             {steps.map((item, index) => {
               const label = labelFor(item.key);
@@ -2000,9 +2244,11 @@ const OdberiTv = () => {
               type="button"
               onClick={advance}
               disabled={
-                step.multi
-                  ? multiAnswer.length === 0
-                  : answers[step.key] === undefined
+                step.budgetInput
+                  ? false
+                  : step.multi
+                    ? multiAnswer.length === 0
+                    : answers[step.key] === undefined
               }
             >
               {isLast ? "Прикажи препораки" : "Продолжи"}
@@ -2118,6 +2364,50 @@ const OdberiTv = () => {
                 );
               })}
             </Options>
+          </>
+        ) : step.budgetInput ? (
+          <>
+            <Question>{step.question}</Question>
+
+            <Hint>{step.hint}</Hint>
+
+            <BudgetRow>
+              <BudgetField>
+                Од
+                <BudgetInputWrap>
+                  <BudgetInput
+                    type="number"
+                    inputMode="numeric"
+                    min="0"
+                    step="1000"
+                    placeholder="0"
+                    value={budgetMin}
+                    onChange={(event) => updateBudget(event.target.value, budgetMax)}
+                  />
+                  <BudgetSuffix>ден.</BudgetSuffix>
+                </BudgetInputWrap>
+              </BudgetField>
+
+              <BudgetField>
+                До
+                <BudgetInputWrap>
+                  <BudgetInput
+                    type="number"
+                    inputMode="numeric"
+                    min="0"
+                    step="1000"
+                    placeholder="без ограничување"
+                    value={budgetMax}
+                    onChange={(event) => updateBudget(budgetMin, event.target.value)}
+                  />
+                  <BudgetSuffix>ден.</BudgetSuffix>
+                </BudgetInputWrap>
+              </BudgetField>
+            </BudgetRow>
+
+            <BudgetNote>
+              Остави „до" празно ако немаш горна граница — ќе земеме телевизори од секоја цена.
+            </BudgetNote>
           </>
         ) : (
           <>

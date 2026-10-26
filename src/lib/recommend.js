@@ -578,6 +578,52 @@ function withinBudget(tv, budget) {
   return tv.price > budget.min - 1 && tv.price <= budget.max;
 }
 
+/*
+  „За 10% повеќе" — телевизор малку над буџетот што е ЗНАЧИТЕЛНО подобар, не
+  само поскап верзија на истото. Се бара во тесен појас веднаш над максимумот
+  (budget.max до budget.max * 1.1) и се бара истата именувана предност што ја
+  користи третата картичка (advantageOver) — поголем екран, подобар гејминг
+  или подобар панел. Без именувана предност нема предлог: „подобро, доверете
+  ни" без причина не вреди да се прикажува.
+
+  Нема предлог кога буџетот нема горна граница — „10% повеќе" од бесконечност
+  нема смисла.
+*/
+function findStretchPick(catalogue, answers, budget, best) {
+  if (!budget || !Number.isFinite(budget.max)) {
+    return null;
+  }
+
+  const stretchMax = budget.max * 1.1;
+
+  const pool = catalogue.filter(
+    (tv) => tv.price !== null && tv.price > budget.max && tv.price <= stretchMax
+  );
+
+  if (pool.length === 0) {
+    return null;
+  }
+
+  const rankedPool = pool
+    .map((tv) => scoreTv(tv, answers))
+    .sort((a, b) => b.score - a.score);
+
+  for (const entry of rankedPool) {
+    const advantage = advantageOver(entry, best);
+
+    if (advantage && advantage.key !== "cena") {
+      return {
+        ...entry,
+        advantage: advantage.label,
+        extraCost: entry.tv.price - budget.max,
+        extraPercent: Math.round(((entry.tv.price - budget.max) / budget.max) * 100),
+      };
+    }
+  }
+
+  return null;
+}
+
 /* ------------------------------------------------------------------ *
  * Public entry point
  * ------------------------------------------------------------------ */
@@ -624,6 +670,8 @@ export function recommend(catalogue, answers, options = {}) {
     });
 
   const best = ranked[0];
+
+  const stretch = findStretchPick(catalogue, answers, budget, best);
 
   const picks = [{ ...best, kind: "najdobar" }];
 
@@ -730,6 +778,7 @@ export function recommend(catalogue, answers, options = {}) {
     consideredCount: affordable.length,
     brandNote: brandHonoured ? null : brands,
     sizeNote: sizeHonoured ? null : answers.preferredSize,
+    stretch,
   };
 }
 

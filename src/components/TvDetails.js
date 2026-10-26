@@ -342,6 +342,93 @@ const StoreButton = styled.a`
     background-color: #1c1d68;
   }
 `;
+
+const FollowWrap = styled.div`
+  margin-top: 22px;
+  padding-top: 20px;
+
+  border-top: 1px solid #ededf2;
+`;
+
+const FollowRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+`;
+
+const FollowButton = styled.button`
+  border: 1px solid #242582;
+  border-radius: 9px;
+
+  padding: 10px 16px;
+
+  background-color: ${(props) => (props.$active ? "#242582" : "white")};
+  color: ${(props) => (props.$active ? "white" : "#242582")};
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: ${(props) => (props.$active ? "default" : "pointer")};
+
+  transition: 0.2s;
+
+  &:hover {
+    background-color: ${(props) => (props.$active ? "#242582" : "#f1f0f8")};
+  }
+`;
+
+const FollowForm = styled.form`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+`;
+
+const FollowInput = styled.input`
+  flex: 1;
+  min-width: 220px;
+
+  height: 42px;
+  padding: 0 14px;
+
+  font-size: 14px;
+
+  border: 1px solid #d8d8e2;
+  border-radius: 9px;
+`;
+
+const FollowSubmit = styled.button`
+  height: 42px;
+  padding: 0 18px;
+
+  border: none;
+  border-radius: 9px;
+
+  background-color: #242582;
+  color: white;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: default;
+  }
+
+  &:hover:not(:disabled) {
+    background-color: #1c1d68;
+  }
+`;
+
+const FollowNote = styled.p`
+  margin: 8px 0 0;
+
+  font-size: 13px;
+  color: ${(props) => (props.$error ? "#b3261e" : "#777")};
+`;
+
 const Empty = styled.div`
   background-color: white;
 
@@ -372,6 +459,60 @@ const TvDetails = () => {
   */
   const [tv, setTv] = useState(null);
   const [loading, setLoading] = useState(true);
+
+  /*
+    „Следи ја цената". followedLocally е чисто за прикажување — реалната
+    претплата живее на серверот (email + tv_id), localStorage само памети
+    дека ОВОЈ прелистувач веќе побарал следење за овој телевизор, за да не
+    праша повторно при секоја посета. Не е потребно за функционалноста,
+    само удобност.
+  */
+  const [followOpen, setFollowOpen] = useState(false);
+  const [followEmail, setFollowEmail] = useState("");
+  const [followStatus, setFollowStatus] = useState("idle"); // idle | sending | sent | error
+  const [followError, setFollowError] = useState("");
+  const [followedLocally, setFollowedLocally] = useState(false);
+
+  useEffect(() => {
+    if (!tv) return;
+    try {
+      setFollowedLocally(localStorage.getItem(`followPrice:${tv.id}`) === "1");
+    } catch {
+      setFollowedLocally(false);
+    }
+  }, [tv]);
+
+  const submitFollow = (event) => {
+    event.preventDefault();
+    if (!tv || followStatus === "sending") return;
+
+    setFollowStatus("sending");
+    setFollowError("");
+
+    fetch(`${API}/favorites`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ tvId: tv.id, email: followEmail.trim() }),
+    })
+      .then(async (r) => {
+        const data = await r.json().catch(() => ({}));
+        if (!r.ok) throw new Error(data.error || "Нешто тргна наопаку.");
+        return data;
+      })
+      .then((data) => {
+        setFollowStatus(data.status === "already-following" ? "already" : "sent");
+        try {
+          localStorage.setItem(`followPrice:${tv.id}`, "1");
+        } catch {
+          // localStorage недостапен (приватен режим и сл.) - не е критично
+        }
+        setFollowedLocally(true);
+      })
+      .catch((err) => {
+        setFollowStatus("error");
+        setFollowError(err.message);
+      });
+  };
 
   useEffect(() => {
     let cancelled = false;
@@ -555,6 +696,47 @@ const TvDetails = () => {
       );
     })}
   </StoresList>
+
+  <FollowWrap>
+    <FollowRow>
+      {followStatus === "sent" || followStatus === "already" || followedLocally ? (
+        <FollowButton type="button" $active disabled>
+          {followStatus === "already" ? "✓ Веќе следиш" : "✓ Следиш ја цената"}
+        </FollowButton>
+      ) : !followOpen ? (
+        <FollowButton type="button" onClick={() => setFollowOpen(true)}>
+          ★ Следи ја цената
+        </FollowButton>
+      ) : (
+        <FollowForm onSubmit={submitFollow}>
+          <FollowInput
+            type="email"
+            required
+            placeholder="твојата е-пошта"
+            value={followEmail}
+            onChange={(e) => setFollowEmail(e.target.value)}
+          />
+
+          <FollowSubmit type="submit" disabled={followStatus === "sending"}>
+            {followStatus === "sending" ? "Се праќа..." : "Потврди"}
+          </FollowSubmit>
+        </FollowForm>
+      )}
+    </FollowRow>
+
+    {followStatus === "sent" && (
+      <FollowNote>
+        Провери ја поштата — испративме линк за потврда. Без потврда нема да
+        те известиме.
+      </FollowNote>
+    )}
+
+    {followStatus === "error" && <FollowNote $error>{followError}</FollowNote>}
+
+    {!followOpen && followStatus === "idle" && !followedLocally && (
+      <FollowNote>Ќе те известиме на е-пошта само кога цената ќе падне.</FollowNote>
+    )}
+  </FollowWrap>
 </Section>
 
 <Divider />

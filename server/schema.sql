@@ -85,3 +85,29 @@ CREATE TABLE IF NOT EXISTS admin_audit_log (
 
 CREATE INDEX IF NOT EXISTS idx_admin_audit_tv ON admin_audit_log(tv_id);
 CREATE INDEX IF NOT EXISTS idx_admin_audit_changed_at ON admin_audit_log(changed_at DESC);
+
+-- „Следи ја цената" — известување по е-пошта кога цената на телевизор падне.
+--
+-- Двојна потврда (confirmed + confirm_token): без неа било кој може да
+-- внесе туѓа е-пошта и да ја претплати на известувања за случаен телевизор.
+-- unsub_token е посебен од confirm_token за да линкот за отпишување во секоја
+-- идна е-пошта остане валиден дури и по потврдата.
+--
+-- last_notified_price е референтната цена за споредба — не цената при
+-- додавање, туку цената при ПОСЛЕДНОТО известување, за да паѓање па качување
+-- па повторно паѓање под истото ниво пак се пријави.
+CREATE TABLE IF NOT EXISTS favorites (
+  id                  INTEGER PRIMARY KEY AUTOINCREMENT,
+  tv_id               TEXT NOT NULL,
+  email               TEXT NOT NULL,
+  confirmed           INTEGER NOT NULL DEFAULT 0,
+  confirm_token       TEXT,
+  unsub_token         TEXT NOT NULL,
+  last_notified_price INTEGER,
+  created_at          INTEGER NOT NULL,
+  confirmed_at        INTEGER
+);
+
+CREATE UNIQUE INDEX IF NOT EXISTS idx_favorites_tv_email ON favorites(tv_id, email);
+CREATE INDEX IF NOT EXISTS idx_favorites_email ON favorites(email);
+CREATE INDEX IF NOT EXISTS idx_favorites_confirmed ON favorites(confirmed);

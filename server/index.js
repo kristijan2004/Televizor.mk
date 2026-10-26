@@ -16,6 +16,7 @@ import { fileURLToPath } from "node:url";
 import { openDb } from "./db.js";
 import { hydrateRow } from "./tvRows.js";
 import adminPlugin from "./admin.js";
+import favoritesPlugin from "./favorites.js";
 
 /*
   Квизот „Одбери ТВ" се пресметува ТУКА, не во прелистувачот.
@@ -141,6 +142,10 @@ await app.register(rateLimit, {
   регистриран со префикс /api/admin. Не е во јавната навигација.
 */
 await app.register(adminPlugin, { prefix: "/api/admin", db, dataDir: DATA_DIR });
+
+const getTvById = (id) => hydrate(db.prepare("SELECT * FROM tvs WHERE id = ?").get(id));
+
+await app.register(favoritesPlugin, { prefix: "/api/favorites", db, getTvById });
 
 app.get("/api/health", async () => {
   const { n } = db.prepare("SELECT COUNT(*) AS n FROM tvs").get();
@@ -886,6 +891,13 @@ app.post(
       consideredCount: result.consideredCount,
       brandNote: result.brandNote ?? null,
       sizeNote: result.sizeNote ?? null,
+      stretch: result.stretch
+        ? {
+            ...shape({ ...result.stretch, kind: "stretch" }),
+            extraCost: result.stretch.extraCost,
+            extraPercent: result.stretch.extraPercent,
+          }
+        : null,
     };
   }
 );
