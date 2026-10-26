@@ -65,7 +65,7 @@ export default async function favoritesPlugin(app, opts) {
         .get(tvId, cleanEmail);
 
       if (existing?.confirmed) {
-        return { ok: true, status: "already-following" };
+        return { ok: true, status: "already-following", unsubToken: existing.unsub_token };
       }
 
       if (!existing) {
@@ -140,13 +140,15 @@ export default async function favoritesPlugin(app, opts) {
     ).run(Date.now(), price, row.id);
 
     const tvUrl = tv ? `${SITE}${tvPath(tv)}` : "/";
+    const unsubUrl = `${SITE}/api/favorites/unsubscribe?token=${row.unsub_token}`;
 
     reply.type("text/html");
     return page(
       "Потврдено",
       `<h1>✓ Потврдено</h1><p>Ќе те известиме на ${row.email} кога цената ` +
         `${tv ? `на ${tv.brand} ${tv.model}` : "на овој телевизор"} ќе падне.</p>` +
-        `<p><a href="${tvUrl}">Погледни го телевизорот →</a></p>`
+        `<p><a href="${tvUrl}">Погледни го телевизорот →</a></p>` +
+        `<p style="margin-top:20px"><a href="${unsubUrl}" style="color:#999;font-weight:400;font-size:13px">Откажи го следењето</a></p>`
     );
   });
 
