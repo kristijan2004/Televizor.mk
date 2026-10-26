@@ -500,13 +500,21 @@ const TvDetails = () => {
         return data;
       })
       .then((data) => {
-        setFollowStatus(data.status === "already-following" ? "already" : "sent");
-        try {
-          localStorage.setItem(`followPrice:${tv.id}`, "1");
-        } catch {
-          // localStorage недостапен (приватен режим и сл.) - не е критично
+        const confirmed = data.status === "already-following";
+        setFollowStatus(confirmed ? "already" : "sent");
+
+        // followedLocally значи „веќе ПОТВРДЕНО следиш" - штом само е испратен
+        // линкот за потврда, следењето сè уште не е активно, па не се паметува
+        // засекогаш, инаку следен пат копчето ќе лаже дека следиш иако никогаш
+        // не си кликнал на линкот од е-поштата.
+        if (confirmed) {
+          try {
+            localStorage.setItem(`followPrice:${tv.id}`, "1");
+          } catch {
+            // localStorage недостапен (приватен режим и сл.) - не е критично
+          }
+          setFollowedLocally(true);
         }
-        setFollowedLocally(true);
       })
       .catch((err) => {
         setFollowStatus("error");
@@ -699,9 +707,13 @@ const TvDetails = () => {
 
   <FollowWrap>
     <FollowRow>
-      {followStatus === "sent" || followStatus === "already" || followedLocally ? (
+      {followStatus === "already" || followedLocally ? (
         <FollowButton type="button" $active disabled>
-          {followStatus === "already" ? "✓ Веќе следиш" : "✓ Следиш ја цената"}
+          ✓ Ja следиш цената
+        </FollowButton>
+      ) : followStatus === "sent" ? (
+        <FollowButton type="button" disabled>
+          📧 Чека потврда на е-пошта
         </FollowButton>
       ) : !followOpen ? (
         <FollowButton type="button" onClick={() => setFollowOpen(true)}>
@@ -726,8 +738,8 @@ const TvDetails = () => {
 
     {followStatus === "sent" && (
       <FollowNote>
-        Провери ја поштата — испративме линк за потврда. Без потврда нема да
-        те известиме.
+        Испративме линк за потврда на твојата е-пошта. Кликни на него за да
+        почнеме да те известуваме.
       </FollowNote>
     )}
 
