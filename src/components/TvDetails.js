@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import styled from "styled-components";
-import { useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 
 import Navigation from "./Navigation";
 import { Context } from "./Context";
@@ -451,6 +451,7 @@ const TvDetails = () => {
   const { compareList, addToCompare, removeFromCompare } = useContext(Context);
 
   const navigate = useNavigate();
+  const location = useLocation();
 
   /*
     Порано овој телевизор се бараше во целата листа во меморија. Сега се зема
@@ -480,6 +481,27 @@ const TvDetails = () => {
     } catch {
       setFollowedLocally(false);
     }
+  }, [tv]);
+
+  /*
+    ?followed=1 — потврдата се случува со клик на линк од е-пошта (надвор од
+    React апликацијата), па ова е единствениот момент кога страницата дознава
+    дека навистина е потврдено, не само побарано. Линкот доаѓа од
+    favorites.js (confirm страницата). Отстрануваме го параметарот од URL-то
+    веднаш штом е прочитан, за да не остане во адресата при освежување/дељ.
+  */
+  useEffect(() => {
+    if (!tv) return;
+    if (new URLSearchParams(location.search).get("followed") !== "1") return;
+
+    try {
+      localStorage.setItem(`followPrice:${tv.id}`, "1");
+    } catch {
+      // localStorage недостапен - не е критично
+    }
+    setFollowedLocally(true);
+    navigate(location.pathname, { replace: true });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [tv]);
 
   const submitFollow = (event) => {

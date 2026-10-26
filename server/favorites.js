@@ -139,7 +139,11 @@ export default async function favoritesPlugin(app, opts) {
       "UPDATE favorites SET confirmed = 1, confirmed_at = ?, confirm_token = NULL, last_notified_price = ? WHERE id = ?"
     ).run(Date.now(), price, row.id);
 
-    const tvUrl = tv ? `${SITE}${tvPath(tv)}` : "/";
+    // ?followed=1 — потврдата се случува на линк од е-пошта, надвор од
+    // React апликацијата, па таа инаку нема никаков начин да дознае дека
+    // следењето е потврдено. Ова е единствениот момент кога страницата може
+    // да го запише тоа во localStorage (види TvDetails.js).
+    const tvUrl = tv ? `${SITE}${tvPath(tv)}?followed=1` : "/";
     const unsubUrl = `${SITE}/api/favorites/unsubscribe?token=${row.unsub_token}`;
 
     /*
