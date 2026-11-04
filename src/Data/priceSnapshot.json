@@ -1,5 +1,5 @@
 {
-  "takenAt": "2026-10-25T02:31:38.315Z",
+  "takenAt": "2026-11-04T02:31:52.286Z",
   "source": "staging/src/Data/masterTvs.json",
   "listings": {
     "aiwa-43n21|Anhoch": {
@@ -22,16 +22,6 @@
       "regularPrice": null,
       "inStock": true
     },
-    "aiwa-50n21|DDStore": {
-      "id": "aiwa-50n21",
-      "store": "DDStore",
-      "brand": "AIWA",
-      "model": "50N21",
-      "size": 50,
-      "price": 15980,
-      "regularPrice": null,
-      "inStock": true
-    },
     "aiwa-50n27|Anhoch": {
       "id": "aiwa-50n27",
       "store": "Anhoch",
@@ -45,16 +35,6 @@
     "aiwa-55n27|Anhoch": {
       "id": "aiwa-55n27",
       "store": "Anhoch",
-      "brand": "AIWA",
-      "model": "55N27",
-      "size": 55,
-      "price": 18980,
-      "regularPrice": null,
-      "inStock": true
-    },
-    "aiwa-55n27|DDStore": {
-      "id": "aiwa-55n27",
-      "store": "DDStore",
       "brand": "AIWA",
       "model": "55N27",
       "size": 55,
@@ -88,7 +68,7 @@
       "brand": "BAUTECH",
       "model": "32BHR45",
       "size": 32,
-      "price": 6368,
+      "price": 10,
       "regularPrice": null,
       "inStock": false
     },
@@ -110,16 +90,6 @@
       "size": 43,
       "price": 11999,
       "regularPrice": 13999,
-      "inStock": true
-    },
-    "bautech-43bfh80|DDStore": {
-      "id": "bautech-43bfh80",
-      "store": "DDStore",
-      "brand": "BAUTECH",
-      "model": "43BFH80",
-      "size": 43,
-      "price": 10919,
-      "regularPrice": null,
       "inStock": true
     },
     "beko-50-biq-8000|Neptun": {
@@ -158,7 +128,7 @@
       "brand": "BEKO",
       "model": "65 BIQ 8000",
       "size": 65,
-      "price": 24999,
+      "price": 25999,
       "regularPrice": 32999,
       "inStock": true
     },
@@ -178,7 +148,7 @@
       "brand": "BEKO",
       "model": "65BHU7800",
       "size": 65,
-      "price": 22999,
+      "price": 25999,
       "regularPrice": 31999,
       "inStock": true
     },
@@ -258,7 +228,7 @@
       "brand": "FUEGO",
       "model": "32MTC720GTV",
       "size": 32,
-      "price": 10999,
+      "price": 12999,
       "regularPrice": 13999,
       "inStock": true
     },
@@ -298,7 +268,7 @@
       "brand": "FUEGO",
       "model": "50ELU720GTV",
       "size": 50,
-      "price": 14499,
+      "price": 13999,
       "regularPrice": 16999,
       "inStock": true
     },
@@ -308,7 +278,7 @@
       "brand": "FUEGO",
       "model": "55CH844GTV",
       "size": 55,
-      "price": 21999,
+      "price": 21499,
       "regularPrice": 24999,
       "inStock": true
     },
@@ -338,7 +308,7 @@
       "brand": "FUEGO",
       "model": "65CH944GTV",
       "size": 65,
-      "price": 29999,
+      "price": 31999,
       "regularPrice": 34999,
       "inStock": true
     },
@@ -378,7 +348,7 @@
       "brand": "HAIER",
       "model": "H43K85FUX",
       "size": 43,
-      "price": 14849,
+      "price": 10,
       "regularPrice": null,
       "inStock": false
     },
@@ -392,16 +362,6 @@
       "regularPrice": 19999,
       "inStock": true
     },
-    "haier-h43k85gux|DDStore": {
-      "id": "haier-h43k85gux",
-      "store": "DDStore",
-      "brand": "HAIER",
-      "model": "H43K85GUX",
-      "size": 43,
-      "price": 14999,
-      "regularPrice": null,
-      "inStock": true
-    },
     "haier-h43q80fux|Setec": {
       "id": "haier-h43q80fux",
       "store": "Setec",
@@ -411,16 +371,6 @@
       "price": 17999,
       "regularPrice": 21999,
       "inStock": true
-    },
-    "haier-h43q80fux|DDStore": {
-      "id": "haier-h43q80fux",
-      "store": "DDStore",
-      "brand": "HAIER",
-      "model": "H43Q80FUX",
-      "size": 43,
-      "price": 17459,
-      "regularPrice": null,
-      "inStock": false
     },
     "haier-h43s80gux|Setec": {
       "id": "haier-h43s80gux",
@@ -438,7 +388,7 @@
       "brand": "HAIER",
       "model": "H43S80GUX",
       "size": 43,
-      "price": 18239,
+      "price": 10,
       "regularPrice": null,
       "inStock": false
     },
@@ -468,7 +418,7 @@
       "brand": "HAIER",
       "model": "H55K85FUX",
       "size": 55,
-      "price": 18809,
+      "price": 10,
       "regularPrice": null,
       "inStock": false
     },
@@ -488,7 +438,7 @@
       "brand": "HAIER",
       "model": "H55Q80FUX",
       "size": 55,
-      "price": 24749,
+      "price": 10,
       "regularPrice": null,
       "inStock": false
     },
@@ -502,16 +452,6 @@
       "regularPrice": 24999,
       "inStock": true
     },
-    "haier-h55s80gux|DDStore": {
-      "id": "haier-h55s80gux",
-      "store": "DDStore",
-      "brand": "HAIER",
-      "model": "H55S80GUX",
-      "size": 55,
-      "price": 20999,
-      "regularPrice": null,
-      "inStock": true
-    },
     "haier-h65k85fux|Setec": {
       "id": "haier-h65k85fux",
       "store": "Setec",
@@ -520,16 +460,6 @@
       "size": 65,
       "price": 28999,
       "regularPrice": 37999,
-      "inStock": true
-    },
-    "haier-h65k85fux|DDStore": {
-      "id": "haier-h65k85fux",
-      "store": "DDStore",
-      "brand": "HAIER",
-      "model": "H65K85FUX",
-      "size": 65,
-      "price": 28999,
-      "regularPrice": null,
       "inStock": true
     },
     "haier-h65q80fux|Setec": {
@@ -548,7 +478,7 @@
       "brand": "HAIER",
       "model": "H65Q80FUX",
       "size": 65,
-      "price": 29699,
+      "price": 10,
       "regularPrice": null,
       "inStock": false
     },
@@ -560,16 +490,6 @@
       "size": 65,
       "price": 29999,
       "regularPrice": 34999,
-      "inStock": true
-    },
-    "haier-h65s80gux|DDStore": {
-      "id": "haier-h65s80gux",
-      "store": "DDStore",
-      "brand": "HAIER",
-      "model": "H65S80GUX",
-      "size": 65,
-      "price": 30719,
-      "regularPrice": null,
       "inStock": true
     },
     "hisense-100e7s-pro|Setec": {
@@ -648,7 +568,7 @@
       "brand": "HISENSE",
       "model": "40A4S",
       "size": 40,
-      "price": 12499,
+      "price": 12999,
       "regularPrice": 15999,
       "inStock": true
     },
@@ -688,7 +608,7 @@
       "brand": "HISENSE",
       "model": "43E7S",
       "size": 43,
-      "price": 18999,
+      "price": 14999,
       "regularPrice": 19999,
       "inStock": true
     },
@@ -698,7 +618,7 @@
       "brand": "HISENSE",
       "model": "50A6S",
       "size": 50,
-      "price": 20999,
+      "price": 17999,
       "regularPrice": 20999,
       "inStock": true
     },
@@ -708,7 +628,7 @@
       "brand": "HISENSE",
       "model": "50A6S",
       "size": 50,
-      "price": 21499,
+      "price": 17999,
       "regularPrice": 24999,
       "inStock": true
     },
@@ -792,16 +712,6 @@
       "regularPrice": 28999,
       "inStock": true
     },
-    "hisense-55e7q|Neptun": {
-      "id": "hisense-55e7q",
-      "store": "Neptun",
-      "brand": "HISENSE",
-      "model": "55E7Q",
-      "size": 55,
-      "price": 19999,
-      "regularPrice": 28999,
-      "inStock": true
-    },
     "hisense-55e7q-pro|Setec": {
       "id": "hisense-55e7q-pro",
       "store": "Setec",
@@ -818,7 +728,7 @@
       "brand": "HISENSE",
       "model": "55E7S",
       "size": 55,
-      "price": 18999,
+      "price": 26499,
       "regularPrice": 27999,
       "inStock": true
     },
@@ -830,6 +740,16 @@
       "size": 55,
       "price": 26499,
       "regularPrice": 27999,
+      "inStock": true
+    },
+    "hisense-55e7s|DDStore": {
+      "id": "hisense-55e7s",
+      "store": "DDStore",
+      "brand": "HISENSE",
+      "model": "55E7S",
+      "size": 55,
+      "price": 27889,
+      "regularPrice": null,
       "inStock": true
     },
     "hisense-55e7s-pro|Setec": {
@@ -968,7 +888,7 @@
       "brand": "HISENSE",
       "model": "65E7S",
       "size": 65,
-      "price": 35999,
+      "price": 29999,
       "regularPrice": 36999,
       "inStock": true
     },
@@ -998,7 +918,7 @@
       "brand": "HISENSE",
       "model": "65E7S PRO",
       "size": 65,
-      "price": 41999,
+      "price": 42999,
       "regularPrice": 49999,
       "inStock": true
     },
@@ -1028,7 +948,7 @@
       "brand": "HISENSE",
       "model": "65U7SE",
       "size": 65,
-      "price": 47999,
+      "price": 39999,
       "regularPrice": 49999,
       "inStock": true
     },
@@ -1038,7 +958,7 @@
       "brand": "HISENSE",
       "model": "65U7SE",
       "size": 65,
-      "price": 47999,
+      "price": 39999,
       "regularPrice": 52999,
       "inStock": true
     },
@@ -1078,7 +998,7 @@
       "brand": "HISENSE",
       "model": "65UR8S",
       "size": 65,
-      "price": 75999,
+      "price": 74999,
       "regularPrice": 79999,
       "inStock": true
     },
@@ -1088,7 +1008,7 @@
       "brand": "HISENSE",
       "model": "65UR9S",
       "size": 65,
-      "price": 94999,
+      "price": 80999,
       "regularPrice": 104999,
       "inStock": true
     },
@@ -1128,7 +1048,7 @@
       "brand": "HISENSE",
       "model": "75E7S PRO",
       "size": 75,
-      "price": 54999,
+      "price": 45999,
       "regularPrice": 56999,
       "inStock": true
     },
@@ -1138,7 +1058,7 @@
       "brand": "HISENSE",
       "model": "75E7S PRO",
       "size": 75,
-      "price": 54999,
+      "price": 45999,
       "regularPrice": 59999,
       "inStock": true
     },
@@ -1208,7 +1128,7 @@
       "brand": "HISENSE",
       "model": "85E7S",
       "size": 85,
-      "price": 67999,
+      "price": 62999,
       "regularPrice": 69999,
       "inStock": true
     },
@@ -1218,7 +1138,7 @@
       "brand": "HISENSE",
       "model": "85E7S PRO",
       "size": 85,
-      "price": 75999,
+      "price": 67999,
       "regularPrice": 79999,
       "inStock": true
     },
@@ -1418,7 +1338,7 @@
       "brand": "LG",
       "model": "100QNED86A6",
       "size": 100,
-      "price": 179999,
+      "price": 169995,
       "regularPrice": 239999,
       "inStock": true
     },
@@ -1448,7 +1368,7 @@
       "brand": "LG",
       "model": "43 NU800 B3LC",
       "size": 43,
-      "price": 18999,
+      "price": 17999,
       "regularPrice": 20999,
       "inStock": true
     },
@@ -1458,7 +1378,7 @@
       "brand": "LG",
       "model": "43 NU850 B3LA",
       "size": 43,
-      "price": 21999,
+      "price": 22999,
       "regularPrice": 22999,
       "inStock": true
     },
@@ -1468,7 +1388,7 @@
       "brand": "LG",
       "model": "43 QNED81 B3C",
       "size": 43,
-      "price": 27999,
+      "price": 28999,
       "regularPrice": 28999,
       "inStock": true
     },
@@ -1498,7 +1418,7 @@
       "brand": "LG",
       "model": "48C61LA",
       "size": 48,
-      "price": 66999,
+      "price": 62999,
       "regularPrice": 82999,
       "inStock": true
     },
@@ -1508,7 +1428,7 @@
       "brand": "LG",
       "model": "50 NU800 B3LC",
       "size": 50,
-      "price": 20999,
+      "price": 20499,
       "regularPrice": 24999,
       "inStock": true
     },
@@ -1518,7 +1438,7 @@
       "brand": "LG",
       "model": "50 QNED87 B3A",
       "size": 50,
-      "price": 36999,
+      "price": 37999,
       "regularPrice": 48999,
       "inStock": true
     },
@@ -1538,7 +1458,7 @@
       "brand": "LG",
       "model": "50UA75003LA",
       "size": 50,
-      "price": 25999,
+      "price": 26999,
       "regularPrice": 26999,
       "inStock": true
     },
@@ -1548,7 +1468,7 @@
       "brand": "LG",
       "model": "55 B6 ELC",
       "size": 55,
-      "price": 66999,
+      "price": 76999,
       "regularPrice": 76999,
       "inStock": true
     },
@@ -1558,7 +1478,7 @@
       "brand": "LG",
       "model": "55 G61 LW",
       "size": 55,
-      "price": 109999,
+      "price": 99999,
       "regularPrice": 124999,
       "inStock": true
     },
@@ -1568,7 +1488,7 @@
       "brand": "LG",
       "model": "55 G63 LS",
       "size": 55,
-      "price": 109999,
+      "price": 99999,
       "regularPrice": 129999,
       "inStock": true
     },
@@ -1578,7 +1498,7 @@
       "brand": "LG",
       "model": "55 MRGB 87B3B",
       "size": 55,
-      "price": 49999,
+      "price": 50999,
       "regularPrice": 78999,
       "inStock": true
     },
@@ -1588,18 +1508,8 @@
       "brand": "LG",
       "model": "55 NU800 B3LA",
       "size": 55,
-      "price": 22999,
+      "price": 21999,
       "regularPrice": 30999,
-      "inStock": true
-    },
-    "lg-55-nu850-b3la-4k-ultra-hd|Neptun": {
-      "id": "lg-55-nu850-b3la-4k-ultra-hd",
-      "store": "Neptun",
-      "brand": "LG",
-      "model": "55 NU850 B3LA",
-      "size": 55,
-      "price": 30999,
-      "regularPrice": 32999,
       "inStock": true
     },
     "lg-55-qned71-b3b|Neptun": {
@@ -1608,7 +1518,7 @@
       "brand": "LG",
       "model": "55 QNED71 B3B",
       "size": 55,
-      "price": 29999,
+      "price": 36999,
       "regularPrice": 36999,
       "inStock": true
     },
@@ -1648,7 +1558,7 @@
       "brand": "LG",
       "model": "55NANO80A3B",
       "size": 55,
-      "price": 31999,
+      "price": 32999,
       "regularPrice": 32999,
       "inStock": true
     },
@@ -1668,7 +1578,7 @@
       "brand": "LG",
       "model": "55QNED80A3A",
       "size": 55,
-      "price": 42999,
+      "price": 43999,
       "regularPrice": 43999,
       "inStock": true
     },
@@ -1678,7 +1588,7 @@
       "brand": "LG",
       "model": "55QNED81B3A",
       "size": 55,
-      "price": 41999,
+      "price": 42999,
       "regularPrice": 42999,
       "inStock": true
     },
@@ -1688,7 +1598,7 @@
       "brand": "LG",
       "model": "55QNED83B3A",
       "size": 55,
-      "price": 35999,
+      "price": 34999,
       "regularPrice": 44999,
       "inStock": true
     },
@@ -1698,7 +1608,7 @@
       "brand": "LG",
       "model": "55QNED8MB6C",
       "size": 55,
-      "price": 28999,
+      "price": 29999,
       "regularPrice": 41999,
       "inStock": true
     },
@@ -1718,7 +1628,7 @@
       "brand": "LG",
       "model": "65 B6 ELC",
       "size": 65,
-      "price": 94999,
+      "price": 69999,
       "regularPrice": 99999,
       "inStock": true
     },
@@ -1728,7 +1638,7 @@
       "brand": "LG",
       "model": "65 G61 LW",
       "size": 65,
-      "price": 129999,
+      "price": 119999,
       "regularPrice": 159999,
       "inStock": true
     },
@@ -1738,18 +1648,8 @@
       "brand": "LG",
       "model": "65 G63 LS",
       "size": 65,
-      "price": 129999,
+      "price": 119999,
       "regularPrice": 164999,
-      "inStock": true
-    },
-    "lg-65-mrgb-87b3b|Neptun": {
-      "id": "lg-65-mrgb-87b3b",
-      "store": "Neptun",
-      "brand": "LG",
-      "model": "65 MRGB 87B3B",
-      "size": 65,
-      "price": 66999,
-      "regularPrice": 79999,
       "inStock": true
     },
     "lg-65-nu800-b3la|Neptun": {
@@ -1758,7 +1658,7 @@
       "brand": "LG",
       "model": "65 NU800 B3LA",
       "size": 65,
-      "price": 31999,
+      "price": 28999,
       "regularPrice": 35999,
       "inStock": true
     },
@@ -1768,7 +1668,7 @@
       "brand": "LG",
       "model": "65 NU850 B3LA",
       "size": 65,
-      "price": 41999,
+      "price": 42999,
       "regularPrice": 42999,
       "inStock": true
     },
@@ -1788,7 +1688,7 @@
       "brand": "LG",
       "model": "65 QNED72 B3B",
       "size": 65,
-      "price": 48999,
+      "price": 49999,
       "regularPrice": 49999,
       "inStock": true
     },
@@ -1798,7 +1698,7 @@
       "brand": "LG",
       "model": "65 QNED8M B6C",
       "size": 65,
-      "price": 39999,
+      "price": 36999,
       "regularPrice": 56999,
       "inStock": true
     },
@@ -1808,7 +1708,7 @@
       "brand": "LG",
       "model": "65B62LA",
       "size": 65,
-      "price": 84999,
+      "price": 86999,
       "regularPrice": 109999,
       "inStock": true
     },
@@ -1818,7 +1718,7 @@
       "brand": "LG",
       "model": "65C61LA",
       "size": 65,
-      "price": 109999,
+      "price": 102999,
       "regularPrice": 126999,
       "inStock": true
     },
@@ -1828,7 +1728,7 @@
       "brand": "LG",
       "model": "65NANO80A3B",
       "size": 65,
-      "price": 41999,
+      "price": 42999,
       "regularPrice": 42999,
       "inStock": true
     },
@@ -1838,7 +1738,7 @@
       "brand": "LG",
       "model": "65QNED70B3C",
       "size": 65,
-      "price": 36999,
+      "price": 31999,
       "regularPrice": 47999,
       "inStock": true
     },
@@ -1848,7 +1748,7 @@
       "brand": "LG",
       "model": "65QNED80A3A",
       "size": 65,
-      "price": 53999,
+      "price": 54999,
       "regularPrice": 54999,
       "inStock": true
     },
@@ -1858,18 +1758,8 @@
       "brand": "LG",
       "model": "65QNED83B3A",
       "size": 65,
-      "price": 44999,
+      "price": 43999,
       "regularPrice": 52999,
-      "inStock": true
-    },
-    "lg-65qned92a6a|Neptun": {
-      "id": "lg-65qned92a6a",
-      "store": "Neptun",
-      "brand": "LG",
-      "model": "65QNED92A6A",
-      "size": 65,
-      "price": 39995,
-      "regularPrice": 71999,
       "inStock": true
     },
     "lg-75-mrgb-87b3b|Neptun": {
@@ -1888,7 +1778,7 @@
       "brand": "LG",
       "model": "75 NU800 B3LA",
       "size": 75,
-      "price": 38999,
+      "price": 36999,
       "regularPrice": 46999,
       "inStock": true
     },
@@ -1908,7 +1798,7 @@
       "brand": "LG",
       "model": "75NANO80A3B",
       "size": 75,
-      "price": 63599,
+      "price": 64599,
       "regularPrice": 64599,
       "inStock": true
     },
@@ -1928,7 +1818,7 @@
       "brand": "LG",
       "model": "75QNED8MB6A",
       "size": 75,
-      "price": 59999,
+      "price": 52999,
       "regularPrice": 74999,
       "inStock": true
     },
@@ -1938,7 +1828,7 @@
       "brand": "LG",
       "model": "77 B6 ELC",
       "size": 77,
-      "price": 129999,
+      "price": 119999,
       "regularPrice": 134999,
       "inStock": true
     },
@@ -1948,7 +1838,7 @@
       "brand": "LG",
       "model": "77 G61 LW",
       "size": 77,
-      "price": 189999,
+      "price": 186999,
       "regularPrice": 249999,
       "inStock": true
     },
@@ -1968,18 +1858,8 @@
       "brand": "LG",
       "model": "77C61LA",
       "size": 77,
-      "price": 149999,
+      "price": 139999,
       "regularPrice": 184999,
-      "inStock": true
-    },
-    "lg-83-g61-lw|Neptun": {
-      "id": "lg-83-g61-lw",
-      "store": "Neptun",
-      "brand": "LG",
-      "model": "83 G61 LW",
-      "size": 83,
-      "price": 259999,
-      "regularPrice": 309999,
       "inStock": true
     },
     "lg-83c61la|Neptun": {
@@ -1998,7 +1878,7 @@
       "brand": "LG",
       "model": "85 NU800 B3LA",
       "size": 85,
-      "price": 56999,
+      "price": 57999,
       "regularPrice": 69999,
       "inStock": true
     },
@@ -2008,7 +1888,7 @@
       "brand": "LG",
       "model": "85 NU850 B3LA",
       "size": 85,
-      "price": 75999,
+      "price": 76999,
       "regularPrice": 76999,
       "inStock": true
     },
@@ -2028,7 +1908,7 @@
       "brand": "LG",
       "model": "86 MRGB 87B3B",
       "size": 86,
-      "price": 139999,
+      "price": 129999,
       "regularPrice": 174999,
       "inStock": true
     },
@@ -2038,7 +1918,7 @@
       "brand": "LG",
       "model": "86 QNED87 B3A",
       "size": 86,
-      "price": 119999,
+      "price": 109999,
       "regularPrice": 159999,
       "inStock": true
     },
@@ -2051,16 +1931,6 @@
       "price": 96999,
       "regularPrice": 119999,
       "inStock": true
-    },
-    "metz-50mqf7500z|DDStore": {
-      "id": "metz-50mqf7500z",
-      "store": "DDStore",
-      "brand": "METZ",
-      "model": "50MQF7500Z",
-      "size": 50,
-      "price": 22990,
-      "regularPrice": null,
-      "inStock": false
     },
     "neo-32hd14f25|Anhoch": {
       "id": "neo-32hd14f25",
@@ -2120,16 +1990,6 @@
       "size": 32,
       "price": 7480,
       "regularPrice": null,
-      "inStock": false
-    },
-    "philips-32pfs6900|Neptun": {
-      "id": "philips-32pfs6900",
-      "store": "Neptun",
-      "brand": "PHILIPS",
-      "model": "32PFS6900",
-      "size": 32,
-      "price": 9995,
-      "regularPrice": 16999,
       "inStock": true
     },
     "philips-32phs5500|Anhoch": {
@@ -2152,16 +2012,6 @@
       "regularPrice": 10999,
       "inStock": true
     },
-    "philips-32phs5500|DDStore": {
-      "id": "philips-32phs5500",
-      "store": "DDStore",
-      "brand": "PHILIPS",
-      "model": "32PHS5500",
-      "size": 32,
-      "price": 8500,
-      "regularPrice": null,
-      "inStock": true
-    },
     "philips-32phs5505|Anhoch": {
       "id": "philips-32phs5505",
       "store": "Anhoch",
@@ -2180,16 +2030,6 @@
       "size": 32,
       "price": 9999,
       "regularPrice": 12499,
-      "inStock": true
-    },
-    "philips-32phs6050|DDStore": {
-      "id": "philips-32phs6050",
-      "store": "DDStore",
-      "brand": "PHILIPS",
-      "model": "32PHS6050",
-      "size": 32,
-      "price": 9799,
-      "regularPrice": null,
       "inStock": true
     },
     "philips-32phs6605|Anhoch": {
@@ -2252,35 +2092,15 @@
       "regularPrice": 17999,
       "inStock": true
     },
-    "philips-40pfs6050|DDStore": {
-      "id": "philips-40pfs6050",
-      "store": "DDStore",
-      "brand": "PHILIPS",
-      "model": "40PFS6050",
-      "size": 40,
-      "price": 12999,
-      "regularPrice": null,
-      "inStock": true
-    },
     "philips-43pfs6808-12|DDStore": {
       "id": "philips-43pfs6808-12",
       "store": "DDStore",
       "brand": "PHILIPS",
       "model": "43PFS6808/12",
       "size": 43,
-      "price": 14400,
+      "price": 10,
       "regularPrice": null,
       "inStock": false
-    },
-    "philips-43punt7620-10|DDStore": {
-      "id": "philips-43punt7620-10",
-      "store": "DDStore",
-      "brand": "PHILIPS",
-      "model": "43PUNT7620/10",
-      "size": 43,
-      "price": 13999,
-      "regularPrice": null,
-      "inStock": true
     },
     "philips-43pus7000|Anhoch": {
       "id": "philips-43pus7000",
@@ -2300,16 +2120,6 @@
       "size": 43,
       "price": 14995,
       "regularPrice": 17999,
-      "inStock": true
-    },
-    "philips-43pus7000|DDStore": {
-      "id": "philips-43pus7000",
-      "store": "DDStore",
-      "brand": "PHILIPS",
-      "model": "43PUS7000",
-      "size": 43,
-      "price": 14999,
-      "regularPrice": null,
       "inStock": true
     },
     "philips-43pus7009|Setec": {
@@ -2362,16 +2172,6 @@
       "regularPrice": 18999,
       "inStock": true
     },
-    "philips-43pus8010|DDStore": {
-      "id": "philips-43pus8010",
-      "store": "DDStore",
-      "brand": "PHILIPS",
-      "model": "43PUS8010",
-      "size": 43,
-      "price": 16999,
-      "regularPrice": null,
-      "inStock": true
-    },
     "philips-43pus8400|Anhoch": {
       "id": "philips-43pus8400",
       "store": "Anhoch",
@@ -2390,16 +2190,6 @@
       "size": 43,
       "price": 17999,
       "regularPrice": 19499,
-      "inStock": true
-    },
-    "philips-43pus8400|DDStore": {
-      "id": "philips-43pus8400",
-      "store": "DDStore",
-      "brand": "PHILIPS",
-      "model": "43PUS8400",
-      "size": 43,
-      "price": 16499,
-      "regularPrice": null,
       "inStock": true
     },
     "philips-43pus8450|Setec": {
@@ -2438,7 +2228,7 @@
       "brand": "PHILIPS",
       "model": "50PUS7000",
       "size": 50,
-      "price": 16999,
+      "price": 10,
       "regularPrice": null,
       "inStock": false
     },
@@ -2461,16 +2251,6 @@
       "price": 17995,
       "regularPrice": 30999,
       "inStock": true
-    },
-    "philips-50pus7409|DDStore": {
-      "id": "philips-50pus7409",
-      "store": "DDStore",
-      "brand": "PHILIPS",
-      "model": "50PUS7409",
-      "size": 50,
-      "price": 19999,
-      "regularPrice": null,
-      "inStock": false
     },
     "philips-50pus7609|Setec": {
       "id": "philips-50pus7609",
@@ -2498,9 +2278,9 @@
       "brand": "PHILIPS",
       "model": "50PUS7810",
       "size": 50,
-      "price": 17999,
+      "price": 10,
       "regularPrice": null,
-      "inStock": true
+      "inStock": false
     },
     "philips-50pus8010|Anhoch": {
       "id": "philips-50pus8010",
@@ -2520,26 +2300,6 @@
       "size": 50,
       "price": 19499,
       "regularPrice": 28999,
-      "inStock": true
-    },
-    "philips-50pus8010|DDStore": {
-      "id": "philips-50pus8010",
-      "store": "DDStore",
-      "brand": "PHILIPS",
-      "model": "50PUS8010",
-      "size": 50,
-      "price": 19500,
-      "regularPrice": null,
-      "inStock": true
-    },
-    "philips-50pus8118-12|Anhoch": {
-      "id": "philips-50pus8118-12",
-      "store": "Anhoch",
-      "brand": "PHILIPS",
-      "model": "50PUS8118/12",
-      "size": 50,
-      "price": 20980,
-      "regularPrice": null,
       "inStock": true
     },
     "philips-50pus8560|Setec": {
@@ -2582,16 +2342,6 @@
       "regularPrice": 64999,
       "inStock": true
     },
-    "philips-55oled811-12|DDStore": {
-      "id": "philips-55oled811-12",
-      "store": "DDStore",
-      "brand": "PHILIPS",
-      "model": "55OLED811/12",
-      "size": 55,
-      "price": 65999,
-      "regularPrice": null,
-      "inStock": true
-    },
     "philips-55pml8709|Setec": {
       "id": "philips-55pml8709",
       "store": "Setec",
@@ -2602,16 +2352,6 @@
       "regularPrice": 42999,
       "inStock": true
     },
-    "philips-55punt7620-10|DDStore": {
-      "id": "philips-55punt7620-10",
-      "store": "DDStore",
-      "brand": "PHILIPS",
-      "model": "55PUNT7620/10",
-      "size": 55,
-      "price": 18999,
-      "regularPrice": null,
-      "inStock": true
-    },
     "philips-55pus7000|Setec": {
       "id": "philips-55pus7000",
       "store": "Setec",
@@ -2620,16 +2360,6 @@
       "size": 55,
       "price": 19999,
       "regularPrice": 29999,
-      "inStock": true
-    },
-    "philips-55pus7000|DDStore": {
-      "id": "philips-55pus7000",
-      "store": "DDStore",
-      "brand": "PHILIPS",
-      "model": "55PUS7000",
-      "size": 55,
-      "price": 19999,
-      "regularPrice": null,
       "inStock": true
     },
     "philips-55pus7009-12|Anhoch": {
@@ -2672,16 +2402,6 @@
       "regularPrice": 24999,
       "inStock": true
     },
-    "philips-55pus7810|DDStore": {
-      "id": "philips-55pus7810",
-      "store": "DDStore",
-      "brand": "PHILIPS",
-      "model": "55PUS7810",
-      "size": 55,
-      "price": 21999,
-      "regularPrice": null,
-      "inStock": true
-    },
     "philips-55pus8009|Anhoch": {
       "id": "philips-55pus8009",
       "store": "Anhoch",
@@ -2690,7 +2410,7 @@
       "size": 55,
       "price": 24980,
       "regularPrice": null,
-      "inStock": true
+      "inStock": false
     },
     "philips-55pus8010|Anhoch": {
       "id": "philips-55pus8010",
@@ -2752,16 +2472,6 @@
       "regularPrice": 26999,
       "inStock": true
     },
-    "philips-55pus8400|DDStore": {
-      "id": "philips-55pus8400",
-      "store": "DDStore",
-      "brand": "PHILIPS",
-      "model": "55PUS8400",
-      "size": 55,
-      "price": 21999,
-      "regularPrice": null,
-      "inStock": true
-    },
     "philips-55pus8450|Anhoch": {
       "id": "philips-55pus8450",
       "store": "Anhoch",
@@ -2790,36 +2500,6 @@
       "size": 55,
       "price": 24999,
       "regularPrice": 29999,
-      "inStock": true
-    },
-    "philips-55pus9010-12|DDStore": {
-      "id": "philips-55pus9010-12",
-      "store": "DDStore",
-      "brand": "PHILIPS",
-      "model": "55PUS9010/12",
-      "size": 55,
-      "price": 35999,
-      "regularPrice": null,
-      "inStock": true
-    },
-    "philips-65mled820-12|DDStore": {
-      "id": "philips-65mled820-12",
-      "store": "DDStore",
-      "brand": "PHILIPS",
-      "model": "65MLED820/12",
-      "size": 65,
-      "price": 34999,
-      "regularPrice": null,
-      "inStock": true
-    },
-    "philips-65mled920-12|DDStore": {
-      "id": "philips-65mled920-12",
-      "store": "DDStore",
-      "brand": "PHILIPS",
-      "model": "65MLED920/12",
-      "size": 65,
-      "price": 49999,
-      "regularPrice": null,
       "inStock": true
     },
     "philips-65oled718|Setec": {
@@ -2872,16 +2552,6 @@
       "regularPrice": 56999,
       "inStock": true
     },
-    "philips-65pqs8501-12|DDStore": {
-      "id": "philips-65pqs8501-12",
-      "store": "DDStore",
-      "brand": "PHILIPS",
-      "model": "65PQS8501/12",
-      "size": 65,
-      "price": 39998,
-      "regularPrice": null,
-      "inStock": true
-    },
     "philips-65pus7000|Setec": {
       "id": "philips-65pus7000",
       "store": "Setec",
@@ -2890,16 +2560,6 @@
       "size": 65,
       "price": 27999,
       "regularPrice": 34999,
-      "inStock": true
-    },
-    "philips-65pus7000|DDStore": {
-      "id": "philips-65pus7000",
-      "store": "DDStore",
-      "brand": "PHILIPS",
-      "model": "65PUS7000",
-      "size": 65,
-      "price": 27999,
-      "regularPrice": null,
       "inStock": true
     },
     "philips-65pus7409|Setec": {
@@ -2930,16 +2590,6 @@
       "size": 65,
       "price": 31999,
       "regularPrice": 36999,
-      "inStock": true
-    },
-    "philips-65pus7810|DDStore": {
-      "id": "philips-65pus7810",
-      "store": "DDStore",
-      "brand": "PHILIPS",
-      "model": "65PUS7810",
-      "size": 65,
-      "price": 31999,
-      "regularPrice": null,
       "inStock": true
     },
     "philips-65pus8010|Anhoch": {
@@ -2982,16 +2632,6 @@
       "regularPrice": 39999,
       "inStock": true
     },
-    "philips-65pus8400|DDStore": {
-      "id": "philips-65pus8400",
-      "store": "DDStore",
-      "brand": "PHILIPS",
-      "model": "65PUS8400",
-      "size": 65,
-      "price": 31999,
-      "regularPrice": null,
-      "inStock": true
-    },
     "philips-65pus8510|Setec": {
       "id": "philips-65pus8510",
       "store": "Setec",
@@ -3028,7 +2668,7 @@
       "brand": "PHILIPS",
       "model": "75MLED950/12",
       "size": 75,
-      "price": 82999,
+      "price": 10,
       "regularPrice": null,
       "inStock": false
     },
@@ -3072,16 +2712,6 @@
       "regularPrice": 47999,
       "inStock": true
     },
-    "philips-75pus7810|DDStore": {
-      "id": "philips-75pus7810",
-      "store": "DDStore",
-      "brand": "PHILIPS",
-      "model": "75PUS7810",
-      "size": 75,
-      "price": 39998,
-      "regularPrice": null,
-      "inStock": true
-    },
     "philips-75pus8510|Setec": {
       "id": "philips-75pus8510",
       "store": "Setec",
@@ -3092,16 +2722,6 @@
       "regularPrice": 49999,
       "inStock": true
     },
-    "philips-75pus8510|DDStore": {
-      "id": "philips-75pus8510",
-      "store": "DDStore",
-      "brand": "PHILIPS",
-      "model": "75PUS8510",
-      "size": 75,
-      "price": 52999,
-      "regularPrice": null,
-      "inStock": true
-    },
     "philips-85pus8510|Setec": {
       "id": "philips-85pus8510",
       "store": "Setec",
@@ -3110,16 +2730,6 @@
       "size": 85,
       "price": 66995,
       "regularPrice": 79999,
-      "inStock": true
-    },
-    "philips-85pus8510|DDStore": {
-      "id": "philips-85pus8510",
-      "store": "DDStore",
-      "brand": "PHILIPS",
-      "model": "85PUS8510",
-      "size": 85,
-      "price": 69999,
-      "regularPrice": null,
       "inStock": true
     },
     "philips-85pus9010|Setec": {
@@ -3211,36 +2821,6 @@
       "price": 139999,
       "regularPrice": 169999,
       "inStock": true
-    },
-    "samsung-mre75r95hatxxh|Setec": {
-      "id": "samsung-mre75r95hatxxh",
-      "store": "Setec",
-      "brand": "SAMSUNG",
-      "model": "MRE75R95HATXXH",
-      "size": 75,
-      "price": 264999,
-      "regularPrice": 284999,
-      "inStock": false
-    },
-    "samsung-mre85r85hauxxh|Setec": {
-      "id": "samsung-mre85r85hauxxh",
-      "store": "Setec",
-      "brand": "SAMSUNG",
-      "model": "MRE85R85HAUXXH",
-      "size": 85,
-      "price": 219999,
-      "regularPrice": 239999,
-      "inStock": false
-    },
-    "samsung-mre85r95hatxxh|Setec": {
-      "id": "samsung-mre85r95hatxxh",
-      "store": "Setec",
-      "brand": "SAMSUNG",
-      "model": "MRE85R95HATXXH",
-      "size": 85,
-      "price": 344999,
-      "regularPrice": 374999,
-      "inStock": false
     },
     "samsung-oe55s95hftxxh|Setec": {
       "id": "samsung-oe55s95hftxxh",
@@ -3438,7 +3018,7 @@
       "brand": "SAMSUNG",
       "model": "QE55QN70HAUXXH",
       "size": 55,
-      "price": 37999,
+      "price": 36999,
       "regularPrice": 46999,
       "inStock": true
     },
@@ -3478,7 +3058,7 @@
       "brand": "SAMSUNG",
       "model": "QE55QN85FAUXXH",
       "size": 55,
-      "price": 49995,
+      "price": 47995,
       "regularPrice": 80999,
       "inStock": true
     },
@@ -3488,7 +3068,7 @@
       "brand": "SAMSUNG",
       "model": "QE55QN90FATXXH",
       "size": 55,
-      "price": 59995,
+      "price": 57995,
       "regularPrice": 102999,
       "inStock": true
     },
@@ -3688,7 +3268,7 @@
       "brand": "SAMSUNG",
       "model": "QE65QN70HAUXXH",
       "size": 65,
-      "price": 49999,
+      "price": 50999,
       "regularPrice": 62999,
       "inStock": true
     },
@@ -3701,16 +3281,6 @@
       "price": 49999,
       "regularPrice": 59999,
       "inStock": true
-    },
-    "samsung-qe65qn800ctxxh|Setec": {
-      "id": "samsung-qe65qn800ctxxh",
-      "store": "Setec",
-      "brand": "SAMSUNG",
-      "model": "QE65QN800CTXXH",
-      "size": 65,
-      "price": 217799,
-      "regularPrice": 223999,
-      "inStock": false
     },
     "samsung-qe65qn80fauxxh|Setec": {
       "id": "samsung-qe65qn80fauxxh",
@@ -3862,16 +3432,6 @@
       "regularPrice": 95999,
       "inStock": true
     },
-    "samsung-qe75qn800ctxxh|Setec": {
-      "id": "samsung-qe75qn800ctxxh",
-      "store": "Setec",
-      "brand": "SAMSUNG",
-      "model": "QE75QN800CTXXH",
-      "size": 75,
-      "price": 297799,
-      "regularPrice": 304999,
-      "inStock": false
-    },
     "samsung-qe75qn80hauxxh|Setec": {
       "id": "samsung-qe75qn80hauxxh",
       "store": "Setec",
@@ -3921,16 +3481,6 @@
       "price": 199999,
       "regularPrice": 254999,
       "inStock": true
-    },
-    "samsung-qe77s99hatxxh|Setec": {
-      "id": "samsung-qe77s99hatxxh",
-      "store": "Setec",
-      "brand": "SAMSUNG",
-      "model": "QE77S99HATXXH",
-      "size": 77,
-      "price": 244999,
-      "regularPrice": 264999,
-      "inStock": false
     },
     "samsung-qe85q7faauxxh|Setec": {
       "id": "samsung-qe85q7faauxxh",
@@ -4158,7 +3708,7 @@
       "brand": "SAMSUNG",
       "model": "UE50U8072HUXXH",
       "size": 50,
-      "price": 19999,
+      "price": 20499,
       "regularPrice": 27999,
       "inStock": true
     },
@@ -4228,7 +3778,7 @@
       "brand": "SAMSUNG",
       "model": "UE55M72HAUXXH",
       "size": 55,
-      "price": 32999,
+      "price": 33999,
       "regularPrice": 33999,
       "inStock": true
     },
@@ -4258,7 +3808,7 @@
       "brand": "SAMSUNG",
       "model": "UE55U8072HUXXH",
       "size": 55,
-      "price": 23999,
+      "price": 22999,
       "regularPrice": 32999,
       "inStock": true
     },
@@ -4328,7 +3878,7 @@
       "brand": "SAMSUNG",
       "model": "UE65M80HAUXXH",
       "size": 65,
-      "price": 36499,
+      "price": 35999,
       "regularPrice": 49999,
       "inStock": true
     },
@@ -4338,7 +3888,7 @@
       "brand": "SAMSUNG",
       "model": "UE65M80HAUXXH",
       "size": 65,
-      "price": 36499,
+      "price": 35999,
       "regularPrice": 49999,
       "inStock": true
     },
@@ -4348,7 +3898,7 @@
       "brand": "SAMSUNG",
       "model": "UE65U8072HUXXH",
       "size": 65,
-      "price": 32999,
+      "price": 33999,
       "regularPrice": 43999,
       "inStock": true
     },
@@ -4550,7 +4100,7 @@
       "size": 55,
       "price": 74990,
       "regularPrice": null,
-      "inStock": true
+      "inStock": false
     },
     "sony-k55a65pb-cei|Setec": {
       "id": "sony-k55a65pb-cei",
@@ -4558,7 +4108,7 @@
       "brand": "SONY",
       "model": "K55A65PB.CEI",
       "size": 55,
-      "price": 74999,
+      "price": 73999,
       "regularPrice": 79999,
       "inStock": true
     },
@@ -4568,7 +4118,7 @@
       "brand": "SONY",
       "model": "K55S25M2PB.CEI",
       "size": 55,
-      "price": 49999,
+      "price": 46999,
       "regularPrice": 59999,
       "inStock": true
     },
@@ -4598,7 +4148,7 @@
       "brand": "SONY",
       "model": "K55XR55B.CEI",
       "size": 55,
-      "price": 69999,
+      "price": 64995,
       "regularPrice": 94999,
       "inStock": true
     },
@@ -4630,7 +4180,7 @@
       "size": 65,
       "price": 88990,
       "regularPrice": null,
-      "inStock": true
+      "inStock": false
     },
     "sony-k65a65pb-cei|Setec": {
       "id": "sony-k65a65pb-cei",
@@ -4638,7 +4188,7 @@
       "brand": "SONY",
       "model": "K65A65PB.CEI",
       "size": 65,
-      "price": 88999,
+      "price": 86999,
       "regularPrice": 99999,
       "inStock": true
     },
@@ -4648,7 +4198,7 @@
       "brand": "SONY",
       "model": "K65S25M2PB.CEI",
       "size": 65,
-      "price": 59999,
+      "price": 56999,
       "regularPrice": 72999,
       "inStock": true
     },
@@ -4678,7 +4228,7 @@
       "brand": "SONY",
       "model": "K65XR55B.CEI",
       "size": 65,
-      "price": 84599,
+      "price": 77995,
       "regularPrice": 109999,
       "inStock": true
     },
@@ -4698,7 +4248,7 @@
       "brand": "SONY",
       "model": "K75S25M2PB.CEI",
       "size": 75,
-      "price": 79999,
+      "price": 69999,
       "regularPrice": 90999,
       "inStock": true
     },
@@ -4878,7 +4428,7 @@
       "brand": "ST",
       "model": "ST-32DH4300",
       "size": 32,
-      "price": 5639,
+      "price": 5999,
       "regularPrice": null,
       "inStock": true
     },
@@ -4890,16 +4440,6 @@
       "size": 32,
       "price": 7499,
       "regularPrice": 10999,
-      "inStock": true
-    },
-    "st-st-32dh5900|DDStore": {
-      "id": "st-st-32dh5900",
-      "store": "DDStore",
-      "brand": "ST",
-      "model": "ST-32DH5900",
-      "size": 32,
-      "price": 6699,
-      "regularPrice": null,
       "inStock": true
     },
     "st-st-43dh7800|Setec": {
@@ -4932,16 +4472,6 @@
       "regularPrice": 11999,
       "inStock": true
     },
-    "st-st-43dh8000|DDStore": {
-      "id": "st-st-43dh8000",
-      "store": "DDStore",
-      "brand": "ST",
-      "model": "ST-43DH8000",
-      "size": 43,
-      "price": 9499,
-      "regularPrice": null,
-      "inStock": true
-    },
     "st-st-43dx8000|Setec": {
       "id": "st-st-43dx8000",
       "store": "Setec",
@@ -4950,16 +4480,6 @@
       "size": 43,
       "price": 12999,
       "regularPrice": 16999,
-      "inStock": true
-    },
-    "st-st-43dx8000|DDStore": {
-      "id": "st-st-43dx8000",
-      "store": "DDStore",
-      "brand": "ST",
-      "model": "ST-43DX8000",
-      "size": 43,
-      "price": 11830,
-      "regularPrice": null,
       "inStock": true
     },
     "st-st-50dx7800|Setec": {
@@ -4978,7 +4498,7 @@
       "brand": "ST",
       "model": "ST-50DX7800",
       "size": 50,
-      "price": 13629,
+      "price": 14499,
       "regularPrice": null,
       "inStock": true
     },
@@ -4992,16 +4512,6 @@
       "regularPrice": 28999,
       "inStock": true
     },
-    "st-st-55dx7900|DDStore": {
-      "id": "st-st-55dx7900",
-      "store": "DDStore",
-      "brand": "ST",
-      "model": "ST-55DX7900",
-      "size": 55,
-      "price": 16319,
-      "regularPrice": null,
-      "inStock": true
-    },
     "st-st-65dq8000|Setec": {
       "id": "st-st-65dq8000",
       "store": "Setec",
@@ -5010,16 +4520,6 @@
       "size": 65,
       "price": 23499,
       "regularPrice": 29999,
-      "inStock": true
-    },
-    "st-st-65dq8000|DDStore": {
-      "id": "st-st-65dq8000",
-      "store": "DDStore",
-      "brand": "ST",
-      "model": "ST-65DQ8000",
-      "size": 65,
-      "price": 22559,
-      "regularPrice": null,
       "inStock": true
     },
     "st-st-65dx7800|Setec": {
@@ -5048,7 +4548,7 @@
       "brand": "ST",
       "model": "ST-75DX7900",
       "size": 75,
-      "price": 32009,
+      "price": 10,
       "regularPrice": null,
       "inStock": false
     },
@@ -5070,7 +4570,7 @@
       "size": 32,
       "price": 11999,
       "regularPrice": 12999,
-      "inStock": false
+      "inStock": true
     },
     "tcl-40s51k|Setec": {
       "id": "tcl-40s51k",
@@ -5208,7 +4708,7 @@
       "brand": "TCL",
       "model": "55C69K",
       "size": 55,
-      "price": 26999,
+      "price": 29999,
       "regularPrice": 34999,
       "inStock": true
     },
@@ -5258,7 +4758,7 @@
       "brand": "TCL",
       "model": "55P69K",
       "size": 55,
-      "price": 21499,
+      "price": 21999,
       "regularPrice": 28999,
       "inStock": true
     },
@@ -5358,7 +4858,7 @@
       "brand": "TCL",
       "model": "65 C7L 144Hz B&O",
       "size": 65,
-      "price": 59999,
+      "price": 56999,
       "regularPrice": 62999,
       "inStock": true
     },
@@ -5398,7 +4898,7 @@
       "brand": "TCL",
       "model": "65C79K",
       "size": 65,
-      "price": 49999,
+      "price": 56999,
       "regularPrice": 62999,
       "inStock": true
     },
@@ -5508,7 +5008,7 @@
       "brand": "TCL",
       "model": "65T69C",
       "size": 65,
-      "price": 32999,
+      "price": 30999,
       "regularPrice": 35999,
       "inStock": true
     },
@@ -5520,16 +5020,6 @@
       "size": 75,
       "price": 51999,
       "regularPrice": 64999,
-      "inStock": true
-    },
-    "tcl-75c69k|Neptun": {
-      "id": "tcl-75c69k",
-      "store": "Neptun",
-      "brand": "TCL",
-      "model": "75C69K",
-      "size": 75,
-      "price": 53999,
-      "regularPrice": 55999,
       "inStock": true
     },
     "tcl-75c71k|Setec": {
@@ -5608,7 +5098,7 @@
       "brand": "TCL",
       "model": "75P79L",
       "size": 75,
-      "price": 43999,
+      "price": 46999,
       "regularPrice": 48999,
       "inStock": true
     },
@@ -5820,7 +5310,7 @@
       "size": 43,
       "price": 12995,
       "regularPrice": 22999,
-      "inStock": true
+      "inStock": false
     },
     "telefunken-55quak9140bx|Setec": {
       "id": "telefunken-55quak9140bx",
@@ -5830,66 +5320,6 @@
       "size": 55,
       "price": 17995,
       "regularPrice": 34999,
-      "inStock": true
-    },
-    "tesla-32e655bhs|DDStore": {
-      "id": "tesla-32e655bhs",
-      "store": "DDStore",
-      "brand": "TESLA",
-      "model": "32E655BHS",
-      "size": 32,
-      "price": 9215,
-      "regularPrice": null,
-      "inStock": true
-    },
-    "tesla-40e655bfs|DDStore": {
-      "id": "tesla-40e655bfs",
-      "store": "DDStore",
-      "brand": "TESLA",
-      "model": "40E655BFS",
-      "size": 40,
-      "price": 13300,
-      "regularPrice": null,
-      "inStock": true
-    },
-    "tesla-43e635bfs|DDStore": {
-      "id": "tesla-43e635bfs",
-      "store": "DDStore",
-      "brand": "TESLA",
-      "model": "43E635BFS",
-      "size": 43,
-      "price": 14313,
-      "regularPrice": null,
-      "inStock": false
-    },
-    "tesla-55e655bus|DDStore": {
-      "id": "tesla-55e655bus",
-      "store": "DDStore",
-      "brand": "TESLA",
-      "model": "55E655BUS",
-      "size": 55,
-      "price": 21653,
-      "regularPrice": null,
-      "inStock": true
-    },
-    "tesla-q40e665gfs|DDStore": {
-      "id": "tesla-q40e665gfs",
-      "store": "DDStore",
-      "brand": "TESLA",
-      "model": "Q40E665GFS",
-      "size": 40,
-      "price": 14207,
-      "regularPrice": null,
-      "inStock": true
-    },
-    "tesla-q43e665gfs|DDStore": {
-      "id": "tesla-q43e665gfs",
-      "store": "DDStore",
-      "brand": "TESLA",
-      "model": "Q43E665GFS",
-      "size": 43,
-      "price": 16198,
-      "regularPrice": null,
       "inStock": true
     },
     "thomson-40qg4s14|Anhoch": {
@@ -5972,16 +5402,6 @@
       "regularPrice": null,
       "inStock": false
     },
-    "vivax-tv-32le117t2s2|DDStore": {
-      "id": "vivax-tv-32le117t2s2",
-      "store": "DDStore",
-      "brand": "VIVAX",
-      "model": "TV-32LE117T2S2",
-      "size": 32,
-      "price": 5713,
-      "regularPrice": 6326,
-      "inStock": true
-    },
     "vivax-tv40le115t2s2|Anhoch": {
       "id": "vivax-tv40le115t2s2",
       "store": "Anhoch",
@@ -6018,48 +5438,8 @@
       "brand": "XIAOMI",
       "model": "ELA5918GL",
       "size": 55,
-      "price": 24458,
-      "regularPrice": null,
-      "inStock": true
-    },
-    "xiaomi-ela5950gl|DDStore": {
-      "id": "xiaomi-ela5950gl",
-      "store": "DDStore",
-      "brand": "XIAOMI",
-      "model": "ELA5950GL",
-      "size": 32,
-      "price": 10109,
-      "regularPrice": null,
-      "inStock": true
-    },
-    "xiaomi-ela6018gl|DDStore": {
-      "id": "xiaomi-ela6018gl",
-      "store": "DDStore",
-      "brand": "XIAOMI",
-      "model": "ELA6018GL",
-      "size": 43,
-      "price": 15384,
-      "regularPrice": null,
-      "inStock": true
-    },
-    "xiaomi-ela6452gl|DDStore": {
-      "id": "xiaomi-ela6452gl",
-      "store": "DDStore",
-      "brand": "XIAOMI",
-      "model": "ELA6452GL",
-      "size": 55,
-      "price": 31300,
-      "regularPrice": null,
-      "inStock": true
-    },
-    "xiaomi-ela6470gl|DDStore": {
-      "id": "xiaomi-ela6470gl",
-      "store": "DDStore",
-      "brand": "XIAOMI",
-      "model": "ELA6470GL",
-      "size": 65,
-      "price": 40629,
-      "regularPrice": null,
+      "price": 22001,
+      "regularPrice": 24526,
       "inStock": true
     },
     "xiaomi-ela6488gl|DDStore": {
@@ -6068,8 +5448,8 @@
       "brand": "XIAOMI",
       "model": "ELA6488GL",
       "size": 75,
-      "price": 49272,
-      "regularPrice": null,
+      "price": 47153,
+      "regularPrice": 49370,
       "inStock": true
     },
     "xiaomi-s-mini-led-55|Anhoch": {

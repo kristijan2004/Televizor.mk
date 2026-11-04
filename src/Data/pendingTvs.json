@@ -1,88 +1,6 @@
 [
   {
     "tv": {
-      "id": "hoobart-40-mc-620-and-t",
-      "brand": "HOOBART",
-      "model": "40 MC 620 AND T",
-      "size": 40,
-      "technology": "LED",
-      "resolution": "4K",
-      "refreshRate": 60,
-      "year": 2026,
-      "os": "Smart TV",
-      "hdr": false,
-      "dolbyVision": false,
-      "hdmi": 0,
-      "usb": 0,
-      "vrr": false,
-      "allm": false,
-      "pictureProcessor": "—",
-      "hdrFormats": [],
-      "brightness": "—",
-      "audioPower": 0,
-      "audioChannels": "2.0",
-      "dolbyAtmos": false,
-      "freeSync": false,
-      "gSync": false,
-      "image": "/images/tvs/neptun/hoobart-40-mc-620-and-t-280267.jpg",
-      "stores": {
-        "Neptun": {
-          "price": 9999,
-          "regularPrice": 9999,
-          "inStock": true,
-          "image": "/images/tvs/neptun/hoobart-40-mc-620-and-t-280267.jpg",
-          "url": "https://www.neptun.mk/84107526-HOOBART-40-MC-620-AND-T"
-        }
-      }
-    },
-    "reasons": [
-      "нов модел — чека преглед"
-    ],
-    "discoveredAt": "2026-10-20"
-  },
-  {
-    "tv": {
-      "id": "hisense-50-a7-nq",
-      "brand": "HISENSE",
-      "model": "50 A7 NQ",
-      "size": 50,
-      "technology": "LED",
-      "resolution": "4K",
-      "refreshRate": 60,
-      "year": 2026,
-      "os": "Smart TV",
-      "hdr": false,
-      "dolbyVision": false,
-      "hdmi": 0,
-      "usb": 0,
-      "vrr": false,
-      "allm": false,
-      "pictureProcessor": "—",
-      "hdrFormats": [],
-      "brightness": "—",
-      "audioPower": 0,
-      "audioChannels": "2.0",
-      "dolbyAtmos": false,
-      "freeSync": false,
-      "gSync": false,
-      "image": "/images/tvs/neptun/4k-qled-uhd-smart-hisense-50-a7-nq-50-126cm-283301.jpg",
-      "stores": {
-        "Neptun": {
-          "price": 17995,
-          "regularPrice": 23999,
-          "inStock": true,
-          "image": "/images/tvs/neptun/4k-qled-uhd-smart-hisense-50-a7-nq-50-126cm-283301.jpg",
-          "url": "https://www.neptun.mk/HISENSE-50-A7-NQ"
-        }
-      }
-    },
-    "reasons": [
-      "нов модел — чека преглед"
-    ],
-    "discoveredAt": "2026-10-22"
-  },
-  {
-    "tv": {
       "id": "samsung-frame-qe-55-ls03h-auxxh",
       "brand": "SAMSUNG",
       "model": "FRAME QE 55 LS03H AUXXH",
@@ -106,13 +24,14 @@
       "dolbyAtmos": false,
       "freeSync": false,
       "gSync": false,
-      "image": "/images/tvs/neptun/samsung-frame-qe-55-ls03h-auxxh-298173.jpg",
+      "specialFeatures": [],
+      "image": "/images/tvs/neptun/samsung-frame-qe-55-ls03h-auxxh-55-4k-uhd-144hz-298173.jpg",
       "stores": {
         "Neptun": {
           "price": 59999,
           "regularPrice": 84999,
           "inStock": true,
-          "image": "/images/tvs/neptun/samsung-frame-qe-55-ls03h-auxxh-298173.jpg",
+          "image": "/images/tvs/neptun/samsung-frame-qe-55-ls03h-auxxh-55-4k-uhd-144hz-298173.jpg",
           "url": "https://www.neptun.mk/84121662-SAMSUNG-FRAME-QE-55-LS03H-AUXXH"
         }
       }
@@ -139,7 +58,7 @@
       "usb": 0,
       "vrr": false,
       "allm": false,
-      "pictureProcessor": "4K Processor",
+      "pictureProcessor": "—",
       "hdrFormats": [],
       "brightness": "—",
       "audioPower": 0,
@@ -147,12 +66,13 @@
       "dolbyAtmos": false,
       "freeSync": false,
       "gSync": false,
+      "specialFeatures": [],
       "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SONY-K77A65PB.CEI_92456-01M5HVZ6KP65QCVXV4Q7YHSFKB.jpg",
       "stores": {
         "Setec": {
-          "price": 129999,
+          "price": 127999,
           "regularPrice": 144999,
-          "inStock": false,
+          "inStock": true,
           "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SONY-K77A65PB.CEI_92456-01M5HVZ6KP65QCVXV4Q7YHSFKB.jpg",
           "handle": "sony-k77a65pbcei"
         }
@@ -180,7 +100,7 @@
       "usb": 0,
       "vrr": false,
       "allm": false,
-      "pictureProcessor": "4K Processor",
+      "pictureProcessor": "—",
       "hdrFormats": [],
       "brightness": "—",
       "audioPower": 0,
@@ -188,10 +108,11 @@
       "dolbyAtmos": false,
       "freeSync": false,
       "gSync": false,
+      "specialFeatures": [],
       "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SONY-K83A65PB.CE_92457-01M5F9X7FKS37YG12S290KKEPR.png",
       "stores": {
         "Setec": {
-          "price": 169999,
+          "price": 164999,
           "regularPrice": 184999,
           "inStock": false,
           "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SONY-K83A65PB.CE_92457-01M5F9X7FKS37YG12S290KKEPR.png",
@@ -206,10 +127,10 @@
   },
   {
     "tv": {
-      "id": "lg-75-nano-81a3a",
+      "id": "lg-65-mrgb-87b3b-4k-ultra-hd-144hz",
       "brand": "LG",
-      "model": "75 NANO 81A3A",
-      "size": 75,
+      "model": "65 MRGB 87B3B",
+      "size": 65,
       "technology": "LED",
       "resolution": "4K",
       "refreshRate": 60,
@@ -229,27 +150,28 @@
       "dolbyAtmos": false,
       "freeSync": false,
       "gSync": false,
-      "image": "/images/tvs/neptun/lg-75-nano-81a3a-75-4k-nano-288108.jpg",
+      "specialFeatures": [],
+      "image": "/images/tvs/neptun/lg-65-mrgb-87b3b-4k-ultra-hd-144hz-299563.jpg",
       "stores": {
         "Neptun": {
-          "price": 41995,
-          "regularPrice": 59999,
+          "price": 62999,
+          "regularPrice": 79999,
           "inStock": true,
-          "image": "/images/tvs/neptun/lg-75-nano-81a3a-75-4k-nano-288108.jpg",
-          "url": "https://www.neptun.mk/84113710-LG-75-NANO-81A3A"
+          "image": "/images/tvs/neptun/lg-65-mrgb-87b3b-4k-ultra-hd-144hz-299563.jpg",
+          "url": "https://www.neptun.mk/84122697-LG-65-MRGB-87B3B"
         }
       }
     },
     "reasons": [
       "нов модел — чека преглед"
     ],
-    "discoveredAt": "2026-10-24"
+    "discoveredAt": "2026-10-27"
   },
   {
     "tv": {
-      "id": "fuego-75-elu-720-gtv",
-      "brand": "FUEGO",
-      "model": "75 ELU 720 GTV",
+      "id": "samsung-ue75m72hauxxh",
+      "brand": "SAMSUNG",
+      "model": "UE75M72HAUXXH",
       "size": 75,
       "technology": "LED",
       "resolution": "4K",
@@ -270,20 +192,441 @@
       "dolbyAtmos": false,
       "freeSync": false,
       "gSync": false,
-      "image": "/images/tvs/neptun/4k-smart-tv-fuego-75-elu-720-gtv-75-190-5cm-274483.jpg",
+      "specialFeatures": [],
+      "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20UE75M72HAUXXH_92463-01M5YEB8ZAZXZD1CT941HYH20R.png",
       "stores": {
-        "Neptun": {
-          "price": 32999,
-          "regularPrice": 39999,
+        "Setec": {
+          "price": 48999,
+          "regularPrice": 64999,
           "inStock": true,
-          "image": "/images/tvs/neptun/4k-smart-tv-fuego-75-elu-720-gtv-75-190-5cm-274483.jpg",
-          "url": "https://www.neptun.mk/FUEGO-75-ELU-720-GTV"
+          "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20UE75M72HAUXXH_92463-01M5YEB8ZAZXZD1CT941HYH20R.png",
+          "handle": "samsung-ue75m72hauxxh"
         }
       }
     },
     "reasons": [
       "нов модел — чека преглед"
     ],
-    "discoveredAt": "2026-10-25"
+    "discoveredAt": "2026-10-28"
+  },
+  {
+    "tv": {
+      "id": "samsung-ue43u8092huxxh",
+      "brand": "SAMSUNG",
+      "model": "UE43U8092HUXXH",
+      "size": 43,
+      "technology": "LED",
+      "resolution": "4K",
+      "refreshRate": 60,
+      "year": 2026,
+      "os": "Smart TV",
+      "hdr": false,
+      "dolbyVision": false,
+      "hdmi": 0,
+      "usb": 0,
+      "vrr": false,
+      "allm": false,
+      "pictureProcessor": "—",
+      "hdrFormats": [],
+      "brightness": "—",
+      "audioPower": 0,
+      "audioChannels": "2.0",
+      "dolbyAtmos": false,
+      "freeSync": false,
+      "gSync": false,
+      "specialFeatures": [],
+      "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG-UE43U8092HUXXH_92464-01M610AZ20P3PXVFNJHXWVMFBA.jpg",
+      "stores": {
+        "Setec": {
+          "price": 18999,
+          "regularPrice": 22999,
+          "inStock": true,
+          "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG-UE43U8092HUXXH_92464-01M610AZ20P3PXVFNJHXWVMFBA.jpg",
+          "handle": "samsung-ue43u8092huxxh"
+        }
+      }
+    },
+    "reasons": [
+      "нов модел — чека преглед"
+    ],
+    "discoveredAt": "2026-10-29"
+  },
+  {
+    "tv": {
+      "id": "samsung-ue50u8092huxxh",
+      "brand": "SAMSUNG",
+      "model": "UE50U8092HUXXH",
+      "size": 50,
+      "technology": "LED",
+      "resolution": "4K",
+      "refreshRate": 60,
+      "year": 2026,
+      "os": "Smart TV",
+      "hdr": false,
+      "dolbyVision": false,
+      "hdmi": 0,
+      "usb": 0,
+      "vrr": false,
+      "allm": false,
+      "pictureProcessor": "—",
+      "hdrFormats": [],
+      "brightness": "—",
+      "audioPower": 0,
+      "audioChannels": "2.0",
+      "dolbyAtmos": false,
+      "freeSync": false,
+      "gSync": false,
+      "specialFeatures": [],
+      "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG-UE50U8092HUXXH_92465-01M610CSRXDFNFSQE03J19B5E4.jpg",
+      "stores": {
+        "Setec": {
+          "price": 19999,
+          "regularPrice": 25999,
+          "inStock": true,
+          "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG-UE50U8092HUXXH_92465-01M610CSRXDFNFSQE03J19B5E4.jpg",
+          "handle": "samsung-ue50u8092huxxh"
+        }
+      }
+    },
+    "reasons": [
+      "нов модел — чека преглед"
+    ],
+    "discoveredAt": "2026-10-29"
+  },
+  {
+    "tv": {
+      "id": "samsung-ue55u8092huxxh",
+      "brand": "SAMSUNG",
+      "model": "UE55U8092HUXXH",
+      "size": 55,
+      "technology": "LED",
+      "resolution": "4K",
+      "refreshRate": 60,
+      "year": 2026,
+      "os": "Smart TV",
+      "hdr": false,
+      "dolbyVision": false,
+      "hdmi": 0,
+      "usb": 0,
+      "vrr": false,
+      "allm": false,
+      "pictureProcessor": "—",
+      "hdrFormats": [],
+      "brightness": "—",
+      "audioPower": 0,
+      "audioChannels": "2.0",
+      "dolbyAtmos": false,
+      "freeSync": false,
+      "gSync": false,
+      "specialFeatures": [],
+      "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG-UE55U8092HUXXH_92466-01M610C91BJ19YTF8XFPT9WB0V.jpg",
+      "stores": {
+        "Setec": {
+          "price": 23999,
+          "regularPrice": 29999,
+          "inStock": true,
+          "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG-UE55U8092HUXXH_92466-01M610C91BJ19YTF8XFPT9WB0V.jpg",
+          "handle": "samsung-ue55u8092huxxh"
+        }
+      }
+    },
+    "reasons": [
+      "нов модел — чека преглед"
+    ],
+    "discoveredAt": "2026-10-29"
+  },
+  {
+    "tv": {
+      "id": "samsung-ue65u8092huxxh",
+      "brand": "SAMSUNG",
+      "model": "UE65U8092HUXXH",
+      "size": 65,
+      "technology": "LED",
+      "resolution": "4K",
+      "refreshRate": 60,
+      "year": 2026,
+      "os": "Smart TV",
+      "hdr": false,
+      "dolbyVision": false,
+      "hdmi": 0,
+      "usb": 0,
+      "vrr": false,
+      "allm": false,
+      "pictureProcessor": "—",
+      "hdrFormats": [],
+      "brightness": "—",
+      "audioPower": 0,
+      "audioChannels": "2.0",
+      "dolbyAtmos": false,
+      "freeSync": false,
+      "gSync": false,
+      "specialFeatures": [],
+      "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG-UE65U8092HUXXH_92467-01M610BQJV08FEHHNP6MS4ZV8Y.jpg",
+      "stores": {
+        "Setec": {
+          "price": 32999,
+          "regularPrice": 39999,
+          "inStock": true,
+          "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG-UE65U8092HUXXH_92467-01M610BQJV08FEHHNP6MS4ZV8Y.jpg",
+          "handle": "samsung-ue65u8092huxxh"
+        }
+      }
+    },
+    "reasons": [
+      "нов модел — чека преглед"
+    ],
+    "discoveredAt": "2026-10-29"
+  },
+  {
+    "tv": {
+      "id": "samsung-ue75u8092huxxh",
+      "brand": "SAMSUNG",
+      "model": "UE75U8092HUXXH",
+      "size": 75,
+      "technology": "LED",
+      "resolution": "4K",
+      "refreshRate": 60,
+      "year": 2026,
+      "os": "Smart TV",
+      "hdr": false,
+      "dolbyVision": false,
+      "hdmi": 0,
+      "usb": 0,
+      "vrr": false,
+      "allm": false,
+      "pictureProcessor": "—",
+      "hdrFormats": [],
+      "brightness": "—",
+      "audioPower": 0,
+      "audioChannels": "2.0",
+      "dolbyAtmos": false,
+      "freeSync": false,
+      "gSync": false,
+      "specialFeatures": [],
+      "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20UE75U8092HUXXH_92468-01M612898NXHNVB6XY3BBV42B5.png",
+      "stores": {
+        "Setec": {
+          "price": 44999,
+          "regularPrice": 55999,
+          "inStock": true,
+          "image": "https://setec-pos-web.fra1.cdn.digitaloceanspaces.com/SAMSUNG%20UE75U8092HUXXH_92468-01M612898NXHNVB6XY3BBV42B5.png",
+          "handle": "samsung-ue75u8092huxxh"
+        }
+      }
+    },
+    "reasons": [
+      "нов модел — чека преглед"
+    ],
+    "discoveredAt": "2026-10-29"
+  },
+  {
+    "tv": {
+      "id": "lg-55-nano-81a3a",
+      "brand": "LG",
+      "model": "55 NANO 81A3A",
+      "size": 55,
+      "technology": "LED",
+      "resolution": "4K",
+      "refreshRate": 60,
+      "year": 2026,
+      "os": "Smart TV",
+      "hdr": false,
+      "dolbyVision": false,
+      "hdmi": 0,
+      "usb": 0,
+      "vrr": false,
+      "allm": false,
+      "pictureProcessor": "—",
+      "hdrFormats": [],
+      "brightness": "—",
+      "audioPower": 0,
+      "audioChannels": "2.0",
+      "dolbyAtmos": false,
+      "freeSync": false,
+      "gSync": false,
+      "specialFeatures": [],
+      "image": "/images/tvs/neptun/lg-55-nano-81a3a-55-4k-nano-288117.jpg",
+      "stores": {
+        "Neptun": {
+          "price": 31999,
+          "regularPrice": 31999,
+          "inStock": true,
+          "image": "/images/tvs/neptun/lg-55-nano-81a3a-55-4k-nano-288117.jpg",
+          "url": "https://www.neptun.mk/84113719-LG-55-NANO-81A3A"
+        }
+      }
+    },
+    "reasons": [
+      "нов модел — чека преглед"
+    ],
+    "discoveredAt": "2026-10-30"
+  },
+  {
+    "tv": {
+      "id": "hisense-43-a6q",
+      "brand": "HISENSE",
+      "model": "43 A6Q",
+      "size": 43,
+      "technology": "LED",
+      "resolution": "4K",
+      "refreshRate": 60,
+      "year": 2026,
+      "os": "Smart TV",
+      "hdr": false,
+      "dolbyVision": false,
+      "hdmi": 0,
+      "usb": 0,
+      "vrr": false,
+      "allm": false,
+      "pictureProcessor": "—",
+      "hdrFormats": [],
+      "brightness": "—",
+      "audioPower": 0,
+      "audioChannels": "2.0",
+      "dolbyAtmos": false,
+      "freeSync": false,
+      "gSync": false,
+      "specialFeatures": [],
+      "image": "/images/tvs/neptun/hisense-43-a6q-43-4k-smart-288939.jpg",
+      "stores": {
+        "Neptun": {
+          "price": 12499,
+          "regularPrice": 20699,
+          "inStock": true,
+          "image": "/images/tvs/neptun/hisense-43-a6q-43-4k-smart-288939.jpg",
+          "url": "https://www.neptun.mk/84114510-HISENSE-43-A6Q"
+        }
+      }
+    },
+    "reasons": [
+      "нов модел — чека преглед"
+    ],
+    "discoveredAt": "2026-11-03"
+  },
+  {
+    "tv": {
+      "id": "lg-43-qned72-b3b-4k-ultra-hd",
+      "brand": "LG",
+      "model": "43 QNED72 B3B",
+      "size": 43,
+      "technology": "QNED",
+      "resolution": "4K",
+      "refreshRate": 60,
+      "year": 2026,
+      "os": "Smart TV",
+      "hdr": false,
+      "dolbyVision": false,
+      "hdmi": 0,
+      "usb": 0,
+      "vrr": false,
+      "allm": false,
+      "pictureProcessor": "—",
+      "hdrFormats": [],
+      "brightness": "—",
+      "audioPower": 0,
+      "audioChannels": "2.0",
+      "dolbyAtmos": false,
+      "freeSync": false,
+      "gSync": false,
+      "specialFeatures": [],
+      "image": "/images/tvs/neptun/lg-43-qned72-b3b-4k-ultra-hd-301350.jpg",
+      "stores": {
+        "Neptun": {
+          "price": 25999,
+          "regularPrice": 25999,
+          "inStock": true,
+          "image": "/images/tvs/neptun/lg-43-qned72-b3b-4k-ultra-hd-301350.jpg",
+          "url": "https://www.neptun.mk/84124026-LG-43-QNED72-B3B"
+        }
+      }
+    },
+    "reasons": [
+      "нов модел — чека преглед"
+    ],
+    "discoveredAt": "2026-11-04"
+  },
+  {
+    "tv": {
+      "id": "lg-50-qned72-b3b-4k-uhd",
+      "brand": "LG",
+      "model": "50 QNED72 B3B",
+      "size": 50,
+      "technology": "QNED",
+      "resolution": "4K",
+      "refreshRate": 60,
+      "year": 2026,
+      "os": "Smart TV",
+      "hdr": false,
+      "dolbyVision": false,
+      "hdmi": 0,
+      "usb": 0,
+      "vrr": false,
+      "allm": false,
+      "pictureProcessor": "—",
+      "hdrFormats": [],
+      "brightness": "—",
+      "audioPower": 0,
+      "audioChannels": "2.0",
+      "dolbyAtmos": false,
+      "freeSync": false,
+      "gSync": false,
+      "specialFeatures": [],
+      "image": "/images/tvs/neptun/lg-50-qned72-b3b-4k-uhd-301351.jpg",
+      "stores": {
+        "Neptun": {
+          "price": 29999,
+          "regularPrice": 29999,
+          "inStock": true,
+          "image": "/images/tvs/neptun/lg-50-qned72-b3b-4k-uhd-301351.jpg",
+          "url": "https://www.neptun.mk/84124027-LG-50-QNED72-B3B"
+        }
+      }
+    },
+    "reasons": [
+      "нов модел — чека преглед"
+    ],
+    "discoveredAt": "2026-11-04"
+  },
+  {
+    "tv": {
+      "id": "lg-85-qned81-b3a-4k-ultra-hd",
+      "brand": "LG",
+      "model": "85 QNED81 B3A",
+      "size": 85,
+      "technology": "QNED",
+      "resolution": "4K",
+      "refreshRate": 60,
+      "year": 2026,
+      "os": "Smart TV",
+      "hdr": false,
+      "dolbyVision": false,
+      "hdmi": 0,
+      "usb": 0,
+      "vrr": false,
+      "allm": false,
+      "pictureProcessor": "—",
+      "hdrFormats": [],
+      "brightness": "—",
+      "audioPower": 0,
+      "audioChannels": "2.0",
+      "dolbyAtmos": false,
+      "freeSync": false,
+      "gSync": false,
+      "specialFeatures": [],
+      "image": "/images/tvs/neptun/lg-85-qned81-b3a-4k-ultra-hd-301349.jpg",
+      "stores": {
+        "Neptun": {
+          "price": 99999,
+          "regularPrice": 99999,
+          "inStock": true,
+          "image": "/images/tvs/neptun/lg-85-qned81-b3a-4k-ultra-hd-301349.jpg",
+          "url": "https://www.neptun.mk/84124025-LG-85-QNED81-B3A"
+        }
+      }
+    },
+    "reasons": [
+      "нов модел — чека преглед"
+    ],
+    "discoveredAt": "2026-11-04"
   }
 ]
