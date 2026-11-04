@@ -16,15 +16,78 @@
 import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
+import { execFileSync } from "node:child_process";
 
 import { verifyPassword, DUMMY_HASH } from "./password.js";
 import { parseCookies, serializeCookie, clearCookie } from "./cookies.js";
 import { COLUMNS, EDITABLE_FIELDS, JSON_FIELDS, BOOL_FIELDS, toCell, hydrateRow } from "./tvRows.js";
 import { SPECIAL_FEATURE_KEYS } from "../src/lib/specialFeatures.js";
+import { isPublished } from "../src/lib/isPublished.js";
+import { parseFrontmatter, updateDateFields } from "../scripts/frontmatter.js";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const SESSION_TTL_MS = 8 * 60 * 60 * 1000; // 8 часа
 const SESSION_COOKIE = "admin_session";
 const CSRF_COOKIE = "admin_csrf";
+
+/*
+  Истите папки со содржина што ги гледа scripts/buildNews.js. Намерно не
+  зависат од dataDir (тоа е src/Data, за генерираните JSON-и) — статиите во
+  извор секогаш живеат тука, без можност за override преку околина.
+
+  The same content folders scripts/buildNews.js reads. Deliberately not tied
+  to dataDir (that is src/Data, for the generated JSON) — the source articles
+  always live here, with no environment override.
+*/
+const CONTENT_SECTIONS = {
+  novosti: path.join(__dirname, "..", "src", "content", "novosti"),
+  edu: path.join(__dirname, "..", "src", "content", "edu"),
+};
+
+const BUILD_NEWS_SCRIPT = path.join(__dirname, "..", "scripts", "buildNews.js");
+
+const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+const PUBLISH_AT_RE = /^\d{4}-\d{2}-\d{2}([ T]\d{2}:\d{2})?$/;
+
+/*
+  Листа на статии од дискот, за даден дел — секогаш свежо, никогаш од кеш, за
+  да админ панелот вика исто она што `npm run build:news` би го прочитало.
+*/
+function listArticles(sectionName, contentDir) {
+  if (!fs.existsSync(contentDir)) return [];
+
+  const files = fs
+    .readdirSync(contentDir)
+    .filter((file) => file.endsWith(".md"))
+    .filter((file) => file !== "README.md" && !file.startsWith("_"));
+
+  const articles = [];
+
+  for (const file of files) {
+    try {
+      const raw = fs.readFileSync(path.join(contentDir, file), "utf8");
+      const { data } = parseFrontmatter(raw, file);
+      const slug = data.slug || file.replace(/\.md$/, "");
+
+      articles.push({
+        section: sectionName,
+        file,
+        slug,
+        title: data.title || slug,
+        date: data.date || "",
+        publishAt: data.publishAt || "",
+        status: isPublished({ date: data.date, publishAt: data.publishAt }) ? "live" : "scheduled",
+      });
+    } catch {
+      // Трошна статија (без вистинска frontmatter) не треба да собори целата
+      // листа — build:news веќе ја пријавува истата грешка одделно.
+    }
+  }
+
+  return articles;
+}
 
 function timingSafeEqualStr(a, b) {
   const bufA = Buffer.from(String(a));
@@ -627,6 +690,118 @@ export default async function adminPlugin(app, opts) {
       total,
       page,
       limit,
+    };
+  });
+
+  /*
+    Статии: кои се живи, кои чекаат датум, и промена на тој датум.
+
+    Читаат директно од .md фајловите (исто како scripts/buildNews.js), не од
+    news.generated.json/edu.generated.json — така панелот секогаш гледа
+    точната состојба, дури и ако генерираните фајлови заостануваат.
+  */
+  app.get("/articles", async () => {
+    const items = [
+      ...listArticles("novosti", CONTENT_SECTIONS.novosti),
+      ...listArticles("edu", CONTENT_SECTIONS.edu),
+    ];
+
+    const scheduled = items
+      .filter((a) => a.status === "scheduled")
+      .sort((a, b) => (a.publishAt || a.date).localeCompare(b.publishAt || b.date));
+
+    const live = items
+      .filter((a) => a.status === "live")
+      .sort((a, b) => (b.publishAt || b.date).localeCompare(a.publishAt || a.date));
+
+    const ordered = [...scheduled, ...live].map(({ file, ...rest }) => rest);
+
+    return { items: ordered, total: ordered.length };
+  });
+
+  app.put("/articles/:section/:slug", async (request, reply) => {
+    const { section, slug } = request.params;
+    const contentDir = CONTENT_SECTIONS[section];
+
+    if (!contentDir) {
+      return reply.code(400).send({ error: "Непознат дел." });
+    }
+
+    const entry = listArticles(section, contentDir).find((a) => a.slug === slug);
+
+    if (!entry) {
+      return reply.code(404).send({ error: "Статијата не е пронајдена." });
+    }
+
+    // Патеката секогаш доаѓа од фајл што веќе постои во папката (entry.file),
+    // никогаш директно од корисничкиот влез — сепак се проверува дека
+    // остана внатре во contentDir.
+    const resolvedDir = path.resolve(contentDir);
+    const filePath = path.resolve(contentDir, entry.file);
+
+    if (!filePath.startsWith(resolvedDir + path.sep)) {
+      return reply.code(400).send({ error: "Неисправна патека." });
+    }
+
+    const body = request.body || {};
+    const date = typeof body.date === "string" ? body.date.trim() : "";
+    const publishAt = typeof body.publishAt === "string" ? body.publishAt.trim() : "";
+
+    if (!DATE_RE.test(date)) {
+      return reply.code(400).send({ error: "Датумот мора да е во формат ГГГГ-ММ-ДД." });
+    }
+
+    if (publishAt && !PUBLISH_AT_RE.test(publishAt)) {
+      return reply
+        .code(400)
+        .send({ error: "Времето на објава мора да е ГГГГ-ММ-ДД или ГГГГ-ММ-ДД ЧЧ:МИ." });
+    }
+
+    const raw = fs.readFileSync(filePath, "utf8");
+
+    let updated;
+    try {
+      updated = updateDateFields(raw, entry.file, { date, publishAt });
+    } catch (error) {
+      request.log.error(error, "admin article schedule parse failed");
+      return reply.code(400).send({ error: "Не можам да прочитам frontmatter на статијата." });
+    }
+
+    fs.writeFileSync(filePath, updated, "utf8");
+
+    try {
+      // Истите news.generated.json/edu.generated.json мора да се свежи веднаш
+      // — спојуваме процес наместо require(), за грешка во builder-от да не
+      // собори цел API сервер (buildNews.js прави process.exit(1)).
+      execFileSync(process.execPath, [BUILD_NEWS_SCRIPT], { stdio: "pipe" });
+    } catch (error) {
+      fs.writeFileSync(filePath, raw, "utf8");
+      request.log.error(error, "buildNews failed after schedule change");
+      return reply.code(500).send({ error: "Градењето пропадна — промената е вратена." });
+    }
+
+    db.prepare(
+      `INSERT INTO admin_audit_log (tv_id, brand, model, changed_by, changed_at, diff)
+       VALUES (?, ?, ?, ?, ?, ?)`
+    ).run(
+      `article:${section}/${slug}`,
+      section,
+      entry.title,
+      request.adminUsername || "admin",
+      Date.now(),
+      JSON.stringify({
+        date: { before: entry.date, after: date },
+        publishAt: { before: entry.publishAt, after: publishAt },
+      })
+    );
+
+    return {
+      section,
+      slug,
+      title: entry.title,
+      date,
+      publishAt,
+      status: isPublished({ date, publishAt }) ? "live" : "scheduled",
     };
   });
 

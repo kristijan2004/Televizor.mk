@@ -84,4 +84,14 @@ export const adminApi = {
 
   rejectPendingTv: (id) =>
     request(`/pending-tvs/${encodeURIComponent(id)}/reject`, { method: "POST" }),
+
+  articles: {
+    list: () => request("/articles"),
+
+    updateSchedule: (section, slug, patch) =>
+      request(`/articles/${encodeURIComponent(section)}/${encodeURIComponent(slug)}`, {
+        method: "PUT",
+        body: patch,
+      }),
+  },
 };

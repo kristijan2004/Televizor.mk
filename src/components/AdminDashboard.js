@@ -5,6 +5,7 @@ import { adminApi } from "../lib/adminApi";
 import AdminEditTvs from "./AdminEditTvs";
 import AdminPendingTvs from "./AdminPendingTvs";
 import AdminHistory from "./AdminHistory";
+import AdminArticles from "./AdminArticles";
 
 const PURPLE = "#242582";
 
@@ -369,6 +370,7 @@ const TABS = [
   { id: "edit", label: "Уреди телевизори" },
   { id: "pending", label: "Чекаат одобрување" },
   { id: "history", label: "Историја на промени" },
+  { id: "articles", label: "Статии" },
 ];
 
 function formatDate(ms) {
@@ -566,6 +568,7 @@ const AdminDashboard = ({ username, onLoggedOut, onSessionExpired }) => {
       {tab === "edit" && <AdminEditTvs onSessionExpired={onSessionExpired} />}
       {tab === "pending" && <AdminPendingTvs onSessionExpired={onSessionExpired} />}
       {tab === "history" && <AdminHistory onSessionExpired={onSessionExpired} />}
+      {tab === "articles" && <AdminArticles onSessionExpired={onSessionExpired} />}
     </Shell>
   );
 };

@@ -14,6 +14,8 @@
 const fs = require("fs");
 const path = require("path");
 
+const { parseFrontmatter } = require("./frontmatter.js");
+
 /*
   Еден запис по дел од сајтот. За нов дел е доволно уште еден ред тука.
 
@@ -64,82 +66,6 @@ const FALLBACK_CATEGORIES = ["Новости", "Рецензии", "Совети
 
 // Average reading speed used when an article has no explicit `readTime`.
 const WORDS_PER_MINUTE = 200;
-
-// ---------------------------------------------------------------------------
-// Frontmatter
-// ---------------------------------------------------------------------------
-
-/*
-  A deliberately small frontmatter reader: `key: value` lines, plus folded
-  blocks written as `key: >` followed by indented lines. That covers what the
-  articles need without pulling in a YAML dependency.
-*/
-function parseFrontmatter(raw, fileName) {
-  const normalized = raw.replace(/^﻿/, "").replace(/\r\n/g, "\n");
-
-  if (!normalized.startsWith("---\n")) {
-    throw new Error(`${fileName}: missing frontmatter block (--- at the top)`);
-  }
-
-  const end = normalized.indexOf("\n---", 3);
-
-  if (end === -1) {
-    throw new Error(`${fileName}: frontmatter block is never closed with ---`);
-  }
-
-  const headLines = normalized.slice(4, end).split("\n");
-  const body = normalized.slice(end + 4).replace(/^\n+/, "");
-
-  const data = {};
-
-  let currentKey = null;
-
-  for (const line of headLines) {
-    if (line.trim() === "") {
-      continue;
-    }
-
-    // Continuation line of a folded (`key: >`) value.
-    if (currentKey && /^\s+\S/.test(line)) {
-      data[currentKey] = `${data[currentKey]} ${line.trim()}`.trim();
-
-      continue;
-    }
-
-    const match = line.match(/^([A-Za-z][A-Za-z0-9_]*)\s*:\s*(.*)$/);
-
-    if (!match) {
-      throw new Error(`${fileName}: cannot read frontmatter line "${line}"`);
-    }
-
-    const [, key, value] = match;
-
-    if (value === ">" || value === "|") {
-      data[key] = "";
-      currentKey = key;
-
-      continue;
-    }
-
-    data[key] = stripQuotes(value.trim());
-    currentKey = null;
-  }
-
-  return { data, body };
-}
-
-function stripQuotes(value) {
-  if (value.length > 1) {
-    const first = value[0];
-    const last = value[value.length - 1];
-
-    if ((first === '"' && last === '"') || (first === "'" && last === "'")) {
-      return value.slice(1, -1);
-    }
-  }
-
-  return value;
-}
 
 // ---------------------------------------------------------------------------
 // Markdown body
