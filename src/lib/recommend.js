@@ -426,9 +426,18 @@ function scoreAvailability(tv) {
     };
   }
 
+  /*
+    Намерно мал поен (не 6, како порано) — најдено 2026-11-04: при
+    приоритет „слика"/„филмови" (не гејминг), QN70 и QN80 паѓаат во ИСТА
+    категорија на панел (Neo QLED -> MINI_LED), па целото резултатско поле
+    им е идентично освен ова. QN70 (понеквалитетен, поскап) победуваше само
+    затоа што е кај 2 трговци, а QN80 (подобар, поевтин) е само кај еден.
+    Достапноста смее да биде лесен тај-брејкер меѓу слични опции, не да ја
+    победи вистинска разлика во спецификации.
+  */
   if (tv.storeCount > 1) {
     return {
-      points: 6,
+      points: 2,
       reason: `Достапен кај ${tv.storeCount} трговци`,
     };
   }
@@ -579,6 +588,76 @@ function withinBudget(tv, budget) {
 }
 
 /*
+  „Доминација" — ако B е ист или поскап од A, А е ИСТА ГОЛЕМИНА (различна
+  големина = различна соба, не е споредливо), и A е ист или подобар на секоја
+  ПОЗНАТА спецификација, B никогаш не смее да победи A.
+
+  Намерно НЕ смета пониска цена сама по себе за „доминација" — многу
+  телевизори во каталогот имаат непознати спецификации (null), па „само
+  поевтин, сè друго непознато" би го избришал секој добро документиран
+  модел во корист на секој евтин со празни полиња. Доминацијата бара барем
+  ЕДНА ПОЗНАТА спецификација каде A е стварно подобар, не само претпоставка
+  од тишина.
+
+  Најдено 2026-11-04: Samsung QE55QN80FAUXXH (120Hz, VRR, 4 HDMI, Dolby
+  Atmos, 35.995 ден.) губеше од QE55QN70HAUXXH (60Hz, без VRR, 3 HDMI, без
+  Dolby Atmos, 36.999 ден.) бидејќи и двата паѓаат во иста груба категорија
+  панел (Neo QLED -> MINI_LED кај panelOf()), па единствената разлика во
+  резултатот беше бонусот за достапност кај повеќе трговци. Подобар и
+  поевтин телевизор не смее да изгуби само затоа што прашањата не бараа
+  гејминг.
+
+  Двапати поправано истиот ден: првата верзија споредуваше и различни
+  големини и дозволуваше „само поевтин" да брои како доминација — избриша
+  98 од 102 телевизори во буџетот. Втората верзија читаше `tv.hdmi` и
+  `tv.dolbyAtmos`, полиња што НЕ постојат на каталошкиот запис (тој ги има
+  само `tv.gaming.vrr`/`vrr.allm`/`vrr.hdmi21`, не HDMI-портови или Dolby
+  Atmos) — секогаш `undefined`, па споредбата тивко не правеше ништо и
+  HISENSE 55E8Q (без VRR, без ALLM) „доминираше" над QN80 (со двете) само
+  затоа што тие две оски никогаш не се проверуваа.
+*/
+function strictlyDominates(a, b) {
+  if (a.price === null || b.price === null || a.price > b.price) {
+    return false;
+  }
+
+  if (a.size === null || b.size === null || a.size !== b.size) {
+    return false;
+  }
+
+  const panelRank = (tv) => (panelOf(tv) ? panelOf(tv).picture : null);
+  const bool = (value) => (typeof value === "boolean" ? value : null);
+
+  const axes = [
+    [a.refreshRate, b.refreshRate],
+    [bool(a.gaming?.vrr), bool(b.gaming?.vrr)],
+    [bool(a.gaming?.allm), bool(b.gaming?.allm)],
+    [bool(a.gaming?.hdmi21), bool(b.gaming?.hdmi21)],
+    [panelRank(a), panelRank(b)],
+  ];
+
+  let confirmedAdvantage = false;
+
+  for (const [valueA, valueB] of axes) {
+    if (valueA === null || valueB === null) continue;
+    if (valueA < valueB) return false;
+    if (valueA > valueB) confirmedAdvantage = true;
+  }
+
+  return confirmedAdvantage;
+}
+
+/*
+  Ги отфрла телевизорите што се строго доминирани од друг во истиот
+  (веќе буџет-филтриран) пул — никогаш не смеат да бидат препорака, за
+  ниедна картичка, зашто постои ист или поевтин модел што е ист или подобар
+  во сè што можеме да го споредиме.
+*/
+function dropDominated(pool) {
+  return pool.filter((tv) => !pool.some((other) => other !== tv && strictlyDominates(other, tv)));
+}
+
+/*
   „За 10% повеќе" — телевизор малку над буџетот што е ЗНАЧИТЕЛНО подобар, не
   само поскап верзија на истото. Се бара во тесен појас веднаш над максимумот
   (budget.max до budget.max * 1.1) и се бара истата именувана предност што ја
@@ -643,7 +722,7 @@ function findStretchPick(catalogue, answers, budget, best) {
 export function recommend(catalogue, answers, options = {}) {
   const budget = answers.budget || null;
 
-  const affordable = catalogue.filter((tv) => withinBudget(tv, budget));
+  const affordable = dropDominated(catalogue.filter((tv) => withinBudget(tv, budget)));
 
   if (affordable.length === 0) {
     return {
