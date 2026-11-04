@@ -371,6 +371,50 @@ function parseDDStore(tv) {
   }
 
   /*
+   * Zeus
+   * Smart LED TV Zeus ZE32ST2 — 32", HD Ready, Android 14, DVB-T2
+   * LED TV Zeus ZE50BFT2 — 50", FHD, DVB-T2
+   */
+  match = name.match(/\bTV\s+Zeus\s+([A-Za-z0-9-]+)/i);
+
+  if (match) {
+    return {
+      brand: "ZEUS",
+      model: match[1]
+    };
+  }
+
+  /*
+   * Most DDStore titles: `TV <Brand> <size>" <model> — <description>`
+   *   TV Haier 43" H43K85FUX — LED 4K UHD, Google TV
+   *   TV Philips 43" 43PUS8010/12 — LED 4K UHD, Titan OS
+   *   TV Xiaomi 55" A 55 2026 (ELA5918GL) — LED 4K UHD, Google TV
+   *
+   * Without this, the generic "BRAND MODEL" fallback below reads the
+   * leading "TV" itself as the brand and everything else (size + model +
+   * description) as the model — which produced duplicates of TVs already
+   * in the list under a garbage id like "tv-haier-43-h43k85fux-led-4k-uhd"
+   * instead of matching the existing "haier-h43k85fux" (found 2026-10-28,
+   * ~50 TVs wrongly queued as new in pendingTvs.json).
+   */
+  match = name.match(
+    /^TV\s+([A-Za-z]+)\s+\d{2,3}["”″']?\s+(.*?)(?:\s[—–-]\s|$)/i
+  );
+
+  if (match) {
+    const brand = match[1].toUpperCase();
+    let model = match[2].trim();
+
+    // Xiaomi spells the real model code in parentheses: "A 55 2026 (ELA5918GL)"
+    const coded = model.match(/\(([A-Za-z0-9-]+)\)\s*$/);
+    if (coded) model = coded[1];
+
+    if (model) {
+      return { brand, model };
+    }
+  }
+
+  /*
    * Generic "BRAND MODEL, description"
    */
   const firstPart = name.split(",")[0].trim();
