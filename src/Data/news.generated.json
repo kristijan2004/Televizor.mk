@@ -1,9 +1,1317 @@
 {
-  "generatedAt": "2026-11-04T20:18:56.184Z",
+  "generatedAt": "2026-11-06T11:20:57.028Z",
   "categories": [
     "Новости"
   ],
   "articles": [
+    {
+      "id": "webos-26-lg-televizori-azuriranje",
+      "slug": "webos-26-lg-televizori-azuriranje",
+      "title": "webOS 26 на LG телевизори: кои модели го добиваат и што се менува",
+      "excerpt": "LG го носи бесплатното ажурирање webOS 26 и на постарите телевизори, од моделите од 2025 до оние од 2022. Кој го добива и кога, што е ново, што исчезнува и зошто вреди да размислиш пред да го инсталираш, бидејќи враќање назад нема.",
+      "category": "Новости",
+      "author": "",
+      "date": "2026-11-14",
+      "publishAt": "",
+      "readTime": 5,
+      "image": "/images/novosti/webos-26-lg-televizori-azuriranje.webp",
+      "imageCaption": "LG AI телевизор со webOS 26 во дневна соба. Фото: LG",
+      "imageCandidates": [
+        "/images/novosti/webos-26-lg-televizori-azuriranje.webp",
+        "/images/novosti/webos-26-lg-televizori-azuriranje.jpg",
+        "/images/novosti/webos-26-lg-televizori-azuriranje.jpeg",
+        "/images/novosti/webos-26-lg-televizori-azuriranje.png",
+        "/images/novosti/webos-26-lg-televizori-azuriranje.avif",
+        "/images/novosti/webos-26-lg-televizori-azuriranje.svg",
+        "/images/novosti/webos-26-lg-televizori-azuriranje.jpg.jpg",
+        "/images/novosti/webos-26-lg-televizori-azuriranje.jpeg.jpeg",
+        "/images/novosti/webos-26-lg-televizori-azuriranje.png.png",
+        "/images/novosti/webos-26-lg-televizori-azuriranje.webp.webp",
+        "/images/novosti/placeholder.svg"
+      ],
+      "hasImage": true,
+      "featured": false,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "webOS 26, најновата верзија на софтверот на LG телевизорите, веќе не е резервирана само за новите модели. LG го дистрибуира како бесплатно ажурирање и на постарите телевизори, во бранови, модел по модел и регион по регион. Ако имаш LG телевизор од 2022 наваму, ажурирањето те чека или веќе стигнало. Пред да го инсталираш, добро е да знаеш што добиваш, што губиш и дека потоа нема враќање на претходната верзија."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Кои модели го добиваат и кога"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Сите LG телевизори за 2026, вклучувајќи ги OLED сериите B6, C6, G6 и W6 за кои пишувавме во "
+            },
+            {
+              "text": "нашиот преглед на LG OLED 2026",
+              "href": "/novosti/lg-oled-2026-b6-c6-g6-w6"
+            },
+            {
+              "text": ", доаѓаат со webOS 26 уште од фабрика. За постарите модели, редоследот што LG го најави на крајот на август 2026 е ваков:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            [
+              {
+                "text": "LG G5 OLED од 2025",
+                "bold": true
+              },
+              {
+                "text": " — прв, од 22 август 2026, според "
+              },
+              {
+                "text": "HDTVTest",
+                "href": "https://www.hdtvtest.co.uk/news/lg-starts-bringing-web-os-26-to-older-t-vs-starting-with-the-lg-g5-oled"
+              },
+              {
+                "text": "."
+              }
+            ],
+            [
+              {
+                "text": "C5 и B5 OLED и LCD моделите од 2025",
+                "bold": true
+              },
+              {
+                "text": " — во деновите и неделите потоа, според "
+              },
+              {
+                "text": "Pocket-lint",
+                "href": "https://www.pocket-lint.com/lg-tvs-webos-26-update-rollout/"
+              },
+              {
+                "text": "."
+              }
+            ],
+            [
+              {
+                "text": "Моделите од 2022, 2023 и 2024",
+                "bold": true
+              },
+              {
+                "text": " (на пример C2, C3, C4 и G4) — постепено до крајот на 2026, а некои дури на почетокот на 2027, зависно од моделот и регионот."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Телевизорите од 2021 и постари нема да го добијат webOS 26.",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ова е дел од програмата Re:New, со која LG од 2024 ветува четири надградби на оперативниот систем во пет години. Затоа, на пример, телевизорите од 2022 ги добиваат верзиите од webOS 23 до webOS 26, наведува "
+            },
+            {
+              "text": "Tech Times",
+              "href": "https://www.techtimes.com/articles/325552/20260825/free-webos-26-update-hits-older-lg-tvs-calibration-tools-not-included.htm"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Каде е дистрибуцијата во моментов? Кон почетокот на ноември 2026 не најдовме официјална потврда од LG дека webOS 26 стигнал до моделите од 2022 до 2024. Тоа значи дека сопствениците на C4, C3 или C2 веројатно сè уште чекаат. Најсигурно е да провериш на самиот телевизор (упатството е подолу)."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/novosti/webos-26-lg-oled-g6.webp",
+          "alt": "LG OLED evo AI телевизор гледан косо, со шарена апстрактна слика на екранот",
+          "caption": "LG OLED evo G6 стига со webOS 26 уште од фабрика. Фото: LG"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Што е ново"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Според LG и прегледите на HDTVTest и Pocket-lint, webOS 26 носи:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "Побрз и поотзивен интерфејс.",
+                "bold": true
+              },
+              {
+                "text": " Менијата и апликациите се отвораат побрзо, иако Tech Times го опишува подобрувањето како видливо, но не драматично."
+              }
+            ],
+            [
+              {
+                "text": "Нов Home Hub",
+                "bold": true
+              },
+              {
+                "text": " со интеграција на Homey, за управување со компатибилни паметни уреди во домот директно од телевизорот."
+              }
+            ],
+            [
+              {
+                "text": "AI Concierge.",
+                "bold": true
+              },
+              {
+                "text": " Со копчето AI на далечинскиот добиваш препораки за содржини, пребарувања и совети за функции, прикажани како картички, без да го прекинеш она што го гледаш."
+              }
+            ],
+            [
+              {
+                "text": "Подобро AI пребарување",
+                "bold": true
+              },
+              {
+                "text": " и "
+              },
+              {
+                "text": "AI генерирање слики",
+                "bold": true
+              },
+              {
+                "text": " во апликацијата Gallery."
+              }
+            ],
+            [
+              {
+                "text": "Kids Mode (детски режим)",
+                "bold": true
+              },
+              {
+                "text": ", кој ја ограничува содржината само на наслови што родителот претходно ги одобрил."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Дел од AI функциите, како Voice ID (препознавање на членовите на домаќинството по гласот), имаат ограничена поддршка за јазици и региони, па не очекувај сите да работат на македонски."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Што исчезнува и на што да внимаваш"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "Нема поддршка за алатките за калибрација ColourSpace и bscpylgtv.",
+                "bold": true
+              },
+              {
+                "text": " Ова го засега само мал број ентузијасти и професионални калибратори што сами ја подесуваат сликата со сонда, но за нив е голема загуба."
+              }
+            ],
+            [
+              {
+                "text": "Нема 360° VR во вградениот прелистувач",
+                "bold": true
+              },
+              {
+                "text": " и медиа-плеерот."
+              }
+            ],
+            [
+              {
+                "text": "Проблеми со eARC.",
+                "bold": true
+              },
+              {
+                "text": " Дел од првите сопственици на G5 пријавија проблеми со врската со саундбарот преку eARC (HDMI влез што звукот од телевизорот го праќа до саундбар или ресивер) по рестартирање. Според Tech Times, проблемот не го има на сите телевизори, а LG засега нема објавено поправка."
+              }
+            ],
+            [
+              {
+                "text": "Нема враќање назад.",
+                "bold": true
+              },
+              {
+                "text": " Откако ќе го инсталираш webOS 26, не можеш да се вратиш на webOS 25."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ажурирањето е околу 2 GB, со верзија на фирмверот 43.21.71 (за G5)."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Како да провериш и да ажурираш"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Држи го копчето за поставки (запчаникот) на далечинскиот, па оди на "
+            },
+            {
+              "text": "Поддршка > Ажурирање на софтверот",
+              "bold": true
+            },
+            {
+              "text": " (Support > Software Update) и избери "
+            },
+            {
+              "text": "Провери за ажурирања",
+              "bold": true
+            },
+            {
+              "text": ". На истото место се вклучува или исклучува автоматското ажурирање. Ако е вклучено, што е стандардна поставка, телевизорот сам ќе го инсталира webOS 26 неколку дена откако ќе стигне за твојот модел."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Да ажурираш веднаш или да почекаш?"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "За повеќето луѓе одговорот е едноставен: ажурирај. Добиваш побрз интерфејс и нови функции, и тоа бесплатно."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Има два исклучока. Ако си ја калибрирал сликата со ColourSpace или bscpylgtv, или ако звукот го пушташ на саундбар преку eARC и не сакаш ризик, исклучи го автоматското ажурирање и почекај неколку недели искуства од други сопственици на твојот модел. Бидејќи враќање назад нема, неколку недели трпение се исплатат."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Што значи ова кај нас"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Сите четири LG OLED серии за 2026 се продаваат и кај нас. Ако купуваш нов LG, добиваш webOS 26 и ветени надградби за следните години. Ако имаш LG од 2022 до 2025, ажурирањето е бесплатно и стигнува автоматски, само провери дали се совпаѓа со тоа како го користиш телевизорот."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Накратко"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "webOS 26 доаѓа фабрички на сите LG телевизори за 2026 и бесплатно на моделите од 2022 до 2025."
+              }
+            ],
+            [
+              {
+                "text": "Редослед: G5, потоа C5, B5 и LCD моделите од 2025, па моделите од 2022 до 2024 до крајот на 2026 или почетокот на 2027."
+              }
+            ],
+            [
+              {
+                "text": "Ново: побрз интерфејс, Home Hub со Homey, AI Concierge, AI пребарување, Kids Mode."
+              }
+            ],
+            [
+              {
+                "text": "Исчезнуваат ColourSpace, bscpylgtv и 360° VR во прелистувачот; дел од корисниците пријавија eARC проблеми."
+              }
+            ],
+            [
+              {
+                "text": "Околу 2 GB, фирмвер 43.21.71, без можност за враќање на webOS 25."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Извори"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "HDTVTest — LG starts bringing webOS 26 to older TVs, starting with the LG G5 OLED",
+                "href": "https://www.hdtvtest.co.uk/news/lg-starts-bringing-web-os-26-to-older-t-vs-starting-with-the-lg-g5-oled"
+              }
+            ],
+            [
+              {
+                "text": "Pocket-lint — A new free upgrade is rolling out now to LG TVs",
+                "href": "https://www.pocket-lint.com/lg-tvs-webos-26-update-rollout/"
+              }
+            ],
+            [
+              {
+                "text": "Tech Times — Free webOS 26 update hits older LG TVs",
+                "href": "https://www.techtimes.com/articles/325552/20260825/free-webos-26-update-hits-older-lg-tvs-calibration-tools-not-included.htm"
+              }
+            ],
+            [
+              {
+                "text": "FlatpanelsHD — webOS 26 begins rolling out to older LG TVs",
+                "href": "https://www.flatpanelshd.com/news.php?subaction=showfull&id=1787298592"
+              }
+            ],
+            [
+              {
+                "text": "LG — AI TV искуство на IFA 2026 (соопштение)",
+                "href": "https://www.lg.com/us/press-release/lg-electronics-introduces-an-award-winning-ai-tv-experience-at-ifa-2026"
+              }
+            ]
+          ]
+        }
+      ],
+      "body": [
+        "webOS 26, најновата верзија на софтверот на LG телевизорите, веќе не е резервирана само за новите модели. LG го дистрибуира како бесплатно ажурирање и на постарите телевизори, во бранови, модел по модел и регион по регион. Ако имаш LG телевизор од 2022 наваму, ажурирањето те чека или веќе стигнало. Пред да го инсталираш, добро е да знаеш што добиваш, што губиш и дека потоа нема враќање на претходната верзија.",
+        "Сите LG телевизори за 2026, вклучувајќи ги OLED сериите B6, C6, G6 и W6 за кои пишувавме во нашиот преглед на LG OLED 2026, доаѓаат со webOS 26 уште од фабрика. За постарите модели, редоследот што LG го најави на крајот на август 2026 е ваков:",
+        "Телевизорите од 2021 и постари нема да го добијат webOS 26.",
+        "Ова е дел од програмата Re:New, со која LG од 2024 ветува четири надградби на оперативниот систем во пет години. Затоа, на пример, телевизорите од 2022 ги добиваат верзиите од webOS 23 до webOS 26, наведува Tech Times.",
+        "Каде е дистрибуцијата во моментов? Кон почетокот на ноември 2026 не најдовме официјална потврда од LG дека webOS 26 стигнал до моделите од 2022 до 2024. Тоа значи дека сопствениците на C4, C3 или C2 веројатно сè уште чекаат. Најсигурно е да провериш на самиот телевизор (упатството е подолу).",
+        "Според LG и прегледите на HDTVTest и Pocket-lint, webOS 26 носи:",
+        "Дел од AI функциите, како Voice ID (препознавање на членовите на домаќинството по гласот), имаат ограничена поддршка за јазици и региони, па не очекувај сите да работат на македонски.",
+        "Ажурирањето е околу 2 GB, со верзија на фирмверот 43.21.71 (за G5).",
+        "Држи го копчето за поставки (запчаникот) на далечинскиот, па оди на Поддршка > Ажурирање на софтверот (Support > Software Update) и избери Провери за ажурирања. На истото место се вклучува или исклучува автоматското ажурирање. Ако е вклучено, што е стандардна поставка, телевизорот сам ќе го инсталира webOS 26 неколку дена откако ќе стигне за твојот модел.",
+        "За повеќето луѓе одговорот е едноставен: ажурирај. Добиваш побрз интерфејс и нови функции, и тоа бесплатно.",
+        "Има два исклучока. Ако си ја калибрирал сликата со ColourSpace или bscpylgtv, или ако звукот го пушташ на саундбар преку eARC и не сакаш ризик, исклучи го автоматското ажурирање и почекај неколку недели искуства од други сопственици на твојот модел. Бидејќи враќање назад нема, неколку недели трпение се исплатат.",
+        "Сите четири LG OLED серии за 2026 се продаваат и кај нас. Ако купуваш нов LG, добиваш webOS 26 и ветени надградби за следните години. Ако имаш LG од 2022 до 2025, ажурирањето е бесплатно и стигнува автоматски, само провери дали се совпаѓа со тоа како го користиш телевизорот."
+      ]
+    },
+    {
+      "id": "philips-oled811-2026-titan-os",
+      "slug": "philips-oled811-2026-titan-os",
+      "title": "Philips OLED811 (2026): посветол OLED екран, но без Google TV",
+      "excerpt": "Philips OLED811 носи нов OLED EX панел до 2500 нита, 165 Hz и четири HDMI 2.1 влеза, но наместо Google TV работи на Titan OS. Што добиваш, што губиш и за кого е вредно, сега кога моделот пристигна и кај нас.",
+      "category": "Новости",
+      "author": "",
+      "date": "2026-11-12",
+      "publishAt": "",
+      "readTime": 5,
+      "image": "/images/novosti/philips-oled811-2026-titan-os.webp",
+      "imageCaption": "Philips OLED со Ambilight во дневна соба. Фото: Philips",
+      "imageCandidates": [
+        "/images/novosti/philips-oled811-2026-titan-os.webp",
+        "/images/novosti/philips-oled811-2026-titan-os.jpg",
+        "/images/novosti/philips-oled811-2026-titan-os.jpeg",
+        "/images/novosti/philips-oled811-2026-titan-os.png",
+        "/images/novosti/philips-oled811-2026-titan-os.avif",
+        "/images/novosti/philips-oled811-2026-titan-os.svg",
+        "/images/novosti/philips-oled811-2026-titan-os.jpg.jpg",
+        "/images/novosti/philips-oled811-2026-titan-os.jpeg.jpeg",
+        "/images/novosti/philips-oled811-2026-titan-os.png.png",
+        "/images/novosti/philips-oled811-2026-titan-os.webp.webp",
+        "/images/novosti/placeholder.svg"
+      ],
+      "hasImage": true,
+      "featured": false,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Philips OLED811 е главниот Philips OLED за 2026 и директен конкурент на LG C6 и Samsung S90H. Хардверски е голем чекор напред во однос на минатогодишниот OLED810: посветол панел, побрз екран за игри и двојно повеќе целосни HDMI 2.1 влезови. Но, промената што најмногу ќе ја почувствуваш секој ден е софтверот. Наместо Google TV, OLED811 работи на Titan OS, а со тоа заминуваат Google Assistant и Google Cast."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Моделот веќе се продава и кај нас: на 25 октомври 2026 го најдовме кај DDStore во големина од 55 инчи, под ознаката 55OLED811/12."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Што е ново во OLED811"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Според рецензијата на "
+            },
+            {
+              "text": "T3 од 1 ноември 2026",
+              "href": "https://www.t3.com/tech/tvs/philips-oled-811-review"
+            },
+            {
+              "text": ", OLED811 го заменува OLED810 од 2025 со неколку значајни подобрувања:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "Нов OLED EX панел од LG Display",
+                "bold": true
+              },
+              {
+                "text": ", ист тип како во LG C6. OLED значи дека секој пиксел сам свети и сам се гаси, па црната е вистински црна. Philips ветува осветленост до 2500 нита во најсветлите детали."
+              }
+            ],
+            [
+              {
+                "text": "165 Hz",
+                "bold": true
+              },
+              {
+                "text": " наместо 144 Hz кај OLED810, за помазно движење во игри на компјутер."
+              }
+            ],
+            [
+              {
+                "text": "Четири HDMI 2.1 влеза",
+                "bold": true
+              },
+              {
+                "text": ". OLED810 имаше само два со полна брзина, па сега можеш да поврзеш и PS5 и Xbox и компјутер без компромис. Сите поддржуваат игри со висока фреквенција, а еден од нив е eARC за саундбар."
+              }
+            ],
+            [
+              {
+                "text": "P5 процесор од десетта генерација",
+                "bold": true
+              },
+              {
+                "text": ". Од поддршката за Dolby Vision 2, T3 заклучува дека внатре е и чипот MediaTek Pentonic 800."
+              }
+            ],
+            [
+              {
+                "text": "Широка поддршка за HDR",
+                "bold": true
+              },
+              {
+                "text": " (слика со висок динамички опсег): Dolby Vision IQ, HDR10+ Adaptive и HLG. Filmmaker Mode го нема, а наместо него постои „Reference Mode“."
+              }
+            ],
+            [
+              {
+                "text": "Звучници од 70 W",
+                "bold": true
+              },
+              {
+                "text": " со Dolby Atmos и DTS:X. T3 го пофалува звукот веднаш по вадењето од кутија, но добар саундбар и натаму звучи подобро."
+              }
+            ],
+            [
+              {
+                "text": "Метален постамент што се врти",
+                "bold": true
+              },
+              {
+                "text": ", за полесно насочување на екранот."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "OLED811 е и најтенкиот Philips OLED досега, околу 20 отсто потенок од OLED810, иако не е тенок како LG G6."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/novosti/philips-oled811-2026-postament.webp",
+          "alt": "Philips OLED Ambilight телевизор на метален постамент, од напред",
+          "caption": "Philips OLED811 на металниот постамент што се врти. Фото: Philips"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Ambilight и AmbiScape"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ambilight е заштитниот знак на Philips: LED-светилки на задната страна го осветлуваат ѕидот во боите од екранот. Сликата изгледа поголема, а во темна соба очите помалку се заморуваат."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Кај OLED811 Ambilight е на три страни, а не на четири како кај OLED808 од 2023. Новост е "
+            },
+            {
+              "text": "AmbiScape",
+              "bold": true
+            },
+            {
+              "text": ": телевизорот може да управува со до четири паметни светилки што го поддржуваат стандардот Matter (Philips Hue, Nanoleaf, WiZ, Osram, IKEA), па светлото од екранот се шири низ целата соба."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Titan OS наместо Google TV"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Philips ги префрли сите телевизори за 2026 на Titan OS, објави "
+            },
+            {
+              "text": "9to5Google",
+              "href": "https://9to5google.com/2026/03/23/google-tv-just-lost-a-big-tv-brand-to-web-app-based-titan-os/"
+            },
+            {
+              "text": " во март. Titan OS е оперативен систем базиран на Linux, со европско потекло. Наместо класични Android апликации, користи веб-апликации: не ги симнуваш, туку само ги додаваш на почетниот екран."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Според 9to5Google, TP Vision (компанијата што ги прави Philips телевизорите) се одлучила за промената бидејќи Titan OS бара послаб хардвер, Philips има повеќе влијание врз развојот, а добива и поголем дел од приходите од реклами. Компанијата најавува до 10 години безбедносни ажурирања, но нови функции не се посебно ветени."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Што губиш со тоа:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "Google Assistant.",
+                "bold": true
+              },
+              {
+                "text": " Наместо него има општо гласовно пребарување, кое според T3 не пребарува во самите апликации и често враќа резултати што не се баш она што си го барал. Телевизорот може да се управува со Alexa или Google Home."
+              }
+            ],
+            [
+              {
+                "text": "Google Cast.",
+                "bold": true
+              },
+              {
+                "text": " Не можеш да пуштиш видео од телефон со копчето Cast. "
+              },
+              {
+                "text": "AirPlay 2",
+                "bold": true
+              },
+              {
+                "text": " и натаму работи, па сопствениците на iPhone се во подобра позиција."
+              }
+            ],
+            [
+              {
+                "text": "Дел од апликациите.",
+                "bold": true
+              },
+              {
+                "text": " Некои, како Apple TV и Spotify, недостасуваат или постојат само како веб-верзии."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "T3 се жали и на реклами што самите се пуштаат, со звук, на горната третина од почетниот екран, без можност да се исклучат. Ако телевизорот го користиш главно преку приемник од кабелски оператор или преку Apple TV или Fire TV уред, ова ќе го чувствуваш многу помалку."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Што значи ова кај нас"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "На 25 октомври 2026 Philips OLED811 го најдовме само кај DDStore, во големина од 55 инчи. Другите големини (42, 48, 65, 77 и 83 инчи) постојат, но кај македонските продавачи не ги најдовме."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ова е OLED од средната класа, во иста категорија со "
+            },
+            {
+              "text": "LG C6",
+              "href": "/novosti/lg-oled-2026-b6-c6-g6-w6"
+            },
+            {
+              "text": " и "
+            },
+            {
+              "text": "Samsung S90H",
+              "href": "/novosti/samsung-oled-2026-s95h-s90h-s85h"
+            },
+            {
+              "text": ". Сликата и опремата за игри се на ниво на конкуренцијата, а Ambilight е нешто што ниту еден од нив го нема. Од друга страна, LG и Samsung имаат пополиран софтвер, а Samsung S90H има и мат екран што подобро ги крие рефлексиите во светла соба."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "За кого е:",
+              "bold": true
+            },
+            {
+              "text": " ако сакаш Ambilight, гледаш во темна или полутемна соба, имаш iPhone (AirPlay 2) или телевизорот го користиш со надворешен уред. "
+            },
+            {
+              "text": "За кого не е:",
+              "bold": true
+            },
+            {
+              "text": " ако секојдневно користиш Google Cast, Google Assistant или ти е важна широка понуда на апликации."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Накратко"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "Philips OLED811 е главниот Philips OLED за 2026, наследник на OLED810."
+              }
+            ],
+            [
+              {
+                "text": "Нов OLED EX панел од LG Display, до 2500 нита, 165 Hz, четири HDMI 2.1 влеза и Dolby Vision 2."
+              }
+            ],
+            [
+              {
+                "text": "Ambilight на три страни, со AmbiScape за до четири Matter паметни светилки."
+              }
+            ],
+            [
+              {
+                "text": "Работи на Titan OS: нема Google TV, Google Assistant ни Google Cast, но има AirPlay 2."
+              }
+            ],
+            [
+              {
+                "text": "Кај нас: DDStore, 55 инчи (проверено на 25 октомври 2026)."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Извори"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "T3 — Philips OLED 811 review",
+                "href": "https://www.t3.com/tech/tvs/philips-oled-811-review"
+              }
+            ],
+            [
+              {
+                "text": "9to5Google — Google TV just lost a big TV brand to web app-based Titan OS",
+                "href": "https://9to5google.com/2026/03/23/google-tv-just-lost-a-big-tv-brand-to-web-app-based-titan-os/"
+              }
+            ],
+            [
+              {
+                "text": "Canaltech — Philips larga Google TV de vez; novo sistema terá 10 anos de updates",
+                "href": "https://canaltech.com.br/eletro/philips-larga-google-tv-de-vez-novo-sistema-tera-10-anos-de-updates-garantidos/"
+              }
+            ],
+            [
+              {
+                "text": "TP Vision — новата линија Philips Ambilight телевизори за 2026",
+                "href": "https://www.tpvision.com/blog/discover-the-new-2026-philips-ambilight-tv-range/"
+              }
+            ],
+            [
+              {
+                "text": "Philips — 55OLED811/12 (официјална страница)",
+                "href": "https://www.philips.co.uk/c-p/55OLED811_12/oled-4k-ambilight-tv"
+              }
+            ],
+            [
+              {
+                "text": "DDStore — Philips 55\" 55OLED811/12",
+                "href": "https://ddstore.mk/mk/tv-philips-55-55oled811-12-oled-4k-uhd-titan-os.html"
+              }
+            ]
+          ]
+        }
+      ],
+      "body": [
+        "Philips OLED811 е главниот Philips OLED за 2026 и директен конкурент на LG C6 и Samsung S90H. Хардверски е голем чекор напред во однос на минатогодишниот OLED810: посветол панел, побрз екран за игри и двојно повеќе целосни HDMI 2.1 влезови. Но, промената што најмногу ќе ја почувствуваш секој ден е софтверот. Наместо Google TV, OLED811 работи на Titan OS, а со тоа заминуваат Google Assistant и Google Cast.",
+        "Моделот веќе се продава и кај нас: на 25 октомври 2026 го најдовме кај DDStore во големина од 55 инчи, под ознаката 55OLED811/12.",
+        "Според рецензијата на T3 од 1 ноември 2026, OLED811 го заменува OLED810 од 2025 со неколку значајни подобрувања:",
+        "OLED811 е и најтенкиот Philips OLED досега, околу 20 отсто потенок од OLED810, иако не е тенок како LG G6.",
+        "Ambilight е заштитниот знак на Philips: LED-светилки на задната страна го осветлуваат ѕидот во боите од екранот. Сликата изгледа поголема, а во темна соба очите помалку се заморуваат.",
+        "Кај OLED811 Ambilight е на три страни, а не на четири како кај OLED808 од 2023. Новост е AmbiScape: телевизорот може да управува со до четири паметни светилки што го поддржуваат стандардот Matter (Philips Hue, Nanoleaf, WiZ, Osram, IKEA), па светлото од екранот се шири низ целата соба.",
+        "Philips ги префрли сите телевизори за 2026 на Titan OS, објави 9to5Google во март. Titan OS е оперативен систем базиран на Linux, со европско потекло. Наместо класични Android апликации, користи веб-апликации: не ги симнуваш, туку само ги додаваш на почетниот екран.",
+        "Според 9to5Google, TP Vision (компанијата што ги прави Philips телевизорите) се одлучила за промената бидејќи Titan OS бара послаб хардвер, Philips има повеќе влијание врз развојот, а добива и поголем дел од приходите од реклами. Компанијата најавува до 10 години безбедносни ажурирања, но нови функции не се посебно ветени.",
+        "Што губиш со тоа:",
+        "T3 се жали и на реклами што самите се пуштаат, со звук, на горната третина од почетниот екран, без можност да се исклучат. Ако телевизорот го користиш главно преку приемник од кабелски оператор или преку Apple TV или Fire TV уред, ова ќе го чувствуваш многу помалку.",
+        "На 25 октомври 2026 Philips OLED811 го најдовме само кај DDStore, во големина од 55 инчи. Другите големини (42, 48, 65, 77 и 83 инчи) постојат, но кај македонските продавачи не ги најдовме.",
+        "Ова е OLED од средната класа, во иста категорија со LG C6 и Samsung S90H. Сликата и опремата за игри се на ниво на конкуренцијата, а Ambilight е нешто што ниту еден од нив го нема. Од друга страна, LG и Samsung имаат пополиран софтвер, а Samsung S90H има и мат екран што подобро ги крие рефлексиите во светла соба.",
+        "За кого е: ако сакаш Ambilight, гледаш во темна или полутемна соба, имаш iPhone (AirPlay 2) или телевизорот го користиш со надворешен уред. За кого не е: ако секојдневно користиш Google Cast, Google Assistant или ти е важна широка понуда на апликации."
+      ]
+    },
+    {
+      "id": "xbox-cloud-gaming-samsung-2020-televizori",
+      "slug": "xbox-cloud-gaming-samsung-2020-televizori",
+      "title": "Xbox Cloud Gaming повеќе не работи на Samsung телевизорите од 2020",
+      "excerpt": "Од 3 ноември 2026 апликацијата Xbox е исклучена на Samsung телевизорите од 2020, како Q60T, Q80T, Q90T и The Frame. Кои модели се засегнати, зошто Microsoft ја повлече поддршката и како и понатаму да играш Xbox игри без конзола.",
+      "category": "Новости",
+      "author": "",
+      "date": "2026-11-10",
+      "publishAt": "",
+      "readTime": 4,
+      "image": "/images/novosti/xbox-cloud-gaming-samsung-2020-televizori.webp",
+      "imageCaption": "Апликацијата Xbox за стриминг на игри на Samsung Smart телевизор. Фото: Microsoft",
+      "imageCandidates": [
+        "/images/novosti/xbox-cloud-gaming-samsung-2020-televizori.webp",
+        "/images/novosti/xbox-cloud-gaming-samsung-2020-televizori.jpg",
+        "/images/novosti/xbox-cloud-gaming-samsung-2020-televizori.jpeg",
+        "/images/novosti/xbox-cloud-gaming-samsung-2020-televizori.png",
+        "/images/novosti/xbox-cloud-gaming-samsung-2020-televizori.avif",
+        "/images/novosti/xbox-cloud-gaming-samsung-2020-televizori.svg",
+        "/images/novosti/xbox-cloud-gaming-samsung-2020-televizori.jpg.jpg",
+        "/images/novosti/xbox-cloud-gaming-samsung-2020-televizori.jpeg.jpeg",
+        "/images/novosti/xbox-cloud-gaming-samsung-2020-televizori.png.png",
+        "/images/novosti/xbox-cloud-gaming-samsung-2020-televizori.webp.webp",
+        "/images/novosti/placeholder.svg"
+      ],
+      "hasImage": true,
+      "featured": false,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ако имаш Samsung телевизор од 2020 и на него играше Xbox игри без конзола, од 3 ноември 2026 тоа повеќе не е можно. Microsoft ја исклучи апликацијата Xbox на Samsung Smart телевизорите од таа година, а сопствениците претходно добија известување по е-пошта. Телевизорот работи како и досега, само Xbox Cloud Gaming (стриминг на игри преку интернет, без конзола) повеќе не се отвора на него."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Првиот што објави за промената беше Windows Central, откако извршниот уредник Џез Корден (Jez Corden) самиот го доби мејлот од Microsoft. Подоцна веста ја пренесе и "
+            },
+            {
+              "text": "eCoustics",
+              "href": "https://www.ecoustics.com/news/samsung-2020-tvs-xbox-cloud-gaming-ending/"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Кои телевизори се засегнати"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Според листата на компатибилни модели што ја објави Samsung, засегнати се моделите од 2020 што воопшто ја имаа апликацијата:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "QLED серијата "
+              },
+              {
+                "text": "Q60T, Q80T и Q90T",
+                "bold": true
+              }
+            ],
+            [
+              {
+                "text": "одредени "
+              },
+              {
+                "text": "8K QLED",
+                "bold": true
+              },
+              {
+                "text": " модели од 2020"
+              }
+            ],
+            [
+              {
+                "text": "The Frame",
+                "bold": true
+              },
+              {
+                "text": " од 2020"
+              }
+            ],
+            [
+              {
+                "text": "The Serif",
+                "bold": true
+              },
+              {
+                "text": " од 2020"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Samsung телевизорите од 2021 и понови, со софтверска верзија 1300 или повисока, не се засегнати и Xbox Cloud Gaming на нив работи нормално."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Внимавај на годината на моделот, не на годината на купување.",
+              "bold": true
+            },
+            {
+              "text": " Многу телевизори од 2020 се продаваа и во 2021, па може да имаш модел од 2020 иако си го купил подоцна. Ова лесно го проверуваш: "
+            },
+            {
+              "text": "Поставки > Поддршка > За овој телевизор",
+              "bold": true
+            },
+            {
+              "text": " (Settings > Support > About This TV). Таму ги гледаш точниот модел и верзијата на софтверот. Буквата T на крајот од ознаката на серијата (Q60"
+            },
+            {
+              "text": "T",
+              "bold": true
+            },
+            {
+              "text": ", Q80"
+            },
+            {
+              "text": "T",
+              "bold": true
+            },
+            {
+              "text": ") означува модел од 2020."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Зошто Microsoft ја исклучи апликацијата"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Официјалното објаснување на Microsoft е дека апликацијата повеќе не е компатибилна со постариот оперативен систем на овие телевизори. Windows Central наведува и подетална причина: новата технологија на Xbox Cloud Gaming бара можности на прелистувачот Chromium, а системот на телевизорите од 2020 нив ги нема. Samsung, според истиот извор, не планира да ја надгради платформата за да ги додаде."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ова последново е информација од Windows Central, не изјава на Samsung. Сепак, сликата е јасна: телевизорите од 2020 се веќе шестгодишни, а производителите на телевизори ретко ги поддржуваат толку долго со нови функции."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/novosti/xbox-cloud-gaming-samsung-aplikacija.webp",
+          "alt": "Банер на Xbox и Samsung со телевизор, Xbox контролер и ликови од игри",
+          "caption": "Xbox и Samsung ја лансираа апликацијата за стриминг на игри во 2022 година. Фото: Microsoft"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Што и понатаму работи"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Промената се однесува само на апликацијата Xbox. Netflix, YouTube и другите апликации на телевизорот работат како и досега, а сликата и звукот не се менуваат."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "И Xbox Cloud Gaming не се гаси. Сервисот и понатаму работи на компјутери, телефони, таблети, Xbox конзоли, на Samsung телевизорите од 2021 и понови, како и на некои Amazon Fire TV уреди."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Што да направиш ако си засегнат"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Најевтиното решение е стриминг-стик што се приклучува на HDMI влез на постоечкиот телевизор. Microsoft официјално ја поддржува апликацијата Xbox на:"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "Fire TV Stick 4K Max",
+                "bold": true
+              }
+            ],
+            [
+              {
+                "text": "Fire TV Stick 4K",
+                "bold": true
+              },
+              {
+                "text": ", втора генерација"
+              }
+            ],
+            [
+              {
+                "text": "Fire TV Cube",
+                "bold": true
+              },
+              {
+                "text": ", трета генерација"
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "И натаму ти треба компатибилен контролер (на пример, Xbox контролер преку Bluetooth), Game Pass претплата што вклучува стриминг или бесплатна игра што го поддржува, и стабилна интернет-врска. Пред да купиш, провери ја листата на поддржани земји и уреди на "
+            },
+            {
+              "text": "Xbox Support",
+              "href": "https://support.xbox.com/"
+            },
+            {
+              "text": ", бидејќи Xbox Cloud Gaming не е официјално достапен во секоја земја."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Друга опција е да играш преку компјутер или лаптоп поврзан на телевизорот со HDMI кабел, или преку телефон или таблет."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Што значи ова кај нас"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Samsung телевизори од 2020 има во многу македонски домови, особено од популарните QLED серии и The Frame. Ако никогаш не си ја отворил апликацијата Xbox, за тебе ништо не се менува. Ако си играл на неа, не мора да купуваш нов телевизор само поради ова, бидејќи стриминг-стик го решава проблемот."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ако сепак размислуваш за нов телевизор, ова е добар потсетник да провериш колку години софтверска поддршка нуди производителот. Повеќе за актуелните Samsung модели прочитај во нашите статии за "
+            },
+            {
+              "text": "Samsung OLED 2026",
+              "href": "/novosti/samsung-oled-2026-s95h-s90h-s85h"
+            },
+            {
+              "text": " и "
+            },
+            {
+              "text": "The Frame 2026",
+              "href": "/novosti/samsung-the-frame-2026-makedonija"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Накратко"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "Од 3 ноември 2026 апликацијата Xbox не работи на Samsung телевизорите од 2020: Q60T, Q80T, Q90T, одредени 8K QLED модели, The Frame и The Serif."
+              }
+            ],
+            [
+              {
+                "text": "Samsung телевизорите од 2021 и понови, со софтвер 1300 или понов, не се засегнати."
+              }
+            ],
+            [
+              {
+                "text": "Причина: според Windows Central, новиот Xbox Cloud Gaming бара Chromium-можности што системот на овие телевизори ги нема."
+              }
+            ],
+            [
+              {
+                "text": "Netflix, YouTube и другите апликации работат нормално."
+              }
+            ],
+            [
+              {
+                "text": "Решение: Fire TV Stick 4K Max, Fire TV Stick 4K (втора генерација), Fire TV Cube (трета генерација), компјутер, телефон или конзола."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Извори"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "eCoustics — Samsung's 2020 TVs Lose Xbox Cloud Gaming November 3",
+                "href": "https://www.ecoustics.com/news/samsung-2020-tvs-xbox-cloud-gaming-ending/"
+              }
+            ],
+            [
+              {
+                "text": "Xbox Support — уреди на кои работи Xbox Cloud Gaming",
+                "href": "https://support.xbox.com/"
+              }
+            ],
+            [
+              {
+                "text": "Xbox Wire — апликацијата Xbox на Samsung Smart телевизори",
+                "href": "https://news.xbox.com/en-us/2022/06/30/xbox-app-available-today-samsung-2022-smart-tv/"
+              }
+            ]
+          ]
+        }
+      ],
+      "body": [
+        "Ако имаш Samsung телевизор од 2020 и на него играше Xbox игри без конзола, од 3 ноември 2026 тоа повеќе не е можно. Microsoft ја исклучи апликацијата Xbox на Samsung Smart телевизорите од таа година, а сопствениците претходно добија известување по е-пошта. Телевизорот работи како и досега, само Xbox Cloud Gaming (стриминг на игри преку интернет, без конзола) повеќе не се отвора на него.",
+        "Првиот што објави за промената беше Windows Central, откако извршниот уредник Џез Корден (Jez Corden) самиот го доби мејлот од Microsoft. Подоцна веста ја пренесе и eCoustics.",
+        "Според листата на компатибилни модели што ја објави Samsung, засегнати се моделите од 2020 што воопшто ја имаа апликацијата:",
+        "Samsung телевизорите од 2021 и понови, со софтверска верзија 1300 или повисока, не се засегнати и Xbox Cloud Gaming на нив работи нормално.",
+        "Внимавај на годината на моделот, не на годината на купување. Многу телевизори од 2020 се продаваа и во 2021, па може да имаш модел од 2020 иако си го купил подоцна. Ова лесно го проверуваш: Поставки > Поддршка > За овој телевизор (Settings > Support > About This TV). Таму ги гледаш точниот модел и верзијата на софтверот. Буквата T на крајот од ознаката на серијата (Q60T, Q80T) означува модел од 2020.",
+        "Официјалното објаснување на Microsoft е дека апликацијата повеќе не е компатибилна со постариот оперативен систем на овие телевизори. Windows Central наведува и подетална причина: новата технологија на Xbox Cloud Gaming бара можности на прелистувачот Chromium, а системот на телевизорите од 2020 нив ги нема. Samsung, според истиот извор, не планира да ја надгради платформата за да ги додаде.",
+        "Ова последново е информација од Windows Central, не изјава на Samsung. Сепак, сликата е јасна: телевизорите од 2020 се веќе шестгодишни, а производителите на телевизори ретко ги поддржуваат толку долго со нови функции.",
+        "Промената се однесува само на апликацијата Xbox. Netflix, YouTube и другите апликации на телевизорот работат како и досега, а сликата и звукот не се менуваат.",
+        "И Xbox Cloud Gaming не се гаси. Сервисот и понатаму работи на компјутери, телефони, таблети, Xbox конзоли, на Samsung телевизорите од 2021 и понови, како и на некои Amazon Fire TV уреди.",
+        "Најевтиното решение е стриминг-стик што се приклучува на HDMI влез на постоечкиот телевизор. Microsoft официјално ја поддржува апликацијата Xbox на:",
+        "И натаму ти треба компатибилен контролер (на пример, Xbox контролер преку Bluetooth), Game Pass претплата што вклучува стриминг или бесплатна игра што го поддржува, и стабилна интернет-врска. Пред да купиш, провери ја листата на поддржани земји и уреди на Xbox Support, бидејќи Xbox Cloud Gaming не е официјално достапен во секоја земја.",
+        "Друга опција е да играш преку компјутер или лаптоп поврзан на телевизорот со HDMI кабел, или преку телефон или таблет.",
+        "Samsung телевизори од 2020 има во многу македонски домови, особено од популарните QLED серии и The Frame. Ако никогаш не си ја отворил апликацијата Xbox, за тебе ништо не се менува. Ако си играл на неа, не мора да купуваш нов телевизор само поради ова, бидејќи стриминг-стик го решава проблемот.",
+        "Ако сепак размислуваш за нов телевизор, ова е добар потсетник да провериш колку години софтверска поддршка нуди производителот. Повеќе за актуелните Samsung модели прочитај во нашите статии за Samsung OLED 2026 и The Frame 2026."
+      ]
+    },
     {
       "id": "sony-bravia-6-oled-2026-makedonija",
       "slug": "sony-bravia-6-oled-2026-makedonija",
