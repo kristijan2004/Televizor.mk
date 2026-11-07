@@ -1,9 +1,1195 @@
 {
-  "generatedAt": "2026-11-07T15:54:30.215Z",
+  "generatedAt": "2026-11-07T15:58:45.738Z",
   "categories": [
     "Совети"
   ],
   "articles": [
+    {
+      "id": "xbox-series-x-na-televizor-najdobri-postavki",
+      "slug": "xbox-series-x-na-televizor-najdobri-postavki",
+      "title": "Xbox Series X и S на телевизор: најдобри поставки и кој телевизор да избереш",
+      "excerpt": "Xbox Series X и S поддржуваат 120 Hz, VRR, Dolby Vision и Dolby Atmos за игри, но само ако телевизорот ги има и ако се правилно вклучени. Водич чекор по чекор за поставките и за изборот на телевизор за Xbox.",
+      "category": "Совети",
+      "author": "",
+      "date": "2026-11-15",
+      "publishAt": "",
+      "readTime": 5,
+      "image": "/images/edu/xbox-series-x-na-televizor-najdobri-postavki.webp",
+      "imageCaption": "Xbox Series X со контролер. Фото: Microsoft",
+      "imageCandidates": [
+        "/images/edu/xbox-series-x-na-televizor-najdobri-postavki.webp",
+        "/images/edu/xbox-series-x-na-televizor-najdobri-postavki.jpg",
+        "/images/edu/xbox-series-x-na-televizor-najdobri-postavki.jpeg",
+        "/images/edu/xbox-series-x-na-televizor-najdobri-postavki.png",
+        "/images/edu/xbox-series-x-na-televizor-najdobri-postavki.avif",
+        "/images/edu/xbox-series-x-na-televizor-najdobri-postavki.svg",
+        "/images/edu/xbox-series-x-na-televizor-najdobri-postavki.jpg.jpg",
+        "/images/edu/xbox-series-x-na-televizor-najdobri-postavki.jpeg.jpeg",
+        "/images/edu/xbox-series-x-na-televizor-najdobri-postavki.png.png",
+        "/images/edu/xbox-series-x-na-televizor-najdobri-postavki.webp.webp",
+        "/images/edu/placeholder.svg"
+      ],
+      "hasImage": true,
+      "featured": false,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Xbox Series X е конзола создадена за 4K телевизори од новата генерација. Може да прикажува игри во 4K на 120 слики во секунда, со Dolby Vision слика и Dolby Atmos звук. Ниту една од овие работи нема да ја видиш ако телевизорот не ги поддржува, или ако конзолата е приклучена во погрешен влез. Добрата вест е што Xbox има едно од најдобрите менија за поставки на телевизор, кое само ти кажува што твојот телевизор може."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Што значат кратенките"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "HDMI 2.1.",
+              "bold": true
+            },
+            {
+              "text": " Верзија на HDMI приклучокот со доволно проток за 4K на 120 Hz. Кај многу телевизори само дел од влезовите се 2.1, па провери кој е во упатството или до самиот приклучок."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "120 Hz.",
+              "bold": true
+            },
+            {
+              "text": " Сликата се освежува 120 пати во секунда наместо 60. Во игрите што го поддржуваат, движењето е помазно, а контролата попрецизна."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "VRR (Variable Refresh Rate).",
+              "bold": true
+            },
+            {
+              "text": " Телевизорот го следи бројот на слики што играта ги дава во моментот, па нема кинење на сликата кога играта успорува. Xbox поддржува HDMI VRR и AMD FreeSync."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "ALLM (Auto Low Latency Mode).",
+              "bold": true
+            },
+            {
+              "text": " Телевизорот сам се префрла во режим за игри и го намалува доцнењето меѓу копчето и екранот."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Dolby Vision за игри.",
+              "bold": true
+            },
+            {
+              "text": " Ова е предноста на Xbox: напреден HDR формат што ја прилагодува сликата сцена по сцена. Работи само ако телевизорот поддржува Dolby Vision."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Auto HDR.",
+              "bold": true
+            },
+            {
+              "text": " Xbox автоматски додава HDR на постари игри направени без HDR."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Series X или Series S: разликата за телевизорот"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Series X",
+              "bold": true
+            },
+            {
+              "text": " е создаден за 4K и 120 Hz. Во кутијата има Ultra High Speed HDMI кабел."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Series S",
+              "bold": true
+            },
+            {
+              "text": " е помал и послаб. Игрите најчесто ги прикажува во помала резолуција, до 1440p, но и тој поддржува 120 Hz, VRR и ALLM. За Series S телевизорот со HDMI 2.1 е корисен, но не е задолжителен. Според "
+            },
+            {
+              "text": "Xbox Wire",
+              "href": "https://news.xbox.com/en-us/2020/11/06/is-your-tv-ready-to-power-your-dreams/"
+            },
+            {
+              "text": ", за него е доволен и сертифициран High Speed HDMI кабел."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Како да го наместиш Xbox"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Притисни го копчето Xbox на контролерот, па оди на "
+            },
+            {
+              "text": "Поставки > Општо > Опции за ТВ и екран",
+              "bold": true
+            },
+            {
+              "text": " (Settings > General > TV & display options)."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            [
+              {
+                "text": "Детали за 4K телевизорот",
+                "bold": true
+              },
+              {
+                "text": " (4K TV details): прво погледни го ова мени. Конзолата го тестира телевизорот и покажува зелено штиклирање за секоја функција што ја поддржува (4K на 60 и 120 Hz, HDR10, Dolby Vision, VRR, ALLM). Ако нешто што очекуваш е без штиклирање, проблемот е во кабелот, влезот или поставката на телевизорот."
+              }
+            ],
+            [
+              {
+                "text": "Резолуција",
+                "bold": true
+              },
+              {
+                "text": ": 4K UHD."
+              }
+            ],
+            [
+              {
+                "text": "Фреквенција",
+                "bold": true
+              },
+              {
+                "text": " (Refresh rate): "
+              },
+              {
+                "text": "120 Hz",
+                "bold": true
+              },
+              {
+                "text": ", ако телевизорот го поддржува."
+              }
+            ],
+            [
+              {
+                "text": "Видео режими",
+                "bold": true
+              },
+              {
+                "text": " (Video modes): вклучи "
+              },
+              {
+                "text": "Дозволи 4K",
+                "bold": true
+              },
+              {
+                "text": ", "
+              },
+              {
+                "text": "Дозволи HDR10",
+                "bold": true
+              },
+              {
+                "text": ", "
+              },
+              {
+                "text": "Auto HDR",
+                "bold": true
+              },
+              {
+                "text": ", "
+              },
+              {
+                "text": "Дозволи променлива фреквенција",
+                "bold": true
+              },
+              {
+                "text": " (VRR) и "
+              },
+              {
+                "text": "Дозволи автоматски режим со ниско доцнење",
+                "bold": true
+              },
+              {
+                "text": " (ALLM). Ако телевизорот поддржува Dolby Vision, вклучи и "
+              },
+              {
+                "text": "Dolby Vision за игри",
+                "bold": true
+              },
+              {
+                "text": "."
+              }
+            ],
+            [
+              {
+                "text": "Калибрирај HDR за игри",
+                "bold": true
+              },
+              {
+                "text": " (Calibrate HDR for games): помини ја оваа кратка постапка. Конзолата ќе ги научи границите на осветленоста на твојот телевизор, па HDR сликата нема да биде ни прегорена ни премрачна."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Звук:",
+              "bold": true
+            },
+            {
+              "text": " за Dolby Atmos преку саундбар или ресивер, во "
+            },
+            {
+              "text": "Општо > Јачина и излез на звук",
+              "bold": true
+            },
+            {
+              "text": " избери "
+            },
+            {
+              "text": "Bitstream out",
+              "bold": true
+            },
+            {
+              "text": " и формат "
+            },
+            {
+              "text": "Dolby Atmos for home theater",
+              "bold": true
+            },
+            {
+              "text": ". Xbox Wire препорачува конзолата да ја поврзеш директно на телевизорот, а звукот до саундбарот да го пренесеш преку eARC."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/edu/xbox-series-x-meni-tv-postavki.webp",
+          "alt": "Мени на Xbox Series X со опции за телевизор и екран, резолуција 4K UHD и 120 Hz",
+          "caption": "Менито „Опции за ТВ и екран“ на Xbox, со 4K и 120 Hz. Фото: Microsoft"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Поставки на телевизорот"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "Вклучи го целосниот HDMI 2.1 режим",
+                "bold": true
+              },
+              {
+                "text": " на влезот каде што е Xbox. Кај LG тоа е „HDMI Ultra HD Deep Colour“, кај Samsung „Input Signal Plus“, а кај Sony „Enhanced format“."
+              }
+            ],
+            [
+              {
+                "text": "Режим за игри",
+                "bold": true
+              },
+              {
+                "text": ": обично се вклучува сам преку ALLM. Ако не се вклучи, вклучи го рачно."
+              }
+            ],
+            [
+              {
+                "text": "HGIG",
+                "bold": true
+              },
+              {
+                "text": " за HDR: ако телевизорот ја има опцијата, избери ја, за HDR да го контролира калибрацијата на Xbox."
+              }
+            ],
+            [
+              {
+                "text": "Ажурирај го софтверот на телевизорот. Многу производители функциите за игри ги подобруваат преку ажурирања."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Кој телевизор е најдобар за Xbox"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Изборот е многу сличен како за PS5, со една важна разлика: "
+            },
+            {
+              "text": "Dolby Vision",
+              "bold": true
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "LG OLED",
+              "bold": true
+            },
+            {
+              "text": " е најкомплетниот избор за Xbox. C6 и G6 имаат четири HDMI 2.1 влеза, до 165 Hz, VRR и Dolby Vision, па можеш да ги искористиш сите функции на Xbox истовремено. Повеќе во нашиот "
+            },
+            {
+              "text": "преглед на LG OLED 2026",
+              "href": "/novosti/lg-oled-2026-b6-c6-g6-w6"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Samsung OLED и Neo QLED",
+              "bold": true
+            },
+            {
+              "text": " се одлични за игри, со 120 Hz и повеќе, VRR и ниско доцнење. Но, Samsung не поддржува Dolby Vision, па на нив Xbox игрите ќе бидат во HDR10. И тоа изгледа одлично, но ако Dolby Vision ти е важен, тоа е причина да избереш друга марка. Повеќе во прегледот на "
+            },
+            {
+              "text": "Samsung OLED 2026",
+              "href": "/novosti/samsung-oled-2026-s95h-s90h-s85h"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Mini LED телевизорите",
+              "bold": true
+            },
+            {
+              "text": " се добар избор за светли соби и поголеми екрани. Барај природни 120 Hz или повеќе, HDMI 2.1 и, ако е можно, Dolby Vision. Повеќе во "
+            },
+            {
+              "text": "прегледот на Mini LED телевизорите",
+              "href": "/novosti/mini-led-televizori-2026-pregled"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Што да избегнуваш:",
+              "bold": true
+            },
+            {
+              "text": " телевизори од 60 Hz без HDMI 2.1. На нив Xbox работи, но без 120 Hz и VRR, па кај Series X губиш голем дел од можностите на конзолата."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Внимавај на бројот на HDMI 2.1 влезови",
+              "bold": true
+            },
+            {
+              "text": " ако имаш и саундбар или повеќе конзоли. Четири целосни HDMI 2.1 влеза значат дека не мораш да бираш."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Имаш и PlayStation? Прочитај го нашиот водич "
+            },
+            {
+              "text": "PS5 на телевизор",
+              "href": "/edu/ps5-na-televizor-najdobri-postavki"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Накратко"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "Приклучи го Xbox во "
+              },
+              {
+                "text": "HDMI 2.1 влез",
+                "bold": true
+              },
+              {
+                "text": ", со кабелот од кутијата."
+              }
+            ],
+            [
+              {
+                "text": "Прво провери "
+              },
+              {
+                "text": "Детали за 4K телевизорот",
+                "bold": true
+              },
+              {
+                "text": " во "
+              },
+              {
+                "text": "Поставки > Општо > Опции за ТВ и екран",
+                "bold": true
+              },
+              {
+                "text": "."
+              }
+            ],
+            [
+              {
+                "text": "Вклучи 120 Hz, VRR, ALLM, Auto HDR и, ако телевизорот поддржува, Dolby Vision за игри. Потоа калибрирај го HDR."
+              }
+            ],
+            [
+              {
+                "text": "Series S поддржува 120 Hz и VRR, но игрите ги прикажува во помала резолуција од Series X."
+              }
+            ],
+            [
+              {
+                "text": "Најкомплетен избор: OLED со четири HDMI 2.1 влеза и Dolby Vision. Samsung нема Dolby Vision."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Извори"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "Xbox Wire — Is your TV ready to power your dreams? (поставки за Xbox Series X|S)",
+                "href": "https://news.xbox.com/en-us/2020/11/06/is-your-tv-ready-to-power-your-dreams/"
+              }
+            ],
+            [
+              {
+                "text": "Xbox Wire — Dolby Vision за игри на Xbox Series X|S",
+                "href": "https://news.xbox.com/en-us/?p=159819"
+              }
+            ]
+          ]
+        }
+      ],
+      "body": [
+        "Xbox Series X е конзола создадена за 4K телевизори од новата генерација. Може да прикажува игри во 4K на 120 слики во секунда, со Dolby Vision слика и Dolby Atmos звук. Ниту една од овие работи нема да ја видиш ако телевизорот не ги поддржува, или ако конзолата е приклучена во погрешен влез. Добрата вест е што Xbox има едно од најдобрите менија за поставки на телевизор, кое само ти кажува што твојот телевизор може.",
+        "HDMI 2.1. Верзија на HDMI приклучокот со доволно проток за 4K на 120 Hz. Кај многу телевизори само дел од влезовите се 2.1, па провери кој е во упатството или до самиот приклучок.",
+        "120 Hz. Сликата се освежува 120 пати во секунда наместо 60. Во игрите што го поддржуваат, движењето е помазно, а контролата попрецизна.",
+        "VRR (Variable Refresh Rate). Телевизорот го следи бројот на слики што играта ги дава во моментот, па нема кинење на сликата кога играта успорува. Xbox поддржува HDMI VRR и AMD FreeSync.",
+        "ALLM (Auto Low Latency Mode). Телевизорот сам се префрла во режим за игри и го намалува доцнењето меѓу копчето и екранот.",
+        "Dolby Vision за игри. Ова е предноста на Xbox: напреден HDR формат што ја прилагодува сликата сцена по сцена. Работи само ако телевизорот поддржува Dolby Vision.",
+        "Auto HDR. Xbox автоматски додава HDR на постари игри направени без HDR.",
+        "Series X е создаден за 4K и 120 Hz. Во кутијата има Ultra High Speed HDMI кабел.",
+        "Series S е помал и послаб. Игрите најчесто ги прикажува во помала резолуција, до 1440p, но и тој поддржува 120 Hz, VRR и ALLM. За Series S телевизорот со HDMI 2.1 е корисен, но не е задолжителен. Според Xbox Wire, за него е доволен и сертифициран High Speed HDMI кабел.",
+        "Притисни го копчето Xbox на контролерот, па оди на Поставки > Општо > Опции за ТВ и екран (Settings > General > TV & display options).",
+        "Звук: за Dolby Atmos преку саундбар или ресивер, во Општо > Јачина и излез на звук избери Bitstream out и формат Dolby Atmos for home theater. Xbox Wire препорачува конзолата да ја поврзеш директно на телевизорот, а звукот до саундбарот да го пренесеш преку eARC.",
+        "Изборот е многу сличен како за PS5, со една важна разлика: Dolby Vision.",
+        "LG OLED е најкомплетниот избор за Xbox. C6 и G6 имаат четири HDMI 2.1 влеза, до 165 Hz, VRR и Dolby Vision, па можеш да ги искористиш сите функции на Xbox истовремено. Повеќе во нашиот преглед на LG OLED 2026.",
+        "Samsung OLED и Neo QLED се одлични за игри, со 120 Hz и повеќе, VRR и ниско доцнење. Но, Samsung не поддржува Dolby Vision, па на нив Xbox игрите ќе бидат во HDR10. И тоа изгледа одлично, но ако Dolby Vision ти е важен, тоа е причина да избереш друга марка. Повеќе во прегледот на Samsung OLED 2026.",
+        "Mini LED телевизорите се добар избор за светли соби и поголеми екрани. Барај природни 120 Hz или повеќе, HDMI 2.1 и, ако е можно, Dolby Vision. Повеќе во прегледот на Mini LED телевизорите.",
+        "Што да избегнуваш: телевизори од 60 Hz без HDMI 2.1. На нив Xbox работи, но без 120 Hz и VRR, па кај Series X губиш голем дел од можностите на конзолата.",
+        "Внимавај на бројот на HDMI 2.1 влезови ако имаш и саундбар или повеќе конзоли. Четири целосни HDMI 2.1 влеза значат дека не мораш да бираш.",
+        "Имаш и PlayStation? Прочитај го нашиот водич PS5 на телевизор."
+      ]
+    },
+    {
+      "id": "ps5-na-televizor-najdobri-postavki",
+      "slug": "ps5-na-televizor-najdobri-postavki",
+      "title": "PS5 на телевизор: кои поставки да ги вклучиш и кој телевизор е најдобар за PlayStation 5",
+      "excerpt": "Имаш PS5, но не си сигурен дали телевизорот го извлекува максимумот од него? Објаснуваме што значат HDMI 2.1, 120 Hz, VRR, ALLM и HDR, кои поставки да ги вклучиш на конзолата и на телевизорот и на што да внимаваш кога купуваш телевизор за игри.",
+      "category": "Совети",
+      "author": "",
+      "date": "2026-11-13",
+      "publishAt": "",
+      "readTime": 5,
+      "image": "/images/edu/ps5-na-televizor-najdobri-postavki.webp",
+      "imageCaption": "PlayStation 5 Pro со контролерот DualSense. Фото: Sony Interactive Entertainment",
+      "imageCandidates": [
+        "/images/edu/ps5-na-televizor-najdobri-postavki.webp",
+        "/images/edu/ps5-na-televizor-najdobri-postavki.jpg",
+        "/images/edu/ps5-na-televizor-najdobri-postavki.jpeg",
+        "/images/edu/ps5-na-televizor-najdobri-postavki.png",
+        "/images/edu/ps5-na-televizor-najdobri-postavki.avif",
+        "/images/edu/ps5-na-televizor-najdobri-postavki.svg",
+        "/images/edu/ps5-na-televizor-najdobri-postavki.jpg.jpg",
+        "/images/edu/ps5-na-televizor-najdobri-postavki.jpeg.jpeg",
+        "/images/edu/ps5-na-televizor-najdobri-postavki.png.png",
+        "/images/edu/ps5-na-televizor-najdobri-postavki.webp.webp",
+        "/images/edu/placeholder.svg"
+      ],
+      "hasImage": true,
+      "featured": false,
+      "blocks": [
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "PlayStation 5 може многу повеќе отколку што покажува на повеќето телевизори. Мазни 120 слики во секунда, слика без кинење при брзо движење и речиси никакво доцнење од копчето до екранот. Сето тоа го добиваш само ако телевизорот ги поддржува вистинските функции и ако се правилно вклучени. Многу играчи години играат на 60 Hz без да знаат дека нивниот телевизор може повеќе."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Во овој водич објаснуваме што навистина е важно, како да го наместиш PS5 и на што да внимаваш кога купуваш телевизор за конзола."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Пет поими што треба да ги знаеш"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "HDMI 2.1.",
+              "bold": true
+            },
+            {
+              "text": " Ова е верзијата на HDMI приклучокот што го носи целиот проток потребен за 4K на 120 Hz. PS5 го поддржува, но кај многу телевизори само дел од HDMI влезовите се 2.1. Ако конзолата ја приклучиш во погрешен влез, ќе добиеш најмногу 60 Hz."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "120 Hz.",
+              "bold": true
+            },
+            {
+              "text": " Телевизорот ја освежува сликата 120 пати во секунда наместо 60. Игрите што имаат режим од 120 слики во секунда изгледаат значително помазно, а контролата е попрецизна. Телевизорите што на кутијата пишуваат „144 Hz“ или „165 Hz“ ги поддржуваат и 120 Hz што ги користи PS5."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "VRR (Variable Refresh Rate, променлива фреквенција).",
+              "bold": true
+            },
+            {
+              "text": " Телевизорот се прилагодува на бројот на слики што игрите ги даваат во моментот. Кога играта паѓа од 60 на 50 слики, нема кинење на сликата ни сецкање. Ова е можеби најкорисната функција за конзола."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "ALLM (Auto Low Latency Mode).",
+              "bold": true
+            },
+            {
+              "text": " Телевизорот сам се префрла во режим за игри кога ќе ја вклучиш конзолата и го исклучува вишокот обработка на сликата што предизвикува доцнење. Кога ќе отвориш Netflix на PS5, конзолата не праќа ALLM сигнал, па телевизорот може да се врати во режим за филмови."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "HDR (висок динамички опсег).",
+              "bold": true
+            },
+            {
+              "text": " Посветли светли делови, подлабоки сенки и побогати бои. PS5 користи HDR10, а не Dolby Vision, па за PS5 не мора телевизорот да има Dolby Vision."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Како да го наместиш PS5"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Сите поставки се на едно место: "
+            },
+            {
+              "text": "Поставки > Екран и видео > Излез на видео",
+              "bold": true
+            },
+            {
+              "text": " (Settings > Screen and Video > Video Output). Според "
+            },
+            {
+              "text": "упатството на PlayStation",
+              "href": "https://www.playstation.com/en-gb/support/hardware/ps5-4k-resolution-guide/"
+            },
+            {
+              "text": ":"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            [
+              {
+                "text": "Резолуција",
+                "bold": true
+              },
+              {
+                "text": ": стави "
+              },
+              {
+                "text": "Автоматски",
+                "bold": true
+              },
+              {
+                "text": " или "
+              },
+              {
+                "text": "2160p",
+                "bold": true
+              },
+              {
+                "text": " за 4K."
+              }
+            ],
+            [
+              {
+                "text": "Излез од 120 Hz",
+                "bold": true
+              },
+              {
+                "text": ": стави "
+              },
+              {
+                "text": "Автоматски",
+                "bold": true
+              },
+              {
+                "text": ". Работи само во игри што поддржуваат 120 слики во секунда, а кај многу игри го вклучуваш со избор на режимот „Performance“ во поставките на играта."
+              }
+            ],
+            [
+              {
+                "text": "VRR",
+                "bold": true
+              },
+              {
+                "text": ": стави "
+              },
+              {
+                "text": "Автоматски",
+                "bold": true
+              },
+              {
+                "text": ". Опцијата "
+              },
+              {
+                "text": "Примени на неподдржани игри",
+                "bold": true
+              },
+              {
+                "text": " може да ја стабилизира сликата и кај игри што немаат VRR, но провери дали некоја игра почнува да прави проблеми."
+              }
+            ],
+            [
+              {
+                "text": "ALLM",
+                "bold": true
+              },
+              {
+                "text": ": вклучи го."
+              }
+            ],
+            [
+              {
+                "text": "HDR",
+                "bold": true
+              },
+              {
+                "text": ": избери "
+              },
+              {
+                "text": "Вклучено кога е поддржано",
+                "bold": true
+              },
+              {
+                "text": ", а потоа помини низ "
+              },
+              {
+                "text": "Прилагоди HDR",
+                "bold": true
+              },
+              {
+                "text": ", за PS5 да ја научи осветленоста на твојот телевизор."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Кабелот е важен.",
+              "bold": true
+            },
+            {
+              "text": " Користи го HDMI кабелот што доаѓа со конзолата, или Ultra High Speed HDMI кабел. Стариот кабел од претходната конзола често е причината зошто 120 Hz не работи. Конзолата приклучи ја директно во телевизорот, а не преку ресивер или саундбар."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ако имаш "
+            },
+            {
+              "text": "PS5 Pro",
+              "bold": true
+            },
+            {
+              "text": ", во истото мени постои и "
+            },
+            {
+              "text": "Дозволи 8K излез",
+              "bold": true
+            },
+            {
+              "text": ", но тоа бара 8K телевизор со посебна поддршка, а во 8K не работи VRR. За повеќето луѓе 4K е вистинскиот избор."
+            }
+          ]
+        },
+        {
+          "type": "image",
+          "src": "/images/edu/ps5-konzola-dualsense.webp",
+          "alt": "Бела PlayStation 5 конзола со контролер DualSense",
+          "caption": "Стандардниот PS5 ги поддржува 4K, 120 Hz, VRR и ALLM исто како и PS5 Pro. Фото: Sony Interactive Entertainment"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Поставки на телевизорот"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "Режим за игри (Game Mode)",
+                "bold": true
+              },
+              {
+                "text": ": ако ALLM не се вклучува сам, вклучи го рачно. Без него доцнењето е значително поголемо."
+              }
+            ],
+            [
+              {
+                "text": "Вклучи го HDMI 2.1 на влезот.",
+                "bold": true
+              },
+              {
+                "text": " Кај многу телевизори целосниот режим не е вклучен фабрички. Кај LG се вика „HDMI Ultra HD Deep Colour“, кај Samsung „Input Signal Plus“, а кај Sony „Enhanced format“."
+              }
+            ],
+            [
+              {
+                "text": "Исклучи го измазнувањето на движењето",
+                "bold": true
+              },
+              {
+                "text": " и вештачкото изострување. Во режим за игри обично се исклучени сами."
+              }
+            ],
+            [
+              {
+                "text": "HGIG",
+                "bold": true
+              },
+              {
+                "text": ": ако телевизорот ја има оваа опција за HDR, избери ја. Тогаш HDR сликата ја контролира PS5 преку поставката „Прилагоди HDR“, а не телевизорот."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Кој телевизор е најдобар за PS5"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Најважни се четири работи: "
+            },
+            {
+              "text": "природни 120 Hz",
+              "bold": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "HDMI 2.1 со VRR и ALLM",
+              "bold": true
+            },
+            {
+              "text": ", "
+            },
+            {
+              "text": "добро HDR",
+              "bold": true
+            },
+            {
+              "text": " и "
+            },
+            {
+              "text": "мало доцнење",
+              "bold": true
+            },
+            {
+              "text": ". Еве што значи тоа во пракса:"
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "OLED од средната и високата класа",
+              "bold": true
+            },
+            {
+              "text": " е најдобриот избор за повеќето играчи. Секој пиксел сам свети, па контрастот е одличен, а одзивот на пикселите е речиси моментален. LG C6 и G6 имаат четири HDMI 2.1 влеза и до 165 Hz, а Samsung S90H има и мат екран што помага во светла соба. Повеќе за нив прочитај во нашите прегледи на "
+            },
+            {
+              "text": "LG OLED 2026",
+              "href": "/novosti/lg-oled-2026-b6-c6-g6-w6"
+            },
+            {
+              "text": " и "
+            },
+            {
+              "text": "Samsung OLED 2026",
+              "href": "/novosti/samsung-oled-2026-s95h-s90h-s85h"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Sony BRAVIA",
+              "bold": true
+            },
+            {
+              "text": " е логичен избор за PS5, бидејќи и двата уреди ги прави Sony. Многу BRAVIA модели имаат функции „Perfect for PlayStation 5“: телевизорот сам се префрла во режим за игри кога ќе вклучиш игра, а PS5 го препознава моделот и автоматски го наместува HDR при првото поврзување. "
+            },
+            {
+              "text": "BRAVIA 6",
+              "href": "/novosti/sony-bravia-6-oled-2026-makedonija"
+            },
+            {
+              "text": " за 2026 има четири HDMI 2.1 влеза, што е подобрување во однос на постарите Sony модели со само два."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Mini LED телевизорите",
+              "bold": true
+            },
+            {
+              "text": " се добар избор ако играш во светла соба или сакаш поголем екран со пониска цена. Барај модел со природни 120 Hz или повеќе и HDMI 2.1. Повеќе во нашиот "
+            },
+            {
+              "text": "преглед на Mini LED телевизорите",
+              "href": "/novosti/mini-led-televizori-2026-pregled"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Што да избегнуваш:",
+              "bold": true
+            },
+            {
+              "text": " телевизори од 60 Hz без HDMI 2.1. Такви се многу евтини модели, па и некои што на кутијата пишуваат „Mini LED“ или „QLED“. На нив PS5 работи, но без 120 Hz и VRR."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "Ако имаш саундбар",
+              "bold": true
+            },
+            {
+              "text": ", внимавај: кај телевизорите со само два HDMI 2.1 влеза, еден од нив често е и eARC влезот за саундбарот."
+            }
+          ]
+        },
+        {
+          "type": "paragraph",
+          "content": [
+            {
+              "text": "За OLED и статичните елементи:",
+              "bold": true
+            },
+            {
+              "text": " логоа и мапи што долго стојат на исто место можат со години да оставаат трага. Современите OLED телевизори имаат заштита, па за нормално играње ризикот е мал. Повеќе во статијата за "
+            },
+            {
+              "text": "тестот на 100 телевизори",
+              "href": "/novosti/test-100-televizori-3-godini-oled-izgoruvanje"
+            },
+            {
+              "text": "."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Накратко"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "Приклучи го PS5 во "
+              },
+              {
+                "text": "HDMI 2.1 влез",
+                "bold": true
+              },
+              {
+                "text": " со кабелот од кутијата."
+              }
+            ],
+            [
+              {
+                "text": "Во "
+              },
+              {
+                "text": "Поставки > Екран и видео > Излез на видео",
+                "bold": true
+              },
+              {
+                "text": " вклучи 120 Hz, VRR и ALLM и намести го HDR."
+              }
+            ],
+            [
+              {
+                "text": "На телевизорот вклучи режим за игри и целосен HDMI 2.1 режим на тој влез."
+              }
+            ],
+            [
+              {
+                "text": "PS5 користи HDR10, па Dolby Vision не е потребен."
+              }
+            ],
+            [
+              {
+                "text": "Најдобар избор: OLED со 120 Hz или повеќе и четири HDMI 2.1 влеза. Избегнувај телевизори од 60 Hz."
+              }
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "content": [
+            {
+              "text": "Извори"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "ordered": false,
+          "items": [
+            [
+              {
+                "text": "PlayStation — Како да ја смениш резолуцијата на PS5 (4K, 120 Hz, VRR, ALLM, HDR)",
+                "href": "https://www.playstation.com/en-gb/support/hardware/ps5-4k-resolution-guide/"
+              }
+            ],
+            [
+              {
+                "text": "Sony — Perfect for PlayStation 5 (BRAVIA)",
+                "href": "https://www.sony-mea.com/en/bravia/products/bravia-8m2/feature3"
+              }
+            ]
+          ]
+        }
+      ],
+      "body": [
+        "PlayStation 5 може многу повеќе отколку што покажува на повеќето телевизори. Мазни 120 слики во секунда, слика без кинење при брзо движење и речиси никакво доцнење од копчето до екранот. Сето тоа го добиваш само ако телевизорот ги поддржува вистинските функции и ако се правилно вклучени. Многу играчи години играат на 60 Hz без да знаат дека нивниот телевизор може повеќе.",
+        "Во овој водич објаснуваме што навистина е важно, како да го наместиш PS5 и на што да внимаваш кога купуваш телевизор за конзола.",
+        "HDMI 2.1. Ова е верзијата на HDMI приклучокот што го носи целиот проток потребен за 4K на 120 Hz. PS5 го поддржува, но кај многу телевизори само дел од HDMI влезовите се 2.1. Ако конзолата ја приклучиш во погрешен влез, ќе добиеш најмногу 60 Hz.",
+        "120 Hz. Телевизорот ја освежува сликата 120 пати во секунда наместо 60. Игрите што имаат режим од 120 слики во секунда изгледаат значително помазно, а контролата е попрецизна. Телевизорите што на кутијата пишуваат „144 Hz“ или „165 Hz“ ги поддржуваат и 120 Hz што ги користи PS5.",
+        "VRR (Variable Refresh Rate, променлива фреквенција). Телевизорот се прилагодува на бројот на слики што игрите ги даваат во моментот. Кога играта паѓа од 60 на 50 слики, нема кинење на сликата ни сецкање. Ова е можеби најкорисната функција за конзола.",
+        "ALLM (Auto Low Latency Mode). Телевизорот сам се префрла во режим за игри кога ќе ја вклучиш конзолата и го исклучува вишокот обработка на сликата што предизвикува доцнење. Кога ќе отвориш Netflix на PS5, конзолата не праќа ALLM сигнал, па телевизорот може да се врати во режим за филмови.",
+        "HDR (висок динамички опсег). Посветли светли делови, подлабоки сенки и побогати бои. PS5 користи HDR10, а не Dolby Vision, па за PS5 не мора телевизорот да има Dolby Vision.",
+        "Сите поставки се на едно место: Поставки > Екран и видео > Излез на видео (Settings > Screen and Video > Video Output). Според упатството на PlayStation:",
+        "Кабелот е важен. Користи го HDMI кабелот што доаѓа со конзолата, или Ultra High Speed HDMI кабел. Стариот кабел од претходната конзола често е причината зошто 120 Hz не работи. Конзолата приклучи ја директно во телевизорот, а не преку ресивер или саундбар.",
+        "Ако имаш PS5 Pro, во истото мени постои и Дозволи 8K излез, но тоа бара 8K телевизор со посебна поддршка, а во 8K не работи VRR. За повеќето луѓе 4K е вистинскиот избор.",
+        "Најважни се четири работи: природни 120 Hz, HDMI 2.1 со VRR и ALLM, добро HDR и мало доцнење. Еве што значи тоа во пракса:",
+        "OLED од средната и високата класа е најдобриот избор за повеќето играчи. Секој пиксел сам свети, па контрастот е одличен, а одзивот на пикселите е речиси моментален. LG C6 и G6 имаат четири HDMI 2.1 влеза и до 165 Hz, а Samsung S90H има и мат екран што помага во светла соба. Повеќе за нив прочитај во нашите прегледи на LG OLED 2026 и Samsung OLED 2026.",
+        "Sony BRAVIA е логичен избор за PS5, бидејќи и двата уреди ги прави Sony. Многу BRAVIA модели имаат функции „Perfect for PlayStation 5“: телевизорот сам се префрла во режим за игри кога ќе вклучиш игра, а PS5 го препознава моделот и автоматски го наместува HDR при првото поврзување. BRAVIA 6 за 2026 има четири HDMI 2.1 влеза, што е подобрување во однос на постарите Sony модели со само два.",
+        "Mini LED телевизорите се добар избор ако играш во светла соба или сакаш поголем екран со пониска цена. Барај модел со природни 120 Hz или повеќе и HDMI 2.1. Повеќе во нашиот преглед на Mini LED телевизорите.",
+        "Што да избегнуваш: телевизори од 60 Hz без HDMI 2.1. Такви се многу евтини модели, па и некои што на кутијата пишуваат „Mini LED“ или „QLED“. На нив PS5 работи, но без 120 Hz и VRR.",
+        "Ако имаш саундбар, внимавај: кај телевизорите со само два HDMI 2.1 влеза, еден од нив често е и eARC влезот за саундбарот.",
+        "За OLED и статичните елементи: логоа и мапи што долго стојат на исто место можат со години да оставаат трага. Современите OLED телевизори имаат заштита, па за нормално играње ризикот е мал. Повеќе во статијата за тестот на 100 телевизори."
+      ]
+    },
     {
       "id": "kako-da-go-povrzes-iphone-so-televizor",
       "slug": "kako-da-go-povrzes-iphone-so-televizor",
@@ -1107,1208 +2293,6 @@
         "Кабелот нема заостанување и не зависи од Wi-Fi, па е добар за игри и за места со слаб интернет, на пример во хотел. Ти треба кабел или адаптер од USB-C на HDMI.",
         "Важно: ова работи само ако телефонот поддржува излез на слика преку USB-C (технологијата се вика DisplayPort Alt Mode). Ја имаат повеќето Samsung Galaxy телефони од врвната класа, кои со кабел го вклучуваат и режимот Samsung DeX, а во него телевизорот работи речиси како компјутер. Многу телефони од почетната и средната класа немаат излез на слика, па пред да купиш кабел, во спецификациите на телефонот побарај „DisplayPort“ или „излез на видео“.",
         "Ако често гледаш содржини од телефонот, при купување провери дали телевизорот има Google Cast. Сигурно е вграден во телевизорите со Google TV, а кај другите системи провери ја спецификацијата. На пример, новите Philips телевизори со Titan OS го немаат. Samsung и LG телевизорите имаат свои начини за пресликување, како и AirPlay за iPhone."
-      ]
-    },
-    {
-      "id": "ps5-na-televizor-najdobri-postavki",
-      "slug": "ps5-na-televizor-najdobri-postavki",
-      "title": "PS5 на телевизор: кои поставки да ги вклучиш и кој телевизор е најдобар за PlayStation 5",
-      "excerpt": "Имаш PS5, но не си сигурен дали телевизорот го извлекува максимумот од него? Објаснуваме што значат HDMI 2.1, 120 Hz, VRR, ALLM и HDR, кои поставки да ги вклучиш на конзолата и на телевизорот и на што да внимаваш кога купуваш телевизор за игри.",
-      "category": "Совети",
-      "author": "",
-      "date": "2026-11-06",
-      "publishAt": "",
-      "readTime": 5,
-      "image": "/images/edu/ps5-na-televizor-najdobri-postavki.webp",
-      "imageCaption": "PlayStation 5 Pro со контролерот DualSense. Фото: Sony Interactive Entertainment",
-      "imageCandidates": [
-        "/images/edu/ps5-na-televizor-najdobri-postavki.webp",
-        "/images/edu/ps5-na-televizor-najdobri-postavki.jpg",
-        "/images/edu/ps5-na-televizor-najdobri-postavki.jpeg",
-        "/images/edu/ps5-na-televizor-najdobri-postavki.png",
-        "/images/edu/ps5-na-televizor-najdobri-postavki.avif",
-        "/images/edu/ps5-na-televizor-najdobri-postavki.svg",
-        "/images/edu/ps5-na-televizor-najdobri-postavki.jpg.jpg",
-        "/images/edu/ps5-na-televizor-najdobri-postavki.jpeg.jpeg",
-        "/images/edu/ps5-na-televizor-najdobri-postavki.png.png",
-        "/images/edu/ps5-na-televizor-najdobri-postavki.webp.webp",
-        "/images/edu/placeholder.svg"
-      ],
-      "hasImage": true,
-      "featured": false,
-      "blocks": [
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "PlayStation 5 може многу повеќе отколку што покажува на повеќето телевизори. Мазни 120 слики во секунда, слика без кинење при брзо движење и речиси никакво доцнење од копчето до екранот. Сето тоа го добиваш само ако телевизорот ги поддржува вистинските функции и ако се правилно вклучени. Многу играчи години играат на 60 Hz без да знаат дека нивниот телевизор може повеќе."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "Во овој водич објаснуваме што навистина е важно, како да го наместиш PS5 и на што да внимаваш кога купуваш телевизор за конзола."
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "content": [
-            {
-              "text": "Пет поими што треба да ги знаеш"
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "HDMI 2.1.",
-              "bold": true
-            },
-            {
-              "text": " Ова е верзијата на HDMI приклучокот што го носи целиот проток потребен за 4K на 120 Hz. PS5 го поддржува, но кај многу телевизори само дел од HDMI влезовите се 2.1. Ако конзолата ја приклучиш во погрешен влез, ќе добиеш најмногу 60 Hz."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "120 Hz.",
-              "bold": true
-            },
-            {
-              "text": " Телевизорот ја освежува сликата 120 пати во секунда наместо 60. Игрите што имаат режим од 120 слики во секунда изгледаат значително помазно, а контролата е попрецизна. Телевизорите што на кутијата пишуваат „144 Hz“ или „165 Hz“ ги поддржуваат и 120 Hz што ги користи PS5."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "VRR (Variable Refresh Rate, променлива фреквенција).",
-              "bold": true
-            },
-            {
-              "text": " Телевизорот се прилагодува на бројот на слики што игрите ги даваат во моментот. Кога играта паѓа од 60 на 50 слики, нема кинење на сликата ни сецкање. Ова е можеби најкорисната функција за конзола."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "ALLM (Auto Low Latency Mode).",
-              "bold": true
-            },
-            {
-              "text": " Телевизорот сам се префрла во режим за игри кога ќе ја вклучиш конзолата и го исклучува вишокот обработка на сликата што предизвикува доцнење. Кога ќе отвориш Netflix на PS5, конзолата не праќа ALLM сигнал, па телевизорот може да се врати во режим за филмови."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "HDR (висок динамички опсег).",
-              "bold": true
-            },
-            {
-              "text": " Посветли светли делови, подлабоки сенки и побогати бои. PS5 користи HDR10, а не Dolby Vision, па за PS5 не мора телевизорот да има Dolby Vision."
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "content": [
-            {
-              "text": "Како да го наместиш PS5"
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "Сите поставки се на едно место: "
-            },
-            {
-              "text": "Поставки > Екран и видео > Излез на видео",
-              "bold": true
-            },
-            {
-              "text": " (Settings > Screen and Video > Video Output). Според "
-            },
-            {
-              "text": "упатството на PlayStation",
-              "href": "https://www.playstation.com/en-gb/support/hardware/ps5-4k-resolution-guide/"
-            },
-            {
-              "text": ":"
-            }
-          ]
-        },
-        {
-          "type": "list",
-          "ordered": true,
-          "items": [
-            [
-              {
-                "text": "Резолуција",
-                "bold": true
-              },
-              {
-                "text": ": стави "
-              },
-              {
-                "text": "Автоматски",
-                "bold": true
-              },
-              {
-                "text": " или "
-              },
-              {
-                "text": "2160p",
-                "bold": true
-              },
-              {
-                "text": " за 4K."
-              }
-            ],
-            [
-              {
-                "text": "Излез од 120 Hz",
-                "bold": true
-              },
-              {
-                "text": ": стави "
-              },
-              {
-                "text": "Автоматски",
-                "bold": true
-              },
-              {
-                "text": ". Работи само во игри што поддржуваат 120 слики во секунда, а кај многу игри го вклучуваш со избор на режимот „Performance“ во поставките на играта."
-              }
-            ],
-            [
-              {
-                "text": "VRR",
-                "bold": true
-              },
-              {
-                "text": ": стави "
-              },
-              {
-                "text": "Автоматски",
-                "bold": true
-              },
-              {
-                "text": ". Опцијата "
-              },
-              {
-                "text": "Примени на неподдржани игри",
-                "bold": true
-              },
-              {
-                "text": " може да ја стабилизира сликата и кај игри што немаат VRR, но провери дали некоја игра почнува да прави проблеми."
-              }
-            ],
-            [
-              {
-                "text": "ALLM",
-                "bold": true
-              },
-              {
-                "text": ": вклучи го."
-              }
-            ],
-            [
-              {
-                "text": "HDR",
-                "bold": true
-              },
-              {
-                "text": ": избери "
-              },
-              {
-                "text": "Вклучено кога е поддржано",
-                "bold": true
-              },
-              {
-                "text": ", а потоа помини низ "
-              },
-              {
-                "text": "Прилагоди HDR",
-                "bold": true
-              },
-              {
-                "text": ", за PS5 да ја научи осветленоста на твојот телевизор."
-              }
-            ]
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "Кабелот е важен.",
-              "bold": true
-            },
-            {
-              "text": " Користи го HDMI кабелот што доаѓа со конзолата, или Ultra High Speed HDMI кабел. Стариот кабел од претходната конзола често е причината зошто 120 Hz не работи. Конзолата приклучи ја директно во телевизорот, а не преку ресивер или саундбар."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "Ако имаш "
-            },
-            {
-              "text": "PS5 Pro",
-              "bold": true
-            },
-            {
-              "text": ", во истото мени постои и "
-            },
-            {
-              "text": "Дозволи 8K излез",
-              "bold": true
-            },
-            {
-              "text": ", но тоа бара 8K телевизор со посебна поддршка, а во 8K не работи VRR. За повеќето луѓе 4K е вистинскиот избор."
-            }
-          ]
-        },
-        {
-          "type": "image",
-          "src": "/images/edu/ps5-konzola-dualsense.webp",
-          "alt": "Бела PlayStation 5 конзола со контролер DualSense",
-          "caption": "Стандардниот PS5 ги поддржува 4K, 120 Hz, VRR и ALLM исто како и PS5 Pro. Фото: Sony Interactive Entertainment"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "content": [
-            {
-              "text": "Поставки на телевизорот"
-            }
-          ]
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            [
-              {
-                "text": "Режим за игри (Game Mode)",
-                "bold": true
-              },
-              {
-                "text": ": ако ALLM не се вклучува сам, вклучи го рачно. Без него доцнењето е значително поголемо."
-              }
-            ],
-            [
-              {
-                "text": "Вклучи го HDMI 2.1 на влезот.",
-                "bold": true
-              },
-              {
-                "text": " Кај многу телевизори целосниот режим не е вклучен фабрички. Кај LG се вика „HDMI Ultra HD Deep Colour“, кај Samsung „Input Signal Plus“, а кај Sony „Enhanced format“."
-              }
-            ],
-            [
-              {
-                "text": "Исклучи го измазнувањето на движењето",
-                "bold": true
-              },
-              {
-                "text": " и вештачкото изострување. Во режим за игри обично се исклучени сами."
-              }
-            ],
-            [
-              {
-                "text": "HGIG",
-                "bold": true
-              },
-              {
-                "text": ": ако телевизорот ја има оваа опција за HDR, избери ја. Тогаш HDR сликата ја контролира PS5 преку поставката „Прилагоди HDR“, а не телевизорот."
-              }
-            ]
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "content": [
-            {
-              "text": "Кој телевизор е најдобар за PS5"
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "Најважни се четири работи: "
-            },
-            {
-              "text": "природни 120 Hz",
-              "bold": true
-            },
-            {
-              "text": ", "
-            },
-            {
-              "text": "HDMI 2.1 со VRR и ALLM",
-              "bold": true
-            },
-            {
-              "text": ", "
-            },
-            {
-              "text": "добро HDR",
-              "bold": true
-            },
-            {
-              "text": " и "
-            },
-            {
-              "text": "мало доцнење",
-              "bold": true
-            },
-            {
-              "text": ". Еве што значи тоа во пракса:"
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "OLED од средната и високата класа",
-              "bold": true
-            },
-            {
-              "text": " е најдобриот избор за повеќето играчи. Секој пиксел сам свети, па контрастот е одличен, а одзивот на пикселите е речиси моментален. LG C6 и G6 имаат четири HDMI 2.1 влеза и до 165 Hz, а Samsung S90H има и мат екран што помага во светла соба. Повеќе за нив прочитај во нашите прегледи на "
-            },
-            {
-              "text": "LG OLED 2026",
-              "href": "/novosti/lg-oled-2026-b6-c6-g6-w6"
-            },
-            {
-              "text": " и "
-            },
-            {
-              "text": "Samsung OLED 2026",
-              "href": "/novosti/samsung-oled-2026-s95h-s90h-s85h"
-            },
-            {
-              "text": "."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "Sony BRAVIA",
-              "bold": true
-            },
-            {
-              "text": " е логичен избор за PS5, бидејќи и двата уреди ги прави Sony. Многу BRAVIA модели имаат функции „Perfect for PlayStation 5“: телевизорот сам се префрла во режим за игри кога ќе вклучиш игра, а PS5 го препознава моделот и автоматски го наместува HDR при првото поврзување. "
-            },
-            {
-              "text": "BRAVIA 6",
-              "href": "/novosti/sony-bravia-6-oled-2026-makedonija"
-            },
-            {
-              "text": " за 2026 има четири HDMI 2.1 влеза, што е подобрување во однос на постарите Sony модели со само два."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "Mini LED телевизорите",
-              "bold": true
-            },
-            {
-              "text": " се добар избор ако играш во светла соба или сакаш поголем екран со пониска цена. Барај модел со природни 120 Hz или повеќе и HDMI 2.1. Повеќе во нашиот "
-            },
-            {
-              "text": "преглед на Mini LED телевизорите",
-              "href": "/novosti/mini-led-televizori-2026-pregled"
-            },
-            {
-              "text": "."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "Што да избегнуваш:",
-              "bold": true
-            },
-            {
-              "text": " телевизори од 60 Hz без HDMI 2.1. Такви се многу евтини модели, па и некои што на кутијата пишуваат „Mini LED“ или „QLED“. На нив PS5 работи, но без 120 Hz и VRR."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "Ако имаш саундбар",
-              "bold": true
-            },
-            {
-              "text": ", внимавај: кај телевизорите со само два HDMI 2.1 влеза, еден од нив често е и eARC влезот за саундбарот."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "За OLED и статичните елементи:",
-              "bold": true
-            },
-            {
-              "text": " логоа и мапи што долго стојат на исто место можат со години да оставаат трага. Современите OLED телевизори имаат заштита, па за нормално играње ризикот е мал. Повеќе во статијата за "
-            },
-            {
-              "text": "тестот на 100 телевизори",
-              "href": "/novosti/test-100-televizori-3-godini-oled-izgoruvanje"
-            },
-            {
-              "text": "."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "Играш и на Xbox? Прочитај го нашиот водич "
-            },
-            {
-              "text": "Xbox на телевизор",
-              "href": "/edu/xbox-series-x-na-televizor-najdobri-postavki"
-            },
-            {
-              "text": "."
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "content": [
-            {
-              "text": "Накратко"
-            }
-          ]
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            [
-              {
-                "text": "Приклучи го PS5 во "
-              },
-              {
-                "text": "HDMI 2.1 влез",
-                "bold": true
-              },
-              {
-                "text": " со кабелот од кутијата."
-              }
-            ],
-            [
-              {
-                "text": "Во "
-              },
-              {
-                "text": "Поставки > Екран и видео > Излез на видео",
-                "bold": true
-              },
-              {
-                "text": " вклучи 120 Hz, VRR и ALLM и намести го HDR."
-              }
-            ],
-            [
-              {
-                "text": "На телевизорот вклучи режим за игри и целосен HDMI 2.1 режим на тој влез."
-              }
-            ],
-            [
-              {
-                "text": "PS5 користи HDR10, па Dolby Vision не е потребен."
-              }
-            ],
-            [
-              {
-                "text": "Најдобар избор: OLED со 120 Hz или повеќе и четири HDMI 2.1 влеза. Избегнувај телевизори од 60 Hz."
-              }
-            ]
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "content": [
-            {
-              "text": "Извори"
-            }
-          ]
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            [
-              {
-                "text": "PlayStation — Како да ја смениш резолуцијата на PS5 (4K, 120 Hz, VRR, ALLM, HDR)",
-                "href": "https://www.playstation.com/en-gb/support/hardware/ps5-4k-resolution-guide/"
-              }
-            ],
-            [
-              {
-                "text": "Sony — Perfect for PlayStation 5 (BRAVIA)",
-                "href": "https://www.sony-mea.com/en/bravia/products/bravia-8m2/feature3"
-              }
-            ]
-          ]
-        }
-      ],
-      "body": [
-        "PlayStation 5 може многу повеќе отколку што покажува на повеќето телевизори. Мазни 120 слики во секунда, слика без кинење при брзо движење и речиси никакво доцнење од копчето до екранот. Сето тоа го добиваш само ако телевизорот ги поддржува вистинските функции и ако се правилно вклучени. Многу играчи години играат на 60 Hz без да знаат дека нивниот телевизор може повеќе.",
-        "Во овој водич објаснуваме што навистина е важно, како да го наместиш PS5 и на што да внимаваш кога купуваш телевизор за конзола.",
-        "HDMI 2.1. Ова е верзијата на HDMI приклучокот што го носи целиот проток потребен за 4K на 120 Hz. PS5 го поддржува, но кај многу телевизори само дел од HDMI влезовите се 2.1. Ако конзолата ја приклучиш во погрешен влез, ќе добиеш најмногу 60 Hz.",
-        "120 Hz. Телевизорот ја освежува сликата 120 пати во секунда наместо 60. Игрите што имаат режим од 120 слики во секунда изгледаат значително помазно, а контролата е попрецизна. Телевизорите што на кутијата пишуваат „144 Hz“ или „165 Hz“ ги поддржуваат и 120 Hz што ги користи PS5.",
-        "VRR (Variable Refresh Rate, променлива фреквенција). Телевизорот се прилагодува на бројот на слики што игрите ги даваат во моментот. Кога играта паѓа од 60 на 50 слики, нема кинење на сликата ни сецкање. Ова е можеби најкорисната функција за конзола.",
-        "ALLM (Auto Low Latency Mode). Телевизорот сам се префрла во режим за игри кога ќе ја вклучиш конзолата и го исклучува вишокот обработка на сликата што предизвикува доцнење. Кога ќе отвориш Netflix на PS5, конзолата не праќа ALLM сигнал, па телевизорот може да се врати во режим за филмови.",
-        "HDR (висок динамички опсег). Посветли светли делови, подлабоки сенки и побогати бои. PS5 користи HDR10, а не Dolby Vision, па за PS5 не мора телевизорот да има Dolby Vision.",
-        "Сите поставки се на едно место: Поставки > Екран и видео > Излез на видео (Settings > Screen and Video > Video Output). Според упатството на PlayStation:",
-        "Кабелот е важен. Користи го HDMI кабелот што доаѓа со конзолата, или Ultra High Speed HDMI кабел. Стариот кабел од претходната конзола често е причината зошто 120 Hz не работи. Конзолата приклучи ја директно во телевизорот, а не преку ресивер или саундбар.",
-        "Ако имаш PS5 Pro, во истото мени постои и Дозволи 8K излез, но тоа бара 8K телевизор со посебна поддршка, а во 8K не работи VRR. За повеќето луѓе 4K е вистинскиот избор.",
-        "Најважни се четири работи: природни 120 Hz, HDMI 2.1 со VRR и ALLM, добро HDR и мало доцнење. Еве што значи тоа во пракса:",
-        "OLED од средната и високата класа е најдобриот избор за повеќето играчи. Секој пиксел сам свети, па контрастот е одличен, а одзивот на пикселите е речиси моментален. LG C6 и G6 имаат четири HDMI 2.1 влеза и до 165 Hz, а Samsung S90H има и мат екран што помага во светла соба. Повеќе за нив прочитај во нашите прегледи на LG OLED 2026 и Samsung OLED 2026.",
-        "Sony BRAVIA е логичен избор за PS5, бидејќи и двата уреди ги прави Sony. Многу BRAVIA модели имаат функции „Perfect for PlayStation 5“: телевизорот сам се префрла во режим за игри кога ќе вклучиш игра, а PS5 го препознава моделот и автоматски го наместува HDR при првото поврзување. BRAVIA 6 за 2026 има четири HDMI 2.1 влеза, што е подобрување во однос на постарите Sony модели со само два.",
-        "Mini LED телевизорите се добар избор ако играш во светла соба или сакаш поголем екран со пониска цена. Барај модел со природни 120 Hz или повеќе и HDMI 2.1. Повеќе во нашиот преглед на Mini LED телевизорите.",
-        "Што да избегнуваш: телевизори од 60 Hz без HDMI 2.1. Такви се многу евтини модели, па и некои што на кутијата пишуваат „Mini LED“ или „QLED“. На нив PS5 работи, но без 120 Hz и VRR.",
-        "Ако имаш саундбар, внимавај: кај телевизорите со само два HDMI 2.1 влеза, еден од нив често е и eARC влезот за саундбарот.",
-        "За OLED и статичните елементи: логоа и мапи што долго стојат на исто место можат со години да оставаат трага. Современите OLED телевизори имаат заштита, па за нормално играње ризикот е мал. Повеќе во статијата за тестот на 100 телевизори.",
-        "Играш и на Xbox? Прочитај го нашиот водич Xbox на телевизор."
-      ]
-    },
-    {
-      "id": "xbox-series-x-na-televizor-najdobri-postavki",
-      "slug": "xbox-series-x-na-televizor-najdobri-postavki",
-      "title": "Xbox Series X и S на телевизор: најдобри поставки и кој телевизор да избереш",
-      "excerpt": "Xbox Series X и S поддржуваат 120 Hz, VRR, Dolby Vision и Dolby Atmos за игри, но само ако телевизорот ги има и ако се правилно вклучени. Водич чекор по чекор за поставките и за изборот на телевизор за Xbox.",
-      "category": "Совети",
-      "author": "",
-      "date": "2026-11-06",
-      "publishAt": "",
-      "readTime": 5,
-      "image": "/images/edu/xbox-series-x-na-televizor-najdobri-postavki.webp",
-      "imageCaption": "Xbox Series X со контролер. Фото: Microsoft",
-      "imageCandidates": [
-        "/images/edu/xbox-series-x-na-televizor-najdobri-postavki.webp",
-        "/images/edu/xbox-series-x-na-televizor-najdobri-postavki.jpg",
-        "/images/edu/xbox-series-x-na-televizor-najdobri-postavki.jpeg",
-        "/images/edu/xbox-series-x-na-televizor-najdobri-postavki.png",
-        "/images/edu/xbox-series-x-na-televizor-najdobri-postavki.avif",
-        "/images/edu/xbox-series-x-na-televizor-najdobri-postavki.svg",
-        "/images/edu/xbox-series-x-na-televizor-najdobri-postavki.jpg.jpg",
-        "/images/edu/xbox-series-x-na-televizor-najdobri-postavki.jpeg.jpeg",
-        "/images/edu/xbox-series-x-na-televizor-najdobri-postavki.png.png",
-        "/images/edu/xbox-series-x-na-televizor-najdobri-postavki.webp.webp",
-        "/images/edu/placeholder.svg"
-      ],
-      "hasImage": true,
-      "featured": false,
-      "blocks": [
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "Xbox Series X е конзола создадена за 4K телевизори од новата генерација. Може да прикажува игри во 4K на 120 слики во секунда, со Dolby Vision слика и Dolby Atmos звук. Ниту една од овие работи нема да ја видиш ако телевизорот не ги поддржува, или ако конзолата е приклучена во погрешен влез. Добрата вест е што Xbox има едно од најдобрите менија за поставки на телевизор, кое само ти кажува што твојот телевизор може."
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "content": [
-            {
-              "text": "Што значат кратенките"
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "HDMI 2.1.",
-              "bold": true
-            },
-            {
-              "text": " Верзија на HDMI приклучокот со доволно проток за 4K на 120 Hz. Кај многу телевизори само дел од влезовите се 2.1, па провери кој е во упатството или до самиот приклучок."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "120 Hz.",
-              "bold": true
-            },
-            {
-              "text": " Сликата се освежува 120 пати во секунда наместо 60. Во игрите што го поддржуваат, движењето е помазно, а контролата попрецизна."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "VRR (Variable Refresh Rate).",
-              "bold": true
-            },
-            {
-              "text": " Телевизорот го следи бројот на слики што играта ги дава во моментот, па нема кинење на сликата кога играта успорува. Xbox поддржува HDMI VRR и AMD FreeSync."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "ALLM (Auto Low Latency Mode).",
-              "bold": true
-            },
-            {
-              "text": " Телевизорот сам се префрла во режим за игри и го намалува доцнењето меѓу копчето и екранот."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "Dolby Vision за игри.",
-              "bold": true
-            },
-            {
-              "text": " Ова е предноста на Xbox: напреден HDR формат што ја прилагодува сликата сцена по сцена. Работи само ако телевизорот поддржува Dolby Vision."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "Auto HDR.",
-              "bold": true
-            },
-            {
-              "text": " Xbox автоматски додава HDR на постари игри направени без HDR."
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "content": [
-            {
-              "text": "Series X или Series S: разликата за телевизорот"
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "Series X",
-              "bold": true
-            },
-            {
-              "text": " е создаден за 4K и 120 Hz. Во кутијата има Ultra High Speed HDMI кабел."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "Series S",
-              "bold": true
-            },
-            {
-              "text": " е помал и послаб. Игрите најчесто ги прикажува во помала резолуција, до 1440p, но и тој поддржува 120 Hz, VRR и ALLM. За Series S телевизорот со HDMI 2.1 е корисен, но не е задолжителен. Според "
-            },
-            {
-              "text": "Xbox Wire",
-              "href": "https://news.xbox.com/en-us/2020/11/06/is-your-tv-ready-to-power-your-dreams/"
-            },
-            {
-              "text": ", за него е доволен и сертифициран High Speed HDMI кабел."
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "content": [
-            {
-              "text": "Како да го наместиш Xbox"
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "Притисни го копчето Xbox на контролерот, па оди на "
-            },
-            {
-              "text": "Поставки > Општо > Опции за ТВ и екран",
-              "bold": true
-            },
-            {
-              "text": " (Settings > General > TV & display options)."
-            }
-          ]
-        },
-        {
-          "type": "list",
-          "ordered": true,
-          "items": [
-            [
-              {
-                "text": "Детали за 4K телевизорот",
-                "bold": true
-              },
-              {
-                "text": " (4K TV details): прво погледни го ова мени. Конзолата го тестира телевизорот и покажува зелено штиклирање за секоја функција што ја поддржува (4K на 60 и 120 Hz, HDR10, Dolby Vision, VRR, ALLM). Ако нешто што очекуваш е без штиклирање, проблемот е во кабелот, влезот или поставката на телевизорот."
-              }
-            ],
-            [
-              {
-                "text": "Резолуција",
-                "bold": true
-              },
-              {
-                "text": ": 4K UHD."
-              }
-            ],
-            [
-              {
-                "text": "Фреквенција",
-                "bold": true
-              },
-              {
-                "text": " (Refresh rate): "
-              },
-              {
-                "text": "120 Hz",
-                "bold": true
-              },
-              {
-                "text": ", ако телевизорот го поддржува."
-              }
-            ],
-            [
-              {
-                "text": "Видео режими",
-                "bold": true
-              },
-              {
-                "text": " (Video modes): вклучи "
-              },
-              {
-                "text": "Дозволи 4K",
-                "bold": true
-              },
-              {
-                "text": ", "
-              },
-              {
-                "text": "Дозволи HDR10",
-                "bold": true
-              },
-              {
-                "text": ", "
-              },
-              {
-                "text": "Auto HDR",
-                "bold": true
-              },
-              {
-                "text": ", "
-              },
-              {
-                "text": "Дозволи променлива фреквенција",
-                "bold": true
-              },
-              {
-                "text": " (VRR) и "
-              },
-              {
-                "text": "Дозволи автоматски режим со ниско доцнење",
-                "bold": true
-              },
-              {
-                "text": " (ALLM). Ако телевизорот поддржува Dolby Vision, вклучи и "
-              },
-              {
-                "text": "Dolby Vision за игри",
-                "bold": true
-              },
-              {
-                "text": "."
-              }
-            ],
-            [
-              {
-                "text": "Калибрирај HDR за игри",
-                "bold": true
-              },
-              {
-                "text": " (Calibrate HDR for games): помини ја оваа кратка постапка. Конзолата ќе ги научи границите на осветленоста на твојот телевизор, па HDR сликата нема да биде ни прегорена ни премрачна."
-              }
-            ]
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "Звук:",
-              "bold": true
-            },
-            {
-              "text": " за Dolby Atmos преку саундбар или ресивер, во "
-            },
-            {
-              "text": "Општо > Јачина и излез на звук",
-              "bold": true
-            },
-            {
-              "text": " избери "
-            },
-            {
-              "text": "Bitstream out",
-              "bold": true
-            },
-            {
-              "text": " и формат "
-            },
-            {
-              "text": "Dolby Atmos for home theater",
-              "bold": true
-            },
-            {
-              "text": ". Xbox Wire препорачува конзолата да ја поврзеш директно на телевизорот, а звукот до саундбарот да го пренесеш преку eARC."
-            }
-          ]
-        },
-        {
-          "type": "image",
-          "src": "/images/edu/xbox-series-x-meni-tv-postavki.webp",
-          "alt": "Мени на Xbox Series X со опции за телевизор и екран, резолуција 4K UHD и 120 Hz",
-          "caption": "Менито „Опции за ТВ и екран“ на Xbox, со 4K и 120 Hz. Фото: Microsoft"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "content": [
-            {
-              "text": "Поставки на телевизорот"
-            }
-          ]
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            [
-              {
-                "text": "Вклучи го целосниот HDMI 2.1 режим",
-                "bold": true
-              },
-              {
-                "text": " на влезот каде што е Xbox. Кај LG тоа е „HDMI Ultra HD Deep Colour“, кај Samsung „Input Signal Plus“, а кај Sony „Enhanced format“."
-              }
-            ],
-            [
-              {
-                "text": "Режим за игри",
-                "bold": true
-              },
-              {
-                "text": ": обично се вклучува сам преку ALLM. Ако не се вклучи, вклучи го рачно."
-              }
-            ],
-            [
-              {
-                "text": "HGIG",
-                "bold": true
-              },
-              {
-                "text": " за HDR: ако телевизорот ја има опцијата, избери ја, за HDR да го контролира калибрацијата на Xbox."
-              }
-            ],
-            [
-              {
-                "text": "Ажурирај го софтверот на телевизорот. Многу производители функциите за игри ги подобруваат преку ажурирања."
-              }
-            ]
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "content": [
-            {
-              "text": "Кој телевизор е најдобар за Xbox"
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "Изборот е многу сличен како за PS5, со една важна разлика: "
-            },
-            {
-              "text": "Dolby Vision",
-              "bold": true
-            },
-            {
-              "text": "."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "LG OLED",
-              "bold": true
-            },
-            {
-              "text": " е најкомплетниот избор за Xbox. C6 и G6 имаат четири HDMI 2.1 влеза, до 165 Hz, VRR и Dolby Vision, па можеш да ги искористиш сите функции на Xbox истовремено. Повеќе во нашиот "
-            },
-            {
-              "text": "преглед на LG OLED 2026",
-              "href": "/novosti/lg-oled-2026-b6-c6-g6-w6"
-            },
-            {
-              "text": "."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "Samsung OLED и Neo QLED",
-              "bold": true
-            },
-            {
-              "text": " се одлични за игри, со 120 Hz и повеќе, VRR и ниско доцнење. Но, Samsung не поддржува Dolby Vision, па на нив Xbox игрите ќе бидат во HDR10. И тоа изгледа одлично, но ако Dolby Vision ти е важен, тоа е причина да избереш друга марка. Повеќе во прегледот на "
-            },
-            {
-              "text": "Samsung OLED 2026",
-              "href": "/novosti/samsung-oled-2026-s95h-s90h-s85h"
-            },
-            {
-              "text": "."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "Mini LED телевизорите",
-              "bold": true
-            },
-            {
-              "text": " се добар избор за светли соби и поголеми екрани. Барај природни 120 Hz или повеќе, HDMI 2.1 и, ако е можно, Dolby Vision. Повеќе во "
-            },
-            {
-              "text": "прегледот на Mini LED телевизорите",
-              "href": "/novosti/mini-led-televizori-2026-pregled"
-            },
-            {
-              "text": "."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "Што да избегнуваш:",
-              "bold": true
-            },
-            {
-              "text": " телевизори од 60 Hz без HDMI 2.1. На нив Xbox работи, но без 120 Hz и VRR, па кај Series X губиш голем дел од можностите на конзолата."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "Внимавај на бројот на HDMI 2.1 влезови",
-              "bold": true
-            },
-            {
-              "text": " ако имаш и саундбар или повеќе конзоли. Четири целосни HDMI 2.1 влеза значат дека не мораш да бираш."
-            }
-          ]
-        },
-        {
-          "type": "paragraph",
-          "content": [
-            {
-              "text": "Имаш и PlayStation? Прочитај го нашиот водич "
-            },
-            {
-              "text": "PS5 на телевизор",
-              "href": "/edu/ps5-na-televizor-najdobri-postavki"
-            },
-            {
-              "text": "."
-            }
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "content": [
-            {
-              "text": "Накратко"
-            }
-          ]
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            [
-              {
-                "text": "Приклучи го Xbox во "
-              },
-              {
-                "text": "HDMI 2.1 влез",
-                "bold": true
-              },
-              {
-                "text": ", со кабелот од кутијата."
-              }
-            ],
-            [
-              {
-                "text": "Прво провери "
-              },
-              {
-                "text": "Детали за 4K телевизорот",
-                "bold": true
-              },
-              {
-                "text": " во "
-              },
-              {
-                "text": "Поставки > Општо > Опции за ТВ и екран",
-                "bold": true
-              },
-              {
-                "text": "."
-              }
-            ],
-            [
-              {
-                "text": "Вклучи 120 Hz, VRR, ALLM, Auto HDR и, ако телевизорот поддржува, Dolby Vision за игри. Потоа калибрирај го HDR."
-              }
-            ],
-            [
-              {
-                "text": "Series S поддржува 120 Hz и VRR, но игрите ги прикажува во помала резолуција од Series X."
-              }
-            ],
-            [
-              {
-                "text": "Најкомплетен избор: OLED со четири HDMI 2.1 влеза и Dolby Vision. Samsung нема Dolby Vision."
-              }
-            ]
-          ]
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "content": [
-            {
-              "text": "Извори"
-            }
-          ]
-        },
-        {
-          "type": "list",
-          "ordered": false,
-          "items": [
-            [
-              {
-                "text": "Xbox Wire — Is your TV ready to power your dreams? (поставки за Xbox Series X|S)",
-                "href": "https://news.xbox.com/en-us/2020/11/06/is-your-tv-ready-to-power-your-dreams/"
-              }
-            ],
-            [
-              {
-                "text": "Xbox Wire — Dolby Vision за игри на Xbox Series X|S",
-                "href": "https://news.xbox.com/en-us/?p=159819"
-              }
-            ]
-          ]
-        }
-      ],
-      "body": [
-        "Xbox Series X е конзола создадена за 4K телевизори од новата генерација. Може да прикажува игри во 4K на 120 слики во секунда, со Dolby Vision слика и Dolby Atmos звук. Ниту една од овие работи нема да ја видиш ако телевизорот не ги поддржува, или ако конзолата е приклучена во погрешен влез. Добрата вест е што Xbox има едно од најдобрите менија за поставки на телевизор, кое само ти кажува што твојот телевизор може.",
-        "HDMI 2.1. Верзија на HDMI приклучокот со доволно проток за 4K на 120 Hz. Кај многу телевизори само дел од влезовите се 2.1, па провери кој е во упатството или до самиот приклучок.",
-        "120 Hz. Сликата се освежува 120 пати во секунда наместо 60. Во игрите што го поддржуваат, движењето е помазно, а контролата попрецизна.",
-        "VRR (Variable Refresh Rate). Телевизорот го следи бројот на слики што играта ги дава во моментот, па нема кинење на сликата кога играта успорува. Xbox поддржува HDMI VRR и AMD FreeSync.",
-        "ALLM (Auto Low Latency Mode). Телевизорот сам се префрла во режим за игри и го намалува доцнењето меѓу копчето и екранот.",
-        "Dolby Vision за игри. Ова е предноста на Xbox: напреден HDR формат што ја прилагодува сликата сцена по сцена. Работи само ако телевизорот поддржува Dolby Vision.",
-        "Auto HDR. Xbox автоматски додава HDR на постари игри направени без HDR.",
-        "Series X е создаден за 4K и 120 Hz. Во кутијата има Ultra High Speed HDMI кабел.",
-        "Series S е помал и послаб. Игрите најчесто ги прикажува во помала резолуција, до 1440p, но и тој поддржува 120 Hz, VRR и ALLM. За Series S телевизорот со HDMI 2.1 е корисен, но не е задолжителен. Според Xbox Wire, за него е доволен и сертифициран High Speed HDMI кабел.",
-        "Притисни го копчето Xbox на контролерот, па оди на Поставки > Општо > Опции за ТВ и екран (Settings > General > TV & display options).",
-        "Звук: за Dolby Atmos преку саундбар или ресивер, во Општо > Јачина и излез на звук избери Bitstream out и формат Dolby Atmos for home theater. Xbox Wire препорачува конзолата да ја поврзеш директно на телевизорот, а звукот до саундбарот да го пренесеш преку eARC.",
-        "Изборот е многу сличен како за PS5, со една важна разлика: Dolby Vision.",
-        "LG OLED е најкомплетниот избор за Xbox. C6 и G6 имаат четири HDMI 2.1 влеза, до 165 Hz, VRR и Dolby Vision, па можеш да ги искористиш сите функции на Xbox истовремено. Повеќе во нашиот преглед на LG OLED 2026.",
-        "Samsung OLED и Neo QLED се одлични за игри, со 120 Hz и повеќе, VRR и ниско доцнење. Но, Samsung не поддржува Dolby Vision, па на нив Xbox игрите ќе бидат во HDR10. И тоа изгледа одлично, но ако Dolby Vision ти е важен, тоа е причина да избереш друга марка. Повеќе во прегледот на Samsung OLED 2026.",
-        "Mini LED телевизорите се добар избор за светли соби и поголеми екрани. Барај природни 120 Hz или повеќе, HDMI 2.1 и, ако е можно, Dolby Vision. Повеќе во прегледот на Mini LED телевизорите.",
-        "Што да избегнуваш: телевизори од 60 Hz без HDMI 2.1. На нив Xbox работи, но без 120 Hz и VRR, па кај Series X губиш голем дел од можностите на конзолата.",
-        "Внимавај на бројот на HDMI 2.1 влезови ако имаш и саундбар или повеќе конзоли. Четири целосни HDMI 2.1 влеза значат дека не мораш да бираш.",
-        "Имаш и PlayStation? Прочитај го нашиот водич PS5 на телевизор."
       ]
     },
     {

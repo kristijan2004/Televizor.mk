@@ -1,7 +1,7 @@
 ---
 title: "Xbox Series X и S на телевизор: најдобри поставки и кој телевизор да избереш"
 slug: "xbox-series-x-na-televizor-najdobri-postavki"
-date: "2026-11-06"
+date: "2026-11-15"
 category: "Совети"
 excerpt: "Xbox Series X и S поддржуваат 120 Hz, VRR, Dolby Vision и Dolby Atmos за игри, но само ако телевизорот ги има и ако се правилно вклучени. Водич чекор по чекор за поставките и за изборот на телевизор за Xbox."
 image: "/images/edu/xbox-series-x-na-televizor-najdobri-postavki.webp"
