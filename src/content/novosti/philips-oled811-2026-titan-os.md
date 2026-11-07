@@ -1,7 +1,7 @@
 ---
 title: "Philips OLED811 (2026): посветол OLED екран, но без Google TV"
 slug: "philips-oled811-2026-titan-os"
-date: "2026-11-12"
+date: "2026-11-16"
 category: "Новости"
 excerpt: "Philips OLED811 носи нов OLED EX панел до 2500 нита, 165 Hz и четири HDMI 2.1 влеза, но наместо Google TV работи на Titan OS. Што добиваш, што губиш и за кого е вредно, сега кога моделот пристигна и кај нас."
 image: "/images/novosti/philips-oled811-2026-titan-os.webp"

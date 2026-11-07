@@ -1,7 +1,7 @@
 ---
 title: "Xbox Cloud Gaming повеќе не работи на Samsung телевизорите од 2020"
 slug: "xbox-cloud-gaming-samsung-2020-televizori"
-date: "2026-11-10"
+date: "2026-11-23"
 category: "Новости"
 excerpt: "Од 3 ноември 2026 апликацијата Xbox е исклучена на Samsung телевизорите од 2020, како Q60T, Q80T, Q90T и The Frame. Кои модели се засегнати, зошто Microsoft ја повлече поддршката и како и понатаму да играш Xbox игри без конзола."
 image: "/images/novosti/xbox-cloud-gaming-samsung-2020-televizori.webp"
