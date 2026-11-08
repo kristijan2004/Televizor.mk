@@ -654,6 +654,22 @@ function getIdentity(tv, store) {
   model = stripBrandPrefix(brand, String(model).trim());
 
   /*
+   * Трговците знаат да го стават целото рекламно име како модел
+   * („65 Q7S, 4K Ultra HD, 8ms"). Моделите немаат запирки, па сè по првата
+   * запирка е маркетинг и се отсекува. МОРА да се примени тука, пред
+   * key()/slugify() подолу — инаку истиот телевизор со и без маркетинг
+   * текст од истиот трговец нормализира во РАЗЛИЧНИ клучеви, добива
+   * одделен запис, и секое добива свое id (токму тоа го расипа
+   * samsung-ue-75-m72h-auxxh на 2026-11-07/08).
+   */
+  if (model.includes(",")) {
+    const short = model.split(",")[0].trim();
+    if (short.length >= 3) {
+      model = short;
+    }
+  }
+
+  /*
    * Try to match the existing canonical model.
    */
   const canonicalMatch = findCanonicalMatch(
