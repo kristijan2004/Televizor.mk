@@ -620,8 +620,12 @@ function ldScript(obj) {
 
 /*
   JSON-LD само за Home, ТВ страница и статија — единствените три каде што
-  има вистински, проверливи податоци да се опишат. Само стварни вредности;
-  никогаш offers/price/review/rating (телевизорот нема наша цена/оценка).
+  има вистински, проверливи податоци да се опишат. Product добива offers
+  (AggregateOffer) само кога барем еден трговец има вистинска цена прикажана
+  на страницата — исто како „Каде го има?" подолу; никогаш измислена цена,
+  review или aggregateRating. Кога нема ниту една вистинска цена, воопшто не
+  се враќа Product (само BreadcrumbList) — Product без offers му е истата
+  грешка на Google.
 */
 function jsonLdFor(meta) {
   if (meta.kind === "home") {
@@ -644,7 +648,13 @@ function jsonLdFor(meta) {
   }
 
   if (meta.kind === "tv" && meta.tv) {
-    const row = meta.tv;
+    const row = hydrate(meta.tv);
+
+    const stores = row.stores || {};
+    const priceEntries = Object.values(stores).filter(
+      (store) => store && store.inStock !== false && typeof store.price === "number" && store.price > 0
+    );
+    const prices = priceEntries.map((store) => store.price);
 
     const additionalProperty = [
       row.size ? { "@type": "PropertyValue", name: "Големина", value: `${row.size}"` } : null,
@@ -677,6 +687,20 @@ function jsonLdFor(meta) {
         { "@type": "ListItem", position: 1, name: "Почетна", item: SITE },
         { "@type": "ListItem", position: 2, name: `${brand} ${row.model}`, item: `${SITE}${meta.canonicalPath}` },
       ],
+    };
+
+    if (prices.length === 0) return [breadcrumb];
+
+    product.offers = {
+      "@type": "AggregateOffer",
+      priceCurrency: "MKD",
+      lowPrice: Math.min(...prices),
+      highPrice: Math.max(...prices),
+      offerCount: prices.length,
+      availability: priceEntries.some((store) => store.inStock === true)
+        ? "https://schema.org/InStock"
+        : "https://schema.org/LimitedAvailability",
+      url: `${SITE}${meta.canonicalPath}`,
     };
 
     return [product, breadcrumb];
