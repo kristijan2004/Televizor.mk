@@ -178,15 +178,9 @@ const QuickSpec = styled.div`
   font-weight: 700;
 `;
 
-const ButtonRow = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-
-  margin-top: 22px;
-`;
-
 const CompareButton = styled.button`
+  margin-top: 22px;
+
   align-self: flex-start;
 
   border: none;
@@ -209,34 +203,6 @@ const CompareButton = styled.button`
 
   &:hover {
     background-color: #1c1d68;
-
-    transform: translateY(-1px);
-  }
-`;
-
-const RoomButton = styled.button`
-  align-self: flex-start;
-
-  border: 1px solid #242582;
-
-  border-radius: 9px;
-
-  padding: 11px 18px;
-
-  background-color: white;
-
-  color: #242582;
-
-  font-size: 14px;
-
-  font-weight: 700;
-
-  cursor: pointer;
-
-  transition: 0.2s;
-
-  &:hover {
-    background-color: #f1f0f8;
 
     transform: translateY(-1px);
   }
@@ -701,15 +667,9 @@ const TvDetails = () => {
                 <QuickSpec>{tv.refreshRate} Hz</QuickSpec>
               </QuickSpecs>
 
-              <ButtonRow>
-                <CompareButton onClick={handleCompare}>
-                  {isCompared ? "✓ Додадено во споредба" : "+ Спореди"}
-                </CompareButton>
-
-                <RoomButton onClick={() => navigate(`${tvPath(tv)}/soba`)}>
-                  📺 Погледни во соба
-                </RoomButton>
-              </ButtonRow>
+              <CompareButton onClick={handleCompare}>
+                {isCompared ? "✓ Додадено во споредба" : "+ Спореди"}
+              </CompareButton>
             </Info>
           </Top>
 

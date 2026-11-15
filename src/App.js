@@ -3,7 +3,6 @@ import Home from "../src/components/Home";
 import AddTv from "./components/addTv";
 import Compare from "./components/Compare";
 import TvDetails from "./components/TvDetails";
-import LivingRoomPreview from "./components/LivingRoomPreview";
 import { ContextProvider } from "./components/Context";
 import Novosti from "./components/Novosti";
 import NewsArticle from "./components/NewsArticle";
@@ -20,7 +19,6 @@ function App() {
         <Route path="addTv" element={<AddTv />} />
         <Route path="compare" element={<Compare />} />
         <Route path="/tv/:brand/:model" element={<TvDetails />} />
-        <Route path="/tv/:brand/:model/soba" element={<LivingRoomPreview />} />
         <Route path="novosti" element={<Novosti />} />
         <Route path="novosti/:slug" element={<NewsArticle section="novosti" />} />
         <Route path="edu" element={<Edu />} />
