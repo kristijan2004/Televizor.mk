@@ -4,6 +4,7 @@ import { Link, Navigate, useParams } from "react-router-dom";
 
 import ArticleImage from "./ArticleImage";
 import Navigation from "./Navigation";
+import ShareButtons from "./ShareButtons";
 import { usePageMeta } from "../lib/usePageMeta";
 import { excerptFor } from "../lib/excerptFor";
 import news from "../Data/news";
@@ -654,6 +655,8 @@ const NewsArticle = ({ section = "novosti" }) => {
 
           <span>{formatReadTime(post.readTime)}</span>
         </Meta>
+
+        <ShareButtons title={post.title} />
 
         <HeroImage
           src={post.image}

@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 
 import ArticleImage from "./ArticleImage";
 import Navigation from "./Navigation";
+import Footer from "./Footer";
 import { usePageMeta } from "../lib/usePageMeta";
 import news from "../Data/news";
 import {
@@ -874,6 +875,8 @@ const ArticleListing = ({
           </>
         )}
       </GridSection>
+
+      <Footer />
     </PageCont>
   );
 };

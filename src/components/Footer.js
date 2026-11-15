@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 /*
   Сајтот немаше подножје воопшто, па немаше ни каде да стојат условите за
@@ -55,6 +57,23 @@ const FooterLink = styled(Link)`
   }
 `;
 
+const SocialLink = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 30px;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  font-size: 14px;
+
+  &:hover {
+    color: #ffffff;
+  }
+`;
+
 const Footer = () => (
   <FooterCont>
     <Inner>
@@ -67,6 +86,24 @@ const Footer = () => (
         <FooterLink to="/novosti">Новости</FooterLink>
         <FooterLink to="/odberi-tv">Одбери ТВ</FooterLink>
         <FooterLink to="/uslovi">Услови за користење</FooterLink>
+
+        <SocialLink
+          href="https://www.facebook.com/displaymkd"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Display.mk на Facebook"
+        >
+          <FontAwesomeIcon icon={faFacebookF} />
+        </SocialLink>
+
+        <SocialLink
+          href="https://www.instagram.com/display.mk/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Display.mk на Instagram"
+        >
+          <FontAwesomeIcon icon={faInstagram} />
+        </SocialLink>
       </Links>
     </Inner>
   </FooterCont>
