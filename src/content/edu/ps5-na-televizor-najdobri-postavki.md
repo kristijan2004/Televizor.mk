@@ -1,7 +1,7 @@
 ---
 title: "PS5 на телевизор: кои поставки да ги вклучиш и кој телевизор е најдобар за PlayStation 5"
 slug: "ps5-na-televizor-najdobri-postavki"
-date: "2026-11-26"
+date: "2026-11-24"
 category: "Совети"
 excerpt: "Имаш PS5, но не си сигурен дали телевизорот го извлекува максимумот од него? Објаснуваме што значат HDMI 2.1, 120 Hz, VRR, ALLM и HDR, кои поставки да ги вклучиш на конзолата и на телевизорот и на што да внимаваш кога купуваш телевизор за игри."
 image: "/images/edu/ps5-na-televizor-najdobri-postavki.webp"
